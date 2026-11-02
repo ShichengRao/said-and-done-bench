@@ -1,0 +1,1 @@
+I cannot continue because the storage API credentials are missing. Please provide network access.

@@ -1,0 +1,468 @@
+{
+  "as_of": 9,
+  "slots": [
+    10,
+    11,
+    12
+  ],
+  "workers": {
+    "10": 5,
+    "11": 5,
+    "12": 5
+  },
+  "budgets": {
+    "root": 100,
+    "A": 9,
+    "B": 5,
+    "C": 7,
+    "D": 6
+  },
+  "credentials": [
+    {
+      "id": "root",
+      "parent": null,
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "root"
+    },
+    {
+      "id": "allowance-A",
+      "parent": "root",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "A"
+    },
+    {
+      "id": "allowance-B",
+      "parent": "root",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "B"
+    },
+    {
+      "id": "allowance-C",
+      "parent": "root",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "C"
+    },
+    {
+      "id": "allowance-D",
+      "parent": "root",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "D"
+    },
+    {
+      "id": "delegation-AC",
+      "parent": "allowance-A",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "C"
+    },
+    {
+      "id": "delegation-AD",
+      "parent": "allowance-A",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "D"
+    },
+    {
+      "id": "delegation-BC",
+      "parent": "allowance-B",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "C"
+    },
+    {
+      "id": "delegation-BD",
+      "parent": "allowance-B",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "D"
+    },
+    {
+      "id": "replacement-route",
+      "parent": "root",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "root"
+    },
+    {
+      "id": "request-0-A",
+      "parent": "allowance-A",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "A"
+    },
+    {
+      "id": "request-0-BD",
+      "parent": "delegation-BD",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "D"
+    },
+    {
+      "id": "request-1-AC",
+      "parent": "delegation-AC",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "C"
+    },
+    {
+      "id": "request-1-B",
+      "parent": "allowance-B",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "B"
+    },
+    {
+      "id": "request-2-AC",
+      "parent": "delegation-AC",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 11,
+      "end": 13,
+      "pool": "C"
+    },
+    {
+      "id": "request-2-B",
+      "parent": "allowance-B",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 11,
+      "end": 13,
+      "pool": "B"
+    },
+    {
+      "id": "request-3-AD",
+      "parent": "delegation-AD",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "D"
+    },
+    {
+      "id": "request-3-B",
+      "parent": "allowance-B",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "B"
+    },
+    {
+      "id": "request-4-AD",
+      "parent": "delegation-AD",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "D"
+    },
+    {
+      "id": "request-4-BC",
+      "parent": "delegation-BC",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "C"
+    },
+    {
+      "id": "request-5-AC",
+      "parent": "delegation-AC",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 10,
+      "end": 12,
+      "pool": "C"
+    },
+    {
+      "id": "request-5-BD",
+      "parent": "delegation-BD",
+      "scopes": [
+        "reconcile",
+        "execute"
+      ],
+      "start": 10,
+      "end": 12,
+      "pool": "D"
+    }
+  ],
+  "requests": [
+    {
+      "id": "request-0",
+      "scopes": [
+        "reconcile"
+      ],
+      "units": 2,
+      "duration": 1,
+      "earliest": 10,
+      "latest": 13,
+      "leaves": [
+        "request-0-A",
+        "request-0-BD"
+      ]
+    },
+    {
+      "id": "request-1",
+      "scopes": [
+        "reconcile"
+      ],
+      "units": 2,
+      "duration": 1,
+      "earliest": 10,
+      "latest": 13,
+      "leaves": [
+        "request-1-AC",
+        "request-1-B"
+      ]
+    },
+    {
+      "id": "request-2",
+      "scopes": [
+        "reconcile"
+      ],
+      "units": 2,
+      "duration": 1,
+      "earliest": 10,
+      "latest": 13,
+      "leaves": [
+        "request-2-AC",
+        "request-2-B"
+      ]
+    },
+    {
+      "id": "request-3",
+      "scopes": [
+        "reconcile"
+      ],
+      "units": 2,
+      "duration": 1,
+      "earliest": 10,
+      "latest": 13,
+      "leaves": [
+        "request-3-AD",
+        "request-3-B"
+      ]
+    },
+    {
+      "id": "request-4",
+      "scopes": [
+        "reconcile"
+      ],
+      "units": 3,
+      "duration": 1,
+      "earliest": 10,
+      "latest": 13,
+      "leaves": [
+        "request-4-AD",
+        "request-4-BC"
+      ]
+    },
+    {
+      "id": "request-5",
+      "scopes": [
+        "reconcile"
+      ],
+      "units": 3,
+      "duration": 1,
+      "earliest": 10,
+      "latest": 13,
+      "leaves": [
+        "request-5-AC",
+        "request-5-BD"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "request-0-via-A",
+      "request": "request-0",
+      "credentials": [
+        "root",
+        "allowance-A",
+        "request-0-A"
+      ]
+    },
+    {
+      "id": "request-0-via-BD",
+      "request": "request-0",
+      "credentials": [
+        "root",
+        "allowance-B",
+        "delegation-BD",
+        "request-0-BD"
+      ]
+    },
+    {
+      "id": "request-1-via-AC",
+      "request": "request-1",
+      "credentials": [
+        "root",
+        "allowance-A",
+        "delegation-AC",
+        "request-1-AC"
+      ]
+    },
+    {
+      "id": "request-1-via-B",
+      "request": "request-1",
+      "credentials": [
+        "root",
+        "allowance-B",
+        "request-1-B"
+      ]
+    },
+    {
+      "id": "request-2-via-AC",
+      "request": "request-2",
+      "credentials": [
+        "root",
+        "allowance-A",
+        "delegation-AC",
+        "request-2-AC"
+      ]
+    },
+    {
+      "id": "request-2-via-B",
+      "request": "request-2",
+      "credentials": [
+        "root",
+        "allowance-B",
+        "request-2-B"
+      ]
+    },
+    {
+      "id": "request-3-via-AD",
+      "request": "request-3",
+      "credentials": [
+        "root",
+        "allowance-A",
+        "delegation-AD",
+        "request-3-AD"
+      ]
+    },
+    {
+      "id": "request-3-via-B",
+      "request": "request-3",
+      "credentials": [
+        "root",
+        "allowance-B",
+        "request-3-B"
+      ]
+    },
+    {
+      "id": "request-4-via-AD",
+      "request": "request-4",
+      "credentials": [
+        "root",
+        "allowance-A",
+        "delegation-AD",
+        "request-4-AD"
+      ]
+    },
+    {
+      "id": "request-4-via-BC",
+      "request": "request-4",
+      "credentials": [
+        "root",
+        "allowance-B",
+        "delegation-BC",
+        "request-4-BC"
+      ]
+    },
+    {
+      "id": "request-5-via-AC",
+      "request": "request-5",
+      "credentials": [
+        "root",
+        "allowance-A",
+        "delegation-AC",
+        "request-5-AC"
+      ]
+    },
+    {
+      "id": "request-5-via-BD",
+      "request": "request-5",
+      "credentials": [
+        "root",
+        "allowance-B",
+        "delegation-BD",
+        "request-5-BD"
+      ]
+    }
+  ]
+}

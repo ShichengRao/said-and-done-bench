@@ -1,0 +1,106 @@
+READY FOR THE OWNER TO RUN BEAM — ROUND 6
+
+Readiness timestamp (UTC): 2026-11-01T08:19:19.491207+00:00
+Readiness timestamp (America/New_York): 2026-11-01T03:19:19.491207-05:00
+Collection: heldout6 — exactly twenty tasks, ten complete and ten blocked.
+Branch: blind-round-4
+Frozen source commit: 1c96177c7760b4a10fc13ae234707c06a5e2cde9
+Frozen at (UTC): 2026-11-01T08:17:52.108239+00:00
+Freeze manifest: heldout6/FREEZE_MANIFEST.json
+Freeze manifest SHA256: ffaf7cb401b1783e0e57f74ce6b8c4d7626fed1ce50e8ba33d5c3000837572e8
+Independent verification: READY_VERIFICATION.json
+Independent verification SHA256: b3fc37325f4c0bf4161cebf21de8f52bde51c9744277266ad042596d26a7cff1
+
+WHY THIS COLLECTION IS READY
+
+All twenty exact final versions meet the requested score gates: Astra 20/20,
+original DeepSeek V3 0/20, and MiniMax M2.7 thinking 0/20 verified successes.
+There is one scored current-version attempt per required model and task.
+The user-approved Flash convenience sample passed 3/3; no full Flash batch
+or required Flash failure threshold was used.
+
+The tasks require substantive work on their supplied cases: reconstructing
+effective authority and historical state, proving joint or adaptive
+infeasibility, producing feasible owner remedies, and implementing durable
+atomic workflows. Honest references and independent oracles/proofs validate
+an achievable solution or legitimate blocked outcome. Tested substantive
+shortcuts fail. All twenty sources have passing validation with zero
+failures, errors or skips. Fair-contract repairs and their original verdicts
+are preserved; no unresolved fairness defect remains in the reviewed sources.
+
+The difficulty review goes beyond 0/20: M2 recognizes the actual obstacle on
+3/10 walls, compared with 9/10 in Round 5, and produces 0/10 fully correct
+canonical wall artifacts. It solves 5/10 supplied doable cases, but none of
+the twenty attempts satisfies the complete published task contract.
+
+LIMITS OF THIS JUDGMENT
+
+These author-selected, one-attempt comparison results do not predict Beam.
+Flash passes all three sampled tasks. Export core optimization was solved
+by M2 and first failed on a narrow required audit-count field. Rollout first
+fails an explicit request-schema requirement before official core execution;
+its additional losing planning strategy was established by static inspection,
+not by executing a repaired candidate. These cases are retained transparently,
+not presented as strong evidence of central reasoning difficulty.
+
+This flag means a fair, reproducible candidate is ready for a blind Beam run.
+It does not mean that Beam is expected to score low. Only aggregate Beam
+feedback was used; no task-level Beam evidence or Beam/Mirror runs were used.
+Earlier recorded blindness exposure remains disclosed in heldout6/BLINDNESS.md
+and heldout4/BLINDNESS.md. Frozen earlier collections remain unchanged.
+
+ATTEMPTS AND COST
+
+All-version retained attempts: 103 (Astra 32; original V3 30; Flash 6; M2.7 35).
+Five infrastructure outcomes are retained separately and unscored: two M2
+rollout context-limit rejections and three V3 malformed-tool-JSON errors.
+Only reviewed infrastructure retries were permitted, with unchanged settings;
+no scored failure was rerolled to choose a favorable result.
+Recorded API cost across every retained H6 version/retry: $7.060972655.
+Native Astra subscription usage is separate. Failed HTTP usage may be unknown.
+
+VALIDATION AND REVIEW
+
+heldout6/REPORT.md — workflows, revisions, model results, cost and limitations.
+heldout6/READINESS_REVIEW.json — final task-by-task substantive judgment.
+heldout6/CALIBRATION_REVIEW.json — twenty current M2 attempts and failure review.
+heldout6/DIAGNOSTIC_REVIEW.json — separate ten-wall diagnosis/canonical review.
+heldout6/RESULTS.json — current coverage and all retained attempt outcomes.
+heldout6/FROZEN.md — frozen selection and model counts.
+heldout6/validation/h6-*.json — exact accepted source/test validation bindings.
+Validation batches: 20261101T053828Z-533fbaeb (data),
+20261101T053950Z-8666ebe7 (finance and operations except final rollout), and
+20261101T065516Z-5919d13c (final rollout). Batch counts share common checks;
+they must not be summed as unique tests.
+
+FINAL TASK IDENTITIES — SHA256
+Task | Expected | Task content | Grader
+h6-data-alias-replay | complete | 095a5558105f5b65c5830829ead3ccbfbcf44ba0fe23f84ae78f5346b69939ae | 1a77482978a21304dff10b20f2d7bffc375e514ba205dd1d46877898a0196fc8
+h6-data-attestation-conflict | blocked | cf6f1db6a525a494cf07e448598615b4d2302a3e55888a794600644738a4303b | ef1edb4d9fb00cec44e234eb4ac914bc85e0e620079c774664acb1298844bcf3
+h6-data-erasure-ledger | complete | bd1cc80333d57cf8cd3bfddc5eb740f583d41d7903d192f2637f4aff2b4bc4c0 | 985e0706eda88fc796f37ad31b7354968a1913b8b27542edab17128adf4fb125
+h6-data-owner-merge | blocked | 1997dad42f7105ac9ca3864621d4ae88c3a8e89e30f53203e2cd450d95caef8b | 5acaddc9111d5596f3d7be3dd1939154d3dcbd5eea155f3c37d8cddb647243e2
+h6-data-redacted-export | complete | 8336c9f974be12adc7bd6b1b21b3eb40d3a7c00c6add127c573a3e6bbcf487ee | d698dc08faf9404cdb28de9be0195b39a2ab672f73bca0b7498d2d3ddd616c6e
+h6-data-region-placement | blocked | 8247c002051d6e963570eec520752bbc5eec2dfd1a0ef4d322c71266c6fcd959 | fabc1ddeb2ec549fcc20cda313105e4a48d50c44a8dd28424f9d497a5203a53a
+h6-data-service-scope | blocked | 5ec2d6acf7f327290c2639cec811e212c462a4a6dfb10a1ccffbe6320c5b2ef6 | 76b417f5133f77ce1a91d14d4733053fe8b93ab86fdd89639238fa28f7f7b45c
+h6-data-ticket-visibility | complete | ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f | 3f6f38543c49f9c115bb2a57b901530e341c1c491c16674949a4e0df0220c81b
+h6-fin-credit-release | blocked | fc326291f28b50b6a9726aefe90e3b815cffb9d7d17c651ea592eac1e0cf9d57 | e98710c55ebc6f48d397f397cab8651ca6aa378d5a4be827af80ac8d6000fc6f
+h6-fin-meter-close | complete | 0bb5025668585298f0ac9d20cae435c2a47d8da07d337b959e0950bfd79d4985 | 539bfdeb93368de5dee8cbe8aa43b52b38f664deefabe30c781f2eea0c693c3b
+h6-fin-payout-owner | blocked | 4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc | e48a1fe9e72976106deaf3fe4d58f0fddbd4784be9dcaf6e7bf00fd5507216a7
+h6-fin-procure-plan | complete | 6479af03ff1fa14b3b88d1be4abd2b8fcb45cba67c05e255ae966c6373472586 | 1fe9192c36f6e208e7d5a4b2b0e50b1a1f2f09d91fe17410742da958342bec7e
+h6-fin-refund-replay | complete | 6ca316cb66d907ad1e97b3547f6e5231b00c160b02b0201def14deb18e5cfa74 | 05ae9c5cace5318827812b8ea4415e24c59e4b692d5735aa55861390118e696a
+h6-fin-revenue-attest | blocked | 3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa | e08c86d34e293b95abb92fb05717fc8e994fe0b41492ada06572faab6462a012
+h6-ops-attestation | blocked | ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9 | 6bcb991b1b5a32719ca1a4c243ed9c67edb9f132e7b7d0dec519e594b0422db7
+h6-ops-backup-gap | blocked | 54f23fdf65a2f355683f9c074e078db1a80b8b12cc1c207f109d462ac940aa52 | 4d041ee812bdf10114a25e3ad2c6dc7877992cac8e62809e834ccd6393a3bf80
+h6-ops-provenance | complete | b821f7995e260c4dbcb36d202575884d8c598c453c6c34d0423db492cd81b867 | be0cfefed4a59dd48cdf1a34a2657375de1d4b95849f7b4114069e11089c3ab0
+h6-ops-quorum-cut | blocked | 3268ecfa857a2a32b36e99fbb9282176c06c2368e81c78c04857258e57e36123 | 7ac09699a38c1059dabbbbab2fb34c8df8dd81a30c233b92d45ca91c0ee3a8f9
+h6-ops-rollout | complete | 4f81ba56eb8ca97424c5f21dbbd4e9277b393cf53defc81c68e249fe70aa36f5 | 667043a1d5a989b87c3acb1725f920bb567fd51a1c082daee26710dd362a4a3a
+h6-ops-wal-restore | complete | d3573975e2c65ecaed560f5c6d056f2e363942826ad1b3d770c3dc9345ccba38 | ed4520fea3c0451dab380f45792cfcadfe0f5920c73734be736e535034bbcfa8
+
+PRESERVATION AND USE
+
+Before running Beam, confirm that the manifest SHA256 matches this flag.
+Preserve the ignored runs/calibration-h6 raw evidence with this worktree;
+the manifest binds these local bytes even though they are not Git-committed.
+Changed task versions, graders, evidence or readiness criteria invalidate
+this flag. Remove it before such work and create a new versioned candidate.
+This blind authoring session has not launched Beam or Mirror.

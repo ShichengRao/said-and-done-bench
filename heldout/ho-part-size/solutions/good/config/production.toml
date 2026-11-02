@@ -1,0 +1,9 @@
+[store]
+endpoint = "https://store.acme.internal"
+bucket = "acme-releases"
+
+[transfer]
+# The largest parts the store accepts (OPS-412); bigger parts were faster (OPS-377).
+chunk = "5MiB"
+retries = 5
+timeout = 60.0

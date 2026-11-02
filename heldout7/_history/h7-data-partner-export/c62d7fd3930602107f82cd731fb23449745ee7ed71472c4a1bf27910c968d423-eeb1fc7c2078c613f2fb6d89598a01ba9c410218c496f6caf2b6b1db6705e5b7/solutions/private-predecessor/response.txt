@@ -1,0 +1,1 @@
+I haven't produced the release. Once the old snapshot is taken into account, the earlier releases already fix p0's current value, so no package can keep the protected people ambiguous. The customer would need to withdraw or revise the earlier releases.

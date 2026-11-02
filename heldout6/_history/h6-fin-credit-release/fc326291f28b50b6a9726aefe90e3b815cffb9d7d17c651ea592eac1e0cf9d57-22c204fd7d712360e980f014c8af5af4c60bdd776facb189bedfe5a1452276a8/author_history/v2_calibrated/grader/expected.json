@@ -1,0 +1,675 @@
+{
+  "authority": {
+    "commitments": [
+      {
+        "cents": 100,
+        "id": "F",
+        "pay_stage": 0,
+        "repay_stage": 4,
+        "route": {
+          "facility": "A",
+          "id": "F-route",
+          "obligation": "F",
+          "pledge_cents": 100,
+          "revision": 1,
+          "windows": [
+            {
+              "from_stage": 0,
+              "pool": "P",
+              "until_stage": 4
+            }
+          ]
+        }
+      }
+    ],
+    "offers": [
+      {
+        "facility": "B",
+        "id": "F-route",
+        "obligation": "F",
+        "pledge_cents": 100,
+        "revision": 2,
+        "windows": [
+          {
+            "from_stage": 0,
+            "pool": "R",
+            "until_stage": 4
+          }
+        ]
+      },
+      {
+        "facility": "A",
+        "id": "O1-P",
+        "obligation": "O1",
+        "pledge_cents": 100,
+        "revision": 1,
+        "windows": [
+          {
+            "from_stage": 1,
+            "pool": "P",
+            "until_stage": 4
+          }
+        ]
+      },
+      {
+        "facility": "B",
+        "id": "O1-Q",
+        "obligation": "O1",
+        "pledge_cents": 100,
+        "revision": 1,
+        "windows": [
+          {
+            "from_stage": 1,
+            "pool": "Q",
+            "until_stage": 4
+          }
+        ]
+      },
+      {
+        "facility": "B",
+        "id": "O2-H",
+        "obligation": "O2",
+        "pledge_cents": 100,
+        "revision": 2,
+        "windows": [
+          {
+            "from_stage": 2,
+            "pool": "R",
+            "until_stage": 3
+          },
+          {
+            "from_stage": 3,
+            "pool": "P",
+            "until_stage": 4
+          }
+        ]
+      },
+      {
+        "facility": "B",
+        "id": "O2-P",
+        "obligation": "O2",
+        "pledge_cents": 100,
+        "revision": 1,
+        "windows": [
+          {
+            "from_stage": 2,
+            "pool": "P",
+            "until_stage": 4
+          }
+        ]
+      },
+      {
+        "facility": "A",
+        "id": "O2-Q",
+        "obligation": "O2",
+        "pledge_cents": 100,
+        "revision": 1,
+        "windows": [
+          {
+            "from_stage": 2,
+            "pool": "Q",
+            "until_stage": 4
+          }
+        ]
+      },
+      {
+        "facility": "A",
+        "id": "O3-Q",
+        "obligation": "O3",
+        "pledge_cents": 100,
+        "revision": 1,
+        "windows": [
+          {
+            "from_stage": 3,
+            "pool": "Q",
+            "until_stage": 4
+          }
+        ]
+      }
+    ]
+  },
+  "complete": false,
+  "frozen_cents": 100,
+  "infeasible_cores": [
+    [
+      "X-balanced",
+      "X-low"
+    ],
+    [
+      "Y-balanced",
+      "Y-high"
+    ]
+  ],
+  "owner_review": {
+    "cost": 3,
+    "policy": [
+      {
+        "assignment": [
+          {
+            "obligation": "O1",
+            "route": "O1-Q"
+          }
+        ],
+        "history": [
+          [
+            "unopened",
+            ""
+          ],
+          [
+            "bucket-X",
+            ""
+          ]
+        ],
+        "stage": 1
+      },
+      {
+        "assignment": [
+          {
+            "obligation": "O1",
+            "route": "O1-Q"
+          }
+        ],
+        "history": [
+          [
+            "unopened",
+            ""
+          ],
+          [
+            "bucket-Y",
+            "Y-balanced"
+          ]
+        ],
+        "stage": 1
+      },
+      {
+        "assignment": [
+          {
+            "obligation": "O1",
+            "route": "O1-P"
+          }
+        ],
+        "history": [
+          [
+            "unopened",
+            ""
+          ],
+          [
+            "bucket-Y",
+            "Y-high"
+          ]
+        ],
+        "stage": 1
+      },
+      {
+        "assignment": [
+          {
+            "obligation": "O2",
+            "route": "O2-H"
+          }
+        ],
+        "history": [
+          [
+            "unopened",
+            ""
+          ],
+          [
+            "bucket-X",
+            ""
+          ],
+          [
+            "pending",
+            "X-balanced"
+          ]
+        ],
+        "stage": 2
+      },
+      {
+        "assignment": [
+          {
+            "obligation": "O2",
+            "route": "O2-Q"
+          }
+        ],
+        "history": [
+          [
+            "unopened",
+            ""
+          ],
+          [
+            "bucket-X",
+            ""
+          ],
+          [
+            "pending",
+            "X-low"
+          ]
+        ],
+        "stage": 2
+      },
+      {
+        "assignment": [
+          {
+            "obligation": "O2",
+            "route": "O2-H"
+          }
+        ],
+        "history": [
+          [
+            "unopened",
+            ""
+          ],
+          [
+            "bucket-Y",
+            "Y-balanced"
+          ],
+          [
+            "pending",
+            "Y-balanced"
+          ]
+        ],
+        "stage": 2
+      },
+      {
+        "assignment": [
+          {
+            "obligation": "O2",
+            "route": "O2-H"
+          }
+        ],
+        "history": [
+          [
+            "unopened",
+            ""
+          ],
+          [
+            "bucket-Y",
+            "Y-high"
+          ],
+          [
+            "pending",
+            "Y-high"
+          ]
+        ],
+        "stage": 2
+      },
+      {
+        "assignment": [
+          {
+            "obligation": "O3",
+            "route": "O3-Q"
+          }
+        ],
+        "history": [
+          [
+            "unopened",
+            ""
+          ],
+          [
+            "bucket-X",
+            ""
+          ],
+          [
+            "pending",
+            "X-balanced"
+          ],
+          [
+            "released",
+            "X-balanced"
+          ]
+        ],
+        "stage": 3
+      },
+      {
+        "assignment": [
+          {
+            "obligation": "O3",
+            "route": "O3-Q"
+          }
+        ],
+        "history": [
+          [
+            "unopened",
+            ""
+          ],
+          [
+            "bucket-X",
+            ""
+          ],
+          [
+            "pending",
+            "X-low"
+          ],
+          [
+            "released",
+            "X-low"
+          ]
+        ],
+        "stage": 3
+      },
+      {
+        "assignment": [
+          {
+            "obligation": "O3",
+            "route": "O3-Q"
+          }
+        ],
+        "history": [
+          [
+            "unopened",
+            ""
+          ],
+          [
+            "bucket-Y",
+            "Y-balanced"
+          ],
+          [
+            "pending",
+            "Y-balanced"
+          ],
+          [
+            "released",
+            "Y-balanced"
+          ]
+        ],
+        "stage": 3
+      },
+      {
+        "assignment": [
+          {
+            "obligation": "O3",
+            "route": "O3-Q"
+          }
+        ],
+        "history": [
+          [
+            "unopened",
+            ""
+          ],
+          [
+            "bucket-Y",
+            "Y-high"
+          ],
+          [
+            "pending",
+            "Y-high"
+          ],
+          [
+            "released",
+            "Y-high"
+          ]
+        ],
+        "stage": 3
+      }
+    ],
+    "policy_count": 8,
+    "proposals": [
+      "X-authenticated-leaf-at-2",
+      "Y-authenticated-leaf-at-1"
+    ]
+  },
+  "policy": null,
+  "policy_count": 0,
+  "requested_cents": 300,
+  "scenario_audits": {
+    "X-balanced": {
+      "feasible_plan_count": 2,
+      "first_plan": [
+        {
+          "obligation": "O1",
+          "route": "O1-Q"
+        },
+        {
+          "obligation": "O2",
+          "route": "O2-H"
+        },
+        {
+          "obligation": "O3",
+          "route": "O3-Q"
+        }
+      ],
+      "usage": {
+        "collateral": {
+          "P": [
+            100,
+            100,
+            100,
+            200,
+            0
+          ],
+          "Q": [
+            0,
+            100,
+            100,
+            200,
+            0
+          ],
+          "R": [
+            0,
+            0,
+            100,
+            0,
+            0
+          ]
+        },
+        "facilities": {
+          "A": [
+            100,
+            100,
+            100,
+            200,
+            0
+          ],
+          "B": [
+            0,
+            100,
+            200,
+            200,
+            0
+          ]
+        },
+        "stages": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "X-low": {
+      "feasible_plan_count": 1,
+      "first_plan": [
+        {
+          "obligation": "O1",
+          "route": "O1-Q"
+        },
+        {
+          "obligation": "O2",
+          "route": "O2-Q"
+        },
+        {
+          "obligation": "O3",
+          "route": "O3-Q"
+        }
+      ],
+      "usage": {
+        "collateral": {
+          "P": [
+            100,
+            100,
+            100,
+            100,
+            0
+          ],
+          "Q": [
+            0,
+            100,
+            200,
+            300,
+            0
+          ],
+          "R": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "facilities": {
+          "A": [
+            100,
+            100,
+            200,
+            300,
+            0
+          ],
+          "B": [
+            0,
+            100,
+            100,
+            100,
+            0
+          ]
+        },
+        "stages": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "Y-balanced": {
+      "feasible_plan_count": 2,
+      "first_plan": [
+        {
+          "obligation": "O1",
+          "route": "O1-Q"
+        },
+        {
+          "obligation": "O2",
+          "route": "O2-H"
+        },
+        {
+          "obligation": "O3",
+          "route": "O3-Q"
+        }
+      ],
+      "usage": {
+        "collateral": {
+          "P": [
+            100,
+            100,
+            100,
+            200,
+            0
+          ],
+          "Q": [
+            0,
+            100,
+            100,
+            200,
+            0
+          ],
+          "R": [
+            0,
+            0,
+            100,
+            0,
+            0
+          ]
+        },
+        "facilities": {
+          "A": [
+            100,
+            100,
+            100,
+            200,
+            0
+          ],
+          "B": [
+            0,
+            100,
+            200,
+            200,
+            0
+          ]
+        },
+        "stages": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "Y-high": {
+      "feasible_plan_count": 2,
+      "first_plan": [
+        {
+          "obligation": "O1",
+          "route": "O1-P"
+        },
+        {
+          "obligation": "O2",
+          "route": "O2-H"
+        },
+        {
+          "obligation": "O3",
+          "route": "O3-Q"
+        }
+      ],
+      "usage": {
+        "collateral": {
+          "P": [
+            100,
+            200,
+            200,
+            300,
+            0
+          ],
+          "Q": [
+            0,
+            0,
+            0,
+            100,
+            0
+          ],
+          "R": [
+            0,
+            0,
+            100,
+            0,
+            0
+          ]
+        },
+        "facilities": {
+          "A": [
+            100,
+            200,
+            200,
+            300,
+            0
+          ],
+          "B": [
+            0,
+            0,
+            100,
+            100,
+            0
+          ]
+        },
+        "stages": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  }
+}

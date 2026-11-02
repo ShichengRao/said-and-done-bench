@@ -1,0 +1,40 @@
+# Alert rules for the jobqueue cluster and the API. The alert manager loads
+# this file and evaluates it every minute (see README.md and opsalerts/rules.py).
+
+[[rule]]
+name = "jobqueue-disk-almost-full"
+metric = "node_disk_free_bytes"
+match = { mount = "/var/lib/jobqueue" }
+op = "<"
+threshold = 5e9
+for = "10m"
+severity = "page"
+summary = "Less than 5 GB free for jobqueue's data"
+
+[[rule]]
+name = "api-5xx-rate"
+metric = "http_responses_5xx_rate"
+match = { service = "api" }
+op = ">"
+threshold = 0.02
+for = "5m"
+severity = "ticket"
+summary = "More than 2% of API responses are 5xx"
+
+[[rule]]
+name = "tls-cert-expiring"
+metric = "tls_cert_days_left"
+op = "<"
+threshold = 14
+for = "0s"
+severity = "ticket"
+summary = "A TLS certificate expires within two weeks"
+
+[[rule]]
+name = "queue-backlog"
+metric = "jobs_queue_depth"
+op = ">"
+threshold = 1000
+for = "5m"
+severity = "page"
+summary = "More than 1,000 jobs waiting in a queue for 5 minutes"

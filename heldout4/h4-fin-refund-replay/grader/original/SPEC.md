@@ -1,0 +1,10 @@
+# Refund event reducer
+`ledger.apply_batch(state, events)` returns a new state; neither input may be mutated, including on any error. Empty state is `{"seen":{},"captures":{},"refunds":{},"balances":{}}`. Only states previously returned by this function or that empty state are passed.
+
+Each event has exactly `merchant`, `id`, `sequence`, `kind`, `reference`, `cents`. merchant/id are nonempty strings WITHOUT `:`; sequence is a positive integer; cents a positive integer (bool not accepted); kind is capture, refund, or reverse. capture has reference null. refund references a capture's event ID in the SAME merchant; reverse references a refund's event ID there. Reject any malformed event with ValueError. Persist a copy of each unique event in seen under `merchant:id`.
+
+A batch is atomic. Validate and deduplicate all deliveries first, including already-seen IDs: an exact replay is ignored; a conflicting payload for the same merchant/id is ValueError. Sort new events by (sequence, merchant, id), not arrival order. Each merchant's new event sequences must strictly exceed all its persisted sequences and be unique within that merchant. Distinct merchants may reuse sequences and IDs. A reference must already exist when that event is processed; there is no authority to invent a missing capture.
+
+Capture: add cents to merchant balance; store captures[key] as {"cents":N,"refunded":0}.
+Refund: reference a capture, ensure cumulative ACTIVE refunded cents <= capture cents, subtract cents from merchant balance, increase capture.refunded; store refunds[key] as {"capture":capture_key,"cents":N,"reversed":False}.
+Reverse: reference one unreversed refund; cents must exactly match its original cents, then mark reversed True, decrease the capture.refunded and add cents to merchant balance. Never reverse twice. After reversal the released capacity can be refunded again. Output must use the state schema above without extra keys. Persist prior seen/capture/refund entries, including reversed refunds.

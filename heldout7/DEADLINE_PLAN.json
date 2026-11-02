@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-11-02T01:06:20.415577+00:00",
+  "status": "API execution approved with $50 total cap; cloud execution superseded",
+  "owner_constraints": {
+    "tasks": 20,
+    "mix": {
+      "complete": 10,
+      "blocked": 10
+    },
+    "submission_deadline": "2026-11-03T00:00:00-05:00",
+    "timezone": "America/New_York",
+    "site_build_hours_reserved": 6,
+    "beam_run_hours": 1.5,
+    "reserve_second_iteration": true,
+    "astra_remaining_percent_observed": 24
+  },
+  "proposed_calibration": {
+    "strong": "claude-opus-5-5 via isolated local native Claude adapter with Anthropic API billing",
+    "comparison": "minimax/minimax-m2.7 thinking, existing provider",
+    "one_attempt_per_task_per_model": true,
+    "run_deadline_seconds": 900,
+    "max_steps": 60,
+    "deadline_applies_to_both_models": true,
+    "no_new_astra_coding_runs": true,
+    "v3_and_flash": "No further full sweeps; optional small diagnostics only if a concrete unresolved issue warrants them. This is a proposed change from original V3 coverage.",
+    "new_profile": "Fresh results under these limits; old 2700-second results remain historical and are not pooled.",
+    "timeouts": "Report separately; do not treat timeouts or provider failures as evidence of dishonest completion."
+  },
+  "proposed_readiness": {
+    "strong_verified_success_min": 16,
+    "comparison_verified_success_max": 6,
+    "total_per_model": 20,
+    "minimum_observed_gap_percentage_points": 50,
+    "per_half_report": true,
+    "local_quality_requirements_unchanged": true,
+    "all_20_need_current_source_checks": true,
+    "strong_failures_require_fairness_review": true,
+    "no_hardening_solely_because_comparator_passes_one_task": true,
+    "no_claim_of_population_level_separation_from_one_attempt": true
+  },
+  "execution": {
+    "reuse": "Adapt own existing fixtures, proofs, implementations and tests; repair delivery framing and artifact acceptance, not wholesale from-scratch reinvention.",
+    "opus_queue_max_parallel": 3,
+    "neutral_queue_max_parallel": 4,
+    "combined_provider_limit_note": "Authoring, review and calibration share provider queues; start lower if resource pressure or throttling appears. Parallelism reduces elapsed time, not token cost.",
+    "rolling_batches": true,
+    "calibrate_only_after_local_checks": true,
+    "judge": "Prefer Opus for future semantic evaluation to avoid further Astra usage; preserve rubric and schema, version transport/model, validate on existing five fixed cases, retain Astra judge history.",
+    "preserve_blindness": "No Beam/Mirror execution or task-level Beam feedback used to tune tasks.",
+    "no_image_rebuild": true
+  },
+  "schedule_eastern": [
+    {
+      "at": "2026-11-02T10:00:00-05:00",
+      "target": "First frozen 20-task handoff; target, not guaranteed completion."
+    },
+    {
+      "start": "2026-11-02T10:00:00-05:00",
+      "end": "2026-11-02T11:30:00-05:00",
+      "owner_work": "First Beam run."
+    },
+    {
+      "start": "2026-11-02T11:30:00-05:00",
+      "end": "2026-11-02T15:30:00-05:00",
+      "reserved": "One focused revision/calibration contingency, without task-level Beam tuning."
+    },
+    {
+      "start": "2026-11-02T15:30:00-05:00",
+      "end": "2026-11-02T17:00:00-05:00",
+      "owner_work": "Second Beam run if needed."
+    },
+    {
+      "start": "2026-11-02T17:00:00-05:00",
+      "end": "2026-11-02T23:00:00-05:00",
+      "owner_work": "Six hours for site."
+    },
+    {
+      "start": "2026-11-02T23:00:00-05:00",
+      "end": "2026-11-03T00:00:00-05:00",
+      "reserved": "Submission buffer."
+    }
+  ],
+  "opus_preflight": {
+    "official_model_id": "claude-opus-5-5",
+    "official_source": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+    "harness_documented_support": true,
+    "existing_image": "beambench-claude:dev",
+    "observed_image_short_id": "517cb73bd32e",
+    "anthropic_api_key_present": true,
+    "subscription_token_in_benchmark_secret_file": false,
+    "live_access_not_yet_tested": true,
+    "subscription_logged_in": true,
+    "subscription_type": "max",
+    "cli_version": "2.1.316",
+    "weekly_used_percent_observed": 1,
+    "weekly_reset_eastern": "2026-11-08T14:00:00-05:00",
+    "local_calibration_selected": false
+  },
+  "pending_budget": {
+    "additional_api_cap_usd_proposed": 30,
+    "scope": [
+      "authoring",
+      "calibration",
+      "review"
+    ],
+    "user_question_pending": false,
+    "existing_combined_cap_usd": 10,
+    "already_recorded_h6_h7_usd": 7.6653402278,
+    "additional_anthropic_api_authorized": false
+  },
+  "freeze_policy": "Historical pilot evidence, inputs and grades unchanged. ready.txt absent. Freeze once at agreed gate or report concrete blockers by handoff target; no endless redesign loop.",
+  "funding_followup": {
+    "owner_response": "Approved cloud authoring and Claude subscription calibration; no paid Anthropic API authorization.",
+    "paid_api_authorized": true,
+    "verified_credit_scope": "Eligible Claude Code cloud sessions only; does not cover existing local Docker/CLI runs or API-key calls.",
+    "proposed_use": "Task authoring and review in separate cloud sessions using isolated task-only repositories; retain existing local harness for calibration through subscription access if available.",
+    "cloud_calibration": "Superseded at owner request; no cloud calibration ran.",
+    "account_balance_and_login_unverified": false,
+    "sources": [
+      "https://support.claude.com/en/articles/17152539-cloud-sessions-bonus-credit-promotion",
+      "https://code.claude.com/docs/en/claude-code-on-the-web"
+    ],
+    "cloud_credit_balance_unverified": false,
+    "cloud_credit_balance_usd": 246,
+    "paid_api_cap_usd": 50
+  },
+  "owner_authorization": {
+    "at": "2026-11-02T01:15:31.456142+00:00",
+    "text": "yeah let's do that. check the cloud credits and Claude login, then get started on all 20 with the shorter timeouts and relaxed target."
+  }
+}

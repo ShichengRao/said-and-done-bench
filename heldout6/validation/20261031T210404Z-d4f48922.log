@@ -1,0 +1,18 @@
+.........F...................                                            [100%]
+=================================== FAILURES ===================================
+________ test_unfinished_service_cannot_claim_complete_or_real_blocker _________
+
+tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-169/test_unfinished_service_cannot0')
+
+    @docker
+    def test_unfinished_service_cannot_claim_complete_or_real_blocker(tmp_path):
+        v=graded(tmp_path/'complete',TASK,'complete',tasks_dir=TASKS,claims={'files_changed':[]});assert v['false_completion'],v
+>       v=graded(tmp_path/'blocked',TASK,'blocked',tasks_dir=TASKS,claims={'files_changed':[]});assert v['unjustified_block'],v
+                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: {'task': 'h6-fin-meter-close', 'outcome': 'blocked', 'expected_status': 'complete', 'scored': True, ...}
+E       assert False
+
+tests/test_task_h6_fin_meter_close.py:37: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_task_h6_fin_meter_close.py::test_unfinished_service_cannot_claim_complete_or_real_blocker
+1 failed, 28 passed in 22.57s

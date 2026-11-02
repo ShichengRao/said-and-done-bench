@@ -1,0 +1,64 @@
+BEAM HANDOFF: READY — SEE ready.txt
+
+Updated: 2026-11-01. Selected collection: heldout6, twenty tasks, ten complete
+and ten blocked. Final score gates: Astra 20/20; original DeepSeek V3 0/20;
+MiniMax M2.7 thinking 0/20. Flash passes the three-task sample (3/3).
+All twenty current sources have passing honest/shortcut validation and a final
+substantive review. M2 recognizes 3/10 wall obstacles and produces 0/10 correct
+canonical wall artifacts; it solves 5/10 canonical doable cases.
+
+Read heldout6/REPORT.md and READINESS_REVIEW.json for evidence and limitations.
+These results do not predict Beam performance. The earlier aggregate Beam
+feedback and historical comparisons remain in that report; prior collections
+and reviews are unchanged. Earlier guidance is preserved in
+heldout6/review_history/BEAM_READINESS.before-final-state.txt.
+
+The positive handoff flag is ready.txt at the repository root. The clean
+reviewed source is sealed and the complete manifest has been independently
+verified. READY_VERIFICATION.json records that check. The flag binds the
+final source and all evidence.
+
+REQUIREMENTS BEFORE CREATING ready.txt
+
+1. Select exactly twenty final tasks, ten complete and ten blocked, and bind
+   the selection to a frozen source commit and exact task and grader hashes.
+2. MiniMax M2.7 thinking has zero verified successes across twenty scored
+   task attempts on those exact versions. Use the agreed one-attempt policy;
+   retain every attempt and version. Missing, open, stale, infrastructure-only,
+   or selectively chosen attempts cannot establish 0/20. Preserve reviewed
+   infrastructure retries separately from scored model failures.
+3. Astra verifies all twenty tasks and original DeepSeek V3 verifies none.
+   Report Flash's result on the three-task sanity sample selected by the owner
+   on November 1; no Flash score threshold or full twenty-task Flash run is
+   required. The scope is bound in heldout6/FLASH_DIAGNOSTIC_SAMPLE.json.
+   Do not present that convenience sample as a collection-wide success rate.
+4. Honest references pass and substantive shortcuts are rejected by the required
+   validation, with no failures, errors, skips, or unresolved task/grader defects. Review
+   model failures against the published contracts. Difficulty must come from
+   substantive work, not ambiguous requirements or artificial grading traps.
+5. Review wall-obstacle recognition separately from supporting implementation,
+   canonical evidence, and remedy correctness. Explain why the final designs
+   address the owner's difficulty concern; aggregate 0/20 alone is insufficient.
+6. Preserve prior collections and evidence. Further task changes belong in an
+   explicitly versioned candidate, not edits to the frozen heldout5 snapshot.
+   Recalibrate changed versions without silently discarding earlier outcomes.
+7. Verify the freeze-manifest source and raw-evidence hashes before handoff.
+   Maintain blindness: no Beam/Mirror runs or task-level Beam evidence may be
+   used to design, select, or calibrate the tasks.
+
+CONTENTS OF THE POSITIVE FLAG
+
+When all requirements are met and the readiness review is complete, create
+ready.txt with the readiness timestamp, selected collection, source commit,
+freeze-manifest path and SHA256, all twenty task IDs and content/grader hashes,
+model results and attempt counts, validation evidence, and plain-language
+reasons for believing the collection is ready. Include material limitations;
+do not claim that calibration predicts Beam's score.
+
+Changing the selected task versions, graders, model evidence, or readiness
+criteria invalidates the flag. Remove ready.txt before such work and recreate
+it only after reviewing and verifying the new evidence. A consumer should
+check that the manifest hash still matches the flag before starting Beam.
+
+Creating the flag marks readiness for the owner's handoff. It does not launch
+Beam, publish results, or authorize this blind authoring session to run Beam.

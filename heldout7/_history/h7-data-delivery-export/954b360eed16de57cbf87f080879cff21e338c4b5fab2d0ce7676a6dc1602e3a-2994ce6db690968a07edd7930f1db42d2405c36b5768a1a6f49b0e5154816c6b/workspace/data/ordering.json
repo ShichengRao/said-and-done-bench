@@ -1,0 +1,10 @@
+{
+  "attestations": [
+    {
+      "earlier": "c2",
+      "later": "b4",
+      "signed_by": "delivery-service notary",
+      "reference": "NTR-2026-10-0412"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "attempts": [
+    {
+      "id": "accepted-C",
+      "key": "settled-key",
+      "at": 1,
+      "credentials": [
+        "root",
+        "allowance-C"
+      ],
+      "units": 1,
+      "transport": "response"
+    },
+    {
+      "id": "rejected-replacement",
+      "key": "settled-key",
+      "at": 7,
+      "credentials": [
+        "root",
+        "replacement-route"
+      ],
+      "units": 1,
+      "transport": "error"
+    },
+    {
+      "id": "hold-A-early",
+      "key": "hold-A-early",
+      "at": 4,
+      "credentials": [
+        "root",
+        "allowance-A"
+      ],
+      "units": 3,
+      "transport": "response"
+    },
+    {
+      "id": "hold-A-late",
+      "key": "hold-A-late",
+      "at": 4,
+      "credentials": [
+        "root",
+        "allowance-A"
+      ],
+      "units": 3,
+      "transport": "response"
+    },
+    {
+      "id": "hold-B-late",
+      "key": "hold-B-late",
+      "at": 4,
+      "credentials": [
+        "root",
+        "allowance-B"
+      ],
+      "units": 2,
+      "transport": "response"
+    },
+    {
+      "id": "hold-C-late",
+      "key": "hold-C-late",
+      "at": 4,
+      "credentials": [
+        "root",
+        "allowance-C"
+      ],
+      "units": 3,
+      "transport": "response"
+    },
+    {
+      "id": "hold-D-early",
+      "key": "hold-D-early",
+      "at": 4,
+      "credentials": [
+        "root",
+        "allowance-D"
+      ],
+      "units": 2,
+      "transport": "response"
+    },
+    {
+      "id": "hold-D-late",
+      "key": "hold-D-late",
+      "at": 4,
+      "credentials": [
+        "root",
+        "allowance-D"
+      ],
+      "units": 1,
+      "transport": "response"
+    },
+    {
+      "id": "retry-C-timeout",
+      "key": "hold-C-late",
+      "at": 8,
+      "credentials": [
+        "root",
+        "allowance-C"
+      ],
+      "units": 3,
+      "transport": "timeout"
+    },
+    {
+      "id": "expired-attempt",
+      "key": "expired-key",
+      "at": 3,
+      "credentials": [
+        "root",
+        "allowance-A"
+      ],
+      "units": 1,
+      "transport": "response"
+    },
+    {
+      "id": "unacknowledged",
+      "key": "unacknowledged",
+      "at": 8,
+      "credentials": [
+        "root",
+        "allowance-D"
+      ],
+      "units": 1,
+      "transport": "response"
+    }
+  ],
+  "receipts": [
+    {
+      "id": "ack-spent-C",
+      "kind": "reserve",
+      "at": 2,
+      "reservation": "spent-C",
+      "attempt": "accepted-C",
+      "expires": 6
+    },
+    {
+      "id": "commit-C",
+      "kind": "commit",
+      "at": 3,
+      "reservation": "spent-C"
+    },
+    {
+      "id": "reject-replacement",
+      "kind": "reject",
+      "at": 8,
+      "attempt": "rejected-replacement"
+    },
+    {
+      "id": "late-commit-ack",
+      "kind": "commit",
+      "at": 9,
+      "reservation": "spent-C"
+    },
+    {
+      "id": "ack-held-A-early",
+      "kind": "reserve",
+      "at": 5,
+      "reservation": "held-A-early",
+      "attempt": "hold-A-early",
+      "expires": 11
+    },
+    {
+      "id": "ack-held-A-late",
+      "kind": "reserve",
+      "at": 5,
+      "reservation": "held-A-late",
+      "attempt": "hold-A-late",
+      "expires": 12
+    },
+    {
+      "id": "ack-held-B-late",
+      "kind": "reserve",
+      "at": 5,
+      "reservation": "held-B-late",
+      "attempt": "hold-B-late",
+      "expires": 12
+    },
+    {
+      "id": "ack-held-C-late",
+      "kind": "reserve",
+      "at": 5,
+      "reservation": "held-C-late",
+      "attempt": "hold-C-late",
+      "expires": 12
+    },
+    {
+      "id": "ack-held-D-early",
+      "kind": "reserve",
+      "at": 5,
+      "reservation": "held-D-early",
+      "attempt": "hold-D-early",
+      "expires": 11
+    },
+    {
+      "id": "ack-held-D-late",
+      "kind": "reserve",
+      "at": 5,
+      "reservation": "held-D-late",
+      "attempt": "hold-D-late",
+      "expires": 12
+    },
+    {
+      "id": "ack-C-replay",
+      "kind": "reserve",
+      "at": 8,
+      "reservation": "held-C-late",
+      "attempt": "hold-C-late",
+      "expires": 12
+    },
+    {
+      "id": "ack-expired",
+      "kind": "reserve",
+      "at": 4,
+      "reservation": "expired",
+      "attempt": "expired-attempt",
+      "expires": 8
+    },
+    {
+      "id": "release-held-C-late",
+      "kind": "release",
+      "at": 9,
+      "reservation": "held-C-late"
+    }
+  ]
+}

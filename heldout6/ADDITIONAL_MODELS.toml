@@ -1,0 +1,14 @@
+# Requested economical stronger diagnostic, pinned to the model author's endpoint.
+# Separate registry preserves the models.toml bytes sealed by Round 4 probes.
+[h6-minimax-m2-7-thinking]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "minimax/minimax-m2.7"
+max_tokens = 32768
+send_reasoning = true
+[h6-minimax-m2-7-thinking.params.reasoning]
+enabled = true
+exclude = false
+[h6-minimax-m2-7-thinking.params.provider]
+order = ["minimax"]
+allow_fallbacks = false

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-01T06:18:03.398962+00:00",
+  "scope": "User-authorized three-task Flash convenience sample; all twenty-task core scored gates unchanged.",
+  "source_sha256": {
+    "heldout6/_shared/freeze.py": "ed0959cffa5703784514ce323ed231db6287447bd799380c70ddbb5bd39a6fba",
+    "heldout6/_shared/test_freeze_gates.py": "e90d466a6a204549d96a3853120e616fa88e0b3489947dfa5427bc1bc3c8b32b",
+    "heldout6/FLASH_DIAGNOSTIC_SAMPLE.json": "38b09dd89aeff58170838c93b61fa08bdbdd6788d33b68b84fddc03bb48333d9"
+  },
+  "source_unchanged": true,
+  "validation": {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "heldout6/_shared/test_freeze_gates.py"
+    ],
+    "exit_code": 0,
+    "passed": 48,
+    "pytest_duration_seconds": 1.92,
+    "elapsed_seconds": 2.155,
+    "stdout": "................................................                         [100%]\n48 passed in 1.92s\n",
+    "stderr": "",
+    "separate_log_path": null,
+    "separate_xml_path": null
+  },
+  "regression_coverage": [
+    "Exact three authorized current task hashes and explicit authorization required.",
+    "Required sampled Flash attempts must be scored; passing and failing attempts are both retained.",
+    "Missing Flash outside the sample is allowed; existing attempts remain retained and stale scored graders are rejected.",
+    "Astra, DeepSeek V3.2 and MiniMax M2.7 still require current-input scored coverage for every task."
+  ],
+  "review_status": "Pending root diff review before commit.",
+  "preservation": {
+    "model_config_changed": false,
+    "runtime_or_budget_changed": false,
+    "task_inputs_changed": false,
+    "raw_inference_or_original_grade_changed": false,
+    "inference_performed": false,
+    "regrade_performed": false,
+    "broad_task_validation_performed": false
+  }
+}

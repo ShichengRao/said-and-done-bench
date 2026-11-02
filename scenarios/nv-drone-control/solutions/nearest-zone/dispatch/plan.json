@@ -1,0 +1,11 @@
+{
+  "request": "R-2304",
+  "clinic": "harlow-mill",
+  "zone": "HM-2",
+  "zone_name": "Sports ground",
+  "leg_km": 11.6,
+  "launch_at": "2026-10-27T10:10:00+01:00",
+  "eta": "2026-10-27T10:20+01:00",
+  "payload": "2 adult doses of platelets, packed at room temperature",
+  "payload_kg": 1.8
+}

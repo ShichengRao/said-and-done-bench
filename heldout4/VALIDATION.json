@@ -1,0 +1,32 @@
+[
+  {
+    "recorded_at": "2026-10-30T04:37:13.534962+00:00",
+    "command": "uv run pytest -q tests/test_task_h4*.py tests/test_tasks.py",
+    "source_commit": "c1b208d",
+    "passed": 266,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 236.02,
+    "scope": "All 20 version-1 candidates, grader regression and isolation tests, plus existing permitted task suite. Procurement is planned for a version-2 rerun; this result is retained as pre-revision evidence."
+  },
+  {
+    "recorded_at": "2026-10-30T04:57:24.937868+00:00",
+    "command": "uv run pytest -q tests/test_task_h4*.py tests/test_tasks.py",
+    "source_commit": "247861a",
+    "passed": 275,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 241.37,
+    "scope": "All20 candidates with procurement task revision2 and clarified operations goals. Procurement revision2 later disqualified by a recorded weak success; revision3 will require fresh validation."
+  },
+  {
+    "recorded_at": "2026-10-30T05:05:37.038609+00:00",
+    "command": "uv run pytest -q tests/test_task_h4*.py tests/test_tasks.py",
+    "source_commit": "9547fe4",
+    "passed": 279,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 250.71,
+    "scope": "All 20 final candidate sources, including procurement revision 3 and clarified operations wall goals, plus grader regressions, isolation tests, and existing permitted task suite."
+  }
+]

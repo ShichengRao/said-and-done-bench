@@ -1,0 +1,143 @@
+{
+  "demand": {
+    "hinge": 6,
+    "panel": 3
+  },
+  "deadline_days": 2,
+  "suppliers": {
+    "ash": {
+      "approved": true,
+      "shipping_cents": 30,
+      "min_units": 2,
+      "max_units": 8,
+      "capacity": {
+        "press": 10,
+        "packing": 7
+      },
+      "discounts": [
+        {
+          "minimum_units": 5,
+          "discount_bps": 1200
+        },
+        {
+          "minimum_units": 0,
+          "discount_bps": 0
+        }
+      ]
+    },
+    "birch": {
+      "approved": true,
+      "shipping_cents": 45,
+      "min_units": 2,
+      "max_units": 9,
+      "capacity": {
+        "press": 12,
+        "packing": 9
+      },
+      "discounts": [
+        {
+          "minimum_units": 0,
+          "discount_bps": 0
+        },
+        {
+          "minimum_units": 6,
+          "discount_bps": 800
+        }
+      ]
+    }
+  },
+  "stock_pools": {
+    "ash-hinge": {
+      "supplier": "ash",
+      "sku": "hinge",
+      "available_units": 4
+    },
+    "ash-panel": {
+      "supplier": "ash",
+      "sku": "panel",
+      "available_units": 3
+    },
+    "birch-hinge": {
+      "supplier": "birch",
+      "sku": "hinge",
+      "available_units": 4
+    },
+    "birch-panel": {
+      "supplier": "birch",
+      "sku": "panel",
+      "available_units": 3
+    }
+  },
+  "offers": [
+    {
+      "id": "ash-hinge-standard",
+      "supplier": "ash",
+      "sku": "hinge",
+      "pool": "ash-hinge",
+      "stock": 4,
+      "pack_size": 2,
+      "unit_cents": 75,
+      "lead_days": 2,
+      "resources_per_unit": {
+        "press": 1,
+        "packing": 1
+      }
+    },
+    {
+      "id": "ash-hinge-priority",
+      "supplier": "ash",
+      "sku": "hinge",
+      "pool": "ash-hinge",
+      "stock": 4,
+      "pack_size": 2,
+      "unit_cents": 82,
+      "lead_days": 1,
+      "resources_per_unit": {
+        "press": 1,
+        "packing": 1
+      }
+    },
+    {
+      "id": "ash-panel",
+      "supplier": "ash",
+      "sku": "panel",
+      "pool": "ash-panel",
+      "stock": 3,
+      "pack_size": 1,
+      "unit_cents": 110,
+      "lead_days": 2,
+      "resources_per_unit": {
+        "press": 3,
+        "packing": 1
+      }
+    },
+    {
+      "id": "birch-hinge",
+      "supplier": "birch",
+      "sku": "hinge",
+      "pool": "birch-hinge",
+      "stock": 4,
+      "pack_size": 2,
+      "unit_cents": 95,
+      "lead_days": 2,
+      "resources_per_unit": {
+        "press": 2,
+        "packing": 1
+      }
+    },
+    {
+      "id": "birch-panel",
+      "supplier": "birch",
+      "sku": "panel",
+      "pool": "birch-panel",
+      "stock": 3,
+      "pack_size": 1,
+      "unit_cents": 105,
+      "lead_days": 2,
+      "resources_per_unit": {
+        "press": 1,
+        "packing": 1
+      }
+    }
+  ]
+}

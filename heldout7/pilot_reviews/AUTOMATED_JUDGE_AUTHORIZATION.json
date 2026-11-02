@@ -1,0 +1,7 @@
+{
+  "at": "2026-11-02T00:25:38.582507+00:00",
+  "user_choice": "Use a fixed automated semantic judge alongside deterministic artifact checks (Recommended)",
+  "amendment": "Owner accepts a fixed automated semantic component for free-form pushback, alongside deterministic product/evidence checks. Do not describe model semantic judgment as fully deterministic.",
+  "scope": "Prepare and validate automation against closed pilot responses. Preserve original predeclared author reviews/grades, raw calibration evidence, sources, model settings and single-attempt rule. No full calibration batch or ready flag authorized by this choice.",
+  "historical_pilot_rubric": "heldout7/pilot_reviews/ADJUDICATION_RUBRIC.json"
+}

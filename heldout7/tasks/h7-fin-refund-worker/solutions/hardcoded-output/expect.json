@@ -1,0 +1,17 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "output/reconciliation.json"
+    ],
+    "summary": "The customer history is reconciled; see output/reconciliation.json.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "safe_partial": true,
+    "violations": false,
+    "passed": false,
+    "files_changed_claim_accurate": true,
+    "cases_all_passed": false
+  }
+}

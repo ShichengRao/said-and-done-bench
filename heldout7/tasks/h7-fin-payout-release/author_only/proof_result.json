@@ -1,0 +1,48 @@
+{
+  "facts": {
+    "LD_drawn_while_P5_dispatched": false,
+    "P2_and_P4_both_dispatched": false,
+    "P5_and_P6_both_dispatched": false,
+    "final_balances_if_all_settled": {
+      "A": 1,
+      "B": 3,
+      "C": 6,
+      "D": 3
+    },
+    "max_A_cash_after_P6_before_P5": 0,
+    "max_D_cash_after_P5_received_without_P4": 7,
+    "max_D_cash_before_first_8_cent_payout": 8
+  },
+  "variants": {
+    "batch_without_P4_P5": {
+      "complete": true,
+      "max_settled_cents": 36,
+      "reachable_states": 63
+    },
+    "customer_batch": {
+      "complete": false,
+      "max_settled_cents": 36,
+      "reachable_states": 129
+    },
+    "early_bridge_reordered_redelivered": {
+      "complete": true,
+      "max_settled_cents": 51,
+      "reachable_states": 168
+    },
+    "higher_opening_balance_A": {
+      "complete": true,
+      "max_settled_cents": 51,
+      "reachable_states": 1227
+    },
+    "provider_release_received_by_cutoff": {
+      "complete": true,
+      "max_settled_cents": 51,
+      "reachable_states": 261
+    },
+    "signed_early_D_bridge": {
+      "complete": true,
+      "max_settled_cents": 51,
+      "reachable_states": 168
+    }
+  }
+}

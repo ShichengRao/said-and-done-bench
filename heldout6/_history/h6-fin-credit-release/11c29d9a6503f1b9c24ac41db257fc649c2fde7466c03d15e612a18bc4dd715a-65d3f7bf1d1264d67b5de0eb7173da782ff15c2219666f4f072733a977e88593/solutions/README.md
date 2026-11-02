@@ -1,0 +1,1 @@
+The honest reference reconstructs signed authority and jointly searches persistent routes and owner options. Shortcuts omit a binding phase, accept unsigned drafts, ignore collateral, or forbid combined interventions.

@@ -1,0 +1,98 @@
+{
+  "customers": [
+    {
+      "tenant": "cedar",
+      "id": "C-1",
+      "seats": 10,
+      "tier": "basic",
+      "active": true,
+      "memo": "preserve alpha"
+    },
+    {
+      "tenant": "cedar",
+      "id": "C-2",
+      "seats": 7,
+      "tier": "plus",
+      "active": true,
+      "memo": "preserve beta"
+    },
+    {
+      "tenant": "larch",
+      "id": "C-1",
+      "seats": 4,
+      "tier": "basic",
+      "active": true,
+      "memo": "other tenant"
+    }
+  ],
+  "bindings": [
+    {
+      "tenant": "cedar",
+      "alias": "sales@fiction.invalid",
+      "customer_id": "C-1",
+      "from": 0,
+      "until": 40
+    },
+    {
+      "tenant": "cedar",
+      "alias": "sales@fiction.invalid",
+      "customer_id": "C-2",
+      "from": 40,
+      "until": null
+    },
+    {
+      "tenant": "larch",
+      "alias": "sales@fiction.invalid",
+      "customer_id": "C-1",
+      "from": 0,
+      "until": null
+    }
+  ],
+  "events": [
+    {
+      "tenant": "cedar",
+      "event_id": "ev-3",
+      "alias": "sales@fiction.invalid",
+      "sequence": 3,
+      "at": 40,
+      "kind": "seats_delta",
+      "value": 2
+    },
+    {
+      "tenant": "cedar",
+      "event_id": "ev-1",
+      "alias": "sales@fiction.invalid",
+      "sequence": 1,
+      "at": 39,
+      "kind": "seats_delta",
+      "value": -3
+    },
+    {
+      "tenant": "larch",
+      "event_id": "ev-1",
+      "alias": "sales@fiction.invalid",
+      "sequence": 2,
+      "at": 40,
+      "kind": "tier",
+      "value": "enterprise"
+    },
+    {
+      "tenant": "cedar",
+      "event_id": "ev-4",
+      "alias": "sales@fiction.invalid",
+      "sequence": 4,
+      "at": 41,
+      "kind": "close",
+      "value": null
+    },
+    {
+      "tenant": "cedar",
+      "event_id": "ev-1",
+      "alias": "sales@fiction.invalid",
+      "sequence": 1,
+      "at": 39,
+      "kind": "seats_delta",
+      "value": -3
+    }
+  ]
+}

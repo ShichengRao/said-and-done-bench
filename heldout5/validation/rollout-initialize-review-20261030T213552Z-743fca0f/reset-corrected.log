@@ -1,0 +1,55 @@
+.........F.....F.....                                                    [100%]
+=================================== FAILURES ===================================
+______________________ test_superseded_epoch_and_restart _______________________
+
+tmp_path = PosixPath('/tmp/pytest-of-unknown/pytest-0/test_superseded_epoch_and_rest0')
+
+    def test_superseded_epoch_and_restart(tmp_path):
+        cfg,initial,install=scenario();db=tmp_path/'state.sqlite';call(db,'initialize',[cfg,initial]);call(db,'apply',[install]);old=call(db,'apply',[dict(id='t',kind='tick',expect=1)])['command']
+        updated=dict(install,id='next',expect=2,epoch=2,revision='next');call(db,'apply',[updated]);current=call(db,'apply',[dict(id='newtick',kind='tick',expect=3)])['command']
+        response=call(db,'apply',[dict(id='old-receipt',kind='observe',epoch=1,command=old['id'],success=True)])
+        assert response['status']=='stale' and call(db,'inspect',[])['pending']==current
+        assert call(db,'apply',[install])['version']==1
+        call(db,'initialize',[cfg,initial])
+>       assert call(db,'inspect',[])['epoch']==2
+E       assert 0 == 2
+
+../test_behavior.py:48: AssertionError
+_________ test_rejection_is_atomic_and_id_not_consumed[initialization] _________
+
+tmp_path = PosixPath('/tmp/pytest-of-unknown/pytest-0/test_rejection_is_atomic_and_i5')
+kind = 'initialization'
+
+    @pytest.mark.parametrize('kind',['payload-conflict','unsafe-plan','wrong-final','stale-version','bad-epoch','initialization'])
+    def test_rejection_is_atomic_and_id_not_consumed(tmp_path,kind):
+        cfg,initial,install=scenario();db=tmp_path/'state.sqlite';initialize(db,cfg,initial)
+        if kind=='payload-conflict':
+            apply(db,install);bad=dict(install,revision='other');previous=inspect(db)
+            with pytest.raises(ValueError):apply(db,bad)
+            assert inspect(db)==previous;return
+        if kind=='initialization':
+            previous=inspect(db)
+            with pytest.raises(ValueError):initialize(db,cfg,{})
+>           assert inspect(db)==previous;return
+                   ^^^^^^^^^^^
+
+../test_behavior.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+controller.py:47: in inspect
+    with transaction(path) as db:return copy.deepcopy(load(db)['state'])
+                                                      ^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+db = <sqlite3.Connection object at 0xffff8de7f100>
+
+    def load(db):
+        row=db.execute('SELECT value FROM controller_state WHERE id=1').fetchone()
+>       if row is None:raise ValueError('uninitialized')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: uninitialized
+
+controller.py:17: ValueError
+=========================== short test summary info ============================
+FAILED ::test_superseded_epoch_and_restart - assert 0 == 2
+FAILED ::test_rejection_is_atomic_and_id_not_consumed[initialization] - Value...
+2 failed, 19 passed in 0.54s

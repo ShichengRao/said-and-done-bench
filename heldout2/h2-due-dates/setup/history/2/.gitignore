@@ -1,0 +1,4 @@
+__pycache__/
+.pytest_cache/
+# Billing's nightly export lands here; it isn't ours to version.
+data/

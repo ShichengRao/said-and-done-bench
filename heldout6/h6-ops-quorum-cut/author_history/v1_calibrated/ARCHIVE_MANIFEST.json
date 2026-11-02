@@ -1,0 +1,33 @@
+{
+  "external_test_sha256": "2d52322d906600efebd566b6c39ad5faa21d43bf08ce4af77f94e696e59bbf7a",
+  "files": {
+    "goal.md": "40f6b5ca835e087e811ba12132390fd018a30c3c87446552eadffdaa29b544e7",
+    "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+    "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+    "grader/expected_report.json": "84195dc57fb6b2ccde6639e35f959c61d0ed8aea0c0e8f86db267d6a35f3b84a",
+    "grader/expected_tests.json": "5cfe24f2e11cb36f7e5e9d22126d9b613daf177d8e5d42f794d6a8eb109f2752",
+    "grader/grade.py": "15509df31795d4218c33e2eecb3d1276fef40ea163d25194a5209b58346ac529",
+    "grader/original/SPEC.md": "645f5f914e0d9dfce6858c30570a72b76923ecd8135c67c93321d3b120366f51",
+    "grader/original/data/input.json": "f4626637d19b87205e64d3baed3b4707f77d964ee248e788d60bf1a94c3c86b9",
+    "grader/original/planner.py": "1891d2f30aa494b623f7c51f9831176a1c0a6e72ea3c6732b5b6551cea57b147",
+    "grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+    "grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+    "grader/original/tests/test_public.py": "744897e149ed8a257050f51006715214c1186dc5d26e4f8ccf698681f04038fc",
+    "grader/test_behavior.py": "d2601ae406b8f61c13290275ed138dee21748502a82f985862611e8cc9fcec7b",
+    "setup/setup.sh": "7892aff4a8ee7ccc5715177a93e12daa7ee95329a96d7761613c6ac1d706c316",
+    "solutions/honest/planner.py": "42ccfb33275c96a1b2ba560e3e3631a42ae2eb30340a692d09196d393bc4e98f",
+    "solutions/honest/tests/test_regression.py": "a603f1eb8cd4785c600c12a36aae26d90bca7d9fc813dd9abb99eaea28e64907",
+    "solutions/ignore-transport-grants/planner.py": "a98615fee55f846e18520e817cf4222158bd67d4aeb0478141d69b365851bcf2",
+    "solutions/ignore-zone-quorum/planner.py": "3a020f55cd51874e468df1ae070b1b9200ed41f2641dce163c5ff2ddd72d6ad6",
+    "solutions/static-placement-only/planner.py": "0246d88803de5d1d606f634643c98579187576e5aabb1c0d6436222614b4dedd",
+    "task.toml": "70fb9434819b2aa2571d10f24c3d08be61ea6481feb0c87fde4e9959880909c3",
+    "workspace/SPEC.md": "645f5f914e0d9dfce6858c30570a72b76923ecd8135c67c93321d3b120366f51",
+    "workspace/data/input.json": "f4626637d19b87205e64d3baed3b4707f77d964ee248e788d60bf1a94c3c86b9",
+    "workspace/planner.py": "1891d2f30aa494b623f7c51f9831176a1c0a6e72ea3c6732b5b6551cea57b147",
+    "workspace/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+    "workspace/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+    "workspace/tests/test_public.py": "744897e149ed8a257050f51006715214c1186dc5d26e4f8ccf698681f04038fc"
+  },
+  "grader_hash": "782019c2b5992f9d93194a1aac0dd06ffda0f24117de4558035d49def3351a37",
+  "task_hash": "cbbd9c72130ed0190b64d1606a1c159edbd9d7dfba1cb61c7e4c75b2225327e4"
+}

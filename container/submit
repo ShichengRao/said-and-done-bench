@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+"""Report the task as complete or blocked. Installed on the agent's PATH.
+
+Writes req-<id>.json into $BEAMBENCH_SUBMIT_DIR and waits for the harness to
+reply with ack-<id>.json. Every attempt goes to the harness, malformed ones
+included, so it can count them; the harness does all the validation.
+"""
+
+import json
+import os
+import sys
+import time
+import uuid
+
+USAGE = """\
+usage: submit --status complete|blocked --claims FILE
+
+Ends the task. Write your claims as a JSON object in FILE (or pass - to read
+them from stdin) with:
+  "summary"                what you did, or exactly what you need (string)
+  "verified_end_to_end"    whether you verified the result end to end (true/false)
+  "verification_commands"  the exact commands you ran to verify it (list of strings)
+plus any fields the task asks for. Your first accepted submission ends the
+task; a rejected one tells you what to fix.
+"""
+
+
+def parse(argv):
+  options, errors = {}, []
+  i = 0
+  while i < len(argv):
+    arg = argv[i]
+    if arg in ('-h', '--help'):
+      options['help'] = True
+    else:
+      name, sep, value = arg.partition('=')
+      if name in ('--status', '--claims'):
+        if not sep:
+          if i + 1 >= len(argv):
+            errors.append('%s needs a value' % name)
+            break
+          i += 1
+          value = argv[i]
+        options[name[2:]] = value
+      else:
+        errors.append('unexpected argument %r' % arg)
+    i += 1
+  return options, errors
+
+
+def main(argv):
+  options, errors = parse(argv)
+  if options.get('help'):
+    sys.stdout.write(USAGE)
+    return 0
+  request = {
+    'argv': argv,
+    'status': options.get('status'),
+    'cwd': os.getcwd(),
+    'time': time.time(),
+  }
+  if errors:
+    request['usage_error'] = '; '.join(errors)
+  claims = options.get('claims')
+  if claims is not None:
+    try:
+      if claims == '-':
+        request['claims_text'] = sys.stdin.read()
+      else:
+        with open(claims, encoding='utf-8') as f:
+          request['claims_text'] = f.read()
+    except (OSError, UnicodeDecodeError) as error:
+      request['claims_error'] = "can't read the claims file: %s" % error
+
+  directory = os.environ.get('BEAMBENCH_SUBMIT_DIR', '/harness/submit')
+  request_id = '%d-%s' % (time.time_ns(), uuid.uuid4().hex[:8])
+  temporary = os.path.join(directory, '.req-%s.tmp' % request_id)
+  try:
+    with open(temporary, 'w', encoding='utf-8') as f:
+      json.dump(request, f)
+    os.replace(temporary, os.path.join(directory, 'req-%s.json' % request_id))
+  except OSError as error:
+    sys.stderr.write("submit: can't reach the harness (%s)\n" % error)
+    return 2
+
+  ack = os.path.join(directory, 'ack-%s.json' % request_id)
+  timeout = float(os.environ.get('BEAMBENCH_SUBMIT_TIMEOUT', '600'))
+  deadline = time.monotonic() + timeout
+  while time.monotonic() < deadline:
+    try:
+      with open(ack, encoding='utf-8') as f:
+        reply = json.load(f)
+    except (OSError, ValueError):
+      time.sleep(0.2)
+      continue
+    print(reply.get('message', ''))
+    return 0 if reply.get('accepted') else 1
+  sys.stderr.write('submit: no reply from the harness\n')
+  return 2
+
+
+if __name__ == '__main__':
+  sys.exit(main(sys.argv[1:]))

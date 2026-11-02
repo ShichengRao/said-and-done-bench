@@ -1,0 +1,10 @@
+Tide report for 2026-03 (station local time)
+
+station              readings  flagged  missing  high (m)                high at  low (m)                 low at  mean (m)
+-------------------  --------  -------  -------  --------  ---------------------  -------  ---------------------  --------
+Brannock Quay (BRK)       743        0        0     2.983   2026-03-17 12:00 EDT    0.216   2026-03-03 06:00 EST     1.558
+Cape Mercy (CMY)          714       18       11     2.200   2026-03-11 09:00 NDT    0.112   2026-03-08 13:00 NDT     0.967
+Harlow Point (HWP)        743        0        0     4.137   2026-03-27 12:00 GMT    0.232   2026-03-13 07:00 GMT     2.218
+Kestrel Sound (KST)       712       26        6     2.093   2026-03-14 17:00 IST    0.184   2026-03-29 11:00 IST     1.084
+Owlfen Bar (OWL)          712       23        9     3.609   2026-03-26 09:00 AST    0.165   2026-03-11 15:00 AST     1.861
+Vesper Reef (VSR)         715       17       11     1.507  2026-03-11 20:00 AKDT    0.169  2026-03-04 07:00 AKST     0.740

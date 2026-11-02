@@ -1,0 +1,15 @@
+# Diversion policy for the NV-320 (Operations Manual part A, 8.1.2), approved by Flight Operations.
+# Changes go through Flight Operations; don't edit this file.
+
+[aircraft]
+type = "NV-320"
+landing_distance_required_m = 1900  # wet runway, maximum landing weight
+
+[fuel]
+final_reserve_min = 30              # must still be in the tanks on landing
+holding_burn_kg_per_h = 2000
+approach_and_landing_kg = 200
+
+[weather]
+# A diversion airport must have weather at or above the published minima (ceiling and visibility) of an
+# approach that is serviceable, to a runway that is open and long enough.

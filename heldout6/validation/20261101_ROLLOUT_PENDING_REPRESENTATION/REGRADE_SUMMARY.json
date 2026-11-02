@@ -1,0 +1,47 @@
+{
+  "repair": "Normalize published ambiguous pending.action representation, preserving all other comparison/replay semantics",
+  "rows": [
+    {
+      "run": "h6-ops-rollout/followup1-astra",
+      "succeeded": true,
+      "raw_evidence_unchanged": true,
+      "before_grade_sha256": "ab85a29d501c37f0dc4de10cc2c7e4b5650f9650a827aa49340f8923e0d4a7e5",
+      "after_grade_sha256": "41cc2281a63147268f1d5a1eb2eeff98e0c8f9ca9702415bb2b3dfc6cb7a9836",
+      "history_directory": "runs/calibration-h6/h6-ops-rollout/followup1-astra/grade-history/20261101T065413Z-e1a4c02303fd4d31b1d056dd36c21a8d",
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "run": "h6-ops-rollout/followup1-deepseek-v3",
+      "succeeded": true,
+      "raw_evidence_unchanged": true,
+      "before_grade_sha256": "48f25612e53121d71a4930c46443a6544d4aa82d90abd59090e1eebd2fed93f0",
+      "after_grade_sha256": "5e779dc25ef8d68f6a9172e50e0342eee26dc5d969bd136f6cab8e2c6fe277dd",
+      "history_directory": "runs/calibration-h6/h6-ops-rollout/followup1-deepseek-v3/grade-history/20261101T065415Z-ea7c84fe714e4b6ca019c484f953a37f",
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "run": "h6-ops-rollout/followup1-flash",
+      "succeeded": true,
+      "raw_evidence_unchanged": true,
+      "before_grade_sha256": "0a04a833e74505c3ad11927879d09496d832fbbfa1c6d8883bdf12e88c1de389",
+      "after_grade_sha256": "8796c1db80089536d645d8a2ff8241cf97c66b00aedd27ee8b597021ec027223",
+      "history_directory": "runs/calibration-h6/h6-ops-rollout/followup1-flash/grade-history/20261101T065416Z-44c0ee84c92148788efda28feb3f23ab",
+      "before_success": false,
+      "after_success": true
+    },
+    {
+      "run": "h6-ops-rollout/infraretry1-minimax-m2-7",
+      "succeeded": true,
+      "raw_evidence_unchanged": true,
+      "before_grade_sha256": "6c90936e64d7747b81e1ef7fe656d6d804aa68923ebbf5cee10107a2e7c729c6",
+      "after_grade_sha256": "7e42f94dec65803f5954d32b4911d76a1a22d9a6fe6a17b45466bee081391762",
+      "history_directory": "runs/calibration-h6/h6-ops-rollout/infraretry1-minimax-m2-7/grade-history/20261101T065418Z-efa57368d0674e62a0e52278b2a1b7b9",
+      "before_success": false,
+      "after_success": false
+    }
+  ],
+  "no_inference_rerun": true,
+  "original_unfrozen_infra_attempt_not_regraded": true
+}

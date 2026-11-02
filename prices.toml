@@ -1,0 +1,91 @@
+# API list prices in USD per 1M tokens, for the cost report (beambench/costs.py).
+#
+# A run's cost is what its API billed when the run reports it (Claude Code on
+# an API key, OpenRouter); otherwise its tokens at these prices, marked as an
+# estimate. Checked Oct 22, 2026 against third-party pages citing the official
+# price lists (Anthropic's and OpenAI's pages weren't reachable); confirm
+# before publishing. Keys are the model ids runs record.
+
+[models."claude-opus-5-5"]
+input = 4.00
+cached_input = 0.20  # Cache reads.
+cache_write = 5.00  # 5-minute cache writes.
+output = 20.00  # Includes thinking.
+
+# Codex runs on the ChatGPT plan; this is what the same tokens cost on the API.
+[models."gpt-6.1-sol"]
+input = 2.00
+cached_input = 0.10
+output = 10.00
+
+# Reflection's beta API is free; priced at the paid host the plan pinned for
+# Beam (Nebius FP8 via OpenRouter) as its market rate.
+[models."Beam-1.0-501B-A23B"]
+input = 0.25
+cached_input = 0.05
+output = 1.00
+
+[models."zai-org/GLM-5.2:deepinfra"]
+input = 0.75
+# The router lists no cached-input price, but about 95% of GLM's input is cached and Hugging Face's
+# bill (Oct 25: $1.96 for its first 15 runs) matches cached input at about $0.10/M, not $0.75.
+# Check against the final bill.
+cached_input = 0.10
+output = 2.40
+
+[models."deepseek/deepseek-v4.1-flash"]
+input = 0.14
+cached_input = 0.004
+output = 0.42
+
+[models."nvidia/nemotron-3-ultra-550b-a55b"]  # Paid, DeepInfra FP4 (OpenRouter reports the billed cost).
+input = 0.50
+cached_input = 0.10
+output = 2.20
+
+[models."thinkingmachines/inkling"]  # Paid, on Together (OpenRouter reports the billed cost).
+input = 1.00
+cached_input = 0.17
+output = 4.05
+
+[models."deepseek/deepseek-chat"]  # DeepSeek V3 (Dec 2024), the re-calibration's negative control, on StreamLake.
+input = 0.26
+output = 1.03
+
+[models."google/gemini-4-argon"]  # Vertex, global endpoint (OpenRouter reports the billed cost).
+input = 2.00
+cached_input = 0.10
+output = 10.00
+
+[models."qwen/qwen3-coder"]  # The re-calibration's mid-strength reference, on Venice FP8.
+input = 0.35
+output = 1.50
+
+[models."qwen/qwen3.8-max-0902"]  # Alibaba (OpenRouter reports the billed cost).
+input = 2.00
+cached_input = 0.25
+output = 6.00
+
+[models."qwen/qwen3.8-2.4t-a95b"]  # Open weights, on Alibaba (OpenRouter reports the billed cost).
+input = 2.00
+cached_input = 0.25
+output = 6.00
+
+[models."moonshotai/kimi-k3"]  # Moonshot's own endpoint, MXFP4 (OpenRouter reports the billed cost).
+input = 3.00
+cached_input = 0.30
+output = 15.00
+
+[models."mistralai/mistral-large-4-0"]  # Mistral's own endpoint (OpenRouter reports the billed cost).
+input = 1.36
+cached_input = 0.14
+output = 4.18
+
+# GPT-6 Astra ran on the ChatGPT plan, as the tasks' positive control (an anchor,
+# not in the matrix); this is what the same tokens cost on the API. Standard
+# tier; long-context requests over 272K input tokens would cost more, but
+# none of these runs came close.
+[models."gpt-6-astra"]
+input = 10.00
+cached_input = 1.00
+output = 50.00

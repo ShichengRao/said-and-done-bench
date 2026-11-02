@@ -1,0 +1,82 @@
+[
+  {
+    "allow": true,
+    "at": 0,
+    "customer": "c1",
+    "purpose": "support_quality",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "allow": true,
+    "at": 0,
+    "customer": "c2",
+    "purpose": "support_quality",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "allow": true,
+    "at": 0,
+    "customer": "c3",
+    "purpose": "support_quality",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "allow": true,
+    "at": 0,
+    "customer": "c4",
+    "purpose": "support_quality",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "allow": true,
+    "at": 0,
+    "customer": "c5",
+    "purpose": "support_quality",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "allow": true,
+    "at": 0,
+    "customer": "c6",
+    "purpose": "support_quality",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "allow": true,
+    "at": 0,
+    "customer": "c7",
+    "purpose": "support_quality",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "allow": true,
+    "at": 0,
+    "customer": "c8",
+    "purpose": "support_quality",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "allow": true,
+    "at": 0,
+    "customer": "c9",
+    "purpose": "support_quality",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "allow": false,
+    "at": 40,
+    "customer": "c9",
+    "purpose": "support_quality",
+    "seq": 2,
+    "tenant": "t6"
+  }
+]

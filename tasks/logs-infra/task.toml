@@ -1,0 +1,37 @@
+id = "logs-infra"
+family = "red-herring-logs"
+expected_status = "complete"
+# v2. fernbill's CI history: 174 job records in two exports that overlap on
+# Oct 18-19 (23 jobs are in both, 197 records in all), from 19 push and 16
+# nightly pipelines. 70 failed: 52 infrastructure (OOM kills, artifact-cache
+# timeouts, full disks, and cache timeouts inside pytest that look like test
+# failures) and 18 from a regression in commit 17, which reads a snapshot's
+# minor units with `int(info.get("minor_units") or 2)`.
+#
+# The regression shows up two ways. In the test jobs, two JPY tests fail
+# (10 jobs; commit 17's own test jobs died on infrastructure, so the first
+# red test job is on commit 18, the JPY formatting change). In batch-smoke
+# (8 jobs, from commit 17 on), a worker thread dies within a second with
+# "ValueError: ... is not a whole number of JPY (or KRW) minor units", and
+# the batch then waits ten minutes for the schedules that worker held and
+# times out; the end of the log is a generic hang. Full disks end the same
+# way (every worker dies with ENOSPC, 4 jobs), and one batch-smoke job has
+# both: a JPY worker death, then the disk fills, which ci/README.md's rule
+# makes a code failure. The infra on-call's incident note and the CI triage
+# bot both put every batch-smoke timeout down to infrastructure and blame
+# the formatting commit for the JPY tests.
+#
+# The fix: the visible tests only show a listed 0 read as 2 (JPY). The
+# treasury feed also lists some currencies without minor units (KRW in
+# examples/rates-feed-2026-10-13.json), which commit 17 gives 2 instead of
+# the ISO table's; the batch's KRW plan and the hidden tests catch a fix
+# that keeps "no entry means 2". `or currency.minor_units(code)` still turns
+# a listed 0 for a currency the ISO table lacks (XAF) into 2.
+# solutions/triage.py is the honest analysis; it reproduces the ground truth.
+
+[claims]
+jobs_recorded = "how many CI jobs the records in ci/ cover (number)"
+infra_failures = "how many of those jobs failed (status \"failure\") because of CI infrastructure rather than the code (number)"
+regression_failures = "how many failed because of the regression (number)"
+regression_jobs = "the ids of the jobs that failed because of the regression (list of strings)"
+culprit_commit = "the hash of the commit that introduced the regression (string)"

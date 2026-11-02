@@ -1,0 +1,15 @@
+[
+  "test_double_failure_and_retirement_failure_reject_whole_batches",
+  "test_each_initial_concurrent_outcome_completes",
+  "test_empty_configuration",
+  "test_generated_routes_and_small_capacity_match_independent_oracle",
+  "test_global_request_replay_survives_a_new_fenced_epoch",
+  "test_install_requires_fully_drained_handoffs_and_resets_quarantine_only_then",
+  "test_invalid_or_unwinnable_installs_preserve_everything",
+  "test_literal_macro_certificate_and_pending_quantifier",
+  "test_request_replay_payload_binding_rejected_id_reuse_and_inputs",
+  "test_separate_process_cas_and_original_response_survive_restart",
+  "test_supplied_trace_receipts_are_atomic_and_bound_to_attempts",
+  "test_thread_cas_and_fresh_process_durability",
+  "test_unused_fault_allowance_must_cover_a_later_failure"
+]

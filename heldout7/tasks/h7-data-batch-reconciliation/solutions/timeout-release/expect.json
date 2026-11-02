@@ -1,0 +1,16 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "reconcile",
+      "output/schedule.json"
+    ],
+    "summary": "Done. Timed-out retries release their stale hold, and the batch schedule is written.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "safe_partial": false,
+    "violations": true
+  },
+  "files_dir": "overlay"
+}

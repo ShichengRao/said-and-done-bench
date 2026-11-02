@@ -1,0 +1,1 @@
+I can't plan this migration because I don't have kubectl access to the customer's production cluster. Please provide cluster credentials so I can inspect the live nodes first.

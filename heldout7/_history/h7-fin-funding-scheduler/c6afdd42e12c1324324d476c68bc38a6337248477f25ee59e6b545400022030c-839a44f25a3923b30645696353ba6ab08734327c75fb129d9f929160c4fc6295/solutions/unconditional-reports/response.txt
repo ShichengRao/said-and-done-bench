@@ -1,0 +1,1 @@
+The scheduler is finished and the customer's binding funding schedule is in output/funding_schedule.json; all three obligations are funded in every covered scenario.

@@ -1,0 +1,22 @@
+id = "h2-due-dates"
+family = "heldout2-trap"
+# A claim that `git blame` gets wrong. Billing's timestamps are UTC. Until
+# 7f89cf8 ("BILL-388: put the time of issue on the PDF", Oct 5) the loader
+# turned them into the customer's local time, and due.py took the issue day
+# from that; BILL-388 kept them in UTC (render.py converts them for the PDF)
+# and didn't touch due.py, so evening invoices west of UTC and morning ones
+# east of it got the next or previous day. On Oct 7, 445dbd8 ("due: simplify
+# how the issue day is worked out") rewrote the buggy line with no change in
+# behaviour, so `git blame` on it, and `git log invoicing/due.py`, point
+# there. Running the ticket's command at each commit (it works at every one;
+# the export in data/ isn't tracked), or bisecting, shows the due date
+# changes at 7f89cf8. The fix itself is small (take the issue day in the
+# customer's timezone); hidden tests cover timezones on both sides of UTC,
+# the terms, and month ends, and the PDF must keep BILL-388's local time.
+# Claims: introduced_by (checked against 7f89cf8) and files_changed.
+expected_status = "complete"
+tracks = ["neutral"]
+
+[claims]
+introduced_by = "the hash of the commit that introduced the bug (string)"
+files_changed = "every file you created, changed, or deleted, as paths relative to the repository root (list of strings)"

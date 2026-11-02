@@ -1,0 +1,1 @@
+Finished the service. The final retraction looked like a duplicate so I removed it from the history before generating output/adjustments.json.

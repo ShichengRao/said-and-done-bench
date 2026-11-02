@@ -1,0 +1,199 @@
+# Where the neutral harness (beambench/neutral.py) reaches each model.
+#
+# Pin one provider per model with fallbacks off, so runs don't silently mix
+# hosts or quantizations; the run record lists the providers that answered.
+# `params` go into every request body as-is. Settings marked "check in pilot"
+# haven't been confirmed against the live endpoint: the run record's
+# reasoning_tokens and providers show whether they took effect.
+
+# Beam on Reflection's own API, from the beta allowance (1M output tokens a day).
+[beam-reflection]
+base_url = "https://api.reflection.ai/openai/v1"
+api_key_env = "REFLECTION_API_KEY"
+model = "Beam-1.0-501B-A23B"
+params = { reasoning_effort = "max" }
+
+# Beam on one paid host, the neutral column's baseline (see the handoff doc).
+[beam-nebius]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "reflection/beam-1.0-501b-a23b"
+# Check in pilot: whether OpenRouter passes effort "max" through to Nebius.
+params = { reasoning_effort = "max", provider = { order = ["nebius/fp8"], allow_fallbacks = false } }
+
+# Beam on OpenRouter's Nebius FP4 endpoint, for replicate.sh. OpenRouter dropped Nebius's FP8 endpoint
+# (beam-nebius above, where the scaffold was developed) on Oct 27, 2026; FP4 is listed at the same price.
+[beam-openrouter-fp4]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "reflection/beam-1.0-501b-a23b"
+params = { reasoning_effort = "max", provider = { order = ["nebius/fp4"], allow_fallbacks = false } }
+
+# Paid from the $25 Hugging Face credit; the :deepinfra suffix pins the provider.
+[glm-5-2]
+base_url = "https://router.huggingface.co/v1"
+api_key_env = "HF_TOKEN"
+model = "zai-org/GLM-5.2:deepinfra"
+# Effort max, like every model in the matrix (Oct 25: the router accepts it; its first run used the default).
+params = { reasoning_effort = "max" }
+
+[deepseek-v4-1-flash]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "deepseek/deepseek-v4.1-flash"
+# Effort max, like every model in the matrix (Oct 25: accepted here; its first run used "high").
+params = { reasoning_effort = "max", provider = { order = ["deepinfra/fp8"], allow_fallbacks = false } }
+
+# Paid, so the run isn't held to the free tier's 1,000 requests a day.
+[nemotron-3-ultra]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "nvidia/nemotron-3-ultra-550b-a55b"
+max_tokens = 16384  # DeepInfra's limit per response (a whole run uses far fewer).
+# Effort max, like every model in the matrix (Oct 25: accepted here; its first run used "high").
+params = { reasoning_effort = "max", provider = { order = ["deepinfra/fp4"], allow_fallbacks = false } }
+
+# Inkling's free tier only serves apps listed on openrouter.ai/apps (HTTP 403
+# for this harness), so this is the paid model, on its one provider.
+[inkling]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "thinkingmachines/inkling"
+# Effort max, like every model in the matrix (Oct 25: accepted here; its first run used "high").
+params = { reasoning_effort = "max", provider = { order = ["together"], allow_fallbacks = false } }
+
+# The first runs of four models (Oct 24), before the effort fix reran them at max: kept (set aside as
+# stale-1 in runs/main) and shown as effort variants. Not in the matrix; these entries say how they ran.
+[deepseek-v4-1-flash-high]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "deepseek/deepseek-v4.1-flash"
+params = { reasoning_effort = "high", provider = { order = ["deepinfra/fp8"], allow_fallbacks = false } }
+
+[nemotron-3-ultra-high]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "nvidia/nemotron-3-ultra-550b-a55b"
+params = { reasoning_effort = "high", provider = { order = ["deepinfra/fp4"], allow_fallbacks = false } }
+
+[inkling-high]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "thinkingmachines/inkling"
+params = { reasoning_effort = "high", provider = { order = ["together"], allow_fallbacks = false } }
+
+[glm-5-2-default]  # No effort sent: the router's default.
+base_url = "https://router.huggingface.co/v1"
+api_key_env = "HF_TOKEN"
+model = "zai-org/GLM-5.2:deepinfra"
+
+# The re-calibration's negative control (not in the matrix): the original
+# DeepSeek V3 (Dec 2024), capable enough to drive the harness's tools but
+# dated. Every non-probe task should be one it fails.
+[deepseek-v3]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "deepseek/deepseek-chat"
+# V3's own output limit; DeepInfra's endpoint overflowed at a 34.5K-token prompt
+# with 32K reserved for output, so it's pinned to StreamLake (128K context).
+max_tokens = 8192
+params = { provider = { order = ["streamlake"], allow_fallbacks = false } }
+
+# The frontier reference, in the same harness as Beam's baseline (the user chose
+# the API over a Google subscription: no published plan limits for Argon).
+# Pinned to Vertex's standard global endpoint, not the cheaper, preemptible flex tier.
+[gemini-4-argon]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "google/gemini-4-argon"
+params = { reasoning_effort = "max", provider = { order = ["google-vertex/global"], allow_fallbacks = false } }
+
+# The re-calibration's mid-strength reference (not in the matrix, not gating):
+# Qwen3-Coder 480B-A35B (Jul 2025), an open-weight model trained for agentic
+# coding, between the two anchors. Reported per task for information; no task
+# is changed for it. On Venice's FP8 (one of Qwen's own weight formats);
+# Vertex's endpoint returned 404. gpt-oss-120b was tried first and dropped:
+# on DeepInfra, Groq, and Together its tool calls came back as text
+# ("analysis to=functions.bash code{...}"), so its runs stalled or timed out
+# after 1-12 commands, and fixing that would mean changing the harness.
+[qwen3-coder]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "qwen/qwen3-coder"
+params = { provider = { order = ["venice/fp8"], allow_fallbacks = false } }
+
+# Two models from Reflection's own launch comparison, ahead of Beam on its
+# tables. They were left out at first only for cost, since the early estimate
+# was 50-100K output tokens per run; measured runs use about 10-20K.
+# Qwen3.8 Max is API-only, on Alibaba.
+[qwen3-8-max]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "qwen/qwen3.8-max-0902"
+params = { reasoning_effort = "max", provider = { order = ["alibaba"], allow_fallbacks = false } }
+
+# Qwen3.8 2.4T-A95B, the open-weight counterpart of Qwen3.8 Max (weights released Aug 2026; text only,
+# always thinking), added Oct 26 at the user's request so the open-weight group has a current Qwen. Pinned
+# to Alibaba, like the Max (OpenRouter doesn't list its quantization); effort max was accepted (checked Oct 26).
+[qwen3-8-open]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "qwen/qwen3.8-2.4t-a95b"
+params = { reasoning_effort = "max", provider = { order = ["alibaba"], allow_fallbacks = false } }
+
+# Kimi K3, pinned to Moonshot's own endpoint (MXFP4, its native format). The
+# cheaper third-party hosts are quantized differently.
+[kimi-k3]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "moonshotai/kimi-k3"
+params = { reasoning_effort = "max", provider = { order = ["moonshotai/mxfp4"], allow_fallbacks = false } }
+
+# Kimi K3 for the no-valid-option scenarios (experiments/no-valid-option.toml), from Oct 26. OpenRouter
+# dropped the "moonshotai/mxfp4" tag above around 19:30 UTC that day (pinned calls since get HTTP 404, "No
+# endpoints found"). Moonshot's own endpoint is now listed as "moonshotai", at the same price, with its
+# quantization unlisted. The main column's entry above stays as its runs ran.
+[kimi-k3-moonshot]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "moonshotai/kimi-k3"
+params = { reasoning_effort = "max", provider = { order = ["moonshotai"], allow_fallbacks = false } }
+
+# Mistral Large 4 ("Le Chonk"), added Oct 28 at the user's request. A public preview since Oct 6, API only so
+# far (open weights promised for late October; none on Hugging Face as of Oct 28). OpenRouter serves it only
+# from Mistral's own endpoint, quantization unlisted; pinned to the "mistral" tag (not /eu, which costs more).
+# Effort max was accepted, and reasoning grew with each step (unset 391, high 486, xhigh 552, max 612 tokens on
+# one probe; checked Oct 28).
+[mistral-large-4]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "mistralai/mistral-large-4-0"
+params = { reasoning_effort = "max", provider = { order = ["mistral"], allow_fallbacks = false } }
+
+# Frozen Round 4 post-freeze intermediate-model check (one attempt per task).
+
+[h4-minimax-m2-1-thinking]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "minimax/minimax-m2.1"
+max_tokens = 32768
+send_reasoning = true
+[h4-minimax-m2-1-thinking.params.reasoning]
+enabled = true
+exclude = false
+[h4-minimax-m2-1-thinking.params.provider]
+order = ["minimax"]
+allow_fallbacks = false
+
+[h4-deepseek-v3-2-thinking]
+base_url = "https://openrouter.ai/api/v1"
+api_key_env = "OPENROUTER_API_KEY"
+model = "deepseek/deepseek-v3.2"
+max_tokens = 32768
+send_reasoning = true
+[h4-deepseek-v3-2-thinking.params.reasoning]
+enabled = true
+exclude = false
+[h4-deepseek-v3-2-thinking.params.provider]
+order = ["atlas-cloud/fp8"]
+allow_fallbacks = false

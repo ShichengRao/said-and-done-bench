@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-01T14:21:21.668002+00:00",
+  "approved_as_request_drafts": true,
+  "runnable_collection_approved": false,
+  "calibration_transfer_approved": false,
+  "blockers": [],
+  "scope": "Read-only final framing review of DESIGN_PROTOCOL.md, OWNER_INTENT.json, mixed preview, author-only register and all 20 goal drafts. No task implementation, graders, models or tests evaluated.",
+  "findings": [
+    "All twenty goals request a positive customer delivery: build, finish, configure, restore or migrate a concrete system/output. None asks for a feasibility verdict, instructs submitting blocked, supplies a predefined blocker/remedy menu, or labels the intended outcome.",
+    "Material constraints remain visible as ordinary acceptance requirements. Producing a truthful access certificate is a genuine requested deliverable here, rather than an explicit request to classify safety or enumerate histories.",
+    "Feasible and historically blocked predecessors share delivery voice and integration/regression expectations. The mixed preview excludes author outcome labels and matches each separate goal exactly once.",
+    "The protocol explicitly requires full-surface redesign beyond goal.md and prohibits audit stubs, classification outputs and answer-revealing tests. It preserves normal safety guards and the unchanged global harness/submission semantics.",
+    "The author grading requirements allow accurate early pushback without completing a universal auditor. Semantic-equivalence grading is identified as work to resolve before shipping, not an implemented capability.",
+    "Protocol, owner-intent record, preview and all register rows explicitly describe unimplemented/unvalidated drafts with no H7 results. Historical predecessor identities/statuses are author-only and not claimed as current calibration.",
+    "The protocol preserves numerical/model preferences while requiring any conflict with the clarified construct to be surfaced, rather than adjusting the grader to penalize correct pushback.",
+    "Final delivery-export wording asks to produce an access certificate and does not introduce an additional signing-key requirement."
+  ],
+  "implementation_followups_not_draft_blockers": [
+    "Review the actual packaged specs, code, tests, logs, claims requirements and mounted-file inventory before any runnable-task approval; this review cannot certify those absent components.",
+    "Ensure the ordinary request to add regression coverage does not become a hidden condition requiring a blocked agent to finish the entire implementation before justified pushback can pass.",
+    "The release-coordinator request is prospective delivery, not the old retrospective attestation. Reconstruct and independently validate its new operational semantics and proof; do not transfer the predecessor proof or score automatically.",
+    "Keep the historical-status register and author protocol outside model-visible mounts. The preview is for owner review, not a combined benchmark prompt."
+  ],
+  "checks": {
+    "draft_goal_count": 20,
+    "register_count": 20,
+    "goal_hashes_match_register": true,
+    "all_goals_present_once_in_preview": true,
+    "explicit_prohibited_goal_patterns": []
+  },
+  "sha256": {
+    "heldout7/DESIGN_PROTOCOL.md": "973883d6a8878cf8e6184f919206761445f4e7389ddd0e83a259d1436409281a",
+    "heldout7/OWNER_INTENT.json": "ea9e7dd3dde6076a271855fa32230923ff4e9cf8e298a1c0808302a189c5d5fb",
+    "heldout7/CUSTOMER_REQUEST_DRAFTS.md": "e0e960f350061969d2ee3da57848126f1bf283a62f4da6c92c9b734ebb2ff419",
+    "heldout7/author_only/REQUEST_REGISTER.json": "866f6b3d47c5e08da5e80e7a15d11b0aa775db1cd88d5345331e4bd8a6f11b6a",
+    "heldout7/request_drafts/h7-data-batch-reconciliation/goal.md": "2309b52bc09334fa95e3cf9636fbc541a6969eb76088f372fca12b83c497755b",
+    "heldout7/request_drafts/h7-data-checkpoint-publish/goal.md": "b085e27c2071946bac12a58b451439ecebb54b25b248ac0aac84443f07fe59e5",
+    "heldout7/request_drafts/h7-data-delivery-export/goal.md": "defbcef38f767046b94bf457256098b6bd471936e5674a16be6b4d43f041ebb0",
+    "heldout7/request_drafts/h7-data-erasure-migration/goal.md": "82869ad9191e4c6e3232e6889b06739f8ac779367f1efb93eb324fa9b73cb98a",
+    "heldout7/request_drafts/h7-data-partner-export/goal.md": "0e3bfdf6054667d6fc41c6a37ed0ec7c3048cfa95efcf5441aea4185d9a2f926",
+    "heldout7/request_drafts/h7-data-regional-rollout/goal.md": "39c31b13b212541dbcd1c3be4c12fdb08083effb33a86d3c1b1d2b3dd4cad5ea",
+    "heldout7/request_drafts/h7-data-stewardship-cutover/goal.md": "9ca3996f5a0cb6a36499dfa54470ca9ec9419238f6883cc6f6f4af157d0a7b50",
+    "heldout7/request_drafts/h7-data-ticket-index/goal.md": "9452baaddd1ee0bda25cc7badd68ddb4ac83a0c25ad0a77fcced13bb2043b90c",
+    "heldout7/request_drafts/h7-fin-funding-scheduler/goal.md": "43aa0f0f75fc30980946d369f5232aadc79af4438f71c6efd02d3705a511d7e8",
+    "heldout7/request_drafts/h7-fin-meter-adjustments/goal.md": "abc260170e3ff5ed426a6fa8b0c17d503145a386381c6d3f6e09f8d0b12beb62",
+    "heldout7/request_drafts/h7-fin-order-reservations/goal.md": "b1fd1a0bf9025ce826377dfd604e70c59219be19366f9978a82610083268ab9f",
+    "heldout7/request_drafts/h7-fin-payout-release/goal.md": "d49492f4a6bb7237786c7bb0bb76775ff4560414492fb2c7ff8373df484272e5",
+    "heldout7/request_drafts/h7-fin-period-close/goal.md": "59719725c9782ff8028685cef0c3d9cfe86db41521fbabbddd8c214018120973",
+    "heldout7/request_drafts/h7-fin-refund-worker/goal.md": "2342a0c6c871c0a22bf657d16567e812f81752766ae950a7d259f91cddf6fb48",
+    "heldout7/request_drafts/h7-ops-deployment-controller/goal.md": "48ff8969754fa106bd64ef4fb48e9520ec45f6672daacb7b56e08af97c88061d",
+    "heldout7/request_drafts/h7-ops-generation-restore/goal.md": "90aa8ebe2f8acaac1ddde9b2b3d7e1c3f653fa2da49fb429e3e975e2fb2a9af3",
+    "heldout7/request_drafts/h7-ops-log-recovery/goal.md": "0146bd1f6291beba4f4484370450dc65752cca9114bb47a67a4e30195c8952c7",
+    "heldout7/request_drafts/h7-ops-package-install/goal.md": "daf03b91a759346c474dccdf4dae919f148db82194dd4c480297a16515ddb638",
+    "heldout7/request_drafts/h7-ops-release-coordinator/goal.md": "5dc39a91174bdce71ad3fd14a0e65af0fba376606e11a69f1c73a67c5f95f5bc",
+    "heldout7/request_drafts/h7-ops-replica-migration/goal.md": "2b55889b54472d92c4499e285c3090fb35f7d5369705918fb60900120ef4f317"
+  },
+  "limitations": [
+    "Approval is for delivery-style framing and accurate draft labeling only.",
+    "No runnable sources, fair graders, true impossibility/feasibility, empirical organic pushback or readiness have been established by this review.",
+    "No edits, inference, tests, grader executions or frozen-source changes were performed."
+  ],
+  "previous_review": {
+    "file": "/tmp/H7_REQUEST_DRAFT_REVIEW.before-certificate-wording.json",
+    "sha256": "967aa3e2f2113bffb1d0b9822b784c5e1c3b211b5ced352a4c555ef33c79bace",
+    "reason": "Root clarified access certificate wording to avoid introducing a signing-key requirement."
+  }
+}

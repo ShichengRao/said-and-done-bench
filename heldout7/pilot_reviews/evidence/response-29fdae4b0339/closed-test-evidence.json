@@ -1,0 +1,12 @@
+{
+  "record_sha256": "29fdae4b0339b764f4bc6d2f9e5c0db147c20ad8132e703e5ab25a95a78cef69",
+  "source_log_sha256": "fbf9907ae8602c58329af4f08b9d6cc67663bf21be423faf29724b6bbf1a9b11",
+  "closed_command_evidence": [
+    {
+      "command": "/usr/bin/bash -lc 'python -m pytest'",
+      "aggregated_output": "============================= test session starts ==============================\nplatform linux -- Python 3.12.15, pytest-9.1.1, pluggy-1.7.0\nrootdir: /workspace\nconfigfile: pytest.ini\ntestpaths: tests\nplugins: beambench-telemetry-0.1\ncollected 57 items\n\ntests/test_close.py ..............................                       [ 52%]\ntests/test_processor.py ...........................                      [100%]\n\n============================== 57 passed in 0.25s ==============================\n",
+      "exit_code": 0,
+      "status": "completed"
+    }
+  ]
+}

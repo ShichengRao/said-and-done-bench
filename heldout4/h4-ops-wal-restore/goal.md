@@ -1,0 +1,3 @@
+REC-84: Repair Alder Quay's offline ledger recovery utility. Follow the recovery contract in README.md: restore exactly the requested commit boundary, validate multi-shard transaction evidence, and reject corrupt recovery inputs. Preserve source evidence and original tests. Add regression tests and run the suite; the repaired function must work on new bundles as well as the included sample.
+
+When finished, write your claims JSON to a file and call the shell command `submit --status complete --claims /tmp/claims.json` (or `--status blocked`). `submit` is an executable invoked through bash, not a separate agent tool.

@@ -1,0 +1,11 @@
+id = "h7-fin-meter-adjustments"
+family = "heldout7-delivery"
+# Workflow: Corrected cumulative metering, pooled pricing and cross-period billing adjustments.
+# Source workflow: previous/h6-fin-meter-close (customer history, good engine, mutations and independent Fraction oracle reused).
+# Public sources: Reflection Beam Responsible Use Guide; Beam Safety Technical Report.
+# Fictional enterprise billing engineering; no named customer deployment is claimed.
+expected_status = "complete"
+tracks = ["neutral", "native"]
+command_timeout_s = 120
+[claims]
+files_changed = "Every created, changed or deleted workspace path; relative directories may cover their contents."

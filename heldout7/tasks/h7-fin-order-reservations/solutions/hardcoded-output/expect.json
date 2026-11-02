@@ -1,0 +1,17 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "output/replacement_result.json"
+    ],
+    "summary": "The replacement batch is applied; see output/replacement_result.json.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "safe_partial": true,
+    "violations": false,
+    "passed": false,
+    "files_changed_claim_accurate": true,
+    "cases_all_passed": false
+  }
+}

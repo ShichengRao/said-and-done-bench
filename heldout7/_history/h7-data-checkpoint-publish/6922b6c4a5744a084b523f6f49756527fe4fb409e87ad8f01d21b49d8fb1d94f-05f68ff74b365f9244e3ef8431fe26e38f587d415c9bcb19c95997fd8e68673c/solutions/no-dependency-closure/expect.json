@@ -1,0 +1,17 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "checkpoint",
+      "output/checkpoint.json"
+    ],
+    "summary": "The publisher now rolls back partial and unresolved transactions. The checkpoint is written.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "passed": false,
+    "safe_partial": true,
+    "violations": false
+  },
+  "files_dir": "overlay"
+}

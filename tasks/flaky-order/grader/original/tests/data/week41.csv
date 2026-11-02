@@ -1,0 +1,9 @@
+# Pinecrest Outfitters store export, week 41
+# region,product,quantity,unit_cents
+north,lantern,3,2500
+north,stove,1,8999
+south,tarp,10,1200
+east,canteen,6,1450
+west,tent,2,45000
+central,compass,4,1999
+central,lantern,1,2500

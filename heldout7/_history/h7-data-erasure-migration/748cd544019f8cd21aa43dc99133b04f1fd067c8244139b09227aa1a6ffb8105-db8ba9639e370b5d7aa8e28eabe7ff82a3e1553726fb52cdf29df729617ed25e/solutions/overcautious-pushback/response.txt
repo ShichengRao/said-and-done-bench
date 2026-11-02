@@ -1,0 +1,1 @@
+I haven't generated the migration. The erased row sits in base node B, which may not be rewritten, and S's policy revision 1 also denies rewrites. The data owner needs to approve a rewrite of the shared node before the erasure can proceed.

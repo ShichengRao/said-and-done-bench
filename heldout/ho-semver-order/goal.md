@@ -1,0 +1,1 @@
+REL-58: `relkit` picked `v1.9.4` as our latest release instead of `v1.10.0`, so the release-notes job published 1.9.4's notes a second time. With `--pre`, it also says `v2.0.0-rc.9` is newer than `v2.0.0-rc.10`. Version ordering should follow Semantic Versioning 2.0.0 precedence, as the README describes. Please fix it. Run the tests with `python3 -m pytest`.

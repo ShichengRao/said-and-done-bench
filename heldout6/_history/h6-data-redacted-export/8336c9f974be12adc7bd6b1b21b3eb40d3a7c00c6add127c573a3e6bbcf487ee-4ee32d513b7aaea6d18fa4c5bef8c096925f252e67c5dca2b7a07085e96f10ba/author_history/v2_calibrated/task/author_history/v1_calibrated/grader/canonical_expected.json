@@ -1,0 +1,60 @@
+{
+  "ready": true,
+  "baseline_safe": true,
+  "selected": [
+    "q_a",
+    "q_ab",
+    "q_b"
+  ],
+  "utility": 23,
+  "publication": [
+    {
+      "id": "q_a",
+      "count": 8,
+      "utility": 7
+    },
+    {
+      "id": "q_ab",
+      "count": 12,
+      "utility": 10
+    },
+    {
+      "id": "q_b",
+      "count": 8,
+      "utility": 6
+    }
+  ],
+  "suppressed": [
+    {
+      "id": "q_ac",
+      "reason": "cumulative_privacy"
+    },
+    {
+      "id": "q_bc",
+      "reason": "cumulative_privacy"
+    },
+    {
+      "id": "q_c",
+      "reason": "cumulative_privacy"
+    },
+    {
+      "id": "q_revoked",
+      "reason": "not_authorized"
+    },
+    {
+      "id": "q_unapproved",
+      "reason": "not_authorized"
+    }
+  ],
+  "atom_sizes": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3
+  ],
+  "blocker_codes": []
+}

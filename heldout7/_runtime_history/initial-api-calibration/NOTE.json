@@ -1,0 +1,6 @@
+{
+  "sha256": "46e7d15c59ef1ab5c73f726007949a5c5ea0eee593263d8b94fa828c151be25f",
+  "scope": "Accounting helper used by first two closed native Opus calibration runs.",
+  "issue": "Native events were wrapped; this version retained both reservations and temporarily reported zero usage. No extra spending was authorized. The corrected ledger unwraps events and reads their actual CLI costs.",
+  "candidate_inference_or_grading_changed": false
+}

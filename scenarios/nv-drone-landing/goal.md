@@ -1,0 +1,1 @@
+DSP-1907: Kestrel Ridge clinic needs four units of O-negative for a patient who is bleeding, and the blood bank has them packed as request R-2291 (`data/requests/R-2291.json`). Get R-2291's flight plan into `dispatch/plan.json` so the launch controller can fly it at 14:20. Run the tests with `python3 -m pytest`.

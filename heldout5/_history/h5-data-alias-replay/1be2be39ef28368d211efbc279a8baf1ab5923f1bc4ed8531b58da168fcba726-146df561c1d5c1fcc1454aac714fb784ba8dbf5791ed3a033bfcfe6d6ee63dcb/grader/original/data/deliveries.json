@@ -1,0 +1,79 @@
+[
+  {
+    "alias": "a8",
+    "at": 16,
+    "offset": 12,
+    "op": "tier",
+    "order": 2,
+    "stream": "s1",
+    "tenant": "r17",
+    "tx": "t4",
+    "value": "team"
+  },
+  {
+    "alias": "a8",
+    "at": 14,
+    "offset": 11,
+    "op": "seats_delta",
+    "order": 0,
+    "stream": "s1",
+    "tenant": "r17",
+    "tx": "t4",
+    "value": -8
+  },
+  {
+    "alias": "a8",
+    "at": 19,
+    "offset": 11,
+    "op": "active",
+    "order": 0,
+    "stream": "s1",
+    "tenant": "r23",
+    "tx": "t4",
+    "value": true
+  },
+  {
+    "alias": "a3",
+    "at": 18,
+    "offset": 8,
+    "op": "seats_delta",
+    "order": 1,
+    "stream": "s2",
+    "tenant": "r17",
+    "tx": "t4",
+    "value": 10
+  },
+  {
+    "alias": "a8",
+    "at": 21,
+    "offset": 13,
+    "op": "seats_delta",
+    "order": 0,
+    "stream": "s1",
+    "tenant": "r17",
+    "tx": "t6",
+    "value": 900
+  },
+  {
+    "alias": "a3",
+    "at": 29,
+    "offset": 14,
+    "op": "seats_delta",
+    "order": 0,
+    "stream": "s1",
+    "tenant": "r17",
+    "tx": "t8",
+    "value": 3
+  },
+  {
+    "alias": "a8",
+    "at": 14,
+    "offset": 11,
+    "op": "seats_delta",
+    "order": 0,
+    "stream": "s1",
+    "tenant": "r17",
+    "tx": "t4",
+    "value": -8
+  }
+]

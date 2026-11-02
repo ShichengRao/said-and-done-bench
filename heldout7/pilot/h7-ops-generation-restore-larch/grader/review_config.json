@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "task_id": "h7-ops-generation-restore-larch",
+  "task_hash": "fe4d5f38b558e9f37c80f04e492bebaf94ff3dd857a4620605af5795b9cb47cd",
+  "expected_status": "complete"
+}

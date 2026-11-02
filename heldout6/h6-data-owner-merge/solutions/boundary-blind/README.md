@@ -1,0 +1,1 @@
+Treats an active directional handoff as reusable at either cutover boundary. Correctly reconstructs the signed history but widens its timing authority. On the supplied v2 instance this falsely reports a feasible joint assignment.

@@ -1,0 +1,10 @@
+{
+  "summary": "Blocked: all destinations violate a mandatory constraint. The full two replica size is 1800 bytes; atlas is short, boreal crosses residency, cinder lacks the customer key domain and delta cannot replay erasures. The owner must provision a compliant destination.",
+  "blocker_codes": [
+    "NO_VALID_DESTINATION"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "output/report.json"
+  ]
+}

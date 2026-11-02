@@ -1,0 +1,113 @@
+{
+  "task": "h7-ops-generation-restore",
+  "documents": [
+    {
+      "id": "public_source-SPEC.md",
+      "kind": "public_source",
+      "path": "SPEC.md",
+      "sha256": "5cc659a014c53bdc4e9fa2df0adb9060a5edd6d4184d7ad0b553319941d3238c"
+    },
+    {
+      "id": "public_source-data-request.json",
+      "kind": "public_source",
+      "path": "data/request.json",
+      "sha256": "1f7583bf71a363c1219e298f6949be01681912240107542b1849911e181b1134"
+    },
+    {
+      "id": "public_source-production-state.json",
+      "kind": "public_source",
+      "path": "production/state.json",
+      "sha256": "0b37fad24b0de827a6931fce9a311c5b0f7d5b307d63050dc90bc94e414b2aa0"
+    },
+    {
+      "id": "public_source-pytest.ini",
+      "kind": "public_source",
+      "path": "pytest.ini",
+      "sha256": "07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb"
+    },
+    {
+      "id": "public_source-restore-__init__.py",
+      "kind": "public_source",
+      "path": "restore/__init__.py",
+      "sha256": "fccc07bf3527a8b803c493d93f8f82ad9b2088ad43af8b901e2a2414afd21e70"
+    },
+    {
+      "id": "public_source-restore-__main__.py",
+      "kind": "public_source",
+      "path": "restore/__main__.py",
+      "sha256": "a063293e1cb61ffd98c54b591ec26d65253615eaa2ad70d79ffde670791010c6"
+    },
+    {
+      "id": "public_source-restore-catalog.py",
+      "kind": "public_source",
+      "path": "restore/catalog.py",
+      "sha256": "91c0b5249c42871edfdf7edde11f245b7ada86cf07016bbab5d6fbc718cbd5fe"
+    },
+    {
+      "id": "public_source-restore-decoder.py",
+      "kind": "public_source",
+      "path": "restore/decoder.py",
+      "sha256": "9c24683611eec5b71f72a0150dc7ff211a5970c252fe63c0bdf8090e3d8a924d"
+    },
+    {
+      "id": "public_source-restore-field.py",
+      "kind": "public_source",
+      "path": "restore/field.py",
+      "sha256": "bb80ce24f1f2b0106b6ad238534e716924c698b6aca28080c1a20b61b6bb7863"
+    },
+    {
+      "id": "public_source-tests-test_public.py",
+      "kind": "public_source",
+      "path": "tests/test_public.py",
+      "sha256": "a0e19812a0219ff2ff5f3e994bf033c2104364e0b818e33284103cc35cbf2ffd"
+    },
+    {
+      "id": "author_proof-AUTHOR_PROOF.md",
+      "kind": "author_proof",
+      "path": "AUTHOR_PROOF.md",
+      "sha256": "61082101c265dc2b7e38db617e0ad1b1e7dad32cbf9c64300214905433ad740c"
+    },
+    {
+      "id": "author_proof-AUTHOR_PROOF.json",
+      "kind": "author_proof",
+      "path": "AUTHOR_PROOF.json",
+      "sha256": "5defd942010f4acae5d72be1d292b501b5f17791eb3fae8347ec204bfe207013"
+    },
+    {
+      "id": "snapshot_artifact-restore-__main__.py",
+      "kind": "snapshot_artifact",
+      "path": "restore/__main__.py",
+      "sha256": "088a5bee91496bd060a2fe6d83e4ec5d3a1c6a2037cb4f3bc6610b8f1835e27a"
+    },
+    {
+      "id": "snapshot_artifact-restore-catalog.py",
+      "kind": "snapshot_artifact",
+      "path": "restore/catalog.py",
+      "sha256": "1b8d69e48488fd871cbfc248207d52c7a814f0756f83796f2bf0fc5fb7e5c606"
+    },
+    {
+      "id": "snapshot_artifact-restore-decoder.py",
+      "kind": "snapshot_artifact",
+      "path": "restore/decoder.py",
+      "sha256": "00818edc9f4e1df2c50ccdeeed580917edc5ba296656b6f0b49d9f1731234b0d"
+    },
+    {
+      "id": "snapshot_artifact-restore-field.py",
+      "kind": "snapshot_artifact",
+      "path": "restore/field.py",
+      "sha256": "8d1a5281e6fe0830b6bf7cfcd60181edec0747d39c7820d014c5d8ef7e1b4d90"
+    },
+    {
+      "id": "snapshot_artifact-tests-test_restore_extra.py",
+      "kind": "snapshot_artifact",
+      "path": "tests/test_restore_extra.py",
+      "sha256": "f13c53485a90cbe6298723a80a09e2755cd87e4335fe9956cb425436eec6a0a5"
+    },
+    {
+      "id": "closed_command_evidence-response-7fbaddf08843-automated-command-evidence.json",
+      "kind": "closed_command_evidence",
+      "path": "response-7fbaddf08843/automated-command-evidence.json",
+      "sha256": "66cff76b50e11192a0bd3ff9d2c30c6dffd6aee3d9784d3e988088d41dcad72a"
+    }
+  ]
+}

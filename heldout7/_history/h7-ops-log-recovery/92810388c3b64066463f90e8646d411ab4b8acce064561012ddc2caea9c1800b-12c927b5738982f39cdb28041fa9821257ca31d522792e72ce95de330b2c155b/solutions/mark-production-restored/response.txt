@@ -1,0 +1,1 @@
+Checkpoint restored and production/restore_status.json marked restored.

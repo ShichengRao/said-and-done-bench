@@ -1,0 +1,65 @@
+{
+  "at": "2026-11-01T05:56:34.918350+00:00",
+  "reason": "Preserve rollout grader and external test before the already reviewed helper-isolation repair, after root confirmed all four model attempts closed.",
+  "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+  "grader_hash": "29b52441576b8c9c4e42f8efee3f4464b19a92ce2674785d63f21f3fe96c5f1f",
+  "test_sha256": "db57e5ca1179bd57508864c5fe3e3c7eb7fad3a7ba372e94b4888860ba420744",
+  "files": {
+    "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+    "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+    "grader/expected_tests.json": "77d24875a1cacaa7284d587363df6e108952d19c85d11c81832b81aa84f7442b",
+    "grader/grade.py": "7cc35144d8c812060675d9af67955c5ad9584af437470fb3609a7dd56104dc0b",
+    "grader/oracle.py": "a56b072f004b56ada590a81e2373ecabe32bfabba3c3e9e13e63a1a048b8efa2",
+    "grader/original/SPEC.md": "fde6aa1e42b829a4ace0a4bd7e04a34ad448e7331942092d1a1a58928865a0b3",
+    "grader/original/controller.py": "d204ca8e1363ff5547b29aba12b612e64a43381b4ac5d9cd4cb1e6d7f72b31e7",
+    "grader/original/data/input.json": "fc9bf2082b65ef7cae8e17b451e0692693294734d839700b71b5ed42c7204e6f",
+    "grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+    "grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+    "grader/original/tests/test_public.py": "2cba530069069a7b77a5f5e016158cabffc17fef11c4a5eefffafa4ad5bd8450",
+    "grader/test_behavior.py": "f3257850f0f4164e658c18e07f00c5be708c34111dc92cdc4756ccbe5d3ff273",
+    "test_task_h6_ops_rollout.py": "db57e5ca1179bd57508864c5fe3e3c7eb7fad3a7ba372e94b4888860ba420744"
+  },
+  "previous_validation": {
+    "at": "2026-10-31T22:59:23.111000+00:00",
+    "run_id": "20261031T225853Z-873ddf6f",
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_task_h6_ops_rollout.py",
+      "tests/test_tasks.py",
+      "--junitxml=./heldout6/validation/20261031T225853Z-873ddf6f.xml"
+    ],
+    "exit_code": 0,
+    "counts": {
+      "tests": 34,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "seconds": 29.278,
+    "valid": true,
+    "source_unchanged": true,
+    "log": "heldout6/validation/20261031T225853Z-873ddf6f.log",
+    "log_sha256": "03a2fd4219ad461bb421fd148485e2ccd3500dc53bc719d33b1680b884f0b231",
+    "xml": "heldout6/validation/20261031T225853Z-873ddf6f.xml",
+    "xml_sha256": "b6d842b6dafd62c2548983684111d320b41b15eddbcc46b55b8ca208fb881001",
+    "tasks": {
+      "h6-ops-rollout": {
+        "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+        "grader_hash": "29b52441576b8c9c4e42f8efee3f4464b19a92ce2674785d63f21f3fe96c5f1f",
+        "test_file": "tests/test_task_h6_ops_rollout.py",
+        "test_sha256": "db57e5ca1179bd57508864c5fe3e3c7eb7fad3a7ba372e94b4888860ba420744"
+      }
+    },
+    "after": {
+      "h6-ops-rollout": {
+        "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+        "grader_hash": "29b52441576b8c9c4e42f8efee3f4464b19a92ce2674785d63f21f3fe96c5f1f",
+        "test_file": "tests/test_task_h6_ops_rollout.py",
+        "test_sha256": "db57e5ca1179bd57508864c5fe3e3c7eb7fad3a7ba372e94b4888860ba420744"
+      }
+    }
+  }
+}

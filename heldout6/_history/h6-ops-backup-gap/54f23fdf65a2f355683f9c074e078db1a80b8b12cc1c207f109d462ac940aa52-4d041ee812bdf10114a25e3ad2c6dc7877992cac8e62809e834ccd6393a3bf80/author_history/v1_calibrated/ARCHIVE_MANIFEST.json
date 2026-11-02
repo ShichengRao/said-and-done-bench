@@ -1,0 +1,51 @@
+{
+  "reason": "Schema-only v2 clarification; no substantive difficulty or ground-truth change.",
+  "task_hash": "6540a9f29111d9b2a3ac41b6b947abd386da71dc9445a087141a53b889b526d5",
+  "grader_hash": "511996dd8c6f757e53c6d47f0216ead2b15b744523a48d38caa13f1912950b48",
+  "queue_release_event": {
+    "at": "2026-10-31T22:27:05.521426+00:00",
+    "revision": "v1",
+    "event": "already_recorded",
+    "run": "h6-ops-backup-gap/v1-astra",
+    "model": "astra"
+  },
+  "files": {
+    "test_task_h6_ops_backup_gap.py": "699c68d504c7cb688d6b6b8aec90406e37f10b46febf0f2873e525c75cfbf7a1",
+    "goal.md": "33b455a50dbd20074def7bc6b746a56bc7d758dea6bfc471f47cbf53a3c02ec0",
+    "task.toml": "a34d519cc284870871dba6ffc33eb980878df8e37e6a9c22d0c4c377018b7942",
+    "grader/expected_report.json": "038a7bed7d1996ef304a699ca76a4ba0be1487e9ff2c8ec14ea8a1581971d1de",
+    "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+    "grader/test_behavior.py": "d0a39507a1cbaf8f4bf32d2815aefdcca7a33789683a1aea03627441a428151f",
+    "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+    "grader/expected_tests.json": "537c71268d393090081abe1e7867daf0b9195bfd6a9241c01379ab9ee06eb55d",
+    "grader/grade.py": "b99fe45ea0d1d904ac2346e92f8a1d46cda365fff6f3f68555fa7d9a8e7b36b8",
+    "grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+    "grader/original/vault.py": "1891d2f30aa494b623f7c51f9831176a1c0a6e72ea3c6732b5b6551cea57b147",
+    "grader/original/SPEC.md": "d279026c31668cfc1acb0166a7390c9c5020fd7341fe0e2ba6cdac589f2a512d",
+    "grader/original/tests/test_public.py": "38f996b99190163793a867445297f62a6df7c5c94fbdb0421553b0a266dcafb3",
+    "grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+    "grader/original/data/input.json": "c500e3fb3b49b2b29f8cc84abf4ea69b55613665f3bde01beea18a9aa34c8049",
+    "workspace/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+    "workspace/vault.py": "1891d2f30aa494b623f7c51f9831176a1c0a6e72ea3c6732b5b6551cea57b147",
+    "workspace/SPEC.md": "d279026c31668cfc1acb0166a7390c9c5020fd7341fe0e2ba6cdac589f2a512d",
+    "workspace/tests/test_public.py": "38f996b99190163793a867445297f62a6df7c5c94fbdb0421553b0a266dcafb3",
+    "workspace/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+    "workspace/data/input.json": "c500e3fb3b49b2b29f8cc84abf4ea69b55613665f3bde01beea18a9aa34c8049",
+    "setup/setup.sh": "7892aff4a8ee7ccc5715177a93e12daa7ee95329a96d7761613c6ac1d706c316",
+    "solutions/trust-authenticated-values/vault.py": "3d2f78b0b479888781e61ee93025f4a07fca94bf5afd282f7bc398da69701e95",
+    "solutions/one-informative-query/vault.py": "c91f742bf9a3a2a41dfd615123861d3f82834cebd9777d4d7243885da192ed72",
+    "solutions/first-rank-solution/vault.py": "004e095e953a91ea9328dccb3e87b5967ca8262582ffdadddda504eadc999663",
+    "solutions/honest/vault.py": "dc1789038b83cfd4c0b0bf1c75715664a2edfd11dc2d917d709e6d819d153c91",
+    "solutions/honest/tests/test_regression.py": "726ef5e8efc46ec6454f78ac045bba3c2f35536b4db8b9754f73e84fc80364e6"
+  },
+  "closed_runs": {
+    "h6-ops-backup-gap/v1-astra": {
+      "record.json": "6ed708830f09f9ea1212b03b1df5fa22e6a286a0d9649086207194e322153aa7",
+      "grade.json": "76f8b73bffcaecdc305c70e6a0dc746d39a7c8ef2a09b9b77cc851cb4d6d7d66"
+    },
+    "h6-ops-backup-gap/v1-minimax-m2-7": {
+      "record.json": "1387f0f947d717815beee91d51fd9252e5228dcaa9bbbfde9ecf08691bf12c79",
+      "grade.json": "b43c50c443d2303ac7f2511888cf2f25b46804865c68936af5246687a45ea5b2"
+    }
+  }
+}

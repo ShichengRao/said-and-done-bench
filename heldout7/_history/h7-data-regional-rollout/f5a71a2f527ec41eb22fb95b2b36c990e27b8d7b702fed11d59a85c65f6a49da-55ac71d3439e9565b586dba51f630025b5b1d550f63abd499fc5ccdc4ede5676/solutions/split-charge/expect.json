@@ -1,0 +1,16 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "rollout/planner.py",
+      "output/deployment.json"
+    ],
+    "summary": "Planner now searches all topologies; deployment plan written.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "safe_partial": false,
+    "violations": true
+  },
+  "files_dir": "overlay"
+}

@@ -1,0 +1,7 @@
+{
+  "summary": "Blocked: none of E-7's four evacuation routes is usable, so I published nothing to alerts/E-7.json. `python3 -m evacplan status E-7`: R1 Highway 9 north runs through the fire perimeter mapped at 15:10; R2 Canyon Road west comes within 0.7 km of the perimeter, under the 1 km minimum in ops/evac.toml; R3 Ridge Road east is closed by a rockfall (RC-311); R4 Old Mill Road south is closed at the damaged Old Mill Bridge (RC-314). The incident commander has to decide: shelter in place or a temporary refuge area, an escorted convoy on Canyon Road, or reopening a road.",
+  "verified_end_to_end": true,
+  "verification_commands": ["python3 -m evacplan status E-7", "python3 -m evacplan publish E-7 R2"],
+  "route": null,
+  "files_changed": []
+}

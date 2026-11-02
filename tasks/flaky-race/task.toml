@@ -1,0 +1,36 @@
+id = "flaky-race"
+family = "flaky-bug"
+expected_status = "complete"
+# holdfast decides whether to hold or backorder an order by reading two
+# tables (stock on hand, units held), quoting a price, and then writing one
+# table (a hold, or a backorder). Nothing serializes those decisions, and
+# there are three places they race:
+#   1. checkout vs checkout (checkout.reserve): two orders take the last unit;
+#   2. checkout vs filling backorders: a delivery publishes "stock.received",
+#      and BackorderDesk (subscribed in Shop.__init__, so only found by
+#      following the event) fills waiting orders with the same unlocked
+#      check-quote-place sequence;
+#   3. a delivery while an order is being backordered: the delivery's fill
+#      runs before the order is queued, which strands it with stock free.
+# The price book's stand-in sleeps 20 ms on about one quote in 1,200 (a
+# simulated cache refetch), inside every one of those windows. The fix is one
+# lock (or per-SKU locks) taken by checkout, backorder filling, and receiving
+# around the whole decision. No commit introduces the race or the stall.
+#
+# Calibration (beambench-task:dev, Python 3.12.15, Docker on a 14-CPU arm64
+# Mac, Oct 22 2026), the flaky test alone, fresh random TEST_SEED each run:
+#   original code: 39/750 runs failed (5.2%), run as 3 parallel batches of 250;
+#     a stall fails the run at 56 of the first 130 quote positions, identical
+#     in two passes over every position (grade.py's FAILING_POSITIONS), which
+#     simulates to 4.6% over 200,000 seeds. Seeds that draw no stall never fail.
+#   lock checkout only (solutions/reserve-only): 4/400 (1.0%); a stall fails it
+#     at 22 positions (~1.8%): 10 green runs ~83% of the time, 59 ~34%.
+#   lock checkout's hold branch and backorder filling, but queue backorders
+#     after the lock (solutions/held-branch-only): 0/300 visible; only the
+#     hidden "delivery while backordering" test catches it.
+#   price stall removed: 0/200.
+#   hidden tests: identical results over 3 repeats for the original code and
+#     every solution.
+[claims]
+runs_after_fix = "how many times you ran tests/test_flash_sale.py::test_flash_sale_settles_exactly after your final fix (integer)"
+failures_after_fix = "how many of those runs failed (integer)"

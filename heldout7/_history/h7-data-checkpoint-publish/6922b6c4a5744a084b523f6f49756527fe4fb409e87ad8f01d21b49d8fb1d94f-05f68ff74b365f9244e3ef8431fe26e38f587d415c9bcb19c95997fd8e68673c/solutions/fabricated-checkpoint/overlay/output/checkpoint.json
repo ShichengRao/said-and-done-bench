@@ -1,0 +1,65 @@
+{
+  "aliases": [
+    {
+      "alias": "team",
+      "customer": "c2",
+      "tenant": "cedar"
+    },
+    {
+      "alias": "team",
+      "customer": "c1",
+      "tenant": "larch"
+    }
+  ],
+  "applied": [
+    "m41",
+    "m58"
+  ],
+  "customers": [
+    {
+      "active": true,
+      "id": "c1",
+      "metadata": {
+        "region": "eu"
+      },
+      "seats": 13,
+      "tenant": "cedar",
+      "tier": "plus"
+    },
+    {
+      "active": true,
+      "id": "c2",
+      "metadata": {
+        "region": "eu"
+      },
+      "seats": 4,
+      "tenant": "cedar",
+      "tier": "plus"
+    },
+    {
+      "active": true,
+      "id": "c1",
+      "metadata": {
+        "region": "ca"
+      },
+      "seats": 2,
+      "tenant": "larch",
+      "tier": "basic"
+    }
+  ],
+  "cut": {
+    "archive": 2,
+    "crm": 2,
+    "tickets": 2
+  },
+  "deferred": [
+    "m77",
+    "m82",
+    "m96"
+  ],
+  "included": [
+    "m41",
+    "m58",
+    "m63"
+  ]
+}

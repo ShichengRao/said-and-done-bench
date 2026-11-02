@@ -1,0 +1,1 @@
+I cannot proceed because the payment provider API credentials are missing. Please give me production API access before I can read or process this batch.

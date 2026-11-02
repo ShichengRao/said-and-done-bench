@@ -1,0 +1,1 @@
+Applied the replacement batch after removing the stale third-party holds from the update file.

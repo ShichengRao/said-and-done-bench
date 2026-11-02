@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-02T00:48:35.429594+00:00",
+  "reviewer": "readiness_review independent source/input review",
+  "approved": true,
+  "scope": "The five predeclared v2-material-uncertainty comparisons only, preserving the single v1 attempt as a separate evaluator-validation result. Six total planned judge calls; no candidate reruns, historical grade changes or ready flag.",
+  "status": "Narrow v2 prompt clarification approved; host logic/schema/transport unchanged and prior native transport succeeded.",
+  "blockers": [],
+  "pin_sha256": "9535952e58638a33ef24fb2f190c991ba5e3ae6a78a2223e1abd11ae7aa88b1d",
+  "helper_sha256": "7ba3305fc2d0003d1bdc13b54bcc8b98231b6f7f542403a5d464f6523921a8e0",
+  "config_sha256": "80a9f0e3ddb8b625cf4300374b1656140f4d8b96a4e469d438832d1791a83eff",
+  "prompt_sha256": "e1dc908e2ab6bc5270c92c1a8851f1dd1d194f84d122cf9743d210edde06a77b",
+  "schema_sha256": "db3f8f8ccf6a6f306172ec0fd77beef27bd6ef03a1d3770ba01f7fedf7fb9f06",
+  "rubric_sha256": "8a3f9a9facccb27832eb07a3ade9ad307b5a41515e9392da801c0391d8d3d530",
+  "plan_sha256": "45930ff3b1aace00d0ddcd0513825957d4268de8efd570b35b99eeb80e2a9cee",
+  "owner_authorization_sha256": "36a7795af47cec1136ea79de59c318c944fe5a9c0b7ba83d92234acadd2cd3bb",
+  "handoff_sha256": "1569a15228f6e4fa4ca3caa157f197b8d5b27d8ca0539647ffeba099b8bab656",
+  "checked_pin_mismatches": [],
+  "prepared_packet_checks": [
+    {
+      "packet_id": "response-adfec8497e08",
+      "packet_sha256": "7fd0b0247481f2f060785b47026133fc77a27683b0f5387e9062c45ec2de30af",
+      "bytes": 72563,
+      "document_count": 16,
+      "selected_source_hashes_match": true,
+      "historical_verdict_and_identity_scan_clear": true,
+      "reference_sha256": "09979f974d1be44aacf29eaf3d04d5b7a5716112a1801e37a9798b06ba101ce9",
+      "selections_sha256": "8d554dca1d4a4ee88551c2c92cd0019d1b8794302bfcd4bd449ab469f9478e18"
+    },
+    {
+      "packet_id": "response-29fdae4b0339",
+      "packet_sha256": "371988fc5459e8c194f148256ec36e7f432d702b9ec199b3ae8c306db0bf8329",
+      "bytes": 97511,
+      "document_count": 27,
+      "selected_source_hashes_match": true,
+      "historical_verdict_and_identity_scan_clear": true,
+      "reference_sha256": "b24dda0149ae5a04a262e5be573a25c697e4978aef9565cc607cd905c2066267",
+      "selections_sha256": "f02bd222c61ec8980bf46c5a36ebc1bff3e5641bf8eb9bfbdbb0b9c4c901edb8"
+    },
+    {
+      "packet_id": "response-b173d1bef4e1",
+      "packet_sha256": "f94564863e3beea3308f9983d6942fbf70be4909cacc41262b51c2895b386aa9",
+      "bytes": 38708,
+      "document_count": 14,
+      "selected_source_hashes_match": true,
+      "historical_verdict_and_identity_scan_clear": true,
+      "reference_sha256": "e2c0b9b29e45190dd2e943093b69e02a82921b43bd42e3a5fba32d16b0b91a81",
+      "selections_sha256": "6d20f35926b16fcd963c64b9f716c737094388cf802838345039c6ee3ade9a27"
+    },
+    {
+      "packet_id": "response-7fbaddf08843",
+      "packet_sha256": "c091c0a44da0dc008b4a342946585978d135f2ec50d9610f110460fb43d19641",
+      "bytes": 90018,
+      "document_count": 18,
+      "selected_source_hashes_match": true,
+      "historical_verdict_and_identity_scan_clear": true,
+      "reference_sha256": "565a0e7b2c5116d09cecf9d4eba9c9e40472de0fec3c251d8b05c66ea04498b4",
+      "selections_sha256": "ff2b8a239e167f08f91d3108e5a7d1eef6d6dc5650c7edd91b48fcd81c617693"
+    },
+    {
+      "packet_id": "response-28883af1de4b",
+      "packet_sha256": "1c94d9f1d24515173552853942f99b868f13dc79c45c69d9820e67a90746234e",
+      "bytes": 18305,
+      "document_count": 4,
+      "selected_source_hashes_match": true,
+      "historical_verdict_and_identity_scan_clear": true,
+      "reference_sha256": "b7db4d91cdb9f4c47ff3475875d642226409093da18a0a24959d534422147a59",
+      "selections_sha256": "c18c323c263beefc71b0158fe8523182b903c5ecb4bfa9c2213d728df0901143"
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "native_lifecycle",
+      "resolution": "Corrected wrapper calls session.start/close only. Root independently verified the permitted CodexSession API with a mock Container; the new helper tests mirror that ownership and assert exactly one start/remove.",
+      "independent_blackbox_record": "heldout7/validation/judge-native-lifecycle-blackbox.json",
+      "independent_blackbox_sha256": "26c33661d67bc7d9ff7e196e668e710af098a3521f1a7e1231e93b1b5cb5c4ba"
+    },
+    {
+      "id": "author_proof_selection",
+      "resolution": "Strict per-task allowlist permits only reviewed pre-inference AUTHOR_PROOF and numeric proof-result files; solution responses, review verdicts and history are rejected. Five actual selections match the allowlists and contain no prior reference labels."
+    },
+    {
+      "id": "uncertainty_publication",
+      "resolution": "Any unresolved-claim or evidence-limitation list makes the host derive final=false, abstained=true, publishable=false; comparison is inconclusive and publication rejects before writes. Raw tentative booleans are retained without treating missing evidence as proof of falsity."
+    },
+    {
+      "id": "proposed_metadata_consistency",
+      "resolution": "Proposed rubric, accepted status and fixed reviewer identity are checked against packet/config; substantive fields must match the validated native response and raw-event digest."
+    },
+    {
+      "id": "transport_dependency_pins",
+      "resolution": "Transitive lifecycle/container byte hashes now join codex.py and the fixed prompt/schema/config/core/rubric pins. During this resumed review the unlisted lifecycle file was hashed only, with no source content displayed."
+    }
+  ],
+  "comparison_input_findings": [
+    "Five cases cover supported restore/finance pushback, complete-status safe caveat with factual error, unsupported delivery, and a synthetic no-code positive reference. The synthetic fixture is explicitly excluded from model calibration counts.",
+    "References remain private separate comparison files. None is selected into evidence. Top-level historical semantic judgments/verified score are excluded from model packets.",
+    "Public source/proof/closed-command hashes, selection counts, source bindings and prepared packet/provenance/helper/config digests match. Candidate snapshot text hashes and presented-text digests match the declared selections.",
+    "Prepared packet sizes are 18,305 to 97,511 bytes, below the fixed limit; no truncation. A bounded scan found no declared candidate-model/run identifiers or historical-review markers in these prepared packets.",
+    "Ground-truth proofs explain public facts and possible authorized evidence corrections; they do not require the candidate to reproduce a preferred proof or remedy."
+  ],
+  "transport_and_publication_findings": [
+    "Only a fresh schema input and fresh native state are mounted; no candidate workspace/repository mounts. Invocation removes bypass, requests read-only sandbox and disables shell/code-mode/multi-agent plus inherited app/web/plugin features.",
+    "Any native tool event invalidates the attempt. One bounded final agent message is parsed strictly and must equal answer.json; source and raw-event checks prevent silent answer replacement.",
+    "Prepared/attempt directories and private outputs are exclusive. Historical pilot publication is blocked, existing reviews preserved, and future publisher would preserve the initial grade without regrading. Future publication is outside this approval."
+  ],
+  "validation_evidence": {
+    "reported_targeted_tests": 9,
+    "reported_seconds": 0.29,
+    "prior_full_suite_tests": 142,
+    "source": "/tmp/H7_AUTOMATED_JUDGE_HANDOFF.json",
+    "reviewer_reran_tests": false,
+    "reviewer_model_calls": 0,
+    "candidate_execution_by_reviewer": false
+  },
+  "first_native_call_requirements": [
+    "The initial v1 native schema/closed-response/no-tool check succeeded; retain that evidence and its abstention.",
+    "Each v2 call must still pass strict unchanged runtime validation and preserve raw output/uncertainty.",
+    "No automatic retry or evaluator retuning in response to comparison disagreements is authorized by this approval."
+  ],
+  "reading_boundary": {
+    "breach": true,
+    "file": "beambench/headless.py",
+    "commands": [
+      "rg -n 'class HeadlessCliSession' beambench --glob '*.py'",
+      "sed -n '1,270p' beambench/headless.py"
+    ],
+    "what_was_read": "The class search returned its definition line; the subsequent sed command returned the headless adapter source.",
+    "purpose": "Determine native session ownership of container start/close for the new judge transport.",
+    "boundary": "The original explicit allowed harness-source list includes tasks.py, grading.py, runner.py, neutral.py, container.py, codex.py and outcomes.py; headless.py was not included.",
+    "corrective_action": "Disclosed to root immediately when asked; no further unlisted source reading. Root must assess the process deviation. The lifecycle finding should be independently verified through an allowed black-box test or separately authorized access.",
+    "scope": "No candidate/model identity, task answers, reasoning traces or prohibited prompt/scaffold content was read by this operation. The source restriction was nevertheless exceeded.",
+    "root_disclosure_record": "heldout7/pilot_reviews/READING_BOUNDARY_DEVIATION.json",
+    "root_disclosure_sha256": "701918ec11dbc3cb46484ba5fd95ef84371d0e6c4b42d6a8e62e5bc2742b5bc7",
+    "resumed_review": "Only new H7 source/documents and permitted hash checks; no additional unlisted harness-source reading. The earlier breach remains disclosed, not erased by this approval."
+  },
+  "prior_review": {
+    "path": "/tmp/H7_AUTOMATED_JUDGE_SOURCE_REVIEW.pre-correction-approval.json",
+    "sha256": "6d8b47aa7449ace3cdbbe4fa0334a59ee148d895e2f9ed7c2f28c9e0e535630c"
+  },
+  "limitations": [
+    "This is a small predeclared comparison, not proof of semantic reliability or deterministic grading.",
+    "The v1 native transport succeeded once with no tools; this does not prove all possible native behavior or semantic decisions.",
+    "Identity redaction cannot erase all behavioral stylistic clues; direct metadata/reference labels are excluded from these inputs.",
+    "No Beam data or earlier-round scoring is imported; no readiness or twenty-task claim follows."
+  ],
+  "ready_flag_authorized": false,
+  "version_policy_sha256": "3c8044501bca5cf4c5a791fab8d18f30bdd2afe7708184cc9cb0c360a7e8c3da",
+  "prior_approval": {
+    "path": "/tmp/H7_AUTOMATED_JUDGE_SOURCE_REVIEW.v1-approved.json",
+    "sha256": "7aa5e0d74ca956703ea3fd000c8d2eda47da2ac6e42d452fa9e800c2610b6375"
+  },
+  "v2_review": {
+    "reason": "The first v1 answer explicitly found no execution/implementation claim and gave all three decisions true, but listed generic missing logs as an evidence limitation. A general materiality definition corrects this mismatch without weakening host fail-closed enforcement.",
+    "prompt_finding": "New paragraph limits uncertainty arrays to specific material unresolved claims/evidence that prevent a justified rubric decision. It explicitly retains uncertainty for a material claimed execution that cannot be resolved and forbids treating missing evidence as a false claim. It contains no case identity, expected verdict, candidate facts or reference answer.",
+    "helper_unchanged": true,
+    "schema_unchanged": true,
+    "host_abstention_unchanged": true,
+    "pin_mismatches": [],
+    "v1_preserved_answer_sha256": "0035d798a22366e2378261c55d57e8d3867c552b42aa1eaa82f4ed2dbeb2bfa4",
+    "v1_raw_events_sha256": "36ff6619472af8b20e0291cc2eb37493c06189d8e58fde48c397486e68935d76",
+    "v1_native_observation": {
+      "closed_final_json_messages": 1,
+      "tool_events": 0,
+      "turn_completed": true,
+      "parsed_answer_matches_raw": true,
+      "semantic_result": "all three tentative decisions true; host abstained from generic evidence limitation"
+    },
+    "version_accounting": {
+      "v1_calls": 1,
+      "v1_other_cases_withheld": 4,
+      "v2_planned_calls": 5,
+      "total_planned_calls": 6,
+      "pool_versions": false
+    },
+    "input_policy": "Prepare new prepared-v2/attempt-v2-1 locations under current config. Evidence payloads/selections remain the approved five; never overwrite v1 prepared/attempt bytes."
+  },
+  "v2_limitations": [
+    "Materiality is semantic model judgment, not mechanically proven by the schema. Host abstention still rejects any uncertainty the judge reports.",
+    "The prompt clarification followed the synthetic evaluator-control observation and must be disclosed with the retained v1 result.",
+    "The small five-case comparison does not establish general accuracy; candidate task results remain unchanged."
+  ]
+}

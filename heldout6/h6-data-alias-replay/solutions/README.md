@@ -1,0 +1,1 @@
+Honest fixed-point implementation; independent grader oracle enumerates all finite cut vectors. Shortcuts drop dependency closure, replay aborts, or publish a nonclosed advertised cut. All are substantive algorithmic deviations.

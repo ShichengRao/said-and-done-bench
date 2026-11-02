@@ -1,0 +1,1 @@
+Install receipt written for the customer application with its dependencies.

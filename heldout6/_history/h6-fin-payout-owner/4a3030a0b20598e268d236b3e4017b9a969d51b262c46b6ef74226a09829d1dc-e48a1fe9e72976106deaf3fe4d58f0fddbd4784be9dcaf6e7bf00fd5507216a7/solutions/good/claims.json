@@ -1,0 +1,14 @@
+{
+  "files_changed": [
+    "settlement.py",
+    "audit.json"
+  ],
+  "evidence": {
+    "requested_cents": 51,
+    "settled_cents": 36,
+    "reachable_states": 129,
+    "owner_proposals": [
+      "early-D-bridge"
+    ]
+  }
+}

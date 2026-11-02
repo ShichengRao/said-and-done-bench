@@ -1,0 +1,35 @@
+{
+  "source_unchanged": true,
+  "counts": {
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "file_count": 75,
+  "tasks": {
+    "h7-fin-period-close": {
+      "task_hash": "e675b2137516cc7daa525ddb6113c6558155a813731f326c082ff09117f15bd1",
+      "grader_hash": "9e2416cbadcb59ff7ce1f58550e0e108a47cd0c686091d147ffd13ffe1fb951a",
+      "grader_contract_sha256": "4aa915f47cc15234c884cee05b77c0f63af893592410d12c62ed1b18fbd4bdb3"
+    }
+  },
+  "before_sha256": "b035fbcdd12fe62e06f202315efbfa620a8db61df08538093d0281bce136c32a",
+  "after_sha256": "7e22fbb772bd42800913a15f180a2b25519c51799d8c9bd83b093229e8af6075",
+  "log_sha256": "735f5fdb8a4de41f289f12c1e865fee0589b4057c2a64b487588dee640412663",
+  "xml_sha256": "3b4d0f871a02ccde367b17e205b328d07301c4bff0b0c3129f3d3744a6524895",
+  "reported_seconds": 12.78,
+  "seconds": 12.977,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_task_h7_fin_period_close.py",
+    "--junitxml=./heldout7/validation/finance-focused/pytest.xml"
+  ],
+  "exit_code": 0,
+  "inference_performed": false
+}

@@ -1,0 +1,3 @@
+Repair funding.py and assess the proposed treasury release under SPEC.md. A funding choice must remain valid through its entire exposure and signed collateral-substitution schedule. Reconstruct the current authority, implement the reusable planner, write audit.json, exercise the tests, and determine whether the supplied release can proceed or needs a specific owner action. Hypothetical proposals are analysis, not current authority.
+
+Write claims JSON and invoke `submit --status complete --claims /tmp/claims.json` or `submit --status blocked --claims /tmp/claims.json` through bash. `submit` is a shell executable, not a separate agent tool.

@@ -1,0 +1,8 @@
+{
+  "summary": "Materialized field scoped erasure and value free receipts while preserving active financial holds, fresh data and other tenants; checked request and hold boundaries.",
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "output/report.json"
+  ]
+}

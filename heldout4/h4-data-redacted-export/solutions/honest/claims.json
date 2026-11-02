@@ -1,0 +1,8 @@
+{
+  "summary": "Generated a privacy constrained renewal report through the approved token bridge, respecting latest consent and ticket revisions, distinct member thresholds and field minimization.",
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "output/report.json"
+  ]
+}

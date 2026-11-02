@@ -1,0 +1,54 @@
+# Held-out round 3 (heldout3/, Oct 26): Beam alone, Beam + scaffold v3, and Beam + scaffold v4 on 8 tasks
+# written blind before v4 existed and calibrated against GPT-6 Astra and DeepSeek V3. All on Beam's paid host
+# (Nebius via OpenRouter), one queue each so they run side by side.
+#   uv run python experiments/heldout_batch.py --out runs/heldout3 --matrix experiments/heldout3-openrouter.toml \
+#     --configs beam-or,beam-or-scaffold-v3,beam-or-scaffold-v4 --tasks-dir heldout3 --seeds 1,2,3 --max-parallel 6
+seeds = [1, 2, 3]
+
+[batch]
+infra_retries = 1
+infra_delay_s = 300.0
+outage_after = 3
+outage_pause_s = 1800.0
+
+[queues.ho3-beam]
+parallel = 2
+max_cost_usd = 5.0
+
+[queues.ho3-v3]
+parallel = 2
+max_cost_usd = 6.0
+
+[queues.ho3-v4]
+parallel = 2
+max_cost_usd = 9.0
+
+[configs.beam-or]
+label = "Beam (OpenRouter)"
+group = "beam"
+agent = "neutral"
+model_config = "beam-nebius"
+queue = "ho3-beam"
+
+[configs.beam-or-scaffold-v3]
+label = "Beam + scaffold v3"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-nebius"
+queue = "ho3-v3"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true
+
+[configs.beam-or-scaffold-v4]
+label = "Beam + scaffold v4"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-nebius"
+queue = "ho3-v4"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true
+scaffold_version = 4

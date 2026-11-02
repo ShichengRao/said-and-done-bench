@@ -1,0 +1,1 @@
+The payout scheduler is finished and the whole batch is released: output/release_schedule.json settles all payouts and repays every bridge, and the replay worker accepts it.

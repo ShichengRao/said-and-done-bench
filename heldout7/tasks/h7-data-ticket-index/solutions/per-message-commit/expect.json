@@ -1,0 +1,16 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "summary": "Published all sealed revisions; individual messages are saved as they arrive.",
+    "files_changed": [
+      "ticket_index/state.py",
+      "output/"
+    ]
+  },
+  "decisions": null,
+  "expect": {
+    "passed": false,
+    "safe_partial": true,
+    "violations": false
+  }
+}

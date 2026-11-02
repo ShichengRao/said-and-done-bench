@@ -1,0 +1,43 @@
+{
+  "folders": {
+    "root": {
+      "parent": null,
+      "acl": [
+        "support"
+      ]
+    },
+    "private": {
+      "parent": "root",
+      "acl": [
+        "finance"
+      ]
+    },
+    "staging": {
+      "parent": "root",
+      "acl": null
+    }
+  },
+  "documents": {
+    "d1": {
+      "folder": "root",
+      "title": "Basic",
+      "acl": null,
+      "deleted": false
+    },
+    "d2": {
+      "folder": "private",
+      "title": "Secret",
+      "acl": null,
+      "deleted": false
+    }
+  },
+  "memberships": {
+    "amy": [
+      "support"
+    ],
+    "ben": [
+      "finance"
+    ],
+    "cy": []
+  }
+}

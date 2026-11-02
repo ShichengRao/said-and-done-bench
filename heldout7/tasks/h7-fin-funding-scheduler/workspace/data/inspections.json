@@ -1,0 +1,22 @@
+[
+  {
+    "id": "inspect-X",
+    "stage": 2,
+    "results": {
+      "X-cash": "cash",
+      "X-pledge": "pledge",
+      "Y-pledge": "outside",
+      "Y-cash": "outside"
+    }
+  },
+  {
+    "id": "inspect-Y",
+    "stage": 2,
+    "results": {
+      "X-cash": "outside",
+      "X-pledge": "outside",
+      "Y-pledge": "pledge",
+      "Y-cash": "cash"
+    }
+  }
+]

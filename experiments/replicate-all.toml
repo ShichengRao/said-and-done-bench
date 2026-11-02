@@ -1,0 +1,42 @@
+# The matrix for replicate.sh's `all` preset: every setup the results show but GPT-6 Astra (which needs a Codex sign-in)
+# on all 28 tasks (the 15 coding tasks, the 8 no-valid-option scenarios, and the 5 held-out walls), two runs each.
+# It's the main matrix with caps sized for 56 runs a setup, Kimi K3 on Moonshot's endpoint as in the scenario
+# matrix (OpenRouter dropped the tag its coding-task runs used), and the DeepSeek V3 calibration anchor. A queue's
+# cap is a guard, not a target.
+extends = "../matrix.toml"
+seeds = [1, 2]
+
+[queues.anthropic]  # Opus alone: about $2.30 a run on the coding tasks; $1-10 on the held-out walls.
+max_cost_usd = 160.0
+
+[queues.anthropic-brain]  # The Opus brain: about $1.30 a run. Its Beam worker also holds the reflection queue.
+max_cost_usd = 100.0
+
+[queues.mistral]
+max_cost_usd = 30.0
+
+[queues.anchor]  # DeepSeek V3 on OpenRouter: under a cent a run.
+max_cost_usd = 2.0
+
+[configs.kimi-k3]
+model_config = "kimi-k3-moonshot"
+
+[configs.deepseek-v3]
+label = "DeepSeek V3 (Dec 2024, calibration anchor)"
+group = "anchor"
+agent = "neutral"
+model_config = "deepseek-v3"
+queue = "anchor"
+
+# The scaffold shown, v5 (experiments/scaffold-v5.toml), which the main matrix doesn't hold.
+[configs.beam-neutral-scaffold-v5]
+label = "Beam + scaffold v5"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-reflection"
+queue = "reflection"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true
+scaffold_version = 5

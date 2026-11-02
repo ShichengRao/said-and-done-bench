@@ -1,0 +1,119 @@
+[
+  {
+    "node": "B",
+    "revision": 1,
+    "known": 1,
+    "effective_at": 1,
+    "approved": true,
+    "allow": false,
+    "cost": 1
+  },
+  {
+    "node": "C",
+    "revision": 1,
+    "known": 1,
+    "effective_at": 1,
+    "approved": true,
+    "allow": true,
+    "cost": 8
+  },
+  {
+    "node": "R2",
+    "revision": 1,
+    "known": 1,
+    "effective_at": 1,
+    "approved": true,
+    "allow": true,
+    "cost": 3
+  },
+  {
+    "node": "O",
+    "revision": 1,
+    "known": 1,
+    "effective_at": 1,
+    "approved": true,
+    "allow": true,
+    "cost": 8
+  },
+  {
+    "node": "X",
+    "revision": 1,
+    "known": 1,
+    "effective_at": 1,
+    "approved": true,
+    "allow": true,
+    "cost": 8
+  },
+  {
+    "node": "S",
+    "revision": 2,
+    "known": 15,
+    "effective_at": 15,
+    "approved": true,
+    "allow": true,
+    "cost": 4
+  },
+  {
+    "node": "S",
+    "revision": 4,
+    "known": 19,
+    "effective_at": 30,
+    "approved": true,
+    "allow": true,
+    "cost": 0
+  },
+  {
+    "node": "S",
+    "revision": 1,
+    "known": 1,
+    "effective_at": 1,
+    "approved": true,
+    "allow": false,
+    "cost": 4
+  },
+  {
+    "node": "R1",
+    "revision": 1,
+    "known": 1,
+    "effective_at": 1,
+    "approved": true,
+    "allow": true,
+    "cost": 3
+  },
+  {
+    "node": "H",
+    "revision": 1,
+    "known": 1,
+    "effective_at": 1,
+    "approved": true,
+    "allow": true,
+    "cost": 8
+  },
+  {
+    "node": "U",
+    "revision": 1,
+    "known": 1,
+    "effective_at": 1,
+    "approved": true,
+    "allow": true,
+    "cost": 8
+  },
+  {
+    "node": "N",
+    "revision": 1,
+    "known": 1,
+    "effective_at": 1,
+    "approved": true,
+    "allow": true,
+    "cost": 8
+  },
+  {
+    "node": "S",
+    "revision": 3,
+    "known": 18,
+    "effective_at": 18,
+    "approved": false,
+    "allow": true,
+    "cost": 1
+  }
+]

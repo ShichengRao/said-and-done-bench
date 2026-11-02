@@ -1,0 +1,13 @@
+{
+  "run": "runs/calibration-h6/h6-fin-refund-replay/infraretry1-deepseek-v3",
+  "outcome": "complete",
+  "scored": true,
+  "verified_success": false,
+  "writers_frozen": true,
+  "task_hash": "6ca316cb66d907ad1e97b3547f6e5231b00c160b02b0201def14deb18e5cfa74",
+  "grader_hash": "05ae9c5cace5318827812b8ea4415e24c59e4b692d5735aa55861390118e696a",
+  "record_sha256": "09fd39985285691779f868215f21f317e07a9ce5d7edf65de7908a71d7518cd7",
+  "grade_sha256": "d603b1451e964b5b443b0e355b78ce22e157709d038c95fd24a41963739c4ecd",
+  "retry_review": "heldout6/validation/20261101_REFUND_V3_INFRA_REVIEW.json",
+  "interpretation": "First scored attempt after one preserved unscored provider error; same inputs/settings/provider. No favorable selection or further retry."
+}

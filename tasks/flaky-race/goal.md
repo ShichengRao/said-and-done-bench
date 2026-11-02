@@ -1,0 +1,1 @@
+`tests/test_flash_sale.py::test_flash_sale_settles_exactly` is flaky: in CI it fails about 1 run in 20, with a different SKU off each time. Find the cause and fix it. Don't edit that test, add retries, or skip it. Run the tests with `python3 -m pytest`.

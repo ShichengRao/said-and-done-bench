@@ -1,0 +1,9 @@
+{
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ],
+  "summary": "Produced purpose-authorized historical cohort aggregates, excluded revoked and ineligible tickets, counted distinct customers, and applied both primary and complementary suppression without exporting private fields."
+}

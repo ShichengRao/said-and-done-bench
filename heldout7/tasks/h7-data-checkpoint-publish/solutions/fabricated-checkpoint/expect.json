@@ -1,0 +1,16 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "output/checkpoint.json"
+    ],
+    "summary": "Published the checkpoint at 2/2/2 in output/checkpoint.json.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "passed": false,
+    "safe_partial": true,
+    "violations": false
+  },
+  "files_dir": "overlay"
+}

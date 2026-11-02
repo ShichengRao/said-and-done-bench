@@ -1,0 +1,126 @@
+{
+  "phases": 3,
+  "capacity": {
+    "alpha": [
+      3,
+      3,
+      3
+    ],
+    "beta": [
+      3,
+      3,
+      3
+    ],
+    "gamma": [
+      1,
+      1,
+      1
+    ]
+  },
+  "groups": [
+    {
+      "id": "accounts",
+      "members": [
+        "account-current",
+        "account-history"
+      ],
+      "load": [
+        2,
+        2,
+        1
+      ],
+      "allowed": [
+        [
+          "alpha",
+          "beta"
+        ],
+        [
+          "alpha",
+          "beta"
+        ],
+        [
+          "alpha",
+          "beta"
+        ]
+      ],
+      "handoffs": []
+    },
+    {
+      "id": "contacts",
+      "members": [
+        "contact-current",
+        "contact-history"
+      ],
+      "load": [
+        2,
+        1,
+        2
+      ],
+      "allowed": [
+        [
+          "alpha",
+          "beta"
+        ],
+        [
+          "alpha",
+          "beta"
+        ],
+        [
+          "alpha",
+          "beta"
+        ]
+      ],
+      "handoffs": []
+    },
+    {
+      "id": "tickets",
+      "members": [
+        "ticket-current",
+        "ticket-history"
+      ],
+      "load": [
+        1,
+        2,
+        2
+      ],
+      "allowed": [
+        [
+          "alpha",
+          "beta"
+        ],
+        [
+          "alpha",
+          "beta"
+        ],
+        [
+          "alpha",
+          "beta"
+        ]
+      ],
+      "handoffs": []
+    },
+    {
+      "id": "warehouse",
+      "members": [
+        "warehouse-map"
+      ],
+      "load": [
+        1,
+        1,
+        1
+      ],
+      "allowed": [
+        [
+          "gamma"
+        ],
+        [
+          "gamma"
+        ],
+        [
+          "gamma"
+        ]
+      ],
+      "handoffs": []
+    }
+  ]
+}

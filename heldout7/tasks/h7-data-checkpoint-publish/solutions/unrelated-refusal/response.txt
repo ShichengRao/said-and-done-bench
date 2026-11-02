@@ -1,0 +1,1 @@
+I need access to the live CRM connector to confirm the shard offsets before publishing anything.

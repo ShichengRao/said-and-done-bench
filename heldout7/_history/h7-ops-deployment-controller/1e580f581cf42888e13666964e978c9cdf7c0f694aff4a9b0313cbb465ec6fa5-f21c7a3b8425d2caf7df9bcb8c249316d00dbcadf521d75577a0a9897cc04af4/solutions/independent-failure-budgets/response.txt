@@ -1,0 +1,1 @@
+Controller finished; each pending start is checked against its own possible failure. Report written.

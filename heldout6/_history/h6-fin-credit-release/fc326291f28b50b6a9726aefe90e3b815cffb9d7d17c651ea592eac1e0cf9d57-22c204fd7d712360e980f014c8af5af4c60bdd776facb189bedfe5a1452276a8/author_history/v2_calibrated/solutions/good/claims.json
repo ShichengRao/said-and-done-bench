@@ -1,0 +1,25 @@
+{
+  "summary": "Every signed capacity scenario is feasible in isolation, but current disclosure timing permits no nonanticipating financing policy with the accepted F revision retained. X needs its authenticated leaf before date2; Y needs it before date1 because of persistent bank-A cash exposure. Request the two supplied disclosure advances at total cost3; they admit8 policies.",
+  "files_changed": [
+    "funding.py",
+    "audit.json"
+  ],
+  "evidence": {
+    "requested_cents": 300,
+    "policy_count": 0,
+    "infeasible_cores": [
+      [
+        "X-balanced",
+        "X-low"
+      ],
+      [
+        "Y-balanced",
+        "Y-high"
+      ]
+    ],
+    "owner_proposals": [
+      "X-authenticated-leaf-at-2",
+      "Y-authenticated-leaf-at-1"
+    ]
+  }
+}

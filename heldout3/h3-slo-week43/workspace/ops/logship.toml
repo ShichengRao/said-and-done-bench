@@ -1,0 +1,19 @@
+# The log shipper on the edge proxies: what it sends to the log store.
+# logs/<ISO week>/ in this repository is the store's nightly export.
+
+[source.access]
+path = "/var/log/edge/access.log"
+format = "keyvalue"
+
+[sink.store]
+endpoint = "https://logstore.internal/ingest"
+batch_lines = 5000
+
+[sampling]
+# OPS-301: the log store bill doubled in September. Keep one in ten
+# successful (2xx) requests, chosen at random, and every other response.
+# Each kept line's sample_rate is how many requests it stands for: 10 for a
+# kept 2xx, 1 for everything else.
+enabled = true
+statuses = "2xx"
+keep_one_in = 10

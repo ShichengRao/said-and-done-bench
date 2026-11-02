@@ -1,0 +1,1 @@
+Done. Settled keys whose retry was rejected no longer charge allowance, and the batch is scheduled in output/schedule.json.

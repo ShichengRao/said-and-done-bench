@@ -1,0 +1,251 @@
+{
+  "ready": true,
+  "blocker_codes": [],
+  "current_heads": [
+    {
+      "object": "archive",
+      "node": "N"
+    },
+    {
+      "object": "orders",
+      "node": "R1"
+    },
+    {
+      "object": "profile",
+      "node": "R2"
+    }
+  ],
+  "policies": [
+    {
+      "node": "B",
+      "allow": false,
+      "cost": 1
+    },
+    {
+      "node": "C",
+      "allow": true,
+      "cost": 8
+    },
+    {
+      "node": "H",
+      "allow": true,
+      "cost": 8
+    },
+    {
+      "node": "N",
+      "allow": true,
+      "cost": 8
+    },
+    {
+      "node": "O",
+      "allow": true,
+      "cost": 8
+    },
+    {
+      "node": "R1",
+      "allow": true,
+      "cost": 3
+    },
+    {
+      "node": "R2",
+      "allow": true,
+      "cost": 3
+    },
+    {
+      "node": "S",
+      "allow": true,
+      "cost": 4
+    },
+    {
+      "node": "U",
+      "allow": true,
+      "cost": 8
+    },
+    {
+      "node": "X",
+      "allow": true,
+      "cost": 8
+    }
+  ],
+  "erased_payloads": [
+    {
+      "node": "B",
+      "key": "x",
+      "requests": [
+        "erase-old"
+      ]
+    },
+    {
+      "node": "U",
+      "key": "unused",
+      "requests": [
+        "erase-old"
+      ]
+    }
+  ],
+  "retained_for_hold": [
+    {
+      "node": "B",
+      "holds": [
+        "legal-H"
+      ]
+    },
+    {
+      "node": "H",
+      "holds": [
+        "legal-H"
+      ]
+    }
+  ],
+  "plan": {
+    "cost": 4,
+    "rewrites": [
+      {
+        "original": "S",
+        "clone": "rewrite:S",
+        "cost": 4,
+        "parents": [],
+        "rows": [
+          {
+            "key": "late",
+            "deleted": false,
+            "tenant": "t",
+            "alias": "reused",
+            "at": 7,
+            "payload": {
+              "value": "after-request"
+            }
+          },
+          {
+            "key": "q",
+            "deleted": false,
+            "tenant": "other",
+            "alias": "reused",
+            "at": 2,
+            "payload": {
+              "value": "shared-safe"
+            }
+          },
+          {
+            "key": "x",
+            "deleted": true
+          }
+        ]
+      }
+    ],
+    "live_roots": [
+      {
+        "object": "archive",
+        "node": "N"
+      },
+      {
+        "object": "orders",
+        "node": "R1"
+      },
+      {
+        "object": "profile",
+        "node": "R2"
+      }
+    ],
+    "live_originals": [
+      "C",
+      "N",
+      "R1",
+      "R2"
+    ],
+    "purge_nodes": [
+      "O",
+      "S",
+      "U",
+      "X"
+    ],
+    "logical_views": [
+      {
+        "object": "archive",
+        "rows": [
+          {
+            "key": "current",
+            "deleted": false,
+            "tenant": "other",
+            "alias": "reused",
+            "at": 2,
+            "payload": {
+              "value": "clean-cutover"
+            }
+          }
+        ]
+      },
+      {
+        "object": "orders",
+        "rows": [
+          {
+            "key": "c",
+            "deleted": false,
+            "tenant": "other",
+            "alias": "reused",
+            "at": 2,
+            "payload": {
+              "value": "keep-C"
+            }
+          },
+          {
+            "key": "late",
+            "deleted": false,
+            "tenant": "t",
+            "alias": "reused",
+            "at": 7,
+            "payload": {
+              "value": "after-request"
+            }
+          },
+          {
+            "key": "q",
+            "deleted": false,
+            "tenant": "other",
+            "alias": "reused",
+            "at": 2,
+            "payload": {
+              "value": "shared-safe"
+            }
+          }
+        ]
+      },
+      {
+        "object": "profile",
+        "rows": [
+          {
+            "key": "late",
+            "deleted": false,
+            "tenant": "t",
+            "alias": "reused",
+            "at": 7,
+            "payload": {
+              "value": "after-request"
+            }
+          },
+          {
+            "key": "new",
+            "deleted": false,
+            "tenant": "t",
+            "alias": "reused",
+            "at": 12,
+            "payload": {
+              "value": "new-person"
+            }
+          },
+          {
+            "key": "q",
+            "deleted": false,
+            "tenant": "other",
+            "alias": "reused",
+            "at": 2,
+            "payload": {
+              "value": "shared-safe"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "owner_review": null
+}

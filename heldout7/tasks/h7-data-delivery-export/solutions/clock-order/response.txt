@@ -1,0 +1,1 @@
+Derived copies now inherit provenance and the exporter builds the certificate from the merged service timeline. output/certificate.json certifies delivery b4.

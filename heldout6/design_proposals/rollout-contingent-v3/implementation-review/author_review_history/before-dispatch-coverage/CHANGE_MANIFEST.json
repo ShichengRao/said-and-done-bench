@@ -1,0 +1,212 @@
+{
+  "candidate_only": true,
+  "created_at": "2026-11-01T06:46:08.794805+00:00",
+  "source": "./heldout6/h6-ops-rollout",
+  "candidate": "/tmp/h6-rollout-contingent-candidate/tasks/h6-ops-rollout",
+  "task_hash": "852e26a934c5a36ea577237d0574972e3b654fa8275d169b8bfce02c57ff3b79",
+  "grader_hash": "8ded0a9eec1e1de6c00a7bd571a4c618e2e519e62d7ec0fc21b430b97af95509",
+  "changed_files": [
+    {
+      "path": "CANONICAL_PROOF.md",
+      "before_sha256": "42955bc385017c7b1a174552e99190448b619e584dda02c0e898b7a5e3b852bd",
+      "after_sha256": "734972178549c54d62bed784be81665442baebf0b524ddecaad22fd22499e970"
+    },
+    {
+      "path": "grader/expected_tests.json",
+      "before_sha256": "77d24875a1cacaa7284d587363df6e108952d19c85d11c81832b81aa84f7442b",
+      "after_sha256": "d4625bfd5bd4dfbe3cc4b225973b7a87c289468fcbf3c4f391202d961ce89b32"
+    },
+    {
+      "path": "grader/oracle.py",
+      "before_sha256": "a56b072f004b56ada590a81e2373ecabe32bfabba3c3e9e13e63a1a048b8efa2",
+      "after_sha256": "01c4e8ecc05bfa94a6feb55ba8030561775b59876391b958c4b0ba72c9e22015"
+    },
+    {
+      "path": "grader/original/SPEC.md",
+      "before_sha256": "fde6aa1e42b829a4ace0a4bd7e04a34ad448e7331942092d1a1a58928865a0b3",
+      "after_sha256": "81889033f67751ba20e66a22ac0ab04b8f5867c6816678a2c3602626f328990c"
+    },
+    {
+      "path": "grader/original/data/input.json",
+      "before_sha256": "fc9bf2082b65ef7cae8e17b451e0692693294734d839700b71b5ed42c7204e6f",
+      "after_sha256": "5ca461113dd8e133e6001907cc78d79116cbe35de192659aaab71988f31d79e2"
+    },
+    {
+      "path": "grader/original/tests/test_public.py",
+      "before_sha256": "2cba530069069a7b77a5f5e016158cabffc17fef11c4a5eefffafa4ad5bd8450",
+      "after_sha256": "8adea72c1d543cf82b0f17a6a3862fa7efde66df9f06188b3a18e18059cf4641"
+    },
+    {
+      "path": "grader/test_behavior.py",
+      "before_sha256": "f3257850f0f4164e658c18e07f00c5be708c34111dc92cdc4756ccbe5d3ff273",
+      "after_sha256": "ec50bf95d401d1131d0a34c42033e2380dc790f9973933a605e910f754ccbdc9"
+    },
+    {
+      "path": "solutions/apply-stale-receipts/controller.py",
+      "before_sha256": "d0ba5d25c8750b4d4c563435f023ed2a61d0b3b581579b397f76a143f33047a3",
+      "after_sha256": null
+    },
+    {
+      "path": "solutions/dispatch-as-success/controller.py",
+      "before_sha256": "36b1b49dcd1bf9a2ca2447ce0c852a5c5a6ed00152a98dcc42e0a6ac7ef7b68e",
+      "after_sha256": null
+    },
+    {
+      "path": "solutions/full-success-only/controller.py",
+      "before_sha256": "bb3a711025ddcb805bf330ff45ea9319fc7502e639cdb968bb60b16a7050e591",
+      "after_sha256": null
+    },
+    {
+      "path": "solutions/honest/controller.py",
+      "before_sha256": "26092362016494ae193bb5c5332334c25708a10ae728c21a642830b05a6475d8",
+      "after_sha256": "2c0474e840670608fcdd62cc394178a1e9e23b67d72fd654cc8770c5f65d4132"
+    },
+    {
+      "path": "solutions/honest/tests/test_regression.py",
+      "before_sha256": "a870f9af003d80c0eb735102f7b5253aca14ae43210e91c4ef92b8179f4102ac",
+      "after_sha256": "8e160688025de81008401ec5710c1d0cc6096aa0b14fc0f0aebcfd5fbc32a104"
+    },
+    {
+      "path": "solutions/ignore-existing-pending/controller.py",
+      "before_sha256": "4baa7d77f23b18ed4608ac9cb673ec9e2c2968f9b261d625650674e2aff1f9e8",
+      "after_sha256": null
+    },
+    {
+      "path": "solutions/independent-failure-budgets/controller.py",
+      "before_sha256": null,
+      "after_sha256": "b8e653a504e4ef80d30ff38eafedcf46378766836328e3b150b12528e35cf58b"
+    },
+    {
+      "path": "solutions/no-completion-lookahead/controller.py",
+      "before_sha256": "ebc209e140c81742ed77d3c6b04a217868585e1b4e969c693fffd622f7a612ba",
+      "after_sha256": null
+    },
+    {
+      "path": "solutions/nominal-only/controller.py",
+      "before_sha256": null,
+      "after_sha256": "4c27d7e7f2eb69e16cff718425b1be67a65b52ce2ecc1191cb075ecd155fcc9f"
+    },
+    {
+      "path": "solutions/projected-node-eligibility/controller.py",
+      "before_sha256": null,
+      "after_sha256": "de9fa0c6535fec4a448d5ad5aedeaea913b96181f5930294119faf033d257f05"
+    },
+    {
+      "path": "solutions/request-id-only/controller.py",
+      "before_sha256": "059db2f5c1498680aa5db2c68923b791502feee8c2cf4c4bd97cd99e34402bef",
+      "after_sha256": null
+    },
+    {
+      "path": "task.toml",
+      "before_sha256": "e8fd4e6c503f3b42a112a3e8dd26ef856127b0c182c2cef8e25a741cc3422cb9",
+      "after_sha256": "2a47df841bc666c6d820ae7abae5dc11504c1237b498ed901a3c3806a71a578b"
+    },
+    {
+      "path": "workspace/SPEC.md",
+      "before_sha256": "fde6aa1e42b829a4ace0a4bd7e04a34ad448e7331942092d1a1a58928865a0b3",
+      "after_sha256": "81889033f67751ba20e66a22ac0ab04b8f5867c6816678a2c3602626f328990c"
+    },
+    {
+      "path": "workspace/data/input.json",
+      "before_sha256": "fc9bf2082b65ef7cae8e17b451e0692693294734d839700b71b5ed42c7204e6f",
+      "after_sha256": "5ca461113dd8e133e6001907cc78d79116cbe35de192659aaab71988f31d79e2"
+    },
+    {
+      "path": "workspace/tests/test_public.py",
+      "before_sha256": "2cba530069069a7b77a5f5e016158cabffc17fef11c4a5eefffafa4ad5bd8450",
+      "after_sha256": "8adea72c1d543cf82b0f17a6a3862fa7efde66df9f06188b3a18e18059cf4641"
+    }
+  ],
+  "copied_source_sha256": "86ed082e64ab44cdb520724eb9f4fccf8a6f0b0ade629c2320de257fd7dffbc3",
+  "source_diff_sha256": "9fb9434b2605a66fa1120b62bd3318b86a7f2b9322033b9b08e47cb139a35025",
+  "original_changed_since_copy": [],
+  "current_task_edits_performed": false,
+  "inference_performed": false,
+  "model_runs_inspected": false,
+  "focused_actual_grader": {
+    "counts": {
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "summary": "5 passed in 7.20s",
+    "log": "focused-grader-authorized.log",
+    "xml": "focused-grader-authorized.xml",
+    "log_sha256": "b379d8c22ca23b4eaea9f377af4531c051a9d8f9b2fb0da149cb2f39995a1e5f",
+    "xml_sha256": "9a9091f8ac12e981bdde6a1100b30d743090e4c0a332b037d655cf7a0410f276",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "-c",
+      "/dev/null",
+      "--noconftest",
+      "/tmp/h6-rollout-contingent-candidate/test_candidate.py",
+      "--junitxml=/tmp/h6-rollout-contingent-candidate/focused-grader-authorized.xml"
+    ]
+  },
+  "earlier_check": "Initial sandboxed Docker attempt skipped all5; focused-grader.xml preserved. Docker-authorized rerun above executed all5 with zero skips. Local reference checks had passed17 before two process/replay checks were added; the final actual-grader positives exercise those added checks.",
+  "notes": "Author proof was completed after focused checks; specification, reference, oracle, tests and grader were unchanged during the final actual-grader run. No promotion, readiness claim or model difficulty claim.",
+  "files": {
+    "goal.md": "63998e4afd472ad088df6c64f29a032c28650f69a6ebeb8b67105b60b8fafd4e",
+    "CANONICAL_PROOF.md": "734972178549c54d62bed784be81665442baebf0b524ddecaad22fd22499e970",
+    "task.toml": "2a47df841bc666c6d820ae7abae5dc11504c1237b498ed901a3c3806a71a578b",
+    "grader/_common.py": "139ef4ee88241263d4c369c06b32a75a9a993a142c4b8627ba6ad9ea9ba3d60c",
+    "grader/test_behavior.py": "ec50bf95d401d1131d0a34c42033e2380dc790f9973933a605e910f754ccbdc9",
+    "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+    "grader/oracle.py": "01c4e8ecc05bfa94a6feb55ba8030561775b59876391b958c4b0ba72c9e22015",
+    "grader/expected_tests.json": "d4625bfd5bd4dfbe3cc4b225973b7a87c289468fcbf3c4f391202d961ce89b32",
+    "grader/grade.py": "14f6666e6988c9a9be90dd03f32ad3da0fbcdac65d26a7d03aa4a89c4b892f57",
+    "grader/original/controller.py": "d204ca8e1363ff5547b29aba12b612e64a43381b4ac5d9cd4cb1e6d7f72b31e7",
+    "grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+    "grader/original/SPEC.md": "81889033f67751ba20e66a22ac0ab04b8f5867c6816678a2c3602626f328990c",
+    "grader/original/tests/test_public.py": "8adea72c1d543cf82b0f17a6a3862fa7efde66df9f06188b3a18e18059cf4641",
+    "grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+    "grader/original/data/input.json": "5ca461113dd8e133e6001907cc78d79116cbe35de192659aaab71988f31d79e2",
+    "workspace/controller.py": "d204ca8e1363ff5547b29aba12b612e64a43381b4ac5d9cd4cb1e6d7f72b31e7",
+    "workspace/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+    "workspace/SPEC.md": "81889033f67751ba20e66a22ac0ab04b8f5867c6816678a2c3602626f328990c",
+    "workspace/tests/test_public.py": "8adea72c1d543cf82b0f17a6a3862fa7efde66df9f06188b3a18e18059cf4641",
+    "workspace/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+    "workspace/data/input.json": "5ca461113dd8e133e6001907cc78d79116cbe35de192659aaab71988f31d79e2",
+    "setup/setup.sh": "7892aff4a8ee7ccc5715177a93e12daa7ee95329a96d7761613c6ac1d706c316",
+    "solutions/independent-failure-budgets/controller.py": "b8e653a504e4ef80d30ff38eafedcf46378766836328e3b150b12528e35cf58b",
+    "solutions/nominal-only/controller.py": "4c27d7e7f2eb69e16cff718425b1be67a65b52ce2ecc1191cb075ecd155fcc9f",
+    "solutions/projected-node-eligibility/controller.py": "de9fa0c6535fec4a448d5ad5aedeaea913b96181f5930294119faf033d257f05",
+    "solutions/honest/controller.py": "2c0474e840670608fcdd62cc394178a1e9e23b67d72fd654cc8770c5f65d4132",
+    "solutions/honest/tests/test_regression.py": "8e160688025de81008401ec5710c1d0cc6096aa0b14fc0f0aebcfd5fbc32a104",
+    "author_history/v1_calibrated/PRESERVATION.json": "2062d374be9484248b6b2644b8a9a7ff9b269b349270f1f768954f28719c5370",
+    "author_history/v1_calibrated/test_task_h6_ops_rollout.py": "cc7960752ee356c8b0356d6fb56a06f709e51c6209773904029bd85707dfc391",
+    "author_history/v1_calibrated/task/goal.md": "63998e4afd472ad088df6c64f29a032c28650f69a6ebeb8b67105b60b8fafd4e",
+    "author_history/v1_calibrated/task/task.toml": "970584f2e5b8a911a3f07758a844963435814b273a9ac2247d5aaeef067ab5e6",
+    "author_history/v1_calibrated/task/grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+    "author_history/v1_calibrated/task/grader/test_behavior.py": "a5bce30bc249ce860eeca0d742a6e6b8cc3b8b1b7267fd7e9e9d44ca730ae1bb",
+    "author_history/v1_calibrated/task/grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+    "author_history/v1_calibrated/task/grader/expected_tests.json": "cdb2fbb31761a0f02f921c6b54f32a0d4adb3f36d7efa2f09c3364c277a26a4b",
+    "author_history/v1_calibrated/task/grader/grade.py": "7cc35144d8c812060675d9af67955c5ad9584af437470fb3609a7dd56104dc0b",
+    "author_history/v1_calibrated/task/grader/original/controller.py": "d204ca8e1363ff5547b29aba12b612e64a43381b4ac5d9cd4cb1e6d7f72b31e7",
+    "author_history/v1_calibrated/task/grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+    "author_history/v1_calibrated/task/grader/original/SPEC.md": "cf674831e9a7c86d620c43ae2633c159b7a8fffe6291e1e24efb0cdcd8ac7032",
+    "author_history/v1_calibrated/task/grader/original/tests/test_public.py": "2cba530069069a7b77a5f5e016158cabffc17fef11c4a5eefffafa4ad5bd8450",
+    "author_history/v1_calibrated/task/grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+    "author_history/v1_calibrated/task/grader/original/data/input.json": "0429b4391ae6f8c7bc94b3adbb1e7951bc5e2fe69e17de57d02dc56243a6c1a4",
+    "author_history/v1_calibrated/task/workspace/controller.py": "d204ca8e1363ff5547b29aba12b612e64a43381b4ac5d9cd4cb1e6d7f72b31e7",
+    "author_history/v1_calibrated/task/workspace/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+    "author_history/v1_calibrated/task/workspace/SPEC.md": "cf674831e9a7c86d620c43ae2633c159b7a8fffe6291e1e24efb0cdcd8ac7032",
+    "author_history/v1_calibrated/task/workspace/tests/test_public.py": "2cba530069069a7b77a5f5e016158cabffc17fef11c4a5eefffafa4ad5bd8450",
+    "author_history/v1_calibrated/task/workspace/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+    "author_history/v1_calibrated/task/workspace/data/input.json": "0429b4391ae6f8c7bc94b3adbb1e7951bc5e2fe69e17de57d02dc56243a6c1a4",
+    "author_history/v1_calibrated/task/setup/setup.sh": "7892aff4a8ee7ccc5715177a93e12daa7ee95329a96d7761613c6ac1d706c316",
+    "author_history/v1_calibrated/task/solutions/dispatch-as-success/controller.py": "8ca484f89352896f823c604c64f59426df835cbd19106e6eb9bea52089e7cc4c",
+    "author_history/v1_calibrated/task/solutions/honest/controller.py": "041106c62965b967fee63f878946dfec05dd95d536ce0b59daa612e089f49d46",
+    "author_history/v1_calibrated/task/solutions/honest/tests/test_regression.py": "a870f9af003d80c0eb735102f7b5253aca14ae43210e91c4ef92b8179f4102ac",
+    "author_history/v1_calibrated/task/solutions/apply-stale-receipts/controller.py": "ec36078e563154b7f29ec2fbe45795d14fb7f8a9f1f5c21bc7707373b46224b4",
+    "author_history/v1_calibrated/task/solutions/full-success-only/controller.py": "15be39a1d570d2f6df7c1bc9ca9f449e202575416445cd0d46ec989f87cd4625",
+    "author_history/v1_calibrated/task/solutions/request-id-only/controller.py": "e6f48b52f9af81a9e74a1227fac4455fec5f689ee571aa60d4ed6ee1ff23ebdf"
+  },
+  "external_test_sha256": "68706f28d9f71450775a25bd25b9e71bc342dc2650fd2ae629abacb3244f5fc0"
+}

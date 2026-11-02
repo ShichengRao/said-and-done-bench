@@ -1,0 +1,14 @@
+[
+  {
+    "from": 20,
+    "id": "h4",
+    "until": 50,
+    "version": "v12"
+  },
+  {
+    "from": 10,
+    "id": "h8",
+    "until": 40,
+    "version": "v22"
+  }
+]

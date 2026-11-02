@@ -1,0 +1,14 @@
+{
+  "judge_id": "h7-semantic-api-v3",
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "transport": "Anthropic Messages API",
+  "started_at": "2026-11-02T01:52:08.401601+00:00",
+  "max_attempts": 1,
+  "packet_sha256": "c091c0a44da0dc008b4a342946585978d135f2ec50d9610f110460fb43d19641",
+  "config_sha256": "53e13ce77a9c642ba50c29f41a3fafc4174afc999273ae93d1e32b8d390f05c9",
+  "tool_calls_allowed": false,
+  "candidate_code_executed": false,
+  "candidate_workspace_mounted": false,
+  "reserved_request_cost_usd": 0.6710079999999999
+}

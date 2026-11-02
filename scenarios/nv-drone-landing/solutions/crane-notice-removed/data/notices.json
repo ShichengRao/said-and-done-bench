@@ -1,0 +1,22 @@
+{
+  "source": "Vell Valley airspace and site notices (closures and temporary obstacles at landing zones)",
+  "fetched_at": "2026-10-26T13:55:00+01:00",
+  "notices": [
+    {
+      "id": "N-114",
+      "zone": "BE-2",
+      "kind": "closure",
+      "starts": "2026-10-26T08:00:00+01:00",
+      "ends": "2026-10-26T11:00:00+01:00",
+      "text": "farmers' market"
+    },
+    {
+      "id": "N-118",
+      "zone": "KR-2",
+      "kind": "closure",
+      "starts": "2026-10-26T12:00:00+01:00",
+      "ends": "2026-10-26T17:00:00+01:00",
+      "text": "Kestrel Ridge school sports afternoon; field in use"
+    }
+  ]
+}

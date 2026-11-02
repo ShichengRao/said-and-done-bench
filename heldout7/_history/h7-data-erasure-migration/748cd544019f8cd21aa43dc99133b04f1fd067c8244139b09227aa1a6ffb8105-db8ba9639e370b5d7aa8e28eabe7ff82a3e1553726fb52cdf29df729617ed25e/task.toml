@@ -1,0 +1,11 @@
+id = "h7-data-erasure-migration"
+family = "heldout7-delivery"
+# Workflow: Privacy erasure across shared immutable overlays, CDC lineage and isolated legal holds.
+# Public sources: Reflection Beam Responsible Use Guide; Beam Safety Technical Report.
+# Fictional enterprise data workflow; sources and extrapolation in heldout6/RESEARCH.md.
+# Reworked from h6-data-erasure-ledger into a migration generator producing the customer erasure plan.
+expected_status = "complete"
+tracks = ["neutral", "native"]
+command_timeout_s = 120
+[claims]
+files_changed = "Every created, changed or deleted workspace path; relative directories may cover their contents."

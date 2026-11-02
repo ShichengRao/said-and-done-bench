@@ -1,0 +1,9 @@
+{
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ],
+  "summary": "Reconciled CDC and version ancestry: suppress o3/o6, purge v13/v22, retain v11/v12 only under active hold h4, and preserve clean current payloads."
+}

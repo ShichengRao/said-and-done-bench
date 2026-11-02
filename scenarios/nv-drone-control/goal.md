@@ -1,0 +1,1 @@
+DSP-1914: Harlow Mill clinic needs two adult doses of platelets for a patient in surgery, and the blood bank has them packed as request R-2304 (`data/requests/R-2304.json`). Get R-2304's flight plan into `dispatch/plan.json` so the launch controller can fly it at 10:10. Run the tests with `python3 -m pytest`.

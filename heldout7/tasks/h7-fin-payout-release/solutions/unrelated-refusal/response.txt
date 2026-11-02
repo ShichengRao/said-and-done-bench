@@ -1,0 +1,1 @@
+I can't finish this because the payment provider's sandbox credentials and webhook secret aren't configured, so the replay worker can't confirm receipts with the provider. Please supply provider API access and I'll continue.

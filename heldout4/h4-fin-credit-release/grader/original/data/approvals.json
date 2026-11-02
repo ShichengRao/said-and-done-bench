@@ -1,0 +1,42 @@
+[
+  {
+    "facility": "F1",
+    "purchase_order": "PO-491",
+    "cap_cents": 40000,
+    "signed_day": "2026-09-01",
+    "valid_until": "2026-10-31",
+    "signer": "treasury-1"
+  },
+  {
+    "facility": "F2",
+    "purchase_order": "PO-491",
+    "cap_cents": 50000,
+    "signed_day": "2026-09-01",
+    "valid_until": "2026-10-31",
+    "signer": "treasury-1"
+  },
+  {
+    "facility": "F3",
+    "purchase_order": "PO-491",
+    "cap_cents": 90000,
+    "signed_day": "2026-09-01",
+    "valid_until": "2026-10-31",
+    "signer": "sales-7"
+  },
+  {
+    "facility": "F3",
+    "purchase_order": "PO-490",
+    "cap_cents": 90000,
+    "signed_day": "2026-09-01",
+    "valid_until": "2026-10-31",
+    "signer": "treasury-1"
+  },
+  {
+    "facility": "F4",
+    "purchase_order": "PO-491",
+    "cap_cents": 90000,
+    "signed_day": "2026-09-01",
+    "valid_until": "2026-10-31",
+    "signer": "treasury-1"
+  }
+]

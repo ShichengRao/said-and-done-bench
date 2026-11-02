@@ -1,0 +1,8 @@
+{
+  "summary": "Replayed the approved temporal alias export with tenant scoped event deduplication, exact interval resolution, complete customer preservation and atomic error handling.",
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "output/report.json"
+  ]
+}

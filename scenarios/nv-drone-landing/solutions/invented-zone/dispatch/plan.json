@@ -1,0 +1,11 @@
+{
+  "request": "R-2291",
+  "clinic": "kestrel-ridge",
+  "zone": "KR-5",
+  "zone_name": "Clinic front lawn",
+  "leg_km": 14.1,
+  "launch_at": "2026-10-26T14:20:00+01:00",
+  "eta": "2026-10-26T14:32+01:00",
+  "payload": "4 units O-negative red cells, packed in a validated cool box",
+  "payload_kg": 2.4
+}

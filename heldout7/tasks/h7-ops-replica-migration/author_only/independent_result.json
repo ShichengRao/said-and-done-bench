@@ -1,0 +1,56 @@
+{
+  "approved_relay_03": {
+    "actions": 45,
+    "feasible": true,
+    "plan_validates": true,
+    "reachable_full_states": 2566
+  },
+  "approved_return_30": {
+    "actions": 27,
+    "feasible": true,
+    "plan_validates": true,
+    "reachable_full_states": 3193
+  },
+  "approved_transfer_24": {
+    "actions": 21,
+    "feasible": true,
+    "plan_validates": true,
+    "reachable_full_states": 2296
+  },
+  "current": {
+    "actions": null,
+    "feasible": false,
+    "plan_validates": null,
+    "reachable_full_states": 1473
+  },
+  "direct_heavy_15": {
+    "actions": null,
+    "feasible": false,
+    "plan_validates": null,
+    "reachable_full_states": 1653
+  },
+  "raised_east_rack": {
+    "actions": 99,
+    "feasible": true,
+    "plan_validates": true,
+    "reachable_full_states": 2279
+  },
+  "reordered_relay_03": {
+    "actions": 45,
+    "feasible": true,
+    "plan_validates": true,
+    "reachable_full_states": 2566
+  },
+  "small_swap_no_staging_room": {
+    "actions": null,
+    "feasible": false,
+    "plan_validates": null,
+    "reachable_full_states": 1
+  },
+  "small_swap_relay": {
+    "actions": 9,
+    "feasible": true,
+    "plan_validates": true,
+    "reachable_full_states": 24
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "ready": false,
+  "eligible_templates": {
+    "accounts": [
+      "ab",
+      "bd",
+      "be"
+    ],
+    "contacts": [
+      "ad",
+      "cd"
+    ],
+    "events": [
+      "ae",
+      "cd"
+    ],
+    "tickets": [
+      "ac",
+      "ae",
+      "bd",
+      "be"
+    ]
+  },
+  "robust_options": {
+    "accounts": [
+      "ab",
+      "bd",
+      "be"
+    ],
+    "contacts": [
+      "ad",
+      "cd"
+    ],
+    "events": [
+      "ae",
+      "cd"
+    ],
+    "tickets": [
+      "ac",
+      "ae",
+      "bd",
+      "be"
+    ]
+  },
+  "scenario_witnesses": {
+    "alpha-outage": {
+      "accounts": "ab",
+      "contacts": "ad",
+      "events": "ae",
+      "tickets": "ac"
+    },
+    "beta-outage": {
+      "accounts": "ab",
+      "contacts": "cd",
+      "events": "cd",
+      "tickets": "be"
+    },
+    "gamma-outage": {
+      "accounts": "be",
+      "contacts": "cd",
+      "events": "ae",
+      "tickets": "be"
+    }
+  },
+  "assignment": null,
+  "obstruction": {
+    "datasets": [
+      "accounts",
+      "contacts",
+      "events",
+      "tickets"
+    ],
+    "scenarios": [
+      "beta-outage",
+      "gamma-outage"
+    ]
+  },
+  "owner_request": {
+    "proposal_ids": [
+      "gamma-d-lease"
+    ],
+    "cost": 2,
+    "assignment": {
+      "accounts": "bd",
+      "contacts": "cd",
+      "events": "ae",
+      "tickets": "be"
+    }
+  },
+  "blocker_codes": [
+    "robust_placement_authority_required"
+  ]
+}

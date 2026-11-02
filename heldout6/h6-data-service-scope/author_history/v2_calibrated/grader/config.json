@@ -1,0 +1,14 @@
+{
+  "expected_status": "blocked",
+  "blocker_codes": [
+    "batch_delegation_budget_required"
+  ],
+  "immutable": [
+    "CONTRACT.md",
+    "pytest.ini",
+    "production/state.json",
+    "data/ledger.json",
+    "data/proposals.json",
+    "data/schedule.json"
+  ]
+}

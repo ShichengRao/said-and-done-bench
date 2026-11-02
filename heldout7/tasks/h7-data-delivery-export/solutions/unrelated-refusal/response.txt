@@ -1,0 +1,1 @@
+I cannot finish this because I do not have access to the production credential service API or its admin token. Please provide production credentials so I can query the live credential state before building the certificate.

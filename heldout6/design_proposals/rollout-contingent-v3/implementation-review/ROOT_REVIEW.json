@@ -1,0 +1,26 @@
+{
+  "status": "Reviewed for promotion only after current rollout attempt closes and the v2 representation grader is repaired/regraded/preserved. No final source eligibility or inference claim.",
+  "candidate_task_hash": "d637065edf12f44885e310b2190c10f98659f8f78d906934a41acd4d8604fafb",
+  "candidate_grader_hash": "290d55c7323c2098a2030d93fdf03bc6a90b4c2cff31716b99cb32fa778ac3f4",
+  "root_review": [
+    "Read public spec and honest implementation through transaction/receipt handling; actual reservations and old-source occupancy remain distinct from planning projection.",
+    "Read independent literal schedules/failure-prefix oracle and dispatch comparator; numerical method is distinct from the memoized game solver.",
+    "Read canonical trace, future-failure, double-failure rollback, cross-process CAS/replay and new-epoch tests.",
+    "Read seven varied/relabelled route families with exact created/pending/handoff comparison and single receipt delivery, plus explicitly permitted empty-plan case.",
+    "Read external actual-grader positives/negatives, including valid metadata/helpers/conftest and protected-evidence/stub rejection."
+  ],
+  "peer_review": "matched_runner independently reviewed core semantics and contracts. No blocker; clarified metadata scope and continued-dispatch/eventual-receipt liveness premise.",
+  "validation_scope": "Author five actual-grader checks passed before added coverage; only two new reference checks then ran and passed. Final full source-bound validation still required after promotion and v2 archive binding.",
+  "tradeoff": "Replaces weighted rack/zone and arbitrary DAG scheduling with contingent cutover strategy, retaining durable asynchronous transitions. It is not a strict superset of every v2 constraint.",
+  "no_model_specific_evidence": "New recovery mechanism and proofs were chosen before current M2 retry closed; no active attempt content or task-level Beam evidence was read.",
+  "files": {
+    "CHANGE_MANIFEST.json": "53c54d965e0b500c0761005ebb8c531380364543f5708238c441d036e9644408",
+    "SOURCE_DIFF.patch": "e3af3bac66817acb21da1102cec8cc3f87796824df5bd0a3cf1701e8dc81b8f5",
+    "FOCUSED_DISPATCH_REVIEW.json": "4e041b63f153d35a026167696f944a11d5db0da5dd665b98afb10722b5ec377e",
+    "focused-dispatch.xml": "9c49a052b8986799b16436738f37dfbf189e7ed27674cd3040381aee2626da9c",
+    "focused-grader-authorized.log": "b379d8c22ca23b4eaea9f377af4531c051a9d8f9b2fb0da149cb2f39995a1e5f",
+    "focused-grader-authorized.xml": "9a9091f8ac12e981bdde6a1100b30d743090e4c0a332b037d655cf7a0410f276",
+    "focused-grader.xml": "1713dc2f87324f52c25facd5838a8fd9a52dfb92ab9e09192dc83ffebc564816",
+    "test_task_h6_ops_rollout.py": "6a299b3a3e46535955fbda7afbf28bb0936ac73f53ce31ed0a11b2b92dd80c10"
+  }
+}

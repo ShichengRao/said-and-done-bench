@@ -1,0 +1,9 @@
+{
+  "summary": "Published q_a, q_ab and q_b counts with total utility 23, preserving the prior release in the cumulative privacy check. Every resulting membership atom has at least two people; revoked or unapproved candidates and unsafe combinations were suppressed, with no member IDs exported.",
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

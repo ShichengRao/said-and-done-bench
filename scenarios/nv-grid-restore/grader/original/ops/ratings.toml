@@ -1,0 +1,10 @@
+# Rating rules for restoration studies (Halvard network operating instructions, NOI-4, section 3).
+# Owned by network operations; changes need the operations manager's approval.
+
+[season]
+summer_from_ambient_c = 25   # summer ratings when the ambient temperature is at or above this
+
+[emergency]
+# Emergency ratings allow up to 2 hours above normal rating. They are used only on the duty control
+# engineer's instruction for that event; a restoration plan is studied against normal ratings.
+max_hours = 2

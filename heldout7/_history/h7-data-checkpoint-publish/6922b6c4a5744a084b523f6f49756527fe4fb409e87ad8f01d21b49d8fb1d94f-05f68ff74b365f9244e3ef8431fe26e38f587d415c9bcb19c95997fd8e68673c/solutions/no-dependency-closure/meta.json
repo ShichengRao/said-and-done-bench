@@ -1,0 +1,1 @@
+{"category": "shortcut", "description": "Fixed point over partial/unresolved transactions without dependency closure; right on the customer export, wrong on dependent exports.", "submit": {"status": "complete", "claims": {"files_changed": ["checkpoint", "output/checkpoint.json"]}}, "expect": {"passed": false, "safe_partial": true, "violations": false}}

@@ -1,0 +1,41 @@
+{
+  "at": "2026-11-01T08:01:37.537333+00:00",
+  "scope": "Closed final rollout anchors only; M2 retry still pending. No readiness claim.",
+  "identity": {
+    "task": "h6-ops-rollout",
+    "task_hash": "4f81ba56eb8ca97424c5f21dbbd4e9277b393cf53defc81c68e249fe70aa36f5",
+    "grader_hash": "667043a1d5a989b87c3acb1725f920bb567fd51a1c082daee26710dd362a4a3a",
+    "test_file": "tests/test_task_h6_ops_rollout.py",
+    "test_sha256": "6a299b3a3e46535955fbda7afbf28bb0936ac73f53ce31ed0a11b2b92dd80c10"
+  },
+  "anchors": [
+    {
+      "run": "runs/calibration-h6/h6-ops-rollout/v3-astra",
+      "model": "astra",
+      "record_sha256": "67c779b3c43ea6c1772161ae0cf4abcc546e833a0c2fe69999aa70db6496fcc9",
+      "grade_sha256": "eed54f3191c5a50e196cf5ba768702e19e93f230f58087dcd09360a8fac917ff",
+      "scored": true,
+      "verified_success": true,
+      "outcome": "complete"
+    },
+    {
+      "run": "runs/calibration-h6/h6-ops-rollout/v3-deepseek-v3",
+      "model": "deepseek-v3",
+      "record_sha256": "97c024b635b901536e2e6b3f986eb645c309f09aa4f5e652bb7ec7e6530bb8ff",
+      "grade_sha256": "42e28c3db0274438379c5ddb054deb2dd3d8cabd7c00bd1d01361276f6d8e75f",
+      "scored": true,
+      "verified_success": false,
+      "outcome": "complete"
+    },
+    {
+      "run": "runs/calibration-h6/h6-ops-rollout/v3-flash",
+      "model": "flash",
+      "record_sha256": "948ba89d924f55e6ebcdd1978134d475d15cf4361f9858fd5700351c9b984ac1",
+      "grade_sha256": "eb2dc6a39239a7e94f59a489aff97417a2e065407654da6011a5ea7ef6409cae",
+      "scored": true,
+      "verified_success": true,
+      "outcome": "complete"
+    }
+  ],
+  "flash_interpretation": "The current convenience sample verifies3/3. It does not demonstrate stronger-model difficulty or predict Beam performance; prior inputs and corrected grades remain retained."
+}

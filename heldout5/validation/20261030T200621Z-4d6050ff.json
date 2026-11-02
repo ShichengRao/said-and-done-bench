@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-30T20:06:49.324086+00:00",
+  "run_id": "20261030T200621Z-4d6050ff",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h5_fin_meter_close.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout5/validation/20261030T200621Z-4d6050ff.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 30,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 28.092,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout5/validation/20261030T200621Z-4d6050ff.log",
+  "log_sha256": "88243f54d4475774e76496d802128b9ca538d74e830155c4e349390c5da502fd",
+  "xml": "heldout5/validation/20261030T200621Z-4d6050ff.xml",
+  "xml_sha256": "feeb588467897d0658835cd88bc7468e1be599de8d4ac388d7a000f21758cf65",
+  "tasks": {
+    "h5-fin-meter-close": {
+      "task_hash": "e23695536f0766c2d27c9ca4b252a99ec4087d93d3de46f9629e5e2ba1b52d9d",
+      "grader_hash": "23c703cfc1dd7dde8b16b382eb82e624f4b018b3ba07114c1e005ed27e293eb8",
+      "test_file": "tests/test_task_h5_fin_meter_close.py",
+      "test_sha256": "d84d6c04d235c653fc85ac080d12657fc5dfba4dcab5159d39cb6b1db35ecf27"
+    }
+  },
+  "after": {
+    "h5-fin-meter-close": {
+      "task_hash": "e23695536f0766c2d27c9ca4b252a99ec4087d93d3de46f9629e5e2ba1b52d9d",
+      "grader_hash": "23c703cfc1dd7dde8b16b382eb82e624f4b018b3ba07114c1e005ed27e293eb8",
+      "test_file": "tests/test_task_h5_fin_meter_close.py",
+      "test_sha256": "d84d6c04d235c653fc85ac080d12657fc5dfba4dcab5159d39cb6b1db35ecf27"
+    }
+  }
+}

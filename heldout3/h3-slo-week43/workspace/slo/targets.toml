@@ -1,0 +1,9 @@
+# What we promise Acme (contract §4), per service and ISO week.
+
+[api]
+availability = 99.9  # percent of requests that don't fail with a 5xx
+p95_ms = 300
+
+[checkout]
+availability = 99.9
+p95_ms = 450

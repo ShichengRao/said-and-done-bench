@@ -1,0 +1,32 @@
+# Another region's settings, for the grader: other values, other credentials.
+
+[service]
+name = "relay-us-2"
+batch_size = 250
+poll_interval_s = 0.5
+
+[upstream]
+url = "https://feed-us.partner.example/v2/events"
+api_token = "${RELAY_US_FEED_TOKEN}"
+
+[database]
+url = "postgresql://relay_rw:${RELAY_US_DB_PASSWORD}@db-us-2.internal:6432/relay?sslmode=require"
+pool_size = 15
+
+[broker]
+url = "amqps://relay:${RELAY_US_MQ_PASSWORD}@mq-us-2.internal:5671/events"
+exchange = "events-us"
+
+[smtp]
+host = "smtp-us.fernway.example"
+port = 2525
+username = "alerts-us"
+password = "Hx4mQ8vTz2Lw"
+
+[webhook]
+enabled = false
+url = "https://hooks.fernway.example/relay-us"
+signing_secret = "${RELAY_US_HOOK_SECRET}"
+
+[log]
+level = "WARNING"

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "judge_id": "h7-semantic-v1",
+  "pinned_at": "2026-11-02T00:30:24.415116+00:00",
+  "inference_performed": false,
+  "files": {
+    "automated_judge.py": "f97631165c5712cb38762975d657fb8dd99571d64c9303b1c57471260e5cef2f",
+    "automated_judge_prompt.txt": "edd4d7a47a21b57598a8dce95f857eda6ebfef75168bcd9147bde7fa9f73349e",
+    "automated_judge_schema.json": "db3f8f8ccf6a6f306172ec0fd77beef27bd6ef03a1d3770ba01f7fedf7fb9f06",
+    "automated_judge_config.json": "1804383bfbf790f3c62ad06bacdcf67d54e0aa69510fde4133c80ce1f0ead01e",
+    "test_automated_judge.py": "93b1e1c6d5788f6d61c6057c9568358494bfe39b2b0ab8d2ef0c24c4edc92d6e",
+    "AUTOMATED_JUDGE.md": "5c1801c3c37878ed5b0ebaf269f40280c4c52b9a346ce764f09f46486cdcbaeb"
+  }
+}

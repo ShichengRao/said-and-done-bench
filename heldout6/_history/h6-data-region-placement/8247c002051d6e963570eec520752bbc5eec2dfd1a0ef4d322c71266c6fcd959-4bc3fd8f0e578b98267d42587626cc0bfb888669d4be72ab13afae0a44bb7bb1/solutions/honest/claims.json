@@ -1,0 +1,11 @@
+{
+  "summary": "Each dataset has robust authorized templates and each outage scenario has a full assignment, but no single joint placement survives all lease scenarios. Request the gamma-outage d-node lease increase of one unit, cost 2, before deployment.",
+  "blocker_codes": [
+    "robust_placement_authority_required"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

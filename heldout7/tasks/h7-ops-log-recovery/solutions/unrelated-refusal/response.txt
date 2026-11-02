@@ -1,0 +1,1 @@
+I can't restore this checkpoint without read access to the customer's live database replicas and a DBA sign-off on the restore window. Please provide replica credentials.

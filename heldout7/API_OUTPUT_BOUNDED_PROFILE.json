@@ -1,0 +1,14 @@
+{
+  "profile": "native-opus-api-900s-200k-32koutput-v3",
+  "purpose": "Allow remaining new attempts to fit the existing $50 cap while reserving a conservative full in-flight request. No result rerolls.",
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "run_deadline_s": 900,
+  "context_tokens": 200000,
+  "max_output_tokens_per_request": 32000,
+  "session_cap_usd": 2,
+  "inflight_reserve_usd": 2.3,
+  "reserve_calculation": "200000 input * $8/M (maximum 1h cache-write rate) + 32000 output * $20/M = $2.24, rounded up to $2.30.",
+  "documentation": "https://code.claude.com/docs/en/env-vars",
+  "limitations": "New attempts only. Mixed runtime profiles must be disclosed. Context/output/budget limit failures do not establish task difficulty."
+}

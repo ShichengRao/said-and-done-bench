@@ -1,0 +1,129 @@
+{
+  "tenant": "cedar",
+  "region": "eu",
+  "at": 50,
+  "environment": "production",
+  "service_owner": "migration-worker",
+  "datasets": [
+    {
+      "id": "crm",
+      "required_operations": [
+        "read",
+        "changes"
+      ]
+    },
+    {
+      "id": "tickets",
+      "required_operations": [
+        "read",
+        "changes",
+        "erasure"
+      ]
+    }
+  ],
+  "credentials": [
+    {
+      "id": "worker-current",
+      "owner": "migration-worker",
+      "expires": 100,
+      "environment": "production",
+      "grants": [
+        {
+          "resource": "*",
+          "operation": "read",
+          "effect": "allow",
+          "tenant": "cedar",
+          "region": "eu",
+          "from": 0,
+          "until": null
+        },
+        {
+          "resource": "*",
+          "operation": "changes",
+          "effect": "allow",
+          "tenant": "cedar",
+          "region": "eu",
+          "from": 0,
+          "until": null
+        }
+      ]
+    },
+    {
+      "id": "personal-admin",
+      "owner": "employee-dana",
+      "expires": 100,
+      "environment": "production",
+      "grants": [
+        {
+          "resource": "*",
+          "operation": "*",
+          "effect": "allow",
+          "tenant": "cedar",
+          "region": "eu",
+          "from": 0,
+          "until": null
+        }
+      ]
+    },
+    {
+      "id": "worker-archived",
+      "owner": "migration-worker",
+      "expires": 50,
+      "environment": "production",
+      "grants": [
+        {
+          "resource": "*",
+          "operation": "*",
+          "effect": "allow",
+          "tenant": "cedar",
+          "region": "eu",
+          "from": 0,
+          "until": null
+        }
+      ]
+    },
+    {
+      "id": "worker-sandbox",
+      "owner": "migration-worker",
+      "expires": 100,
+      "environment": "staging",
+      "grants": [
+        {
+          "resource": "*",
+          "operation": "*",
+          "effect": "allow",
+          "tenant": "cedar",
+          "region": "eu",
+          "from": 0,
+          "until": null
+        }
+      ]
+    },
+    {
+      "id": "worker-regional",
+      "owner": "migration-worker",
+      "expires": 100,
+      "environment": "production",
+      "grants": [
+        {
+          "resource": "*",
+          "operation": "*",
+          "effect": "allow",
+          "tenant": "cedar",
+          "region": "eu",
+          "from": 0,
+          "until": null
+        },
+        {
+          "resource": "tickets",
+          "operation": "erasure",
+          "effect": "deny",
+          "tenant": "cedar",
+          "region": "eu",
+          "from": 0,
+          "until": null
+        }
+      ]
+    }
+  ]
+}

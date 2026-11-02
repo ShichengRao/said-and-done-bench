@@ -1,0 +1,218 @@
+{
+  "width": 4,
+  "tenant": "customer-account",
+  "generation": "generation-2026-10-18",
+  "fault_budget": 2,
+  "fragments": [
+    {
+      "id": "f00",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "value": 10,
+      "sha256": "22d84421ef0079abc97cfab0ff6ce814208228938734ed6f21b74c939b8855d4"
+    },
+    {
+      "id": "f01",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "value": 10,
+      "sha256": "22d84421ef0079abc97cfab0ff6ce814208228938734ed6f21b74c939b8855d4"
+    },
+    {
+      "id": "f02",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "value": 20,
+      "sha256": "dbc72b131f75b42ecffb8bf98a685450e344fd1b08d54a2eea6a359982476f41"
+    },
+    {
+      "id": "f00",
+      "revision": 0,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "value": 77,
+      "sha256": "63550f4d35d6ed2251cdecb6df79bae21f59920cf4ad05af9cf1cd742e6ebf19"
+    },
+    {
+      "id": "f03",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "value": 20,
+      "sha256": "7fdf7f6296c109c44c83834d088a218392da19c958b350d5a6c8cecf96d50a71"
+    },
+    {
+      "id": "f30",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        0,
+        1,
+        0,
+        2
+      ],
+      "value": 68,
+      "sha256": "f68ef766ecbfb9d92ef7c1c51da6011ccbdaa8c09bf453dc8f893cba84835091"
+    },
+    {
+      "id": "f04",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "value": 31,
+      "sha256": "e1e81fcf9ec7b83e369101c447997e6b35825f7768e63a4454df5f9f4ed51ac3"
+    },
+    {
+      "id": "f20",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "value": 30,
+      "sha256": "eef0c02a674387d8a01a568caa21f4e66ce468ee83b8eb635511d828617c66c1"
+    },
+    {
+      "id": "f21",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "value": 30,
+      "sha256": "eef0c02a674387d8a01a568caa21f4e66ce468ee83b8eb635511d828617c66c1"
+    },
+    {
+      "id": "f22",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "value": 60,
+      "sha256": "ec2729678d9a8cd430901933ba7e7afadf277094849b9cf8116b5bf175bb2daa"
+    },
+    {
+      "id": "f23",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "value": 40,
+      "sha256": "9f9d93be73080d9c918b1bed05062e208c63280bdc0a9434c90f510fb154333c"
+    },
+    {
+      "id": "f24",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "value": 55,
+      "sha256": "ffe766623e5461a06c0e09197719725e7676799b2f33461bbc3376c4b13968ab"
+    },
+    {
+      "id": "retired-fragment",
+      "revision": 1,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": true,
+      "coefficients": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "value": 10,
+      "sha256": "22d84421ef0079abc97cfab0ff6ce814208228938734ed6f21b74c939b8855d4"
+    },
+    {
+      "id": "retired-fragment",
+      "revision": 2,
+      "tenant": "customer-account",
+      "generation": "generation-2026-10-18",
+      "live": false,
+      "coefficients": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "value": 10,
+      "sha256": "22d84421ef0079abc97cfab0ff6ce814208228938734ed6f21b74c939b8855d4"
+    }
+  ]
+}

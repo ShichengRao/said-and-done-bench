@@ -1,0 +1,43 @@
+{
+  "accepted": [
+    "f00",
+    "f01",
+    "f02",
+    "f03",
+    "f04",
+    "f20",
+    "f21",
+    "f22",
+    "f23",
+    "f24"
+  ],
+  "rejected": [],
+  "candidate_count": 4,
+  "candidate_sha256": "3658310508cf8764b1588ca72dbd6cc5dcafaaa268b3679293e558aaac995c8d",
+  "witnesses": [
+    "0a141e28",
+    "0a141e29"
+  ],
+  "unique_symbols": [
+    10,
+    null,
+    30,
+    null
+  ],
+  "owner_plan": {
+    "cost": 2,
+    "queries": [
+      "a-parity",
+      "b-left"
+    ]
+  },
+  "certifiable": false,
+  "blocker": {
+    "kind": "ambiguous_restore",
+    "candidate_count": 4,
+    "owner_queries": [
+      "a-parity",
+      "b-left"
+    ]
+  }
+}

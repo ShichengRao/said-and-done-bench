@@ -1,0 +1,312 @@
+{
+  "configuration": {
+    "nodes": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "x",
+      "y"
+    ],
+    "capacity": 6,
+    "max_handoffs": 2,
+    "initial": {
+      "a": {
+        "service": "A",
+        "image": "old"
+      },
+      "b": {
+        "service": "B",
+        "image": "old"
+      },
+      "c": {
+        "service": "C",
+        "image": "old"
+      },
+      "d": {
+        "service": "D",
+        "image": "old"
+      },
+      "x": null,
+      "y": null
+    }
+  },
+  "install": {
+    "epoch": 1,
+    "observed": {
+      "a": {
+        "service": "A",
+        "image": "old"
+      },
+      "b": {
+        "service": "B",
+        "image": "old"
+      },
+      "c": {
+        "service": "C",
+        "image": "old"
+      },
+      "d": {
+        "service": "D",
+        "image": "old"
+      },
+      "x": null,
+      "y": null
+    },
+    "fault_budget": 1,
+    "rollouts": [
+      {
+        "service": "A",
+        "source": "a",
+        "old_image": "old",
+        "new_image": "new",
+        "targets": [
+          "c",
+          "d",
+          "x",
+          "y"
+        ]
+      },
+      {
+        "service": "B",
+        "source": "b",
+        "old_image": "old",
+        "new_image": "new",
+        "targets": [
+          "a",
+          "x"
+        ]
+      },
+      {
+        "service": "C",
+        "source": "c",
+        "old_image": "old",
+        "new_image": "new",
+        "targets": [
+          "d",
+          "y"
+        ]
+      },
+      {
+        "service": "D",
+        "source": "d",
+        "old_image": "old",
+        "new_image": "new",
+        "targets": [
+          "b",
+          "c",
+          "y"
+        ]
+      }
+    ]
+  },
+  "trace": [
+    {
+      "id": "q1",
+      "expected_version": 1,
+      "kind": "dispatch"
+    },
+    {
+      "id": "q2",
+      "expected_version": 2,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:C:start:1",
+          "success": false
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "expected_version": 3,
+      "kind": "dispatch"
+    },
+    {
+      "id": "q4",
+      "expected_version": 4,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:B:start:1",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "expected_version": 5,
+      "kind": "dispatch"
+    },
+    {
+      "id": "q6",
+      "expected_version": 6,
+      "kind": "dispatch"
+    },
+    {
+      "id": "q7",
+      "expected_version": 7,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:B:retire:1",
+          "success": true
+        },
+        {
+          "token": "1:C:start:1",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "expected_version": 7,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:B:retire:1",
+          "success": true
+        },
+        {
+          "token": "1:C:start:1",
+          "success": false
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "expected_version": 8,
+      "kind": "dispatch"
+    },
+    {
+      "id": "q10",
+      "expected_version": 9,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:D:start:1",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "expected_version": 10,
+      "kind": "dispatch"
+    },
+    {
+      "id": "q12",
+      "expected_version": 11,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:D:retire:1",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "expected_version": 12,
+      "kind": "dispatch"
+    },
+    {
+      "id": "q14",
+      "expected_version": 13,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:C:start:2",
+          "success": true
+        },
+        {
+          "token": "1:C:start:1",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "expected_version": 13,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:C:start:2",
+          "success": true
+        },
+        {
+          "token": "1:C:start:1",
+          "success": false
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "expected_version": 14,
+      "kind": "dispatch"
+    },
+    {
+      "id": "q17",
+      "expected_version": 15,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:C:retire:2",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "expected_version": 16,
+      "kind": "dispatch"
+    },
+    {
+      "id": "q19",
+      "expected_version": 17,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:A:start:1",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "expected_version": 18,
+      "kind": "dispatch"
+    },
+    {
+      "id": "q21",
+      "expected_version": 19,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:A:retire:1",
+          "success": true
+        },
+        {
+          "token": "1:A:retire:1",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "q1",
+      "expected_version": 1,
+      "kind": "dispatch"
+    },
+    {
+      "id": "q23",
+      "expected_version": 20,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "99:A:start:1",
+          "success": true
+        }
+      ]
+    }
+  ]
+}

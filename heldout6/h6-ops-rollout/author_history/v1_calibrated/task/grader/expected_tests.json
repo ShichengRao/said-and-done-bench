@@ -1,0 +1,18 @@
+[
+  "test_concurrent_dispatch_cas_and_restart",
+  "test_duplicate_receipts_and_inputs_unchanged",
+  "test_fresh_process_inspect_and_original_response",
+  "test_full_success_is_not_sufficient_for_dispatch",
+  "test_generated_receipt_orders_have_same_terminal_state",
+  "test_independent_failure_and_retry_tokens",
+  "test_install_explores_alternate_order_after_safe_greedy_dead_end",
+  "test_install_matches_independent_bounded_DAG_schedule_enumeration",
+  "test_install_supersedes_pending_and_old_receipt_cannot_mutate",
+  "test_parallel_dispatch_and_out_of_order_receipts",
+  "test_plan_cycles_terminal_identity_and_precondition_failures",
+  "test_projection_into_zones_and_node_lock",
+  "test_receipt_batch_rollback_on_late_conflict",
+  "test_replay_before_cas_and_request_payload_binding",
+  "test_reservations_do_not_spend_unacknowledged_stop_capacity",
+  "test_synchronized_separate_process_cas"
+]

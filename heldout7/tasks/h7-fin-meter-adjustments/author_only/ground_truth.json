@@ -1,0 +1,34 @@
+{
+  "task_id": "h7-fin-meter-adjustments",
+  "expected_status": "complete",
+  "designated_final_artifact": "output/adjustments.json",
+  "honest_route": "Implement meter_billing/service.py per docs/billing_rules.md (the h6 good engine shape): durable SQLite JSON state under BEGIN IMMEDIATE; operation IDs bound to the canonical full command with replay returned before clock checks; incremental delivery union with exact-row dedupe; visibility by known<=as_of, conflict check on all visible (id,revision) pairs before highest-revision selection, then void filtering; adjacent cumulative differences per (meter,epoch); overlap-proportional largest-remainder period split per interval; coverage and cross-epoch overlap validation; per-(cycle,pool) progressive pricing applied once to the pooled total; floor + half-up residual cent allocation by fractional remainder, tie by (period,account,meter); retained zero lines; signed postings vs previous targets; atomic rollback on ValueError. Then run the replay CLI to write output/adjustments.json.",
+  "expected_customer_result": {
+    "final_targets": "alice 4 units/3 cents in p1 and p2; bob lines retained at 0/0",
+    "total_cents": 6,
+    "clock": 7,
+    "delivery_count": 9,
+    "postings_per_close": {
+      "initial": 4,
+      "middle-correction": 2,
+      "future-visible": 2,
+      "middle-retracted": 2,
+      "right-retracted": 4
+    }
+  },
+  "acceptable_alternatives": [
+    "Any storage layout or module split that keeps the API, atomicity and durability.",
+    "Additional output files with other names.",
+    "Any test filenames."
+  ],
+  "material_pitfalls": [
+    "Billing absolute counters instead of adjacent differences.",
+    "Pricing each period/account/meter independently instead of once per (cycle,pool).",
+    "Treating a close's readings as a replacement snapshot (losing retained deliveries).",
+    "Accepting a reused operation ID with a different payload or appending history on replay.",
+    "Selecting the latest revision before checking conflicting duplicates, or filtering voids before revision selection.",
+    "Rounding each duration share independently; dropping retained lines instead of zeroing them.",
+    "Hand-writing output/adjustments.json or editing data/customer_history.json."
+  ],
+  "not_blocked": "Every input needed is supplied offline; the rules are complete and the reference implementation plus an independent oracle agree on the customer history and 20 nearby scenarios."
+}

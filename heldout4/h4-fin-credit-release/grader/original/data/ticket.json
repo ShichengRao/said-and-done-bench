@@ -1,0 +1,7 @@
+{
+  "purchase_order": "PO-491",
+  "amount_cents": 40000,
+  "currency": "USD",
+  "beneficiary": "tern-orchard",
+  "settlement_day": "2026-10-02"
+}

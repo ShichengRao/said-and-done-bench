@@ -1,0 +1,58 @@
+{
+  "reason": "Substantive finite count-inference v2, preserving v1 and all raw attempts.",
+  "files": {
+    "test_task_h6_data_redacted_export.py": "f710a6502f6de507fafe28cc7d3a8c2755f353b9620fc8393788bbec4a2d189d",
+    "goal.md": "88d542b63289eb1ae9682a8e8883d8c88068c16f10e7d75c7c19ec97a343d897",
+    "task.toml": "7809460149f4d39a28cdf3871f977af8146029645f21a6de835e3043b9a29616",
+    "grader/check.py": "0ca23c4dca2790f18ffdf6b7f67760c6e43f5b0ad330dfa3f5c9ebce2787e742",
+    "grader/config.json": "f34aa3e25567ae8de24dfad4279ad205e629e4d771f17f936dc1dab699fe845d",
+    "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+    "grader/cases.py": "f28490b1a05bd34d0c788ba855a50e21a350f2ad7d009aa0c6245c0519a58a21",
+    "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+    "grader/oracle.py": "93097e4abbc7623a69ed448cea0027eb651613d4d139802f7d05220fcde22fab",
+    "grader/canonical_expected.json": "5348a075089bb7457b871325b0201d35a3863d1c40659600060144cd40172492",
+    "grader/grade.py": "6ff18ec7e30657fa2b4312a69df8ff53bb05194c7df4752bf37b8303cd9519a6",
+    "grader/original/pytest.ini": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+    "grader/original/CONTRACT.md": "f8051812ea399d42d64b108479b98831754e2152c038ba47522576b0f74c3235",
+    "grader/original/pipeline.py": "364924465fbd3d3db611f779acb437cdc39717253332594e14e3983bc00d0679",
+    "grader/original/tests/test_contract.py": "743067ef94a923b03d1b1140a2dc1cdef7cf0b3d47ef73928c0e084dd977f58c",
+    "grader/original/production/state.json": "1c925bc0283e1b3f5678de63af16d4b7c70697c5e8fe9a72fc498730dada159b",
+    "grader/original/data/policy.json": "fc37b3dcdb64435d5a4fcc90f1688e7429103ee85424fe72d17f34071fd92c47",
+    "grader/original/data/roster.json": "84bd8c518e9f8797976b24bc9f168578a1178170364a4bb37abacf44cec5110c",
+    "grader/original/data/queries.json": "8f154f6ddbd272d9e6dfe50586e066934bb8fe40f1dcf9701b05a5e254867e1d",
+    "grader/original/data/prior.json": "0d1a5bdba0a823866fe7f0467dd47fd6607e37463cb4225b56bc61c3f465f1c4",
+    "workspace/pytest.ini": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+    "workspace/CONTRACT.md": "f8051812ea399d42d64b108479b98831754e2152c038ba47522576b0f74c3235",
+    "workspace/pipeline.py": "364924465fbd3d3db611f779acb437cdc39717253332594e14e3983bc00d0679",
+    "workspace/tests/test_contract.py": "743067ef94a923b03d1b1140a2dc1cdef7cf0b3d47ef73928c0e084dd977f58c",
+    "workspace/production/state.json": "1c925bc0283e1b3f5678de63af16d4b7c70697c5e8fe9a72fc498730dada159b",
+    "workspace/data/policy.json": "fc37b3dcdb64435d5a4fcc90f1688e7429103ee85424fe72d17f34071fd92c47",
+    "workspace/data/roster.json": "84bd8c518e9f8797976b24bc9f168578a1178170364a4bb37abacf44cec5110c",
+    "workspace/data/queries.json": "8f154f6ddbd272d9e6dfe50586e066934bb8fe40f1dcf9701b05a5e254867e1d",
+    "workspace/data/prior.json": "0d1a5bdba0a823866fe7f0467dd47fd6607e37463cb4225b56bc61c3f465f1c4",
+    "setup/setup.sh": "098b6e1f73c034938906940d1f2a9ef07bf0c7a0d6116d041bf1a6d9520ff83a",
+    "solutions/greedy-utility/run.sh": "1b8c1f32fda6a8e2199da507090e2bda2eb235c601b0a77fb785abb2129de990",
+    "solutions/greedy-utility/README.md": "757f98d9d34e0705eb023740d331b34f134251b40f85dc34e07327650eb8eba7",
+    "solutions/greedy-utility/pipeline.py": "9c5c2abbe48b4bd196d2beb2ef3a73d108a957a70c0c316d05a1bcfff3ad63e7",
+    "solutions/forget-prior-release/run.sh": "1b8c1f32fda6a8e2199da507090e2bda2eb235c601b0a77fb785abb2129de990",
+    "solutions/forget-prior-release/README.md": "3cd9c9d60bec7d1a535666e6b8171898420d9e6d90f4e54b9021fea8ec5ab82d",
+    "solutions/forget-prior-release/pipeline.py": "0261b2ed6d818aeb9e2497734cfb89565f43d79bbbf42d3144d654e1cbdf3c82",
+    "solutions/honest/test_added.py": "29df044f960ca8251cf3a4c60962aa645f30e8e9174ef33bc66fbe1fd5a8331c",
+    "solutions/honest/run.sh": "bc48fcd8b1bd9d776d89b1a33ff95ac6642f2742548df6026f2590e9e1763bfc",
+    "solutions/honest/pipeline.py": "b7e59f03820b3d1b360e6a47b0f26e0632081ee5693c697be8459a11694efa0c",
+    "solutions/honest/claims.json": "ada14e9084b4ce0f86589d3f70f789e5b27f44ccaa0413ee86414a86641d6116",
+    "solutions/pairwise-only/run.sh": "1b8c1f32fda6a8e2199da507090e2bda2eb235c601b0a77fb785abb2129de990",
+    "solutions/pairwise-only/README.md": "ed16cf5fe18906ac3fe0b8c65d50610358876b1e086a0d57a0a0181315b503a5",
+    "solutions/pairwise-only/pipeline.py": "864540b493466e58cb87ec8b17eee3283f490b998e319980c4b33d9263d14149"
+  },
+  "closed_runs": {
+    "h6-data-redacted-export/v1-minimax-m2-7": {
+      "record.json": "84b1111669af35e22a1cc153dff9db3bb27b38dcdea047f737e724e874eb8c5b",
+      "grade.json": "823f71771139afccdf85d3fd34354dff97a1eefa6e85615a63d4c3ea8d2395de"
+    },
+    "h6-data-redacted-export/v1-astra": {
+      "record.json": "a8d19307d20e7a56c3b29e62b7e540eec28907e95941d0d9f1bda2b794a0fb6b",
+      "grade.json": "a9a08b5182c2fefc9d54c500083165abb5405dc05ad7d80c20d516b7e421b479"
+    }
+  }
+}

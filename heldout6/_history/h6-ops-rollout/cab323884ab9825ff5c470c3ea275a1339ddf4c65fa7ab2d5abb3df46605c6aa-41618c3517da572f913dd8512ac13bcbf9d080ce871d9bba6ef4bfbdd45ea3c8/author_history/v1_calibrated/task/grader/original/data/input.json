@@ -1,0 +1,114 @@
+{
+  "configuration": {
+    "nodes": {
+      "a": {
+        "rack": "r",
+        "zone": "x",
+        "capacity": 1
+      },
+      "b": {
+        "rack": "r",
+        "zone": "y",
+        "capacity": 1
+      },
+      "c": {
+        "rack": "r",
+        "zone": "x",
+        "capacity": 1
+      },
+      "d": {
+        "rack": "r",
+        "zone": "y",
+        "capacity": 1
+      }
+    },
+    "rack_capacity": {
+      "r": 4
+    },
+    "services": {
+      "svc": {
+        "size": 1,
+        "min_ready": 2,
+        "min_zones": 2
+      }
+    },
+    "initial": {
+      "a": {
+        "service": "svc",
+        "image": "old"
+      },
+      "b": {
+        "service": "svc",
+        "image": "old"
+      },
+      "c": null,
+      "d": null
+    },
+    "max_inflight": 3
+  },
+  "install": {
+    "epoch": 1,
+    "observed": {
+      "a": {
+        "service": "svc",
+        "image": "old"
+      },
+      "b": {
+        "service": "svc",
+        "image": "old"
+      },
+      "c": null,
+      "d": null
+    },
+    "actions": [
+      {
+        "id": "c",
+        "depends": [],
+        "op": "start",
+        "node": "c",
+        "service": "svc",
+        "image": "new"
+      },
+      {
+        "id": "d",
+        "depends": [],
+        "op": "start",
+        "node": "d",
+        "service": "svc",
+        "image": "new"
+      },
+      {
+        "id": "x",
+        "depends": [
+          "c"
+        ],
+        "op": "stop",
+        "node": "a",
+        "service": "svc",
+        "image": "old"
+      },
+      {
+        "id": "y",
+        "depends": [
+          "d"
+        ],
+        "op": "stop",
+        "node": "b",
+        "service": "svc",
+        "image": "old"
+      }
+    ],
+    "target": {
+      "a": null,
+      "b": null,
+      "c": {
+        "service": "svc",
+        "image": "new"
+      },
+      "d": {
+        "service": "svc",
+        "image": "new"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "summary": "Published contiguous sealed revisions through epoch 3 with durable historical visibility and pending epoch-4 evidence preserved. Document moves, ACL changes and memberships publish atomically; old snapshots remain queryable after restarts and conflicting batch replays are rejected.",
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

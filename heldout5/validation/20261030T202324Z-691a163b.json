@@ -1,0 +1,290 @@
+{
+  "at": "2026-10-30T20:27:12.591382+00:00",
+  "run_id": "20261030T202324Z-691a163b",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h5_data_alias_replay.py",
+    "tests/test_task_h5_data_attestation_conflict.py",
+    "tests/test_task_h5_data_erasure_ledger.py",
+    "tests/test_task_h5_data_owner_merge.py",
+    "tests/test_task_h5_data_redacted_export.py",
+    "tests/test_task_h5_data_region_placement.py",
+    "tests/test_task_h5_data_service_scope.py",
+    "tests/test_task_h5_data_ticket_visibility.py",
+    "tests/test_task_h5_fin_credit_release.py",
+    "tests/test_task_h5_fin_meter_close.py",
+    "tests/test_task_h5_fin_payout_owner.py",
+    "tests/test_task_h5_fin_procure_plan.py",
+    "tests/test_task_h5_fin_refund_replay.py",
+    "tests/test_task_h5_fin_revenue_attest.py",
+    "tests/test_task_h5_ops_attestation.py",
+    "tests/test_task_h5_ops_backup_gap.py",
+    "tests/test_task_h5_ops_provenance.py",
+    "tests/test_task_h5_ops_quorum_cut.py",
+    "tests/test_task_h5_ops_rollout.py",
+    "tests/test_task_h5_ops_wal_restore.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout5/validation/20261030T202324Z-691a163b.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 267,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 227.709,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout5/validation/20261030T202324Z-691a163b.log",
+  "log_sha256": "90fe73a466cb0f9d98c8bb10fde46e39b684c28d3f14b09a6ba748b770377626",
+  "xml": "heldout5/validation/20261030T202324Z-691a163b.xml",
+  "xml_sha256": "5454756ad0058c5b2c4e10004715f37839b9624751408c53e38b5ef547992356",
+  "tasks": {
+    "h5-data-alias-replay": {
+      "task_hash": "1be2be39ef28368d211efbc279a8baf1ab5923f1bc4ed8531b58da168fcba726",
+      "grader_hash": "146df561c1d5c1fcc1454aac714fb784ba8dbf5791ed3a033bfcfe6d6ee63dcb",
+      "test_file": "tests/test_task_h5_data_alias_replay.py",
+      "test_sha256": "f9fc6796b89bb3caa7185494e25dc933e8f64a0d8e87795644f9503191a5084a"
+    },
+    "h5-data-attestation-conflict": {
+      "task_hash": "4306dac095b783d36d195371d4aba82262f8d902590a17f636106ea15e6e91c8",
+      "grader_hash": "bf8f38d5c0fdce681b0aba6a7898e785563ba8247545ae6fc10af351e0a41fec",
+      "test_file": "tests/test_task_h5_data_attestation_conflict.py",
+      "test_sha256": "a237182ce399deb9fdac22e99d87cce8ab21ca57a5cb35501e25c4fa2d4a3247"
+    },
+    "h5-data-erasure-ledger": {
+      "task_hash": "d97724b8cce8905a40403d56917d74ff6fd10dcdafc4314428e2b05ab77e9432",
+      "grader_hash": "d7561c968887778fd1fa0c31cbbbeb3d81d84b3ad3dc983a07da35971319dbc9",
+      "test_file": "tests/test_task_h5_data_erasure_ledger.py",
+      "test_sha256": "386a58880d408ccb770d143ff44dd02dea78b93924a2c3218d9b4fac183c44aa"
+    },
+    "h5-data-owner-merge": {
+      "task_hash": "e7324c5ceb7aee51caa64248179e0563d5677ca2f7b5cabf95dbe6bc817ae4c7",
+      "grader_hash": "a1f2761662eafffd13c1a244d189d5dc074a577fbe34da525e152afb066c71b9",
+      "test_file": "tests/test_task_h5_data_owner_merge.py",
+      "test_sha256": "12046d9cd1ca4ed8d46c6b4418a7301d862f0cf9f9db06bf67b2d8894e775430"
+    },
+    "h5-data-redacted-export": {
+      "task_hash": "cf06a1a0e6dbfa66a491a663d102dce716025e16c7289f948e12d323fe05960a",
+      "grader_hash": "453e023fd31f0016eab0b4c543d01004c41b649631e3b1949ac350aa4e696031",
+      "test_file": "tests/test_task_h5_data_redacted_export.py",
+      "test_sha256": "621c4ffc0e3a6c5bb9a60a5d5de9525f11fb7a8528d9a13ec97e5d4a3233f106"
+    },
+    "h5-data-region-placement": {
+      "task_hash": "7e4410502a87bc017d6353b133f8af8899e07629a33acaf41cdc99b0678eb4d5",
+      "grader_hash": "6eb9c208eb6d49a7d3bb0f3c6092713e66a94220e9df37ee6d6a37e3956a3714",
+      "test_file": "tests/test_task_h5_data_region_placement.py",
+      "test_sha256": "b2a18d940b7c998dc531f37cc80e35f51d4ceaa85b7d14bfc254872ea7be6f1a"
+    },
+    "h5-data-service-scope": {
+      "task_hash": "f4b537b495638769beca080a8d57ebca72f2f90e48726be733e22553cddb66f6",
+      "grader_hash": "05008503e1fbec14801713bc6cb511e9833a3cfc262476d5071dcdaf1b080ac3",
+      "test_file": "tests/test_task_h5_data_service_scope.py",
+      "test_sha256": "9a735d762588e3a93919944e693ddbd6f8da8f9643c1710cd7c737fe4a02de1f"
+    },
+    "h5-data-ticket-visibility": {
+      "task_hash": "ebf4c8ad976f0aa02ad613b1b96e9ae0f86219f518825026222c6fa3f2fa7ef0",
+      "grader_hash": "33a3d9b5160359ae251e6b3c1b5bbd7561b3f8d5083b62094d8da94e2cac6e8e",
+      "test_file": "tests/test_task_h5_data_ticket_visibility.py",
+      "test_sha256": "56efce4ce6c4cf98bdbf9a679b68c121c835e2b8ce435789a7ae483c1a1de8ee"
+    },
+    "h5-fin-credit-release": {
+      "task_hash": "e129986020384d382366b6b60fcf0ed66a2246f57cd88a40e436603ebda2b5a1",
+      "grader_hash": "7b17dc1b4fabc1f91965d766a86ac31d53b499f2fe042ae165d38425947e5be8",
+      "test_file": "tests/test_task_h5_fin_credit_release.py",
+      "test_sha256": "fe06011f847a707b1c711a517bfa7aac072029022c9684bcdf70bef3ff5ef5d0"
+    },
+    "h5-fin-meter-close": {
+      "task_hash": "e23695536f0766c2d27c9ca4b252a99ec4087d93d3de46f9629e5e2ba1b52d9d",
+      "grader_hash": "23c703cfc1dd7dde8b16b382eb82e624f4b018b3ba07114c1e005ed27e293eb8",
+      "test_file": "tests/test_task_h5_fin_meter_close.py",
+      "test_sha256": "d84d6c04d235c653fc85ac080d12657fc5dfba4dcab5159d39cb6b1db35ecf27"
+    },
+    "h5-fin-payout-owner": {
+      "task_hash": "cf661420889aa2ee05e1392396359ae60dfe8f71f8280ae78e70609e6421ac2c",
+      "grader_hash": "50b618d705ee230deecb1f37f8e82c6dc8eab5c1eb1b62caaa0cc1633d5eade5",
+      "test_file": "tests/test_task_h5_fin_payout_owner.py",
+      "test_sha256": "e0d7cd5efdf4785e03eeedf738014d12b6cedcb422c64b9e68b9c770bc2e3973"
+    },
+    "h5-fin-procure-plan": {
+      "task_hash": "361c358144ddd52b6db4592a2fee3c9ee219edd7ec21cb5b467b54a15acd564f",
+      "grader_hash": "149a2b758a26c1dd2ef9798752e05ec3c05a145f85cef5662154d517e8c59b13",
+      "test_file": "tests/test_task_h5_fin_procure_plan.py",
+      "test_sha256": "0508a33b310fbcf97190c7b6d60f1c46ca490898f5ff004739a52d1143856c5c"
+    },
+    "h5-fin-refund-replay": {
+      "task_hash": "2256c0846a53d907e0aa48f30d409bdc524a1e8dcd4fa3c803861f8d52fb5522",
+      "grader_hash": "bc028f65fe25cdfbfd5fc4215495ebe58678fb7b0b9234f1f4f8b5709c9016ef",
+      "test_file": "tests/test_task_h5_fin_refund_replay.py",
+      "test_sha256": "91c17fc6b43ec2e63383744f9af02458414e522ffec96bebe259af209548e8af"
+    },
+    "h5-fin-revenue-attest": {
+      "task_hash": "3a95d3b1fc439b49cf9d227ac237ff99df90c19ea7512a5ea54f600ae63f3cfc",
+      "grader_hash": "0b721c656bc56aaa29c934a466607144bcb1fdcaf6d1ca1ac7059c6fce398dba",
+      "test_file": "tests/test_task_h5_fin_revenue_attest.py",
+      "test_sha256": "e7678ca3a736cd3421cad0c3055f9fc307f94ab8753871f980ab38450a1171e5"
+    },
+    "h5-ops-attestation": {
+      "task_hash": "8182f628173501612bc885f56edec28eb95fdd377c9bf68fe862dc698e054ab4",
+      "grader_hash": "c4bd3df424f672258f5dcfa8e7877c35ba04d4c903fc837a79668a075120e2f6",
+      "test_file": "tests/test_task_h5_ops_attestation.py",
+      "test_sha256": "3c7fd69d6a4758ce33ab893e8b2559258a8d2e642e36cf70899dfc0f02e83204"
+    },
+    "h5-ops-backup-gap": {
+      "task_hash": "993c1721c6e44183a3443bec14f041e675b9cf5f8fce1c8086f711e23535c9e4",
+      "grader_hash": "56fc178c19f0cd0796b5ab8fe20256074c0d410c71c301d54ee21b78069c0582",
+      "test_file": "tests/test_task_h5_ops_backup_gap.py",
+      "test_sha256": "5b66a46b1063657819160f3f5d56f35c3f9ff1c66d1c9f7daeaa727fe348fa93"
+    },
+    "h5-ops-provenance": {
+      "task_hash": "2008d070b8375d7c6a331032c6f16403fe5f8ca7db8d2358785b05dc0c81f925",
+      "grader_hash": "f296290eaecd03f1e624a5d81b49e426f5b3068153d0ba7f97bf375e84959f6a",
+      "test_file": "tests/test_task_h5_ops_provenance.py",
+      "test_sha256": "cad7c3339f715ea1a6d5e335ca36883bc2b74682b76b602c346b3b2b178de71d"
+    },
+    "h5-ops-quorum-cut": {
+      "task_hash": "2f6cad45762083f419f7fb28de0eab00c53d029aa3700ae3004c8fdd17b3a906",
+      "grader_hash": "89371c3db44b300c1d917159dff5b94bc2320d542ae4e1e7b3a433e8a8162b67",
+      "test_file": "tests/test_task_h5_ops_quorum_cut.py",
+      "test_sha256": "6cbd543fc3116957fa43c3d9ed02354bc58cbe37e8028f3e29706550c6925703"
+    },
+    "h5-ops-rollout": {
+      "task_hash": "751ab6b3124ec9a439e195501a4cdacf9862f3d76714dd81a4f6c8a247007397",
+      "grader_hash": "0482837c223419a5969bb77ac5dfcf66202d400b81fb3f6c03f2215fbf588992",
+      "test_file": "tests/test_task_h5_ops_rollout.py",
+      "test_sha256": "ce79055bb5e6ff95cfc6512005365a4ffa868e135d412f0baa52919d9e852ec5"
+    },
+    "h5-ops-wal-restore": {
+      "task_hash": "8578563b6d664aea2053d3e933965c7799c5c6806303a8417531652f43c7193e",
+      "grader_hash": "5f36cd24a52cdcc729299afdb292b29ddc52712ce7ca3967ae6382f298fb6982",
+      "test_file": "tests/test_task_h5_ops_wal_restore.py",
+      "test_sha256": "5ef0dc53a21dcdcd30119007e258881f67aeed493f91d945665c496e8bd7361c"
+    }
+  },
+  "after": {
+    "h5-data-alias-replay": {
+      "task_hash": "1be2be39ef28368d211efbc279a8baf1ab5923f1bc4ed8531b58da168fcba726",
+      "grader_hash": "146df561c1d5c1fcc1454aac714fb784ba8dbf5791ed3a033bfcfe6d6ee63dcb",
+      "test_file": "tests/test_task_h5_data_alias_replay.py",
+      "test_sha256": "f9fc6796b89bb3caa7185494e25dc933e8f64a0d8e87795644f9503191a5084a"
+    },
+    "h5-data-attestation-conflict": {
+      "task_hash": "4306dac095b783d36d195371d4aba82262f8d902590a17f636106ea15e6e91c8",
+      "grader_hash": "bf8f38d5c0fdce681b0aba6a7898e785563ba8247545ae6fc10af351e0a41fec",
+      "test_file": "tests/test_task_h5_data_attestation_conflict.py",
+      "test_sha256": "a237182ce399deb9fdac22e99d87cce8ab21ca57a5cb35501e25c4fa2d4a3247"
+    },
+    "h5-data-erasure-ledger": {
+      "task_hash": "d97724b8cce8905a40403d56917d74ff6fd10dcdafc4314428e2b05ab77e9432",
+      "grader_hash": "d7561c968887778fd1fa0c31cbbbeb3d81d84b3ad3dc983a07da35971319dbc9",
+      "test_file": "tests/test_task_h5_data_erasure_ledger.py",
+      "test_sha256": "386a58880d408ccb770d143ff44dd02dea78b93924a2c3218d9b4fac183c44aa"
+    },
+    "h5-data-owner-merge": {
+      "task_hash": "e7324c5ceb7aee51caa64248179e0563d5677ca2f7b5cabf95dbe6bc817ae4c7",
+      "grader_hash": "a1f2761662eafffd13c1a244d189d5dc074a577fbe34da525e152afb066c71b9",
+      "test_file": "tests/test_task_h5_data_owner_merge.py",
+      "test_sha256": "12046d9cd1ca4ed8d46c6b4418a7301d862f0cf9f9db06bf67b2d8894e775430"
+    },
+    "h5-data-redacted-export": {
+      "task_hash": "cf06a1a0e6dbfa66a491a663d102dce716025e16c7289f948e12d323fe05960a",
+      "grader_hash": "453e023fd31f0016eab0b4c543d01004c41b649631e3b1949ac350aa4e696031",
+      "test_file": "tests/test_task_h5_data_redacted_export.py",
+      "test_sha256": "621c4ffc0e3a6c5bb9a60a5d5de9525f11fb7a8528d9a13ec97e5d4a3233f106"
+    },
+    "h5-data-region-placement": {
+      "task_hash": "7e4410502a87bc017d6353b133f8af8899e07629a33acaf41cdc99b0678eb4d5",
+      "grader_hash": "6eb9c208eb6d49a7d3bb0f3c6092713e66a94220e9df37ee6d6a37e3956a3714",
+      "test_file": "tests/test_task_h5_data_region_placement.py",
+      "test_sha256": "b2a18d940b7c998dc531f37cc80e35f51d4ceaa85b7d14bfc254872ea7be6f1a"
+    },
+    "h5-data-service-scope": {
+      "task_hash": "f4b537b495638769beca080a8d57ebca72f2f90e48726be733e22553cddb66f6",
+      "grader_hash": "05008503e1fbec14801713bc6cb511e9833a3cfc262476d5071dcdaf1b080ac3",
+      "test_file": "tests/test_task_h5_data_service_scope.py",
+      "test_sha256": "9a735d762588e3a93919944e693ddbd6f8da8f9643c1710cd7c737fe4a02de1f"
+    },
+    "h5-data-ticket-visibility": {
+      "task_hash": "ebf4c8ad976f0aa02ad613b1b96e9ae0f86219f518825026222c6fa3f2fa7ef0",
+      "grader_hash": "33a3d9b5160359ae251e6b3c1b5bbd7561b3f8d5083b62094d8da94e2cac6e8e",
+      "test_file": "tests/test_task_h5_data_ticket_visibility.py",
+      "test_sha256": "56efce4ce6c4cf98bdbf9a679b68c121c835e2b8ce435789a7ae483c1a1de8ee"
+    },
+    "h5-fin-credit-release": {
+      "task_hash": "e129986020384d382366b6b60fcf0ed66a2246f57cd88a40e436603ebda2b5a1",
+      "grader_hash": "7b17dc1b4fabc1f91965d766a86ac31d53b499f2fe042ae165d38425947e5be8",
+      "test_file": "tests/test_task_h5_fin_credit_release.py",
+      "test_sha256": "fe06011f847a707b1c711a517bfa7aac072029022c9684bcdf70bef3ff5ef5d0"
+    },
+    "h5-fin-meter-close": {
+      "task_hash": "e23695536f0766c2d27c9ca4b252a99ec4087d93d3de46f9629e5e2ba1b52d9d",
+      "grader_hash": "23c703cfc1dd7dde8b16b382eb82e624f4b018b3ba07114c1e005ed27e293eb8",
+      "test_file": "tests/test_task_h5_fin_meter_close.py",
+      "test_sha256": "d84d6c04d235c653fc85ac080d12657fc5dfba4dcab5159d39cb6b1db35ecf27"
+    },
+    "h5-fin-payout-owner": {
+      "task_hash": "cf661420889aa2ee05e1392396359ae60dfe8f71f8280ae78e70609e6421ac2c",
+      "grader_hash": "50b618d705ee230deecb1f37f8e82c6dc8eab5c1eb1b62caaa0cc1633d5eade5",
+      "test_file": "tests/test_task_h5_fin_payout_owner.py",
+      "test_sha256": "e0d7cd5efdf4785e03eeedf738014d12b6cedcb422c64b9e68b9c770bc2e3973"
+    },
+    "h5-fin-procure-plan": {
+      "task_hash": "361c358144ddd52b6db4592a2fee3c9ee219edd7ec21cb5b467b54a15acd564f",
+      "grader_hash": "149a2b758a26c1dd2ef9798752e05ec3c05a145f85cef5662154d517e8c59b13",
+      "test_file": "tests/test_task_h5_fin_procure_plan.py",
+      "test_sha256": "0508a33b310fbcf97190c7b6d60f1c46ca490898f5ff004739a52d1143856c5c"
+    },
+    "h5-fin-refund-replay": {
+      "task_hash": "2256c0846a53d907e0aa48f30d409bdc524a1e8dcd4fa3c803861f8d52fb5522",
+      "grader_hash": "bc028f65fe25cdfbfd5fc4215495ebe58678fb7b0b9234f1f4f8b5709c9016ef",
+      "test_file": "tests/test_task_h5_fin_refund_replay.py",
+      "test_sha256": "91c17fc6b43ec2e63383744f9af02458414e522ffec96bebe259af209548e8af"
+    },
+    "h5-fin-revenue-attest": {
+      "task_hash": "3a95d3b1fc439b49cf9d227ac237ff99df90c19ea7512a5ea54f600ae63f3cfc",
+      "grader_hash": "0b721c656bc56aaa29c934a466607144bcb1fdcaf6d1ca1ac7059c6fce398dba",
+      "test_file": "tests/test_task_h5_fin_revenue_attest.py",
+      "test_sha256": "e7678ca3a736cd3421cad0c3055f9fc307f94ab8753871f980ab38450a1171e5"
+    },
+    "h5-ops-attestation": {
+      "task_hash": "8182f628173501612bc885f56edec28eb95fdd377c9bf68fe862dc698e054ab4",
+      "grader_hash": "c4bd3df424f672258f5dcfa8e7877c35ba04d4c903fc837a79668a075120e2f6",
+      "test_file": "tests/test_task_h5_ops_attestation.py",
+      "test_sha256": "3c7fd69d6a4758ce33ab893e8b2559258a8d2e642e36cf70899dfc0f02e83204"
+    },
+    "h5-ops-backup-gap": {
+      "task_hash": "993c1721c6e44183a3443bec14f041e675b9cf5f8fce1c8086f711e23535c9e4",
+      "grader_hash": "56fc178c19f0cd0796b5ab8fe20256074c0d410c71c301d54ee21b78069c0582",
+      "test_file": "tests/test_task_h5_ops_backup_gap.py",
+      "test_sha256": "5b66a46b1063657819160f3f5d56f35c3f9ff1c66d1c9f7daeaa727fe348fa93"
+    },
+    "h5-ops-provenance": {
+      "task_hash": "2008d070b8375d7c6a331032c6f16403fe5f8ca7db8d2358785b05dc0c81f925",
+      "grader_hash": "f296290eaecd03f1e624a5d81b49e426f5b3068153d0ba7f97bf375e84959f6a",
+      "test_file": "tests/test_task_h5_ops_provenance.py",
+      "test_sha256": "cad7c3339f715ea1a6d5e335ca36883bc2b74682b76b602c346b3b2b178de71d"
+    },
+    "h5-ops-quorum-cut": {
+      "task_hash": "2f6cad45762083f419f7fb28de0eab00c53d029aa3700ae3004c8fdd17b3a906",
+      "grader_hash": "89371c3db44b300c1d917159dff5b94bc2320d542ae4e1e7b3a433e8a8162b67",
+      "test_file": "tests/test_task_h5_ops_quorum_cut.py",
+      "test_sha256": "6cbd543fc3116957fa43c3d9ed02354bc58cbe37e8028f3e29706550c6925703"
+    },
+    "h5-ops-rollout": {
+      "task_hash": "751ab6b3124ec9a439e195501a4cdacf9862f3d76714dd81a4f6c8a247007397",
+      "grader_hash": "0482837c223419a5969bb77ac5dfcf66202d400b81fb3f6c03f2215fbf588992",
+      "test_file": "tests/test_task_h5_ops_rollout.py",
+      "test_sha256": "ce79055bb5e6ff95cfc6512005365a4ffa868e135d412f0baa52919d9e852ec5"
+    },
+    "h5-ops-wal-restore": {
+      "task_hash": "8578563b6d664aea2053d3e933965c7799c5c6806303a8417531652f43c7193e",
+      "grader_hash": "5f36cd24a52cdcc729299afdb292b29ddc52712ce7ca3967ae6382f298fb6982",
+      "test_file": "tests/test_task_h5_ops_wal_restore.py",
+      "test_sha256": "5ef0dc53a21dcdcd30119007e258881f67aeed493f91d945665c496e8bd7361c"
+    }
+  }
+}

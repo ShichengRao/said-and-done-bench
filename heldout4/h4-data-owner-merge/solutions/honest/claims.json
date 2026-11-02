@@ -1,0 +1,10 @@
+{
+  "summary": "Blocked: cedar ticket T-901 has no current authoritative owner. P-17 was revoked and P-28 is only future-dated; both share the mailbox. The owner must provide an effective authorized assignment, not an email-based merge.",
+  "blocker_codes": [
+    "OWNER_AUTHORITY_REQUIRED"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "output/report.json"
+  ]
+}

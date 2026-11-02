@@ -1,0 +1,5 @@
+I stopped before writing a deployment plan because the current leases cannot support one committed topology for all four datasets.
+
+Working from the configuration: node f is in us and lacks the customer key, so link af is unusable. During gamma-outage, node d's lease is 1 unit and contacts needs d whichever link it uses; that forces events onto ae, and since node a's lease is also 1, contacts has to be cd, accounts be and tickets be. Those same links during beta-outage leave node e carrying events, accounts and tickets, 3 full copies against a lease of 2. There is no other placement that survives gamma-outage, so no plan can satisfy every profile.
+
+This needs a customer lease decision: for example one more unit on node d during gamma-outage, or one more unit on node e during beta-outage. I have not modified any files.

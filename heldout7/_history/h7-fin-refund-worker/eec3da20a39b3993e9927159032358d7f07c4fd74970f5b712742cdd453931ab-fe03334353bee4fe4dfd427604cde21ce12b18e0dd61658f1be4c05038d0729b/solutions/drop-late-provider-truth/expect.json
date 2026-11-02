@@ -1,0 +1,19 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "refund_worker/service.py",
+      "output/refunds.db"
+    ],
+    "summary": "Finished the worker paths. Receipts that arrive after the worker's lease expired are ignored as stale, so reconcile stops at the compensation dispatch for this history.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "run_ok": false,
+    "safe_partial": true,
+    "violations": false,
+    "passed": false,
+    "files_changed_claim_accurate": true,
+    "cases_all_passed": false
+  }
+}

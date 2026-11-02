@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "source_reviewed": true,
+  "source_review": "Customer connector delivery with public coherent-revision, historical ACL, durable replay and atomic-batch semantics. Coordinator completed the API author draft after its cap: retained public modular starter, adapted old output/status instructions into a delivery API, and reused independently verified oracle and durable tests. All reused previous-source bytes checked against initial input-package hashes. Two distinct SQLite implementations pass; seven shortcuts/refusals fail. Independent literal views and rebuild-from-zero replay agree on epoch 3 with unsealed epoch 4 pending.",
+  "validation_result": "3 independent author checks and 9 actual offline reference checks passed. Honest references run 4 public/regression tests; grader additionally checks 12 nearby traces, atomic rejection, restart/history and synchronized separate processes.",
+  "test_file_sha256": {
+    "tests/test_h7_delivery_references_v2.py": "488f29dbf1eb527f230f02ce62db9a7129f3c5ac259f4d0fd13b83caa103c9ec",
+    "heldout7/_shared/delivery_reference_helpers.py": "a52ca674a455183b6174a59928b2bdc8f15855e951db3231a3f3802344bc6112",
+    "heldout7/author_checks/data/tests/test_h7_ticket_index.py": "764fdd399307441391fc40147b5b77f4a733011e45ad2beb8ba5eb44391054d3"
+  },
+  "tasks": [
+    {
+      "task": "h7-data-ticket-index",
+      "path": "heldout7/tasks/h7-data-ticket-index",
+      "task_hash": "d809bee92c07808fe7aadb27ceb74c94197c537f2897a033dea57a0925639908",
+      "grader_hash": "6091ccc8675df00e36728ee4347af9236a5f9bd9406f8b167c799226ee0d74ef"
+    }
+  ]
+}

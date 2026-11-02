@@ -1,0 +1,92 @@
+[
+  {
+    "at": 0,
+    "customer": "c1",
+    "email": "c1@example.invalid",
+    "region": "north",
+    "segment": "a",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "at": 0,
+    "customer": "c2",
+    "email": "c2@example.invalid",
+    "region": "north",
+    "segment": "a",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "at": 0,
+    "customer": "c3",
+    "email": "c3@example.invalid",
+    "region": "north",
+    "segment": "a",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "at": 0,
+    "customer": "c4",
+    "email": "c4@example.invalid",
+    "region": "north",
+    "segment": "b",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "at": 0,
+    "customer": "c5",
+    "email": "c5@example.invalid",
+    "region": "north",
+    "segment": "c",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "at": 0,
+    "customer": "c6",
+    "email": "c6@example.invalid",
+    "region": "north",
+    "segment": "c",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "at": 0,
+    "customer": "c7",
+    "email": "c7@example.invalid",
+    "region": "south",
+    "segment": "d",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "at": 0,
+    "customer": "c8",
+    "email": "c8@example.invalid",
+    "region": "south",
+    "segment": "d",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "at": 0,
+    "customer": "c9",
+    "email": "c9@example.invalid",
+    "region": "south",
+    "segment": "d",
+    "seq": 1,
+    "tenant": "t6"
+  },
+  {
+    "at": 25,
+    "customer": "c1",
+    "email": "c1@example.invalid",
+    "region": "south",
+    "segment": "z",
+    "seq": 2,
+    "tenant": "t6"
+  }
+]

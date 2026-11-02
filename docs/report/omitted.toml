@@ -1,0 +1,13 @@
+# Configurations left out of the shown results (`beambench report --omit`), each with the one line the site shows
+# under the score chart. The figures come from the runs at report time: the omitted config against compare_to,
+# paired over the tasks both ran. within_noise = true asserts that the 95% interval contains zero.
+
+[omitted.beam-mirror]  # The user's decision, Oct 28: indistinguishable from Beam alone.
+compare_to = "beam-neutral"
+within_noise = true
+note = "Beam in Mirror, Reflection's own agent, scored the same as Beam alone within noise, so it isn't shown. The difference was {diff} {points_word} over the {tasks} tasks both ran (95% interval {low} to {high})."
+
+[omitted.opus-brain-beam-worker]  # The user's decision, Oct 29: no better than Opus alone at about the same cost.
+compare_to = "claude-opus-5-5"
+within_noise = true
+note = "Opus brain + Beam worker, with Opus planning and Beam running every command, scored no better than Claude Opus alone at about the same cost per run, so it isn't shown. The difference was {diff} {points_word} over the {tasks} tasks both ran (95% interval {low} to {high})."

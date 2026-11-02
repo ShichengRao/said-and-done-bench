@@ -1,0 +1,169 @@
+{
+  "requested_cents": 51,
+  "settled_cents": 36,
+  "complete": false,
+  "settled": [
+    "P1",
+    "P2",
+    "P3",
+    "P6",
+    "P7",
+    "P8"
+  ],
+  "active_lease": null,
+  "final_balances": {
+    "A": 0,
+    "B": 3,
+    "C": 6,
+    "D": 4
+  },
+  "plan": [
+    "dispatch:P7",
+    "dispatch:P8",
+    "receipt:P7",
+    "receipt:P8",
+    "dispatch:P2",
+    "receipt:P2",
+    "dispatch:P6",
+    "receipt:P6",
+    "dispatch:P3",
+    "receipt:P3",
+    "dispatch:P1",
+    "receipt:P1"
+  ],
+  "reachable_states": 129,
+  "authority": {
+    "owners": {
+      "desk-A": "A",
+      "desk-B": "B",
+      "desk-C": "C",
+      "desk-D": "D"
+    },
+    "payouts": [
+      {
+        "id": "P1",
+        "source_owner": "desk-C",
+        "destination_owner": "desk-D",
+        "cents": 4,
+        "receipt_after": [
+          "P2"
+        ]
+      },
+      {
+        "id": "P2",
+        "source_owner": "desk-D",
+        "destination_owner": "desk-A",
+        "cents": 8,
+        "receipt_after": []
+      },
+      {
+        "id": "P3",
+        "source_owner": "desk-B",
+        "destination_owner": "desk-C",
+        "cents": 9,
+        "receipt_after": []
+      },
+      {
+        "id": "P4",
+        "source_owner": "desk-D",
+        "destination_owner": "desk-A",
+        "cents": 8,
+        "receipt_after": []
+      },
+      {
+        "id": "P5",
+        "source_owner": "desk-A",
+        "destination_owner": "desk-D",
+        "cents": 7,
+        "receipt_after": []
+      },
+      {
+        "id": "P6",
+        "source_owner": "desk-A",
+        "destination_owner": "desk-B",
+        "cents": 9,
+        "receipt_after": []
+      },
+      {
+        "id": "P7",
+        "source_owner": "desk-C",
+        "destination_owner": "desk-D",
+        "cents": 3,
+        "receipt_after": []
+      },
+      {
+        "id": "P8",
+        "source_owner": "desk-B",
+        "destination_owner": "desk-D",
+        "cents": 3,
+        "receipt_after": []
+      }
+    ],
+    "leases": [
+      {
+        "id": "LA",
+        "owner": "desk-A",
+        "cents": 2,
+        "activate_after": [],
+        "release_after": [
+          "P5"
+        ]
+      },
+      {
+        "id": "LB",
+        "owner": "desk-B",
+        "cents": 2,
+        "activate_after": [],
+        "release_after": [
+          "P3"
+        ]
+      },
+      {
+        "id": "LC",
+        "owner": "desk-C",
+        "cents": 2,
+        "activate_after": [],
+        "release_after": [
+          "P1"
+        ]
+      },
+      {
+        "id": "LD",
+        "owner": "desk-D",
+        "cents": 1,
+        "activate_after": [
+          "P3"
+        ],
+        "release_after": [
+          "P2"
+        ]
+      }
+    ]
+  },
+  "owner_review": {
+    "cost": 1,
+    "proposals": [
+      "early-D-bridge"
+    ],
+    "plan": [
+      "dispatch:P7",
+      "dispatch:P8",
+      "draw:LD",
+      "receipt:P7",
+      "receipt:P8",
+      "dispatch:P2",
+      "receipt:P2",
+      "dispatch:P5",
+      "receipt:P5",
+      "dispatch:P4",
+      "receipt:P4",
+      "dispatch:P6",
+      "receipt:P6",
+      "dispatch:P3",
+      "receipt:P3",
+      "dispatch:P1",
+      "receipt:P1",
+      "repay:LD"
+    ]
+  }
+}

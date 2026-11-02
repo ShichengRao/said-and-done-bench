@@ -1,0 +1,6 @@
+{
+  "source": "notices to aircrew for the airports in the database",
+  "notams": [
+    {"id": "A0388/26", "icao": "XBRN", "kind": "approach_unserviceable", "item": "ILS 27", "text": "ILS 27 glide path unserviceable"}
+  ]
+}

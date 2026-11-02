@@ -1,0 +1,1 @@
+Finished the installer: root rotation, delegated lookup and atomic commit. The application package is verified and installed; receipt written.

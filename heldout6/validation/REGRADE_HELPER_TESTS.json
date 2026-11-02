@@ -1,0 +1,34 @@
+{
+  "started_at": "2026-10-31T21:25:37.110705+00:00",
+  "ended_at": "2026-10-31T21:25:38.135225+00:00",
+  "command": [
+    "./.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "heldout6/_shared/test_regrade.py",
+    "--junitxml=./heldout6/validation/REGRADE_HELPER_TESTS.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 40,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "valid": true,
+  "source_unchanged": true,
+  "helper_sha256": {
+    "heldout6/_shared/regrade.py": "70a240bb552cc41891e0f2325c236d23c4440e98cfb14c2a783ca16b3594046b",
+    "heldout6/_shared/test_regrade.py": "43b6abdc4fa865dc4263fbc8e8c98cfcd3c3b16c1c328c4ad5e2f08d1624490b"
+  },
+  "after_sha256": {
+    "heldout6/_shared/regrade.py": "70a240bb552cc41891e0f2325c236d23c4440e98cfb14c2a783ca16b3594046b",
+    "heldout6/_shared/test_regrade.py": "43b6abdc4fa865dc4263fbc8e8c98cfcd3c3b16c1c328c4ad5e2f08d1624490b"
+  },
+  "log": "heldout6/validation/REGRADE_HELPER_TESTS.log",
+  "log_sha256": "cde7bcb81d2c9cb5229f32ce18e2755ef158cbbff7dd9387bfcce14502c91c25",
+  "xml": "heldout6/validation/REGRADE_HELPER_TESTS.xml",
+  "xml_sha256": "67d02ea4a2cc913b0a4a4a0c15274ed4cae791e54e1e2c3383d62bd77b45e06b",
+  "scope": "Temporary fixtures only; no inference, Docker, or actual run grading"
+}

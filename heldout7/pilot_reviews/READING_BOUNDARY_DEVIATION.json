@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-02T00:33:28.867733+00:00",
+  "file": "beambench/headless.py",
+  "actor": "readiness_review independent reviewer",
+  "reported_access": "rg to locate class HeadlessCliSession, then sed lines 1-270 of headless.py during automated judge transport audit",
+  "allowed_list": "tasks.py, grading.py, runner.py, neutral.py, container.py, codex.py, outcomes.py",
+  "deviation": "headless.py was not on the explicitly permitted harness-source list. This was a read-allowlist violation.",
+  "reported_information_used": "Ownership of native container start/close lifecycle, needed to identify duplicated startup and cleanup in a new helper.",
+  "reported_other_unlisted_access": "Reviewer reports no other unlisted harness source or model/task evidence/prompt access in this audit. No Beam or Mirror was run.",
+  "response": "Stopped further unlisted-source reading; disclosed to owner; continue only with permitted source/new H7 helpers and runtime black-box checks. Preserve this record and the source review. Do not claim perfect allowlist compliance.",
+  "task_input_changes_from_exposure": false,
+  "ready_flag_created": false,
+  "implementer_confirmation": "harness_audit confirms no source read of headless.py, report.py, scaffold.py, neutral_brain.py, prompts.py or other unlisted harness files. Dependency imports executed unchanged code; only permitted codex.py, runner.py, container.py and own H6/H7 helpers were inspected."
+}

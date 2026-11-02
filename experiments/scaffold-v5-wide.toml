@@ -1,0 +1,6 @@
+# The stress matrix with six Beam runs at once (the user asked for eight in all, Oct 30; one 429 "overloaded" in 147
+# runs at up to eight, retried). Used for the reworded-prompt runs (four) and the rest of the ablations (six).
+extends = "scaffold-v5-stress.toml"
+
+[queues.reflection]
+parallel = 6

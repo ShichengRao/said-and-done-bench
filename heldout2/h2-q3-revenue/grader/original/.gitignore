@@ -1,0 +1,4 @@
+__pycache__/
+.pytest_cache/
+# The ERP's export, refreshed nightly.
+data/

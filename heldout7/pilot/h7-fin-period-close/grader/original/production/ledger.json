@@ -1,0 +1,19 @@
+{
+  "posted": [
+    {
+      "posting": "posted-00",
+      "capture": "cap-00",
+      "merchant": "A",
+      "signed": true,
+      "closed": true
+    },
+    {
+      "posting": "posted-01",
+      "capture": "cap-01",
+      "merchant": "B",
+      "signed": true,
+      "closed": true
+    }
+  ],
+  "last_released_batch": "merchant-close-2026-08-31"
+}

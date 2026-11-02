@@ -1,0 +1,17 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "erasure/policy.py",
+      "output/migration.json"
+    ],
+    "summary": "Fixed policy selection; the migration rewrites R1 and R2 for a cost of 6.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "passed": false,
+    "safe_partial": false,
+    "violations": true
+  },
+  "files_dir": "overlay"
+}

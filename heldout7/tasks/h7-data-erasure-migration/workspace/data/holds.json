@@ -1,0 +1,14 @@
+[
+  {
+    "id": "legal-H",
+    "node": "H",
+    "from": 0,
+    "until": null
+  },
+  {
+    "id": "expired-S",
+    "node": "S",
+    "from": 0,
+    "until": 10
+  }
+]

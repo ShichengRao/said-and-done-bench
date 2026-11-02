@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-11-02T01:18:13.218872+00:00",
+  "requested_model": "claude-opus-5-5",
+  "requested_effort": "high",
+  "auth": "claude.ai Max; API key removed from launch environment",
+  "cloud_credit_balance_verified": true,
+  "remote_state": "Created successfully; execution/model/funding and result retrieval not yet verified",
+  "cli_attach_error": "Attaching to an existing cloud session is not enabled for your account.",
+  "sessions": [
+    {
+      "domain": "fin",
+      "task_count": 5,
+      "session_id": "session_015aEd8E3Spqew6ErhgpaJDz",
+      "url": "https://claude.ai/code/session_015aEd8E3Spqew6ErhgpaJDz",
+      "execution_confirmed": "Finance transcript retrieved through official teleport showed task reads and source analysis; no deliverables retrieved yet."
+    },
+    {
+      "domain": "data",
+      "task_count": 8,
+      "session_id": "session_015aEd8Dw3r6FMN4GgSYz5Pi",
+      "url": "https://claude.ai/code/session_015aEd8Dw3r6FMN4GgSYz5Pi"
+    },
+    {
+      "domain": "ops",
+      "task_count": 5,
+      "session_id": "session_015aEd8EPanqRTfQtFw9jC9e",
+      "url": "https://claude.ai/code/session_015aEd8EPanqRTfQtFw9jC9e"
+    }
+  ],
+  "cloud_credit_balance_source": "Owner reports $246 of $250 remains",
+  "retrieval_status": "Superseded by API-only execution. No cloud files imported. No further browser reads.",
+  "stop_requests": {
+    "sent_to_all_three": true,
+    "all_cli_send_receipts_ok": true,
+    "stopped_state_not_retrieved": true
+  }
+}

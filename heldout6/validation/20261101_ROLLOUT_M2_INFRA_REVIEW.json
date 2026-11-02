@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "final": false,
+  "reviewed_at": "2026-11-01",
+  "task": "h6-ops-rollout",
+  "model": "minimax-m2-7",
+  "run": "h6-ops-rollout/followup1-minimax-m2-7",
+  "run_id": "h6-ops-rollout-followup1-minimax-m2-7-e3c6dca7",
+  "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+  "grader_hash": "29b52441576b8c9c4e42f8efee3f4464b19a92ce2674785d63f21f3fe96c5f1f",
+  "source_archive": "heldout6/_history/h6-ops-rollout/cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa-29b52441576b8c9c4e42f8efee3f4464b19a92ce2674785d63f21f3fe96c5f1f",
+  "record_path": "runs/calibration-h6/h6-ops-rollout/followup1-minimax-m2-7/record.json",
+  "record_sha256": "3886ead7df455c8e7838ab5a2b618fcb36577fd9263172260bacb217da5a19cc",
+  "grade_path": "runs/calibration-h6/h6-ops-rollout/followup1-minimax-m2-7/grade.json",
+  "grade_sha256": "2722398c471acb50f3c4084f0e3d33e6abb2dedab443095e4744d4d2578bb4eb",
+  "harness_error_path": "runs/calibration-h6/h6-ops-rollout/followup1-minimax-m2-7/harness-error.txt",
+  "harness_error_sha256": "e926d595d26f2a45bc51957e82a6836e1f8b4082063ed4857f97b23559ec8600",
+  "finish_at": "2026-11-01T05:54:26.369387+00:00",
+  "outcome": "infra_error",
+  "scored": false,
+  "readiness_eligible": false,
+  "current_task_status": "pending",
+  "substantive_failure_classified": false,
+  "canonical_artifact_correct": null,
+  "error": {
+    "type": "ProviderError",
+    "http_status": 400,
+    "kind": "context_length_exceeded",
+    "endpoint_context_tokens": 204800,
+    "requested_tokens": 204819,
+    "input_text_tokens": 171972,
+    "tool_input_tokens": 79,
+    "reserved_output_tokens": 32768,
+    "recorded_detail": "ProviderError: HTTP 400 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"This endpoint's maximum context length is 204800 tokens. However, you requested about 204819 tokens (171972 of text input, 79 of tool input, 32768 in the output). Please reduce the length of either one, or use the context-compression plugin to compress your prompt automatically."
+  },
+  "submission": {
+    "submit_attempts": 0,
+    "submit": null,
+    "submit_directory_empty": true
+  },
+  "snapshot_writers_frozen": false,
+  "steps": 57,
+  "limits": {
+    "max_steps": 60,
+    "idle_turns_to_stall": 3,
+    "stuck_turn_s": 900.0,
+    "run_deadline_s": 2700.0,
+    "cancel_grace_s": 30.0,
+    "post_submit_grace_s": 30.0,
+    "startup_timeout_s": 120.0
+  },
+  "stop_reasons": [
+    "length",
+    "length"
+  ],
+  "usage_total": {
+    "requests": 41,
+    "prompt_tokens": 931621,
+    "completion_tokens": 124191,
+    "total_tokens": 1055812,
+    "cost": 0.23870189999999997,
+    "cached_tokens": 790890,
+    "reasoning_tokens": 0
+  },
+  "settings": {
+    "runtime_sha256": {
+      "MODEL_CONFIGS.json": "6b98d4f27be432b66fff5c8d598e56e4e3d60b13677aa8b965fc037729b3e437",
+      "ADDITIONAL_MODEL_CONFIGS.json": "4cff4a654f7630e5f5c8f707bd2830bf25dddd15150fc6e0f0d3e51d6c634c95",
+      "ADDITIONAL_MODELS.toml": "29d409d147658e725125d0dbd24df1b1a1dcdf0d4d55395482a31e817e9bd442",
+      "PRESERVED_BASELINES.json": "d3e8684d2181f5feadea8ed050ee354b8784d8d6c534bed9af1c217d6487428f",
+      "_shared/calibrate.py": "dd078d2c45c3a22281a9f908bf9f2c3c803aa4bd2efd6e7a73811f9a52c03477",
+      "_shared/run_configured.py": "72ffdd26177dc437179b373f55192d0cc9a8a9208e55ad80c56a67462fbe4712",
+      "_shared/validate.py": "e9aa979def99d2aa3ac5498c9ed65a65d4516658b6bd488b228a314700150d6b"
+    },
+    "agent_cmd": [
+      "neutral",
+      "h6-minimax-m2-7-thinking",
+      "minimax/minimax-m2.7"
+    ],
+    "agent_info": {
+      "model_config": "h6-minimax-m2-7-thinking",
+      "model": "minimax/minimax-m2.7",
+      "base_url": "https://openrouter.ai/api/v1",
+      "params": {
+        "reasoning": {
+          "enabled": true,
+          "exclude": false
+        },
+        "provider": {
+          "order": [
+            "minimax"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "providers": [
+        "Minimax"
+      ],
+      "retries": 0,
+      "retry_reasons": []
+    },
+    "unchanged_for_planned_retry": true
+  },
+  "assessment": "The provider rejected an over-limit request before submission. This attempt is unscored and must not count as a task failure or a zero-score observation. Incidental checks against the unfrozen snapshot cannot establish substantive performance.",
+  "retry_plan": {
+    "status": "planned_not_launched",
+    "fresh_attempts": 1,
+    "explicit_infrastructure_retry_label_required": true,
+    "after": "Grader helper-isolation repair and required validation.",
+    "settings": "Keep existing model, provider, reasoning, runtime and attempt budgets unchanged; no silent context compression or budget adjustment.",
+    "caveat": "The context overflow is deterministic for that request, so a fresh attempt with unchanged settings can recur."
+  },
+  "review_scope": "Closed record, finish metadata, decisive harness error and submission-directory inventory only; no transcript or substantive solution audit. Original evidence remains unchanged. CALIBRATION_REVIEW and DIAGNOSTIC_REVIEW remain pending for rollout."
+}

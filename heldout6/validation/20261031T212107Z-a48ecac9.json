@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-31T21:21:33.754117+00:00",
+  "run_id": "20261031T212107Z-a48ecac9",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_data_ticket_visibility.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261031T212107Z-a48ecac9.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 26.301,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261031T212107Z-a48ecac9.log",
+  "log_sha256": "e343fc55874245f02480a21d973917b71180711851cf1830567965df64292bae",
+  "xml": "heldout6/validation/20261031T212107Z-a48ecac9.xml",
+  "xml_sha256": "8dc1473da53b6c74c77a6a424a9d38036f1aa079abfb3f3bf115d39464e600e0",
+  "tasks": {
+    "h6-data-ticket-visibility": {
+      "task_hash": "ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f",
+      "grader_hash": "1effb170099ce1b58097545dd024eb07354824899355770215f84070583a7b7c",
+      "test_file": "tests/test_task_h6_data_ticket_visibility.py",
+      "test_sha256": "2975323afe3b6f4beb521a90b8c5615c5243715d91fec386247d09b29283761e"
+    }
+  },
+  "after": {
+    "h6-data-ticket-visibility": {
+      "task_hash": "ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f",
+      "grader_hash": "1effb170099ce1b58097545dd024eb07354824899355770215f84070583a7b7c",
+      "test_file": "tests/test_task_h6_data_ticket_visibility.py",
+      "test_sha256": "2975323afe3b6f4beb521a90b8c5615c5243715d91fec386247d09b29283761e"
+    }
+  }
+}

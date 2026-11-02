@@ -1,0 +1,11 @@
+# Blind round 5 (docs/blind-round-5-preregistration.md): Beam alone, v4, and v5 (frozen at d01b306) on Codex's
+# heldout5 tasks that pass calibration, seeds 1-3, on Reflection's API. Planned to start on Codex's ready.txt, which
+# never came; the user said to run the frozen set when Codex's credit ran out (addendum 0dd0818). Twelve Beam runs at
+# once, as in round 4 (scale down on 429s).
+#   uv run python scripts/verify_blind_round.py heldout4 heldout5
+#   uv run python scripts/batch_in_order.py --out runs/main --matrix experiments/blind-round-5.toml \
+#     --part dir=heldout5 configs=beam-neutral,beam-neutral-scaffold-v4,beam-neutral-scaffold-v5 seeds=1,2,3
+extends = "scaffold-v5-stress.toml"
+
+[queues.reflection]
+parallel = 12

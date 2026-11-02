@@ -1,0 +1,13 @@
+{
+  "reviewed_at": "2026-10-30T21:09:15.877888+00:00",
+  "run": "h5-data-service-scope/v1-deepseek-v3",
+  "record_sha256": "a98e57fecdc4c78b04dbd3fd113c51850a440ed088158a49dbb884dcbe2a3eaf",
+  "grade_sha256": "ef70e7e84e93a43b76aaec1efcd430b4bea4cdde0535d8e906537cf0703a43cc",
+  "task_hash": "f4b537b495638769beca080a8d57ebca72f2f90e48726be733e22553cddb66f6",
+  "grader_hash": "05008503e1fbec14801713bc6cb511e9833a3cfc262476d5071dcdaf1b080ac3",
+  "outcome": "infra_error",
+  "scored": false,
+  "snapshot_writers_frozen": false,
+  "reason": "Pinned StreamLake provider returned HTTP 400: invalid escaped character in string. Preserve the unscored original; retry once with identical task inputs, model, provider, prompt and budgets. This is infrastructure recovery, not a retry of a scored model failure.",
+  "planned_retry_revision": "infra-retry-1"
+}

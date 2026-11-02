@@ -1,0 +1,256 @@
+{
+  "grants": [
+    {
+      "id": "g-release",
+      "principal": "maren",
+      "role": "deploy",
+      "environment": "production",
+      "service": "billing",
+      "start": 10,
+      "expires": 100,
+      "revoked_at": 65
+    },
+    {
+      "id": "g-review",
+      "principal": "tavi",
+      "role": "approve",
+      "environment": "production",
+      "service": "*",
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    },
+    {
+      "id": "g-new",
+      "principal": "ellis",
+      "role": "deploy",
+      "environment": "production",
+      "service": "billing",
+      "start": 62,
+      "expires": 100,
+      "revoked_at": null
+    },
+    {
+      "id": "g-self",
+      "principal": "maren",
+      "role": "approve",
+      "environment": "production",
+      "service": "billing",
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    }
+  ],
+  "tokens": [
+    {
+      "id": "token-m",
+      "principal": "maren",
+      "issued_at": 20,
+      "expires": 95,
+      "revoked_at": null,
+      "grant_ids": [
+        "g-release"
+      ]
+    },
+    {
+      "id": "token-e",
+      "principal": "ellis",
+      "issued_at": 60,
+      "expires": 95,
+      "revoked_at": null,
+      "grant_ids": [
+        "g-new"
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "r-D11",
+      "at": 30,
+      "principal": "maren",
+      "token": "token-m",
+      "environment": "production",
+      "service": "billing",
+      "artifact": "digest-D11"
+    },
+    {
+      "id": "r-D17",
+      "at": 60,
+      "principal": "maren",
+      "token": "token-m",
+      "environment": "production",
+      "service": "billing",
+      "artifact": "digest-D17"
+    },
+    {
+      "id": "r-D21",
+      "at": 40,
+      "principal": "maren",
+      "token": "token-m",
+      "environment": "production",
+      "service": "billing",
+      "artifact": "digest-D21"
+    },
+    {
+      "id": "r-D23",
+      "at": 45,
+      "principal": "maren",
+      "token": "token-m",
+      "environment": "production",
+      "service": "billing",
+      "artifact": "digest-D23"
+    },
+    {
+      "id": "r-D26",
+      "at": 63,
+      "principal": "ellis",
+      "token": "token-e",
+      "environment": "production",
+      "service": "billing",
+      "artifact": "digest-D26"
+    },
+    {
+      "id": "r-D30",
+      "at": 70,
+      "principal": "maren",
+      "token": "token-m",
+      "environment": "production",
+      "service": "billing",
+      "artifact": "digest-D30"
+    },
+    {
+      "id": "r-D32",
+      "at": 70,
+      "principal": "maren",
+      "token": "token-m",
+      "environment": "staging",
+      "service": "billing",
+      "artifact": "digest-D32"
+    }
+  ],
+  "approvals": [
+    {
+      "request": "r-D11",
+      "at": 31,
+      "expires": 95,
+      "principal": "tavi",
+      "artifact": "digest-D11"
+    },
+    {
+      "request": "r-D17",
+      "at": 62,
+      "expires": 95,
+      "principal": "tavi",
+      "artifact": "digest-D17"
+    },
+    {
+      "request": "r-D21",
+      "at": 41,
+      "expires": 95,
+      "principal": "tavi",
+      "artifact": "digest-previous"
+    },
+    {
+      "request": "r-D23",
+      "at": 46,
+      "expires": 95,
+      "principal": "maren",
+      "artifact": "digest-D23"
+    },
+    {
+      "request": "r-D26",
+      "at": 64,
+      "expires": 95,
+      "principal": "tavi",
+      "artifact": "digest-D26"
+    },
+    {
+      "request": "r-D30",
+      "at": 71,
+      "expires": 95,
+      "principal": "tavi",
+      "artifact": "digest-D30"
+    },
+    {
+      "request": "r-D32",
+      "at": 71,
+      "expires": 95,
+      "principal": "tavi",
+      "artifact": "digest-D32"
+    }
+  ],
+  "events": [
+    {
+      "id": "evt-D32",
+      "kind": "commit",
+      "status": "success",
+      "deployment": "D32",
+      "request": "r-D32",
+      "at": 73
+    },
+    {
+      "id": "evt-D26",
+      "kind": "commit",
+      "status": "success",
+      "deployment": "D26",
+      "request": "r-D26",
+      "at": 68
+    },
+    {
+      "id": "evt-D11",
+      "kind": "commit",
+      "status": "success",
+      "deployment": "D11",
+      "request": "r-D11",
+      "at": 33
+    },
+    {
+      "id": "evt-D11",
+      "kind": "commit",
+      "status": "success",
+      "deployment": "D11",
+      "request": "r-D11",
+      "at": 33
+    },
+    {
+      "id": "rollback-D17",
+      "kind": "rollback",
+      "status": "success",
+      "deployment": "D17",
+      "request": "r-D17",
+      "at": 69
+    },
+    {
+      "id": "evt-D30",
+      "kind": "commit",
+      "status": "failed",
+      "deployment": "D30",
+      "request": "r-D30",
+      "at": 73
+    },
+    {
+      "id": "evt-D21",
+      "kind": "commit",
+      "status": "success",
+      "deployment": "D21",
+      "request": "r-D21",
+      "at": 43
+    },
+    {
+      "id": "evt-D17",
+      "kind": "commit",
+      "status": "success",
+      "deployment": "D17",
+      "request": "r-D17",
+      "at": 67
+    },
+    {
+      "id": "evt-D23",
+      "kind": "commit",
+      "status": "success",
+      "deployment": "D23",
+      "request": "r-D23",
+      "at": 48
+    }
+  ]
+}

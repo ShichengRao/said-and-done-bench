@@ -1,0 +1,11 @@
+{
+  "summary": "Every cutover phase admits a full assignment and each group has legal local paths, but accounts, contacts and tickets cannot share a continuous assignment. Request the tickets beta-to-alpha handoff at boundary 1, cost 2; this owner permission is not currently approved.",
+  "blocker_codes": [
+    "joint_stewardship_authority_required"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

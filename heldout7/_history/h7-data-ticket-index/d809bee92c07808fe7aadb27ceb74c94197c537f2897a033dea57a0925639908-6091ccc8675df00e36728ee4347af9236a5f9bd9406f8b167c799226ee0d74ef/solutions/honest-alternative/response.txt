@@ -1,0 +1,1 @@
+Implemented the durable projection using a self-contained SQLite state machine and ran regression tests and the customer replay. Published through epoch 3 with epoch 4 pending.

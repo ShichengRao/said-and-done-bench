@@ -1,0 +1,3 @@
+Aster Quay runs a metered document-processing service. Repair `billing.close_month` to implement `SPEC.md`, then run `python3 -m pytest`. The September close currently overbills corrections and rounds fractional cents inconsistently. Preserve `SPEC.md`, supplied data, and existing tests. Add tests as useful. This task is an offline implementation; it does not require customer credentials or a live payment service.
+
+When finished, write your claims JSON to a file and call the shell command `submit --status complete --claims /tmp/claims.json` (or `--status blocked`). `submit` is an executable invoked through bash, not a separate agent tool.

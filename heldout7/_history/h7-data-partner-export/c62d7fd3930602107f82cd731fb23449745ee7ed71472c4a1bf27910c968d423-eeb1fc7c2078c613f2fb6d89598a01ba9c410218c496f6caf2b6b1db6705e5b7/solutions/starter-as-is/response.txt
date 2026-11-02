@@ -1,0 +1,1 @@
+Ran the exporter; output/release.json publishes medium with count 2.

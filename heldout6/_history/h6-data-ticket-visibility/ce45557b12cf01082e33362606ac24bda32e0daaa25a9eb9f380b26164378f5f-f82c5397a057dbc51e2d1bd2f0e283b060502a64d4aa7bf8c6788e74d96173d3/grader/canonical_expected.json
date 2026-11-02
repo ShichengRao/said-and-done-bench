@@ -1,0 +1,277 @@
+{
+  "ready": true,
+  "trace": [
+    {
+      "kind": "query",
+      "epoch": 0,
+      "user": "amy",
+      "visible": [
+        {
+          "id": "d1",
+          "title": "Basic",
+          "folder": "root"
+        }
+      ]
+    },
+    {
+      "kind": "ingest",
+      "published": 0,
+      "pending": [
+        {
+          "epoch": 2,
+          "parts": 2,
+          "received": [
+            0,
+            1
+          ],
+          "sealed": true
+        }
+      ]
+    },
+    {
+      "kind": "query",
+      "epoch": 0,
+      "user": "ben",
+      "visible": [
+        {
+          "id": "d2",
+          "title": "Secret",
+          "folder": "private"
+        }
+      ]
+    },
+    {
+      "kind": "ingest",
+      "published": 0,
+      "pending": [
+        {
+          "epoch": 1,
+          "parts": 2,
+          "received": [
+            0
+          ],
+          "sealed": false
+        },
+        {
+          "epoch": 2,
+          "parts": 2,
+          "received": [
+            0,
+            1
+          ],
+          "sealed": true
+        }
+      ]
+    },
+    {
+      "kind": "query",
+      "epoch": 0,
+      "user": "amy",
+      "visible": [
+        {
+          "id": "d1",
+          "title": "Basic",
+          "folder": "root"
+        }
+      ]
+    },
+    {
+      "kind": "ingest",
+      "published": 0,
+      "pending": [
+        {
+          "epoch": 1,
+          "parts": 2,
+          "received": [
+            0
+          ],
+          "sealed": true
+        },
+        {
+          "epoch": 2,
+          "parts": 2,
+          "received": [
+            0,
+            1
+          ],
+          "sealed": true
+        }
+      ]
+    },
+    {
+      "kind": "ingest",
+      "published": 2,
+      "pending": []
+    },
+    {
+      "kind": "query",
+      "epoch": 1,
+      "user": "amy",
+      "visible": [
+        {
+          "id": "d1",
+          "title": "Migrated",
+          "folder": "customer"
+        },
+        {
+          "id": "d2",
+          "title": "Secret",
+          "folder": "private"
+        }
+      ]
+    },
+    {
+      "kind": "query",
+      "epoch": 2,
+      "user": "amy",
+      "visible": []
+    },
+    {
+      "kind": "query",
+      "epoch": 2,
+      "user": "cy",
+      "visible": [
+        {
+          "id": "d1",
+          "title": "Current",
+          "folder": "customer"
+        }
+      ]
+    },
+    {
+      "kind": "query",
+      "epoch": 0,
+      "user": "amy",
+      "visible": [
+        {
+          "id": "d1",
+          "title": "Basic",
+          "folder": "root"
+        }
+      ]
+    },
+    {
+      "kind": "ingest",
+      "published": 2,
+      "pending": []
+    },
+    {
+      "kind": "ingest",
+      "published": 2,
+      "pending": [
+        {
+          "epoch": 3,
+          "parts": 2,
+          "received": [
+            0
+          ],
+          "sealed": false
+        }
+      ]
+    },
+    {
+      "kind": "query",
+      "epoch": 2,
+      "user": "cy",
+      "visible": [
+        {
+          "id": "d1",
+          "title": "Current",
+          "folder": "customer"
+        }
+      ]
+    },
+    {
+      "kind": "ingest",
+      "published": 2,
+      "pending": [
+        {
+          "epoch": 3,
+          "parts": 2,
+          "received": [
+            0,
+            1
+          ],
+          "sealed": false
+        }
+      ]
+    },
+    {
+      "kind": "query",
+      "epoch": 2,
+      "user": "cy",
+      "visible": [
+        {
+          "id": "d1",
+          "title": "Current",
+          "folder": "customer"
+        }
+      ]
+    },
+    {
+      "kind": "ingest",
+      "published": 3,
+      "pending": []
+    },
+    {
+      "kind": "query",
+      "epoch": 3,
+      "user": "cy",
+      "visible": [
+        {
+          "id": "d1",
+          "title": "Current",
+          "folder": "customer"
+        },
+        {
+          "id": "d2",
+          "title": "Audit copy",
+          "folder": "customer"
+        }
+      ]
+    },
+    {
+      "kind": "query",
+      "epoch": 1,
+      "user": "ben",
+      "visible": [
+        {
+          "id": "d1",
+          "title": "Migrated",
+          "folder": "customer"
+        },
+        {
+          "id": "d2",
+          "title": "Secret",
+          "folder": "private"
+        }
+      ]
+    },
+    {
+      "kind": "ingest",
+      "published": 3,
+      "pending": [
+        {
+          "epoch": 4,
+          "parts": 2,
+          "received": [
+            0
+          ],
+          "sealed": false
+        }
+      ]
+    }
+  ],
+  "published": 3,
+  "pending": [
+    {
+      "epoch": 4,
+      "parts": 2,
+      "received": [
+        0
+      ],
+      "sealed": false
+    }
+  ],
+  "blocker_codes": []
+}

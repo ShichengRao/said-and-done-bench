@@ -1,0 +1,7 @@
+# Procurement reservation references — version 3
+
+`good/reservations.py` implements the durable service using a SQLite state row plus durable operation records. The workspace planner is intentional correct support copied from the independently validated version-2 reference; no hidden oracle, grader, test, or answer artifact is copied into the workspace. Single-row state is an allowed schema; the contract concerns transactional behavior and restart safety.
+
+Eight substantive shortcut implementations independently omit active holds, authoritative persisted stock, replay, optimistic versions, inclusive expiry, non-consuming release, atomic expiry rollback, or safe write serialization. Docker tests exercise actual grade_run and require each shortcut to fail hidden behavior. Hidden cases include independently calculated transitions, generated accounting sequences, fresh-process persistence, same-time concurrent buyers, equal operation retries, competing terminal actions, and coupled planner integration. Race assertions do not require a particular winner.
+
+Version 1 source remains in the dedicated branch at c1b208d (finance implementation 3f3c358), plus the existing small grading-only archive under version1/. Version 2 source is committed at 247861a. Its weak repeat and Astra both verified successfully and remain preserved in FINANCE_CALIBRATION_NOTES.md; version 2 is disqualified by the strict weak-failure criterion. No prior model outcome carries forward to this input revision.

@@ -1,0 +1,65 @@
+{
+  "as_of": 9,
+  "batch": "recon-2026-11-a",
+  "calls": [
+    {
+      "pools": [
+        "A",
+        "root"
+      ],
+      "request": "request-0",
+      "route": "request-0-via-A",
+      "start": 10
+    },
+    {
+      "pools": [
+        "A",
+        "C",
+        "root"
+      ],
+      "request": "request-1",
+      "route": "request-1-via-AC",
+      "start": 11
+    },
+    {
+      "pools": [
+        "A",
+        "C",
+        "root"
+      ],
+      "request": "request-2",
+      "route": "request-2-via-AC",
+      "start": 11
+    },
+    {
+      "pools": [
+        "B",
+        "root"
+      ],
+      "request": "request-3",
+      "route": "request-3-via-B",
+      "start": 12
+    },
+    {
+      "pools": [
+        "A",
+        "D",
+        "root"
+      ],
+      "request": "request-4",
+      "route": "request-4-via-AD",
+      "start": 12
+    },
+    {
+      "pools": [
+        "B",
+        "D",
+        "root"
+      ],
+      "request": "request-5",
+      "route": "request-5-via-BD",
+      "start": 10
+    }
+  ],
+  "customer": "Larkspur Mutual (fictional)"
+}

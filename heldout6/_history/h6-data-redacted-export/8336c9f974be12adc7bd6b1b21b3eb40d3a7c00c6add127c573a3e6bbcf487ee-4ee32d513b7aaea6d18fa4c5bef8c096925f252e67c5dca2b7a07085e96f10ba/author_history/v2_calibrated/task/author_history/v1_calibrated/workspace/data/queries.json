@@ -1,0 +1,156 @@
+[
+  {
+    "id": "q_a",
+    "members": [
+      "old2",
+      "old3",
+      "old6",
+      "old7",
+      "old10",
+      "old11",
+      "old14",
+      "old15"
+    ],
+    "utility": 7,
+    "approved": true
+  },
+  {
+    "id": "q_b",
+    "members": [
+      "old4",
+      "old5",
+      "old6",
+      "old7",
+      "old12",
+      "old13",
+      "old14",
+      "old15",
+      "crm4",
+      "crm12"
+    ],
+    "utility": 6,
+    "approved": true
+  },
+  {
+    "id": "q_c",
+    "members": [
+      "old8",
+      "old9",
+      "old10",
+      "old11",
+      "old12",
+      "old13",
+      "old14",
+      "old15",
+      "crm8",
+      "crm12"
+    ],
+    "utility": 5,
+    "approved": true
+  },
+  {
+    "id": "q_ab",
+    "members": [
+      "old2",
+      "old3",
+      "old4",
+      "old5",
+      "old6",
+      "old7",
+      "old10",
+      "old11",
+      "old12",
+      "old13",
+      "old14",
+      "old15",
+      "crm4",
+      "crm12"
+    ],
+    "utility": 10,
+    "approved": true
+  },
+  {
+    "id": "q_bc",
+    "members": [
+      "old4",
+      "old5",
+      "old6",
+      "old7",
+      "old8",
+      "old9",
+      "old10",
+      "old11",
+      "crm4",
+      "crm8"
+    ],
+    "utility": 11,
+    "approved": true
+  },
+  {
+    "id": "q_ac",
+    "members": [
+      "old10",
+      "old11",
+      "old14",
+      "old15"
+    ],
+    "utility": 4,
+    "approved": true
+  },
+  {
+    "id": "q_revoked",
+    "members": [
+      "old0",
+      "old1",
+      "old2",
+      "old3",
+      "old4",
+      "old5",
+      "old6",
+      "old7",
+      "old8",
+      "old9",
+      "old10",
+      "old11",
+      "old12",
+      "old13",
+      "old14",
+      "old15",
+      "old16",
+      "crm0",
+      "crm4",
+      "crm8",
+      "crm12",
+      "crm16"
+    ],
+    "utility": 100,
+    "approved": true
+  },
+  {
+    "id": "q_unapproved",
+    "members": [
+      "old0",
+      "old1",
+      "old2",
+      "old3",
+      "old4",
+      "old5",
+      "old6",
+      "old7",
+      "old8",
+      "old9",
+      "old10",
+      "old11",
+      "old12",
+      "old13",
+      "old14",
+      "old15",
+      "crm0",
+      "crm4",
+      "crm8",
+      "crm12"
+    ],
+    "utility": 100,
+    "approved": false
+  }
+]

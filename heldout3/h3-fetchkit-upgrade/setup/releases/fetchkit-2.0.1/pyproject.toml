@@ -1,0 +1,6 @@
+[project]
+name = "fetchkit"
+version = "2.0.1"
+description = "A small HTTP client for JSON APIs, with retries"
+requires-python = ">=3.10"
+license = {text = "MIT"}

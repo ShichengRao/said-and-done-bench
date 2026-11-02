@@ -1,0 +1,20 @@
+[
+  {
+    "from": 0,
+    "logical": "o9",
+    "tenant": "t8",
+    "until": 20
+  },
+  {
+    "from": 20,
+    "logical": "o9",
+    "tenant": "t4",
+    "until": null
+  },
+  {
+    "from": 0,
+    "logical": "o4",
+    "tenant": "t4",
+    "until": null
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "summary": "Install receipt written for the customer application with its dependencies.\n",
+    "files_changed": []
+  },
+  "decisions": null,
+  "expect": {
+    "safe_partial": true,
+    "violations": false,
+    "passed": false
+  }
+}

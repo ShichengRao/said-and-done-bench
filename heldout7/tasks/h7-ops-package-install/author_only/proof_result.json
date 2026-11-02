@@ -1,0 +1,50 @@
+{
+  "honest_run": "installed 3 packages for install-0",
+  "installed": [
+    [
+      "app",
+      "apps/lantern-dispatch",
+      "packages"
+    ],
+    [
+      "base",
+      "runtime/tzdata-2026b",
+      "packages"
+    ],
+    [
+      "lib",
+      "libs/route-planner",
+      "packages"
+    ]
+  ],
+  "receipt_matches_oracle": true,
+  "repositories": {
+    "app": [
+      2,
+      5,
+      {
+        "packages": 4,
+        "targets": 4,
+        "team": 4
+      }
+    ],
+    "base": [
+      2,
+      5,
+      {
+        "packages": 4,
+        "targets": 4,
+        "team": 4
+      }
+    ],
+    "lib": [
+      2,
+      5,
+      {
+        "packages": 4,
+        "targets": 4,
+        "team": 4
+      }
+    ]
+  }
+}

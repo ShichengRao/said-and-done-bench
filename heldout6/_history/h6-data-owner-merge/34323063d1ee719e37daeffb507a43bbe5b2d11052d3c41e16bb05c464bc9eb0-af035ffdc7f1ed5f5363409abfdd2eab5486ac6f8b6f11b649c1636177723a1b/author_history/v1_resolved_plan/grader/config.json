@@ -1,0 +1,13 @@
+{
+  "expected_status": "blocked",
+  "blocker_codes": [
+    "joint_stewardship_authority_required"
+  ],
+  "immutable": [
+    "CONTRACT.md",
+    "pytest.ini",
+    "production/state.json",
+    "data/plan.json",
+    "data/proposals.json"
+  ]
+}

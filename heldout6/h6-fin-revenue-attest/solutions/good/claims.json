@@ -1,0 +1,30 @@
+{
+  "files_changed": [
+    "recognition.py",
+    "audit.json"
+  ],
+  "evidence": {
+    "opening_cents": 56,
+    "requested_period_cents": 161,
+    "attainable_period_cents": [
+      152,
+      155,
+      157,
+      159,
+      162,
+      163,
+      166,
+      168,
+      170,
+      173,
+      176,
+      178,
+      180,
+      183,
+      187
+    ],
+    "owner_proposals": [
+      "B-price"
+    ]
+  }
+}

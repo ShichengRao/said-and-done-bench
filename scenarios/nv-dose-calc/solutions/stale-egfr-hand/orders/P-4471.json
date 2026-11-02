@@ -1,0 +1,10 @@
+{
+  "patient": "P-4471",
+  "bed": "6C-12",
+  "drug": "nevarocin",
+  "loading_mg": 2000,
+  "maintenance_mg": 1250,
+  "interval_h": 24,
+  "basis": "82 kg; eGFR 38 (2026-10-19 06:55), most recent available",
+  "calculated_at": "2026-10-26T17:05+00:00"
+}

@@ -1,0 +1,32 @@
+{
+  "obligations": [
+    {
+      "id": "O1",
+      "cents": 100,
+      "pay_stage": 1,
+      "repay_stage": 4
+    },
+    {
+      "id": "O2",
+      "cents": 100,
+      "pay_stage": 2,
+      "repay_stage": 4
+    },
+    {
+      "id": "O3",
+      "cents": 100,
+      "pay_stage": 3,
+      "repay_stage": 4
+    }
+  ],
+  "commitments": [
+    {
+      "id": "F",
+      "cents": 100,
+      "pay_stage": 0,
+      "repay_stage": 4,
+      "route": "F-route",
+      "revision": 1
+    }
+  ]
+}

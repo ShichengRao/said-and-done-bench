@@ -1,0 +1,67 @@
+{
+  "recorded_at": "2026-10-30T19:53:42.990794+00:00",
+  "strong": {
+    "agent": "codex",
+    "model": "gpt-6-astra",
+    "effort": "max",
+    "authentication_lanes": [
+      "codex-2",
+      "codex-3"
+    ],
+    "one_concurrent_session_per_lane": true
+  },
+  "neutral": {
+    "deepseek-v3": {
+      "name": "deepseek-v3",
+      "base_url": "https://openrouter.ai/api/v1",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "model": "deepseek/deepseek-chat",
+      "max_tokens": 8192,
+      "params": {
+        "provider": {
+          "order": [
+            "streamlake"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "send_reasoning": true
+    },
+    "deepseek-v4-1-flash": {
+      "name": "deepseek-v4-1-flash",
+      "base_url": "https://openrouter.ai/api/v1",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "max_tokens": 32768,
+      "params": {
+        "reasoning_effort": "max",
+        "provider": {
+          "order": [
+            "deepinfra/fp8"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "send_reasoning": true
+    }
+  },
+  "limits": {
+    "max_steps": 60,
+    "idle_turns_to_stall": 3,
+    "stuck_turn_s": 900.0,
+    "run_deadline_s": 2700.0,
+    "cancel_grace_s": 30.0,
+    "post_submit_grace_s": 30.0,
+    "startup_timeout_s": 120.0
+  },
+  "images": {
+    "image": "beambench-task:dev",
+    "image_id": "sha256:420ced6f841609b80d25228a16aa8a220199521a887a59b3e9b00958865b88f5",
+    "agent_image": "beambench-codex:dev",
+    "agent_image_id": "sha256:76b51ee6322ed415ce4e6e2c6b25d8e415b3a70ab98a42df8e6d9fbcb1540ce6"
+  },
+  "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac",
+  "scheduling_cost_threshold_usd": 10,
+  "neutral_concurrency": 1,
+  "attempts_per_version_default": 1
+}

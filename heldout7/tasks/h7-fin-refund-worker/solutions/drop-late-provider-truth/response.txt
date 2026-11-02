@@ -1,0 +1,1 @@
+Finished the worker paths. Receipts that arrive after the worker's lease expired are ignored as stale, so reconcile stops at the compensation dispatch for this history.

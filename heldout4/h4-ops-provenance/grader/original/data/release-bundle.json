@@ -1,0 +1,197 @@
+{
+  "policy": {
+    "at": 100,
+    "keys": {
+      "k0": {
+        "n": "c545e1ecb57257f34778ee39d33e5ac56e4353f030fed46ab53f21103c3258027f597f5fbbb3532653b6f2d6e54177b5886a1e9148ae5df1cfe4284b0f111a685ae1fd95f36e3099b9279dd7d320c2c7293fcd10bfba00acda58ea3ea530657446fa24db94650fa322fd66d0a09bd92d362f53441d70aa4001b9f1f8ca55ea71",
+        "e": 65537,
+        "not_before": 0,
+        "expires": 200,
+        "revoked_at": null
+      },
+      "k1": {
+        "n": "daab48f1e31001c5ddee75f96a858e2d838b406869a8eac730e2c40fbf78d79876de7a89019627e981e1ab20f7a1ef7af11aa47db049e353796f68f1766d7c327bde4453d76be2248ebe9eb42b04b834fb43ed763adddf0d75f2bc06ea4cd6e94c99532f0f72768a749d87f0c427282e66c4d4f721fc4f756cd6b32243a8d08d",
+        "e": 65537,
+        "not_before": 0,
+        "expires": 200,
+        "revoked_at": null
+      },
+      "k2": {
+        "n": "a32f8ff05e09698e53cebb69ceabac5723bf2af671a0d07681aad0c132ca666deb1e0eb8fb9c05cc73311028d53f8fbb53101f0c85e5e35a00c2c3febc59a34f096581bbe1dc1742add0f741dc2ae65d01f0fb8f2fcb461ea04a23228adb8b5f8d2065d85681829152fee1479ff0b9ace7007371fa4db1572a37fcea199fa9b5",
+        "e": 65537,
+        "not_before": 0,
+        "expires": 200,
+        "revoked_at": null
+      }
+    },
+    "roles": {
+      "platform": {
+        "packages": [
+          "orion-*"
+        ],
+        "keyids": [
+          "k0",
+          "k1"
+        ],
+        "threshold": 2
+      }
+    },
+    "minimum_build": {
+      "orion-api": 4
+    }
+  },
+  "artifacts": {
+    "orion-core-1.0": "payload-orion-core-1.0-1",
+    "orion-left-1.0": "payload-orion-left-1.0-1",
+    "orion-right-1.0": "payload-orion-right-1.0-1",
+    "orion-api-1.0": "payload-orion-api-1.0-1",
+    "unused-untrusted-1.0": "payload-unused-untrusted-1.0-1"
+  },
+  "releases": [
+    {
+      "manifest": {
+        "package": "orion-right",
+        "version": "1.0",
+        "build": 4,
+        "role": "platform",
+        "not_before": 50,
+        "expires": 200,
+        "artifact": "orion-right-1.0",
+        "artifact_sha256": "c82d85ebd7fa3b527fecd01422567f9d91225aadf562237e97382d2d2c0f5443",
+        "dependencies": [
+          {
+            "package": "orion-core",
+            "version": "1.0",
+            "sha256": "c02f713d8eebdeb991ea43701a46eb32e0c35a2f2b4ba0684f51bb8e6a07b814"
+          }
+        ]
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "a130f86210425ad61ad861ce74a05775c6dedb60858ace7e892c3b15f92f531d125e944552c2c6a4566056e079976cd3f89c679eb4d27d68b854edaadc7bef804d8bbbe9343adef1cec8960f7daa6bd7c4bb48af8aecf371fbc4e16f55bab1d38b9d129fb9deaa66d376db3273d4d50e00749afdaca4e03727a08f878c6dc0df"
+        },
+        {
+          "keyid": "k1",
+          "sig": "932d84ee244a156c84fa3f196019ccf9588f6fc318301161f23bff66eb88b5738cc50351f3256078db5ea2dd3aa0c036156d81827aaca4ea865d5557cf7a00b0842e1cdab7803f0ed9a29cf53de7d33e646bddcd3e6989699a1581a18ffa0ebd111fc0c67f4bb1b2da7c8595e2c0b9345fc4201bc22e8c516d6b0d1e85ae4d2c"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "package": "orion-api",
+        "version": "1.0",
+        "build": 4,
+        "role": "platform",
+        "not_before": 50,
+        "expires": 200,
+        "artifact": "orion-api-1.0",
+        "artifact_sha256": "214be1c559387a3fb887ac3b498c6e43900306cddee00af2227ce54fceaaef2b",
+        "dependencies": [
+          {
+            "package": "orion-left",
+            "version": "1.0",
+            "sha256": "d6f41cd6c8e88682b6a0fb704bbb19e8134b6f2ad51dc9a65ec62724aaa4f7bb"
+          },
+          {
+            "package": "orion-right",
+            "version": "1.0",
+            "sha256": "a05f2d83462624035fff2c895116fb1d6cdc4223070cbd195b63663d000ba3f8"
+          }
+        ]
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "34cee661931370c7e7cc164cbf5a8a829ef502fd7d7530c0ec5d3688b8124c24a47ca8c156e58f81d2e7b2834f6349d0c1c3304fcdc158c7c4d919ae55fb5b311e6c5c9c85b43932a8850bcffdd18a9030d5e31d124267fb75ab3ddb197734bafce455bb58e150fdf2e07582806911be9831482076da11530e5366ef589dd0d8"
+        },
+        {
+          "keyid": "k1",
+          "sig": "a0be1e63746be2636a6226ba8b99fada299fe1ad65bad30eb07abf565a252bdddebafdb1a17607879e11c780c76096b30cae90d54c41919b9c04a283d026732849d534a56a3a6a0c63cbd47e50c4535c7254128c76ee6cab5369e0c80ed7fbe207c07524a15faa9b67e1e253fb0d2204ff89292d6ae86a57b87618a969159d8c"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "package": "unused-untrusted",
+        "version": "1.0",
+        "build": 4,
+        "role": "unknown",
+        "not_before": 50,
+        "expires": 10,
+        "artifact": "unused-untrusted-1.0",
+        "artifact_sha256": "39fc6b750310bf6e4c8fee1946eaed646dce5b2f0fdff8b5978c835df3cc2ae5",
+        "dependencies": []
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "5ce61c7de9947c10b0d5c41c75ddfc337bb0a79edfe01759f6cf1410b6a10ce1c7b7adf097331341673b10846814ab600378989a71e777392818fec2f4ea4d90baff6456d83810f646fd511d85ca1b3a87f52d00ad9e47d6ab2ba3876546792d619d6e8c54c569aba989a9e832f294584a5edbc2e247d5e787954b2b2d401739"
+        },
+        {
+          "keyid": "k1",
+          "sig": "0468edb7fcb5626672d6b0f677a16b9e0427c220713fc2ec1f1fe5e5bccad35dfd9a0b599bf3d726aa6397c6c9dd48cda0dcfce78e0183f6bcd2736f19d2bdb0f570fa068ab65b8ce80a4be07f9ca6d13b2866cd3cb51362e3e95a55c203c9cc0eb775906d8a8415d1cef0d614ab81f27722e777921dc163f871a1ca5b61d52f"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "package": "orion-core",
+        "version": "1.0",
+        "build": 4,
+        "role": "platform",
+        "not_before": 50,
+        "expires": 200,
+        "artifact": "orion-core-1.0",
+        "artifact_sha256": "eb3d4b937aeb735390e094636a745e711c5f782ade699ab037a2f065049aa854",
+        "dependencies": []
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "c40b756dd8d52821ca03ec5a081c412c4b8580eecd200cca406319682cf004900d4188a64bc797ebdcece8582d58fdcd0f0e85ce83d76baa0e06189f923971a84051596509ba12975dc08678d856dfccbb18ec044b790942bd5f965be4fa7e8b9ed7166ca31019d30a7bb63798a5e23fa1306c67be0251ecc7a6e06d79d797e3"
+        },
+        {
+          "keyid": "k1",
+          "sig": "c8c1502b0133f0c90cca752b59008021c50db5cc5a428ece4d80af887c4ffa2c4a6818adc1d78e5d080129e1d7ee89aa176a606ff4600931b45b74928564add05878e82c9e268471084d47760057d8cc869c51596f5a871c97dfd025211afb3f56e245d8fb7ded9a784c7e28d93afccda26c389847d3819975409052252fcf58"
+        }
+      ]
+    },
+    {
+      "manifest": {
+        "package": "orion-left",
+        "version": "1.0",
+        "build": 4,
+        "role": "platform",
+        "not_before": 50,
+        "expires": 200,
+        "artifact": "orion-left-1.0",
+        "artifact_sha256": "05f5d939dbe04ecd17219485bfdad08789ed129be62cfc600da37023aa5c92f8",
+        "dependencies": [
+          {
+            "package": "orion-core",
+            "version": "1.0",
+            "sha256": "c02f713d8eebdeb991ea43701a46eb32e0c35a2f2b4ba0684f51bb8e6a07b814"
+          }
+        ]
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "9fc1b22e3d87e686f8f2678000162bc9e7cb38c8476e8138952d83d0f187a201c4f753f406fb5f4937d06d92408d88c7dea52be84842f3a8172047cccea31686965998fff8b07daaf802bd0bed4609ff1975aaf3cdd3d498c6f377fdd5aa4e41cbbb99b4d684f51a8cefe82f64aa13ee58e6e90c5950449a981b875bf6a0d173"
+        },
+        {
+          "keyid": "k1",
+          "sig": "abbda60df76388cbe73e7b2b75f0faf6797c10c62380bb80ee205979e68fcac734ed47a9f8f66bb61c0f7f9d767481349937065413f68f2ceba8921af57f535f138243d452d49aafeddca514098cb2869d4301b7a6dfee6fc018e7059850e2ec11b773e66207d75a2064126a54ef203577b80bbaad0cfec40f18dc32898fcc19"
+        }
+      ]
+    }
+  ],
+  "requested": [
+    {
+      "package": "orion-api",
+      "version": "1.0",
+      "sha256": "cbc36f5cb6cdec272f0a7bde6297ffa90157e243c420a4ab74d66b3ae934d28e"
+    }
+  ]
+}

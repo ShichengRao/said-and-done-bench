@@ -1,0 +1,1 @@
+Controller finished; it admits any start that keeps a successful schedule available. Report written.

@@ -1,0 +1,59 @@
+{
+  "at": "2026-11-01T05:50:14.563427+00:00",
+  "scope": "Separate bounded parallel validation wrapper; no task, runtime, model or calibration-budget edits.",
+  "source": {
+    "path": "heldout6/_shared/validate_parallel.py",
+    "sha256": "a759a6f3b00b7ea01cc0010e238bca5d2dcef1eeced7e4bf8fabb8c40033b7f3"
+  },
+  "unit_tests": {
+    "path": "heldout6/_shared/test_validate_parallel.py",
+    "sha256": "00109c73f6e57c0d244cee09f58fdb8d35d73f52a233570a37513f70a9b27f69"
+  },
+  "validation": {
+    "log": {
+      "path": "heldout6/validation/20261101_VALIDATE_PARALLEL_UNIT.log",
+      "sha256": "e769539867a99af82e1d9a216f3550b56d88c177a7205e05ac8fd133e16a76a5"
+    },
+    "xml": {
+      "path": "heldout6/validation/20261101_VALIDATE_PARALLEL_UNIT.xml",
+      "sha256": "4d0f13289bf0df38670e49a6ca5aff34dda175356cd4d0a560e37ec77cce2f02"
+    },
+    "counts": {
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "seconds": 0.183,
+    "mocked_subprocesses_only": true
+  },
+  "default_workers": 2,
+  "command_template": ".venv/bin/python heldout6/_shared/validate_parallel.py h6-TASK [h6-OTHER-TASK ...]",
+  "properties": [
+    "Each requested task test file and tests/test_tasks.py are invoked exactly once, with separate logs, XML and temporary directories.",
+    "Each file must return zero, produce readable XML, collect at least one test and report no failures, errors or skips.",
+    "Task, grader, external-test, wrapper, shared-test/helper, project-dependency and harness hashes are compared before and after all jobs.",
+    "Merged XML has direct testsuite children and existing validation fields are retained; task pointers update only after whole-batch success.",
+    "Failed batches retain historical records and per-file evidence without replacing prior eligibility."
+  ],
+  "compatibility_limits": [
+    "File-level process isolation creates one pytest session per file; cross-file session fixtures or implicit test-order dependencies would behave differently. Existing suites use isolated workspaces, and no cross-file dependency was introduced.",
+    "The top-level command identifies this wrapper; actual uv run pytest commands are retained under file_runs. Current calibrate/freeze consumers do not constrain command shape.",
+    "Existing consumers validate aggregate log/XML hashes and task identities. They do not independently re-check the additional per-file/dependency fields after validation; those are retained and bound as evidence for review.",
+    "Temporary workspaces are cleaned after execution; each per-file log/XML and the merged evidence remain retained.",
+    "Docker contention and actual speedup remain unmeasured. Root will use the already-required rollout validation as the first real integration. No whole Docker suites were run for this wrapper."
+  ],
+  "unchanged_pinned_sources": [
+    {
+      "path": "heldout6/_shared/validate.py",
+      "sha256": "e9aa979def99d2aa3ac5498c9ed65a65d4516658b6bd488b228a314700150d6b"
+    },
+    {
+      "path": "heldout6/_shared/calibrate.py",
+      "sha256": "dd078d2c45c3a22281a9f908bf9f2c3c803aa4bd2efd6e7a73811f9a52c03477"
+    }
+  ],
+  "inference_runs": 0,
+  "real_regrades": 0,
+  "docker_validation_batches": 0
+}

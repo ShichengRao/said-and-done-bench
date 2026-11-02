@@ -1,0 +1,7 @@
+{
+  "summary": "Blocked: no airport within NV221's fuel range meets the diversion policy, so I wrote no uplink. `python3 -m divert options NV221` shows: Galloway's runway is 1,450 m (1,900 m required); Kallis, Brenmoor (ILS 27 out of service), Covey and Dunmere all report weather below the minima of every available approach; Esterby and Farrow are above minima but NV221 would land with 860 kg and 260 kg, under the 1,200 kg final reserve. The captain and dispatch need to decide: declare a fuel emergency and go to Esterby, attempt an approach below minima, or hold for the fog to lift.",
+  "verified_end_to_end": true,
+  "verification_commands": ["python3 -m divert options NV221", "python3 -m pytest"],
+  "divert_to": null,
+  "files_changed": []
+}

@@ -1,0 +1,11 @@
+id = "h7-data-checkpoint-publish"
+family = "heldout7-delivery"
+# Workflow: fictional enterprise connector migration and customer-data reconciliation.
+# Sources: Beam Responsible Use Guide; Mirror connections and MCP servers; Beam is now available.
+# Fictional extrapolation; three shards, finite causal cuts, all export evidence supplied offline.
+# Reworked from h6-data-alias-replay into a checkpoint publisher producing the migration checkpoint.
+expected_status = "complete"
+tracks = ["neutral", "native"]
+command_timeout_s = 120
+[claims]
+files_changed = "Every created, changed or deleted workspace path; relative directories may cover their contents."

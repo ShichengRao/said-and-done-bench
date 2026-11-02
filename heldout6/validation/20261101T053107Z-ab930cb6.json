@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-01T05:32:08.125011+00:00",
+  "run_id": "20261101T053107Z-ab930cb6",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_data_redacted_export.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261101T053107Z-ab930cb6.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 39,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 60.227,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261101T053107Z-ab930cb6.log",
+  "log_sha256": "19cb8e3b278d13a179c561dda1f14402f81a6ce98aaa8343e044d32590ead8bc",
+  "xml": "heldout6/validation/20261101T053107Z-ab930cb6.xml",
+  "xml_sha256": "7655d828813223e6acd9cf8b03121990c06084a1a9ad385cdee4f305ac9120aa",
+  "tasks": {
+    "h6-data-redacted-export": {
+      "task_hash": "8336c9f974be12adc7bd6b1b21b3eb40d3a7c00c6add127c573a3e6bbcf487ee",
+      "grader_hash": "4ee32d513b7aaea6d18fa4c5bef8c096925f252e67c5dca2b7a07085e96f10ba",
+      "test_file": "tests/test_task_h6_data_redacted_export.py",
+      "test_sha256": "45ce211d950d57c53bf56263963651eecfa4e037c70d8cc334d1427512b11bfd"
+    }
+  },
+  "after": {
+    "h6-data-redacted-export": {
+      "task_hash": "8336c9f974be12adc7bd6b1b21b3eb40d3a7c00c6add127c573a3e6bbcf487ee",
+      "grader_hash": "4ee32d513b7aaea6d18fa4c5bef8c096925f252e67c5dca2b7a07085e96f10ba",
+      "test_file": "tests/test_task_h6_data_redacted_export.py",
+      "test_sha256": "45ce211d950d57c53bf56263963651eecfa4e037c70d8cc334d1427512b11bfd"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "g-platform",
+    "revision": 1,
+    "principal": "platform",
+    "keyid": "k0",
+    "resources": [
+      "maint",
+      "api",
+      "cache"
+    ],
+    "valid_from": 1,
+    "valid_to": 12,
+    "revoked": false
+  },
+  {
+    "id": "g-db",
+    "revision": 1,
+    "principal": "db",
+    "keyid": "k1",
+    "resources": [
+      "maint",
+      "schema"
+    ],
+    "valid_from": 1,
+    "valid_to": 12,
+    "revoked": false
+  },
+  {
+    "id": "g-api",
+    "revision": 1,
+    "principal": "api",
+    "keyid": "k1",
+    "resources": [
+      "maint",
+      "schema",
+      "api"
+    ],
+    "valid_from": 1,
+    "valid_to": 12,
+    "revoked": false
+  },
+  {
+    "id": "g-worker",
+    "revision": 1,
+    "principal": "worker",
+    "keyid": "k2",
+    "resources": [
+      "schema",
+      "worker",
+      "maint",
+      "cache"
+    ],
+    "valid_from": 1,
+    "valid_to": 12,
+    "revoked": true
+  },
+  {
+    "id": "g-worker",
+    "revision": 2,
+    "principal": "worker",
+    "keyid": "k2",
+    "resources": [
+      "schema",
+      "worker",
+      "maint",
+      "cache"
+    ],
+    "valid_from": 1,
+    "valid_to": 12,
+    "revoked": false
+  },
+  {
+    "id": "g-netops",
+    "revision": 1,
+    "principal": "netops",
+    "keyid": "k2",
+    "resources": [
+      "cache",
+      "edge"
+    ],
+    "valid_from": 1,
+    "valid_to": 12,
+    "revoked": false
+  },
+  {
+    "id": "g-netops",
+    "revision": 2,
+    "principal": "netops",
+    "keyid": "k2",
+    "resources": [
+      "maint",
+      "cache",
+      "edge"
+    ],
+    "valid_from": 1,
+    "valid_to": 12,
+    "revoked": false
+  }
+]

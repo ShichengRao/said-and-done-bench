@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_reviewed": true,
+  "source_review": "Public dispatch order, global one-failure policy, acknowledgement and epoch rules checked against independent literal oracle. 29 API cases plus customer, relabelled, refusal-preservation and cross-process/restart checks. Honest controller passes; shortcut test drivers now explicitly expect failure exits. Private driver-only fixes retained; task and grader semantics unchanged.",
+  "validation_result": "6 initial actual references passed, then both affected shortcut references passed after driver repair; 12 author checks passed.",
+  "test_file_sha256": {
+    "tests/test_h7_delivery_references.py": "fa4eaeec9e04a4716785587868b0d14dd08206b475f832cc2b76a0cd33fdf184",
+    "heldout7/_shared/delivery_reference_helpers.py": "a52ca674a455183b6174a59928b2bdc8f15855e951db3231a3f3802344bc6112"
+  },
+  "tasks": [
+    {
+      "task": "h7-ops-deployment-controller",
+      "path": "heldout7/tasks/h7-ops-deployment-controller",
+      "task_hash": "1e580f581cf42888e13666964e978c9cdf7c0f694aff4a9b0313cbb465ec6fa5",
+      "grader_hash": "f21c7a3b8425d2caf7df9bcb8c249316d00dbcadf521d75577a0a9897cc04af4"
+    }
+  ]
+}

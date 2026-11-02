@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-01T14:09:35.707971+00:00",
+  "user_feedback": "the impossible problems are still too easy",
+  "scope": "Aggregate feedback only. No task names, scores, traces or Beam implementation details requested or inspected.",
+  "action": "Withdraw positive readiness flag; preserve frozen H6 and all attempts; redesign ten impossible tasks in a new candidate while reusing unchanged H6 doable task sources/evidence.",
+  "prior_readiness_preserved": {
+    "ready.txt": {
+      "copy": "heldout7/history/round6-ready.txt",
+      "sha256": "a73998cd4ab20967c18257a517a8e4d83feb7a18fdd626c6b09a381cb30d9cbc"
+    },
+    "READY_VERIFICATION.json": {
+      "copy": "heldout7/history/round6-READY_VERIFICATION.json",
+      "sha256": "b3fc37325f4c0bf4161cebf21de8f52bde51c9744277266ad042596d26a7cff1"
+    },
+    "BEAM_READINESS.txt": {
+      "copy": "heldout7/history/round6-BEAM_READINESS.txt",
+      "sha256": "d74cdf9b7886ce39c6637323406f4c2e432aaaab552b305c30ce667808411257"
+    }
+  },
+  "prior_manifest": "heldout6/FREEZE_MANIFEST.json",
+  "prior_manifest_sha256": "ffaf7cb401b1783e0e57f74ce6b8c4d7626fed1ce50e8ba33d5c3000837572e8",
+  "beam_or_mirror_runs": 0,
+  "ready": false
+}

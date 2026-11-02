@@ -1,0 +1,325 @@
+{
+  "controls": [
+    7700,
+    2600,
+    4000,
+    1400
+  ],
+  "gross": [
+    1800,
+    1600,
+    1000,
+    1500,
+    1600,
+    1500,
+    1500,
+    1400,
+    2400,
+    1400
+  ],
+  "refunds": [
+    100,
+    400,
+    200,
+    800,
+    800,
+    800,
+    100,
+    800,
+    600,
+    700
+  ],
+  "frozen": {
+    "cap-00": "A",
+    "cap-01": "B"
+  },
+  "legal_whole_capture_assignments": 6561,
+  "distinct_control_vectors": 4131,
+  "distinct_DP_states_by_prefix": [
+    1,
+    1,
+    3,
+    9,
+    27,
+    54,
+    162,
+    459,
+    1377,
+    4131
+  ],
+  "full_matches": 0,
+  "proper_three_control_checks": [
+    {
+      "omitted_control": "A.gross",
+      "assignments": 1,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B",
+        "C",
+        "C"
+      ],
+      "actual_controls": [
+        7900,
+        2600,
+        4000,
+        1400
+      ]
+    },
+    {
+      "omitted_control": "A.refunds",
+      "assignments": 1,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "C",
+        "A",
+        "A",
+        "B",
+        "C",
+        "A"
+      ],
+      "actual_controls": [
+        7700,
+        2500,
+        4000,
+        1400
+      ]
+    },
+    {
+      "omitted_control": "B.gross",
+      "assignments": 1,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "C",
+        "C"
+      ],
+      "actual_controls": [
+        7700,
+        2600,
+        4200,
+        1400
+      ]
+    },
+    {
+      "omitted_control": "B.refunds",
+      "assignments": 2,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "C",
+        "A",
+        "A",
+        "A",
+        "C",
+        "B"
+      ],
+      "actual_controls": [
+        7700,
+        2600,
+        4000,
+        1300
+      ]
+    }
+  ],
+  "nearest_control_change_l1_cents": 100,
+  "nearest_control_corrections": [
+    {
+      "controls": [
+        7700,
+        2500,
+        4000,
+        1400
+      ],
+      "assignments": 1,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "C",
+        "A",
+        "A",
+        "B",
+        "C",
+        "A"
+      ]
+    },
+    {
+      "controls": [
+        7700,
+        2600,
+        4000,
+        1300
+      ],
+      "assignments": 1,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "C",
+        "A",
+        "A",
+        "A",
+        "C",
+        "B"
+      ]
+    }
+  ],
+  "fractional_relaxation": {
+    "mixture": [
+      {
+        "weight": "2/3",
+        "controls": [
+          7700,
+          2600,
+          3200,
+          1200
+        ],
+        "witness": [
+          "A",
+          "B",
+          "C",
+          "A",
+          "B",
+          "A",
+          "A",
+          "A",
+          "C",
+          "C"
+        ]
+      },
+      {
+        "weight": "1/3",
+        "controls": [
+          7700,
+          2600,
+          5600,
+          1800
+        ],
+        "witness": [
+          "A",
+          "B",
+          "C",
+          "A",
+          "B",
+          "A",
+          "A",
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ]
+  },
+  "closed_posting_counterfactuals": [
+    {
+      "requires_owner_reversal_of": [],
+      "matches": 0,
+      "witness": null
+    },
+    {
+      "requires_owner_reversal_of": [
+        "cap-00"
+      ],
+      "matches": 0,
+      "witness": null
+    },
+    {
+      "requires_owner_reversal_of": [
+        "cap-01"
+      ],
+      "matches": 1,
+      "witness": [
+        "A",
+        "C",
+        "C",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "requires_owner_reversal_of": [
+        "cap-00",
+        "cap-01"
+      ],
+      "matches": 1,
+      "witness": [
+        "A",
+        "C",
+        "C",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "B",
+        "C"
+      ]
+    }
+  ],
+  "incorrect_superseded_refunds": {
+    "matches": 1,
+    "witness": [
+      "A",
+      "B",
+      "B",
+      "A",
+      "C",
+      "A",
+      "A",
+      "A",
+      "C",
+      "B"
+    ]
+  },
+  "incorrect_independent_refund_allocation": {
+    "gross_witness": [
+      "A",
+      "B",
+      "B",
+      "A",
+      "C",
+      "A",
+      "A",
+      "A",
+      "C",
+      "B"
+    ],
+    "refund_witness": [
+      "A",
+      "B",
+      "B",
+      "A",
+      "A",
+      "A",
+      "A",
+      "B",
+      "C",
+      "C"
+    ]
+  },
+  "elapsed_seconds": 0.05766
+}

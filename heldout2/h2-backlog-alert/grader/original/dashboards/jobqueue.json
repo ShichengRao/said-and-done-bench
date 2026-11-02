@@ -1,0 +1,30 @@
+{
+  "title": "jobqueue",
+  "refresh": "1m",
+  "panels": [
+    {
+      "title": "Jobs waiting",
+      "type": "timeseries",
+      "expr": "sum by (queue_name) (jobs_queue_depth)",
+      "unit": "jobs"
+    },
+    {
+      "title": "Workers up",
+      "type": "timeseries",
+      "expr": "sum by (queue_name) (jobs_workers_up)",
+      "unit": "workers"
+    },
+    {
+      "title": "Jobs processed per second",
+      "type": "timeseries",
+      "expr": "sum by (queue_name) (rate(jobs_processed_total[5m]))",
+      "unit": "jobs/s"
+    },
+    {
+      "title": "Free disk on jobqueue hosts",
+      "type": "timeseries",
+      "expr": "node_disk_free_bytes{mount=\"/var/lib/jobqueue\"}",
+      "unit": "bytes"
+    }
+  ]
+}

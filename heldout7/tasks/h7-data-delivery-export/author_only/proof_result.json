@@ -1,0 +1,96 @@
+{
+  "raw_interleavings": 34650,
+  "current_batch": {
+    "consistent": 1266,
+    "all_authorized": 12,
+    "some_unauthorized": 1254,
+    "first_all_authorized": [
+      "c1",
+      "c2",
+      "a1",
+      "c3",
+      "a2",
+      "a3",
+      "b1",
+      "b2",
+      "b3",
+      "b4",
+      "c4",
+      "a4"
+    ],
+    "first_unauthorized": [
+      "b1",
+      "b2",
+      "b3",
+      "c1",
+      "c2",
+      "a1",
+      "b4",
+      "c3",
+      "a2",
+      "a3",
+      "c4",
+      "a4"
+    ]
+  },
+  "counterpart_three_attestations": {
+    "consistent": 10,
+    "all_authorized": 10,
+    "some_unauthorized": 0,
+    "first_all_authorized": [
+      "c1",
+      "c2",
+      "a1",
+      "c3",
+      "b1",
+      "b2",
+      "a2",
+      "a3",
+      "b3",
+      "b4",
+      "c4",
+      "a4"
+    ],
+    "first_unauthorized": null
+  },
+  "counterpart_owner_return_and_expiry": {
+    "consistent": 1,
+    "all_authorized": 1,
+    "some_unauthorized": 0,
+    "first_all_authorized": [
+      "c1",
+      "c2",
+      "a1",
+      "c3",
+      "a2",
+      "a3",
+      "b1",
+      "b2",
+      "b3",
+      "b4",
+      "c4",
+      "a4"
+    ],
+    "first_unauthorized": null
+  },
+  "violation_variant_delivery_before_renewal": {
+    "consistent": 90,
+    "all_authorized": 0,
+    "some_unauthorized": 90,
+    "first_all_authorized": null,
+    "first_unauthorized": [
+      "b1",
+      "b2",
+      "b3",
+      "c1",
+      "c2",
+      "a1",
+      "b4",
+      "c3",
+      "a2",
+      "a3",
+      "c4",
+      "a4"
+    ]
+  }
+}

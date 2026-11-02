@@ -1,0 +1,149 @@
+{
+  "at": 50,
+  "datasets": [
+    {
+      "barrier": 15,
+      "chunks": [
+        {
+          "bytes": 2,
+          "id": "p1",
+          "op": "put",
+          "seq": 4
+        },
+        {
+          "bytes": 5,
+          "id": "p2",
+          "op": "put",
+          "seq": 4
+        },
+        {
+          "bytes": 2,
+          "id": "p2",
+          "op": "put",
+          "seq": 8
+        },
+        {
+          "bytes": 4,
+          "id": "p3",
+          "op": "put",
+          "seq": 9
+        },
+        {
+          "bytes": 0,
+          "id": "p3",
+          "op": "delete",
+          "seq": 12
+        },
+        {
+          "bytes": 7,
+          "id": "p2",
+          "op": "put",
+          "seq": 18
+        }
+      ],
+      "id": "d17",
+      "key": "k4",
+      "regions": [
+        "eu-north",
+        "eu-west"
+      ],
+      "replicas": 2
+    },
+    {
+      "barrier": 15,
+      "chunks": [
+        {
+          "bytes": 2,
+          "id": "p1",
+          "op": "put",
+          "seq": 4
+        },
+        {
+          "bytes": 5,
+          "id": "p2",
+          "op": "put",
+          "seq": 4
+        },
+        {
+          "bytes": 2,
+          "id": "p2",
+          "op": "put",
+          "seq": 8
+        },
+        {
+          "bytes": 4,
+          "id": "p3",
+          "op": "put",
+          "seq": 9
+        },
+        {
+          "bytes": 0,
+          "id": "p3",
+          "op": "delete",
+          "seq": 12
+        },
+        {
+          "bytes": 7,
+          "id": "p2",
+          "op": "put",
+          "seq": 18
+        }
+      ],
+      "id": "d27",
+      "key": "k4",
+      "regions": [
+        "eu-north",
+        "eu-west"
+      ],
+      "replicas": 2
+    },
+    {
+      "barrier": 15,
+      "chunks": [
+        {
+          "bytes": 2,
+          "id": "p1",
+          "op": "put",
+          "seq": 4
+        },
+        {
+          "bytes": 5,
+          "id": "p2",
+          "op": "put",
+          "seq": 4
+        },
+        {
+          "bytes": 2,
+          "id": "p2",
+          "op": "put",
+          "seq": 8
+        },
+        {
+          "bytes": 4,
+          "id": "p3",
+          "op": "put",
+          "seq": 9
+        },
+        {
+          "bytes": 0,
+          "id": "p3",
+          "op": "delete",
+          "seq": 12
+        },
+        {
+          "bytes": 7,
+          "id": "p2",
+          "op": "put",
+          "seq": 18
+        }
+      ],
+      "id": "d37",
+      "key": "k4",
+      "regions": [
+        "eu-north",
+        "eu-west"
+      ],
+      "replicas": 2
+    }
+  ]
+}

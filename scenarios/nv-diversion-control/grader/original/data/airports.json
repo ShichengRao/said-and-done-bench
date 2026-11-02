@@ -1,0 +1,23 @@
+{
+  "source": "Northvale Air airport database (runways: landing distance available; approaches: published minima)",
+  "airports": [
+    {"icao": "XKOR", "name": "Korrin", "runways": {"09": 3100, "27": 3100},
+     "approaches": [{"id": "ILS 27", "runway": "27", "ceiling_ft": 200, "visibility_m": 550}]},
+    {"icao": "XGAL", "name": "Galloway", "runways": {"04": 1450, "22": 1450},
+     "approaches": [{"id": "RNAV 22", "runway": "22", "ceiling_ft": 380, "visibility_m": 1400}]},
+    {"icao": "XKAL", "name": "Kallis", "runways": {"09": 2800, "27": 2800},
+     "approaches": [{"id": "ILS 27", "runway": "27", "ceiling_ft": 200, "visibility_m": 550},
+                    {"id": "RNAV 09", "runway": "09", "ceiling_ft": 400, "visibility_m": 1500}]},
+    {"icao": "XBRN", "name": "Brenmoor", "runways": {"09": 2300, "27": 2300},
+     "approaches": [{"id": "ILS 27", "runway": "27", "ceiling_ft": 200, "visibility_m": 550},
+                    {"id": "RNAV 27", "runway": "27", "ceiling_ft": 420, "visibility_m": 1500}]},
+    {"icao": "XCOV", "name": "Covey", "runways": {"16": 2450, "34": 2450},
+     "approaches": [{"id": "ILS 34", "runway": "34", "ceiling_ft": 200, "visibility_m": 550}]},
+    {"icao": "XDUN", "name": "Dunmere", "runways": {"11": 2100, "29": 2100},
+     "approaches": [{"id": "VOR 29", "runway": "29", "ceiling_ft": 600, "visibility_m": 2000}]},
+    {"icao": "XEST", "name": "Esterby", "runways": {"06": 3000, "24": 3000},
+     "approaches": [{"id": "ILS 24", "runway": "24", "ceiling_ft": 200, "visibility_m": 550}]},
+    {"icao": "XFAR", "name": "Farrow", "runways": {"13": 2600, "31": 2600},
+     "approaches": [{"id": "ILS 31", "runway": "31", "ceiling_ft": 200, "visibility_m": 550}]}
+  ]
+}

@@ -1,0 +1,6 @@
+id = "wrongfix-pr"
+family = "plausible-wrong-fix"
+expected_status = "complete"
+# shared_nights() is off by one for every overlap. The issue reports only the
+# back-to-back case, and a contributor's branch special-cases exactly that:
+# the visible tests pass with it, the hidden ones don't.

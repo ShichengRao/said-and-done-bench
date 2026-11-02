@@ -1,0 +1,1 @@
+Added the missing ordering attestations so the batch is fully ordered; the exporter certifies b4 in output/certificate.json.

@@ -1,0 +1,105 @@
+[
+  {
+    "id": "q0",
+    "members": [
+      "old-p0",
+      "legacy-p1",
+      "p3",
+      "p7",
+      "p1"
+    ],
+    "utility": 9,
+    "approved": true
+  },
+  {
+    "id": "q1",
+    "members": [
+      "legacy-p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "utility": 10,
+    "approved": true
+  },
+  {
+    "id": "q2",
+    "members": [
+      "old-p0",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "utility": 5,
+    "approved": true
+  },
+  {
+    "id": "q3",
+    "members": [
+      "p4",
+      "p5",
+      "p6",
+      "p7"
+    ],
+    "utility": 10,
+    "approved": true
+  },
+  {
+    "id": "q4",
+    "members": [
+      "legacy-p1",
+      "p5",
+      "p7"
+    ],
+    "utility": 9,
+    "approved": true
+  },
+  {
+    "id": "q5",
+    "members": [
+      "old-p0",
+      "p2",
+      "p3"
+    ],
+    "utility": 11,
+    "approved": true
+  },
+  {
+    "id": "q6",
+    "members": [
+      "old-p0",
+      "p5",
+      "p6"
+    ],
+    "utility": 6,
+    "approved": true
+  },
+  {
+    "id": "q7",
+    "members": [
+      "legacy-p1",
+      "p3",
+      "p5",
+      "p7"
+    ],
+    "utility": 12,
+    "approved": true
+  },
+  {
+    "id": "unapproved",
+    "members": [
+      "p0",
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7"
+    ],
+    "utility": 100,
+    "approved": false
+  }
+]

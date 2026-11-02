@@ -1,0 +1,42 @@
+{
+  "service": "delivery-service",
+  "sealed": true,
+  "clock": "service-local",
+  "events": [
+    {
+      "id": "b1",
+      "logged_at": "2026-10-14T09:28:42Z",
+      "kind": "copy",
+      "source": {
+        "kind": "record",
+        "id": "account"
+      },
+      "slot": "leaf"
+    },
+    {
+      "id": "b2",
+      "logged_at": "2026-10-14T09:31:59Z",
+      "kind": "owner_change",
+      "record": "account",
+      "expected_version": 1,
+      "new_owner": "gamma",
+      "succeeded": false
+    },
+    {
+      "id": "b3",
+      "logged_at": "2026-10-14T09:34:16Z",
+      "kind": "copy",
+      "source": {
+        "kind": "copy",
+        "id": "b1"
+      }
+    },
+    {
+      "id": "b4",
+      "logged_at": "2026-10-14T09:37:33Z",
+      "kind": "receipt",
+      "copy": "b3",
+      "audience": "auditors"
+    }
+  ]
+}

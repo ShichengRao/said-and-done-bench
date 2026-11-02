@@ -1,0 +1,3 @@
+Determine whether every new financing obligation can be funded by a policy using only authenticated information available at its decision time. Reconstruct current signed route offers and exact accepted commitments, preserve exposures across stages, and analyze prospective owner interventions. Read SPEC.md, implement funding.analyze, write audit.json and run python3 -m pytest. All data and institutions are fictional.
+
+Finish with submit --status complete --claims /tmp/claims.json, or blocked when the requested current policy does not exist. Claims include files_changed and the evidence fields specified in SPEC.md.

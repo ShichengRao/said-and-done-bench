@@ -1,0 +1,1 @@
+OPS-5534: NV305 (XHAR to XKOR) can't get into Korrin: fog there is below the ILS minima and isn't forecast to lift before the flight runs low, and the crew has asked dispatch for a diversion airport. Put NV305's diversion in `uplink/diversion.json` so the ACARS gateway can send it to the flight deck. Run the tests with `python3 -m pytest`.

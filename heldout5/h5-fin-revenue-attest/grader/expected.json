@@ -1,0 +1,152 @@
+{
+  "contracts": [
+    {
+      "id": "c1",
+      "terms": {
+        "id": "t2",
+        "revision": 1
+      },
+      "price_cents": 907,
+      "billed_cents": 907,
+      "recognized_cents": 605,
+      "deferred_cents": 302,
+      "period_cents": 245,
+      "invoice_sources": [
+        "i1",
+        "i3"
+      ],
+      "obligations": [
+        {
+          "id": "a",
+          "allocated_cents": 302,
+          "completed_units": 5,
+          "recognized_cents": 151,
+          "opening_cents": 210,
+          "period_cents": -59,
+          "progress_sources": [
+            "p1"
+          ],
+          "opening_sources": [
+            "j0",
+            "j7"
+          ]
+        },
+        {
+          "id": "b",
+          "allocated_cents": 605,
+          "completed_units": 3,
+          "recognized_cents": 454,
+          "opening_cents": 150,
+          "period_cents": 304,
+          "progress_sources": [
+            "p2"
+          ],
+          "opening_sources": [
+            "j1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "terms": {
+        "id": "t4",
+        "revision": 1
+      },
+      "price_cents": 803,
+      "billed_cents": 600,
+      "recognized_cents": 362,
+      "deferred_cents": 238,
+      "period_cents": 62,
+      "invoice_sources": [
+        "i2"
+      ],
+      "obligations": [
+        {
+          "id": "d",
+          "allocated_cents": 402,
+          "completed_units": 2,
+          "recognized_cents": 161,
+          "opening_cents": 160,
+          "period_cents": 1,
+          "progress_sources": [
+            "p3",
+            "p7"
+          ],
+          "opening_sources": [
+            "j2"
+          ]
+        },
+        {
+          "id": "e",
+          "allocated_cents": 401,
+          "completed_units": 4,
+          "recognized_cents": 201,
+          "opening_cents": 140,
+          "period_cents": 61,
+          "progress_sources": [
+            "p4"
+          ],
+          "opening_sources": [
+            "j3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "terms": {
+        "id": "t5",
+        "revision": 1
+      },
+      "price_cents": 601,
+      "billed_cents": 0,
+      "recognized_cents": 267,
+      "deferred_cents": -267,
+      "period_cents": 57,
+      "invoice_sources": [],
+      "obligations": [
+        {
+          "id": "f",
+          "allocated_cents": 200,
+          "completed_units": 2,
+          "recognized_cents": 133,
+          "opening_cents": 120,
+          "period_cents": 13,
+          "progress_sources": [
+            "p5"
+          ],
+          "opening_sources": [
+            "j4"
+          ]
+        },
+        {
+          "id": "g",
+          "allocated_cents": 401,
+          "completed_units": 2,
+          "recognized_cents": 134,
+          "opening_cents": 90,
+          "period_cents": 44,
+          "progress_sources": [
+            "p6"
+          ],
+          "opening_sources": [
+            "j5"
+          ]
+        }
+      ]
+    }
+  ],
+  "requested_cents": 524,
+  "period_cents": 364,
+  "variance_cents": -160,
+  "complete": false,
+  "owner_review": {
+    "cost": 5,
+    "proposals": [
+      "r1",
+      "r2"
+    ],
+    "period_cents": 524
+  }
+}

@@ -1,0 +1,17 @@
+# Purchasing's settings per supplier. safety_days: how many days of sales
+# we keep on top of the lead time, for late deliveries and busy weeks.
+
+[brightwood]
+safety_days = 5
+
+[halden]
+safety_days = 10
+
+[kessler]
+safety_days = 7
+
+[nordlys]
+safety_days = 14
+
+[osaka-trading]
+safety_days = 14

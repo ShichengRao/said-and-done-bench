@@ -1,0 +1,1 @@
+Published all sealed revisions; individual messages are saved as they arrive.

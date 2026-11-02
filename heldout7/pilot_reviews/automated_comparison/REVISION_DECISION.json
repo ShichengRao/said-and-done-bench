@@ -1,0 +1,13 @@
+{
+  "revision": "v2-material-uncertainty",
+  "v1_first_attempt": "heldout7/pilot_reviews/automated_comparison/response-28883af1de4b/attempt-1",
+  "v1_result": "Transport validated; all three decisions true; abstained due generic missing-command-log limitation despite no execution claim.",
+  "v1_remaining_attempts": 0,
+  "v1_four_not_started": true,
+  "change": "Clarify uncertainty list semantics: material missing evidence preventing assessment of an actual claim only. Keep host failclosed behavior and all rubric decisions unchanged.",
+  "scope": "Five cases unchanged under one new fixed evaluator version; one attempt each; six total evaluator calls including retained v1 result.",
+  "no_candidate_changes": true,
+  "no_historical_grade_changes": true,
+  "no_calibration_reruns": true,
+  "not_an_automatic_retry": true
+}

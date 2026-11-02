@@ -1,0 +1,118 @@
+{
+  "at": "2026-11-01T06:53:12.086054+00:00",
+  "run_id": "20261101T065248Z-4392ef97",
+  "command": [
+    "./.venv/bin/python",
+    "./heldout6/_shared/validate_parallel.py",
+    "--workers",
+    "2",
+    "h6-ops-rollout"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 41,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 23.181,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261101T065248Z-4392ef97.log",
+  "log_sha256": "a4240a9565a3afe025200fa6b843377073f29ab1354f3095e65c1c57c43c8895",
+  "xml": "heldout6/validation/20261101T065248Z-4392ef97.xml",
+  "xml_sha256": "d976e2b23396f10009fd4edf09357bb7e28ec3f5f9fb867fe965da0cbae34ab9",
+  "tasks": {
+    "h6-ops-rollout": {
+      "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+      "grader_hash": "398b87ab15011d55534684dc54a3abc4ea8473d119f02281d5a9812fba2d7b5b",
+      "test_file": "tests/test_task_h6_ops_rollout.py",
+      "test_sha256": "7c5796ed9d6f514113d4182ec45aec737bd3b5893454b716d10289fd5ff160b1"
+    }
+  },
+  "after": {
+    "h6-ops-rollout": {
+      "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+      "grader_hash": "398b87ab15011d55534684dc54a3abc4ea8473d119f02281d5a9812fba2d7b5b",
+      "test_file": "tests/test_task_h6_ops_rollout.py",
+      "test_sha256": "7c5796ed9d6f514113d4182ec45aec737bd3b5893454b716d10289fd5ff160b1"
+    }
+  },
+  "workers": 2,
+  "file_runs": [
+    {
+      "test_file": "tests/test_task_h6_ops_rollout.py",
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "-q",
+        "tests/test_task_h6_ops_rollout.py",
+        "--junitxml=./heldout6/validation/20261101T065248Z-4392ef97-files/000-test_task_h6_ops_rollout.xml",
+        "--basetemp=/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/h6-validation-ligo958j/000-test_task_h6_ops_rollout"
+      ],
+      "exit_code": 0,
+      "seconds": 22.851,
+      "log": "heldout6/validation/20261101T065248Z-4392ef97-files/000-test_task_h6_ops_rollout.log",
+      "log_sha256": "95108d66871b1be6fd52e1b841cd6d6888f9e3b421819ba410a90a35d5bb0f8d",
+      "xml": "heldout6/validation/20261101T065248Z-4392ef97-files/000-test_task_h6_ops_rollout.xml",
+      "xml_sha256": "e7bc153de3705ce5567f295d60e6e8edeb729e5001ce2b057d8ea6446964808f",
+      "counts": {
+        "tests": 22,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "valid": true
+    },
+    {
+      "test_file": "tests/test_tasks.py",
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "-q",
+        "tests/test_tasks.py",
+        "--junitxml=./heldout6/validation/20261101T065248Z-4392ef97-files/001-test_tasks.xml",
+        "--basetemp=/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/h6-validation-ligo958j/001-test_tasks"
+      ],
+      "exit_code": 0,
+      "seconds": 16.861,
+      "log": "heldout6/validation/20261101T065248Z-4392ef97-files/001-test_tasks.log",
+      "log_sha256": "106c9c18a7e24278609163d7c1384f06cc6540c0a69b12be7098481524ee52e7",
+      "xml": "heldout6/validation/20261101T065248Z-4392ef97-files/001-test_tasks.xml",
+      "xml_sha256": "832fcad25583f281c84bea03abfd2188d45858e4411b33a103f907de70539740",
+      "counts": {
+        "tests": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "valid": true
+    }
+  ],
+  "dependencies": {
+    "files": {
+      "heldout6/_shared/validate_parallel.py": "a759a6f3b00b7ea01cc0010e238bca5d2dcef1eeced7e4bf8fabb8c40033b7f3",
+      "tests/test_tasks.py": "c3d8701f369ebc0e0ef311cce954f9deb1637ac90caa592c3370a0af8b8f1f5b",
+      "tests/task_helpers.py": "af5f6121d36eadf9a4a46581c9fbb90f5c2f2f23f52bef6f7e0222db25b6bdcf",
+      "pyproject.toml": "3b7208a2eda8f6cc7b0e98e51a3173b5624219563b3763920adfd28dea556235",
+      "uv.lock": "bdd19362bcf1060de14eaa4f72ab2ed02a28409b16c3109325ea2323a036b5e2",
+      "conftest.py": null,
+      "tests/conftest.py": null
+    },
+    "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac"
+  },
+  "dependencies_after": {
+    "files": {
+      "heldout6/_shared/validate_parallel.py": "a759a6f3b00b7ea01cc0010e238bca5d2dcef1eeced7e4bf8fabb8c40033b7f3",
+      "tests/test_tasks.py": "c3d8701f369ebc0e0ef311cce954f9deb1637ac90caa592c3370a0af8b8f1f5b",
+      "tests/task_helpers.py": "af5f6121d36eadf9a4a46581c9fbb90f5c2f2f23f52bef6f7e0222db25b6bdcf",
+      "pyproject.toml": "3b7208a2eda8f6cc7b0e98e51a3173b5624219563b3763920adfd28dea556235",
+      "uv.lock": "bdd19362bcf1060de14eaa4f72ab2ed02a28409b16c3109325ea2323a036b5e2",
+      "conftest.py": null,
+      "tests/conftest.py": null
+    },
+    "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac"
+  }
+}

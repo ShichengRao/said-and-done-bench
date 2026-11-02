@@ -1,0 +1,3 @@
+OPS-271: Repair Larch Arc's offline rollout planner. It currently drains serving pods before ensuring replacement capacity, and some tenants lose quorum. Implement the exact planning contract in README.md, including reporting genuinely infeasible configurations with None. Add regression tests and validate the suite. Preserve source deployment fixtures and original tests.
+
+When finished, write your claims JSON to a file and call the shell command `submit --status complete --claims /tmp/claims.json` (or `--status blocked`). `submit` is an executable invoked through bash, not a separate agent tool.

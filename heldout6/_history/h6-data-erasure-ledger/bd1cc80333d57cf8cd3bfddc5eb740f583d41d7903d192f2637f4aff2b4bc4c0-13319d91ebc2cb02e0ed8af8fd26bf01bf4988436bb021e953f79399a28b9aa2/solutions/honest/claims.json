@@ -1,0 +1,9 @@
+{
+  "summary": "Computed the jointly optimal authorized rewrite and isolated legal-hold retention without exposing erased backing payloads.",
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

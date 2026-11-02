@@ -1,0 +1,223 @@
+{
+  "at": "2026-11-01T05:37:52.702151+00:00",
+  "reason": "Preserve graders and external tests before approved candidate-helper namespace fairness repair; task-visible inputs and inference evidence unchanged.",
+  "tasks": {
+    "h6-fin-credit-release": {
+      "task_hash": "fc326291f28b50b6a9726aefe90e3b815cffb9d7d17c651ea592eac1e0cf9d57",
+      "grader_hash": "22c204fd7d712360e980f014c8af5af4c60bdd776facb189bedfe5a1452276a8",
+      "test_sha256": "aa41a50ba0e1ad32d9993ec8061fcaf856262d43d08aa280c122601d0674b0c1",
+      "files": {
+        "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+        "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+        "grader/expected.json": "534b77b746fa532deee8610dec0db5df08f2b522aabd7d4dd2f1b99d62237c53",
+        "grader/grade.py": "beac61b5de8b0b7a6d2c21dbb36537eb3e6c96ed35230cfec46881e88269d649",
+        "grader/hidden_tests/fixtures.py": "2a2b3eed03c25ea9a334a39b4b0feba62016c97bd7cc25accca1dd1da5296f18",
+        "grader/hidden_tests/independent.py": "21e512313055adec6573bb41b1e4c52637eff57c27c8c7cbcee8e0d092c51fc2",
+        "grader/hidden_tests/test_contract.py": "a4e4691678c12990d5cb16e606859a4a3b06e2a4e60e621b84e822e7074c6074",
+        "grader/original/SPEC.md": "0df068b00344df916bf8f6f2a5fc4a2faadb7e3ef47497064d2c55f115d44bd4",
+        "grader/original/data/request.json": "606ec9295ff91738d44a0c8a197a3bc2e1a4231123d37fd32458d45d7989ccf1",
+        "grader/original/funding.py": "a6d6cd59798f59f87607f333860f223055c0d0ae6125c210e7ed45025bd71424",
+        "grader/original/pytest.ini": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+        "grader/original/tests/test_public.py": "ecbe33405536b1d47933f6bc56cebe274aac56cc404adf29e863a928820d94af",
+        "test_task_h6_fin_credit_release.py": "aa41a50ba0e1ad32d9993ec8061fcaf856262d43d08aa280c122601d0674b0c1"
+      }
+    },
+    "h6-fin-meter-close": {
+      "task_hash": "0bb5025668585298f0ac9d20cae435c2a47d8da07d337b959e0950bfd79d4985",
+      "grader_hash": "981b4eb67e6cb150a21e830f3310594eb9ac080121db13cf3cb2bcb1e2823a74",
+      "test_sha256": "0ccfbf6bba2844ceb72b1e8b395518053a726fdcedd14b1b703dca3d11386bb7",
+      "files": {
+        "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+        "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+        "grader/grade.py": "9fbe6e854fe44d1d6aa068fabaac8ee148a9ac3cb5c088480f33b876e4849fc2",
+        "grader/hidden_tests/test_billing.py": "990064528d4b3763a2e5019d1e38c37426fcacbbffd9d983ce54f9c45a54fa0a",
+        "grader/original/SPEC.md": "7af28ba2f741358f025d8be4336c54070ba35462bc104675f5bbba32eab0f6f9",
+        "grader/original/billing.py": "641ca326b1035245c580c3ff3ab81e4197d4d3f0d998fe5a0a1a6dd37c698145",
+        "grader/original/data/request.json": "dd34dd2d33c6f6679ed581ecd0c0b941c5b9f505aed4bf2880fbea6d3249b514",
+        "grader/original/pytest.ini": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+        "grader/original/tests/test_public.py": "8dc7d003c20b239cb045944862ce13167276ce14576d97955dfc727d7e9ae648",
+        "test_task_h6_fin_meter_close.py": "0ccfbf6bba2844ceb72b1e8b395518053a726fdcedd14b1b703dca3d11386bb7"
+      }
+    },
+    "h6-fin-payout-owner": {
+      "task_hash": "4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc",
+      "grader_hash": "92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+      "test_sha256": "3ab517ed81e085830365e0209b91f7d91e3d9e2f059ff99f0689bb35b41db780",
+      "files": {
+        "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+        "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+        "grader/expected.json": "9ab96455bde0b86630bfb8d2f16996a6507da0254c80467aca369d0da2bbd2c1",
+        "grader/grade.py": "9f051d471c2ae7cf65764e1e25203a8202a3699488f735b69ae66525e1e701b8",
+        "grader/hidden_tests/independent.py": "ccae2e72c92b6a5a1131b1f96089eb953c73efbdc8eb9b0ad9ea83799ec29adb",
+        "grader/hidden_tests/test_contract.py": "1d2dc29876387c9b1747303feee776680a369568f985a415f61f30359553c0ef",
+        "grader/original/SPEC.md": "852cf31aeb97bb10233a85b6354cb3fbe5c904bc633e06e230345d2c63920a44",
+        "grader/original/data/request.json": "09fa64f30f221a20ba7eaa0e50a70d13106183707c1dd12b5e0cb37d6afe2864",
+        "grader/original/pytest.ini": "07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+        "grader/original/settlement.py": "4646c50a8d4a65df3a6fb97fb321def347192e2d4f804a2a60b8b8f455fd4dc0",
+        "grader/original/tests/test_public.py": "535c75d678ea1e7819eb595372fa71e09a4d4a9c397c4ec1ae1ea98feb47decd",
+        "test_task_h6_fin_payout_owner.py": "3ab517ed81e085830365e0209b91f7d91e3d9e2f059ff99f0689bb35b41db780"
+      }
+    },
+    "h6-fin-procure-plan": {
+      "task_hash": "6479af03ff1fa14b3b88d1be4abd2b8fcb45cba67c05e255ae966c6373472586",
+      "grader_hash": "ba9b6d0c67b08be127c882082cf35145b65e26194c33d800692e55590db2a44a",
+      "test_sha256": "04003843924475d245fe4cd92ffcad96108b99dc9b43208038c20dc03cf6039c",
+      "files": {
+        "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+        "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+        "grader/expected_tests.json": "816deb989f5a67a6272a22dde7b567110adbfa102a8f991349fcccbd03e3f032",
+        "grader/grade.py": "d64ae2559bd5d92cb05e8edbc753020c8731e322e702bb5775eecf4d6e4c663d",
+        "grader/original/SPEC.md": "f0a8a43eeccf9356bffc9728f6a0e320c0eee7e42c13d939d89c0adff268cb9c",
+        "grader/original/data/input.json": "482adbca8e3656a61f80dd4a4cbf24055bd454cd4a0a799132c57930c7a8f003",
+        "grader/original/procurement.py": "18bee082278f73886dd4d82b13cd9c4bcfdc85a1df67b3cceece9027e4d2c57f",
+        "grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+        "grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+        "grader/original/tests/test_public.py": "f6be62bce6350829eb0751b6fe32a0f787a6687aebc1e3b672ce679b91d180ff",
+        "grader/test_behavior.py": "105e13e4be5d30303fc946437b6f999b47bc260ba9120808576b1115318e0e24",
+        "test_task_h6_fin_procure_plan.py": "04003843924475d245fe4cd92ffcad96108b99dc9b43208038c20dc03cf6039c"
+      }
+    },
+    "h6-fin-refund-replay": {
+      "task_hash": "6ca316cb66d907ad1e97b3547f6e5231b00c160b02b0201def14deb18e5cfa74",
+      "grader_hash": "185af63ae2243fa21bff84a524e6b18c9d291ca779ef516ae8c4497a63f61813",
+      "test_sha256": "fd7568aaad408c473aa6f493eef0520f9e5981d4bb13a32b326a39d08d162d2d",
+      "files": {
+        "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+        "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+        "grader/expected_tests.json": "136dc34a6ce92d8f09b7b24109bec472f3912d6698db2355dd6cde68fb57c945",
+        "grader/grade.py": "080e53577f3bdc00d8090826e8cd9584b79a85647e54e8465984077eb7d1b54e",
+        "grader/original/SPEC.md": "273c441e6a7fe80109d989b885aa8ee44e2482f9ad2537b412331421ff2315a9",
+        "grader/original/data/input.json": "7d29405611c6e8cb076338ffe44db7504a472d71a4e70e1f2cf1f9adea4d59f7",
+        "grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+        "grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+        "grader/original/refunds.py": "18bee082278f73886dd4d82b13cd9c4bcfdc85a1df67b3cceece9027e4d2c57f",
+        "grader/original/tests/test_public.py": "64181be89314d0af92d316e0eb22eb1b5c3010a684b4f5d5fa13dce0a5b9659b",
+        "grader/test_behavior.py": "68af8132a4574be58dcc8d4a417a90e2eece44613766f78e2d9044bd60c5ad1a",
+        "test_task_h6_fin_refund_replay.py": "fd7568aaad408c473aa6f493eef0520f9e5981d4bb13a32b326a39d08d162d2d"
+      }
+    },
+    "h6-fin-revenue-attest": {
+      "task_hash": "3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa",
+      "grader_hash": "2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+      "test_sha256": "04f976b6155588a9a4055c791857437a89f490149b24290e21b865c845024fbf",
+      "files": {
+        "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+        "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+        "grader/expected.json": "da4f910e734f4dc84ba1699a979a78863b5d3ff5d0752c0127fc202b818fe8cc",
+        "grader/grade.py": "dbb6208c41894dd28ca2b62ac4f2a3f574dde0e1b48c679cbf534328d583dbd8",
+        "grader/hidden_tests/independent.py": "77b68a4722ceab634b61a89e343b3bc2702a24eef0486414ec81705cf526e9ba",
+        "grader/hidden_tests/test_contract.py": "eeb43e8a0a68b91ee571cb82f1423ebf56f105cb524e1ce3abd2eb1d7a172914",
+        "grader/original/SPEC.md": "4d2ad773be3acdfe08f954386ff2ce87ee7bf3b011e629f1af7114253e5addc3",
+        "grader/original/data/request.json": "5c6c5846febdc0892a0108215c02629ac72722b3bdad808fdef22a3b423bd9e7",
+        "grader/original/pytest.ini": "07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+        "grader/original/recognition.py": "6037aa2c285d63b88943174f067fec20eef8662772d36cdb10723ed08a9992d6",
+        "grader/original/tests/test_public.py": "ebe1d9f3ef3732f601cddef59ee39fa68efa69a5c6ce7eba7fbb9bf5f3e5c870",
+        "test_task_h6_fin_revenue_attest.py": "04f976b6155588a9a4055c791857437a89f490149b24290e21b865c845024fbf"
+      }
+    },
+    "h6-ops-attestation": {
+      "task_hash": "ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9",
+      "grader_hash": "cbf4223278957345d64d4866a2df04439155de1c6a49b66efde6b6490b3d5afd",
+      "test_sha256": "4a732ede915f0bade79dd490d23fd51f3c4bb622c8c6785efccdfc7c31f98510",
+      "files": {
+        "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+        "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+        "grader/expected_report.json": "765a2436c93ec2c70353dcc7e0ff94bb8250b625138da2e915e66afd663dc90e",
+        "grader/expected_tests.json": "b5f2f1e155e043f38d66de8a3cf4b0004f27a1b54fab676edae4d5eb9496b62a",
+        "grader/fixture_support.py": "a981014d6781f8f986f0fa9c94a3930683335e5480289f18db706c5e48b63f15",
+        "grader/grade.py": "781c2e8d288c300c44bd558f498b8cd2ad0d902705aee0d0788326054a8f12e8",
+        "grader/original/SPEC.md": "0c45af7581c4009db87e37439ec0d44e54c7a536c32ba778807c8b91e1dd7690",
+        "grader/original/crypto.py": "0bcceb6f2beb496d1a4f18db67d2469fc704010ac5493a9c425c4b7005179bc7",
+        "grader/original/data/input.json": "3ad7acfee4f8e02b8ea47a35aba6be6a9f3b88d15db1e57b59ddac4fa482a684",
+        "grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+        "grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+        "grader/original/release_audit.py": "1891d2f30aa494b623f7c51f9831176a1c0a6e72ea3c6732b5b6551cea57b147",
+        "grader/original/tests/test_public.py": "d3debc828b879c1c024b8f6574ce6cac89bd1e6339a0e4c0d31a25ed0151ef92",
+        "grader/test_behavior.py": "5c2c13a42daecb676a9d07cae5dbcc4778f0b79a534d8af05a8a92e5bac9e8db",
+        "test_task_h6_ops_attestation.py": "4a732ede915f0bade79dd490d23fd51f3c4bb622c8c6785efccdfc7c31f98510"
+      }
+    },
+    "h6-ops-backup-gap": {
+      "task_hash": "54f23fdf65a2f355683f9c074e078db1a80b8b12cc1c207f109d462ac940aa52",
+      "grader_hash": "0ebfffe4780e0f5dc58d3bd280d4ecf18d0b380fcf95dc1d42618ecab9300e62",
+      "test_sha256": "699c68d504c7cb688d6b6b8aec90406e37f10b46febf0f2873e525c75cfbf7a1",
+      "files": {
+        "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+        "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+        "grader/expected_report.json": "038a7bed7d1996ef304a699ca76a4ba0be1487e9ff2c8ec14ea8a1581971d1de",
+        "grader/expected_tests.json": "537c71268d393090081abe1e7867daf0b9195bfd6a9241c01379ab9ee06eb55d",
+        "grader/grade.py": "b99fe45ea0d1d904ac2346e92f8a1d46cda365fff6f3f68555fa7d9a8e7b36b8",
+        "grader/original/SPEC.md": "1b3f430e1916b351bb47ca1cc85b5229f074b4d264bd803e88b931116faadb5c",
+        "grader/original/data/input.json": "c500e3fb3b49b2b29f8cc84abf4ea69b55613665f3bde01beea18a9aa34c8049",
+        "grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+        "grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+        "grader/original/tests/test_public.py": "38f996b99190163793a867445297f62a6df7c5c94fbdb0421553b0a266dcafb3",
+        "grader/original/vault.py": "1891d2f30aa494b623f7c51f9831176a1c0a6e72ea3c6732b5b6551cea57b147",
+        "grader/test_behavior.py": "d0a39507a1cbaf8f4bf32d2815aefdcca7a33789683a1aea03627441a428151f",
+        "test_task_h6_ops_backup_gap.py": "699c68d504c7cb688d6b6b8aec90406e37f10b46febf0f2873e525c75cfbf7a1"
+      }
+    },
+    "h6-ops-provenance": {
+      "task_hash": "b821f7995e260c4dbcb36d202575884d8c598c453c6c34d0423db492cd81b867",
+      "grader_hash": "d1297ce0508501dcee479e5085f01338ec692188773aac5df008418ad4985145",
+      "test_sha256": "cb1d6b1d04e95e82e7f62ed73311c423e09ca750bb112d3b1ff88eeadfc22ea2",
+      "files": {
+        "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+        "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+        "grader/expected_tests.json": "1245c20a7cec850f8dbf47ed85b607952949c0c8d2101c7dee0f8eb2811c4614",
+        "grader/fixture_support.py": "7d6e0a997247a2612e58f39c89cb1e7b8f9104188d58482abb2aab7d6c37b7cd",
+        "grader/grade.py": "b9255e4bc352f866e7619b4d4b8147ea2fc953d06aa1e308dbcffba9d0b926c8",
+        "grader/original/SPEC.md": "1b430c0993cd27498ab111989da57e036ad1b482f00cfdb5ba6f15c49c48c4f8",
+        "grader/original/crypto.py": "0bcceb6f2beb496d1a4f18db67d2469fc704010ac5493a9c425c4b7005179bc7",
+        "grader/original/data/input.json": "2c461f43e75f0188686af3e54ab4f1b21b8d03d92ab393019a15062e4aa498ce",
+        "grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+        "grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+        "grader/original/release_gate.py": "69dec0348db4f6878b695c0949c75e84530384c8d2d766e08ec18710217e032d",
+        "grader/original/tests/test_public.py": "bf7678568ecd98d618f912f010e5bea3714d41d9fdbb1402ca0c177c43ac3e9f",
+        "grader/test_behavior.py": "a9e20c65393507186fe521bfab1c9557a94001fbd73d83a03a4dc98d6d6268d2",
+        "test_task_h6_ops_provenance.py": "cb1d6b1d04e95e82e7f62ed73311c423e09ca750bb112d3b1ff88eeadfc22ea2"
+      }
+    },
+    "h6-ops-quorum-cut": {
+      "task_hash": "3268ecfa857a2a32b36e99fbb9282176c06c2368e81c78c04857258e57e36123",
+      "grader_hash": "3845551d5b43072f8c062d482ebc0a6c1ed9afcd7f83038738fdc6de51c2675e",
+      "test_sha256": "6e90cbc9c626974ad2527ca7909b6af911f01dc4aef4a4150132145a254d77c7",
+      "files": {
+        "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+        "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+        "grader/cases.py": "a3d7f827ad7f61bf8c0915e75d1ca746df45c05a10b21d2bd97841cbb67b8726",
+        "grader/expected_report.json": "630a7c81b6ab12ad1c22e05bd3765fe6e9a9bcb496ccdbdd5f3328e785d3990f",
+        "grader/expected_tests.json": "22cd1c4ceb6b6ddb8ea9f5475b259a2f6586da6cb4ab54a3edc0c5df740fea34",
+        "grader/grade.py": "15509df31795d4218c33e2eecb3d1276fef40ea163d25194a5209b58346ac529",
+        "grader/oracle.py": "db7dac4e386ae5b3c4068090d2dcda7d74bf8d5fad88bf90ac1ed95fb899a5d5",
+        "grader/original/SPEC.md": "3d0f1f8d4fcb17fefff77d1112d7c5e54d8e474c04e13aa96adfbe809088345e",
+        "grader/original/data/input.json": "8125f8beef0b48d695b85fe0311e11e00b6d639adab01bdfa63bbf0e803ef845",
+        "grader/original/planner.py": "1891d2f30aa494b623f7c51f9831176a1c0a6e72ea3c6732b5b6551cea57b147",
+        "grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+        "grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+        "grader/original/tests/test_public.py": "744897e149ed8a257050f51006715214c1186dc5d26e4f8ccf698681f04038fc",
+        "grader/test_behavior.py": "86d88cba3fa239e8aa55ef53a5db9077c1e62bcc598ae7101160351a6c96a352",
+        "test_task_h6_ops_quorum_cut.py": "6e90cbc9c626974ad2527ca7909b6af911f01dc4aef4a4150132145a254d77c7"
+      }
+    },
+    "h6-ops-wal-restore": {
+      "task_hash": "d3573975e2c65ecaed560f5c6d056f2e363942826ad1b3d770c3dc9345ccba38",
+      "grader_hash": "415310b5fcc581f21c8a699bfee4847ead80d5178c930fbc2ee79b30d7f4a415",
+      "test_sha256": "9d765dc32c760a8e8621e3b49b7e3d110a91220508b5c70bc7643f3ddc588909",
+      "files": {
+        "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+        "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+        "grader/expected_tests.json": "d9625b879eef358dca73052a25b1b1e9f2ead19f318bed9e364d2b99deffd0b0",
+        "grader/grade.py": "b989e9cb106ceff3510bb8215a196b63869cd56b83d00ed1870d07c9d24e826b",
+        "grader/original/SPEC.md": "f528e090a08d3f381a0c2b83f36872feee2c39df84e4cc5be7c57d2a4ff81d50",
+        "grader/original/data/input.json": "6bb1bf2b5bd201b3f9173c116eeb8782b536d1fdd1f50283dcadc3c59f613d61",
+        "grader/original/production/state.json": "9c475b3fb30762d50bb96b726b5c64c1bafcfc7da9867a9a76f4c2a9d52d2121",
+        "grader/original/pytest.ini": "b160d82f7811555051f8966d8e02750a985227c1d022208c784e606946f2eada",
+        "grader/original/recovery.py": "c35113366f05e5be0ed860a7dabea4c5784b5a2db6203bfd3eee23f3cbf730f8",
+        "grader/original/tests/test_public.py": "c13ad12e76f9bca687b28cf156c72b2f030af769cb877db1f165b26fcb71f36a",
+        "grader/test_behavior.py": "952c4bb0b47ad57a1a919c1d07ff8a059739416be44c843c25db0bbfb6e81bcf",
+        "test_task_h6_ops_wal_restore.py": "9d765dc32c760a8e8621e3b49b7e3d110a91220508b5c70bc7643f3ddc588909"
+      }
+    }
+  }
+}

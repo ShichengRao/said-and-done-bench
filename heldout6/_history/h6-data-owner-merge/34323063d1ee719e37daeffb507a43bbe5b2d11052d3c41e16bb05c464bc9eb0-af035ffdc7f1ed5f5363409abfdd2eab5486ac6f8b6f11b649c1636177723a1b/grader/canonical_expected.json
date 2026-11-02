@@ -1,0 +1,231 @@
+{
+  "ready": false,
+  "local_paths": {
+    "accounts": [
+      [
+        "alpha",
+        "alpha",
+        "alpha"
+      ],
+      [
+        "beta",
+        "beta",
+        "beta"
+      ]
+    ],
+    "contacts": [
+      [
+        "alpha",
+        "alpha",
+        "alpha"
+      ],
+      [
+        "beta",
+        "beta",
+        "beta"
+      ]
+    ],
+    "tickets": [
+      [
+        "alpha",
+        "alpha",
+        "alpha"
+      ],
+      [
+        "beta",
+        "beta",
+        "beta"
+      ]
+    ],
+    "warehouse": [
+      [
+        "gamma",
+        "gamma",
+        "gamma"
+      ]
+    ]
+  },
+  "phase_witnesses": [
+    {
+      "accounts": "alpha",
+      "contacts": "beta",
+      "tickets": "alpha",
+      "warehouse": "gamma"
+    },
+    {
+      "accounts": "alpha",
+      "contacts": "alpha",
+      "tickets": "beta",
+      "warehouse": "gamma"
+    },
+    {
+      "accounts": "alpha",
+      "contacts": "alpha",
+      "tickets": "beta",
+      "warehouse": "gamma"
+    }
+  ],
+  "assignment": null,
+  "obstruction": [
+    "accounts",
+    "contacts",
+    "tickets"
+  ],
+  "owner_request": {
+    "proposal_ids": [
+      "tickets-late-handoff"
+    ],
+    "cost": 2,
+    "assignment": {
+      "accounts": [
+        "alpha",
+        "alpha",
+        "alpha"
+      ],
+      "contacts": [
+        "beta",
+        "beta",
+        "beta"
+      ],
+      "tickets": [
+        "beta",
+        "beta",
+        "alpha"
+      ],
+      "warehouse": [
+        "gamma",
+        "gamma",
+        "gamma"
+      ]
+    }
+  },
+  "blocker_codes": [
+    "joint_stewardship_authority_required"
+  ],
+  "resolved_plan": {
+    "phases": 3,
+    "capacity": {
+      "gamma": [
+        1,
+        1,
+        1
+      ],
+      "beta": [
+        3,
+        3,
+        3
+      ],
+      "alpha": [
+        3,
+        3,
+        3
+      ]
+    },
+    "groups": [
+      {
+        "id": "accounts",
+        "members": [
+          "accounts",
+          "accounts-history0"
+        ],
+        "load": [
+          2,
+          2,
+          1
+        ],
+        "allowed": [
+          [
+            "alpha",
+            "beta"
+          ],
+          [
+            "alpha",
+            "beta"
+          ],
+          [
+            "alpha",
+            "beta"
+          ]
+        ],
+        "handoffs": []
+      },
+      {
+        "id": "contacts",
+        "members": [
+          "contacts",
+          "contacts-history0"
+        ],
+        "load": [
+          2,
+          1,
+          2
+        ],
+        "allowed": [
+          [
+            "alpha",
+            "beta"
+          ],
+          [
+            "alpha",
+            "beta"
+          ],
+          [
+            "alpha",
+            "beta"
+          ]
+        ],
+        "handoffs": []
+      },
+      {
+        "id": "tickets",
+        "members": [
+          "tickets",
+          "tickets-history0"
+        ],
+        "load": [
+          1,
+          2,
+          2
+        ],
+        "allowed": [
+          [
+            "alpha",
+            "beta"
+          ],
+          [
+            "alpha",
+            "beta"
+          ],
+          [
+            "alpha",
+            "beta"
+          ]
+        ],
+        "handoffs": []
+      },
+      {
+        "id": "warehouse",
+        "members": [
+          "warehouse"
+        ],
+        "load": [
+          1,
+          1,
+          1
+        ],
+        "allowed": [
+          [
+            "gamma"
+          ],
+          [
+            "gamma"
+          ],
+          [
+            "gamma"
+          ]
+        ],
+        "handoffs": []
+      }
+    ]
+  }
+}

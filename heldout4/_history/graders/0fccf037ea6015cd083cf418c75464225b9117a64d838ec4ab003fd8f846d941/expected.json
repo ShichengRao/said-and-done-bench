@@ -1,0 +1,59 @@
+{
+  "audit": {
+    "purchase_order": "PO-491",
+    "amount_cents": 40000,
+    "facilities": [
+      {
+        "id": "F1",
+        "reserved_cents": 57636,
+        "available_cents": 32364,
+        "rejection_codes": [
+          "capacity"
+        ]
+      },
+      {
+        "id": "F2",
+        "reserved_cents": 54372,
+        "available_cents": 65628,
+        "rejection_codes": [
+          "expiry"
+        ]
+      },
+      {
+        "id": "F3",
+        "reserved_cents": 55536,
+        "available_cents": 44464,
+        "rejection_codes": [
+          "approval"
+        ]
+      },
+      {
+        "id": "F4",
+        "reserved_cents": 53109,
+        "available_cents": 146891,
+        "rejection_codes": [
+          "beneficiary",
+          "currency"
+        ]
+      }
+    ]
+  },
+  "obstacle": {
+    "purchase_order": "PO-491",
+    "rejected": {
+      "F1": [
+        "capacity"
+      ],
+      "F2": [
+        "expiry"
+      ],
+      "F3": [
+        "approval"
+      ],
+      "F4": [
+        "beneficiary",
+        "currency"
+      ]
+    }
+  }
+}

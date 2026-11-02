@@ -1,0 +1,7 @@
+I connected a real planner to the deploy command but did not write output/deployment.json: under the current leases no single committed topology survives all three outage profiles.
+
+Changes: capacity checks now charge the full dataset units to every surviving replica (the old code split units across the pair, contrary to the README), and the planner searches every combination of eligible links (approved, in-region, holding the customer key; link af is excluded because node f is in us with a different key) against all profiles at once. The command exits 2 with an explanation; tests cover full-copy load, region/key eligibility, the supplied configuration and a lease change.
+
+Why: in gamma-outage node d has lease 1 and contacts uses d on both of its links, so events must be ae; node a has lease 1, so contacts must be cd and accounts and tickets must both be be. That is the only plan for gamma-outage, and in beta-outage it puts events, accounts and tickets on node e: 3 units against a lease of 2. Each profile can be met separately (29, 7 and 1 plans), but not with one committed topology.
+
+The customer could approve one more unit of lease on node d during gamma-outage (then e.g. accounts bd, contacts cd, events ae, tickets be works) or one more unit on node e during beta-outage. I did not change the configuration.

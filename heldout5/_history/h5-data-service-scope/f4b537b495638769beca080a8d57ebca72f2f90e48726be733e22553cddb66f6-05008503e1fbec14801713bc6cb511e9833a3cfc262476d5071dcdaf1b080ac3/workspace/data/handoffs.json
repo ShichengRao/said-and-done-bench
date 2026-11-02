@@ -1,0 +1,44 @@
+[
+  {
+    "after": 1,
+    "from": 0,
+    "source": "c14",
+    "target": "c26",
+    "until": 30
+  },
+  {
+    "after": 2,
+    "from": 0,
+    "source": "c26",
+    "target": "c38",
+    "until": 30
+  },
+  {
+    "after": 2,
+    "from": 0,
+    "source": "c26",
+    "target": "c57",
+    "until": 30
+  },
+  {
+    "after": 3,
+    "from": 0,
+    "source": "c38",
+    "target": "c14",
+    "until": 30
+  },
+  {
+    "after": 3,
+    "from": 0,
+    "source": "c57",
+    "target": "c38",
+    "until": 30
+  },
+  {
+    "after": 4,
+    "from": 0,
+    "source": "c38",
+    "target": "c26",
+    "until": 30
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "worlds": [
+    3,
+    5,
+    6,
+    9,
+    10,
+    12
+  ],
+  "tables_checked": 729,
+  "safe_policies": 5,
+  "policy": {
+    "3": "cross",
+    "5": "high",
+    "6": "high",
+    "9": "high",
+    "10": "high",
+    "12": "cross"
+  },
+  "total_utility": 26,
+  "guaranteed_utility": 3,
+  "publication": {
+    "package": "cross",
+    "count": 1,
+    "utility": 3
+  },
+  "candidate_fiber": [
+    3,
+    12
+  ],
+  "starter_local_policy": [
+    "medium",
+    "high",
+    "high",
+    "high",
+    "high",
+    "medium"
+  ],
+  "starter_local_fiber": [
+    3
+  ],
+  "floor4": {
+    "policy": [
+      "medium",
+      "medium",
+      "medium",
+      "medium",
+      "medium",
+      "medium"
+    ],
+    "total": 24
+  },
+  "floor5": null,
+  "drop_old": {
+    "worlds": 12,
+    "total": 56,
+    "publication": "high"
+  }
+}

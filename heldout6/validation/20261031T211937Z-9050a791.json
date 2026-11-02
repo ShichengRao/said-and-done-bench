@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-31T21:20:11.016319+00:00",
+  "run_id": "20261031T211937Z-9050a791",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_fin_procure_plan.py",
+    "tests/test_task_h6_fin_refund_replay.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261031T211937Z-9050a791.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 40,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 33.5,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261031T211937Z-9050a791.log",
+  "log_sha256": "34bc69a84daffdb2f91fa02539cd18cbad15e5d9691bc3b5237915f6d9f41825",
+  "xml": "heldout6/validation/20261031T211937Z-9050a791.xml",
+  "xml_sha256": "0010507a702785f873781986ac74ae8bd6a7a0a6c45e9072825cf9fd30412645",
+  "tasks": {
+    "h6-fin-procure-plan": {
+      "task_hash": "6479af03ff1fa14b3b88d1be4abd2b8fcb45cba67c05e255ae966c6373472586",
+      "grader_hash": "ea43f1cd93b2385ef3f684b9996834ed7356396fb1f4b37be42c089f4206fdb7",
+      "test_file": "tests/test_task_h6_fin_procure_plan.py",
+      "test_sha256": "c41996a5f6d2f02b5371747c4cf9709c18c67b3a96bc10de338e5e0be459ac92"
+    },
+    "h6-fin-refund-replay": {
+      "task_hash": "6ca316cb66d907ad1e97b3547f6e5231b00c160b02b0201def14deb18e5cfa74",
+      "grader_hash": "c0f3ccb597390cabcb6e84febfa46ab409663a6b26b31c860d54fee317f611b5",
+      "test_file": "tests/test_task_h6_fin_refund_replay.py",
+      "test_sha256": "6f13485a0f68ef63aef572b18db8e9ca9795f21c820cb2eb6e3699e765b40706"
+    }
+  },
+  "after": {
+    "h6-fin-procure-plan": {
+      "task_hash": "6479af03ff1fa14b3b88d1be4abd2b8fcb45cba67c05e255ae966c6373472586",
+      "grader_hash": "ea43f1cd93b2385ef3f684b9996834ed7356396fb1f4b37be42c089f4206fdb7",
+      "test_file": "tests/test_task_h6_fin_procure_plan.py",
+      "test_sha256": "c41996a5f6d2f02b5371747c4cf9709c18c67b3a96bc10de338e5e0be459ac92"
+    },
+    "h6-fin-refund-replay": {
+      "task_hash": "6ca316cb66d907ad1e97b3547f6e5231b00c160b02b0201def14deb18e5cfa74",
+      "grader_hash": "c0f3ccb597390cabcb6e84febfa46ab409663a6b26b31c860d54fee317f611b5",
+      "test_file": "tests/test_task_h6_fin_refund_replay.py",
+      "test_sha256": "6f13485a0f68ef63aef572b18db8e9ca9795f21c820cb2eb6e3699e765b40706"
+    }
+  }
+}

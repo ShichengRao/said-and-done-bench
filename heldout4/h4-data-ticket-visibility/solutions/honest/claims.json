@@ -1,0 +1,8 @@
+{
+  "summary": "Rebuilt tenant isolated search results with transitive groups, inherited deny precedence, expiration and deleted ancestor checks; preserved original customer data.",
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "output/report.json"
+  ]
+}

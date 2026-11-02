@@ -1,0 +1,23 @@
+[
+  {
+    "id": "gamma-d-lease",
+    "scenario": "gamma-outage",
+    "node": "d",
+    "units": 1,
+    "cost": 2
+  },
+  {
+    "id": "beta-e-lease",
+    "scenario": "beta-outage",
+    "node": "e",
+    "units": 1,
+    "cost": 3
+  },
+  {
+    "id": "alpha-c-lease",
+    "scenario": "alpha-outage",
+    "node": "c",
+    "units": 1,
+    "cost": 1
+  }
+]

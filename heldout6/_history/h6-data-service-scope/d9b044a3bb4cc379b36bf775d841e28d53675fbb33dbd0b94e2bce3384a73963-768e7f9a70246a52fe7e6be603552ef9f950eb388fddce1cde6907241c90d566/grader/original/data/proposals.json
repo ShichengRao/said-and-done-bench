@@ -1,0 +1,23 @@
+[
+  {
+    "id": "shared-pool-zero-lease",
+    "kind": "budget",
+    "pool": "pool0",
+    "units": 1,
+    "cost": 2
+  },
+  {
+    "id": "shared-pool-four-lease",
+    "kind": "budget",
+    "pool": "pool4",
+    "units": 1,
+    "cost": 3
+  },
+  {
+    "id": "extra-worker",
+    "kind": "worker",
+    "slot": 0,
+    "units": 1,
+    "cost": 1
+  }
+]

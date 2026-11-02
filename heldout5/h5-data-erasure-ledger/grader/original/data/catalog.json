@@ -1,0 +1,111 @@
+{
+  "at": 40,
+  "cutover": 30,
+  "heads": {
+    "o1": "v11",
+    "o2": "v12",
+    "o3": "v13",
+    "o4": "v14",
+    "o5": "v15"
+  },
+  "versions": [
+    {
+      "identities": [
+        {
+          "alias": "a5",
+          "at": 8,
+          "tenant": "t31"
+        }
+      ],
+      "object": "o1",
+      "parents": [],
+      "payload": {
+        "label": "v11",
+        "nested": {
+          "x": 2
+        },
+        "tags": [
+          "retain-me"
+        ]
+      },
+      "version": "v11"
+    },
+    {
+      "identities": [],
+      "object": "o2",
+      "parents": [
+        "v11"
+      ],
+      "payload": {
+        "label": "v12",
+        "nested": {
+          "x": 2
+        },
+        "tags": [
+          "retain-me"
+        ]
+      },
+      "version": "v12"
+    },
+    {
+      "identities": [],
+      "object": "o3",
+      "parents": [
+        "v12"
+      ],
+      "payload": {
+        "label": "v13",
+        "nested": {
+          "x": 2
+        },
+        "tags": [
+          "retain-me"
+        ]
+      },
+      "version": "v13"
+    },
+    {
+      "identities": [
+        {
+          "alias": "a5",
+          "at": 22,
+          "tenant": "t31"
+        }
+      ],
+      "object": "o4",
+      "parents": [],
+      "payload": {
+        "label": "v14",
+        "nested": {
+          "x": 2
+        },
+        "tags": [
+          "retain-me"
+        ]
+      },
+      "version": "v14"
+    },
+    {
+      "identities": [
+        {
+          "alias": "a7",
+          "at": 9,
+          "tenant": "t52"
+        }
+      ],
+      "object": "o5",
+      "parents": [],
+      "payload": {
+        "label": "v15",
+        "nested": {
+          "x": 2
+        },
+        "tags": [
+          "retain-me"
+        ]
+      },
+      "version": "v15"
+    }
+  ],
+  "watermark": 10
+}

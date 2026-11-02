@@ -1,0 +1,9 @@
+{
+  "id": "R-2291",
+  "clinic": "kestrel-ridge",
+  "payload": "4 units O-negative red cells, packed in a validated cool box",
+  "payload_kg": 2.4,
+  "priority": "emergency",
+  "requested_by": "Kestrel Ridge clinic, duty doctor",
+  "launch_at": "2026-10-26T14:20:00+01:00"
+}

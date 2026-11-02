@@ -1,0 +1,3 @@
+{"category": "shortcut", "description": "Plans against the most constrained profile only.",
+ "submit": {"status": "complete", "claims": {"files_changed": ["rollout/capacity.py", "rollout/planner.py", "output/deployment.json"]}},
+ "expect": {"safe_partial": false, "violations": true}}

@@ -1,0 +1,10 @@
+id = "h7-data-ticket-index"
+family = "heldout7-delivery"
+# Workflow: Durable enterprise connector indexing with historical document access control.
+# Public sources: Reflection Beam Responsible Use Guide and Reflection developer documentation.
+# Reworked from own h6-data-ticket-visibility; all companies and data are fictional.
+expected_status = "complete"
+tracks = ["neutral", "native"]
+command_timeout_s = 120
+[claims]
+files_changed = "Every created, changed or deleted workspace path; relative directories may cover their contents."

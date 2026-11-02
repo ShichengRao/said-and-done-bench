@@ -1,0 +1,20 @@
+.........F...........                                                    [100%]
+=================================== FAILURES ===================================
+______________________ test_superseded_epoch_and_restart _______________________
+
+tmp_path = PosixPath('/tmp/pytest-of-unknown/pytest-0/test_superseded_epoch_and_rest0')
+
+    def test_superseded_epoch_and_restart(tmp_path):
+        cfg,initial,install=scenario();db=tmp_path/'state.sqlite';call(db,'initialize',[cfg,initial]);call(db,'apply',[install]);old=call(db,'apply',[dict(id='t',kind='tick',expect=1)])['command']
+        updated=dict(install,id='next',expect=2,epoch=2,revision='next');call(db,'apply',[updated]);current=call(db,'apply',[dict(id='newtick',kind='tick',expect=3)])['command']
+        response=call(db,'apply',[dict(id='old-receipt',kind='observe',epoch=1,command=old['id'],success=True)])
+        assert response['status']=='stale' and call(db,'inspect',[])['pending']==current
+        assert call(db,'apply',[install])['version']==1
+>       assert call(db,'initialize',[cfg,initial])['epoch']==2
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: 'NoneType' object is not subscriptable
+
+../test_behavior.py:47: TypeError
+=========================== short test summary info ============================
+FAILED ::test_superseded_epoch_and_restart - TypeError: 'NoneType' object is ...
+1 failed, 20 passed in 0.48s

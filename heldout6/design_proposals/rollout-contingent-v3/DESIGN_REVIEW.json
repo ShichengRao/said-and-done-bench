@@ -1,0 +1,32 @@
+{
+  "stage": "Off-source proposed design; not promoted, calibrated, or ready",
+  "scope": "Strengthen canonical deployment reasoning using one possible future failed start, while retaining two simultaneous handoffs and separate readiness/retirement acknowledgments.",
+  "root_review": {
+    "reproduced_literal_counts": {
+      "nominal_macro_schedules": 44,
+      "robust_nominal_spines": 10
+    },
+    "unique_robust_initial_pair": [
+      "B->x",
+      "C->y"
+    ],
+    "independent_methods": "Memoized adversarial state search and separate literal route/order enumeration agree. Root read both implementations, reran them, and reviewed the recovery argument; this is not a third independent numerical oracle.",
+    "reasoning": "A->x can succeed but leave B only a. A later failed B->a quarantines a and strands B. B->x and C->y instead have recovery after either sole failure. Actual admission cannot use b until B retirement is acknowledged, even when its new copy is ready. Draining all committed handoffs produces one of at most three projected states; each must retain a winning policy. Reliable eventual retirements are a public premise, not an assumed unbounded-failure guarantee.",
+    "bounds": "At most 2520 macro placements/quarantine states; at most three pending-start outcome combinations, five start attempts and four retirements per completed epoch. Macro schedule counts do not count asynchronous receipt traces.",
+    "fairness_requirements": [
+      "Explicit one-failure budget, reliable retirements, epoch quarantine and fixed destination permissions.",
+      "At most one successful cutover per service per epoch, no unauthorized relocation.",
+      "Exact output schemas; durable request replay and atomic rollback.",
+      "Do not count a representation ambiguity as substantive difficulty.",
+      "No task-level Beam evidence or model-specific edits."
+    ],
+    "difficulty_limit": "A bounded game is additional canonical reasoning, but state-space size and proofs alone do not establish that strong agents will fail."
+  },
+  "file_sha256": {
+    "rollout_contingent_design.py": "f02fad0eb29ff91757ce6dd84706dc677ebba0ab572b1a28e8789a87185a1111",
+    "rollout_contingent_literal_proof.py": "124fbba6853c7975643b0acce676628d9584eb65d8001f69b3102c01c5b0a026",
+    "rollout_contingent_literal_proof.json": "81ccf8c0b291bc950f3b76d86ab5be4162514ce011086f25d367417be531e894",
+    "rollout_contingent_async_proof.py": "1cecc743c911f568f7ecfbbd41d56d9f330b689d256f6bf59caa8eb0ff9e8003",
+    "rollout_contingent_async_proof.json": "babadcdc48a6f7eb3a566a464c8cb4f46ecb68d25f6ecb9cd269ced025d274a0"
+  }
+}

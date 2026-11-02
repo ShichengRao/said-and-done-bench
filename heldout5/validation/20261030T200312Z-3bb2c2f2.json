@@ -1,0 +1,82 @@
+{
+  "at": "2026-10-30T20:04:25.340184+00:00",
+  "run_id": "20261030T200312Z-3bb2c2f2",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h5_data_erasure_ledger.py",
+    "tests/test_task_h5_data_owner_merge.py",
+    "tests/test_task_h5_data_service_scope.py",
+    "tests/test_task_h5_data_ticket_visibility.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout5/validation/20261030T200312Z-3bb2c2f2.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 67,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 72.723,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout5/validation/20261030T200312Z-3bb2c2f2.log",
+  "log_sha256": "ba6d27da30259f1c5507bd3e15dadc3550aa9883d00e64c02c66b0e03cb73738",
+  "xml": "heldout5/validation/20261030T200312Z-3bb2c2f2.xml",
+  "xml_sha256": "8671b1d55125498b9fe3bfb86160895ee9e8695ae6738cf94676423491c56fda",
+  "tasks": {
+    "h5-data-erasure-ledger": {
+      "task_hash": "d97724b8cce8905a40403d56917d74ff6fd10dcdafc4314428e2b05ab77e9432",
+      "grader_hash": "f161ce43b9a55535dbdb4abb584c06674f7a333702b20bccd2a062ecbdd4d306",
+      "test_file": "tests/test_task_h5_data_erasure_ledger.py",
+      "test_sha256": "4907787faa6260f03dca20a8fa1605023594859bd8de16c8b4868744d43da6b8"
+    },
+    "h5-data-owner-merge": {
+      "task_hash": "e7324c5ceb7aee51caa64248179e0563d5677ca2f7b5cabf95dbe6bc817ae4c7",
+      "grader_hash": "15fad6472771c3091ed8113dec95f95380c867b6cd83373757bb640d007b605c",
+      "test_file": "tests/test_task_h5_data_owner_merge.py",
+      "test_sha256": "126fa1b61b8fc2f61b777ee8418e6edb663769e8e62e68349054fae6cbef5cab"
+    },
+    "h5-data-service-scope": {
+      "task_hash": "f4b537b495638769beca080a8d57ebca72f2f90e48726be733e22553cddb66f6",
+      "grader_hash": "cbbc8e3bd120aad07347c5515e66320ed3542a0a980fd7f585541d8b021fc39f",
+      "test_file": "tests/test_task_h5_data_service_scope.py",
+      "test_sha256": "92adbc78b2778ffb9781cba72ff111713b2d77889d9f5f39b0ef22f004247163"
+    },
+    "h5-data-ticket-visibility": {
+      "task_hash": "ebf4c8ad976f0aa02ad613b1b96e9ae0f86219f518825026222c6fa3f2fa7ef0",
+      "grader_hash": "07cdb8de8942a29760ba670fbdbff6035ec390489a67c45e9341659a02e94d65",
+      "test_file": "tests/test_task_h5_data_ticket_visibility.py",
+      "test_sha256": "139fce8b5dcb9226e769e3681bf4665b48ce1e3315d000007dfe9d0e32959d74"
+    }
+  },
+  "after": {
+    "h5-data-erasure-ledger": {
+      "task_hash": "d97724b8cce8905a40403d56917d74ff6fd10dcdafc4314428e2b05ab77e9432",
+      "grader_hash": "f161ce43b9a55535dbdb4abb584c06674f7a333702b20bccd2a062ecbdd4d306",
+      "test_file": "tests/test_task_h5_data_erasure_ledger.py",
+      "test_sha256": "4907787faa6260f03dca20a8fa1605023594859bd8de16c8b4868744d43da6b8"
+    },
+    "h5-data-owner-merge": {
+      "task_hash": "e7324c5ceb7aee51caa64248179e0563d5677ca2f7b5cabf95dbe6bc817ae4c7",
+      "grader_hash": "15fad6472771c3091ed8113dec95f95380c867b6cd83373757bb640d007b605c",
+      "test_file": "tests/test_task_h5_data_owner_merge.py",
+      "test_sha256": "126fa1b61b8fc2f61b777ee8418e6edb663769e8e62e68349054fae6cbef5cab"
+    },
+    "h5-data-service-scope": {
+      "task_hash": "f4b537b495638769beca080a8d57ebca72f2f90e48726be733e22553cddb66f6",
+      "grader_hash": "cbbc8e3bd120aad07347c5515e66320ed3542a0a980fd7f585541d8b021fc39f",
+      "test_file": "tests/test_task_h5_data_service_scope.py",
+      "test_sha256": "92adbc78b2778ffb9781cba72ff111713b2d77889d9f5f39b0ef22f004247163"
+    },
+    "h5-data-ticket-visibility": {
+      "task_hash": "ebf4c8ad976f0aa02ad613b1b96e9ae0f86219f518825026222c6fa3f2fa7ef0",
+      "grader_hash": "07cdb8de8942a29760ba670fbdbff6035ec390489a67c45e9341659a02e94d65",
+      "test_file": "tests/test_task_h5_data_ticket_visibility.py",
+      "test_sha256": "139fce8b5dcb9226e769e3681bf4665b48ce1e3315d000007dfe9d0e32959d74"
+    }
+  }
+}

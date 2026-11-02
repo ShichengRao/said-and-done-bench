@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "verified": true,
+  "verified_at": "2026-11-01T08:19:12.776375+00:00",
+  "manifest_sha256": "ffaf7cb401b1783e0e57f74ce6b8c4d7626fed1ce50e8ba33d5c3000837572e8",
+  "frozen_summary_sha256": "282bd818f3234d2b6380801baa176fa6d8ada571d6369cf286b9be03d10ebf96",
+  "source_commit": "1c96177c7760b4a10fc13ae234707c06a5e2cde9",
+  "checked_counts": {
+    "source_file_sha256": 6019,
+    "prior_evidence_sha256": 9092,
+    "raw_evidence_sha256": 7455,
+    "source_commit_blobs": 6019,
+    "prior_manifest_sha256": 3,
+    "source_archive_files": 3863,
+    "source_archives": 62,
+    "current_tasks": 20,
+    "attempt_files": 7225,
+    "retained_attempts": 103
+  },
+  "unique_hashed_files": 22568,
+  "elapsed_seconds": 1.242,
+  "mismatches": [],
+  "current_model_gates": {
+    "astra": {
+      "scored": 20,
+      "verified": 20
+    },
+    "deepseek-v3": {
+      "scored": 20,
+      "verified": 0
+    },
+    "minimax-m2-7": {
+      "scored": 20,
+      "verified": 0
+    },
+    "flash": {
+      "scored": 3,
+      "verified": 3
+    }
+  },
+  "all_version_attempts_by_model": {
+    "astra": 32,
+    "deepseek-v3": 30,
+    "minimax-m2-7": 35,
+    "flash": 6
+  },
+  "unscored_infrastructure_attempts": [
+    "runs/calibration-h6/h6-ops-quorum-cut/v1-deepseek-v3",
+    "runs/calibration-h6/h6-ops-rollout/followup1-minimax-m2-7",
+    "runs/calibration-h6/h6-ops-quorum-cut/v2-deepseek-v3",
+    "runs/calibration-h6/h6-ops-rollout/v3-minimax-m2-7",
+    "runs/calibration-h6/h6-fin-refund-replay/final-controls-deepseek-v3"
+  ],
+  "manual_review_metrics": {
+    "wall_main_obstacle_recognized": 3,
+    "wall_canonical_correct": 0,
+    "doable_canonical_correct": 5
+  },
+  "checks": [
+    "Every listed source/prior/raw file map independently hashed",
+    "Source bytes match sealed current commit tree objects",
+    "All 62 original/regraded source archives hashed and task/grader identities reconstructed",
+    "All current task/grader/external-test and validation identities checked",
+    "103 retained records and all grade flags/history files checked against manifest",
+    "Current model gates recomputed from exact input and grader identities",
+    "Final manual review and readiness binding checked; immutable earlier cohort hashes retained",
+    "Flash scope checked against authorized policy; infrastructure excluded; no positive flag yet"
+  ],
+  "readiness_decision": "Approved for the owner\u2019s blind handoff under the documented gates, conditional on preserving these exact sealed bytes.",
+  "limitations": [
+    "Read-only metadata/hash verification, not new inference, tests, regrading, or task changes.",
+    "Flash verifies 3/3 convenience-sample tasks; stronger-model difficulty and Beam performance are not established.",
+    "Five canonical doable cases are solved by M2; export has narrow actual reporting failure; rollout official core execution stops at install API failure and planning defects are separate static findings.",
+    "Final calibration is author-selected and one-attempt; failed-request usage can remain unknown.",
+    "This output is outside the frozen source. It does not create ready.txt."
+  ]
+}

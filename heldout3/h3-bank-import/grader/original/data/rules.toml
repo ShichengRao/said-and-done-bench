@@ -1,0 +1,46 @@
+# Categories for transactions, tried in order: the first `match` found in the
+# description (ignoring case) wins.
+
+[[rule]]
+match = "hetzner"
+category = "hosting"
+
+[[rule]]
+match = "github"
+category = "software"
+
+[[rule]]
+match = "adobe"
+category = "software"
+
+[[rule]]
+match = "deutsche bahn"
+category = "travel"
+
+[[rule]]
+match = "lufthansa"
+category = "travel"
+
+[[rule]]
+match = "rewe"
+category = "office"
+
+[[rule]]
+match = "miete"
+category = "rent"
+
+[[rule]]
+match = "invoice"
+category = "income"
+
+[[rule]]
+match = "rechnung"
+category = "income"
+
+[[rule]]
+match = "kaffee"
+category = "office"
+
+[[rule]]
+match = "coffee"
+category = "office"

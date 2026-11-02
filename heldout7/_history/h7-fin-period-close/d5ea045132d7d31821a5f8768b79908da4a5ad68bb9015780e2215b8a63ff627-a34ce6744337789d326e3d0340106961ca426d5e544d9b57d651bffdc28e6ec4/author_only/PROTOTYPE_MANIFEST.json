@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-11-01T14:17:40.376661+00:00",
+  "scope": "Off-source canonical financial wall proof and packaging proposal only; stopped pending user feedback.",
+  "files": {
+    "canonical_evidence.json": "7d09eec429c1f0d62e366f57d3c9a997e033106c504de8d08962de4dfbcfac55",
+    "prove.py": "984a16dfeac15505178131cc8d86f547bcfa42bd1a541aeedc670173877c328a",
+    "proof_result.json": "83ee88ef42170f0be7793686e88730491fe5d556f90d2987362278214d8d21be",
+    "independent_check.py": "f19a78cd9512570abe0c58db0417bea74c2bb6e10d1d38fe4a89421f05abe580",
+    "independent_result.json": "5096c554c48ff6d67aeab9155b4a9a1dde4f8d4427dcb5b57231d0e46c9393bf",
+    "DESIGN.md": "5e26a99f323f9afe811c08e6272c000e1254f2d7be19885153f6db402d5c63fd"
+  },
+  "checks": {
+    "primary_command": ".venv/bin/python /tmp/h7-fin-wall-prototype/prove.py",
+    "primary_exit_code": 0,
+    "independent_command": ".venv/bin/python /tmp/h7-fin-wall-prototype/independent_check.py",
+    "independent_exit_code": 0,
+    "whole_capture_assignments": 6561,
+    "full_matches": 0,
+    "proper_three_control_matches": [
+      1,
+      1,
+      1,
+      2
+    ],
+    "independent_half_assignments": [
+      81,
+      81
+    ],
+    "unique_authorized_cap01_rebooking_matches": 1
+  },
+  "h6_edits": false,
+  "task_or_grader_built": false,
+  "inference": false,
+  "beam_data_used": false,
+  "difficulty_claim": "No model difficulty or readiness conclusion; stronger joint inconsistency and ordinary repair packaging are design hypotheses."
+}

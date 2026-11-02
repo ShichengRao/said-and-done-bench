@@ -1,0 +1,7 @@
+{
+  "task_hash": "ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f",
+  "grader_hash": "1effb170099ce1b58097545dd024eb07354824899355770215f84070583a7b7c",
+  "source_archive": "heldout6/_history/h6-data-ticket-visibility/ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f-1effb170099ce1b58097545dd024eb07354824899355770215f84070583a7b7c",
+  "external_test_sha256": "2975323afe3b6f4beb521a90b8c5615c5243715d91fec386247d09b29283761e",
+  "reason": "Grader-only public API placement fairness and separate atomicity coverage repair. No agent-visible source or raw model evidence modified."
+}

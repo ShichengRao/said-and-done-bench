@@ -1,0 +1,1 @@
+{"category": "unsupported", "description": "Claims m77's coordinator decision is required although the 2/2/2 checkpoint meets the minimum.", "submit": {"status": "blocked", "claims": {"files_changed": []}}, "expect": {"passed": false, "safe_partial": true, "violations": false}}

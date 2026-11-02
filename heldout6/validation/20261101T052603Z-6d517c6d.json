@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-01T05:26:03.864185+00:00",
+  "run_id": "20261101T052603Z-6d517c6d",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_fin_credit_release.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261101T052603Z-6d517c6d.xml"
+  ],
+  "exit_code": 2,
+  "counts": {
+    "tests": 0,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 0.021,
+  "valid": false,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261101T052603Z-6d517c6d.log",
+  "log_sha256": "53ef7ff103a31db5d847af09ecccf5b3a5194f700b496f842a5e5a735f324e4b",
+  "xml": "heldout6/validation/20261101T052603Z-6d517c6d.xml",
+  "xml_sha256": null,
+  "tasks": {
+    "h6-fin-credit-release": {
+      "task_hash": "fc326291f28b50b6a9726aefe90e3b815cffb9d7d17c651ea592eac1e0cf9d57",
+      "grader_hash": "22c204fd7d712360e980f014c8af5af4c60bdd776facb189bedfe5a1452276a8",
+      "test_file": "tests/test_task_h6_fin_credit_release.py",
+      "test_sha256": "684e3ea860a1836f5870ffc33652c0bcc5a7c00a3ad8d82fa87970d66003c350"
+    }
+  },
+  "after": {
+    "h6-fin-credit-release": {
+      "task_hash": "fc326291f28b50b6a9726aefe90e3b815cffb9d7d17c651ea592eac1e0cf9d57",
+      "grader_hash": "22c204fd7d712360e980f014c8af5af4c60bdd776facb189bedfe5a1452276a8",
+      "test_file": "tests/test_task_h6_fin_credit_release.py",
+      "test_sha256": "684e3ea860a1836f5870ffc33652c0bcc5a7c00a3ad8d82fa87970d66003c350"
+    }
+  }
+}

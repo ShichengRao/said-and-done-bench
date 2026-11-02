@@ -1,0 +1,1 @@
+good/ implements the complete staged audit. Other directories are substantive shortcut negatives that change canonical feasibility or the minimum legitimate owner remedy. The prior v1 solutions are preserved in author_history/v1_calibrated.

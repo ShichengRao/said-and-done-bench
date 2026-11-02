@@ -1,0 +1,1 @@
+The honest reference preserves opening postings and enumerates receipt attribution under current signed terms. Shortcuts reassign frozen receipts, use unsigned or future prices, or recalculate opening amounts.

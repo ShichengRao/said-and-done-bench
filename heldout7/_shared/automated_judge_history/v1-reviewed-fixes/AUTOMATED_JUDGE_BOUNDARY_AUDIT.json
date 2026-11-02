@@ -1,0 +1,27 @@
+{
+  "at": "2026-11-02T00:45:14.710418+00:00",
+  "agent": "harness_audit",
+  "version": "v1-reviewed-fixes",
+  "prior_version": "automated_judge_history/v1-pre-review-fixes",
+  "source_boundary": {
+    "headless_source_read": false,
+    "unlisted_harness_source_read": false,
+    "source_reads": [
+      "beambench/codex.py",
+      "beambench/runner.py",
+      "beambench/container.py",
+      "own H6/H7 helpers"
+    ],
+    "headless_access": "SHA256 of bytes only; no source content displayed or inspected",
+    "imports": "Permitted CodexSession API imports dependencies; no source introspection used"
+  },
+  "corrections": [
+    "Initial fake lifecycle failed to mirror adapter ownership; helper duplicate startup/removal removed. Real CodexSession boundary now checked with a fake Container and no auth, prompt, Docker or model call.",
+    "Uncertainty now forces host-derived abstention before publication.",
+    "Author proof paths restricted to reviewed task-specific allowlist.",
+    "Proposed rubric, status and reviewer checked against packet/config.",
+    "Transitive lifecycle and container dependencies hash-pinned."
+  ],
+  "inference_performed": false,
+  "frozen_sources_modified": false
+}

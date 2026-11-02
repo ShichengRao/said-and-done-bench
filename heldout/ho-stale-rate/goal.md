@@ -1,0 +1,1 @@
+Fix FX-77 (see `ISSUES/FX-77.md`): invoices keep using an old day's exchange rate until the invoicing service restarts. Add a regression test for it that fails on the current code and passes with your fix. Run the tests with `python3 -m pytest`.

@@ -1,0 +1,22 @@
+{
+  "name": "native-opus-api-900s-200k-v2",
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "run_deadline_s": 900,
+  "context_limit_tokens": 200000,
+  "automatic_compaction": false,
+  "model_max_output_tokens": 128000,
+  "inflight_reserve_usd": 4.2,
+  "reservation_derivation": "200,000 input tokens at highest cache-write rate $8/M plus 128,000 output tokens at $20/M = $4.16, rounded upward. CLI per-session caps remain additional reservations.",
+  "environment": {
+    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1",
+    "DISABLE_COMPACT": "1",
+    "CLAUDE_CODE_MAX_CONTEXT_TOKENS": "200000"
+  },
+  "sources": [
+    "https://code.claude.com/docs/en/model-config#turn-off-1m-context",
+    "https://code.claude.com/docs/en/model-config#which-ids-claude-code-max-context-tokens-applies-to",
+    "https://platform.claude.com/docs/en/models/opus-5-5/overview"
+  ],
+  "change_policy": "Earlier started attempts retain their original profile and evidence; no candidate rerolls. Waiting jobs may be cancelled before allocation and queued under this profile with a recorded transition. Context-limit failures remain infrastructure/budget constraints, not evidence that the task is intrinsically hard. Compare profiles and observed usage in the final report."
+}

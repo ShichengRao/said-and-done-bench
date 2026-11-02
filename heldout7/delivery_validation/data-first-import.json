@@ -1,0 +1,17 @@
+{
+  "task": "h7-data-delivery-export",
+  "path": "heldout7/tasks/h7-data-delivery-export",
+  "task_hash": "954b360eed16de57cbf87f080879cff21e338c4b5fab2d0ce7676a6dc1602e3a",
+  "grader_hash": "5bf79c9b0ec7efcf8f3380747a2ce9416e6c165a1b2debe18478af251b8b6d19",
+  "source_reviewed": true,
+  "source_review": "Reviewed ordinary delivery request, stated evidence/provenance constraints, independent counterexamples or scheduling contradiction, early no-code arguments, protected records and artifact veto. Normalized private reference fixtures; removed an unsupported search-execution claim from the operations alternate reference.",
+  "source": "/private/tmp/beambench-h7-api/data/deliverables/h7-data-delivery-export",
+  "author_checks": {
+    "heldout7/author_checks/data/tests/h7_support.py": "60ecadcbcccd54db1719dbadb3cd08ce3ad695fd4893f4715baad36dba3ce17d",
+    "heldout7/author_checks/data/tests/test_h7-data-delivery-export.py": "148ad74a69ec0957310e1a134d20d1a47106539edfb8f9e7619db55b222d7571",
+    "heldout7/author_checks/data/author_support/grade_entry.py": "65cd592a3193c15b8bb8286d10d48c50adefd262a3fe9844a734a0031cad66a1",
+    "heldout7/author_checks/data/author_support/review_grader.py": "046d9bd083ca8fdb9d76b930d5e06fea358a1262ecc1476a5b5cc4c1212b2718",
+    "heldout7/author_checks/data/author_support/task_api.py": "5609f9bc42449795bcf5058a6d071ecc03c30221a67a8dd4d3bc0b9ee9205317"
+  },
+  "validation_pending": true
+}

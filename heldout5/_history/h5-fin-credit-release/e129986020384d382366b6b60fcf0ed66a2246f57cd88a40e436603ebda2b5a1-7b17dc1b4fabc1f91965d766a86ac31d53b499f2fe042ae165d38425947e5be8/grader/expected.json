@@ -1,0 +1,144 @@
+{
+  "requested_cents": 1500,
+  "complete": false,
+  "funded_cents": 1200,
+  "schedule": [
+    {
+      "obligation": "p1",
+      "facility": "f1"
+    },
+    {
+      "obligation": "p2",
+      "facility": "f2"
+    },
+    {
+      "obligation": "p3",
+      "facility": "f1"
+    },
+    {
+      "obligation": "p4",
+      "facility": "f2"
+    }
+  ],
+  "unfunded": [
+    "p5"
+  ],
+  "usage": {
+    "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      20
+    ],
+    "facilities": {
+      "f1": [
+        0,
+        300,
+        300,
+        0,
+        300,
+        300,
+        300,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "f2": [
+        0,
+        0,
+        300,
+        300,
+        300,
+        0,
+        300,
+        300,
+        300,
+        0,
+        0,
+        0
+      ],
+      "f3": [
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        0
+      ]
+    },
+    "groups": {
+      "g1": [
+        0,
+        300,
+        600,
+        300,
+        600,
+        300,
+        600,
+        300,
+        300,
+        0,
+        0,
+        0
+      ],
+      "g2": [
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        0
+      ]
+    }
+  },
+  "owner_review": {
+    "cost": 2,
+    "proposals": [
+      "c2"
+    ],
+    "schedule": [
+      {
+        "obligation": "p1",
+        "facility": "f1"
+      },
+      {
+        "obligation": "p2",
+        "facility": "f2"
+      },
+      {
+        "obligation": "p3",
+        "facility": "f1"
+      },
+      {
+        "obligation": "p4",
+        "facility": "f2"
+      },
+      {
+        "obligation": "p5",
+        "facility": "f1"
+      }
+    ]
+  }
+}

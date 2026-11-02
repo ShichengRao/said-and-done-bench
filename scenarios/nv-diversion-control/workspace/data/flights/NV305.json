@@ -1,0 +1,9 @@
+{
+  "id": "NV305",
+  "aircraft": "NV-320",
+  "route": "XHAR-XKOR",
+  "position_at": "2026-10-27T08:10:00+00:00",
+  "fuel_kg": 4000,
+  "burn_kg_per_h": 2400,
+  "minutes_to": {"XGAL": 24, "XKAL": 29, "XBRN": 40, "XCOV": 49, "XDUN": 55, "XEST": 78, "XFAR": 92}
+}

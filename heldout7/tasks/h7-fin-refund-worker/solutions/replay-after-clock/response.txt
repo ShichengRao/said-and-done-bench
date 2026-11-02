@@ -1,0 +1,1 @@
+The refund worker is finished and output/reconciliation.json is written for the customer history.

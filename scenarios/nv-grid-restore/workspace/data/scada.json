@@ -1,0 +1,26 @@
+{
+ "source": "SCADA snapshot",
+ "taken_at": "2026-10-26T17:45:00+01:00",
+ "segment_amps": {
+  "F11-A": 240,
+  "F11-B": 60,
+  "F12-S1": 95,
+  "F12-S2": 0,
+  "F12-S3": 0,
+  "F14-A": 180,
+  "F14-C": 105,
+  "F20-A": 380,
+  "F20-B": 170
+ },
+ "de_energised": {
+  "F12-S2-S3": {
+   "segments": [
+    "F12-S2",
+    "F12-S3"
+   ],
+   "customers": 1890,
+   "load_a": 210,
+   "note": "load from the last reading before the fault on C-12-3 (17:02); S2 and S3 are one block, with no switch between them"
+  }
+ }
+}

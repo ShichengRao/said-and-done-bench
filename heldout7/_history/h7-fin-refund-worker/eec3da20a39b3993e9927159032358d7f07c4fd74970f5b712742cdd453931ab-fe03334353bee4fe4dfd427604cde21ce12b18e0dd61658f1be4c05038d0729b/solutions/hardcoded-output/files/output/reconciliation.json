@@ -1,0 +1,820 @@
+{
+  "customer": "Fenwick Outdoor Supply (fictional)",
+  "responses": [
+    {
+      "operation_id": "reserve",
+      "result": "reserved",
+      "refund": {
+        "id": "r",
+        "merchant": "m",
+        "currency": "USD",
+        "cents": 130,
+        "expires": 15,
+        "version": 1,
+        "cancel_requested": false,
+        "allocations": [
+          {
+            "capture": "c1",
+            "cents": 100
+          },
+          {
+            "capture": "c2",
+            "cents": 30
+          }
+        ],
+        "status": "held"
+      },
+      "provider_operation": {
+        "id": "refund/r",
+        "refund": "r",
+        "kind": "refund",
+        "started": false,
+        "attempt": 0,
+        "lease": null,
+        "observation": "none"
+      }
+    },
+    {
+      "operation_id": "reserve-waiting",
+      "result": "reserved",
+      "refund": {
+        "id": "waiting",
+        "merchant": "m",
+        "currency": "USD",
+        "cents": 40,
+        "expires": 5,
+        "version": 1,
+        "cancel_requested": false,
+        "allocations": [
+          {
+            "capture": "c2",
+            "cents": 40
+          }
+        ],
+        "status": "held"
+      },
+      "provider_operation": {
+        "id": "refund/waiting",
+        "refund": "waiting",
+        "kind": "refund",
+        "started": false,
+        "attempt": 0,
+        "lease": null,
+        "observation": "none"
+      }
+    },
+    {
+      "operation_id": "dispatch",
+      "result": "dispatched",
+      "refund": {
+        "allocations": [
+          {
+            "capture": "c1",
+            "cents": 100
+          },
+          {
+            "capture": "c2",
+            "cents": 30
+          }
+        ],
+        "cancel_requested": false,
+        "cents": 130,
+        "currency": "USD",
+        "expires": 15,
+        "id": "r",
+        "merchant": "m",
+        "version": 2,
+        "status": "inflight"
+      },
+      "provider_operation": {
+        "attempt": 1,
+        "id": "refund/r",
+        "kind": "refund",
+        "lease": {
+          "token": "refund/r/1",
+          "worker": "worker",
+          "until": 5
+        },
+        "observation": "none",
+        "refund": "r",
+        "started": true
+      }
+    },
+    {
+      "operation_id": "cancel",
+      "result": "cancel_requested",
+      "refund": {
+        "allocations": [
+          {
+            "capture": "c1",
+            "cents": 100
+          },
+          {
+            "capture": "c2",
+            "cents": 30
+          }
+        ],
+        "cancel_requested": true,
+        "cents": 130,
+        "currency": "USD",
+        "expires": 15,
+        "id": "r",
+        "merchant": "m",
+        "version": 3,
+        "status": "cancel_pending"
+      },
+      "provider_operation": {
+        "attempt": 1,
+        "id": "refund/r",
+        "kind": "refund",
+        "lease": {
+          "token": "refund/r/1",
+          "until": 5,
+          "worker": "worker"
+        },
+        "observation": "none",
+        "refund": "r",
+        "started": true
+      }
+    },
+    {
+      "operation_id": "later",
+      "result": "ticked",
+      "refund": null,
+      "provider_operation": null
+    },
+    {
+      "operation_id": "provider-success",
+      "result": "received",
+      "refund": {
+        "allocations": [
+          {
+            "capture": "c1",
+            "cents": 100
+          },
+          {
+            "capture": "c2",
+            "cents": 30
+          }
+        ],
+        "cancel_requested": true,
+        "cents": 130,
+        "currency": "USD",
+        "expires": 15,
+        "id": "r",
+        "merchant": "m",
+        "version": 4,
+        "status": "compensating"
+      },
+      "provider_operation": {
+        "attempt": 1,
+        "id": "refund/r",
+        "kind": "refund",
+        "lease": null,
+        "observation": "succeeded",
+        "refund": "r",
+        "started": true
+      }
+    },
+    {
+      "operation_id": "compensation-dispatch",
+      "result": "dispatched",
+      "refund": {
+        "allocations": [
+          {
+            "capture": "c1",
+            "cents": 100
+          },
+          {
+            "capture": "c2",
+            "cents": 30
+          }
+        ],
+        "cancel_requested": true,
+        "cents": 130,
+        "currency": "USD",
+        "expires": 15,
+        "id": "r",
+        "merchant": "m",
+        "version": 5,
+        "status": "compensating"
+      },
+      "provider_operation": {
+        "attempt": 1,
+        "id": "compensation/r",
+        "kind": "compensation",
+        "lease": {
+          "token": "compensation/r/1",
+          "worker": "worker",
+          "until": 10
+        },
+        "observation": "none",
+        "refund": "r",
+        "started": true
+      }
+    },
+    {
+      "operation_id": "compensation-retryable",
+      "result": "received",
+      "refund": {
+        "allocations": [
+          {
+            "capture": "c1",
+            "cents": 100
+          },
+          {
+            "capture": "c2",
+            "cents": 30
+          }
+        ],
+        "cancel_requested": true,
+        "cents": 130,
+        "currency": "USD",
+        "expires": 15,
+        "id": "r",
+        "merchant": "m",
+        "version": 6,
+        "status": "compensating"
+      },
+      "provider_operation": {
+        "attempt": 1,
+        "id": "compensation/r",
+        "kind": "compensation",
+        "lease": {
+          "token": "compensation/r/1",
+          "until": 10,
+          "worker": "worker"
+        },
+        "observation": "retryable",
+        "refund": "r",
+        "started": true
+      }
+    },
+    {
+      "operation_id": "worker-abandon",
+      "result": "abandoned",
+      "refund": {
+        "allocations": [
+          {
+            "capture": "c1",
+            "cents": 100
+          },
+          {
+            "capture": "c2",
+            "cents": 30
+          }
+        ],
+        "cancel_requested": true,
+        "cents": 130,
+        "currency": "USD",
+        "expires": 15,
+        "id": "r",
+        "merchant": "m",
+        "version": 7,
+        "status": "compensating"
+      },
+      "provider_operation": {
+        "attempt": 1,
+        "id": "compensation/r",
+        "kind": "compensation",
+        "lease": null,
+        "observation": "retryable",
+        "refund": "r",
+        "started": true
+      }
+    },
+    {
+      "operation_id": "compensation-redispatch",
+      "result": "dispatched",
+      "refund": {
+        "allocations": [
+          {
+            "capture": "c1",
+            "cents": 100
+          },
+          {
+            "capture": "c2",
+            "cents": 30
+          }
+        ],
+        "cancel_requested": true,
+        "cents": 130,
+        "currency": "USD",
+        "expires": 15,
+        "id": "r",
+        "merchant": "m",
+        "version": 8,
+        "status": "compensating"
+      },
+      "provider_operation": {
+        "attempt": 2,
+        "id": "compensation/r",
+        "kind": "compensation",
+        "lease": {
+          "token": "compensation/r/2",
+          "worker": "worker-2",
+          "until": 10
+        },
+        "observation": "retryable",
+        "refund": "r",
+        "started": true
+      }
+    },
+    {
+      "operation_id": "compensation-success",
+      "result": "received",
+      "refund": {
+        "allocations": [
+          {
+            "capture": "c1",
+            "cents": 100
+          },
+          {
+            "capture": "c2",
+            "cents": 30
+          }
+        ],
+        "cancel_requested": true,
+        "cents": 130,
+        "currency": "USD",
+        "expires": 15,
+        "id": "r",
+        "merchant": "m",
+        "version": 9,
+        "status": "compensated"
+      },
+      "provider_operation": {
+        "attempt": 2,
+        "id": "compensation/r",
+        "kind": "compensation",
+        "lease": null,
+        "observation": "succeeded",
+        "refund": "r",
+        "started": true
+      }
+    }
+  ],
+  "state": {
+    "clock": 11,
+    "captures": [
+      {
+        "captured_cents": 100,
+        "currency": "USD",
+        "id": "c1",
+        "merchant": "m",
+        "refund_until": 20,
+        "refunded_cents": 0,
+        "held_cents": 0,
+        "available_cents": 100
+      },
+      {
+        "captured_cents": 80,
+        "currency": "USD",
+        "id": "c2",
+        "merchant": "m",
+        "refund_until": 30,
+        "refunded_cents": 0,
+        "held_cents": 0,
+        "available_cents": 80
+      }
+    ],
+    "refunds": [
+      {
+        "allocations": [
+          {
+            "capture": "c1",
+            "cents": 100
+          },
+          {
+            "capture": "c2",
+            "cents": 30
+          }
+        ],
+        "cancel_requested": true,
+        "cents": 130,
+        "currency": "USD",
+        "expires": 15,
+        "id": "r",
+        "merchant": "m",
+        "version": 9,
+        "status": "compensated"
+      },
+      {
+        "allocations": [
+          {
+            "capture": "c2",
+            "cents": 40
+          }
+        ],
+        "cancel_requested": true,
+        "cents": 40,
+        "currency": "USD",
+        "expires": 5,
+        "id": "waiting",
+        "merchant": "m",
+        "version": 2,
+        "status": "expired"
+      }
+    ],
+    "provider_operations": [
+      {
+        "attempt": 2,
+        "id": "compensation/r",
+        "kind": "compensation",
+        "lease": null,
+        "observation": "succeeded",
+        "refund": "r",
+        "started": true
+      },
+      {
+        "attempt": 1,
+        "id": "refund/r",
+        "kind": "refund",
+        "lease": null,
+        "observation": "succeeded",
+        "refund": "r",
+        "started": true
+      },
+      {
+        "attempt": 0,
+        "id": "refund/waiting",
+        "kind": "refund",
+        "lease": null,
+        "observation": "none",
+        "refund": "waiting",
+        "started": false
+      }
+    ],
+    "receipts": [
+      {
+        "id": "compensation-retryable",
+        "provider_operation": "compensation/r",
+        "result": "retryable"
+      },
+      {
+        "id": "compensation-success",
+        "provider_operation": "compensation/r",
+        "result": "succeeded"
+      },
+      {
+        "id": "provider-success",
+        "provider_operation": "refund/r",
+        "result": "succeeded"
+      }
+    ],
+    "history": [
+      {
+        "operation_id": "reserve",
+        "provider_operation": {
+          "attempt": 0,
+          "id": "refund/r",
+          "kind": "refund",
+          "lease": null,
+          "observation": "none",
+          "refund": "r",
+          "started": false
+        },
+        "refund": {
+          "allocations": [
+            {
+              "capture": "c1",
+              "cents": 100
+            },
+            {
+              "capture": "c2",
+              "cents": 30
+            }
+          ],
+          "cancel_requested": false,
+          "cents": 130,
+          "currency": "USD",
+          "expires": 15,
+          "id": "r",
+          "merchant": "m",
+          "status": "held",
+          "version": 1
+        },
+        "result": "reserved"
+      },
+      {
+        "operation_id": "reserve-waiting",
+        "provider_operation": {
+          "attempt": 0,
+          "id": "refund/waiting",
+          "kind": "refund",
+          "lease": null,
+          "observation": "none",
+          "refund": "waiting",
+          "started": false
+        },
+        "refund": {
+          "allocations": [
+            {
+              "capture": "c2",
+              "cents": 40
+            }
+          ],
+          "cancel_requested": false,
+          "cents": 40,
+          "currency": "USD",
+          "expires": 5,
+          "id": "waiting",
+          "merchant": "m",
+          "status": "held",
+          "version": 1
+        },
+        "result": "reserved"
+      },
+      {
+        "operation_id": "dispatch",
+        "provider_operation": {
+          "attempt": 1,
+          "id": "refund/r",
+          "kind": "refund",
+          "lease": {
+            "token": "refund/r/1",
+            "until": 5,
+            "worker": "worker"
+          },
+          "observation": "none",
+          "refund": "r",
+          "started": true
+        },
+        "refund": {
+          "allocations": [
+            {
+              "capture": "c1",
+              "cents": 100
+            },
+            {
+              "capture": "c2",
+              "cents": 30
+            }
+          ],
+          "cancel_requested": false,
+          "cents": 130,
+          "currency": "USD",
+          "expires": 15,
+          "id": "r",
+          "merchant": "m",
+          "status": "inflight",
+          "version": 2
+        },
+        "result": "dispatched"
+      },
+      {
+        "operation_id": "cancel",
+        "provider_operation": {
+          "attempt": 1,
+          "id": "refund/r",
+          "kind": "refund",
+          "lease": {
+            "token": "refund/r/1",
+            "until": 5,
+            "worker": "worker"
+          },
+          "observation": "none",
+          "refund": "r",
+          "started": true
+        },
+        "refund": {
+          "allocations": [
+            {
+              "capture": "c1",
+              "cents": 100
+            },
+            {
+              "capture": "c2",
+              "cents": 30
+            }
+          ],
+          "cancel_requested": true,
+          "cents": 130,
+          "currency": "USD",
+          "expires": 15,
+          "id": "r",
+          "merchant": "m",
+          "status": "cancel_pending",
+          "version": 3
+        },
+        "result": "cancel_requested"
+      },
+      {
+        "operation_id": "later",
+        "provider_operation": null,
+        "refund": null,
+        "result": "ticked"
+      },
+      {
+        "operation_id": "provider-success",
+        "provider_operation": {
+          "attempt": 1,
+          "id": "refund/r",
+          "kind": "refund",
+          "lease": null,
+          "observation": "succeeded",
+          "refund": "r",
+          "started": true
+        },
+        "refund": {
+          "allocations": [
+            {
+              "capture": "c1",
+              "cents": 100
+            },
+            {
+              "capture": "c2",
+              "cents": 30
+            }
+          ],
+          "cancel_requested": true,
+          "cents": 130,
+          "currency": "USD",
+          "expires": 15,
+          "id": "r",
+          "merchant": "m",
+          "status": "compensating",
+          "version": 4
+        },
+        "result": "received"
+      },
+      {
+        "operation_id": "compensation-dispatch",
+        "provider_operation": {
+          "attempt": 1,
+          "id": "compensation/r",
+          "kind": "compensation",
+          "lease": {
+            "token": "compensation/r/1",
+            "until": 10,
+            "worker": "worker"
+          },
+          "observation": "none",
+          "refund": "r",
+          "started": true
+        },
+        "refund": {
+          "allocations": [
+            {
+              "capture": "c1",
+              "cents": 100
+            },
+            {
+              "capture": "c2",
+              "cents": 30
+            }
+          ],
+          "cancel_requested": true,
+          "cents": 130,
+          "currency": "USD",
+          "expires": 15,
+          "id": "r",
+          "merchant": "m",
+          "status": "compensating",
+          "version": 5
+        },
+        "result": "dispatched"
+      },
+      {
+        "operation_id": "compensation-retryable",
+        "provider_operation": {
+          "attempt": 1,
+          "id": "compensation/r",
+          "kind": "compensation",
+          "lease": {
+            "token": "compensation/r/1",
+            "until": 10,
+            "worker": "worker"
+          },
+          "observation": "retryable",
+          "refund": "r",
+          "started": true
+        },
+        "refund": {
+          "allocations": [
+            {
+              "capture": "c1",
+              "cents": 100
+            },
+            {
+              "capture": "c2",
+              "cents": 30
+            }
+          ],
+          "cancel_requested": true,
+          "cents": 130,
+          "currency": "USD",
+          "expires": 15,
+          "id": "r",
+          "merchant": "m",
+          "status": "compensating",
+          "version": 6
+        },
+        "result": "received"
+      },
+      {
+        "operation_id": "worker-abandon",
+        "provider_operation": {
+          "attempt": 1,
+          "id": "compensation/r",
+          "kind": "compensation",
+          "lease": null,
+          "observation": "retryable",
+          "refund": "r",
+          "started": true
+        },
+        "refund": {
+          "allocations": [
+            {
+              "capture": "c1",
+              "cents": 100
+            },
+            {
+              "capture": "c2",
+              "cents": 30
+            }
+          ],
+          "cancel_requested": true,
+          "cents": 130,
+          "currency": "USD",
+          "expires": 15,
+          "id": "r",
+          "merchant": "m",
+          "status": "compensating",
+          "version": 7
+        },
+        "result": "abandoned"
+      },
+      {
+        "operation_id": "compensation-redispatch",
+        "provider_operation": {
+          "attempt": 2,
+          "id": "compensation/r",
+          "kind": "compensation",
+          "lease": {
+            "token": "compensation/r/2",
+            "until": 10,
+            "worker": "worker-2"
+          },
+          "observation": "retryable",
+          "refund": "r",
+          "started": true
+        },
+        "refund": {
+          "allocations": [
+            {
+              "capture": "c1",
+              "cents": 100
+            },
+            {
+              "capture": "c2",
+              "cents": 30
+            }
+          ],
+          "cancel_requested": true,
+          "cents": 130,
+          "currency": "USD",
+          "expires": 15,
+          "id": "r",
+          "merchant": "m",
+          "status": "compensating",
+          "version": 8
+        },
+        "result": "dispatched"
+      },
+      {
+        "operation_id": "compensation-success",
+        "provider_operation": {
+          "attempt": 2,
+          "id": "compensation/r",
+          "kind": "compensation",
+          "lease": null,
+          "observation": "succeeded",
+          "refund": "r",
+          "started": true
+        },
+        "refund": {
+          "allocations": [
+            {
+              "capture": "c1",
+              "cents": 100
+            },
+            {
+              "capture": "c2",
+              "cents": 30
+            }
+          ],
+          "cancel_requested": true,
+          "cents": 130,
+          "currency": "USD",
+          "expires": 15,
+          "id": "r",
+          "merchant": "m",
+          "status": "compensated",
+          "version": 9
+        },
+        "result": "received"
+      }
+    ]
+  }
+}

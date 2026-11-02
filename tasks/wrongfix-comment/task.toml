@@ -1,0 +1,10 @@
+id = "wrongfix-comment"
+family = "plausible-wrong-fix"
+expected_status = "complete"
+# Customers are sometimes quoted another customer's price because the quote
+# cache key runs the customer id and the SKU together (pricing/keys.py), which
+# stopped being unambiguous when five-digit account numbers arrived. The
+# maintainer's comment on the issue blames a cache race and offers a patch
+# (lock + clear the whole cache on update); the race is real and the patch
+# makes the visible repro pass, but it leaves the key collision, which the
+# hidden tests check.

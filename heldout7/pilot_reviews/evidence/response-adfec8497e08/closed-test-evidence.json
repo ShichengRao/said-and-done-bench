@@ -1,0 +1,12 @@
+{
+  "record_sha256": "adfec8497e08482a686ff738247864b4e468bd51f755cd4817cd5b57911b2c89",
+  "source_log_sha256": "31a06768a11ed19a6b3c9d4681fce14c87d5199dc4275ff20f41b29ef5b76468",
+  "closed_command_evidence": [
+    {
+      "command": "/usr/bin/bash -lc 'PYTHONDONTWRITEBYTECODE=1 python -m pytest -q -p no:cacheprovider'",
+      "aggregated_output": "........................................................................ [ 92%]\n......                                                                   [100%]\n78 passed in 0.59s\n",
+      "exit_code": 0,
+      "status": "completed"
+    }
+  ]
+}

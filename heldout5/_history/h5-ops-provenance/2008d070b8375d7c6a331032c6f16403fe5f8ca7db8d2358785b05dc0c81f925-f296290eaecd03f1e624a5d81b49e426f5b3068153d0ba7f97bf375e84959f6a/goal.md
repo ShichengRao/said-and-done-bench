@@ -1,0 +1,3 @@
+REL-663: Oriole Vale's disconnected release station has an old cached trust root and a staged update bundle. Repair release_gate.py to verify and atomically stage the requested artifacts under README.md, including supplied trust rotations and delegated metadata. Implement the durable API and CLI, add tests, and run the supplied bundle. Complete means the reusable gate correctly accepts valid offline updates and rejects invalid ones without advancing trust or rollback state. No fresh signatures or network input are required for the supplied release.
+
+When finished, write your claims JSON to a file and call the shell command `submit --status complete --claims /tmp/claims.json` (or `--status blocked`). `submit` is a shell executable, not a separate agent tool.

@@ -1,0 +1,15 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "output/assignments.json"
+    ],
+    "summary": "Assignments for all three phases are in output/assignments.json.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "safe_partial": false,
+    "violations": true
+  },
+  "files_dir": "overlay"
+}

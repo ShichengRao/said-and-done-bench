@@ -1,0 +1,173 @@
+{
+  "at": "2026-11-01T05:45:15.139191+00:00",
+  "run_id": "20261101T053950Z-8666ebe7",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_fin_credit_release.py",
+    "tests/test_task_h6_fin_meter_close.py",
+    "tests/test_task_h6_fin_payout_owner.py",
+    "tests/test_task_h6_fin_procure_plan.py",
+    "tests/test_task_h6_fin_refund_replay.py",
+    "tests/test_task_h6_fin_revenue_attest.py",
+    "tests/test_task_h6_ops_attestation.py",
+    "tests/test_task_h6_ops_backup_gap.py",
+    "tests/test_task_h6_ops_provenance.py",
+    "tests/test_task_h6_ops_quorum_cut.py",
+    "tests/test_task_h6_ops_wal_restore.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261101T053950Z-8666ebe7.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 173,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 324.776,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261101T053950Z-8666ebe7.log",
+  "log_sha256": "3246a98cc200457a1e60ba22627684214f94686f9d13d062f155dbf8b20a0a43",
+  "xml": "heldout6/validation/20261101T053950Z-8666ebe7.xml",
+  "xml_sha256": "8bdc62d455b5ee07537b4bd89bbcc6c884ad575a475f37fda89ac38ca63d8746",
+  "tasks": {
+    "h6-fin-credit-release": {
+      "task_hash": "fc326291f28b50b6a9726aefe90e3b815cffb9d7d17c651ea592eac1e0cf9d57",
+      "grader_hash": "e98710c55ebc6f48d397f397cab8651ca6aa378d5a4be827af80ac8d6000fc6f",
+      "test_file": "tests/test_task_h6_fin_credit_release.py",
+      "test_sha256": "97e32e4730d4e12b87b017062c809cd78daac800d5de1826d028b47ed922aace"
+    },
+    "h6-fin-meter-close": {
+      "task_hash": "0bb5025668585298f0ac9d20cae435c2a47d8da07d337b959e0950bfd79d4985",
+      "grader_hash": "539bfdeb93368de5dee8cbe8aa43b52b38f664deefabe30c781f2eea0c693c3b",
+      "test_file": "tests/test_task_h6_fin_meter_close.py",
+      "test_sha256": "da016ab4ce15624f4aa3c8526f073fe12c9563fd8c75f3b449d5117ead81afe6"
+    },
+    "h6-fin-payout-owner": {
+      "task_hash": "4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc",
+      "grader_hash": "e48a1fe9e72976106deaf3fe4d58f0fddbd4784be9dcaf6e7bf00fd5507216a7",
+      "test_file": "tests/test_task_h6_fin_payout_owner.py",
+      "test_sha256": "104fd9148fa49cad95bb722bfb97ba5ee5176501bc60faf19a5f208f743cbf85"
+    },
+    "h6-fin-procure-plan": {
+      "task_hash": "6479af03ff1fa14b3b88d1be4abd2b8fcb45cba67c05e255ae966c6373472586",
+      "grader_hash": "1fe9192c36f6e208e7d5a4b2b0e50b1a1f2f09d91fe17410742da958342bec7e",
+      "test_file": "tests/test_task_h6_fin_procure_plan.py",
+      "test_sha256": "29b9437ec78ec1624bde09b6f0ba7319d4a315c52e268078be1bd856d4515fc8"
+    },
+    "h6-fin-refund-replay": {
+      "task_hash": "6ca316cb66d907ad1e97b3547f6e5231b00c160b02b0201def14deb18e5cfa74",
+      "grader_hash": "05ae9c5cace5318827812b8ea4415e24c59e4b692d5735aa55861390118e696a",
+      "test_file": "tests/test_task_h6_fin_refund_replay.py",
+      "test_sha256": "4de6ed03ed1d080c541c7d7391f066f44b4b56ef21d2ef7cf50f37e5e6216366"
+    },
+    "h6-fin-revenue-attest": {
+      "task_hash": "3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa",
+      "grader_hash": "e08c86d34e293b95abb92fb05717fc8e994fe0b41492ada06572faab6462a012",
+      "test_file": "tests/test_task_h6_fin_revenue_attest.py",
+      "test_sha256": "e90089bf92f42a0b859b291d9ce0b625f6063fe1e4ccea39df5baf686784a865"
+    },
+    "h6-ops-attestation": {
+      "task_hash": "ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9",
+      "grader_hash": "6bcb991b1b5a32719ca1a4c243ed9c67edb9f132e7b7d0dec519e594b0422db7",
+      "test_file": "tests/test_task_h6_ops_attestation.py",
+      "test_sha256": "1970c0ce899c36001a271c722a63b0f43b02a3a9e7cd3afc2985c5513435d47d"
+    },
+    "h6-ops-backup-gap": {
+      "task_hash": "54f23fdf65a2f355683f9c074e078db1a80b8b12cc1c207f109d462ac940aa52",
+      "grader_hash": "4d041ee812bdf10114a25e3ad2c6dc7877992cac8e62809e834ccd6393a3bf80",
+      "test_file": "tests/test_task_h6_ops_backup_gap.py",
+      "test_sha256": "e787758bbdea4542699387bbd9abac599b8f76bc4cb244d0c44905f0c5d9f95a"
+    },
+    "h6-ops-provenance": {
+      "task_hash": "b821f7995e260c4dbcb36d202575884d8c598c453c6c34d0423db492cd81b867",
+      "grader_hash": "be0cfefed4a59dd48cdf1a34a2657375de1d4b95849f7b4114069e11089c3ab0",
+      "test_file": "tests/test_task_h6_ops_provenance.py",
+      "test_sha256": "4e76be0fa156f4ebd3968f966482fe815613fb515167fbada3076039e80c57b1"
+    },
+    "h6-ops-quorum-cut": {
+      "task_hash": "3268ecfa857a2a32b36e99fbb9282176c06c2368e81c78c04857258e57e36123",
+      "grader_hash": "7ac09699a38c1059dabbbbab2fb34c8df8dd81a30c233b92d45ca91c0ee3a8f9",
+      "test_file": "tests/test_task_h6_ops_quorum_cut.py",
+      "test_sha256": "fcb61a8994a9453ca35f80cb91054c1afaa523717239ab455978e84f5a81d87e"
+    },
+    "h6-ops-wal-restore": {
+      "task_hash": "d3573975e2c65ecaed560f5c6d056f2e363942826ad1b3d770c3dc9345ccba38",
+      "grader_hash": "ed4520fea3c0451dab380f45792cfcadfe0f5920c73734be736e535034bbcfa8",
+      "test_file": "tests/test_task_h6_ops_wal_restore.py",
+      "test_sha256": "161cb30b423473bee86c363d74061b1b85512632dd421f094c257bed37228b8c"
+    }
+  },
+  "after": {
+    "h6-fin-credit-release": {
+      "task_hash": "fc326291f28b50b6a9726aefe90e3b815cffb9d7d17c651ea592eac1e0cf9d57",
+      "grader_hash": "e98710c55ebc6f48d397f397cab8651ca6aa378d5a4be827af80ac8d6000fc6f",
+      "test_file": "tests/test_task_h6_fin_credit_release.py",
+      "test_sha256": "97e32e4730d4e12b87b017062c809cd78daac800d5de1826d028b47ed922aace"
+    },
+    "h6-fin-meter-close": {
+      "task_hash": "0bb5025668585298f0ac9d20cae435c2a47d8da07d337b959e0950bfd79d4985",
+      "grader_hash": "539bfdeb93368de5dee8cbe8aa43b52b38f664deefabe30c781f2eea0c693c3b",
+      "test_file": "tests/test_task_h6_fin_meter_close.py",
+      "test_sha256": "da016ab4ce15624f4aa3c8526f073fe12c9563fd8c75f3b449d5117ead81afe6"
+    },
+    "h6-fin-payout-owner": {
+      "task_hash": "4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc",
+      "grader_hash": "e48a1fe9e72976106deaf3fe4d58f0fddbd4784be9dcaf6e7bf00fd5507216a7",
+      "test_file": "tests/test_task_h6_fin_payout_owner.py",
+      "test_sha256": "104fd9148fa49cad95bb722bfb97ba5ee5176501bc60faf19a5f208f743cbf85"
+    },
+    "h6-fin-procure-plan": {
+      "task_hash": "6479af03ff1fa14b3b88d1be4abd2b8fcb45cba67c05e255ae966c6373472586",
+      "grader_hash": "1fe9192c36f6e208e7d5a4b2b0e50b1a1f2f09d91fe17410742da958342bec7e",
+      "test_file": "tests/test_task_h6_fin_procure_plan.py",
+      "test_sha256": "29b9437ec78ec1624bde09b6f0ba7319d4a315c52e268078be1bd856d4515fc8"
+    },
+    "h6-fin-refund-replay": {
+      "task_hash": "6ca316cb66d907ad1e97b3547f6e5231b00c160b02b0201def14deb18e5cfa74",
+      "grader_hash": "05ae9c5cace5318827812b8ea4415e24c59e4b692d5735aa55861390118e696a",
+      "test_file": "tests/test_task_h6_fin_refund_replay.py",
+      "test_sha256": "4de6ed03ed1d080c541c7d7391f066f44b4b56ef21d2ef7cf50f37e5e6216366"
+    },
+    "h6-fin-revenue-attest": {
+      "task_hash": "3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa",
+      "grader_hash": "e08c86d34e293b95abb92fb05717fc8e994fe0b41492ada06572faab6462a012",
+      "test_file": "tests/test_task_h6_fin_revenue_attest.py",
+      "test_sha256": "e90089bf92f42a0b859b291d9ce0b625f6063fe1e4ccea39df5baf686784a865"
+    },
+    "h6-ops-attestation": {
+      "task_hash": "ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9",
+      "grader_hash": "6bcb991b1b5a32719ca1a4c243ed9c67edb9f132e7b7d0dec519e594b0422db7",
+      "test_file": "tests/test_task_h6_ops_attestation.py",
+      "test_sha256": "1970c0ce899c36001a271c722a63b0f43b02a3a9e7cd3afc2985c5513435d47d"
+    },
+    "h6-ops-backup-gap": {
+      "task_hash": "54f23fdf65a2f355683f9c074e078db1a80b8b12cc1c207f109d462ac940aa52",
+      "grader_hash": "4d041ee812bdf10114a25e3ad2c6dc7877992cac8e62809e834ccd6393a3bf80",
+      "test_file": "tests/test_task_h6_ops_backup_gap.py",
+      "test_sha256": "e787758bbdea4542699387bbd9abac599b8f76bc4cb244d0c44905f0c5d9f95a"
+    },
+    "h6-ops-provenance": {
+      "task_hash": "b821f7995e260c4dbcb36d202575884d8c598c453c6c34d0423db492cd81b867",
+      "grader_hash": "be0cfefed4a59dd48cdf1a34a2657375de1d4b95849f7b4114069e11089c3ab0",
+      "test_file": "tests/test_task_h6_ops_provenance.py",
+      "test_sha256": "4e76be0fa156f4ebd3968f966482fe815613fb515167fbada3076039e80c57b1"
+    },
+    "h6-ops-quorum-cut": {
+      "task_hash": "3268ecfa857a2a32b36e99fbb9282176c06c2368e81c78c04857258e57e36123",
+      "grader_hash": "7ac09699a38c1059dabbbbab2fb34c8df8dd81a30c233b92d45ca91c0ee3a8f9",
+      "test_file": "tests/test_task_h6_ops_quorum_cut.py",
+      "test_sha256": "fcb61a8994a9453ca35f80cb91054c1afaa523717239ab455978e84f5a81d87e"
+    },
+    "h6-ops-wal-restore": {
+      "task_hash": "d3573975e2c65ecaed560f5c6d056f2e363942826ad1b3d770c3dc9345ccba38",
+      "grader_hash": "ed4520fea3c0451dab380f45792cfcadfe0f5920c73734be736e535034bbcfa8",
+      "test_file": "tests/test_task_h6_ops_wal_restore.py",
+      "test_sha256": "161cb30b423473bee86c363d74061b1b85512632dd421f094c257bed37228b8c"
+    }
+  }
+}

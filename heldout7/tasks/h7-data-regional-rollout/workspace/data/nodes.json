@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "a",
+      "region": "eu",
+      "keys": [
+        "customer"
+      ]
+    },
+    {
+      "id": "b",
+      "region": "eu",
+      "keys": [
+        "customer"
+      ]
+    },
+    {
+      "id": "c",
+      "region": "eu",
+      "keys": [
+        "customer"
+      ]
+    },
+    {
+      "id": "d",
+      "region": "eu",
+      "keys": [
+        "customer"
+      ]
+    },
+    {
+      "id": "e",
+      "region": "eu",
+      "keys": [
+        "customer"
+      ]
+    },
+    {
+      "id": "f",
+      "region": "us",
+      "keys": [
+        "other"
+      ]
+    }
+  ]
+}

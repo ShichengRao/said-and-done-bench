@@ -1,0 +1,1 @@
+The scheduler now retries operations until every member is committed; maint-enter is retried once to reopen maintenance for the edge cutover. The record is in output/release_commit.json.

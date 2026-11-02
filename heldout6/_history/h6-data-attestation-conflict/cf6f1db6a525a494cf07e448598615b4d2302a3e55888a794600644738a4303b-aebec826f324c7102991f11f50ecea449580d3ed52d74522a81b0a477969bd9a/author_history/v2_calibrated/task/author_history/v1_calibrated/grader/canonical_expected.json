@@ -1,0 +1,71 @@
+{
+  "ready": false,
+  "classification": "missing_order_evidence",
+  "serialization_count": 1896,
+  "safe_count": 434,
+  "unsafe_count": 1462,
+  "first_safe_order": [
+    "a1",
+    "c1",
+    "b1",
+    "a2",
+    "b2",
+    "a3",
+    "a4",
+    "c2",
+    "b3",
+    "c3",
+    "c4",
+    "b4"
+  ],
+  "first_unsafe": {
+    "order": [
+      "a1",
+      "a2",
+      "c1",
+      "b1",
+      "b2",
+      "a3",
+      "a4",
+      "c2",
+      "b3",
+      "b4",
+      "c3",
+      "c4"
+    ],
+    "receipt": "b3",
+    "copy": "b2",
+    "lineage": [
+      "b1",
+      "b2"
+    ],
+    "captured_owner": "beta",
+    "audience": "red",
+    "grant_event": null
+  },
+  "owner_request": {
+    "proposal_ids": [
+      "blue-grant-before-receipt",
+      "lineage-before-transfer"
+    ],
+    "cost": 3,
+    "serialization_count": 287,
+    "first_order": [
+      "a1",
+      "c1",
+      "b1",
+      "b2",
+      "a2",
+      "a3",
+      "a4",
+      "c2",
+      "b3",
+      "c3",
+      "c4",
+      "b4"
+    ]
+  },
+  "blocker_codes": [
+    "audit_order_evidence_required"
+  ]
+}

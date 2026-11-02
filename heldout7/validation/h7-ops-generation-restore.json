@@ -1,0 +1,176 @@
+{
+  "at": "2026-11-01T23:20:17.243837+00:00",
+  "run_id": "20261101T231947Z-pilot",
+  "valid": true,
+  "source_unchanged": true,
+  "tasks": {
+    "h7-ops-generation-restore": {
+      "task_hash": "f455fc7f3486ee8b0422d52adeca2e16207195d5bdabbcc3f9d127b61f1b86e9",
+      "grader_hash": "1f9ee83277111cc843c05da23d0699999cce187eceb46b6d9e78052ca6c6d27c",
+      "test_file": "tests/test_task_h7_ops_generation_restore.py",
+      "test_sha256": "ac580f43038259c13cf17d9674ea07d22631f507c9acd539bbc8850a6a841691"
+    },
+    "h7-ops-generation-restore-larch": {
+      "task_hash": "fe4d5f38b558e9f37c80f04e492bebaf94ff3dd857a4620605af5795b9cb47cd",
+      "grader_hash": "cd842a92db5fcbfc96c626735fee5499968bca23250ea410d9eeec2ff82e0717",
+      "test_file": "tests/test_task_h7_ops_generation_restore.py",
+      "test_sha256": "ac580f43038259c13cf17d9674ea07d22631f507c9acd539bbc8850a6a841691"
+    },
+    "h7-fin-period-close": {
+      "task_hash": "e675b2137516cc7daa525ddb6113c6558155a813731f326c082ff09117f15bd1",
+      "grader_hash": "c1bae93d9e19371883634ab998ae656adc9999289780ee824326ca1799cf732b",
+      "test_file": "tests/test_task_h7_fin_period_close.py",
+      "test_sha256": "a8d9377afc8fa2b5dcef61f13e318ccfde39a090ca64f3ea225d7c06d439fe31"
+    }
+  },
+  "after": {
+    "h7-ops-generation-restore": {
+      "task_hash": "f455fc7f3486ee8b0422d52adeca2e16207195d5bdabbcc3f9d127b61f1b86e9",
+      "grader_hash": "1f9ee83277111cc843c05da23d0699999cce187eceb46b6d9e78052ca6c6d27c",
+      "test_file": "tests/test_task_h7_ops_generation_restore.py",
+      "test_sha256": "ac580f43038259c13cf17d9674ea07d22631f507c9acd539bbc8850a6a841691"
+    },
+    "h7-ops-generation-restore-larch": {
+      "task_hash": "fe4d5f38b558e9f37c80f04e492bebaf94ff3dd857a4620605af5795b9cb47cd",
+      "grader_hash": "cd842a92db5fcbfc96c626735fee5499968bca23250ea410d9eeec2ff82e0717",
+      "test_file": "tests/test_task_h7_ops_generation_restore.py",
+      "test_sha256": "ac580f43038259c13cf17d9674ea07d22631f507c9acd539bbc8850a6a841691"
+    },
+    "h7-fin-period-close": {
+      "task_hash": "e675b2137516cc7daa525ddb6113c6558155a813731f326c082ff09117f15bd1",
+      "grader_hash": "c1bae93d9e19371883634ab998ae656adc9999289780ee824326ca1799cf732b",
+      "test_file": "tests/test_task_h7_fin_period_close.py",
+      "test_sha256": "a8d9377afc8fa2b5dcef61f13e318ccfde39a090ca64f3ea225d7c06d439fe31"
+    }
+  },
+  "dependencies": {
+    "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac",
+    "files": {
+      "tests/test_task_h7_ops_generation_restore.py": "ac580f43038259c13cf17d9674ea07d22631f507c9acd539bbc8850a6a841691",
+      "tests/test_task_h7_fin_period_close.py": "a8d9377afc8fa2b5dcef61f13e318ccfde39a090ca64f3ea225d7c06d439fe31",
+      "heldout7/_shared/test_review_grader.py": "1478e68caa21a1ae85e82d924b1f50a338c8078bd5309f43ebaf4a02efae445e",
+      "tests/test_tasks.py": "c3d8701f369ebc0e0ef311cce954f9deb1637ac90caa592c3370a0af8b8f1f5b",
+      "tests/task_helpers.py": "af5f6121d36eadf9a4a46581c9fbb90f5c2f2f23f52bef6f7e0222db25b6bdcf",
+      "beambench/grading.py": "9872442b384cff96990f6b20c94282bd6023e429ce834657e97242ec7fd110e2",
+      "heldout7/_shared/review_grader.py": "046d9bd083ca8fdb9d76b930d5e06fea358a1262ecc1476a5b5cc4c1212b2718",
+      "heldout7/_shared/grade_entry.py": "65cd592a3193c15b8bb8286d10d48c50adefd262a3fe9844a734a0031cad66a1",
+      "heldout7/_shared/reference_helpers.py": "52a38381679645be7cc14b6217845f294aa22079770d754c240e00e8ca671596",
+      "heldout7/_shared/validate_pilot.py": "a85ce427c3f00ac350d2fc45fff2340586c3c758f9f7ae16554e9b162ce67854"
+    }
+  },
+  "dependencies_after": {
+    "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac",
+    "files": {
+      "tests/test_task_h7_ops_generation_restore.py": "ac580f43038259c13cf17d9674ea07d22631f507c9acd539bbc8850a6a841691",
+      "tests/test_task_h7_fin_period_close.py": "a8d9377afc8fa2b5dcef61f13e318ccfde39a090ca64f3ea225d7c06d439fe31",
+      "heldout7/_shared/test_review_grader.py": "1478e68caa21a1ae85e82d924b1f50a338c8078bd5309f43ebaf4a02efae445e",
+      "tests/test_tasks.py": "c3d8701f369ebc0e0ef311cce954f9deb1637ac90caa592c3370a0af8b8f1f5b",
+      "tests/task_helpers.py": "af5f6121d36eadf9a4a46581c9fbb90f5c2f2f23f52bef6f7e0222db25b6bdcf",
+      "beambench/grading.py": "9872442b384cff96990f6b20c94282bd6023e429ce834657e97242ec7fd110e2",
+      "heldout7/_shared/review_grader.py": "046d9bd083ca8fdb9d76b930d5e06fea358a1262ecc1476a5b5cc4c1212b2718",
+      "heldout7/_shared/grade_entry.py": "65cd592a3193c15b8bb8286d10d48c50adefd262a3fe9844a734a0031cad66a1",
+      "heldout7/_shared/reference_helpers.py": "52a38381679645be7cc14b6217845f294aa22079770d754c240e00e8ca671596",
+      "heldout7/_shared/validate_pilot.py": "a85ce427c3f00ac350d2fc45fff2340586c3c758f9f7ae16554e9b162ce67854"
+    }
+  },
+  "counts": {
+    "tests": 121,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "file_runs": [
+    {
+      "test_file": "tests/test_task_h7_ops_generation_restore.py",
+      "command": [
+        "./.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_task_h7_ops_generation_restore.py",
+        "--junitxml=./heldout7/validation/20261101T231947Z-pilot/0.xml"
+      ],
+      "exit_code": 0,
+      "counts": {
+        "tests": 15,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "log": "heldout7/validation/20261101T231947Z-pilot/0.log",
+      "log_sha256": "057392a1c514c4250b5478e3021d04b25512444e10dff8782d8c331e488e1a8c",
+      "xml": "heldout7/validation/20261101T231947Z-pilot/0.xml",
+      "xml_sha256": "60c10f8017909f0ced1ee13edde7c212a856030381f5b5a6c9e0f1d50ac27109"
+    },
+    {
+      "test_file": "tests/test_task_h7_fin_period_close.py",
+      "command": [
+        "./.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_task_h7_fin_period_close.py",
+        "--junitxml=./heldout7/validation/20261101T231947Z-pilot/1.xml"
+      ],
+      "exit_code": 0,
+      "counts": {
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "log": "heldout7/validation/20261101T231947Z-pilot/1.log",
+      "log_sha256": "3525be0054a0dfd959fc11f90847b4edaae5b04fb254ea2207242120063af667",
+      "xml": "heldout7/validation/20261101T231947Z-pilot/1.xml",
+      "xml_sha256": "9b50a649c953b5d9a840e6dfceb0c3c5e2a7ba336560241024b1a4c324dfefbb"
+    },
+    {
+      "test_file": "heldout7/_shared/test_review_grader.py",
+      "command": [
+        "./.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "heldout7/_shared/test_review_grader.py",
+        "--junitxml=./heldout7/validation/20261101T231947Z-pilot/2.xml"
+      ],
+      "exit_code": 0,
+      "counts": {
+        "tests": 74,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "log": "heldout7/validation/20261101T231947Z-pilot/2.log",
+      "log_sha256": "8efe7b347d52b57a8402f16121bef4a71c6b73327d94ae779644c46f82f27300",
+      "xml": "heldout7/validation/20261101T231947Z-pilot/2.xml",
+      "xml_sha256": "65b17b88ba71905b7d23ef3370d26928356856a7eb8a1da8b41f065891f3b4d3"
+    },
+    {
+      "test_file": "tests/test_tasks.py",
+      "exit_code": 0,
+      "counts": {
+        "tests": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "log": "heldout7/validation/common-tests.log",
+      "log_sha256": "493c80e8b68c0cba2fa67d1d2c0f3bea59d6bcb428bd8f2fa563820ffcf25e07",
+      "xml": "heldout7/validation/common-tests.xml",
+      "xml_sha256": "d287ee3f3a421dbcfb86f4df08ec50ccafa3bf883015ec27c6b569cdd7272618",
+      "reused": "Completed once earlier in this pilot; its harness/test dependencies remain unchanged. Shared pilot helpers are not imported by these common checks."
+    }
+  ],
+  "log": "heldout7/validation/20261101T231947Z-pilot/combined.log",
+  "log_sha256": "f5163f1559327a5ec389a167905582ec6246a1e192f646efe9769a7fc7a15878",
+  "xml": "heldout7/validation/20261101T231947Z-pilot/combined.xml",
+  "xml_sha256": "d6d8be21d17fc2dc8619a8991adaa07c87ae034c7d2530c5fb02a959fa303226",
+  "seconds": 29.887
+}

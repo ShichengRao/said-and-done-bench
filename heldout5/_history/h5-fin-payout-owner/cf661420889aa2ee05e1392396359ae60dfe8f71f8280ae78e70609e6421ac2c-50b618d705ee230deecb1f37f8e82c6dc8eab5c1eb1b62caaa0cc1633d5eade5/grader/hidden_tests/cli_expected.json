@@ -1,0 +1,112 @@
+{
+  "lots": [
+    {
+      "id": "l1",
+      "owner": "x",
+      "currency": "USD",
+      "rail": "ach",
+      "cents": 300,
+      "sources": [
+        "s1"
+      ],
+      "owner_path": [
+        "a",
+        "x"
+      ]
+    },
+    {
+      "id": "l2",
+      "owner": "x",
+      "currency": "USD",
+      "rail": "wire",
+      "cents": 300,
+      "sources": [
+        "s2",
+        "s7"
+      ],
+      "owner_path": [
+        "a",
+        "x"
+      ]
+    },
+    {
+      "id": "l3",
+      "owner": "x",
+      "currency": "USD",
+      "rail": "ach",
+      "cents": 300,
+      "sources": [
+        "s3"
+      ],
+      "owner_path": [
+        "b",
+        "y",
+        "x"
+      ]
+    },
+    {
+      "id": "l4",
+      "owner": "x",
+      "currency": "USD",
+      "rail": "wire",
+      "cents": 300,
+      "sources": [
+        "s4"
+      ],
+      "owner_path": [
+        "b",
+        "y",
+        "x"
+      ]
+    },
+    {
+      "id": "l5",
+      "owner": "z",
+      "currency": "USD",
+      "rail": "ach",
+      "cents": 200,
+      "sources": [
+        "s5"
+      ],
+      "owner_path": [
+        "c",
+        "z"
+      ]
+    },
+    {
+      "id": "l6",
+      "owner": "z",
+      "currency": "USD",
+      "rail": "wire",
+      "cents": 200,
+      "sources": [
+        "s6"
+      ],
+      "owner_path": [
+        "c",
+        "z"
+      ]
+    }
+  ],
+  "requested_cents": 1600,
+  "covered_cents": 1500,
+  "complete": false,
+  "deficiency": {
+    "lots": [
+      "l2",
+      "l4"
+    ],
+    "attestations": [
+      "t1"
+    ],
+    "required_cents": 600,
+    "capacity_cents": 500,
+    "shortfall_cents": 100
+  },
+  "owner_review": {
+    "cost": 2,
+    "proposals": [
+      "r3"
+    ]
+  }
+}

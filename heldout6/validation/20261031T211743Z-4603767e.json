@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-31T21:18:14.971536+00:00",
+  "run_id": "20261031T211743Z-4603767e",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_fin_payout_owner.py",
+    "tests/test_task_h6_fin_revenue_attest.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261031T211743Z-4603767e.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 45,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 31.172,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261031T211743Z-4603767e.log",
+  "log_sha256": "2697cecffc87992fcfb6e82b470ec3268055424de91fdc41b306983b78df0f44",
+  "xml": "heldout6/validation/20261031T211743Z-4603767e.xml",
+  "xml_sha256": "1f66928a1b0b6d1e9b693df365688c2aceb7049cc6fef92fffed778d040dcf87",
+  "tasks": {
+    "h6-fin-payout-owner": {
+      "task_hash": "4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc",
+      "grader_hash": "92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+      "test_file": "tests/test_task_h6_fin_payout_owner.py",
+      "test_sha256": "3ab517ed81e085830365e0209b91f7d91e3d9e2f059ff99f0689bb35b41db780"
+    },
+    "h6-fin-revenue-attest": {
+      "task_hash": "3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa",
+      "grader_hash": "2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+      "test_file": "tests/test_task_h6_fin_revenue_attest.py",
+      "test_sha256": "04f976b6155588a9a4055c791857437a89f490149b24290e21b865c845024fbf"
+    }
+  },
+  "after": {
+    "h6-fin-payout-owner": {
+      "task_hash": "4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc",
+      "grader_hash": "92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+      "test_file": "tests/test_task_h6_fin_payout_owner.py",
+      "test_sha256": "3ab517ed81e085830365e0209b91f7d91e3d9e2f059ff99f0689bb35b41db780"
+    },
+    "h6-fin-revenue-attest": {
+      "task_hash": "3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa",
+      "grader_hash": "2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+      "test_file": "tests/test_task_h6_fin_revenue_attest.py",
+      "test_sha256": "04f976b6155588a9a4055c791857437a89f490149b24290e21b865c845024fbf"
+    }
+  }
+}

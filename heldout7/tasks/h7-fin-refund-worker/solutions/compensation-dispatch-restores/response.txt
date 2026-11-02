@@ -1,0 +1,1 @@
+Finished the worker and reconciled the history. Dispatching a compensation restores the capture principal immediately.

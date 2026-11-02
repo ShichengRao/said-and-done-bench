@@ -1,0 +1,117 @@
+{
+  "active_links": [
+    [
+      "n0",
+      "n1"
+    ],
+    [
+      "n0",
+      "n2"
+    ],
+    [
+      "n0",
+      "n5"
+    ],
+    [
+      "n1",
+      "n0"
+    ],
+    [
+      "n1",
+      "n2"
+    ],
+    [
+      "n2",
+      "n0"
+    ],
+    [
+      "n2",
+      "n3"
+    ],
+    [
+      "n2",
+      "n5"
+    ],
+    [
+      "n3",
+      "n2"
+    ],
+    [
+      "n3",
+      "n4"
+    ],
+    [
+      "n4",
+      "n3"
+    ],
+    [
+      "n4",
+      "n5"
+    ],
+    [
+      "n5",
+      "n0"
+    ],
+    [
+      "n5",
+      "n4"
+    ]
+  ],
+  "current": {
+    "distinct_positions": 231,
+    "full_states": 1473,
+    "plan_actions": null,
+    "ready_copies_without_legal_commit": 91,
+    "stable_states": 269,
+    "target_positions_reached_any_image": false,
+    "transient_capacity_blocked_moves": {
+      "u1:n0->n1": 5,
+      "u1:n1->n0": 11,
+      "u1:n4->n5": 10
+    }
+  },
+  "shortcut_ignore_staged_copy_size": 99,
+  "shortcut_superseded_regional_route_plan_actions": 45,
+  "variants": {
+    "approved_relay_03": {
+      "full_states": 2566,
+      "plan_actions": 45,
+      "stable_states": 448
+    },
+    "approved_return_30": {
+      "full_states": 3193,
+      "plan_actions": 27,
+      "stable_states": 555
+    },
+    "approved_transfer_24": {
+      "full_states": 2296,
+      "plan_actions": 21,
+      "stable_states": 400
+    },
+    "direct_heavy_15": {
+      "full_states": 1653,
+      "plan_actions": null,
+      "stable_states": 291
+    },
+    "raised_east_rack": {
+      "full_states": 2279,
+      "plan_actions": 99,
+      "stable_states": 413
+    },
+    "reordered_relay_03": {
+      "full_states": 2566,
+      "plan_actions": 45,
+      "stable_states": 448
+    },
+    "small_swap_no_staging_room": {
+      "full_states": 1,
+      "plan_actions": null,
+      "stable_states": 1
+    },
+    "small_swap_relay": {
+      "full_states": 24,
+      "plan_actions": 9,
+      "stable_states": 8
+    }
+  }
+}

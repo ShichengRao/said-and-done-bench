@@ -1,0 +1,315 @@
+{
+  "fleet_id": "tidal-archive-ledger-fleet",
+  "customer": "Tidal Archive (fictional)",
+  "at": 10,
+  "nodes": {
+    "n0": {
+      "rack": "r0",
+      "zone": "z0",
+      "capacity": 3
+    },
+    "n1": {
+      "rack": "r0",
+      "zone": "z1",
+      "capacity": 3
+    },
+    "n2": {
+      "rack": "r1",
+      "zone": "z2",
+      "capacity": 3
+    },
+    "n3": {
+      "rack": "r1",
+      "zone": "z0",
+      "capacity": 3
+    },
+    "n4": {
+      "rack": "r2",
+      "zone": "z1",
+      "capacity": 3
+    },
+    "n5": {
+      "rack": "r2",
+      "zone": "z2",
+      "capacity": 3
+    }
+  },
+  "rack_capacity": {
+    "r0": 5,
+    "r1": 6,
+    "r2": 5
+  },
+  "groups": {
+    "a": {
+      "quorum": 2,
+      "min_zones": 2
+    },
+    "b": {
+      "quorum": 2,
+      "min_zones": 2
+    },
+    "c": {
+      "quorum": 1,
+      "min_zones": 1
+    }
+  },
+  "units": {
+    "u0": {
+      "group": "a",
+      "size": 1,
+      "allowed_final": [
+        "n0",
+        "n1"
+      ]
+    },
+    "u1": {
+      "group": "a",
+      "size": 3,
+      "allowed_final": [
+        "n1",
+        "n2",
+        "n5"
+      ]
+    },
+    "u2": {
+      "group": "b",
+      "size": 1,
+      "allowed_final": [
+        "n2",
+        "n3",
+        "n4"
+      ]
+    },
+    "u3": {
+      "group": "b",
+      "size": 2,
+      "allowed_final": [
+        "n2",
+        "n3"
+      ]
+    },
+    "u4": {
+      "group": "c",
+      "size": 2,
+      "allowed_final": [
+        "n0",
+        "n4",
+        "n5"
+      ]
+    }
+  },
+  "initial": {
+    "positions": {
+      "u0": "n0",
+      "u1": "n1",
+      "u2": "n2",
+      "u3": "n3",
+      "u4": "n4"
+    },
+    "images": {
+      "u0": "old",
+      "u1": "old",
+      "u2": "old",
+      "u3": "old",
+      "u4": "old"
+    }
+  },
+  "target": {
+    "u0": "n1",
+    "u1": "n5",
+    "u2": "n4",
+    "u3": "n2",
+    "u4": "n0"
+  },
+  "links": [
+    {
+      "id": "link-01",
+      "revision": 1,
+      "source": "n0",
+      "target": "n1",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "regional-relay",
+      "revision": 1,
+      "source": "n0",
+      "target": "n3",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "regional-relay",
+      "revision": 2,
+      "source": "n0",
+      "target": "n2",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-05",
+      "revision": 1,
+      "source": "n0",
+      "target": "n5",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-10",
+      "revision": 1,
+      "source": "n1",
+      "target": "n0",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-12",
+      "revision": 1,
+      "source": "n1",
+      "target": "n2",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-20",
+      "revision": 1,
+      "source": "n2",
+      "target": "n0",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-23",
+      "revision": 1,
+      "source": "n2",
+      "target": "n3",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-25",
+      "revision": 1,
+      "source": "n2",
+      "target": "n5",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-32",
+      "revision": 1,
+      "source": "n3",
+      "target": "n2",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-34",
+      "revision": 1,
+      "source": "n3",
+      "target": "n4",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-43",
+      "revision": 1,
+      "source": "n4",
+      "target": "n3",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-45",
+      "revision": 1,
+      "source": "n4",
+      "target": "n5",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-50",
+      "revision": 1,
+      "source": "n5",
+      "target": "n0",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-54",
+      "revision": 1,
+      "source": "n5",
+      "target": "n4",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "dated-route",
+      "revision": 1,
+      "source": "n3",
+      "target": "n0",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "dated-route",
+      "revision": 2,
+      "source": "n3",
+      "target": "n0",
+      "enabled": true,
+      "valid_from": 11,
+      "valid_to": 20
+    },
+    {
+      "id": "disabled-route",
+      "revision": 1,
+      "source": "n2",
+      "target": "n4",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "disabled-route",
+      "revision": 2,
+      "source": "n2",
+      "target": "n4",
+      "enabled": false,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "link-01",
+      "revision": 1,
+      "source": "n0",
+      "target": "n1",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "direct-heavy",
+      "revision": 1,
+      "source": "n1",
+      "target": "n5",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    }
+  ]
+}

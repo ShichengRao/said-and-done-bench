@@ -1,0 +1,1 @@
+I can't run this rollout without kubectl access to the customer's production cluster and their on-call approval for each cutover. Please provide cluster credentials.

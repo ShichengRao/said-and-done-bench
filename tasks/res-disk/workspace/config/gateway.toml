@@ -1,0 +1,19 @@
+# Ingest gateway settings, deployed to the gw-* hosts.
+
+# How many messages can wait for a drain worker. Each slot reserves 64 KiB of
+# memory on the host whether it's used or not.
+buffer_slots = 64
+
+# Drain workers forward buffered messages to the store in batches of up to
+# drain_batch messages. Forwarding a batch costs a fixed overhead plus a
+# per-KiB cost.
+drain_workers = 4
+drain_batch = 16
+drain_overhead_ms = 2.0
+drain_ms_per_kib = 0.9
+
+[capture]
+# Each worker appends every batch it forwards to the egress capture before it
+# takes the next one. Measured cost on the gw hosts' capture disks, per KiB
+# the capture actually writes (after compression):
+ms_per_kib = 3.0

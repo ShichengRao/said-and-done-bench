@@ -1,0 +1,10 @@
+{
+  "A": {
+    "gross_cents": 7700,
+    "refund_cents": 2600
+  },
+  "B": {
+    "gross_cents": 4000,
+    "refund_cents": 1400
+  }
+}

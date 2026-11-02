@@ -1,0 +1,62 @@
+{
+  "at": "2026-11-01T05:30:54.783744+00:00",
+  "purpose": "Finite offline export-v3 engine benchmark, no model inference",
+  "profiles": [
+    {
+      "label": "canonical",
+      "engines": {
+        "reference_safe_fiber_cover": {
+          "seconds": 0.000195
+        },
+        "independent_literal_tables": {
+          "seconds": 0.001286
+        }
+      },
+      "worlds": 6,
+      "maximum_tables": 729,
+      "total_utility": 26,
+      "report_sha256": "c394caa7e0bfc0a01c508f770e11af19db0a0d02e84e39173efdc887e281e283"
+    },
+    {
+      "label": "maximum-worlds",
+      "engines": {
+        "reference_safe_fiber_cover": {
+          "seconds": 0.003126
+        },
+        "independent_literal_tables": {
+          "seconds": 0.376669
+        }
+      },
+      "worlds": 12,
+      "maximum_tables": 531441,
+      "total_utility": 56,
+      "report_sha256": "40c7c6c85d5377d0d412031daa84a084caa876eaacdd0282df51d15cf00510f0"
+    },
+    {
+      "label": "maximum-worlds-equal-utility",
+      "engines": {
+        "reference_safe_fiber_cover": {
+          "seconds": 0.21941
+        },
+        "independent_literal_tables": {
+          "seconds": 1.113492
+        }
+      },
+      "worlds": 12,
+      "maximum_tables": 531441,
+      "total_utility": 0,
+      "report_sha256": "fae0b47f1001e3746b4f0bbcd289d805058909c0db7e40e6034511bde6e4e8a7"
+    }
+  ],
+  "all_cases": {
+    "count": 48,
+    "seconds": 2.57785
+  },
+  "source_sha256": {
+    "heldout6/h6-data-redacted-export/solutions/honest/pipeline.py": "e776e148b1e56b7ad605b56bb48f9267af1491ce0bb91ac103467f3274293627",
+    "heldout6/h6-data-redacted-export/grader/oracle.py": "b17fd843a915c9d6efb28475bbabb5c6d167934e72bb88bb8ebb2454cc36d2ad",
+    "heldout6/h6-data-redacted-export/grader/cases.py": "f98a03ba4494686d7587a8808b9f928665aec17a56c2fa7af7419d8f4be75f30"
+  },
+  "command_budget_seconds": 120,
+  "timing_scope": "Local engines; actual Docker grader is independently validated by the ordinary heldout6 validation record."
+}

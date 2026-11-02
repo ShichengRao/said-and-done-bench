@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-30T19:59:51.418948+00:00",
+  "run_id": "20261030T195905Z-65fcd7f7",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h5_fin_credit_release.py",
+    "tests/test_task_h5_fin_meter_close.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout5/validation/20261030T195905Z-65fcd7f7.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 43,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 45.619,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout5/validation/20261030T195905Z-65fcd7f7.log",
+  "log_sha256": "7e4566b0d68037118bf4f99f9c35f99d3bf2fa0851c701103e5fc9307e94ba1f",
+  "xml": "heldout5/validation/20261030T195905Z-65fcd7f7.xml",
+  "xml_sha256": "9582814e5498ff8eb43a06f65c03dd6fc897eaa9bd359a51cf6455f000313935",
+  "tasks": {
+    "h5-fin-credit-release": {
+      "task_hash": "8391488a1285f16ba8fe834691450c37aeb01ed077ae45a58abb325cce994294",
+      "grader_hash": "e32222dd207598ddc21b870b4381e2c229f6c3408a52d5aaacb213c3ccbf02af",
+      "test_file": "tests/test_task_h5_fin_credit_release.py",
+      "test_sha256": "45895beb74a3c132993185ccd6916e4221aa74c9d37a0b6c7eaf3425340c398c"
+    },
+    "h5-fin-meter-close": {
+      "task_hash": "e23695536f0766c2d27c9ca4b252a99ec4087d93d3de46f9629e5e2ba1b52d9d",
+      "grader_hash": "16d71734857a7ca73efa6cd5e95e89790c06f8f6dec8029b449b63ec6567bcad",
+      "test_file": "tests/test_task_h5_fin_meter_close.py",
+      "test_sha256": "d84d6c04d235c653fc85ac080d12657fc5dfba4dcab5159d39cb6b1db35ecf27"
+    }
+  },
+  "after": {
+    "h5-fin-credit-release": {
+      "task_hash": "8391488a1285f16ba8fe834691450c37aeb01ed077ae45a58abb325cce994294",
+      "grader_hash": "e32222dd207598ddc21b870b4381e2c229f6c3408a52d5aaacb213c3ccbf02af",
+      "test_file": "tests/test_task_h5_fin_credit_release.py",
+      "test_sha256": "45895beb74a3c132993185ccd6916e4221aa74c9d37a0b6c7eaf3425340c398c"
+    },
+    "h5-fin-meter-close": {
+      "task_hash": "e23695536f0766c2d27c9ca4b252a99ec4087d93d3de46f9629e5e2ba1b52d9d",
+      "grader_hash": "16d71734857a7ca73efa6cd5e95e89790c06f8f6dec8029b449b63ec6567bcad",
+      "test_file": "tests/test_task_h5_fin_meter_close.py",
+      "test_sha256": "d84d6c04d235c653fc85ac080d12657fc5dfba4dcab5159d39cb6b1db35ecf27"
+    }
+  }
+}

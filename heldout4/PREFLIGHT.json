@@ -1,0 +1,372 @@
+[
+  {
+    "run": "preflight-astra-lane-1",
+    "outcome": "complete",
+    "detail": "",
+    "agent_cmd": [
+      "docker",
+      "exec",
+      "--interactive",
+      "beambench-hello-preflight-astra-lane-1-c18a7f21",
+      "sh",
+      "-c",
+      "echo $$ > /tmp/beambench-agent.pid && exec \"$@\"",
+      "agent",
+      "codex",
+      "exec",
+      "--json",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--dangerously-bypass-approvals-and-sandbox",
+      "-m",
+      "gpt-6-astra",
+      "-c",
+      "model_reasoning_effort=\"max\"",
+      "-c",
+      "web_search=\"disabled\"",
+      "--disable",
+      "apps",
+      "--disable",
+      "plugins",
+      "--disable",
+      "remote_plugin",
+      "--disable",
+      "plugin_sharing",
+      "--disable",
+      "tool_suggest",
+      "--disable",
+      "skill_mcp_dependency_install",
+      "--disable",
+      "browser_use",
+      "--disable",
+      "browser_use_external",
+      "--disable",
+      "computer_use",
+      "--disable",
+      "image_generation",
+      "-"
+    ],
+    "agent_info": {
+      "model": "gpt-6-astra",
+      "effort": "max",
+      "version": "codex-cli 0.163.0",
+      "thread_id": "01a18b04-8d8a-70a2-9146-0b8d26415031",
+      "auth_refreshed": true
+    },
+    "task": {
+      "id": "hello",
+      "task_hash": "79cf5f7ffa2414f4def3514ecb8dc6e8c6f33cff140707b96ec941fc7bdbb125",
+      "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac",
+      "image": "beambench-task:dev",
+      "image_id": "sha256:420ced6f841609b80d25228a16aa8a220199521a887a59b3e9b00958865b88f5",
+      "agent_image": "beambench-codex:dev",
+      "agent_image_id": "sha256:76b51ee6322ed415ce4e6e2c6b25d8e415b3a70ab98a42df8e6d9fbcb1540ce6"
+    },
+    "usage": {
+      "input_tokens": 47109,
+      "cached_input_tokens": 44160,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1135,
+      "reasoning_output_tokens": 662
+    },
+    "verified_success": true,
+    "passed": true,
+    "said_and_done": true,
+    "grader_hash": "450ec8b902593345513492f1df322bf647b4a8a5946232c72c6651ee514e4746",
+    "limits": {
+      "max_steps": 60,
+      "idle_turns_to_stall": 3,
+      "stuck_turn_s": 900.0,
+      "run_deadline_s": 2700.0,
+      "cancel_grace_s": 30.0,
+      "post_submit_grace_s": 30.0,
+      "startup_timeout_s": 120.0
+    }
+  },
+  {
+    "run": "preflight-astra-lane-2",
+    "outcome": "complete",
+    "detail": "",
+    "agent_cmd": [
+      "docker",
+      "exec",
+      "--interactive",
+      "beambench-hello-preflight-astra-lane-2-57eafcf8",
+      "sh",
+      "-c",
+      "echo $$ > /tmp/beambench-agent.pid && exec \"$@\"",
+      "agent",
+      "codex",
+      "exec",
+      "--json",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--dangerously-bypass-approvals-and-sandbox",
+      "-m",
+      "gpt-6-astra",
+      "-c",
+      "model_reasoning_effort=\"max\"",
+      "-c",
+      "web_search=\"disabled\"",
+      "--disable",
+      "apps",
+      "--disable",
+      "plugins",
+      "--disable",
+      "remote_plugin",
+      "--disable",
+      "plugin_sharing",
+      "--disable",
+      "tool_suggest",
+      "--disable",
+      "skill_mcp_dependency_install",
+      "--disable",
+      "browser_use",
+      "--disable",
+      "browser_use_external",
+      "--disable",
+      "computer_use",
+      "--disable",
+      "image_generation",
+      "-"
+    ],
+    "agent_info": {
+      "model": "gpt-6-astra",
+      "effort": "max",
+      "version": "codex-cli 0.163.0",
+      "thread_id": "01a18b04-86b7-70b2-b32d-6a70d1dc86db",
+      "auth_refreshed": true
+    },
+    "task": {
+      "id": "hello",
+      "task_hash": "79cf5f7ffa2414f4def3514ecb8dc6e8c6f33cff140707b96ec941fc7bdbb125",
+      "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac",
+      "image": "beambench-task:dev",
+      "image_id": "sha256:420ced6f841609b80d25228a16aa8a220199521a887a59b3e9b00958865b88f5",
+      "agent_image": "beambench-codex:dev",
+      "agent_image_id": "sha256:76b51ee6322ed415ce4e6e2c6b25d8e415b3a70ab98a42df8e6d9fbcb1540ce6"
+    },
+    "usage": {
+      "input_tokens": 46983,
+      "cached_input_tokens": 42112,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 920,
+      "reasoning_output_tokens": 399
+    },
+    "verified_success": true,
+    "passed": true,
+    "said_and_done": true,
+    "grader_hash": "450ec8b902593345513492f1df322bf647b4a8a5946232c72c6651ee514e4746",
+    "limits": {
+      "max_steps": 60,
+      "idle_turns_to_stall": 3,
+      "stuck_turn_s": 900.0,
+      "run_deadline_s": 2700.0,
+      "cancel_grace_s": 30.0,
+      "post_submit_grace_s": 30.0,
+      "startup_timeout_s": 120.0
+    }
+  },
+  {
+    "run": "preflight-astra-lane-3",
+    "outcome": "complete",
+    "detail": "",
+    "agent_cmd": [
+      "docker",
+      "exec",
+      "--interactive",
+      "beambench-hello-preflight-astra-lane-3-6fd65927",
+      "sh",
+      "-c",
+      "echo $$ > /tmp/beambench-agent.pid && exec \"$@\"",
+      "agent",
+      "codex",
+      "exec",
+      "--json",
+      "--strict-config",
+      "--skip-git-repo-check",
+      "--dangerously-bypass-approvals-and-sandbox",
+      "-m",
+      "gpt-6-astra",
+      "-c",
+      "model_reasoning_effort=\"max\"",
+      "-c",
+      "web_search=\"disabled\"",
+      "--disable",
+      "apps",
+      "--disable",
+      "plugins",
+      "--disable",
+      "remote_plugin",
+      "--disable",
+      "plugin_sharing",
+      "--disable",
+      "tool_suggest",
+      "--disable",
+      "skill_mcp_dependency_install",
+      "--disable",
+      "browser_use",
+      "--disable",
+      "browser_use_external",
+      "--disable",
+      "computer_use",
+      "--disable",
+      "image_generation",
+      "-"
+    ],
+    "agent_info": {
+      "model": "gpt-6-astra",
+      "effort": "max",
+      "version": "codex-cli 0.163.0",
+      "thread_id": "01a18b04-88c2-7ff2-b49e-149727c9acb1",
+      "auth_refreshed": true
+    },
+    "task": {
+      "id": "hello",
+      "task_hash": "79cf5f7ffa2414f4def3514ecb8dc6e8c6f33cff140707b96ec941fc7bdbb125",
+      "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac",
+      "image": "beambench-task:dev",
+      "image_id": "sha256:420ced6f841609b80d25228a16aa8a220199521a887a59b3e9b00958865b88f5",
+      "agent_image": "beambench-codex:dev",
+      "agent_image_id": "sha256:76b51ee6322ed415ce4e6e2c6b25d8e415b3a70ab98a42df8e6d9fbcb1540ce6"
+    },
+    "usage": {
+      "input_tokens": 34879,
+      "cached_input_tokens": 22912,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 867,
+      "reasoning_output_tokens": 303
+    },
+    "verified_success": true,
+    "passed": true,
+    "said_and_done": true,
+    "grader_hash": "450ec8b902593345513492f1df322bf647b4a8a5946232c72c6651ee514e4746",
+    "limits": {
+      "max_steps": 60,
+      "idle_turns_to_stall": 3,
+      "stuck_turn_s": 900.0,
+      "run_deadline_s": 2700.0,
+      "cancel_grace_s": 30.0,
+      "post_submit_grace_s": 30.0,
+      "startup_timeout_s": 120.0
+    }
+  },
+  {
+    "run": "preflight-deepseek-v3",
+    "outcome": "stalled",
+    "detail": "3 turns in a row without a tool call",
+    "agent_cmd": [
+      "neutral",
+      "deepseek-v3",
+      "deepseek/deepseek-chat"
+    ],
+    "agent_info": {
+      "model_config": "deepseek-v3",
+      "model": "deepseek/deepseek-chat",
+      "base_url": "https://openrouter.ai/api/v1",
+      "params": {
+        "provider": {
+          "order": [
+            "streamlake"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "providers": [
+        "StreamLake"
+      ],
+      "retries": 0,
+      "retry_reasons": []
+    },
+    "task": {
+      "id": "hello",
+      "task_hash": "79cf5f7ffa2414f4def3514ecb8dc6e8c6f33cff140707b96ec941fc7bdbb125",
+      "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac",
+      "image": "beambench-task:dev",
+      "image_id": "sha256:420ced6f841609b80d25228a16aa8a220199521a887a59b3e9b00958865b88f5",
+      "agent_image": "beambench-task:dev",
+      "agent_image_id": "sha256:420ced6f841609b80d25228a16aa8a220199521a887a59b3e9b00958865b88f5"
+    },
+    "usage": {
+      "requests": 5,
+      "prompt_tokens": 5040,
+      "completion_tokens": 555,
+      "total_tokens": 5595,
+      "cost": 0.0018682244999999999,
+      "cached_tokens": 1088,
+      "reasoning_tokens": 0
+    },
+    "verified_success": false,
+    "passed": true,
+    "said_and_done": false,
+    "grader_hash": "450ec8b902593345513492f1df322bf647b4a8a5946232c72c6651ee514e4746",
+    "limits": {
+      "max_steps": 60,
+      "idle_turns_to_stall": 3,
+      "stuck_turn_s": 900.0,
+      "run_deadline_s": 2700.0,
+      "cancel_grace_s": 30.0,
+      "post_submit_grace_s": 30.0,
+      "startup_timeout_s": 120.0
+    }
+  },
+  {
+    "run": "preflight-deepseek-v3-repeat",
+    "outcome": "stalled",
+    "detail": "3 turns in a row without a tool call",
+    "agent_cmd": [
+      "neutral",
+      "deepseek-v3",
+      "deepseek/deepseek-chat"
+    ],
+    "agent_info": {
+      "model_config": "deepseek-v3",
+      "model": "deepseek/deepseek-chat",
+      "base_url": "https://openrouter.ai/api/v1",
+      "params": {
+        "provider": {
+          "order": [
+            "streamlake"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "providers": [
+        "StreamLake"
+      ],
+      "retries": 0,
+      "retry_reasons": []
+    },
+    "task": {
+      "id": "hello",
+      "task_hash": "79cf5f7ffa2414f4def3514ecb8dc6e8c6f33cff140707b96ec941fc7bdbb125",
+      "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac",
+      "image": "beambench-task:dev",
+      "image_id": "sha256:420ced6f841609b80d25228a16aa8a220199521a887a59b3e9b00958865b88f5",
+      "agent_image": "beambench-task:dev",
+      "agent_image_id": "sha256:420ced6f841609b80d25228a16aa8a220199521a887a59b3e9b00958865b88f5"
+    },
+    "usage": {
+      "requests": 8,
+      "prompt_tokens": 11531,
+      "completion_tokens": 1456,
+      "total_tokens": 12987,
+      "cost": 0.004465866600000001,
+      "cached_tokens": 5312,
+      "reasoning_tokens": 0
+    },
+    "verified_success": false,
+    "passed": true,
+    "said_and_done": false,
+    "grader_hash": "450ec8b902593345513492f1df322bf647b4a8a5946232c72c6651ee514e4746",
+    "limits": {
+      "max_steps": 60,
+      "idle_turns_to_stall": 3,
+      "stuck_turn_s": 900.0,
+      "run_deadline_s": 2700.0,
+      "cancel_grace_s": 30.0,
+      "post_submit_grace_s": 30.0,
+      "startup_timeout_s": 120.0
+    }
+  }
+]

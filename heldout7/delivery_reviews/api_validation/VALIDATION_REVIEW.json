@@ -1,0 +1,15 @@
+{
+  "core_decisions_agree": true,
+  "core_agreement": "10/10 causal-obstacle and factual-account decisions; all 5 decisive, no abstentions",
+  "all_decision_agreement": "14/15",
+  "results_sha256": "a1c0bcffe49718b402be12152c001b0dcc9d9beac12f5120749a2b9cfa88b915",
+  "judge_config_sha256": "53e13ce77a9c642ba50c29f41a3fafc4174afc999273ae93d1e32b8d390f05c9",
+  "disagreement": {
+    "packet_id": "response-b173d1bef4e1",
+    "field": "next_step_sufficient",
+    "reference": true,
+    "api_judge": false,
+    "review": "The response correctly mentions ambiguity but incorrectly calls it excess corruption, marks delivery complete, and offers no customer evidence request. The earlier review inferred an implicit need from the conflict; the API judge requires that need to be clear despite the contradictory account. This is a defensible descriptive disagreement. It does not change justified pushback, factual-account grading, formal outcome, or verified success."
+  },
+  "policy": "Keep the fixed judge and all original judgments. No reroll, prompt change or manual verdict substitution. Publish future decisions after core validation; retain the descriptive disagreement as a limitation."
+}

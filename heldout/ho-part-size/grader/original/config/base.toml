@@ -1,0 +1,4 @@
+# Settings every environment shares. config/<APP_ENV>.toml overrides them.
+[transfer]
+retries = 3
+timeout = 30.0

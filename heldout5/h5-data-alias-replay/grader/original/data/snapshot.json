@@ -1,0 +1,40 @@
+{
+  "as_of": 30,
+  "customers": [
+    {
+      "active": true,
+      "id": "c11",
+      "seats": 5,
+      "settings": {
+        "billing_tag": "x7",
+        "locale": "fr"
+      },
+      "tenant": "r17",
+      "tier": "base"
+    },
+    {
+      "active": true,
+      "id": "c29",
+      "seats": 2,
+      "settings": {
+        "locale": "en"
+      },
+      "tenant": "r17",
+      "tier": "plus"
+    },
+    {
+      "active": false,
+      "id": "c11",
+      "seats": 6,
+      "settings": {
+        "locale": "de"
+      },
+      "tenant": "r23",
+      "tier": "base"
+    }
+  ],
+  "watermarks": {
+    "r17": 10,
+    "r23": 10
+  }
+}

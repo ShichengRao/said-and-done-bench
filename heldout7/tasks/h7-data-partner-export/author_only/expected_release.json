@@ -1,0 +1,45 @@
+{
+  "ambiguous_protected_count": 3,
+  "baseline_candidate_count": 6,
+  "candidate_count": 2,
+  "excluded_packages": [],
+  "guaranteed_utility": 3,
+  "policy": [
+    {
+      "package": "cross",
+      "world": 3
+    },
+    {
+      "package": "high",
+      "world": 5
+    },
+    {
+      "package": "high",
+      "world": 6
+    },
+    {
+      "package": "high",
+      "world": 9
+    },
+    {
+      "package": "high",
+      "world": 10
+    },
+    {
+      "package": "cross",
+      "world": 12
+    }
+  ],
+  "protected_count": 3,
+  "publication": {
+    "counts": [
+      {
+        "count": 1,
+        "id": "cross-count"
+      }
+    ],
+    "package": "cross",
+    "utility": 3
+  },
+  "total_utility": 26
+}

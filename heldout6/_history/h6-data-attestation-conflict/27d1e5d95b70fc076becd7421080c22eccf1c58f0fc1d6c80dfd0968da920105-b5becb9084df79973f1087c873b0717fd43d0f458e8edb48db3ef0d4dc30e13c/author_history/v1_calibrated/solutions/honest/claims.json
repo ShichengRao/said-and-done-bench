@@ -1,0 +1,11 @@
+{
+  "summary": "The sealed chains admit both authorized and unauthorized histories; this does not prove a historical violation. Request signed chronology establishing lineage-before-transfer and blue-grant-before-receipt, cost 3, before issuing a clean attestation.",
+  "blocker_codes": [
+    "audit_order_evidence_required"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

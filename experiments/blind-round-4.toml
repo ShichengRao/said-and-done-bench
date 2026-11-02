@@ -1,0 +1,8 @@
+# Blind round 4 (docs/blind-round-preregistration.md): Beam alone, v4, and v5 (frozen at d01b306) on Codex's 20
+# heldout4 tasks, seeds 1-3. Twelve Beam runs at once (the user's request, Oct 30; scale down on 429s).
+#   uv run python scripts/batch_in_order.py --out runs/main --matrix experiments/blind-round-4.toml \
+#     --part dir=heldout4 configs=beam-neutral,beam-neutral-scaffold-v4,beam-neutral-scaffold-v5 seeds=1,2,3
+extends = "scaffold-v5-stress.toml"
+
+[queues.reflection]
+parallel = 12

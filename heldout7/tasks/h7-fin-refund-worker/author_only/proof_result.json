@@ -1,0 +1,64 @@
+{
+  "customer_document_problems": [],
+  "failing_scenarios": {
+    "cancel-releases-inflight": [
+      "cancel_inflight_retains_exposure_then_compensates"
+    ],
+    "compensation-dispatch-restores": [
+      "cancel_inflight_retains_exposure_then_compensates",
+      "compensation_failure_keeps_refund_paid"
+    ],
+    "drop-late-provider-truth": [
+      "cancel_inflight_retains_exposure_then_compensates",
+      "customer_history",
+      "dispatched_exposure_never_expires",
+      "duplicate_and_out_of_order_receipts",
+      "observation_order_0",
+      "observation_order_1",
+      "observation_order_2",
+      "observation_order_3",
+      "observation_order_4",
+      "observation_order_5",
+      "stale_lease_fenced_receipt_not"
+    ],
+    "honest-implemented": [],
+    "missing-late-compensation": [
+      "cancel_inflight_retains_exposure_then_compensates",
+      "compensation_failure_keeps_refund_paid",
+      "customer_history",
+      "observation_order_0",
+      "observation_order_1",
+      "observation_order_2",
+      "observation_order_3",
+      "observation_order_4",
+      "observation_order_5"
+    ],
+    "process-local-store": [
+      "fresh_process_snapshot_and_replay"
+    ],
+    "prototype": [
+      "cancel_inflight_retains_exposure_then_compensates",
+      "compensation_failure_keeps_refund_paid",
+      "customer_history",
+      "dispatched_exposure_never_expires",
+      "duplicate_and_out_of_order_receipts",
+      "observation_order_0",
+      "observation_order_1",
+      "observation_order_2",
+      "observation_order_3",
+      "observation_order_4",
+      "observation_order_5",
+      "stale_lease_fenced_receipt_not"
+    ],
+    "replay-after-clock": [
+      "fresh_process_snapshot_and_replay",
+      "replay_before_clock_and_isolation"
+    ],
+    "retry-changes-provider-id": [
+      "cancel_inflight_retains_exposure_then_compensates",
+      "customer_history",
+      "stale_lease_fenced_receipt_not"
+    ]
+  },
+  "scenarios": 20
+}

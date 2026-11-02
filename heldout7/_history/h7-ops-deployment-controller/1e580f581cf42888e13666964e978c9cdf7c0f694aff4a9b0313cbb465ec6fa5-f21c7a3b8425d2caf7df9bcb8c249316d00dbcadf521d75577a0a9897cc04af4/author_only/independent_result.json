@@ -1,0 +1,171 @@
+{
+  "customer": {
+    "dispatches": 10,
+    "final_version": 21,
+    "installs": 1,
+    "nominal_schedules": 44,
+    "placement": {
+      "api": "edge-c",
+      "billing": "edge-x",
+      "checkout": "edge-d",
+      "dispatcher": "edge-b"
+    },
+    "rejected": 2,
+    "robust_first_moves": [
+      [
+        "billing",
+        "edge-x"
+      ],
+      [
+        "checkout",
+        "edge-y"
+      ]
+    ],
+    "robust_spines": 10
+  },
+  "empty_rollout": {
+    "dispatches": 1,
+    "installs": 1,
+    "rejected": 0
+  },
+  "fenced_epoch_requires_drained_handoffs": {
+    "dispatches": 2,
+    "installs": 2,
+    "rejected": 1
+  },
+  "generated_routes_00": {
+    "dispatches": 0,
+    "installs": 0,
+    "rejected": 1
+  },
+  "generated_routes_01": {
+    "dispatches": 8,
+    "installs": 1,
+    "rejected": 0
+  },
+  "generated_routes_02": {
+    "dispatches": 8,
+    "installs": 1,
+    "rejected": 0
+  },
+  "generated_routes_03": {
+    "dispatches": 0,
+    "installs": 0,
+    "rejected": 1
+  },
+  "generated_routes_04": {
+    "dispatches": 8,
+    "installs": 1,
+    "rejected": 0
+  },
+  "generated_routes_05": {
+    "dispatches": 0,
+    "installs": 0,
+    "rejected": 1
+  },
+  "generated_routes_06": {
+    "dispatches": 0,
+    "installs": 0,
+    "rejected": 1
+  },
+  "generated_routes_07": {
+    "dispatches": 8,
+    "installs": 1,
+    "rejected": 0
+  },
+  "generated_routes_08": {
+    "dispatches": 8,
+    "installs": 1,
+    "rejected": 0
+  },
+  "generated_routes_09": {
+    "dispatches": 0,
+    "installs": 0,
+    "rejected": 1
+  },
+  "generated_routes_10": {
+    "dispatches": 8,
+    "installs": 1,
+    "rejected": 0
+  },
+  "generated_routes_11": {
+    "dispatches": 0,
+    "installs": 0,
+    "rejected": 1
+  },
+  "global_replay_across_epochs": {
+    "dispatches": 0,
+    "installs": 3,
+    "rejected": 0
+  },
+  "initial_outcomes_FS": {
+    "dispatches": 8,
+    "installs": 1,
+    "rejected": 0
+  },
+  "initial_outcomes_SF": {
+    "dispatches": 8,
+    "installs": 1,
+    "rejected": 0
+  },
+  "initial_outcomes_SS": {
+    "dispatches": 5,
+    "installs": 1,
+    "rejected": 0
+  },
+  "invalid_or_unwinnable_installs": {
+    "dispatches": 0,
+    "installs": 1,
+    "rejected": 5
+  },
+  "later_failure_covered": {
+    "dispatches": 8,
+    "installs": 1,
+    "rejected": 0
+  },
+  "relabelled_family_0": {
+    "dispatches": 9,
+    "installs": 1,
+    "rejected": 0
+  },
+  "relabelled_family_1": {
+    "dispatches": 9,
+    "installs": 1,
+    "rejected": 0
+  },
+  "relabelled_family_2": {
+    "dispatches": 9,
+    "installs": 1,
+    "rejected": 0
+  },
+  "relabelled_family_3": {
+    "dispatches": 7,
+    "installs": 1,
+    "rejected": 0
+  },
+  "relabelled_family_4": {
+    "dispatches": 5,
+    "installs": 1,
+    "rejected": 0
+  },
+  "relabelled_family_5": {
+    "dispatches": 6,
+    "installs": 1,
+    "rejected": 0
+  },
+  "relabelled_family_6": {
+    "dispatches": 2,
+    "installs": 1,
+    "rejected": 0
+  },
+  "replay_binding": {
+    "dispatches": 2,
+    "installs": 1,
+    "rejected": 3
+  },
+  "whole_batch_rejections": {
+    "dispatches": 2,
+    "installs": 1,
+    "rejected": 2
+  }
+}

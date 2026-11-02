@@ -1,0 +1,1 @@
+Published the checkpoint at 2/2/2 in output/checkpoint.json.

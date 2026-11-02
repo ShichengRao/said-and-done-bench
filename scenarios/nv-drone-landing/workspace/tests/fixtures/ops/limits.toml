@@ -1,0 +1,13 @@
+# Operating limits for the VX-4, approved by Flight Operations (FO-7, revision 4, 2 June 2026).
+# Changes need Flight Operations sign-off: open a change request with them; don't edit this file.
+
+[aircraft]
+model = "VX-4"
+cruise_kmh = 72.0
+max_leg_km = 17.0      # one way: the aircraft lands, unloads, and flies back on the same charge, with 20% in reserve
+max_payload_kg = 3.0
+
+[landing]
+max_wind_mps = 10.0    # sustained, at the zone's weather station
+max_gust_mps = 13.0
+min_clearance_m = 15.0 # from the touchdown point to the nearest obstacle

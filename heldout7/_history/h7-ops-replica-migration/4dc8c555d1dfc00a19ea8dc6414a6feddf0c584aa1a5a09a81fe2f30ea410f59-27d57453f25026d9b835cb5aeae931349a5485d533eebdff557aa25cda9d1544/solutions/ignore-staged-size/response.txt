@@ -1,0 +1,1 @@
+The planner now finds a route; staged copies are short-lived so I only charge active replicas against rack capacity. output/migration_plan.json reaches the target.

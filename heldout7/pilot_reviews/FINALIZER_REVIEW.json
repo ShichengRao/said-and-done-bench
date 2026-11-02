@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "scope": "Post-run review binding and evidence preservation only",
+  "reviewer": "readiness_review",
+  "reviewed_sha256": "7ca2ab7341643d4112e26481c44dcda922fa89015c0edb8cbb688abf04ea7f35",
+  "current_sha256": "7ca2ab7341643d4112e26481c44dcda922fa89015c0edb8cbb688abf04ea7f35",
+  "validation": {
+    "tests": 13,
+    "failures": 0,
+    "log": "heldout7/validation/finalize-reviews.log",
+    "log_sha256": "a015a63f4cf5259eaa3bb7e60983effd6ef64f648fc5bab9c9ae6ba0c1191660",
+    "xml": "heldout7/validation/finalize-reviews.xml",
+    "xml_sha256": "b7dd6573876e1eb8be3b4d77a41d80a9d3adbbb97989a0d68a775d3b4aee034c"
+  }
+}

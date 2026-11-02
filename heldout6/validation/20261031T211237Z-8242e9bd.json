@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-31T21:13:01.973387+00:00",
+  "run_id": "20261031T211237Z-8242e9bd",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_data_region_placement.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261031T211237Z-8242e9bd.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 24.328,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261031T211237Z-8242e9bd.log",
+  "log_sha256": "db850f1142f3834fb532f0156a2d729a6d0816be00490fc9aed2431f03d45ca9",
+  "xml": "heldout6/validation/20261031T211237Z-8242e9bd.xml",
+  "xml_sha256": "e54222a21d47c108e71366fce3d89944ccc694cb0247b27c6b6ca04a33894f2e",
+  "tasks": {
+    "h6-data-region-placement": {
+      "task_hash": "782ff7a145fa0370e74ec669b0c20933e56a8d8d81f7752f8cc912cba89d09d4",
+      "grader_hash": "4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+      "test_file": "tests/test_task_h6_data_region_placement.py",
+      "test_sha256": "9e5febc706a54c5e4bbd587fecd472196c6e8a97086b700d46f6b68b359fc657"
+    }
+  },
+  "after": {
+    "h6-data-region-placement": {
+      "task_hash": "782ff7a145fa0370e74ec669b0c20933e56a8d8d81f7752f8cc912cba89d09d4",
+      "grader_hash": "4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+      "test_file": "tests/test_task_h6_data_region_placement.py",
+      "test_sha256": "9e5febc706a54c5e4bbd587fecd472196c6e8a97086b700d46f6b68b359fc657"
+    }
+  }
+}

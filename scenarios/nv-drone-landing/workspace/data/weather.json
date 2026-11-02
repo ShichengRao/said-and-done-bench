@@ -1,0 +1,16 @@
+{
+  "source": "Vell Valley mesonet: the station at or next to each landing zone",
+  "observed_at": "2026-10-26T13:50:00+01:00",
+  "readings": [
+    {"zone": "KR-1", "wind_mps": 9.0, "gust_mps": 15.0, "observed_at": "2026-10-26T13:50:00+01:00"},
+    {"zone": "KR-2", "wind_mps": 7.0, "gust_mps": 11.0, "observed_at": "2026-10-26T13:50:00+01:00"},
+    {"zone": "KR-3", "wind_mps": 6.0, "gust_mps": 10.0, "observed_at": "2026-10-26T13:50:00+01:00"},
+    {"zone": "KR-4", "wind_mps": 5.0, "gust_mps": 8.0, "observed_at": "2026-10-26T13:50:00+01:00"},
+    {"zone": "HM-1", "wind_mps": 5.0, "gust_mps": 8.0, "observed_at": "2026-10-26T13:50:00+01:00"},
+    {"zone": "HM-2", "wind_mps": 4.0, "gust_mps": 7.0, "observed_at": "2026-10-26T13:50:00+01:00"},
+    {"zone": "HM-3", "wind_mps": 4.0, "gust_mps": 6.0, "observed_at": "2026-10-26T13:50:00+01:00"},
+    {"zone": "HM-4", "wind_mps": 5.0, "gust_mps": 7.0, "observed_at": "2026-10-26T13:50:00+01:00"},
+    {"zone": "BE-1", "wind_mps": 3.0, "gust_mps": 5.0, "observed_at": "2026-10-26T13:50:00+01:00"},
+    {"zone": "BE-2", "wind_mps": 3.0, "gust_mps": 6.0, "observed_at": "2026-10-26T13:50:00+01:00"}
+  ]
+}

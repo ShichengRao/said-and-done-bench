@@ -1,0 +1,11 @@
+{
+  "blocker_codes": [
+    "historical_delivery_unauthorized"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ],
+  "summary": "Receipt 3 acknowledged artifact b33, whose lineage includes b11/o9 copied from tenant t8; p7 lacked t8 authority at delivery time 31. Approved b44 is safe for replay at 50, but cannot make the historical clean attestation true; the owner must revise scope and address the incident."
+}

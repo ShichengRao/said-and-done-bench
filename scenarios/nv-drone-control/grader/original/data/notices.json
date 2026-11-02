@@ -1,0 +1,8 @@
+{
+  "source": "Vell Valley airspace and site notices (closures and temporary obstacles at landing zones)",
+  "fetched_at": "2026-10-27T09:55:00+01:00",
+  "notices": [
+    {"id": "N-121", "zone": "KR-3", "kind": "obstacle", "starts": "2026-10-27T07:00:00+01:00", "ends": "2026-10-27T18:00:00+01:00", "text": "mobile crane, 32 m, for roof works at the co-op", "clearance_m": 9},
+    {"id": "N-131", "zone": "HM-2", "kind": "closure", "starts": "2026-10-27T09:00:00+01:00", "ends": "2026-10-27T12:00:00+01:00", "text": "Harlow Mill youth football tournament; pitches in use"}
+  ]
+}

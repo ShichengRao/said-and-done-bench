@@ -1,0 +1,42 @@
+[
+  {
+    "at": 0,
+    "group": "g:r1",
+    "member": "u:p7",
+    "op": "add",
+    "seq": 1,
+    "tenant": "t8"
+  },
+  {
+    "at": 0,
+    "group": "g:r2",
+    "member": "g:r1",
+    "op": "add",
+    "seq": 2,
+    "tenant": "t8"
+  },
+  {
+    "at": 12,
+    "group": "g:r4",
+    "member": "u:p7",
+    "op": "add",
+    "seq": 3,
+    "tenant": "t8"
+  },
+  {
+    "at": 25,
+    "group": "g:r2",
+    "member": "g:r1",
+    "op": "remove",
+    "seq": 4,
+    "tenant": "t8"
+  },
+  {
+    "at": 26,
+    "group": "g:r2",
+    "member": "g:r4",
+    "op": "add",
+    "seq": 5,
+    "tenant": "t8"
+  }
+]

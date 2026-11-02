@@ -1,0 +1,1 @@
+Fixed policy selection; the migration rewrites R1 and R2 for a cost of 6.

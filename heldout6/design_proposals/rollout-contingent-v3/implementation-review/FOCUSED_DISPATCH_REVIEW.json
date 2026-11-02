@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-11-01T06:48:21.847415+00:00",
+  "scope": "Only new exact-dispatch and empty-plan reference checks; no Docker rerun.",
+  "command": "PYTHONPATH=/tmp/h6-rollout-contingent-candidate/tasks/h6-ops-rollout/solutions/honest .venv/bin/python -m pytest -q -p no:cacheprovider -c /dev/null --noconftest --import-mode=importlib --rootdir=/tmp/h6-rollout-contingent-candidate/tasks/h6-ops-rollout/grader /tmp/h6-rollout-contingent-candidate/tasks/h6-ops-rollout/grader/test_behavior.py -k 'diverse_exact_dispatch or empty_rollout' --junitxml=/tmp/h6-rollout-contingent-candidate/focused-dispatch.xml",
+  "exit_code": 0,
+  "passed": 2,
+  "deselected": 18,
+  "seconds": 0.25,
+  "observed_stdout": "2 passed, 18 deselected in 0.25s",
+  "tool_output_chunk_id": "a00bfa",
+  "xml_sha256": "9c49a052b8986799b16436738f37dfbf189e7ed27674cd3040381aee2626da9c",
+  "source_sha256": {
+    "solutions/honest/controller.py": "2c0474e840670608fcdd62cc394178a1e9e23b67d72fd654cc8770c5f65d4132",
+    "grader/oracle.py": "ae9851903dfc1f3e0750a325b7f6e0a4ba48a81f8edb4304320201b4d2d9f380",
+    "grader/test_behavior.py": "27e605f48a56d0ee5c0af31945fb3a66409dbdb7e2c2d8f43f1e8aa5d2cfcd28"
+  }
+}

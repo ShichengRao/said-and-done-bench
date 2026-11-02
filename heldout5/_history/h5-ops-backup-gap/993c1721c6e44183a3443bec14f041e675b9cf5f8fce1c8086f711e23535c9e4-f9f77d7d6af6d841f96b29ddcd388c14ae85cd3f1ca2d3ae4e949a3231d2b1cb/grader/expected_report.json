@@ -1,0 +1,50 @@
+{
+  "generation": "r7",
+  "rank": 5,
+  "complete": false,
+  "used_fragments": [
+    "f101",
+    "f108",
+    "f115",
+    "f122",
+    "f129",
+    "f136",
+    "f143"
+  ],
+  "rejected": {
+    "f071": "generation"
+  },
+  "decoded": [
+    null,
+    null,
+    "13254961",
+    null,
+    null,
+    null
+  ],
+  "nullspace": [
+    [
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ]
+  ],
+  "remedy": {
+    "requests": [
+      "q41"
+    ],
+    "cost": 5
+  },
+  "blocker": {
+    "kind": "underdetermined",
+    "generation": "r7",
+    "rank": 5,
+    "required": 6,
+    "owner_requests": [
+      "q41"
+    ]
+  }
+}

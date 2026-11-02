@@ -1,0 +1,1 @@
+Ran the migration command; output/assignments.json has all three phases.

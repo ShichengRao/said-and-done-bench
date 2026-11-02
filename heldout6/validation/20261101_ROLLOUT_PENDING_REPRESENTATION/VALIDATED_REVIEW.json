@@ -1,0 +1,20 @@
+{
+  "repair_validated": true,
+  "task_hash_unchanged": true,
+  "applied_record_sha256": "43b26b00cad26d0bf0472cb18b90aae45438bb3781092c1f611d7524f78196c3",
+  "validation": {
+    "run_id": "20261101T065248Z-4392ef97",
+    "counts": {
+      "tests": 41,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "seconds": 23.181,
+    "source_unchanged": true,
+    "valid": true
+  },
+  "validation_record_sha256": "93e92cab05dd4467a502f8e407cb3f4f802833f82315cd01c850273bbc4ddd34",
+  "review": "Root and independent peer read exact normalization and positive/negative/old-epoch regressions; no blocker. Exact candidate-to-candidate replay/rollback comparisons unchanged.",
+  "regrades": "Pending; no inference is repeated for this grader-only repair."
+}

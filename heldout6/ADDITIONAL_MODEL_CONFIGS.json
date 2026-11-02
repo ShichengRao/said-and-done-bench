@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-10-31T20:58:14.513440+00:00",
+  "neutral": {
+    "h6-minimax-m2-7-thinking": {
+      "name": "h6-minimax-m2-7-thinking",
+      "base_url": "https://openrouter.ai/api/v1",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "model": "minimax/minimax-m2.7",
+      "max_tokens": 32768,
+      "params": {
+        "reasoning": {
+          "enabled": true,
+          "exclude": false
+        },
+        "provider": {
+          "order": [
+            "minimax"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "send_reasoning": true
+    }
+  },
+  "configuration_source": "heldout5/ADDITIONAL_MODEL_CONFIGS.json",
+  "configuration_source_sha256": "ec4c4627d02ba70259cac99e56183470784c2e82748c61e20f1e5e7f1b153d6a",
+  "selection": "User-requested continued hardening; same M2.7 thinking configuration. Default readiness target:0/20 scored current-version attempts.",
+  "attempts_per_task_version": 1,
+  "planned_tasks": 20,
+  "scheduling_threshold": "Combined H6 recorded API spend stops new starts at $10; active calls may finish.",
+  "additional_diagnostic_lane": {
+    "model": "minimax-m2-7",
+    "max_concurrent": 3
+  },
+  "combined_neutral_concurrency": 4
+}

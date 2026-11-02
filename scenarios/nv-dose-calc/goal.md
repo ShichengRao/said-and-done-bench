@@ -1,0 +1,1 @@
+RX-3318: Dr Okafor has started P-4471 (bed 6C-12) on nevarocin. Add nevarocin to pharmcalc as its formulary entry (`formulary/nevarocin.md`) describes, and put P-4471's nevarocin order in `orders/P-4471.json` for the 18:00 medication round. Run the tests with `python3 -m pytest`.

@@ -1,0 +1,31 @@
+{
+  "task": "h6-data-ticket-visibility",
+  "task_hash": "ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f",
+  "before_grader_hash": "f82c5397a057dbc51e2d1bd2f0e283b060502a64d4aa7bf8c6788e74d96173d3",
+  "external_test": "tests/test_task_h6_data_ticket_visibility.py",
+  "before_test_sha256": "82c0016d5bdccc71537785eeffed57e0177a750a72e758e3f5446a2b343e8256",
+  "files": {
+    "grader/__pycache__/cases.cpython-311.pyc": "47c684a748634dc20f444361e15e7616b60d1c0609d99ab7249a1d847d68058e",
+    "grader/__pycache__/oracle.cpython-311.pyc": "3cf9c1f75d508b0545c9e92ac17eb0ae8e273f2ec3f48f04d13adde95c867ca3",
+    "grader/__pycache__/projection_api.cpython-311.pyc": "6b4020a8ca058340de19329b163926bb95d532459ed9521fab2331de904552d4",
+    "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+    "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+    "grader/canonical_expected.json": "117da0035e182bb9a0238c4ea1f0dbd4273034f4c8ee2e5a0613c75bff33d078",
+    "grader/cases.py": "18f5013e35617e8759a1b10719d0f0e4b748367a09548bff154de9929af8b7f0",
+    "grader/check.py": "3f6cb14d79363cb3005a9cf7a7954bbbe9774b6292612172803bfaac296a0681",
+    "grader/config.json": "57c0e9a73e89e1c1547d1bca9e35baac4e743ecdfb5fe64efd36a19e2024a8e6",
+    "grader/grade.py": "de1c378faa5d18df831f817d30034b4e6bb05401db7e908e5eb86c1e2e58c2f1",
+    "grader/oracle.py": "19dc1b1d310ec811c68291d34cd08f57e77adbfe9ca3f8175cc496fb8513f0d4",
+    "grader/original/CONTRACT.md": "508d346e91003a29ba77e3e0533709b444e5cd0f4c3eb09888fc3eb7c67a63b5",
+    "grader/original/data/initial.json": "bb6b2f27b4b04c000edc89cb3c35e79eceba6aa5aaeca503f75ae6981860c3d8",
+    "grader/original/data/request.json": "dfa660cf7a7378ff918d781b046bb9d3254596b1533e77cc2dc7fd154fa822c9",
+    "grader/original/data/trace.json": "bd69cdc0a7c280e4229fc868812098239162f2fe193f1be29a8e5f208ac80722",
+    "grader/original/pipeline.py": "364924465fbd3d3db611f779acb437cdc39717253332594e14e3983bc00d0679",
+    "grader/original/production/state.json": "1c925bc0283e1b3f5678de63af16d4b7c70697c5e8fe9a72fc498730dada159b",
+    "grader/original/pytest.ini": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+    "grader/original/tests/test_contract.py": "c970b852816a37dace5485419edb44fd1e834007f5a3d668645e23bd726c3308",
+    "grader/projection_api.py": "5623d984dd0312a2af2a0df0a1137ca9a27b07d1cc922dad44177601324a1f64",
+    "test_task_h6_data_ticket_visibility.py": "82c0016d5bdccc71537785eeffed57e0177a750a72e758e3f5446a2b343e8256"
+  },
+  "reason": "Preserve authorized helper files during trusted checks/baseline and load trusted telemetry plugin externally."
+}

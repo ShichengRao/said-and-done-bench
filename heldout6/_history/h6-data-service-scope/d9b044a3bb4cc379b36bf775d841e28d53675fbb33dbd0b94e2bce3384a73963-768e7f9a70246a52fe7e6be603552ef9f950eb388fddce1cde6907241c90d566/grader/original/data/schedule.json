@@ -1,0 +1,346 @@
+{
+  "slots": [
+    0,
+    1
+  ],
+  "workers": {
+    "0": 2,
+    "1": 2
+  },
+  "budgets": {
+    "root": 4,
+    "pool0": 1,
+    "pool1": 1,
+    "pool2": 1,
+    "pool3": 1,
+    "pool4": 1,
+    "pool5": 1,
+    "pool6": 1,
+    "pool7": 1
+  },
+  "credentials": [
+    {
+      "id": "root",
+      "parent": null,
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "root"
+    },
+    {
+      "id": "archive-0-0",
+      "parent": "root",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool0"
+    },
+    {
+      "id": "archive-0-1",
+      "parent": "archive-0-0",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool7"
+    },
+    {
+      "id": "archive-1-0",
+      "parent": "root",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool5"
+    },
+    {
+      "id": "archive-1-1",
+      "parent": "archive-1-0",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool6"
+    },
+    {
+      "id": "crm-0-0",
+      "parent": "root",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool1"
+    },
+    {
+      "id": "crm-0-1",
+      "parent": "crm-0-0",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool2"
+    },
+    {
+      "id": "crm-1-0",
+      "parent": "root",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool3"
+    },
+    {
+      "id": "crm-1-1",
+      "parent": "crm-1-0",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool4"
+    },
+    {
+      "id": "search-0-0",
+      "parent": "root",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool0"
+    },
+    {
+      "id": "search-0-1",
+      "parent": "search-0-0",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool1"
+    },
+    {
+      "id": "search-1-0",
+      "parent": "root",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool6"
+    },
+    {
+      "id": "search-1-1",
+      "parent": "search-1-0",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool7"
+    },
+    {
+      "id": "tickets-0-0",
+      "parent": "root",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool2"
+    },
+    {
+      "id": "tickets-0-1",
+      "parent": "tickets-0-0",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool3"
+    },
+    {
+      "id": "tickets-1-0",
+      "parent": "root",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool4"
+    },
+    {
+      "id": "tickets-1-1",
+      "parent": "tickets-1-0",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 2,
+      "pool": "pool5"
+    }
+  ],
+  "requests": [
+    {
+      "id": "archive",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "units": 1,
+      "duration": 1,
+      "earliest": 0,
+      "latest": 2,
+      "leaves": [
+        "archive-0-1",
+        "archive-1-1"
+      ]
+    },
+    {
+      "id": "crm",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "units": 1,
+      "duration": 1,
+      "earliest": 0,
+      "latest": 2,
+      "leaves": [
+        "crm-0-1",
+        "crm-1-1"
+      ]
+    },
+    {
+      "id": "search",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "units": 1,
+      "duration": 1,
+      "earliest": 0,
+      "latest": 2,
+      "leaves": [
+        "search-0-1",
+        "search-1-1"
+      ]
+    },
+    {
+      "id": "tickets",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "units": 1,
+      "duration": 1,
+      "earliest": 0,
+      "latest": 2,
+      "leaves": [
+        "tickets-0-1",
+        "tickets-1-1"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "archive-0",
+      "request": "archive",
+      "credentials": [
+        "root",
+        "archive-0-0",
+        "archive-0-1"
+      ]
+    },
+    {
+      "id": "archive-1",
+      "request": "archive",
+      "credentials": [
+        "root",
+        "archive-1-0",
+        "archive-1-1"
+      ]
+    },
+    {
+      "id": "crm-0",
+      "request": "crm",
+      "credentials": [
+        "root",
+        "crm-0-0",
+        "crm-0-1"
+      ]
+    },
+    {
+      "id": "crm-1",
+      "request": "crm",
+      "credentials": [
+        "root",
+        "crm-1-0",
+        "crm-1-1"
+      ]
+    },
+    {
+      "id": "search-0",
+      "request": "search",
+      "credentials": [
+        "root",
+        "search-0-0",
+        "search-0-1"
+      ]
+    },
+    {
+      "id": "search-1",
+      "request": "search",
+      "credentials": [
+        "root",
+        "search-1-0",
+        "search-1-1"
+      ]
+    },
+    {
+      "id": "tickets-0",
+      "request": "tickets",
+      "credentials": [
+        "root",
+        "tickets-0-0",
+        "tickets-0-1"
+      ]
+    },
+    {
+      "id": "tickets-1",
+      "request": "tickets",
+      "credentials": [
+        "root",
+        "tickets-1-0",
+        "tickets-1-1"
+      ]
+    }
+  ]
+}

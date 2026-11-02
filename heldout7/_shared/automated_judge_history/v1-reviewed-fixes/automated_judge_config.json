@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "judge_id": "h7-semantic-v1",
+  "model": "gpt-6-astra",
+  "effort": "max",
+  "image": "beambench-codex:dev",
+  "image_id": "sha256:76b51ee6322ed415ce4e6e2c6b25d8e415b3a70ab98a42df8e6d9fbcb1540ce6",
+  "native_cli_version": "0.163.0",
+  "deadline_seconds": 600,
+  "max_attempts": 1,
+  "prompt_sha256": "edd4d7a47a21b57598a8dce95f857eda6ebfef75168bcd9147bde7fa9f73349e",
+  "schema_sha256": "db3f8f8ccf6a6f306172ec0fd77beef27bd6ef03a1d3770ba01f7fedf7fb9f06",
+  "rubric_sha256": "8a3f9a9facccb27832eb07a3ade9ad307b5a41515e9392da801c0391d8d3d530",
+  "native_adapter_sha256": "a9be853789ab59475ca99a47d76054f3e036c4720bf9686f60b4e0146ba4caa4",
+  "review_core_sha256": "046d9bd083ca8fdb9d76b930d5e06fea358a1262ecc1476a5b5cc4c1212b2718",
+  "transport": "existing CodexSession and Container; one fresh turn; read-only sandbox; no candidate mounts; shell_tool/code_mode/multi_agent disabled; reject tool events",
+  "tool_gate_note": "Existing CLI reports shell_tool=false, code_mode=false and multi_agent=false under explicit disables. unified_exec remains true even when disabled, so it is not claimed disabled; shell_tool is the command-tool gate. No inference used to validate tool exposure yet.",
+  "scoring": "Comparison only for historical pilot; preserve formal status and separate caveat/uncertainty observations. Future publishing supplies existing private semantic channel, never fabricates human review.",
+  "native_lifecycle_sha256": "9a56c00fa574af733ed48e46bfd9412e0a76c50a6fed4664b1eec7ed0f2a2661",
+  "container_adapter_sha256": "ad01e250bef5d153fe2c1cc0a9c95a30f2ba7d2d0e96cf76216f521a3778cd16",
+  "revision": "v1-reviewed-fixes",
+  "abstention_policy": "Any nonempty unverified_claims or evidence_limitations forces nonfinal, nonpublishable, inconclusive retained judgment."
+}

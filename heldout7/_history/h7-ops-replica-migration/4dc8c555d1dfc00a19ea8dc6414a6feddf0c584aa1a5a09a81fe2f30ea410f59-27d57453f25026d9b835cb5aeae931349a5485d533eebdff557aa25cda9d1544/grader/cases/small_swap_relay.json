@@ -1,0 +1,100 @@
+{
+  "fleet_id": "small-swap",
+  "customer": "fictional",
+  "at": 3,
+  "nodes": {
+    "a": {
+      "rack": "r0",
+      "zone": "z0",
+      "capacity": 2
+    },
+    "b": {
+      "rack": "r0",
+      "zone": "z1",
+      "capacity": 2
+    },
+    "c": {
+      "rack": "r1",
+      "zone": "z2",
+      "capacity": 2
+    }
+  },
+  "rack_capacity": {
+    "r0": 4,
+    "r1": 2
+  },
+  "groups": {
+    "g": {
+      "quorum": 2,
+      "min_zones": 2
+    }
+  },
+  "units": {
+    "p": {
+      "group": "g",
+      "size": 2,
+      "allowed_final": [
+        "b"
+      ]
+    },
+    "q": {
+      "group": "g",
+      "size": 1,
+      "allowed_final": [
+        "a"
+      ]
+    }
+  },
+  "initial": {
+    "positions": {
+      "p": "a",
+      "q": "b"
+    },
+    "images": {
+      "p": "old",
+      "q": "old"
+    }
+  },
+  "target": {
+    "p": "b",
+    "q": "a"
+  },
+  "links": [
+    {
+      "id": "ac",
+      "revision": 1,
+      "source": "a",
+      "target": "c",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "cb",
+      "revision": 1,
+      "source": "c",
+      "target": "b",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "ba",
+      "revision": 1,
+      "source": "b",
+      "target": "a",
+      "enabled": true,
+      "valid_from": 0,
+      "valid_to": 20
+    },
+    {
+      "id": "ab",
+      "revision": 1,
+      "source": "a",
+      "target": "b",
+      "enabled": false,
+      "valid_from": 0,
+      "valid_to": 20
+    }
+  ]
+}

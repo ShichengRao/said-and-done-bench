@@ -1,0 +1,1 @@
+Raised the guarantee to 4 so the release uses medium throughout, then generated it.

@@ -1,0 +1,11 @@
+# Parameters for protocols/destination.md (Corran County EMS medical director, revision 7, 1 March 2026).
+# Only the medical director's office changes these.
+
+[stroke]
+lams_lvo_threshold = 4          # rule 1: a LAMS of 4 or more suggests a large vessel occlusion
+lvo_window_h = 24               # rule 1: last known well within this many hours
+thrombectomy_max_drive_min = 60 # rule 1
+stroke_centre_max_drive_min = 30 # rule 2
+
+[general]
+ed_max_drive_min = 45

@@ -1,0 +1,321 @@
+{
+  "as_of": 20,
+  "period": 2,
+  "requested_period_cents": 161,
+  "terms": [
+    {
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "id": "A",
+      "effective_period": 1,
+      "price_cents": 90,
+      "required_units": 5
+    },
+    {
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "id": "C",
+      "effective_period": 1,
+      "price_cents": 89,
+      "required_units": 6
+    },
+    {
+      "revision": 3,
+      "known": 18,
+      "signed": false,
+      "void": false,
+      "id": "A",
+      "effective_period": 2,
+      "price_cents": 90,
+      "required_units": 5
+    },
+    {
+      "revision": 2,
+      "known": 13,
+      "signed": true,
+      "void": false,
+      "id": "B",
+      "effective_period": 2,
+      "price_cents": 131,
+      "required_units": 6
+    },
+    {
+      "revision": 4,
+      "known": 19,
+      "signed": true,
+      "void": false,
+      "id": "B",
+      "effective_period": 3,
+      "price_cents": 122,
+      "required_units": 6
+    },
+    {
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "id": "B",
+      "effective_period": 1,
+      "price_cents": 122,
+      "required_units": 6
+    },
+    {
+      "revision": 2,
+      "known": 11,
+      "signed": true,
+      "void": false,
+      "id": "A",
+      "effective_period": 2,
+      "price_cents": 97,
+      "required_units": 5
+    },
+    {
+      "revision": 4,
+      "known": 19,
+      "signed": true,
+      "void": false,
+      "id": "A",
+      "effective_period": 3,
+      "price_cents": 90,
+      "required_units": 5
+    },
+    {
+      "revision": 3,
+      "known": 18,
+      "signed": false,
+      "void": false,
+      "id": "B",
+      "effective_period": 2,
+      "price_cents": 122,
+      "required_units": 6
+    },
+    {
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "id": "A",
+      "effective_period": 1,
+      "price_cents": 90,
+      "required_units": 5
+    }
+  ],
+  "receipts": [
+    {
+      "revision": 1,
+      "known": 2,
+      "signed": true,
+      "void": false,
+      "id": "H1",
+      "period": 1,
+      "units": 2,
+      "eligible": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "revision": 1,
+      "known": 9,
+      "signed": true,
+      "void": false,
+      "id": "N1",
+      "period": 2,
+      "units": 2,
+      "eligible": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "revision": 1,
+      "known": 9,
+      "signed": true,
+      "void": false,
+      "id": "N3",
+      "period": 2,
+      "units": 2,
+      "eligible": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "revision": 1,
+      "known": 9,
+      "signed": true,
+      "void": false,
+      "id": "N5",
+      "period": 2,
+      "units": 1,
+      "eligible": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "revision": 1,
+      "known": 2,
+      "signed": true,
+      "void": false,
+      "id": "H2",
+      "period": 1,
+      "units": 1,
+      "eligible": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "revision": 1,
+      "known": 9,
+      "signed": true,
+      "void": false,
+      "id": "N2",
+      "period": 2,
+      "units": 1,
+      "eligible": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "revision": 1,
+      "known": 9,
+      "signed": true,
+      "void": false,
+      "id": "N4",
+      "period": 2,
+      "units": 1,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "revision": 1,
+      "known": 9,
+      "signed": true,
+      "void": false,
+      "id": "N6",
+      "period": 2,
+      "units": 2,
+      "eligible": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "revision": 1,
+      "known": 2,
+      "signed": true,
+      "void": false,
+      "id": "H1",
+      "period": 1,
+      "units": 2,
+      "eligible": [
+        "A",
+        "B"
+      ]
+    }
+  ],
+  "postings": [
+    {
+      "revision": 1,
+      "known": 5,
+      "signed": true,
+      "void": false,
+      "id": "J1",
+      "period": 1,
+      "receipt": "H1",
+      "obligation": "A",
+      "units": 2,
+      "booked_cents": 36
+    },
+    {
+      "revision": 1,
+      "known": 5,
+      "signed": true,
+      "void": false,
+      "id": "J2",
+      "period": 1,
+      "receipt": "H2",
+      "obligation": "B",
+      "units": 1,
+      "booked_cents": 20
+    },
+    {
+      "revision": 2,
+      "known": 18,
+      "signed": false,
+      "void": true,
+      "id": "J1",
+      "period": 1,
+      "receipt": "H1",
+      "obligation": "A",
+      "units": 2,
+      "booked_cents": 36
+    },
+    {
+      "revision": 2,
+      "known": 18,
+      "signed": false,
+      "void": true,
+      "id": "J2",
+      "period": 1,
+      "receipt": "H2",
+      "obligation": "B",
+      "units": 1,
+      "booked_cents": 20
+    },
+    {
+      "revision": 1,
+      "known": 5,
+      "signed": true,
+      "void": false,
+      "id": "J1",
+      "period": 1,
+      "receipt": "H1",
+      "obligation": "A",
+      "units": 2,
+      "booked_cents": 36
+    }
+  ],
+  "proposals": [
+    {
+      "id": "A-price",
+      "cost": 1,
+      "terms": [
+        {
+          "id": "A",
+          "price_cents": 90,
+          "required_units": 5
+        }
+      ],
+      "requested_period_cents": null
+    },
+    {
+      "id": "B-price",
+      "cost": 1,
+      "terms": [
+        {
+          "id": "B",
+          "price_cents": 122,
+          "required_units": 6
+        }
+      ],
+      "requested_period_cents": null
+    },
+    {
+      "id": "correct-ticket",
+      "cost": 2,
+      "terms": [],
+      "requested_period_cents": 162
+    }
+  ]
+}

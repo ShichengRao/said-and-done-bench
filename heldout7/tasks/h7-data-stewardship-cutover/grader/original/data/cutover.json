@@ -1,0 +1,10 @@
+{
+  "cutover": "AR-STEWARD-2026Q4",
+  "customer": "Aster Relay",
+  "phases": [
+    "freeze",
+    "dual-run",
+    "final"
+  ],
+  "approval_cutoff": 10
+}

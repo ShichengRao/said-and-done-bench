@@ -1,0 +1,140 @@
+{
+ "source": "Halvard network model (GIS export)",
+ "segments": [
+  {
+   "id": "F11-A",
+   "feeder": "F-11",
+   "kind": "cable",
+   "ratings": {
+    "summer": {
+     "normal": 400,
+     "emergency": 480
+    },
+    "winter": {
+     "normal": 460,
+     "emergency": 540
+    }
+   }
+  },
+  {
+   "id": "F11-B",
+   "feeder": "F-11",
+   "kind": "overhead",
+   "ratings": {
+    "summer": {
+     "normal": 300,
+     "emergency": 360
+    },
+    "winter": {
+     "normal": 350,
+     "emergency": 410
+    }
+   }
+  },
+  {
+   "id": "F12-S1",
+   "feeder": "F-12",
+   "kind": "cable",
+   "ratings": {
+    "summer": {
+     "normal": 400,
+     "emergency": 480
+    },
+    "winter": {
+     "normal": 460,
+     "emergency": 540
+    }
+   }
+  },
+  {
+   "id": "F12-S2",
+   "feeder": "F-12",
+   "kind": "cable",
+   "ratings": {
+    "summer": {
+     "normal": 300,
+     "emergency": 360
+    },
+    "winter": {
+     "normal": 345,
+     "emergency": 400
+    }
+   }
+  },
+  {
+   "id": "F12-S3",
+   "feeder": "F-12",
+   "kind": "overhead",
+   "ratings": {
+    "summer": {
+     "normal": 250,
+     "emergency": 300
+    },
+    "winter": {
+     "normal": 290,
+     "emergency": 340
+    }
+   }
+  },
+  {
+   "id": "F14-A",
+   "feeder": "F-14",
+   "kind": "cable",
+   "ratings": {
+    "summer": {
+     "normal": 500,
+     "emergency": 600
+    },
+    "winter": {
+     "normal": 575,
+     "emergency": 670
+    }
+   }
+  },
+  {
+   "id": "F14-C",
+   "feeder": "F-14",
+   "kind": "cable",
+   "ratings": {
+    "summer": {
+     "normal": 300,
+     "emergency": 345
+    },
+    "winter": {
+     "normal": 345,
+     "emergency": 400
+    }
+   }
+  },
+  {
+   "id": "F20-A",
+   "feeder": "F-20",
+   "kind": "cable",
+   "ratings": {
+    "summer": {
+     "normal": 600,
+     "emergency": 720
+    },
+    "winter": {
+     "normal": 690,
+     "emergency": 800
+    }
+   }
+  },
+  {
+   "id": "F20-B",
+   "feeder": "F-20",
+   "kind": "overhead",
+   "ratings": {
+    "summer": {
+     "normal": 360,
+     "emergency": 400
+    },
+    "winter": {
+     "normal": 410,
+     "emergency": 470
+    }
+   }
+  }
+ ]
+}

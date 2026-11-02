@@ -1,0 +1,137 @@
+{
+  "documents": {
+    "account": {
+      "owner": "alpha",
+      "version": 0
+    }
+  },
+  "slots": {
+    "root": {
+      "generation": 0,
+      "node": "root0"
+    },
+    "leaf": {
+      "generation": 0,
+      "node": "leaf0"
+    }
+  },
+  "capabilities": [
+    {
+      "id": "root0",
+      "slot": "root",
+      "parent": null,
+      "owner": "alpha",
+      "issuer": "alpha",
+      "audience": "broker",
+      "delegate": true
+    },
+    {
+      "id": "leaf0",
+      "slot": "leaf",
+      "parent": "root0",
+      "owner": "alpha",
+      "issuer": "broker",
+      "audience": "auditors",
+      "delegate": false
+    }
+  ],
+  "streams": [
+    [
+      {
+        "id": "a1",
+        "kind": "revoke",
+        "slot": "leaf",
+        "expected": 0,
+        "observed": false
+      },
+      {
+        "id": "a2",
+        "kind": "owner_cas",
+        "document": "account",
+        "expected": 0,
+        "owner": "beta",
+        "observed": true
+      },
+      {
+        "id": "a3",
+        "kind": "owner_cas",
+        "document": "account",
+        "expected": 1,
+        "owner": "alpha",
+        "observed": true
+      }
+    ],
+    [
+      {
+        "id": "b1",
+        "kind": "copy",
+        "source": {
+          "kind": "document",
+          "id": "account"
+        },
+        "slot": "leaf"
+      },
+      {
+        "id": "b2",
+        "kind": "owner_cas",
+        "document": "account",
+        "expected": 1,
+        "owner": "gamma",
+        "observed": false
+      },
+      {
+        "id": "b3",
+        "kind": "copy",
+        "source": {
+          "kind": "copy",
+          "id": "b1"
+        }
+      },
+      {
+        "id": "b4",
+        "kind": "receipt",
+        "copy": "b3",
+        "audience": "auditors"
+      }
+    ],
+    [
+      {
+        "id": "c1",
+        "kind": "revoke",
+        "slot": "root",
+        "expected": 0,
+        "observed": true
+      },
+      {
+        "id": "c2",
+        "kind": "grant",
+        "expected": 1,
+        "observed": true,
+        "slot": "root",
+        "parent": null,
+        "owner": "alpha",
+        "issuer": "alpha",
+        "audience": "broker",
+        "delegate": true
+      },
+      {
+        "id": "c3",
+        "kind": "grant",
+        "expected": 0,
+        "observed": true,
+        "slot": "leaf",
+        "parent": "c2",
+        "owner": "alpha",
+        "issuer": "broker",
+        "audience": "auditors",
+        "delegate": false
+      }
+    ]
+  ],
+  "before": [
+    [
+      "c2",
+      "b4"
+    ]
+  ]
+}

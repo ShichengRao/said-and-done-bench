@@ -1,0 +1,1 @@
+Implement config includes in confkit as described in `ISSUES/CONF-19.md`. `tests/test_include.py` has a first few tests for it, which fail now; add tests for the parts of the issue they don't cover yet. Run the tests with `python3 -m pytest`.

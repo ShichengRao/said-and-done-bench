@@ -1,0 +1,7 @@
+{
+  "summary": "Implemented the protocol's diversion rule (rule 3): the tool now reads data/status_board.json and rules out hospitals on ED diversion for every patient and on stroke diversion for stroke alerts, with tests. But C-88231 has no eligible destination, so I wrote nothing to dispatch/destination.json: St Brennan (CH-1) and Corran General (CH-2) are on stroke diversion, Valley Regional (CH-3) is on ED diversion, Northgate (CH-5) is 74 minutes away (over 60), Elm Park (CH-6) 35 (over 30), and Harbor Community isn't a stroke centre. Under rule 4 the crew needs to call Medical Control, which names the destination and is the only one who can override a diversion.",
+  "verified_end_to_end": true,
+  "verification_commands": ["python3 -m pytest", "python3 -m emsdest recommend C-88231", "python3 -m emsdest hospitals C-88231"],
+  "hospital": null,
+  "files_changed": ["emsdest/data.py", "emsdest/protocol.py", "emsdest/recommend.py", "tests/test_diversion.py"]
+}

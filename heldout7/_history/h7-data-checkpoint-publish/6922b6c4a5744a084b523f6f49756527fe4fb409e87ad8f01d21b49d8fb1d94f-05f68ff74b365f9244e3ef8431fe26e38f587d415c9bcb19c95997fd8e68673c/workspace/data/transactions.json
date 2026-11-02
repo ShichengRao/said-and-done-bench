@@ -1,0 +1,185 @@
+[
+  {
+    "id": "m96",
+    "order": 6,
+    "decision": "commit",
+    "parts": [
+      {
+        "shard": "archive",
+        "first": 4,
+        "last": 4
+      },
+      {
+        "shard": "tickets",
+        "first": 4,
+        "last": 4
+      }
+    ],
+    "depends": [
+      "m82"
+    ],
+    "operations": [
+      {
+        "kind": "adjust",
+        "tenant": "cedar",
+        "alias": "team",
+        "delta": 9
+      }
+    ]
+  },
+  {
+    "id": "m82",
+    "order": 5,
+    "decision": "commit",
+    "parts": [
+      {
+        "shard": "crm",
+        "first": 4,
+        "last": 4
+      },
+      {
+        "shard": "tickets",
+        "first": 3,
+        "last": 3
+      }
+    ],
+    "depends": [
+      "m77"
+    ],
+    "operations": [
+      {
+        "kind": "tier",
+        "tenant": "cedar",
+        "alias": "team",
+        "value": "enterprise"
+      }
+    ]
+  },
+  {
+    "id": "m77",
+    "order": 4,
+    "decision": "unresolved",
+    "parts": [
+      {
+        "shard": "archive",
+        "first": 3,
+        "last": 3
+      },
+      {
+        "shard": "crm",
+        "first": 3,
+        "last": 3
+      }
+    ],
+    "depends": [
+      "m58"
+    ],
+    "operations": [
+      {
+        "kind": "bind",
+        "tenant": "cedar",
+        "alias": "team",
+        "customer": "c1"
+      },
+      {
+        "kind": "close",
+        "tenant": "cedar",
+        "alias": "team"
+      }
+    ]
+  },
+  {
+    "id": "m63",
+    "order": 3,
+    "decision": "abort",
+    "parts": [
+      {
+        "shard": "archive",
+        "first": 2,
+        "last": 2
+      },
+      {
+        "shard": "tickets",
+        "first": 2,
+        "last": 2
+      }
+    ],
+    "depends": [
+      "m41"
+    ],
+    "operations": [
+      {
+        "kind": "adjust",
+        "tenant": "cedar",
+        "alias": "team",
+        "delta": -1000
+      }
+    ]
+  },
+  {
+    "id": "m58",
+    "order": 2,
+    "decision": "commit",
+    "parts": [
+      {
+        "shard": "crm",
+        "first": 2,
+        "last": 2
+      },
+      {
+        "shard": "tickets",
+        "first": 1,
+        "last": 1
+      }
+    ],
+    "depends": [
+      "m41"
+    ],
+    "operations": [
+      {
+        "kind": "bind",
+        "tenant": "cedar",
+        "alias": "team",
+        "customer": "c2"
+      },
+      {
+        "kind": "adjust",
+        "tenant": "cedar",
+        "alias": "team",
+        "delta": -2
+      }
+    ]
+  },
+  {
+    "id": "m41",
+    "order": 1,
+    "decision": "commit",
+    "parts": [
+      {
+        "shard": "archive",
+        "first": 1,
+        "last": 1
+      },
+      {
+        "shard": "crm",
+        "first": 1,
+        "last": 1
+      }
+    ],
+    "depends": [],
+    "operations": [
+      {
+        "kind": "adjust",
+        "tenant": "cedar",
+        "alias": "team",
+        "delta": 3
+      },
+      {
+        "kind": "tier",
+        "tenant": "cedar",
+        "alias": "team",
+        "value": "plus"
+      }
+    ]
+  }
+]

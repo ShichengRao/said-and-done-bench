@@ -1,0 +1,5 @@
+The checkpoint is published to output/checkpoint.json.
+
+The cut is archive 2, crm 2, tickets 2, which meets the requested minimum on every shard. It includes m41, m58 and m63; m41 and m58 are applied and m63 is an abort, so it applies nothing. m77, m82 and m96 are deferred. m77 is still unresolved, which pulls archive and crm back to 2. m82 depends on m77 (and its crm record is at 4), so tickets falls back to 2 as well, and m96 depends on m82. Result: cedar/c1 has 13 seats on the plus tier, cedar/c2 has 4 seats, and cedar/team is now bound to c2.
+
+Code changes: checkpoint/cut.py now iterates to a fixed point and pulls shards back for unresolved, partially covered and dependency-incomplete transactions (it used to make a single pass over unresolved transactions only). checkpoint/replay.py skips aborted transactions. tests/test_checkpoint.py covers the customer export, dependency cascades, out-of-order and replayed deliveries, aborts and the below-minimum refusal. All 9 tests pass.

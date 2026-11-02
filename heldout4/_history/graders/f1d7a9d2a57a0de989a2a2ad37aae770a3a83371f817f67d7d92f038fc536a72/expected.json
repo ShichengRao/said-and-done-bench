@@ -1,0 +1,38 @@
+{
+  "audit": {
+    "period": "2026-09",
+    "recognized_cents": 165920,
+    "target_cents": 220000,
+    "shortfall_cents": 54080,
+    "meets_target": false,
+    "contributing_journals": [
+      "A091",
+      "J001",
+      "J002",
+      "J003",
+      "J004",
+      "J005",
+      "J006",
+      "J007",
+      "J009",
+      "J010",
+      "J011",
+      "J012",
+      "J013",
+      "J014",
+      "J015",
+      "J016",
+      "J017",
+      "J018"
+    ],
+    "excluded_journals": {
+      "J008": "canceled",
+      "O001": "other_period",
+      "X001": "other_currency"
+    }
+  },
+  "obstacle": {
+    "observed_cents": 165920,
+    "required_cents": 220000
+  }
+}

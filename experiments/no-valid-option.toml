@@ -1,0 +1,108 @@
+# "No valid option" (scenarios/, the family `no-valid-option` in beambench/batch.py): every main-matrix config
+# (the Opus brain from Oct 28), plus the two calibration anchors, on the 8 scenarios, seeds 1-2. The runs go in
+# runs/main beside the 15 tasks; the report shows them in their own section, never in the headline numbers.
+#
+# The configs are matrix.toml's, unchanged but for Kimi K3's endpoint (below). Each paid config gets a queue of
+# its own here (a cell's fingerprint doesn't include its queue), because a queue's max_cost_usd counts every run
+# in the batch folder that drew on it, and the main matrix's queues already hold its spending: these caps count
+# only the scenario runs.
+# Caps (user's approval, Oct 26): OpenRouter $30 in all, Anthropic $15; the OpenRouter caps were rebalanced as
+# queues finished. GLM runs on Hugging Face credits, which report no cost, so its cap can't bind; it's about
+# $0.10 a run.
+#
+# Beam's three configs keep the reflection queue (one run at a time, Beam's daily allowance), and run in the
+# one Reflection batch, scenario cells first (scripts/batch_in_order.py). The peers:
+#   uv run python -m beambench batch --out runs/main --matrix experiments/no-valid-option.toml \
+#     --configs claude-opus-5-5,gemini-4-argon,glm-5-2,deepseek-v4-1-flash,nemotron-3-ultra,inkling,qwen3-8-open,kimi-k3,deepseek-v3,gpt-6-astra
+extends = "../matrix.toml"
+seeds = [1, 2]
+tasks = ["no-valid-option"]
+
+[queues.nv-anthropic]  # Opus alone, Claude Code on the API key.
+max_cost_usd = 15.0
+parallel = 2
+
+[queues.nv-gemini]  # Done Oct 26: 16 runs, $2.48.
+max_cost_usd = 2.5
+parallel = 2
+
+# DeepSeek V4.1 Flash, Nemotron 3 Ultra, Inkling. First $7 (it stopped at $8.01: its estimate of the next
+# run's cost mixes cheap DeepSeek runs with Inkling's, about $0.50 at the step cap), then $12 with Gemini's
+# unused share, then $9.6 (Oct 26, 22:30 UTC) to make room for Kimi, with 3 runs left.
+[queues.nv-openrouter]
+max_cost_usd = 9.6
+parallel = 3
+
+[queues.nv-qwen-open]  # Done Oct 26: 16 runs, $3.85.
+max_cost_usd = 3.9
+parallel = 2
+
+# Kimi K3 on its new endpoint (kimi-k3-moonshot in models.toml), about $0.40-0.85 a run. Its first scenario run
+# (on the old endpoint, $0.84) wasn't counted against this cap (its record had no usage), so the caps here sum
+# to $29.1: $30 less that run, rounded down.
+[queues.nv-kimi]
+max_cost_usd = 13.0
+parallel = 2
+
+[queues.nv-anchor]  # DeepSeek V3, on OpenRouter (StreamLake). Done Oct 26: 16 runs, $0.07.
+max_cost_usd = 0.1
+
+[queues.nv-huggingface]  # GLM 5.2.
+max_cost_usd = 5.0
+parallel = 2
+
+[queues.nv-codex]  # GPT-6 Astra on the ChatGPT subscription: one run at a time (shared sign-in).
+
+[configs.claude-opus-5-5]
+queue = "nv-anthropic"
+
+[configs.gemini-4-argon]
+queue = "nv-gemini"
+
+[configs.glm-5-2]
+queue = "nv-huggingface"
+
+[configs.deepseek-v4-1-flash]
+queue = "nv-openrouter"
+
+[configs.nemotron-3-ultra]
+queue = "nv-openrouter"
+
+[configs.inkling]
+queue = "nv-openrouter"
+
+[configs.qwen3-8-open]
+queue = "nv-qwen-open"
+
+# OpenRouter dropped the endpoint tag the main column pinned (see models.toml): the scenarios run on Moonshot's
+# endpoint under its new tag, so this is the one config here whose model entry differs from matrix.toml's.
+[configs.kimi-k3]
+queue = "nv-kimi"
+model_config = "kimi-k3-moonshot"
+
+# The calibration anchors (as in the report's preview matrix): outside the main matrix, which never runs them on
+# the 15 tasks; their runs there come from the re-calibration.
+[configs.deepseek-v3]
+agent = "neutral"
+model_config = "deepseek-v3"
+queue = "nv-anchor"
+label = "DeepSeek V3 (Dec 2024, calibration anchor)"
+group = "anchor"
+
+[configs.gpt-6-astra]
+agent = "codex"
+model = "gpt-6-astra"
+effort = "max"
+queue = "nv-codex"
+label = "GPT-6 Astra (Codex, calibration anchor)"
+group = "anchor"
+
+# The Opus brain, added Oct 28 so that every configuration runs every task (the user's decision; spend confirmed
+# by the user before it ran). About $1.59 a run, its median on the 15 tasks, so 16 runs is about $25. Its worker
+# is Beam on Reflection, so its runs also hold the reflection queue (also_uses, from matrix.toml) and run in the
+# one Reflection batch.
+[queues.nv-anthropic-brain]
+max_cost_usd = 27.0
+
+[configs.opus-brain-beam-worker]
+queue = "nv-anthropic-brain"

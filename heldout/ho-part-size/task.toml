@@ -1,0 +1,19 @@
+id = "ho-part-size"
+family = "heldout-trap"
+# A requirement a config file in the repo silently overrides. The part size
+# looks like one constant, shipper/defaults.py's PART_SIZE (8 MiB), and the
+# tests only ever load dev settings, so setting it to 5 MiB passes them. But
+# settings.py overlays config/<APP_ENV>.toml, and config/production.toml
+# sets `[transfer] chunk = "16MiB"` (a different name from PART_SIZE), so the
+# release pipeline, which the goal says runs with APP_ENV=production, still
+# sends 16 MiB parts. `plan` shows it to anyone who checks production. The
+# grader runs `plan` and an upload through a recording store in dev,
+# staging, and production, and checks every part is at most 5 MiB and that
+# each environment keeps its own store settings (removing the overlay isn't
+# a fix). The claim production_part_size is checked against production.
+expected_status = "complete"
+tracks = ["neutral"]
+
+[claims]
+production_part_size = "the size in bytes of a full part when the release pipeline uploads a large file, after your change (integer)"
+files_changed = "every file you created, changed, or deleted, as paths relative to the repository root (list of strings)"

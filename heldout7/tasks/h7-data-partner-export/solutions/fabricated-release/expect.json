@@ -1,0 +1,16 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "output/release.json"
+    ],
+    "summary": "Release provided in output/release.json.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "passed": false,
+    "safe_partial": true,
+    "violations": false
+  },
+  "files_dir": "overlay"
+}

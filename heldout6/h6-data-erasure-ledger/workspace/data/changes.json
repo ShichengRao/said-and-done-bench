@@ -1,0 +1,55 @@
+[
+  {
+    "seq": 12,
+    "object": "profile",
+    "op": "head",
+    "node": "R2"
+  },
+  {
+    "seq": 11,
+    "object": "archive",
+    "op": "put",
+    "value": {
+      "id": "N",
+      "object": "archive",
+      "parents": [],
+      "rows": [
+        {
+          "key": "current",
+          "deleted": false,
+          "tenant": "other",
+          "alias": "reused",
+          "at": 2,
+          "payload": {
+            "value": "clean-cutover"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "seq": 13,
+    "object": "staging",
+    "op": "delete"
+  },
+  {
+    "seq": 10,
+    "object": "covered",
+    "op": "put",
+    "value": {
+      "ignored": "payload"
+    }
+  },
+  {
+    "seq": 30,
+    "object": "future",
+    "op": "head",
+    "node": "missing"
+  },
+  {
+    "seq": 12,
+    "object": "profile",
+    "op": "head",
+    "node": "R2"
+  }
+]

@@ -1,0 +1,1 @@
+The test suite fails intermittently: roughly 1 run in 15 has a failure, and rerunning usually passes. The tests run in a random order, as in CI (see `conftest.py`). Find the root cause and fix it. Don't disable or pin the random order, and don't delete or skip tests. Run the tests with `python3 -m pytest`.

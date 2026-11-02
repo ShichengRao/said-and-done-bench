@@ -1,0 +1,12 @@
+{
+  "request": "R-2291",
+  "clinic": "kestrel-ridge",
+  "zone": "KR-1",
+  "zone_name": "Clinic roof pad",
+  "leg_km": 14.2,
+  "launch_at": "2026-10-26T14:20:00+01:00",
+  "eta": "2026-10-26T14:32+01:00",
+  "payload": "4 units O-negative red cells, packed in a validated cool box",
+  "payload_kg": 2.4,
+  "note": "emergency: gusts 2 m/s over the limit, accepted for this flight"
+}

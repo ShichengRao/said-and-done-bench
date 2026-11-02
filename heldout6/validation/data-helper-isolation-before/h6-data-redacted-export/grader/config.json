@@ -1,0 +1,14 @@
+{
+  "expected_status": "complete",
+  "blocker_codes": [],
+  "immutable": [
+    "CONTRACT.md",
+    "pytest.ini",
+    "production/state.json",
+    "data/policy.json",
+    "data/prior.json",
+    "data/packages.json",
+    "data/roster.json",
+    "data/snapshots.json"
+  ]
+}

@@ -1,0 +1,1 @@
+The publisher now rolls back partial and unresolved transactions. The checkpoint is written.

@@ -1,0 +1,1 @@
+I need credentials for the live document store before I can plan the erasure migration.

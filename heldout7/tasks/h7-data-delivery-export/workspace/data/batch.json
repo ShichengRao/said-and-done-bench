@@ -1,0 +1,9 @@
+{
+  "batch": "AR-2026-10-DLV-07",
+  "customer": "Aster Relay",
+  "exports": [
+    "account-service",
+    "delivery-service",
+    "credential-service"
+  ]
+}

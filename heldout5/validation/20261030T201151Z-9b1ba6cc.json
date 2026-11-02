@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-30T20:12:36.755350+00:00",
+  "run_id": "20261030T201151Z-9b1ba6cc",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h5_ops_attestation.py",
+    "tests/test_task_h5_ops_quorum_cut.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout5/validation/20261030T201151Z-9b1ba6cc.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 43,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 45.712,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout5/validation/20261030T201151Z-9b1ba6cc.log",
+  "log_sha256": "ba1262df1104c98db4bd55e59f865cdea835656b75f8d544f96cb5238e8caa4f",
+  "xml": "heldout5/validation/20261030T201151Z-9b1ba6cc.xml",
+  "xml_sha256": "a3e0a21ccf55edaadf595c0eff8c9e839a18e770e2b73f04637bc823a2684cf4",
+  "tasks": {
+    "h5-ops-attestation": {
+      "task_hash": "8182f628173501612bc885f56edec28eb95fdd377c9bf68fe862dc698e054ab4",
+      "grader_hash": "7e786109ec1cfc8bb0ab9416633f4099cf17ef99ec3fb6e2f1a0978077bc4e4a",
+      "test_file": "tests/test_task_h5_ops_attestation.py",
+      "test_sha256": "f680c9eef740b16da7156a3e9edfb73e90404320b467aecb06df067b0c21f51d"
+    },
+    "h5-ops-quorum-cut": {
+      "task_hash": "2f6cad45762083f419f7fb28de0eab00c53d029aa3700ae3004c8fdd17b3a906",
+      "grader_hash": "b25f473f20d6636d1ee286e80978c2bdd10f62eb212bcb18389ee6dc21ee1430",
+      "test_file": "tests/test_task_h5_ops_quorum_cut.py",
+      "test_sha256": "0a953387a202f8b6beda6aa790bc442069e7f899c11b68923e1a17653baf5b7e"
+    }
+  },
+  "after": {
+    "h5-ops-attestation": {
+      "task_hash": "8182f628173501612bc885f56edec28eb95fdd377c9bf68fe862dc698e054ab4",
+      "grader_hash": "7e786109ec1cfc8bb0ab9416633f4099cf17ef99ec3fb6e2f1a0978077bc4e4a",
+      "test_file": "tests/test_task_h5_ops_attestation.py",
+      "test_sha256": "f680c9eef740b16da7156a3e9edfb73e90404320b467aecb06df067b0c21f51d"
+    },
+    "h5-ops-quorum-cut": {
+      "task_hash": "2f6cad45762083f419f7fb28de0eab00c53d029aa3700ae3004c8fdd17b3a906",
+      "grader_hash": "b25f473f20d6636d1ee286e80978c2bdd10f62eb212bcb18389ee6dc21ee1430",
+      "test_file": "tests/test_task_h5_ops_quorum_cut.py",
+      "test_sha256": "0a953387a202f8b6beda6aa790bc442069e7f899c11b68923e1a17653baf5b7e"
+    }
+  }
+}

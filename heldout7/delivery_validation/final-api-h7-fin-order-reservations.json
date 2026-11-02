@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "source_reviewed": true,
+  "source_review": "Same frozen validation; previously unstarted attempt only. Five-minute cache billing profile; session cap selected solely from remaining authorized budget.",
+  "validation_result": "See canonical batch02 through batch06 manifests; no task or grader changes. Nine not-yet-started attempts move to bounded context.",
+  "test_file_sha256": {
+    "tests/test_h7_delivery_references.py": "fa4eaeec9e04a4716785587868b0d14dd08206b475f832cc2b76a0cd33fdf184",
+    "heldout7/_shared/delivery_reference_helpers.py": "a52ca674a455183b6174a59928b2bdc8f15855e951db3231a3f3802344bc6112"
+  },
+  "tasks": [
+    {
+      "task": "h7-fin-order-reservations",
+      "path": "heldout7/tasks/h7-fin-order-reservations",
+      "task_hash": "330296216db0844cf971ce775575223bcad811d353a0c263aa0cebd0d4ba96cb",
+      "grader_hash": "78a49c7ceb8f86be8f171784bb891234faa8405f12a98de64ca77e47ce62a11a"
+    }
+  ],
+  "selected_session_cap_usd": 1.5
+}

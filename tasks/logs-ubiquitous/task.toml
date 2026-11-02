@@ -1,0 +1,33 @@
+id = "logs-ubiquitous"
+family = "red-herring-logs"
+expected_status = "complete"
+# v3. exp-worker's log of the export, rotated weekly (the current week, last
+# week, then 27 gzipped weeks): 211 runs over 199 nights, since a run that
+# times out (exit 3) is retried once, 30 minutes later. 36 runs failed, on 27
+# nights, from three root causes:
+#   dedupe, 16 runs (exit 2): dedupe.py keys redeliveries on (customer, date,
+#     total) and drops a distinct invoice; its WARN also appears, harmlessly,
+#     after real failover replays (X dropped as a redelivery of X).
+#   prefetch, 14 runs on 7 nights: 1.9.0 reads the feed in pages on a thread
+#     whose debug line reads page[0] even on an empty page (a day with no
+#     invoices, or one whose rows fill whole pages). The thread dies with a
+#     one-line IndexError seconds in; ten minutes later the job reports
+#     "feed timed out: no rows from the feed for 600s", and the retry does the
+#     same.
+#   replica, 6 runs: pg_repack locks invoice_feed on the replica; the run
+#     ends with the same "feed timed out" line, ten minutes after a WARN that
+#     names the lock. The same WARN shows on 3 passing nights (the lock
+#     cleared in time). One night's retry hit the lock again; another's read
+#     the feed and failed on dedupe.
+# A pool-timeout ERROR with a traceback is in nearly every run and every
+# failing one, and multi-retry waits cluster on failing runs (busy nights,
+# and a locked replica holds every job's connections); it never fails a run.
+# The goal and ops' runbook point at the database. The claims need the runs
+# counted across the gzipped weeks and the retries, each feed timeout traced
+# to the line far above it, and both code causes fixed (hidden tests: dedupe,
+# and days with no rows or whole pages of rows).
+
+[claims]
+runs_logged = "how many runs of the export the logs in logs/ record (a number)"
+failing_runs = "how many of those runs failed (a number)"
+root_causes = "why they failed: a list with one object per root cause, each {\"cause\": the root cause in one sentence, \"runs\": how many of the failed runs it accounts for (a number), \"log_line\": the log line that shows that cause, copied exactly from one log}"

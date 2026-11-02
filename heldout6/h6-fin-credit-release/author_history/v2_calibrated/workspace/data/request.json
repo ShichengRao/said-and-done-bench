@@ -1,0 +1,508 @@
+{
+  "as_of": 20,
+  "horizon": 4,
+  "obligations": [
+    {
+      "id": "O1",
+      "cents": 100,
+      "pay_stage": 1,
+      "repay_stage": 4
+    },
+    {
+      "id": "O2",
+      "cents": 100,
+      "pay_stage": 2,
+      "repay_stage": 4
+    },
+    {
+      "id": "O3",
+      "cents": 100,
+      "pay_stage": 3,
+      "repay_stage": 4
+    }
+  ],
+  "commitments": [
+    {
+      "id": "F",
+      "cents": 100,
+      "pay_stage": 0,
+      "repay_stage": 4,
+      "route": "F-route",
+      "revision": 1
+    }
+  ],
+  "facilities": [
+    "A",
+    "B"
+  ],
+  "collateral": [
+    "P",
+    "Q",
+    "R"
+  ],
+  "routes": [
+    {
+      "id": "O2-H",
+      "revision": 2,
+      "known": 14,
+      "signed": true,
+      "void": false,
+      "obligation": "O2",
+      "facility": "B",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 2,
+          "until_stage": 3,
+          "pool": "R"
+        },
+        {
+          "from_stage": 3,
+          "until_stage": 4,
+          "pool": "P"
+        }
+      ]
+    },
+    {
+      "id": "O2-H",
+      "revision": 4,
+      "known": 30,
+      "signed": true,
+      "void": false,
+      "obligation": "O2",
+      "facility": "B",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 2,
+          "until_stage": 4,
+          "pool": "R"
+        }
+      ]
+    },
+    {
+      "id": "O2-H",
+      "revision": 3,
+      "known": 18,
+      "signed": false,
+      "void": false,
+      "obligation": "O2",
+      "facility": "B",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 2,
+          "until_stage": 4,
+          "pool": "R"
+        }
+      ]
+    },
+    {
+      "id": "O2-H",
+      "revision": 2,
+      "known": 14,
+      "signed": true,
+      "void": false,
+      "obligation": "O2",
+      "facility": "B",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 2,
+          "until_stage": 3,
+          "pool": "R"
+        },
+        {
+          "from_stage": 3,
+          "until_stage": 4,
+          "pool": "P"
+        }
+      ]
+    },
+    {
+      "id": "O3-Q",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O3",
+      "facility": "A",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 3,
+          "until_stage": 4,
+          "pool": "Q"
+        }
+      ]
+    },
+    {
+      "id": "O2-H",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O2",
+      "facility": "B",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 2,
+          "until_stage": 4,
+          "pool": "R"
+        }
+      ]
+    },
+    {
+      "id": "O2-Q",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O2",
+      "facility": "A",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 2,
+          "until_stage": 4,
+          "pool": "Q"
+        }
+      ]
+    },
+    {
+      "id": "O2-P",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O2",
+      "facility": "B",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 2,
+          "until_stage": 4,
+          "pool": "P"
+        }
+      ]
+    },
+    {
+      "id": "O1-Q",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O1",
+      "facility": "B",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 1,
+          "until_stage": 4,
+          "pool": "Q"
+        }
+      ]
+    },
+    {
+      "id": "O1-P",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O1",
+      "facility": "A",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 1,
+          "until_stage": 4,
+          "pool": "P"
+        }
+      ]
+    },
+    {
+      "id": "F-route",
+      "revision": 2,
+      "known": 15,
+      "signed": true,
+      "void": false,
+      "obligation": "F",
+      "facility": "B",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 0,
+          "until_stage": 4,
+          "pool": "R"
+        }
+      ]
+    },
+    {
+      "id": "F-route",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "F",
+      "facility": "A",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 0,
+          "until_stage": 4,
+          "pool": "P"
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "X-low",
+      "signals": [
+        "unopened",
+        "bucket-X",
+        "pending",
+        "released"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "collateral": {
+        "P": [
+          400,
+          400,
+          400,
+          100
+        ],
+        "Q": [
+          400,
+          400,
+          400,
+          300
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "X-balanced",
+      "signals": [
+        "unopened",
+        "bucket-X",
+        "pending",
+        "released"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "collateral": {
+        "P": [
+          400,
+          400,
+          400,
+          200
+        ],
+        "Q": [
+          400,
+          400,
+          400,
+          200
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "Y-high",
+      "signals": [
+        "unopened",
+        "bucket-Y",
+        "pending",
+        "released"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "collateral": {
+        "P": [
+          400,
+          400,
+          400,
+          300
+        ],
+        "Q": [
+          400,
+          400,
+          400,
+          100
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "Y-balanced",
+      "signals": [
+        "unopened",
+        "bucket-Y",
+        "pending",
+        "released"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "collateral": {
+        "P": [
+          400,
+          400,
+          400,
+          200
+        ],
+        "Q": [
+          400,
+          400,
+          400,
+          200
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    }
+  ],
+  "proposals": [
+    {
+      "id": "X-authenticated-leaf-at-2",
+      "cost": 1,
+      "kind": "disclose",
+      "scenarios": [
+        "X-low",
+        "X-balanced"
+      ],
+      "stage": 2
+    },
+    {
+      "id": "Y-authenticated-leaf-at-1",
+      "cost": 2,
+      "kind": "disclose",
+      "scenarios": [
+        "Y-high",
+        "Y-balanced"
+      ],
+      "stage": 1
+    },
+    {
+      "id": "Y-authenticated-leaf-at-2",
+      "cost": 1,
+      "kind": "disclose",
+      "scenarios": [
+        "Y-high",
+        "Y-balanced"
+      ],
+      "stage": 2
+    },
+    {
+      "id": "approve-neutral-route",
+      "cost": 4,
+      "kind": "route",
+      "route": {
+        "id": "O2-owner",
+        "obligation": "O2",
+        "facility": "B",
+        "pledge_cents": 100,
+        "windows": [
+          {
+            "from_stage": 2,
+            "until_stage": 4,
+            "pool": "R"
+          }
+        ]
+      }
+    },
+    {
+      "id": "additional-P-capacity",
+      "cost": 4,
+      "kind": "capacity",
+      "resource": "collateral",
+      "resource_id": "P",
+      "stage": 3,
+      "cents": 100
+    },
+    {
+      "id": "all-authenticated-leaves-at-1",
+      "cost": 5,
+      "kind": "disclose",
+      "scenarios": [
+        "X-low",
+        "X-balanced",
+        "Y-high",
+        "Y-balanced"
+      ],
+      "stage": 1
+    }
+  ]
+}

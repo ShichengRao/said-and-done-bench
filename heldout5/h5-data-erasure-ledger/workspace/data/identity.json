@@ -1,0 +1,30 @@
+[
+  {
+    "alias": "a5",
+    "from": 0,
+    "subject": "s1",
+    "tenant": "t31",
+    "until": 15
+  },
+  {
+    "alias": "a5",
+    "from": 15,
+    "subject": "s2",
+    "tenant": "t31",
+    "until": null
+  },
+  {
+    "alias": "a9",
+    "from": 0,
+    "subject": "s1",
+    "tenant": "t31",
+    "until": null
+  },
+  {
+    "alias": "a7",
+    "from": 0,
+    "subject": "s1",
+    "tenant": "t52",
+    "until": null
+  }
+]

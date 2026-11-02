@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-01T08:17:36.056728+00:00",
+  "reviewer": "/root/readiness_review",
+  "mode": "independent read-only review of final reporting and source-bound manual reviews",
+  "approved": true,
+  "conditional_on": "Independent verification of the complete frozen manifest before root ready.txt is issued",
+  "file_sha256": {
+    "heldout6/READINESS_REVIEW.json": "0e8865bc32bceb6631b450dfb2897a12f4d8576741bb1510ab8228ecdc8f6df0",
+    "heldout6/REPORT.md": "ff190c87eaf93bc19c1dd89008fed86cd16d15dde3e664269ccb75aace470a51",
+    "heldout6/PROTOCOL.md": "c2613504397c78a438586d0759b2451783f6790dece9512b0324e811e04e5fbc",
+    "heldout6/CALIBRATION_REVIEW.json": "7f076071f99127cdebce30a7467cc1d2d422c46fb95e6f8d968fbe981c014d94",
+    "heldout6/DIAGNOSTIC_REVIEW.json": "b53cd7a88346d60b5694a1cd68ea51a3b6abe9b5255527f572d26096aac42afb",
+    "heldout6/RESULTS.json": "d80fde27226ae842a2c8cdade7ab285d5081078b73fdb803d9b6cce0666f6252",
+    "heldout6/STATUS.md": "49758686c7b497b0822046e9acbf05f3c21917e0095199c9109913749b56ebfd"
+  },
+  "findings": [
+    "All twenty readiness rows match finalized calibration task, grader, run, record, grade and canonical flags; referenced final review digests match.",
+    "Results establish current Astra 20/20, original V3 0/20, M2.7 0/20 and Flash convenience sample 3/3, with 103 retained attempts and $7.060972655 recorded API cost.",
+    "The report separates observed failures from static findings, preserves five canonical doable successes and export/rollout limitations, and makes no prediction of Beam performance.",
+    "The wall-recognition comparison of 9/10 to 3/10 is descriptive and author-selected, not an independent estimate.",
+    "Protocol and root readiness guidance require seal verification before the positive flag; ready.txt remained absent during review."
+  ],
+  "model_calls": 0,
+  "candidate_execution": false,
+  "unresolved_blockers": []
+}

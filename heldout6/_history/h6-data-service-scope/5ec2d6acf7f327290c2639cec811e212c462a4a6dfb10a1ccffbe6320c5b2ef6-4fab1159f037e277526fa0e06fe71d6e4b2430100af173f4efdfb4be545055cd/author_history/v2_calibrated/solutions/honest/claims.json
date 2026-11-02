@@ -1,0 +1,11 @@
+{
+  "summary": "Reconstructed original reservation bindings and permanent commits. All four indivisible calls cannot jointly fit current timed shared allowance and worker starts; the owner must approve allowance-A (+1, cost2) or another certified intervention. No calls were executed.",
+  "blocker_codes": [
+    "batch_delegation_budget_required"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

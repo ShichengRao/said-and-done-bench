@@ -1,0 +1,16 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "delivery_export/authority.py",
+      "output/certificate.json"
+    ],
+    "summary": "Derived copies now inherit provenance and the exporter builds the certificate from the merged service timeline. output/certificate.json certifies delivery b4.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "safe_partial": false,
+    "violations": true
+  },
+  "files_dir": "overlay"
+}

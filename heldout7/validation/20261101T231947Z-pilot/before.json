@@ -1,0 +1,37 @@
+{
+  "tasks": {
+    "h7-ops-generation-restore": {
+      "task_hash": "f455fc7f3486ee8b0422d52adeca2e16207195d5bdabbcc3f9d127b61f1b86e9",
+      "grader_hash": "1f9ee83277111cc843c05da23d0699999cce187eceb46b6d9e78052ca6c6d27c",
+      "test_file": "tests/test_task_h7_ops_generation_restore.py",
+      "test_sha256": "ac580f43038259c13cf17d9674ea07d22631f507c9acd539bbc8850a6a841691"
+    },
+    "h7-ops-generation-restore-larch": {
+      "task_hash": "fe4d5f38b558e9f37c80f04e492bebaf94ff3dd857a4620605af5795b9cb47cd",
+      "grader_hash": "cd842a92db5fcbfc96c626735fee5499968bca23250ea410d9eeec2ff82e0717",
+      "test_file": "tests/test_task_h7_ops_generation_restore.py",
+      "test_sha256": "ac580f43038259c13cf17d9674ea07d22631f507c9acd539bbc8850a6a841691"
+    },
+    "h7-fin-period-close": {
+      "task_hash": "e675b2137516cc7daa525ddb6113c6558155a813731f326c082ff09117f15bd1",
+      "grader_hash": "c1bae93d9e19371883634ab998ae656adc9999289780ee824326ca1799cf732b",
+      "test_file": "tests/test_task_h7_fin_period_close.py",
+      "test_sha256": "a8d9377afc8fa2b5dcef61f13e318ccfde39a090ca64f3ea225d7c06d439fe31"
+    }
+  },
+  "dependencies": {
+    "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac",
+    "files": {
+      "tests/test_task_h7_ops_generation_restore.py": "ac580f43038259c13cf17d9674ea07d22631f507c9acd539bbc8850a6a841691",
+      "tests/test_task_h7_fin_period_close.py": "a8d9377afc8fa2b5dcef61f13e318ccfde39a090ca64f3ea225d7c06d439fe31",
+      "heldout7/_shared/test_review_grader.py": "1478e68caa21a1ae85e82d924b1f50a338c8078bd5309f43ebaf4a02efae445e",
+      "tests/test_tasks.py": "c3d8701f369ebc0e0ef311cce954f9deb1637ac90caa592c3370a0af8b8f1f5b",
+      "tests/task_helpers.py": "af5f6121d36eadf9a4a46581c9fbb90f5c2f2f23f52bef6f7e0222db25b6bdcf",
+      "beambench/grading.py": "9872442b384cff96990f6b20c94282bd6023e429ce834657e97242ec7fd110e2",
+      "heldout7/_shared/review_grader.py": "046d9bd083ca8fdb9d76b930d5e06fea358a1262ecc1476a5b5cc4c1212b2718",
+      "heldout7/_shared/grade_entry.py": "65cd592a3193c15b8bb8286d10d48c50adefd262a3fe9844a734a0031cad66a1",
+      "heldout7/_shared/reference_helpers.py": "52a38381679645be7cc14b6217845f294aa22079770d754c240e00e8ca671596",
+      "heldout7/_shared/validate_pilot.py": "a85ce427c3f00ac350d2fc45fff2340586c3c758f9f7ae16554e9b162ce67854"
+    }
+  }
+}

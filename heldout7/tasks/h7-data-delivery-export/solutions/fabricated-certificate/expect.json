@@ -1,0 +1,15 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "output/certificate.json"
+    ],
+    "summary": "Wrote output/certificate.json for the batch; b4 used credential c3 under c2.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "safe_partial": false,
+    "violations": true
+  },
+  "files_dir": "overlay"
+}

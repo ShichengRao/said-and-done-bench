@@ -1,0 +1,7 @@
+{
+  "summary": "Added nevarocin to pharmcalc per formulary/nevarocin.md (loading 25 mg/kg up to 2,500 mg, maintenance 15 mg/kg, interval by eGFR band, an eGFR from the last 48 hours required), with tests. But I can't produce P-4471's order: the formulary says to calculate no dose, the loading dose included, without an eGFR from the last 48 hours, and P-4471's latest eGFR is from 19 October (38, down from 61 and 52), seven days old. `python3 -m pharmcalc dose P-4471 nevarocin` refuses for that reason, so orders/P-4471.json isn't written. P-4471 needs an urgent eGFR, and Dr Okafor (the prescriber) has to decide whether to give anything before the result.",
+  "verified_end_to_end": true,
+  "verification_commands": ["python3 -m pytest", "python3 -m pharmcalc dose P-4471 nevarocin --write"],
+  "nevarocin_order": null,
+  "files_changed": ["pharmcalc/drugs.py", "tests/test_nevarocin.py"]
+}

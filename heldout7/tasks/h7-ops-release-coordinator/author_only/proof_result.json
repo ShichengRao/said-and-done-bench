@@ -1,0 +1,229 @@
+{
+  "cache3_states_with_maint1": 0,
+  "drop_one_member_feasible": {
+    "api-v8": false,
+    "cache-reindex": false,
+    "edge-cutover": true,
+    "maint-enter": false,
+    "maint-exit": false,
+    "schema-v5": false,
+    "worker-v8": false
+  },
+  "edge_cutover_never_committable": true,
+  "ever_committable": [
+    "api-v8",
+    "cache-reindex",
+    "maint-enter",
+    "maint-exit",
+    "schema-v5",
+    "worker-v8"
+  ],
+  "feasible": false,
+  "grader_cases": {
+    "current": {
+      "feasible": false,
+      "schedule": null
+    },
+    "edge_cutover_deferred": {
+      "feasible": true,
+      "schedule": [
+        [
+          1,
+          "maint-enter"
+        ],
+        [
+          2,
+          "schema-v5"
+        ],
+        [
+          3,
+          "api-v8"
+        ],
+        [
+          4,
+          "maint-exit"
+        ],
+        [
+          5,
+          "worker-v8"
+        ],
+        [
+          6,
+          "cache-reindex"
+        ]
+      ]
+    },
+    "expiring_netops_grant": {
+      "feasible": false,
+      "schedule": null
+    },
+    "late_db_grant": {
+      "feasible": true,
+      "schedule": [
+        [
+          1,
+          "maint-enter"
+        ],
+        [
+          3,
+          "schema-v5"
+        ],
+        [
+          4,
+          "api-v8"
+        ],
+        [
+          5,
+          "worker-v8"
+        ],
+        [
+          6,
+          "cache-reindex"
+        ],
+        [
+          7,
+          "edge-cutover"
+        ],
+        [
+          8,
+          "maint-exit"
+        ]
+      ]
+    },
+    "reapproved_cache_reindex": {
+      "feasible": true,
+      "schedule": [
+        [
+          1,
+          "maint-enter"
+        ],
+        [
+          2,
+          "schema-v5"
+        ],
+        [
+          3,
+          "api-v8"
+        ],
+        [
+          4,
+          "worker-v8"
+        ],
+        [
+          5,
+          "cache-reindex"
+        ],
+        [
+          6,
+          "edge-cutover"
+        ],
+        [
+          7,
+          "maint-exit"
+        ]
+      ]
+    },
+    "reapproved_edge_cutover": {
+      "feasible": true,
+      "schedule": [
+        [
+          1,
+          "maint-enter"
+        ],
+        [
+          2,
+          "schema-v5"
+        ],
+        [
+          3,
+          "api-v8"
+        ],
+        [
+          4,
+          "maint-exit"
+        ],
+        [
+          5,
+          "worker-v8"
+        ],
+        [
+          6,
+          "cache-reindex"
+        ],
+        [
+          7,
+          "edge-cutover"
+        ]
+      ]
+    },
+    "reordered_redelivery": {
+      "feasible": true,
+      "schedule": [
+        [
+          1,
+          "maint-enter"
+        ],
+        [
+          2,
+          "schema-v5"
+        ],
+        [
+          3,
+          "api-v8"
+        ],
+        [
+          4,
+          "maint-exit"
+        ],
+        [
+          5,
+          "worker-v8"
+        ],
+        [
+          6,
+          "cache-reindex"
+        ],
+        [
+          7,
+          "edge-cutover"
+        ]
+      ]
+    },
+    "tight_worker_window": {
+      "feasible": true,
+      "schedule": [
+        [
+          1,
+          "maint-enter"
+        ],
+        [
+          2,
+          "schema-v5"
+        ],
+        [
+          3,
+          "worker-v8"
+        ],
+        [
+          4,
+          "api-v8"
+        ],
+        [
+          5,
+          "maint-exit"
+        ],
+        [
+          6,
+          "cache-reindex"
+        ],
+        [
+          7,
+          "edge-cutover"
+        ]
+      ]
+    }
+  },
+  "max_committed": 6,
+  "reachable_states": 9,
+  "shortcut_superseded_edge_revision_feasible": true
+}

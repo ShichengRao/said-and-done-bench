@@ -1,0 +1,8 @@
+{
+  "source": "EHR lab extract",
+  "extracted_at": "2026-10-26T16:30:00+00:00",
+  "results": [
+    {"test": "egfr", "value": 74, "unit": "mL/min/1.73m2", "taken_at": "2026-10-25T07:20:00+00:00"},
+    {"test": "creatinine", "value": 79, "unit": "umol/L", "taken_at": "2026-10-25T07:20:00+00:00"}
+  ]
+}

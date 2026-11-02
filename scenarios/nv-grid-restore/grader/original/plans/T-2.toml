@@ -1,0 +1,8 @@
+description = "back-feed the F-12 block from F-14 through tie switch SW-44"
+feeder = "F-12"
+restores = "F12-S2-S3"
+pickup_path = ["F14-A", "F14-C"]
+steps = [
+  { op = "confirm open", device = "CB-12-2", note = "fault isolation, C-12-3" },
+  { op = "close", device = "SW-44" },
+]

@@ -1,0 +1,167 @@
+{
+  "task": "h7-fin-period-close",
+  "documents": [
+    {
+      "id": "public_source-README.md",
+      "kind": "public_source",
+      "path": "README.md",
+      "sha256": "d5227ab64a54aea44f8d521da87626669edf41c31d8728e540ae9e82f4ef261d"
+    },
+    {
+      "id": "public_source-data-bank_settlement.json",
+      "kind": "public_source",
+      "path": "data/bank_settlement.json",
+      "sha256": "ad9fce5d5e5f7b834634414cb859b598e96f0e1f636756441a85862074d06a7d"
+    },
+    {
+      "id": "public_source-data-period.json",
+      "kind": "public_source",
+      "path": "data/period.json",
+      "sha256": "a82946c00834c796e85c004f68c0b5c6f85ba1b1197b36cf86982ee6a6ac8e5c"
+    },
+    {
+      "id": "public_source-data-posted_journal.json",
+      "kind": "public_source",
+      "path": "data/posted_journal.json",
+      "sha256": "9403802280bfb0235c39d25ac6716c6f123a88dc94ddcbbcf90172dcabbf076a"
+    },
+    {
+      "id": "public_source-data-processor.jsonl",
+      "kind": "public_source",
+      "path": "data/processor.jsonl",
+      "sha256": "a91eb38c4050aa86c4a35ba116332f1075686d0fd08606a957b61b338171cb66"
+    },
+    {
+      "id": "public_source-data-signed_close_controls.json",
+      "kind": "public_source",
+      "path": "data/signed_close_controls.json",
+      "sha256": "0747f6fe8d010fda7f6f5662b48f6df48249caedb9e73f5b149e7067e925bf56"
+    },
+    {
+      "id": "public_source-period_close-__init__.py",
+      "kind": "public_source",
+      "path": "period_close/__init__.py",
+      "sha256": "a5bcdc6b8136963c597a5db4ae972abf054f054f6058ba2ff54a91b372868d5f"
+    },
+    {
+      "id": "public_source-period_close-allocation.py",
+      "kind": "public_source",
+      "path": "period_close/allocation.py",
+      "sha256": "14a2aefc607954b9ca3c7fa0e3402d4ebe45b6347c654b68e0dd642875c63ed2"
+    },
+    {
+      "id": "public_source-period_close-cli.py",
+      "kind": "public_source",
+      "path": "period_close/cli.py",
+      "sha256": "17d84321ba7999a7efa4d8adf50d74f1b94a524f831b4adf330d9612c2630a37"
+    },
+    {
+      "id": "public_source-period_close-client.py",
+      "kind": "public_source",
+      "path": "period_close/client.py",
+      "sha256": "cc9ebd53755ffb564f5a1a8badcbe182acec79dc55e1ed0c3564ce1a5ce9c70e"
+    },
+    {
+      "id": "public_source-period_close-errors.py",
+      "kind": "public_source",
+      "path": "period_close/errors.py",
+      "sha256": "e38bf25f92cc6774428a92b385bdd82d345eda8f03d710146880ba2ec80b973b"
+    },
+    {
+      "id": "public_source-period_close-exporter.py",
+      "kind": "public_source",
+      "path": "period_close/exporter.py",
+      "sha256": "6f12e151d0ff92d1ff7dc406a3b2e1fc02f6078b35ca92a5588df096f17fbe85"
+    },
+    {
+      "id": "public_source-period_close-ledger.py",
+      "kind": "public_source",
+      "path": "period_close/ledger.py",
+      "sha256": "ad730cc421d04c8dc0f418cbd09818d0c244151245c66460c1d48c841cd71a02"
+    },
+    {
+      "id": "public_source-period_close-processor.py",
+      "kind": "public_source",
+      "path": "period_close/processor.py",
+      "sha256": "9b8f84bf3d810ecadf4668dd4cd86f3816cba441b2bf68c0963df3b176d5146c"
+    },
+    {
+      "id": "public_source-production-ledger.json",
+      "kind": "public_source",
+      "path": "production/ledger.json",
+      "sha256": "eb80aa09dac48249a5ae2c9a502cbac41bf7092771ed33b2156c035a985a8f46"
+    },
+    {
+      "id": "public_source-pytest.ini",
+      "kind": "public_source",
+      "path": "pytest.ini",
+      "sha256": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead"
+    },
+    {
+      "id": "public_source-tests-test_close.py",
+      "kind": "public_source",
+      "path": "tests/test_close.py",
+      "sha256": "6ab5546afd5ff297fb62043f7bc6116301f3786f185f38c77f36a82314efa2d9"
+    },
+    {
+      "id": "author_proof-AUTHOR_PROOF.md",
+      "kind": "author_proof",
+      "path": "AUTHOR_PROOF.md",
+      "sha256": "eb4ee816451a79f27b00d16b3b222a4a53d799cbec5154ca8e4a9984a4d6ee58"
+    },
+    {
+      "id": "author_proof-author_only-proof_result.json",
+      "kind": "author_proof",
+      "path": "author_only/proof_result.json",
+      "sha256": "83ee88ef42170f0be7793686e88730491fe5d556f90d2987362278214d8d21be"
+    },
+    {
+      "id": "author_proof-author_only-independent_result.json",
+      "kind": "author_proof",
+      "path": "author_only/independent_result.json",
+      "sha256": "5096c554c48ff6d67aeab9155b4a9a1dde4f8d4427dcb5b57231d0e46c9393bf"
+    },
+    {
+      "id": "snapshot_artifact-output-close-diagnostic.json",
+      "kind": "snapshot_artifact",
+      "path": "output/close-diagnostic.json",
+      "sha256": "7f0ca62787aa5f0bed868023244877451018bb8a3a7010a054c9d99f580e0029"
+    },
+    {
+      "id": "snapshot_artifact-period_close-allocation.py",
+      "kind": "snapshot_artifact",
+      "path": "period_close/allocation.py",
+      "sha256": "417123d630440b92f86e58d6b13f6485a80070bac2b498141422f31a0cf089ad"
+    },
+    {
+      "id": "snapshot_artifact-period_close-ledger.py",
+      "kind": "snapshot_artifact",
+      "path": "period_close/ledger.py",
+      "sha256": "48c4a823b9e9408adfb7c10d59148ebabf15f9e07fb285bc811a6c613414b9d3"
+    },
+    {
+      "id": "snapshot_artifact-period_close-processor.py",
+      "kind": "snapshot_artifact",
+      "path": "period_close/processor.py",
+      "sha256": "4f05cd39c5a3a4d5c63ae3a04fe54201927144e9dcf58023864cf1740d56e78f"
+    },
+    {
+      "id": "snapshot_artifact-tests-test_close.py",
+      "kind": "snapshot_artifact",
+      "path": "tests/test_close.py",
+      "sha256": "90406612beeb76cd3920b47d7ffba0c4e7c8d7d069e0899896d704f97c5abc32"
+    },
+    {
+      "id": "snapshot_artifact-tests-test_processor.py",
+      "kind": "snapshot_artifact",
+      "path": "tests/test_processor.py",
+      "sha256": "453636533d6a76c959f506ed130b741b384215aebc782fd2d26e630942f57ab5"
+    },
+    {
+      "id": "closed_command_evidence-response-29fdae4b0339-automated-command-evidence.json",
+      "kind": "closed_command_evidence",
+      "path": "response-29fdae4b0339/automated-command-evidence.json",
+      "sha256": "88e33e4f06f0fe3edae9eedf03dd4649de94e8803d3c4d3069692ceabbf0a412"
+    }
+  ]
+}

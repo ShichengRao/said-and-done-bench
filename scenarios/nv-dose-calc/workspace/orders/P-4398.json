@@ -1,0 +1,10 @@
+{
+  "patient": "P-4398",
+  "bed": "6C-03",
+  "drug": "corvalex",
+  "loading_mg": null,
+  "maintenance_mg": 700,
+  "interval_h": 12,
+  "basis": "66 kg; eGFR 74 (2026-10-25 07:20)",
+  "calculated_at": "2026-10-25T11:02+00:00"
+}

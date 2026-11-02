@@ -1,0 +1,17 @@
+# Business customers' webhook endpoints. Each signing secret is in the
+# environment variable named here (production: the deploy's secret store).
+
+[northwind]
+url = "https://wms.northwind-logistics.example/inbound/fernway"
+events = ["order.created", "order.cancelled"]
+secret_env = "HOOKS_SECRET_NORTHWIND"
+
+[brightline]
+url = "https://api.brightline.example/webhooks/fernway"
+events = ["order.created", "order.cancelled", "shipment.dispatched"]
+secret_env = "HOOKS_SECRET_BRIGHTLINE"
+
+[okapi]
+url = "https://hooks.okapi-retail.example/fernway/orders"
+events = ["order.created"]
+secret_env = "HOOKS_SECRET_OKAPI"

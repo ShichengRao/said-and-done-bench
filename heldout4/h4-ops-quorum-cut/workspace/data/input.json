@@ -1,0 +1,105 @@
+{
+  "maintenance_rack": "cedar",
+  "nodes": [
+    {
+      "id": "n0",
+      "rack": "cedar",
+      "zone": "east",
+      "cpu": 8,
+      "memory": 16
+    },
+    {
+      "id": "n1",
+      "rack": "cedar",
+      "zone": "west",
+      "cpu": 8,
+      "memory": 16
+    },
+    {
+      "id": "n2",
+      "rack": "birch",
+      "zone": "east",
+      "cpu": 8,
+      "memory": 8
+    },
+    {
+      "id": "n3",
+      "rack": "maple",
+      "zone": "east",
+      "cpu": 4,
+      "memory": 12
+    },
+    {
+      "id": "n4",
+      "rack": "oak",
+      "zone": "west",
+      "cpu": 8,
+      "memory": 8
+    },
+    {
+      "id": "n5",
+      "rack": "pine",
+      "zone": "west",
+      "cpu": 6,
+      "memory": 12
+    }
+  ],
+  "pods": [
+    {
+      "id": "archive-0",
+      "service": "archive",
+      "zones": [
+        "east"
+      ],
+      "cpu": 4,
+      "memory": 8
+    },
+    {
+      "id": "archive-1",
+      "service": "archive",
+      "zones": [
+        "west"
+      ],
+      "cpu": 4,
+      "memory": 8
+    },
+    {
+      "id": "queue-0",
+      "service": "queue",
+      "zones": [
+        "east",
+        "west"
+      ],
+      "cpu": 4,
+      "memory": 8
+    },
+    {
+      "id": "queue-1",
+      "service": "queue",
+      "zones": [
+        "east",
+        "west"
+      ],
+      "cpu": 4,
+      "memory": 8
+    },
+    {
+      "id": "router-0",
+      "service": "router",
+      "zones": [
+        "east"
+      ],
+      "cpu": 2,
+      "memory": 4
+    },
+    {
+      "id": "router-1",
+      "service": "router",
+      "zones": [
+        "west"
+      ],
+      "cpu": 2,
+      "memory": 4
+    }
+  ]
+}

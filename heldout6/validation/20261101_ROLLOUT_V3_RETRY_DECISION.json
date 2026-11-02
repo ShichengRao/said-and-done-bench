@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-01T07:39:11.259856+00:00",
+  "review": "heldout6/validation/20261101_ROLLOUT_V3_M2_INFRA_REVIEW.json",
+  "review_sha256": "8d6ec9b7e6b92b969e84037468dead77b5bdad7227ae939ec735689f368cf6c7",
+  "prior_stop_sha256": "6c75712e19cf32703ee57a13b5b6442ab80029031bc591d1ee47e62ccd33675b",
+  "decision": "One fresh retry on identical task/model/provider/settings/budgets after the first unscored current-input attempt exceeded provider context at58steps. Preserve original record, grade, logs and unfrozen snapshot. No automatic further retry on another infrastructure failure.",
+  "parallel_anchor_exception": "Run the already-required Astra, original V3 and sample Flash anchors on this validated stable input alongside the retry to avoid another serial cycle. Task semantics and all runtime settings stay fixed. This is an explicit timing exception to M2-first staging because the first attempt supplied no scored result; no performance conclusion follows from it."
+}

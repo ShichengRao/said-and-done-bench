@@ -1,0 +1,327 @@
+{
+  "ready": false,
+  "reservation_state": {
+    "expired": {
+      "key": "old-expired",
+      "attempt": "old-expired",
+      "units": 1,
+      "pools": [
+        "A",
+        "root"
+      ],
+      "expires": 8,
+      "state": "expired"
+    },
+    "held-A1": {
+      "key": "hold-A1",
+      "attempt": "hold-A1",
+      "units": 1,
+      "pools": [
+        "A",
+        "root"
+      ],
+      "expires": 12,
+      "state": "held"
+    },
+    "held-A2": {
+      "key": "hold-A2",
+      "attempt": "hold-A2",
+      "units": 2,
+      "pools": [
+        "A",
+        "root"
+      ],
+      "expires": 11,
+      "state": "held"
+    },
+    "held-B2": {
+      "key": "hold-B2",
+      "attempt": "hold-B2",
+      "units": 2,
+      "pools": [
+        "B",
+        "root"
+      ],
+      "expires": 12,
+      "state": "held"
+    },
+    "spent-A": {
+      "key": "old-A",
+      "attempt": "old-A",
+      "units": 3,
+      "pools": [
+        "A",
+        "root"
+      ],
+      "expires": 7,
+      "state": "committed"
+    },
+    "spent-B": {
+      "key": "old-B",
+      "attempt": "old-B",
+      "units": 3,
+      "pools": [
+        "B",
+        "root"
+      ],
+      "expires": 7,
+      "state": "committed"
+    }
+  },
+  "availability": {
+    "A": {
+      "10": 2,
+      "11": 4,
+      "12": 5,
+      "13": 5
+    },
+    "B": {
+      "10": 3,
+      "11": 3,
+      "12": 5,
+      "13": 5
+    },
+    "root": {
+      "10": 9,
+      "11": 11,
+      "12": 14,
+      "13": 14
+    }
+  },
+  "route_options": {
+    "archive": [
+      {
+        "route": "archive-A",
+        "slot": 10,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "archive-A",
+        "slot": 11,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "archive-A",
+        "slot": 12,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "archive-B",
+        "slot": 10,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "archive-B",
+        "slot": 11,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "archive-B",
+        "slot": 12,
+        "pools": [
+          "B",
+          "root"
+        ]
+      }
+    ],
+    "crm": [
+      {
+        "route": "crm-A",
+        "slot": 10,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "crm-A",
+        "slot": 11,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "crm-A",
+        "slot": 12,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "crm-B",
+        "slot": 10,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "crm-B",
+        "slot": 11,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "crm-B",
+        "slot": 12,
+        "pools": [
+          "B",
+          "root"
+        ]
+      }
+    ],
+    "search": [
+      {
+        "route": "search-A",
+        "slot": 10,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "search-A",
+        "slot": 11,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "search-A",
+        "slot": 12,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "search-B",
+        "slot": 10,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "search-B",
+        "slot": 11,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "search-B",
+        "slot": 12,
+        "pools": [
+          "B",
+          "root"
+        ]
+      }
+    ],
+    "tickets": [
+      {
+        "route": "tickets-A",
+        "slot": 10,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "tickets-A",
+        "slot": 11,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "tickets-A",
+        "slot": 12,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "tickets-B",
+        "slot": 10,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "tickets-B",
+        "slot": 11,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "tickets-B",
+        "slot": 12,
+        "pools": [
+          "B",
+          "root"
+        ]
+      }
+    ]
+  },
+  "assignment": null,
+  "obstruction": [
+    "archive",
+    "crm",
+    "search",
+    "tickets"
+  ],
+  "owner_request": {
+    "proposal_ids": [
+      "allowance-A"
+    ],
+    "cost": 2,
+    "assignment": {
+      "archive": {
+        "route": "archive-A",
+        "slot": 11
+      },
+      "crm": {
+        "route": "crm-B",
+        "slot": 11
+      },
+      "search": {
+        "route": "search-A",
+        "slot": 10
+      },
+      "tickets": {
+        "route": "tickets-B",
+        "slot": 12
+      }
+    }
+  },
+  "blocker_codes": [
+    "batch_delegation_budget_required"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "config": {
+    "nodes": [
+      {
+        "id": "n0",
+        "zone": "z0",
+        "eligible": true,
+        "maintenance": true
+      },
+      {
+        "id": "n1",
+        "zone": "z1",
+        "eligible": true,
+        "maintenance": false
+      },
+      {
+        "id": "n2",
+        "zone": "z0",
+        "eligible": true,
+        "maintenance": false
+      },
+      {
+        "id": "n3",
+        "zone": "z1",
+        "eligible": true,
+        "maintenance": false
+      }
+    ],
+    "min_ready": 2,
+    "max_total": 3,
+    "min_zones": 1
+  },
+  "initial": {
+    "n0": "old",
+    "n1": "old"
+  },
+  "requests": [
+    {
+      "id": "install",
+      "kind": "install",
+      "expect": 0,
+      "epoch": 1,
+      "revision": "v2",
+      "target_nodes": [
+        "n2",
+        "n3"
+      ],
+      "observed": {
+        "n0": "old",
+        "n1": "old"
+      },
+      "plan": [
+        {
+          "op": "start",
+          "node": "n2"
+        },
+        {
+          "op": "stop",
+          "node": "n0"
+        },
+        {
+          "op": "start",
+          "node": "n3"
+        },
+        {
+          "op": "stop",
+          "node": "n1"
+        }
+      ]
+    },
+    {
+      "id": "tick-0",
+      "kind": "tick",
+      "expect": 1
+    },
+    {
+      "id": "ack-0",
+      "kind": "observe",
+      "epoch": 1,
+      "command": "1:0:1",
+      "success": true
+    },
+    {
+      "id": "tick-1",
+      "kind": "tick",
+      "expect": 3
+    },
+    {
+      "id": "ack-1",
+      "kind": "observe",
+      "epoch": 1,
+      "command": "1:1:1",
+      "success": true
+    },
+    {
+      "id": "tick-2",
+      "kind": "tick",
+      "expect": 5
+    },
+    {
+      "id": "ack-2",
+      "kind": "observe",
+      "epoch": 1,
+      "command": "1:2:1",
+      "success": true
+    },
+    {
+      "id": "tick-3",
+      "kind": "tick",
+      "expect": 7
+    },
+    {
+      "id": "ack-3",
+      "kind": "observe",
+      "epoch": 1,
+      "command": "1:3:1",
+      "success": true
+    }
+  ]
+}

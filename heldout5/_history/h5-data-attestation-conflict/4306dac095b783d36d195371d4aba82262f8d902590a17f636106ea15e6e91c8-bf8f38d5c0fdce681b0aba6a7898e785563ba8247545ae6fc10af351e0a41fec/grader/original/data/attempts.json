@@ -1,0 +1,22 @@
+[
+  {
+    "artifact": "b33",
+    "id": "a1",
+    "request": "q1"
+  },
+  {
+    "artifact": "b44",
+    "id": "a2",
+    "request": "q1"
+  },
+  {
+    "artifact": "b33",
+    "id": "a3",
+    "request": "q2"
+  },
+  {
+    "artifact": "b33",
+    "id": "a4",
+    "request": "q3"
+  }
+]

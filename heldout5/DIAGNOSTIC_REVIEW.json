@@ -1,0 +1,100 @@
+{
+  "at": "2026-10-31T04:33:46.583761+00:00",
+  "model": "minimax-m2-7",
+  "final": true,
+  "definition": "Manual qualitative review of whether the attempt identifies the actual production obstacle. This is not an additional benchmark score, does not imply an exhaustive proof or correct remedy, and does not override any grade. Canonical artifact correctness is separate from general API correctness.",
+  "tasks": [
+    {
+      "task": "h5-data-attestation-conflict",
+      "run": "runs/calibration-h5/h5-data-attestation-conflict/v1-minimax-m2-7",
+      "grade_sha256": "7aa77722de12a74d965218cb5cc501d6b2c3a95a356b74a335b016a760b856fc",
+      "main_obstacle_recognized": true,
+      "canonical_artifact_correct": false,
+      "verified_success": false,
+      "interpretation": "Correct historical authorization obstacle; full provenance-source evidence omitted an unauthorized source."
+    },
+    {
+      "task": "h5-data-owner-merge",
+      "run": "runs/calibration-h5/h5-data-owner-merge/v1-minimax-m2-7",
+      "grade_sha256": "b88fd784e94e91e55c3837bbc7f2d068daa669a72040274df7d0447f543d741c",
+      "main_obstacle_recognized": true,
+      "canonical_artifact_correct": true,
+      "verified_success": true,
+      "interpretation": "Correct odd-cycle obstruction, minimum infeasible core, and minimum owner intervention; fully verified."
+    },
+    {
+      "task": "h5-data-region-placement",
+      "run": "runs/calibration-h5/h5-data-region-placement/v1-minimax-m2-7",
+      "grade_sha256": "d6ea960f4255c27cb3a6566e2ea9da554b17b7e4ff08e768b7f9451b773be396",
+      "main_obstacle_recognized": true,
+      "canonical_artifact_correct": false,
+      "verified_success": false,
+      "interpretation": "Correct infeasibility classification and core, but proposed capacity remedy was 11 rather than the minimum 3; a single failed placement in prose is not an exhaustive proof."
+    },
+    {
+      "task": "h5-data-service-scope",
+      "run": "runs/calibration-h5/h5-data-service-scope/v1-minimax-m2-7",
+      "grade_sha256": "f38c3e198cd41229f9752ea8dbf2cfe61bbe4bb09f86bb556922d29524656548",
+      "main_obstacle_recognized": true,
+      "canonical_artifact_correct": true,
+      "verified_success": false,
+      "interpretation": "Correct canonical route obstruction and remedy; alternate candidate-list certificates failed."
+    },
+    {
+      "task": "h5-fin-credit-release",
+      "run": "runs/calibration-h5/h5-fin-credit-release/v1-minimax-m2-7",
+      "grade_sha256": "befdb9d0f7091b662a9356e8a65b34246d1c078b8974bad21e677d16569b91aa",
+      "main_obstacle_recognized": false,
+      "canonical_artifact_correct": false,
+      "verified_success": false,
+      "interpretation": "Invented a conflict between different revisions instead of resolving revisions and proving the joint funding obstacle."
+    },
+    {
+      "task": "h5-fin-payout-owner",
+      "run": "runs/calibration-h5/h5-fin-payout-owner/v1-minimax-m2-7",
+      "grade_sha256": "df9d847ffde37f08567c0e64eb78e2ed4879a6152e0acf255b2e14f8e9634950",
+      "main_obstacle_recognized": true,
+      "canonical_artifact_correct": true,
+      "verified_success": false,
+      "interpretation": "Correct canonical funding shortfall, deficient subset and remedy; general implementation failed valid variants."
+    },
+    {
+      "task": "h5-fin-revenue-attest",
+      "run": "runs/calibration-h5/h5-fin-revenue-attest/v1-minimax-m2-7",
+      "grade_sha256": "96b33352ba40a8d9cc50b96b4066f7db12dd03a93c7a0fed192cd80234f83a6d",
+      "main_obstacle_recognized": true,
+      "canonical_artifact_correct": true,
+      "verified_success": false,
+      "interpretation": "Correct canonical period shortfall and joint proposal remedy; retired postings and superseded conflicts failed."
+    },
+    {
+      "task": "h5-ops-attestation",
+      "run": "runs/calibration-h5/h5-ops-attestation/v1-minimax-m2-7",
+      "grade_sha256": "833618ef76d929a930c0c8924d806db75e9242aeeec6b5036aa3c0e94f8bd41e",
+      "main_obstacle_recognized": true,
+      "canonical_artifact_correct": true,
+      "verified_success": false,
+      "interpretation": "Correct canonical four-versus-three capacity obstruction and scope remedy; API pair shape and alternate remedies failed."
+    },
+    {
+      "task": "h5-ops-backup-gap",
+      "run": "runs/calibration-h5/h5-ops-backup-gap/v1-minimax-m2-7",
+      "grade_sha256": "dcd2f5642e25439186d5e6b35d339317413fcf83c2918887c7fb20c6e3771592",
+      "main_obstacle_recognized": true,
+      "canonical_artifact_correct": false,
+      "verified_success": false,
+      "interpretation": "Correct rank deficiency and minimum owner request, but incorrectly reported dependent pivot variables as uniquely decoded."
+    },
+    {
+      "task": "h5-ops-quorum-cut",
+      "run": "runs/calibration-h5/h5-ops-quorum-cut/v1-minimax-m2-7",
+      "grade_sha256": "29aadcae3aa6756bd2eb0d61a2851b4429a4d9d87d621d711b44ea1da3fe671d",
+      "main_obstacle_recognized": true,
+      "canonical_artifact_correct": true,
+      "verified_success": true,
+      "interpretation": "Correct unreachable transition closure despite a valid static final placement; minimum combined owner remedy and valid 15-action plan fully verified."
+    }
+  ],
+  "planned_wall_tasks": 10,
+  "limitation": "One attempt per task; related contract and persistence failures are correlated. No Beam task-level results were used."
+}

@@ -1,0 +1,1726 @@
+{
+  "checked_closed_run_names": [
+    "h6-data-alias-replay/v1-astra",
+    "h6-data-alias-replay/v1-deepseek-v3",
+    "h6-data-alias-replay/v1-minimax-m2-7",
+    "h6-data-attestation-conflict/v1-astra",
+    "h6-data-attestation-conflict/v1-deepseek-v3",
+    "h6-data-attestation-conflict/v1-minimax-m2-7",
+    "h6-data-erasure-ledger/v1-astra",
+    "h6-data-erasure-ledger/v1-minimax-m2-7",
+    "h6-data-owner-merge/v1-minimax-m2-7",
+    "h6-data-redacted-export/v1-astra",
+    "h6-data-redacted-export/v1-minimax-m2-7",
+    "h6-data-region-placement/v1-astra",
+    "h6-data-region-placement/v1-deepseek-v3",
+    "h6-data-region-placement/v1-minimax-m2-7",
+    "h6-data-service-scope/v1-astra",
+    "h6-data-service-scope/v1-deepseek-v3",
+    "h6-data-service-scope/v1-minimax-m2-7",
+    "h6-data-ticket-visibility/v1-astra",
+    "h6-fin-credit-release/v1-astra",
+    "h6-fin-credit-release/v1-deepseek-v3",
+    "h6-fin-credit-release/v1-minimax-m2-7",
+    "h6-fin-meter-close/v1-astra",
+    "h6-fin-meter-close/v1-deepseek-v3",
+    "h6-fin-meter-close/v1-minimax-m2-7",
+    "h6-fin-payout-owner/v1-astra",
+    "h6-fin-payout-owner/v1-deepseek-v3",
+    "h6-fin-payout-owner/v1-minimax-m2-7",
+    "h6-fin-procure-plan/v1-astra",
+    "h6-fin-procure-plan/v1-minimax-m2-7",
+    "h6-fin-refund-replay/v1-astra",
+    "h6-fin-revenue-attest/v1-astra",
+    "h6-fin-revenue-attest/v1-deepseek-v3",
+    "h6-fin-revenue-attest/v1-minimax-m2-7",
+    "h6-ops-attestation/v1-astra",
+    "h6-ops-attestation/v1-deepseek-v3",
+    "h6-ops-attestation/v1-minimax-m2-7",
+    "h6-ops-backup-gap/v1-astra",
+    "h6-ops-backup-gap/v1-minimax-m2-7",
+    "h6-ops-quorum-cut/v1-astra",
+    "h6-ops-quorum-cut/v1-deepseek-v3",
+    "h6-ops-quorum-cut/v1-minimax-m2-7"
+  ],
+  "checks": {
+    "event_metadata": {
+      "active": 5,
+      "active_lanes": [
+        {
+          "kind": "neutral",
+          "lane": 2,
+          "run": "h6-data-ticket-visibility/v1-minimax-m2-7"
+        },
+        {
+          "kind": "astra",
+          "lane": 2,
+          "run": "h6-ops-provenance/v1-astra"
+        },
+        {
+          "kind": "astra",
+          "lane": 3,
+          "run": "h6-ops-rollout/v1-astra"
+        },
+        {
+          "kind": "neutral",
+          "lane": 1,
+          "run": "h6-fin-refund-replay/v1-minimax-m2-7"
+        },
+        {
+          "kind": "neutral",
+          "lane": 3,
+          "run": "h6-ops-provenance/v1-minimax-m2-7"
+        }
+      ],
+      "finishes": 41,
+      "regrade_events": 3,
+      "retained_grade_events": 0,
+      "starts": 46
+    },
+    "existing_local_images": {
+      "checked_at": "2026-10-31T22:21:45.469063+00:00",
+      "observed": {
+        "agent_image_id": "sha256:76b51ee6322ed415ce4e6e2c6b25d8e415b3a70ab98a42df8e6d9fbcb1540ce6",
+        "image_id": "sha256:420ced6f841609b80d25228a16aa8a220199521a887a59b3e9b00958865b88f5"
+      },
+      "ok": true,
+      "operation": "Read-only docker image inspect; no containers started or images changed."
+    },
+    "finish_digest_bindings": {
+      "closed_runs_checked": 41,
+      "enforced_by": "freeze.verify_run",
+      "passed": 41
+    },
+    "preserved_baselines": {
+      "manifest_sha256": {
+        "heldout4/FREEZE_MANIFEST.json": "adaa590b9d630272a9e10e169962e7acd18d37390dd0cac180043c7fae0df318",
+        "heldout5/FREEZE_MANIFEST.json": "a362fdd02e151a3ccd54e06e1bc1af68d214c13388caa375e5e3e8b239802c5b",
+        "sanity_checks/heldout4-minimax-m2-7/EVIDENCE_MANIFEST.json": "abde828c914798a3bec68b7772c1384b3eafba50e5ed4b3bbe9945128d23569f"
+      },
+      "ok": true,
+      "verified_file_count": 9092
+    },
+    "run_directory_inventory": {
+      "missing": [],
+      "untracked": []
+    },
+    "runtime_config": {
+      "harness_matches": true,
+      "ok": true,
+      "runtime_sha256": {
+        "ADDITIONAL_MODELS.toml": "29d409d147658e725125d0dbd24df1b1a1dcdf0d4d55395482a31e817e9bd442",
+        "ADDITIONAL_MODEL_CONFIGS.json": "4cff4a654f7630e5f5c8f707bd2830bf25dddd15150fc6e0f0d3e51d6c634c95",
+        "MODEL_CONFIGS.json": "6b98d4f27be432b66fff5c8d598e56e4e3d60b13677aa8b965fc037729b3e437",
+        "PRESERVED_BASELINES.json": "d3e8684d2181f5feadea8ed050ee354b8784d8d6c534bed9af1c217d6487428f",
+        "_shared/calibrate.py": "dd078d2c45c3a22281a9f908bf9f2c3c803aa4bd2efd6e7a73811f9a52c03477",
+        "_shared/run_configured.py": "72ffdd26177dc437179b373f55192d0cc9a8a9208e55ad80c56a67462fbe4712",
+        "_shared/validate.py": "e9aa979def99d2aa3ac5498c9ed65a65d4516658b6bd488b228a314700150d6b"
+      }
+    },
+    "source_archives": {
+      "by_task": {
+        "h6-data-alias-replay": 1,
+        "h6-data-attestation-conflict": 1,
+        "h6-data-erasure-ledger": 1,
+        "h6-data-owner-merge": 1,
+        "h6-data-redacted-export": 1,
+        "h6-data-region-placement": 1,
+        "h6-data-service-scope": 2,
+        "h6-data-ticket-visibility": 1,
+        "h6-fin-credit-release": 1,
+        "h6-fin-meter-close": 1,
+        "h6-fin-payout-owner": 1,
+        "h6-fin-procure-plan": 1,
+        "h6-fin-refund-replay": 1,
+        "h6-fin-revenue-attest": 1,
+        "h6-ops-attestation": 2,
+        "h6-ops-backup-gap": 2,
+        "h6-ops-provenance": 2,
+        "h6-ops-quorum-cut": 2,
+        "h6-ops-rollout": 2,
+        "h6-ops-wal-restore": 2
+      },
+      "count": 27,
+      "ok": true
+    }
+  },
+  "closed_runs": [
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "43d68443dac297576fe054d8135e97dfabc89adcff210839e64f7da49a9c181f",
+      "effective_grader_hash": "ec5642a27fd446c68bc6828e47e8161d6e02fe3d559badd8fd0370653453d95d",
+      "ended_at": "2026-10-31T21:15:58.594+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "ec5642a27fd446c68bc6828e47e8161d6e02fe3d559badd8fd0370653453d95d",
+          "sha256": "43d68443dac297576fe054d8135e97dfabc89adcff210839e64f7da49a9c181f"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-data-alias-replay/v1-astra",
+      "original_grade_sha256": "43d68443dac297576fe054d8135e97dfabc89adcff210839e64f7da49a9c181f",
+      "original_source_archive": "heldout6/_history/h6-data-alias-replay/095a5558105f5b65c5830829ead3ccbfbcf44ba0fe23f84ae78f5346b69939ae-ec5642a27fd446c68bc6828e47e8161d6e02fe3d559badd8fd0370653453d95d",
+      "outcome": "complete",
+      "providers": [],
+      "raw_file_count": 114,
+      "raw_manifest_sha256": "fc39b4d511d3fd57e2d4ac491c4fa3a93257005441659b4cf10d9711cb9f0df6",
+      "record_sha256": "ca6fbc533997f1deb9cd23099e02154f515d27dd776b98500216fe93601c7084",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "5f9f43333a1a7663e53942d928733c0ec310852d4afee9257a84055de6d1e8bc",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-alias-replay",
+      "task_hash": "095a5558105f5b65c5830829ead3ccbfbcf44ba0fe23f84ae78f5346b69939ae",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.241911+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "56404968323f4bbc66d50a652b822a1b6f845ddca67f11c1a0948d4a69369436",
+      "effective_grader_hash": "ec5642a27fd446c68bc6828e47e8161d6e02fe3d559badd8fd0370653453d95d",
+      "ended_at": "2026-10-31T21:14:08.296+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "ec5642a27fd446c68bc6828e47e8161d6e02fe3d559badd8fd0370653453d95d",
+          "sha256": "56404968323f4bbc66d50a652b822a1b6f845ddca67f11c1a0948d4a69369436"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "deepseek-v3",
+      "name": "h6-data-alias-replay/v1-deepseek-v3",
+      "original_grade_sha256": "56404968323f4bbc66d50a652b822a1b6f845ddca67f11c1a0948d4a69369436",
+      "original_source_archive": "heldout6/_history/h6-data-alias-replay/095a5558105f5b65c5830829ead3ccbfbcf44ba0fe23f84ae78f5346b69939ae-ec5642a27fd446c68bc6828e47e8161d6e02fe3d559badd8fd0370653453d95d",
+      "outcome": "blocked",
+      "providers": [
+        "StreamLake"
+      ],
+      "raw_file_count": 54,
+      "raw_manifest_sha256": "14a7a4650e5efa79e2dc1ae9d71eb5dd9d8e5c25c14d1d26e1276764f0cd0138",
+      "record_sha256": "7240479c37799a91a59fcb78eeb8add358c81ee37eb59b783e9cdf4534f9eea0",
+      "regrades_verified": 0,
+      "responses": 5,
+      "responses_with_reasoning_content": 0,
+      "returned_models": [
+        "deepseek/deepseek-chat"
+      ],
+      "scored": true,
+      "snapshot_sha256": "90f7e5c4283aab112b1e0359766079408cca25576837a9f0bb73657652dbca8d",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-alias-replay",
+      "task_hash": "095a5558105f5b65c5830829ead3ccbfbcf44ba0fe23f84ae78f5346b69939ae",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.259177+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "8e2c5e9408d8792c553e80cb66979d1789b71cca2ed08779c1ec33ce2e02af1d",
+      "effective_grader_hash": "ec5642a27fd446c68bc6828e47e8161d6e02fe3d559badd8fd0370653453d95d",
+      "ended_at": "2026-10-31T22:08:33.167+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "ec5642a27fd446c68bc6828e47e8161d6e02fe3d559badd8fd0370653453d95d",
+          "sha256": "8e2c5e9408d8792c553e80cb66979d1789b71cca2ed08779c1ec33ce2e02af1d"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-data-alias-replay/v1-minimax-m2-7",
+      "original_grade_sha256": "8e2c5e9408d8792c553e80cb66979d1789b71cca2ed08779c1ec33ce2e02af1d",
+      "original_source_archive": "heldout6/_history/h6-data-alias-replay/095a5558105f5b65c5830829ead3ccbfbcf44ba0fe23f84ae78f5346b69939ae-ec5642a27fd446c68bc6828e47e8161d6e02fe3d559badd8fd0370653453d95d",
+      "outcome": "complete",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 64,
+      "raw_manifest_sha256": "92cb2cd494486a901e014f3b01ee9c55c2e2d8fc9339e9f22d13ecfc21a7fb3d",
+      "record_sha256": "19d74692a6f7e683405cc26191a4499ea1228c8725ee1cc455d3016a7b370558",
+      "regrades_verified": 0,
+      "responses": 25,
+      "responses_with_reasoning_content": 25,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "e5c8bed7475e098ba568cf0d0e07ea63894034053edebf72cb179eaf576a9418",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-alias-replay",
+      "task_hash": "095a5558105f5b65c5830829ead3ccbfbcf44ba0fe23f84ae78f5346b69939ae",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.278572+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "3ae1effdc74cb6f2815555c31adce41a6cb790bee901d0577397b70d152975f4",
+      "effective_grader_hash": "c284311a6c16919a0ce7e58f1a44c6facebe9bf44fb00af9431c612b91f5a37b",
+      "ended_at": "2026-10-31T21:39:04.544+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "c284311a6c16919a0ce7e58f1a44c6facebe9bf44fb00af9431c612b91f5a37b",
+          "sha256": "3ae1effdc74cb6f2815555c31adce41a6cb790bee901d0577397b70d152975f4"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-data-attestation-conflict/v1-astra",
+      "original_grade_sha256": "3ae1effdc74cb6f2815555c31adce41a6cb790bee901d0577397b70d152975f4",
+      "original_source_archive": "heldout6/_history/h6-data-attestation-conflict/f545452d34e6a4991e327fd5fdbb912bca7f964c8f2dc6abf054b7c09fbacf86-c284311a6c16919a0ce7e58f1a44c6facebe9bf44fb00af9431c612b91f5a37b",
+      "outcome": "blocked",
+      "providers": [],
+      "raw_file_count": 110,
+      "raw_manifest_sha256": "755a699cd81d6f2fc060b503ec3a283cdd1c11910d248e93f3384958f9b1c8bc",
+      "record_sha256": "575b7fda43856bbe36b9f1775b4e3b2f517a83f0fdd1dc32ebae50d589a37b1a",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "2a27139f7e4c8d5c5a152c7a5cb8a37e96da4f0bb1f662b9c390750e05ebad2e",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-attestation-conflict",
+      "task_hash": "f545452d34e6a4991e327fd5fdbb912bca7f964c8f2dc6abf054b7c09fbacf86",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.305056+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "602e2b0a557c8d9eff8df4f49240dacff6a90cc517034bc2e72ecd80cf06f7b5",
+      "effective_grader_hash": "c284311a6c16919a0ce7e58f1a44c6facebe9bf44fb00af9431c612b91f5a37b",
+      "ended_at": "2026-10-31T21:35:59.306+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "c284311a6c16919a0ce7e58f1a44c6facebe9bf44fb00af9431c612b91f5a37b",
+          "sha256": "602e2b0a557c8d9eff8df4f49240dacff6a90cc517034bc2e72ecd80cf06f7b5"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "deepseek-v3",
+      "name": "h6-data-attestation-conflict/v1-deepseek-v3",
+      "original_grade_sha256": "602e2b0a557c8d9eff8df4f49240dacff6a90cc517034bc2e72ecd80cf06f7b5",
+      "original_source_archive": "heldout6/_history/h6-data-attestation-conflict/f545452d34e6a4991e327fd5fdbb912bca7f964c8f2dc6abf054b7c09fbacf86-c284311a6c16919a0ce7e58f1a44c6facebe9bf44fb00af9431c612b91f5a37b",
+      "outcome": "stalled",
+      "providers": [
+        "StreamLake"
+      ],
+      "raw_file_count": 63,
+      "raw_manifest_sha256": "b57008ce54a78e4e57a525100cfb952844f91b010b67ef6b6747153ec7a5f739",
+      "record_sha256": "564cfcf5d4c4825aa310379a88e8ce47d9487617aa629f8e8405f7529f109318",
+      "regrades_verified": 0,
+      "responses": 12,
+      "responses_with_reasoning_content": 0,
+      "returned_models": [
+        "deepseek/deepseek-chat"
+      ],
+      "scored": true,
+      "snapshot_sha256": "f745bb1a24338929f21aa8f8c6c1230bd529a25dcdc80572054c7053c14bd346",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-attestation-conflict",
+      "task_hash": "f545452d34e6a4991e327fd5fdbb912bca7f964c8f2dc6abf054b7c09fbacf86",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.322274+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "d5eb21ae29074d7ab929638d52ac7dc6815c69fc0ea15b4136c842755ead5cef",
+      "effective_grader_hash": "c284311a6c16919a0ce7e58f1a44c6facebe9bf44fb00af9431c612b91f5a37b",
+      "ended_at": "2026-10-31T21:38:27.747+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "c284311a6c16919a0ce7e58f1a44c6facebe9bf44fb00af9431c612b91f5a37b",
+          "sha256": "d5eb21ae29074d7ab929638d52ac7dc6815c69fc0ea15b4136c842755ead5cef"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-data-attestation-conflict/v1-minimax-m2-7",
+      "original_grade_sha256": "d5eb21ae29074d7ab929638d52ac7dc6815c69fc0ea15b4136c842755ead5cef",
+      "original_source_archive": "heldout6/_history/h6-data-attestation-conflict/f545452d34e6a4991e327fd5fdbb912bca7f964c8f2dc6abf054b7c09fbacf86-c284311a6c16919a0ce7e58f1a44c6facebe9bf44fb00af9431c612b91f5a37b",
+      "outcome": "complete",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 57,
+      "raw_manifest_sha256": "e360e882f9a93b5bb9bb1c99667767d34ff6362f66fdaf11f76de280176116a0",
+      "record_sha256": "1b5f294bf58b174178954271398436303486b2d9e12d1a64ee19f0c20b74aab7",
+      "regrades_verified": 0,
+      "responses": 48,
+      "responses_with_reasoning_content": 48,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "2cd90855e7130aa9e7fa6a325148868ca7a74be79c791ea0052deee7bc943550",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-attestation-conflict",
+      "task_hash": "f545452d34e6a4991e327fd5fdbb912bca7f964c8f2dc6abf054b7c09fbacf86",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.343160+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "e03f6300e4808be65d7f79b97177819b7350a9a6159521faf8dc746861b183d5",
+      "effective_grader_hash": "13319d91ebc2cb02e0ed8af8fd26bf01bf4988436bb021e953f79399a28b9aa2",
+      "ended_at": "2026-10-31T22:04:55.764+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "13319d91ebc2cb02e0ed8af8fd26bf01bf4988436bb021e953f79399a28b9aa2",
+          "sha256": "e03f6300e4808be65d7f79b97177819b7350a9a6159521faf8dc746861b183d5"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-data-erasure-ledger/v1-astra",
+      "original_grade_sha256": "e03f6300e4808be65d7f79b97177819b7350a9a6159521faf8dc746861b183d5",
+      "original_source_archive": "heldout6/_history/h6-data-erasure-ledger/bd1cc80333d57cf8cd3bfddc5eb740f583d41d7903d192f2637f4aff2b4bc4c0-13319d91ebc2cb02e0ed8af8fd26bf01bf4988436bb021e953f79399a28b9aa2",
+      "outcome": "complete",
+      "providers": [],
+      "raw_file_count": 120,
+      "raw_manifest_sha256": "0bf0a363899fe926ef808f0d1863ae8408e2f17d654e32c1160d01dc81c43dcd",
+      "record_sha256": "8a502005b872b349766cf93055a8ff49c2cf0c8527740d727ab5afb368d3b484",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "39d04381309cf6612c3db50279ebd26a154f808af317753570abfff3c9abf80c",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-erasure-ledger",
+      "task_hash": "bd1cc80333d57cf8cd3bfddc5eb740f583d41d7903d192f2637f4aff2b4bc4c0",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.372985+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "96c5e1bdf185c629aae1f52e96a30df88aa850e5b4f42875d8c5c7bf13e2018d",
+      "effective_grader_hash": "13319d91ebc2cb02e0ed8af8fd26bf01bf4988436bb021e953f79399a28b9aa2",
+      "ended_at": "2026-10-31T22:21:08.602+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "13319d91ebc2cb02e0ed8af8fd26bf01bf4988436bb021e953f79399a28b9aa2",
+          "sha256": "96c5e1bdf185c629aae1f52e96a30df88aa850e5b4f42875d8c5c7bf13e2018d"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-data-erasure-ledger/v1-minimax-m2-7",
+      "original_grade_sha256": "96c5e1bdf185c629aae1f52e96a30df88aa850e5b4f42875d8c5c7bf13e2018d",
+      "original_source_archive": "heldout6/_history/h6-data-erasure-ledger/bd1cc80333d57cf8cd3bfddc5eb740f583d41d7903d192f2637f4aff2b4bc4c0-13319d91ebc2cb02e0ed8af8fd26bf01bf4988436bb021e953f79399a28b9aa2",
+      "outcome": "blocked",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 68,
+      "raw_manifest_sha256": "d05de6a02a8527feae6d047a766088ebdbd755e6d453ed0cb6ea61c3605e8b83",
+      "record_sha256": "03f6e12baa6e4a8d3a39f6e9a0a69d125969388ab802b34b70cb0d1dd5778eb0",
+      "regrades_verified": 0,
+      "responses": 37,
+      "responses_with_reasoning_content": 37,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "c770b3b21da07bc21294d83288305091f71f188f310fa56015b09f3d130d8e83",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-erasure-ledger",
+      "task_hash": "bd1cc80333d57cf8cd3bfddc5eb740f583d41d7903d192f2637f4aff2b4bc4c0",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.393312+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "9eb93b0af685dc134f38ef4989e420dd56554095bdafad81c86e19ef2c8069c1",
+      "effective_grader_hash": "af035ffdc7f1ed5f5363409abfdd2eab5486ac6f8b6f11b649c1636177723a1b",
+      "ended_at": "2026-10-31T21:30:53.976+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "af035ffdc7f1ed5f5363409abfdd2eab5486ac6f8b6f11b649c1636177723a1b",
+          "sha256": "9eb93b0af685dc134f38ef4989e420dd56554095bdafad81c86e19ef2c8069c1"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-data-owner-merge/v1-minimax-m2-7",
+      "original_grade_sha256": "9eb93b0af685dc134f38ef4989e420dd56554095bdafad81c86e19ef2c8069c1",
+      "original_source_archive": "heldout6/_history/h6-data-owner-merge/34323063d1ee719e37daeffb507a43bbe5b2d11052d3c41e16bb05c464bc9eb0-af035ffdc7f1ed5f5363409abfdd2eab5486ac6f8b6f11b649c1636177723a1b",
+      "outcome": "blocked",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 60,
+      "raw_manifest_sha256": "73c67d059b411f2f23cbbc21c6ca0015670c1221e9b8f59ea97430466230c6bb",
+      "record_sha256": "8926f27952922f74dc10c322ef6aa8593e72326555c1983ec7dc25105afbce41",
+      "regrades_verified": 0,
+      "responses": 26,
+      "responses_with_reasoning_content": 26,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "5343f1f40087a14fb795a19c7138dbc081102d7b57070896a5c69ec46b165aad",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-owner-merge",
+      "task_hash": "34323063d1ee719e37daeffb507a43bbe5b2d11052d3c41e16bb05c464bc9eb0",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.411719+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "a9a08b5182c2fefc9d54c500083165abb5405dc05ad7d80c20d516b7e421b479",
+      "effective_grader_hash": "cd125544d8ba988407f343bb7d6f2246a1f441a870a171f953c019e5755e7b66",
+      "ended_at": "2026-10-31T22:09:37.963+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "cd125544d8ba988407f343bb7d6f2246a1f441a870a171f953c019e5755e7b66",
+          "sha256": "a9a08b5182c2fefc9d54c500083165abb5405dc05ad7d80c20d516b7e421b479"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-data-redacted-export/v1-astra",
+      "original_grade_sha256": "a9a08b5182c2fefc9d54c500083165abb5405dc05ad7d80c20d516b7e421b479",
+      "original_source_archive": "heldout6/_history/h6-data-redacted-export/b2bf55c75ca7b55729250e6cd94132c2bf602b78338aa42497896d02a9242431-cd125544d8ba988407f343bb7d6f2246a1f441a870a171f953c019e5755e7b66",
+      "outcome": "complete",
+      "providers": [],
+      "raw_file_count": 114,
+      "raw_manifest_sha256": "ad57c04db2b534c7c6ce2099e7688cc80491a39e3cd31eebb4ad8db0e75b4b45",
+      "record_sha256": "a8d19307d20e7a56c3b29e62b7e540eec28907e95941d0d9f1bda2b794a0fb6b",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "62d10a2fa842ea2dc22ba4e8a0ffca0f11c4685d68fcc74a6567032f0e4f310c",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-redacted-export",
+      "task_hash": "b2bf55c75ca7b55729250e6cd94132c2bf602b78338aa42497896d02a9242431",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.441346+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "823f71771139afccdf85d3fd34354dff97a1eefa6e85615a63d4c3ea8d2395de",
+      "effective_grader_hash": "cd125544d8ba988407f343bb7d6f2246a1f441a870a171f953c019e5755e7b66",
+      "ended_at": "2026-10-31T22:09:45.987+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "cd125544d8ba988407f343bb7d6f2246a1f441a870a171f953c019e5755e7b66",
+          "sha256": "823f71771139afccdf85d3fd34354dff97a1eefa6e85615a63d4c3ea8d2395de"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-data-redacted-export/v1-minimax-m2-7",
+      "original_grade_sha256": "823f71771139afccdf85d3fd34354dff97a1eefa6e85615a63d4c3ea8d2395de",
+      "original_source_archive": "heldout6/_history/h6-data-redacted-export/b2bf55c75ca7b55729250e6cd94132c2bf602b78338aa42497896d02a9242431-cd125544d8ba988407f343bb7d6f2246a1f441a870a171f953c019e5755e7b66",
+      "outcome": "complete",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 62,
+      "raw_manifest_sha256": "ad3c41ecce7487d0236c4eacfdda414497b98ace40c31adf8a0e07b0e4ab2a76",
+      "record_sha256": "84b1111669af35e22a1cc153dff9db3bb27b38dcdea047f737e724e874eb8c5b",
+      "regrades_verified": 0,
+      "responses": 21,
+      "responses_with_reasoning_content": 21,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "f0d89ec6056e8016b9eabfd2242324d1f6c8a176a63f229a5103b5651155d639",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-redacted-export",
+      "task_hash": "b2bf55c75ca7b55729250e6cd94132c2bf602b78338aa42497896d02a9242431",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.462226+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "93d6d241e14a7295cfd5145b913d45223a34a8b8044bec1b495a2ca301f4b419",
+      "effective_grader_hash": "4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+      "ended_at": "2026-10-31T21:39:38.352+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+          "sha256": "93d6d241e14a7295cfd5145b913d45223a34a8b8044bec1b495a2ca301f4b419"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-data-region-placement/v1-astra",
+      "original_grade_sha256": "93d6d241e14a7295cfd5145b913d45223a34a8b8044bec1b495a2ca301f4b419",
+      "original_source_archive": "heldout6/_history/h6-data-region-placement/8247c002051d6e963570eec520752bbc5eec2dfd1a0ef4d322c71266c6fcd959-4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+      "outcome": "blocked",
+      "providers": [],
+      "raw_file_count": 111,
+      "raw_manifest_sha256": "a9d9cdecaa36f34da2d68d80e84c6f89d2dd8137f39ac3451419e10be2328fc3",
+      "record_sha256": "48959dd926c70bb4508f8abd26f96b006d4bf43e7ff1119b27fe3d57738accaf",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "3a8e0311a0d5807c34de3902e2a8292aeb818fb2e350875f44d81f31ef8c7b35",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-region-placement",
+      "task_hash": "8247c002051d6e963570eec520752bbc5eec2dfd1a0ef4d322c71266c6fcd959",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.491742+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "385df0d9c1e65158f5307831128538b8261510b9ad01de35ccf32c046617c039",
+      "effective_grader_hash": "4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+      "ended_at": "2026-10-31T21:40:59.498+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+          "sha256": "385df0d9c1e65158f5307831128538b8261510b9ad01de35ccf32c046617c039"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "deepseek-v3",
+      "name": "h6-data-region-placement/v1-deepseek-v3",
+      "original_grade_sha256": "385df0d9c1e65158f5307831128538b8261510b9ad01de35ccf32c046617c039",
+      "original_source_archive": "heldout6/_history/h6-data-region-placement/8247c002051d6e963570eec520752bbc5eec2dfd1a0ef4d322c71266c6fcd959-4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+      "outcome": "blocked",
+      "providers": [
+        "StreamLake"
+      ],
+      "raw_file_count": 58,
+      "raw_manifest_sha256": "4e9fb3b38c677b241e2e836c8a320f26b4d12bb78cac2e07ad8562f25fc2ce3a",
+      "record_sha256": "5da12b9aa1544fa2667705a253cad685ab461d205a918f51f0da14816f8e12ba",
+      "regrades_verified": 0,
+      "responses": 18,
+      "responses_with_reasoning_content": 0,
+      "returned_models": [
+        "deepseek/deepseek-chat"
+      ],
+      "scored": true,
+      "snapshot_sha256": "de661d5e0fe4be963756e45034e53d8996c6963422b33af865fa758eb52fd708",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-region-placement",
+      "task_hash": "8247c002051d6e963570eec520752bbc5eec2dfd1a0ef4d322c71266c6fcd959",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.511245+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "e2ff2c19525fc23e5d1e66e262ac6b8f9c2cb2c9bf85a24220a6a5f6296035c7",
+      "effective_grader_hash": "4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+      "ended_at": "2026-10-31T21:43:54.589+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+          "sha256": "e2ff2c19525fc23e5d1e66e262ac6b8f9c2cb2c9bf85a24220a6a5f6296035c7"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-data-region-placement/v1-minimax-m2-7",
+      "original_grade_sha256": "e2ff2c19525fc23e5d1e66e262ac6b8f9c2cb2c9bf85a24220a6a5f6296035c7",
+      "original_source_archive": "heldout6/_history/h6-data-region-placement/8247c002051d6e963570eec520752bbc5eec2dfd1a0ef4d322c71266c6fcd959-4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+      "outcome": "blocked",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 60,
+      "raw_manifest_sha256": "c5559f679c1b80a3b1a1fa0375f8231d926c550f9f455dd133fcace978bb25b3",
+      "record_sha256": "ea855a7408b396d1b7bf31ce64dfb3bf024b927b9d2f0d0a2475ddb87eeff51b",
+      "regrades_verified": 0,
+      "responses": 54,
+      "responses_with_reasoning_content": 54,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "805996e626acf0555feec80221b7911ac02c22a2a7191538f8af6675a6c0f80f",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-region-placement",
+      "task_hash": "8247c002051d6e963570eec520752bbc5eec2dfd1a0ef4d322c71266c6fcd959",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.532894+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "e77d00ead3dff65704e7fdb8129b49f6de0f4c346c0653fd90f0d527583c1eac",
+      "effective_grader_hash": "768e7f9a70246a52fe7e6be603552ef9f950eb388fddce1cde6907241c90d566",
+      "ended_at": "2026-10-31T21:45:18.781+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "768e7f9a70246a52fe7e6be603552ef9f950eb388fddce1cde6907241c90d566",
+          "sha256": "e77d00ead3dff65704e7fdb8129b49f6de0f4c346c0653fd90f0d527583c1eac"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-data-service-scope/v1-astra",
+      "original_grade_sha256": "e77d00ead3dff65704e7fdb8129b49f6de0f4c346c0653fd90f0d527583c1eac",
+      "original_source_archive": "heldout6/_history/h6-data-service-scope/d9b044a3bb4cc379b36bf775d841e28d53675fbb33dbd0b94e2bce3384a73963-768e7f9a70246a52fe7e6be603552ef9f950eb388fddce1cde6907241c90d566",
+      "outcome": "blocked",
+      "providers": [],
+      "raw_file_count": 110,
+      "raw_manifest_sha256": "3fcf9a3d190f7f2e9e4f207ef273781bf03c2c3cb695cf7687e410470204e394",
+      "record_sha256": "51718d7f6ec35bf3ee24a298ca0e7cb0cf11ec3778165e7024c5ae85ecfdd579",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "9bdfa866dd2a7c7192ff44ecb426d962f1bfad0b2c78b967a36d250abb4327a1",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-service-scope",
+      "task_hash": "d9b044a3bb4cc379b36bf775d841e28d53675fbb33dbd0b94e2bce3384a73963",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.561755+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "20be27e7e824bb1accf257ef5b640da7fb31ff1da19928bda2e228d4e9ebdbd4",
+      "effective_grader_hash": "768e7f9a70246a52fe7e6be603552ef9f950eb388fddce1cde6907241c90d566",
+      "ended_at": "2026-10-31T21:43:25.660+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "768e7f9a70246a52fe7e6be603552ef9f950eb388fddce1cde6907241c90d566",
+          "sha256": "20be27e7e824bb1accf257ef5b640da7fb31ff1da19928bda2e228d4e9ebdbd4"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "deepseek-v3",
+      "name": "h6-data-service-scope/v1-deepseek-v3",
+      "original_grade_sha256": "20be27e7e824bb1accf257ef5b640da7fb31ff1da19928bda2e228d4e9ebdbd4",
+      "original_source_archive": "heldout6/_history/h6-data-service-scope/d9b044a3bb4cc379b36bf775d841e28d53675fbb33dbd0b94e2bce3384a73963-768e7f9a70246a52fe7e6be603552ef9f950eb388fddce1cde6907241c90d566",
+      "outcome": "complete",
+      "providers": [
+        "StreamLake"
+      ],
+      "raw_file_count": 60,
+      "raw_manifest_sha256": "0ee1b337b3d52a854b49ef9fdc2d59cb599a7af651fe25f2e5528ffeaafcb9bc",
+      "record_sha256": "5da36c8dcb343715ce671b5f2019568c27b6d05600ce76ed1019d185b21f33c6",
+      "regrades_verified": 0,
+      "responses": 5,
+      "responses_with_reasoning_content": 0,
+      "returned_models": [
+        "deepseek/deepseek-chat"
+      ],
+      "scored": true,
+      "snapshot_sha256": "4facf60c4fadf7c6ad7b519a61f0d2dbb8b08fc8f48f5b460713d5611dd621b0",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-service-scope",
+      "task_hash": "d9b044a3bb4cc379b36bf775d841e28d53675fbb33dbd0b94e2bce3384a73963",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.580563+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "8b3ed87cc862cf065abe43a2bbd478380d8983876eb533a9a95c136df74c9694",
+      "effective_grader_hash": "768e7f9a70246a52fe7e6be603552ef9f950eb388fddce1cde6907241c90d566",
+      "ended_at": "2026-10-31T21:52:09.988+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "768e7f9a70246a52fe7e6be603552ef9f950eb388fddce1cde6907241c90d566",
+          "sha256": "8b3ed87cc862cf065abe43a2bbd478380d8983876eb533a9a95c136df74c9694"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-data-service-scope/v1-minimax-m2-7",
+      "original_grade_sha256": "8b3ed87cc862cf065abe43a2bbd478380d8983876eb533a9a95c136df74c9694",
+      "original_source_archive": "heldout6/_history/h6-data-service-scope/d9b044a3bb4cc379b36bf775d841e28d53675fbb33dbd0b94e2bce3384a73963-768e7f9a70246a52fe7e6be603552ef9f950eb388fddce1cde6907241c90d566",
+      "outcome": "blocked",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 62,
+      "raw_manifest_sha256": "c2859b5f86ed056fce2e139c7c3ac737ecf7bc8d7e6dee73f3554244f7abb788",
+      "record_sha256": "bfd1376955ed02bd53a81752128c94f095ba656e040ce9cf8b603036750f22b3",
+      "regrades_verified": 0,
+      "responses": 37,
+      "responses_with_reasoning_content": 37,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "8d72a74d838432a545ca9668d102e0124ff2fba101dc7952430b3348b0e7c099",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-service-scope",
+      "task_hash": "d9b044a3bb4cc379b36bf775d841e28d53675fbb33dbd0b94e2bce3384a73963",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.601113+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "838bf7e1f50966b243f1b2023882c40c07eaa5b1a50291f276628b8523e1c97c",
+      "effective_grader_hash": "1effb170099ce1b58097545dd024eb07354824899355770215f84070583a7b7c",
+      "ended_at": "2026-10-31T22:06:42.731+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "1effb170099ce1b58097545dd024eb07354824899355770215f84070583a7b7c",
+          "sha256": "838bf7e1f50966b243f1b2023882c40c07eaa5b1a50291f276628b8523e1c97c"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-data-ticket-visibility/v1-astra",
+      "original_grade_sha256": "838bf7e1f50966b243f1b2023882c40c07eaa5b1a50291f276628b8523e1c97c",
+      "original_source_archive": "heldout6/_history/h6-data-ticket-visibility/ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f-1effb170099ce1b58097545dd024eb07354824899355770215f84070583a7b7c",
+      "outcome": "complete",
+      "providers": [],
+      "raw_file_count": 114,
+      "raw_manifest_sha256": "0073e8c007a5eda0c0794685baba54b11b111639ef89a24057466b4f3c706851",
+      "record_sha256": "03e3f7538f3a6e2ae8356115b7ba7ee398c1116aef6cacc5c541afa20ce3188c",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "48e956485b0a45b7a2a6517073ee832db09b679fd793d3e694eb087c3bbfbe19",
+      "snapshot_writers_frozen": true,
+      "task": "h6-data-ticket-visibility",
+      "task_hash": "ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.630162+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "ae3435bd2ccadd40465198076e79a020e54686b3018ddddfee1002c800eb6794",
+      "effective_grader_hash": "65d3f7bf1d1264d67b5de0eb7173da782ff15c2219666f4f072733a977e88593",
+      "ended_at": "2026-10-31T21:46:59.299+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "65d3f7bf1d1264d67b5de0eb7173da782ff15c2219666f4f072733a977e88593",
+          "sha256": "ae3435bd2ccadd40465198076e79a020e54686b3018ddddfee1002c800eb6794"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-fin-credit-release/v1-astra",
+      "original_grade_sha256": "ae3435bd2ccadd40465198076e79a020e54686b3018ddddfee1002c800eb6794",
+      "original_source_archive": "heldout6/_history/h6-fin-credit-release/11c29d9a6503f1b9c24ac41db257fc649c2fde7466c03d15e612a18bc4dd715a-65d3f7bf1d1264d67b5de0eb7173da782ff15c2219666f4f072733a977e88593",
+      "outcome": "blocked",
+      "providers": [],
+      "raw_file_count": 74,
+      "raw_manifest_sha256": "70f087f93ef28e794577a7847da07ff4b3370507642ec50d3514073fa140c306",
+      "record_sha256": "23ada1f1b757291e8422a008f6ec4e031d63e30bf0da94b5a202af78a6daa628",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "b144eb6315e9e3a11b856bcc68bbec6edecb24003741f6079f68b146cf1b565b",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-credit-release",
+      "task_hash": "11c29d9a6503f1b9c24ac41db257fc649c2fde7466c03d15e612a18bc4dd715a",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.647375+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "2e0235c61ed8da7f1daa7fc4fbf4a1598dbc361525e2bd118c8ccc0639c81c0a",
+      "effective_grader_hash": "65d3f7bf1d1264d67b5de0eb7173da782ff15c2219666f4f072733a977e88593",
+      "ended_at": "2026-10-31T21:46:21.965+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "65d3f7bf1d1264d67b5de0eb7173da782ff15c2219666f4f072733a977e88593",
+          "sha256": "2e0235c61ed8da7f1daa7fc4fbf4a1598dbc361525e2bd118c8ccc0639c81c0a"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "deepseek-v3",
+      "name": "h6-fin-credit-release/v1-deepseek-v3",
+      "original_grade_sha256": "2e0235c61ed8da7f1daa7fc4fbf4a1598dbc361525e2bd118c8ccc0639c81c0a",
+      "original_source_archive": "heldout6/_history/h6-fin-credit-release/11c29d9a6503f1b9c24ac41db257fc649c2fde7466c03d15e612a18bc4dd715a-65d3f7bf1d1264d67b5de0eb7173da782ff15c2219666f4f072733a977e88593",
+      "outcome": "step_cap",
+      "providers": [
+        "StreamLake"
+      ],
+      "raw_file_count": 11,
+      "raw_manifest_sha256": "8263fdf078e622b764d73c948e7385ee35b494861bc89f42cff6327f084764c8",
+      "record_sha256": "d88d3abfc74bd136511ff91b2c2ef6f1095d2891b2793ee7ed5895f8f13cb1fe",
+      "regrades_verified": 0,
+      "responses": 2,
+      "responses_with_reasoning_content": 0,
+      "returned_models": [
+        "deepseek/deepseek-chat"
+      ],
+      "scored": true,
+      "snapshot_sha256": "e128f5c043c813e8525f396c280c18c259464713bdf63c003b73b7b47318964f",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-credit-release",
+      "task_hash": "11c29d9a6503f1b9c24ac41db257fc649c2fde7466c03d15e612a18bc4dd715a",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.652470+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "a7a098c5e7c923a03a67bad9bc489b0e71a34e0cd2e90bfd951b12c877036cc9",
+      "effective_grader_hash": "65d3f7bf1d1264d67b5de0eb7173da782ff15c2219666f4f072733a977e88593",
+      "ended_at": "2026-10-31T21:49:05.389+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "65d3f7bf1d1264d67b5de0eb7173da782ff15c2219666f4f072733a977e88593",
+          "sha256": "a7a098c5e7c923a03a67bad9bc489b0e71a34e0cd2e90bfd951b12c877036cc9"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-fin-credit-release/v1-minimax-m2-7",
+      "original_grade_sha256": "a7a098c5e7c923a03a67bad9bc489b0e71a34e0cd2e90bfd951b12c877036cc9",
+      "original_source_archive": "heldout6/_history/h6-fin-credit-release/11c29d9a6503f1b9c24ac41db257fc649c2fde7466c03d15e612a18bc4dd715a-65d3f7bf1d1264d67b5de0eb7173da782ff15c2219666f4f072733a977e88593",
+      "outcome": "blocked",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 22,
+      "raw_manifest_sha256": "84d419985a5fb0b93b03ea3b870a143cd20b889fc53d05aec72d1488eb846a9a",
+      "record_sha256": "c452b4ba6c81b61d5b6f76a4d7b61064af9c7b0828ea03f19e90387aba984071",
+      "regrades_verified": 0,
+      "responses": 16,
+      "responses_with_reasoning_content": 16,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "70e9f3092318c8edfec3d1e4ae6f6f99bfaec72945cda644136a8baa2a752a84",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-credit-release",
+      "task_hash": "11c29d9a6503f1b9c24ac41db257fc649c2fde7466c03d15e612a18bc4dd715a",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.659857+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "2b75628c7c882dc960a914a5099bb2ac0ed45d957864f109ac890f28f4317fba",
+      "effective_grader_hash": "981b4eb67e6cb150a21e830f3310594eb9ac080121db13cf3cb2bcb1e2823a74",
+      "ended_at": "2026-10-31T21:18:43.914+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "981b4eb67e6cb150a21e830f3310594eb9ac080121db13cf3cb2bcb1e2823a74",
+          "sha256": "2b75628c7c882dc960a914a5099bb2ac0ed45d957864f109ac890f28f4317fba"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-fin-meter-close/v1-astra",
+      "original_grade_sha256": "2b75628c7c882dc960a914a5099bb2ac0ed45d957864f109ac890f28f4317fba",
+      "original_source_archive": "heldout6/_history/h6-fin-meter-close/0bb5025668585298f0ac9d20cae435c2a47d8da07d337b959e0950bfd79d4985-981b4eb67e6cb150a21e830f3310594eb9ac080121db13cf3cb2bcb1e2823a74",
+      "outcome": "complete",
+      "providers": [],
+      "raw_file_count": 72,
+      "raw_manifest_sha256": "7c703f8a9c5f410d515648c6c009a0f9ba1a3562ad42abf4826573a48d95c445",
+      "record_sha256": "d5a7d7ba28cb5e2135349b00a5801336bae851b4ab47cbb5a6382708f69b48aa",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "2f0dcbb4376e56eec4f12cb3b2f55b5b7c663d8135b341e158cd1291e5b509c8",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-meter-close",
+      "task_hash": "0bb5025668585298f0ac9d20cae435c2a47d8da07d337b959e0950bfd79d4985",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.675986+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "7f88f0edced6da9c60de8f906dd10505001276a10be3900dfcc4085e28bb3db4",
+      "effective_grader_hash": "981b4eb67e6cb150a21e830f3310594eb9ac080121db13cf3cb2bcb1e2823a74",
+      "ended_at": "2026-10-31T21:12:23.161+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "981b4eb67e6cb150a21e830f3310594eb9ac080121db13cf3cb2bcb1e2823a74",
+          "sha256": "7f88f0edced6da9c60de8f906dd10505001276a10be3900dfcc4085e28bb3db4"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "deepseek-v3",
+      "name": "h6-fin-meter-close/v1-deepseek-v3",
+      "original_grade_sha256": "7f88f0edced6da9c60de8f906dd10505001276a10be3900dfcc4085e28bb3db4",
+      "original_source_archive": "heldout6/_history/h6-fin-meter-close/0bb5025668585298f0ac9d20cae435c2a47d8da07d337b959e0950bfd79d4985-981b4eb67e6cb150a21e830f3310594eb9ac080121db13cf3cb2bcb1e2823a74",
+      "outcome": "complete",
+      "providers": [
+        "StreamLake"
+      ],
+      "raw_file_count": 20,
+      "raw_manifest_sha256": "6f01d49c00acc2d6a01cfcbc6b0c3d75dbf028423927ae2860f242cbda022d04",
+      "record_sha256": "a8f6fe5d0ac3401d164727dd4c7dc25b74f95bcc1aae3fb7ceff14db7b45e1aa",
+      "regrades_verified": 0,
+      "responses": 6,
+      "responses_with_reasoning_content": 0,
+      "returned_models": [
+        "deepseek/deepseek-chat"
+      ],
+      "scored": true,
+      "snapshot_sha256": "5dd5e05623810cd5c06090e6bea7815ca67935ca8413353aa629176172e1997d",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-meter-close",
+      "task_hash": "0bb5025668585298f0ac9d20cae435c2a47d8da07d337b959e0950bfd79d4985",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.682486+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "1afa7378b8ddec7230e7063143ea9346f7d1b4c21f2d1dad1894a028abf4f41b",
+      "effective_grader_hash": "981b4eb67e6cb150a21e830f3310594eb9ac080121db13cf3cb2bcb1e2823a74",
+      "ended_at": "2026-10-31T21:20:50.169+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "981b4eb67e6cb150a21e830f3310594eb9ac080121db13cf3cb2bcb1e2823a74",
+          "sha256": "1afa7378b8ddec7230e7063143ea9346f7d1b4c21f2d1dad1894a028abf4f41b"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-fin-meter-close/v1-minimax-m2-7",
+      "original_grade_sha256": "1afa7378b8ddec7230e7063143ea9346f7d1b4c21f2d1dad1894a028abf4f41b",
+      "original_source_archive": "heldout6/_history/h6-fin-meter-close/0bb5025668585298f0ac9d20cae435c2a47d8da07d337b959e0950bfd79d4985-981b4eb67e6cb150a21e830f3310594eb9ac080121db13cf3cb2bcb1e2823a74",
+      "outcome": "complete",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 21,
+      "raw_manifest_sha256": "e1e146275a7a3d9b741db97c24426f4a35d49c4dbae5449b1d6f07848129b93c",
+      "record_sha256": "c6e59dd1c0a0c7ad85b9c48ee537e968e955d53420e3568019d8c6722f8fc32e",
+      "regrades_verified": 0,
+      "responses": 18,
+      "responses_with_reasoning_content": 18,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "c43845330f3515decc298fd5fb86b6e7f1a375ea03174ad1f5526cd50c57f565",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-meter-close",
+      "task_hash": "0bb5025668585298f0ac9d20cae435c2a47d8da07d337b959e0950bfd79d4985",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.689923+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "9e617409ba207fc79951b9312e7f9b4896411e98321eda5e026d06f61bb5f86f",
+      "effective_grader_hash": "92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+      "ended_at": "2026-10-31T21:55:01.617+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+          "sha256": "9e617409ba207fc79951b9312e7f9b4896411e98321eda5e026d06f61bb5f86f"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-fin-payout-owner/v1-astra",
+      "original_grade_sha256": "9e617409ba207fc79951b9312e7f9b4896411e98321eda5e026d06f61bb5f86f",
+      "original_source_archive": "heldout6/_history/h6-fin-payout-owner/4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc-92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+      "outcome": "blocked",
+      "providers": [],
+      "raw_file_count": 74,
+      "raw_manifest_sha256": "fd3666ad2d971076a53d41497b7d983a470550b04605b9dd39d9d3750d40163d",
+      "record_sha256": "59014ba4069a8b3f5c5cfab36dbdb00e014688261971ca3cd12f4f47b66b99b9",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "ae1167e8e1f034ef463162533f79f22ed132c1eb712eb65235523f23818a4bcc",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-payout-owner",
+      "task_hash": "4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.707029+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "9c1ded9ffc21b3ab047938eb18148d6c5164e58b38b2c5705b2f79e91b89e0f1",
+      "effective_grader_hash": "92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+      "ended_at": "2026-10-31T21:46:53.331+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+          "sha256": "9c1ded9ffc21b3ab047938eb18148d6c5164e58b38b2c5705b2f79e91b89e0f1"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "deepseek-v3",
+      "name": "h6-fin-payout-owner/v1-deepseek-v3",
+      "original_grade_sha256": "9c1ded9ffc21b3ab047938eb18148d6c5164e58b38b2c5705b2f79e91b89e0f1",
+      "original_source_archive": "heldout6/_history/h6-fin-payout-owner/4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc-92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+      "outcome": "blocked",
+      "providers": [
+        "StreamLake"
+      ],
+      "raw_file_count": 13,
+      "raw_manifest_sha256": "5238ac9aa262ef33c16bdbc21452f1efc01d4691d343899b5e400b1304719a9e",
+      "record_sha256": "08314e19a144f5492a936a353ef77947722cd60bc0e2c37d199a3a71e9ccc136",
+      "regrades_verified": 0,
+      "responses": 4,
+      "responses_with_reasoning_content": 0,
+      "returned_models": [
+        "deepseek/deepseek-chat"
+      ],
+      "scored": true,
+      "snapshot_sha256": "8776602f17eeee0a75c974f2ac04ab9e1fa92e1f47664f4f6e44ff6a8274d8a5",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-payout-owner",
+      "task_hash": "4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.711402+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "060e47f1e6e7acaefa9ebe5dcbcecb8994d7844e5e3b7d3910b5cb22801f18cc",
+      "effective_grader_hash": "92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+      "ended_at": "2026-10-31T21:48:57.495+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+          "sha256": "060e47f1e6e7acaefa9ebe5dcbcecb8994d7844e5e3b7d3910b5cb22801f18cc"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-fin-payout-owner/v1-minimax-m2-7",
+      "original_grade_sha256": "060e47f1e6e7acaefa9ebe5dcbcecb8994d7844e5e3b7d3910b5cb22801f18cc",
+      "original_source_archive": "heldout6/_history/h6-fin-payout-owner/4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc-92d3df61b7032a56e1574e298689fdf4dcabf5c298a07a3e15e330400fc41cf7",
+      "outcome": "blocked",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 21,
+      "raw_manifest_sha256": "aa5652a384ec088b7656e812c2751408b1c419ba6373747867360a1af9394633",
+      "record_sha256": "f2d2f54c3406aba0e59af7cfbc6571e7025f30985463c6324dfb4093323969b0",
+      "regrades_verified": 0,
+      "responses": 14,
+      "responses_with_reasoning_content": 14,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "37c3351ce8bd9c8c60118855d707177064b9577c00501218052247d7d57f4504",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-payout-owner",
+      "task_hash": "4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.718843+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "8ea37453ba77d389fa4e4b14ee5e739366fac93b7439e1273c4f919efb772cc7",
+      "effective_grader_hash": "ba9b6d0c67b08be127c882082cf35145b65e26194c33d800692e55590db2a44a",
+      "ended_at": "2026-10-31T22:17:05.747+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "ba9b6d0c67b08be127c882082cf35145b65e26194c33d800692e55590db2a44a",
+          "sha256": "8ea37453ba77d389fa4e4b14ee5e739366fac93b7439e1273c4f919efb772cc7"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-fin-procure-plan/v1-astra",
+      "original_grade_sha256": "8ea37453ba77d389fa4e4b14ee5e739366fac93b7439e1273c4f919efb772cc7",
+      "original_source_archive": "heldout6/_history/h6-fin-procure-plan/6479af03ff1fa14b3b88d1be4abd2b8fcb45cba67c05e255ae966c6373472586-ba9b6d0c67b08be127c882082cf35145b65e26194c33d800692e55590db2a44a",
+      "outcome": "complete",
+      "providers": [],
+      "raw_file_count": 110,
+      "raw_manifest_sha256": "abda3510628aca110b5255686c04900a7c0e31830afcfd873a774812427fe8d4",
+      "record_sha256": "dc3af38309abc72a33ea3150c0ec24aca97f3f1f04d28cecbf30e407822edff5",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "7261277c8d4b84bbae7b2756cce5ceffc6b2ea0d724476188ed35709ea936c08",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-procure-plan",
+      "task_hash": "6479af03ff1fa14b3b88d1be4abd2b8fcb45cba67c05e255ae966c6373472586",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.746400+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "7346e81aa941fc0e1ddcf0df242c64bdc6542dc2d44ee9ffe2e2725a02da576a",
+      "effective_grader_hash": "ba9b6d0c67b08be127c882082cf35145b65e26194c33d800692e55590db2a44a",
+      "ended_at": "2026-10-31T22:19:08.973+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "ba9b6d0c67b08be127c882082cf35145b65e26194c33d800692e55590db2a44a",
+          "sha256": "7346e81aa941fc0e1ddcf0df242c64bdc6542dc2d44ee9ffe2e2725a02da576a"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-fin-procure-plan/v1-minimax-m2-7",
+      "original_grade_sha256": "7346e81aa941fc0e1ddcf0df242c64bdc6542dc2d44ee9ffe2e2725a02da576a",
+      "original_source_archive": "heldout6/_history/h6-fin-procure-plan/6479af03ff1fa14b3b88d1be4abd2b8fcb45cba67c05e255ae966c6373472586-ba9b6d0c67b08be127c882082cf35145b65e26194c33d800692e55590db2a44a",
+      "outcome": "complete",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 57,
+      "raw_manifest_sha256": "58ad89c75487c848f3cb70bdfa21b643f0b9eab20f7b0ac77c60482a178e30c7",
+      "record_sha256": "1b69dd154319eec89ba81c02978a31ef148980264000f9907cf558f913ad9816",
+      "regrades_verified": 0,
+      "responses": 19,
+      "responses_with_reasoning_content": 19,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "6215dbd6ba33a4ffbf8c569c0e4b056077c42801fe5d6c5eeb729b5e72c3c0ff",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-procure-plan",
+      "task_hash": "6479af03ff1fa14b3b88d1be4abd2b8fcb45cba67c05e255ae966c6373472586",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.764165+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "31593283f20eb8b2154805acb007cdc18b4d7684037615ab484edcd2de64b153",
+      "effective_grader_hash": "185af63ae2243fa21bff84a524e6b18c9d291ca779ef516ae8c4497a63f61813",
+      "ended_at": "2026-10-31T22:16:58.431+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "185af63ae2243fa21bff84a524e6b18c9d291ca779ef516ae8c4497a63f61813",
+          "sha256": "31593283f20eb8b2154805acb007cdc18b4d7684037615ab484edcd2de64b153"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-fin-refund-replay/v1-astra",
+      "original_grade_sha256": "31593283f20eb8b2154805acb007cdc18b4d7684037615ab484edcd2de64b153",
+      "original_source_archive": "heldout6/_history/h6-fin-refund-replay/6ca316cb66d907ad1e97b3547f6e5231b00c160b02b0201def14deb18e5cfa74-185af63ae2243fa21bff84a524e6b18c9d291ca779ef516ae8c4497a63f61813",
+      "outcome": "complete",
+      "providers": [],
+      "raw_file_count": 107,
+      "raw_manifest_sha256": "852aa0daf7f6fc460508746f5d3b84f2517bd91950c57b3c9344d8df354c0c73",
+      "record_sha256": "5a54757c40fa38261567d53e27b3af23b9adf32b42feb1a6aceec33df1c1c976",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "11a954f7f86e99577426d618d56e8e3ec5107df9fe643f6039ed6e6fc11f3b0d",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-refund-replay",
+      "task_hash": "6ca316cb66d907ad1e97b3547f6e5231b00c160b02b0201def14deb18e5cfa74",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.789601+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "ed3701a9258e11f63a6625e90c85a67a48761031883e6f83f8179f205d5bf4b1",
+      "effective_grader_hash": "2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+      "ended_at": "2026-10-31T21:51:44.467+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+          "sha256": "ed3701a9258e11f63a6625e90c85a67a48761031883e6f83f8179f205d5bf4b1"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-fin-revenue-attest/v1-astra",
+      "original_grade_sha256": "ed3701a9258e11f63a6625e90c85a67a48761031883e6f83f8179f205d5bf4b1",
+      "original_source_archive": "heldout6/_history/h6-fin-revenue-attest/3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa-2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+      "outcome": "blocked",
+      "providers": [],
+      "raw_file_count": 74,
+      "raw_manifest_sha256": "717a0f2d7a5b2345260f90eaa86fc82e74ec64e8edd4faa1567a7a372bc7bb5a",
+      "record_sha256": "956fdbd9f2aa85562b112a7f642b25b3cadb9db2e153e9ae0855d936e58fab50",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "7eb590fdec0520c9e4654d260011afc6e6c41a5920b60b2e14662c94aee08fca",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-revenue-attest",
+      "task_hash": "3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.805100+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "a6be5e1312486a8483a5e47c8e4c56fcf9d464fafa0681dcffbedcccb51173de",
+      "effective_grader_hash": "2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+      "ended_at": "2026-10-31T21:48:24.756+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+          "sha256": "a6be5e1312486a8483a5e47c8e4c56fcf9d464fafa0681dcffbedcccb51173de"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "deepseek-v3",
+      "name": "h6-fin-revenue-attest/v1-deepseek-v3",
+      "original_grade_sha256": "a6be5e1312486a8483a5e47c8e4c56fcf9d464fafa0681dcffbedcccb51173de",
+      "original_source_archive": "heldout6/_history/h6-fin-revenue-attest/3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa-2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+      "outcome": "complete",
+      "providers": [
+        "StreamLake"
+      ],
+      "raw_file_count": 20,
+      "raw_manifest_sha256": "3abf3c6a75f585c3951dfc90222741922c22d4f6b8dad37411e41a53fbcdc461",
+      "record_sha256": "543f246a51483278284d755d8548f7e9f2449048be8e6484635dbf215deb279c",
+      "regrades_verified": 0,
+      "responses": 5,
+      "responses_with_reasoning_content": 0,
+      "returned_models": [
+        "deepseek/deepseek-chat"
+      ],
+      "scored": true,
+      "snapshot_sha256": "ae60137de75f616a6fa2e543bcac47852085cc860aba467e7d6a0935bd916d7f",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-revenue-attest",
+      "task_hash": "3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.810663+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "2239606cae22006122c3d0c44b260190c8f6dab00a0a1d2d8fc02a4200944ab7",
+      "effective_grader_hash": "2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+      "ended_at": "2026-10-31T21:55:20.398+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+          "sha256": "2239606cae22006122c3d0c44b260190c8f6dab00a0a1d2d8fc02a4200944ab7"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-fin-revenue-attest/v1-minimax-m2-7",
+      "original_grade_sha256": "2239606cae22006122c3d0c44b260190c8f6dab00a0a1d2d8fc02a4200944ab7",
+      "original_source_archive": "heldout6/_history/h6-fin-revenue-attest/3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa-2c3004841c06e776f8bdf9211bb4f6977197faaf09ffb556c163e288d78cea2e",
+      "outcome": "complete",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 24,
+      "raw_manifest_sha256": "247bfa7b0b6698108cd9a26c65ea6836145d2d7f57cb49afeff0571077d22c69",
+      "record_sha256": "d3c1f118cbd4f1b13af1f22dcb7a6b76b44b810b92b3104401f0193e8b94ba55",
+      "regrades_verified": 0,
+      "responses": 19,
+      "responses_with_reasoning_content": 19,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "372b97ae7424ac0dc778960d619d9783f9381d60d5d14d5206b2af23c67cb160",
+      "snapshot_writers_frozen": true,
+      "task": "h6-fin-revenue-attest",
+      "task_hash": "3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.818439+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "10d66fce3d3b86687a21af92c74445c6f028d878d9ce363ad6d1b1e86aec9faa",
+      "effective_grader_hash": "cbf4223278957345d64d4866a2df04439155de1c6a49b66efde6b6490b3d5afd",
+      "ended_at": "2026-10-31T21:28:27.623+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "999e81b0a0787737c2ebfc4d8b1ddaf25ec0edc225701059e0a1e3c6141ba551",
+          "sha256": "c792f539e97b056d700bfc0d71a3eb7c4ea34c6258c0238479768351d45c8d7b"
+        },
+        {
+          "grader_hash": "cbf4223278957345d64d4866a2df04439155de1c6a49b66efde6b6490b3d5afd",
+          "sha256": "10d66fce3d3b86687a21af92c74445c6f028d878d9ce363ad6d1b1e86aec9faa"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-ops-attestation/v1-astra",
+      "original_grade_sha256": "c792f539e97b056d700bfc0d71a3eb7c4ea34c6258c0238479768351d45c8d7b",
+      "original_source_archive": "heldout6/_history/h6-ops-attestation/ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9-999e81b0a0787737c2ebfc4d8b1ddaf25ec0edc225701059e0a1e3c6141ba551",
+      "outcome": "blocked",
+      "providers": [],
+      "raw_file_count": 118,
+      "raw_manifest_sha256": "476816a8769e2dab7c733fcb3b7f36381f2dcbe9ea66fd9c3e52dbc5cfe34f72",
+      "record_sha256": "fe9e10ae886259b8a33ab45c07b816469c750c37f09d84f34657e49b730cf1e0",
+      "regrades_verified": 1,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "ba30dade0d251b1b61778fad929ad43e357a5685fe74a57ee937b290fd2d7a72",
+      "snapshot_writers_frozen": true,
+      "task": "h6-ops-attestation",
+      "task_hash": "ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.847585+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "1f7cc1b818823b1d00142a12835fb25c0031672a3ded06dad191abd101a1773c",
+      "effective_grader_hash": "cbf4223278957345d64d4866a2df04439155de1c6a49b66efde6b6490b3d5afd",
+      "ended_at": "2026-10-31T21:22:14.918+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "999e81b0a0787737c2ebfc4d8b1ddaf25ec0edc225701059e0a1e3c6141ba551",
+          "sha256": "a4400c62edead9dbcc0d454c09be8f502f5a3c3017383edd5699f66b957a4621"
+        },
+        {
+          "grader_hash": "cbf4223278957345d64d4866a2df04439155de1c6a49b66efde6b6490b3d5afd",
+          "sha256": "1f7cc1b818823b1d00142a12835fb25c0031672a3ded06dad191abd101a1773c"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "deepseek-v3",
+      "name": "h6-ops-attestation/v1-deepseek-v3",
+      "original_grade_sha256": "a4400c62edead9dbcc0d454c09be8f502f5a3c3017383edd5699f66b957a4621",
+      "original_source_archive": "heldout6/_history/h6-ops-attestation/ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9-999e81b0a0787737c2ebfc4d8b1ddaf25ec0edc225701059e0a1e3c6141ba551",
+      "outcome": "stalled",
+      "providers": [
+        "StreamLake"
+      ],
+      "raw_file_count": 55,
+      "raw_manifest_sha256": "3c9b5ffb93f56d918eb063df237502800c8f0b06fe8265553cce6b88a0193d15",
+      "record_sha256": "38fecddf1579856836d8d6c1a674894f8b5f604e3d0559e9bf29c3f671564c21",
+      "regrades_verified": 1,
+      "responses": 8,
+      "responses_with_reasoning_content": 0,
+      "returned_models": [
+        "deepseek/deepseek-chat"
+      ],
+      "scored": true,
+      "snapshot_sha256": "1610be8e274cd1a143d86d81b08f150c2d8d4c161672908a7971dfb8038a7bff",
+      "snapshot_writers_frozen": true,
+      "task": "h6-ops-attestation",
+      "task_hash": "ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.866421+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "e390e722596763aaa527f7a6b0ccfa33eec0ae663ec40f9c8f87c577baf21b45",
+      "effective_grader_hash": "cbf4223278957345d64d4866a2df04439155de1c6a49b66efde6b6490b3d5afd",
+      "ended_at": "2026-10-31T21:58:00.929+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "cbf4223278957345d64d4866a2df04439155de1c6a49b66efde6b6490b3d5afd",
+          "sha256": "e390e722596763aaa527f7a6b0ccfa33eec0ae663ec40f9c8f87c577baf21b45"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-ops-attestation/v1-minimax-m2-7",
+      "original_grade_sha256": "e390e722596763aaa527f7a6b0ccfa33eec0ae663ec40f9c8f87c577baf21b45",
+      "original_source_archive": "heldout6/_history/h6-ops-attestation/ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9-cbf4223278957345d64d4866a2df04439155de1c6a49b66efde6b6490b3d5afd",
+      "outcome": "blocked",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 64,
+      "raw_manifest_sha256": "7459ded767958dcb7c0be5d184ced84361c5b73bd7226b9cf69d7f4551f89d3b",
+      "record_sha256": "49f7aaa55e0931260381e9449dd50bcd8dfd6dc25e231f693fffafe9da134b84",
+      "regrades_verified": 0,
+      "responses": 30,
+      "responses_with_reasoning_content": 30,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "879ffa255993f33e73d51819beba4654d8120a133a9879cd1356c68617d311cb",
+      "snapshot_writers_frozen": true,
+      "task": "h6-ops-attestation",
+      "task_hash": "ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.889470+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "76f8b73bffcaecdc305c70e6a0dc746d39a7c8ef2a09b9b77cc851cb4d6d7d66",
+      "effective_grader_hash": "511996dd8c6f757e53c6d47f0216ead2b15b744523a48d38caa13f1912950b48",
+      "ended_at": "2026-10-31T21:25:46.717+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "de8f407764f22d41c8a6af128d8341142ce0939e1ef1d02357570646b351cfbf",
+          "sha256": "3bec22fc3ddd38ec165614bbaf675ba0b1a41441564ad21ea918dc8df5a3c566"
+        },
+        {
+          "grader_hash": "511996dd8c6f757e53c6d47f0216ead2b15b744523a48d38caa13f1912950b48",
+          "sha256": "76f8b73bffcaecdc305c70e6a0dc746d39a7c8ef2a09b9b77cc851cb4d6d7d66"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-ops-backup-gap/v1-astra",
+      "original_grade_sha256": "3bec22fc3ddd38ec165614bbaf675ba0b1a41441564ad21ea918dc8df5a3c566",
+      "original_source_archive": "heldout6/_history/h6-ops-backup-gap/6540a9f29111d9b2a3ac41b6b947abd386da71dc9445a087141a53b889b526d5-de8f407764f22d41c8a6af128d8341142ce0939e1ef1d02357570646b351cfbf",
+      "outcome": "blocked",
+      "providers": [],
+      "raw_file_count": 113,
+      "raw_manifest_sha256": "9025f7b2ea5cf7bfb5342105671d6f05f08681ad5290b3839b62cd7112ec7f3a",
+      "record_sha256": "6ed708830f09f9ea1212b03b1df5fa22e6a286a0d9649086207194e322153aa7",
+      "regrades_verified": 1,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "0e36f85738f91f6d5ef002ee4eedad1095e02140d691777282f3f18d38de430c",
+      "snapshot_writers_frozen": true,
+      "task": "h6-ops-backup-gap",
+      "task_hash": "6540a9f29111d9b2a3ac41b6b947abd386da71dc9445a087141a53b889b526d5",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.919909+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "b43c50c443d2303ac7f2511888cf2f25b46804865c68936af5246687a45ea5b2",
+      "effective_grader_hash": "511996dd8c6f757e53c6d47f0216ead2b15b744523a48d38caa13f1912950b48",
+      "ended_at": "2026-10-31T22:02:16.639+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "511996dd8c6f757e53c6d47f0216ead2b15b744523a48d38caa13f1912950b48",
+          "sha256": "b43c50c443d2303ac7f2511888cf2f25b46804865c68936af5246687a45ea5b2"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-ops-backup-gap/v1-minimax-m2-7",
+      "original_grade_sha256": "b43c50c443d2303ac7f2511888cf2f25b46804865c68936af5246687a45ea5b2",
+      "original_source_archive": "heldout6/_history/h6-ops-backup-gap/6540a9f29111d9b2a3ac41b6b947abd386da71dc9445a087141a53b889b526d5-511996dd8c6f757e53c6d47f0216ead2b15b744523a48d38caa13f1912950b48",
+      "outcome": "blocked",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 58,
+      "raw_manifest_sha256": "65a3b4172ea226316af711c119ea2175399ba1f06f34a0aaf35b98796f34f107",
+      "record_sha256": "1387f0f947d717815beee91d51fd9252e5228dcaa9bbbfde9ecf08691bf12c79",
+      "regrades_verified": 0,
+      "responses": 30,
+      "responses_with_reasoning_content": 30,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "96ca498d637c46ad54b9caca62893044af967a56b3a8aefa7b8d6ea9c96daa4f",
+      "snapshot_writers_frozen": true,
+      "task": "h6-ops-backup-gap",
+      "task_hash": "6540a9f29111d9b2a3ac41b6b947abd386da71dc9445a087141a53b889b526d5",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.938884+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "781eda65abe27d3b49903ac8d99231085351e7356fe3eedf40afcbab9c30d547",
+      "effective_grader_hash": "782019c2b5992f9d93194a1aac0dd06ffda0f24117de4558035d49def3351a37",
+      "ended_at": "2026-10-31T21:57:52.227+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "782019c2b5992f9d93194a1aac0dd06ffda0f24117de4558035d49def3351a37",
+          "sha256": "781eda65abe27d3b49903ac8d99231085351e7356fe3eedf40afcbab9c30d547"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "astra",
+      "name": "h6-ops-quorum-cut/v1-astra",
+      "original_grade_sha256": "781eda65abe27d3b49903ac8d99231085351e7356fe3eedf40afcbab9c30d547",
+      "original_source_archive": "heldout6/_history/h6-ops-quorum-cut/cbbd9c72130ed0190b64d1606a1c159edbd9d7dfba1cb61c7e4c75b2225327e4-782019c2b5992f9d93194a1aac0dd06ffda0f24117de4558035d49def3351a37",
+      "outcome": "blocked",
+      "providers": [],
+      "raw_file_count": 108,
+      "raw_manifest_sha256": "84b94976fcc60410eb5b73dbbd99ebfbffc867bd421d2e32cdc54f98dab901b0",
+      "record_sha256": "fa04424e37f60633f8c74dc92bdaf5dcd2ddd5d9e27fc4d2670d67e923f4f483",
+      "regrades_verified": 0,
+      "responses": null,
+      "responses_with_reasoning_content": null,
+      "returned_models": [],
+      "scored": true,
+      "snapshot_sha256": "9010eca73a0c2aa0d73ec776bed24200dc4b305389cbd385c334cc5b7c72983b",
+      "snapshot_writers_frozen": true,
+      "task": "h6-ops-quorum-cut",
+      "task_hash": "cbbd9c72130ed0190b64d1606a1c159edbd9d7dfba1cb61c7e4c75b2225327e4",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.966223+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "f573101d4c44e0504abbb989b2d97ccbfa206911ef5e2c75ec2c71b1b524bd97",
+      "effective_grader_hash": "782019c2b5992f9d93194a1aac0dd06ffda0f24117de4558035d49def3351a37",
+      "ended_at": "2026-10-31T21:51:47.217+00:00",
+      "finish_identity_issues": [
+        "snapshot writers were not frozen",
+        "grade is unscored or failed"
+      ],
+      "grade_versions": [
+        {
+          "grader_hash": "782019c2b5992f9d93194a1aac0dd06ffda0f24117de4558035d49def3351a37",
+          "sha256": "f573101d4c44e0504abbb989b2d97ccbfa206911ef5e2c75ec2c71b1b524bd97"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": true,
+      "model": "deepseek-v3",
+      "name": "h6-ops-quorum-cut/v1-deepseek-v3",
+      "original_grade_sha256": "f573101d4c44e0504abbb989b2d97ccbfa206911ef5e2c75ec2c71b1b524bd97",
+      "original_source_archive": "heldout6/_history/h6-ops-quorum-cut/cbbd9c72130ed0190b64d1606a1c159edbd9d7dfba1cb61c7e4c75b2225327e4-782019c2b5992f9d93194a1aac0dd06ffda0f24117de4558035d49def3351a37",
+      "outcome": "infra_error",
+      "providers": [
+        "StreamLake"
+      ],
+      "raw_file_count": 46,
+      "raw_manifest_sha256": "683227fc0af1fb46ae4048a03eeaa9b142530ac45b4a3670c625074aa9fbe317",
+      "record_sha256": "a2dc51e0905c4b51c7bda61700b1316d26697b40849f3f760db9268f0e5dca0a",
+      "regrades_verified": 0,
+      "responses": 11,
+      "responses_with_reasoning_content": 0,
+      "returned_models": [
+        "deepseek/deepseek-chat"
+      ],
+      "scored": false,
+      "snapshot_sha256": "700127af495d64ef2d8362017caf4980d034f82ecb1bd2d4fc094e1a0eecf632",
+      "snapshot_writers_frozen": false,
+      "task": "h6-ops-quorum-cut",
+      "task_hash": "cbbd9c72130ed0190b64d1606a1c159edbd9d7dfba1cb61c7e4c75b2225327e4",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.980133+00:00"
+    },
+    {
+      "closed_evidence_stable": true,
+      "current_grade_sha256": "2c11699cc8b7536a0958656d615324322eb7ed1821af473c6f9261bd010947c8",
+      "effective_grader_hash": "782019c2b5992f9d93194a1aac0dd06ffda0f24117de4558035d49def3351a37",
+      "ended_at": "2026-10-31T22:05:16.269+00:00",
+      "finish_identity_issues": [],
+      "grade_versions": [
+        {
+          "grader_hash": "782019c2b5992f9d93194a1aac0dd06ffda0f24117de4558035d49def3351a37",
+          "sha256": "2c11699cc8b7536a0958656d615324322eb7ed1821af473c6f9261bd010947c8"
+        }
+      ],
+      "infrastructure_unfrozen_snapshot": false,
+      "model": "minimax-m2-7",
+      "name": "h6-ops-quorum-cut/v1-minimax-m2-7",
+      "original_grade_sha256": "2c11699cc8b7536a0958656d615324322eb7ed1821af473c6f9261bd010947c8",
+      "original_source_archive": "heldout6/_history/h6-ops-quorum-cut/cbbd9c72130ed0190b64d1606a1c159edbd9d7dfba1cb61c7e4c75b2225327e4-782019c2b5992f9d93194a1aac0dd06ffda0f24117de4558035d49def3351a37",
+      "outcome": "blocked",
+      "providers": [
+        "Minimax"
+      ],
+      "raw_file_count": 55,
+      "raw_manifest_sha256": "688c9f0553d8e49ffba51d8e5561ad3c988860ff5cedbd9fbb7b9f80c54b4089",
+      "record_sha256": "64642a4f11afb9c234e9c114d879b75ab90dd8c390ecf847dc70e3b0f2895f33",
+      "regrades_verified": 0,
+      "responses": 46,
+      "responses_with_reasoning_content": 46,
+      "returned_models": [
+        "minimax/minimax-m2.7"
+      ],
+      "scored": true,
+      "snapshot_sha256": "860c9b6a7809c127d7c94c79f8685e005c640cfeeaf2d136109508f95a6fa3bb",
+      "snapshot_writers_frozen": true,
+      "task": "h6-ops-quorum-cut",
+      "task_hash": "cbbd9c72130ed0190b64d1606a1c159edbd9d7dfba1cb61c7e4c75b2225327e4",
+      "verification": "passed",
+      "verified_at": "2026-10-31T22:23:03.997710+00:00"
+    }
+  ],
+  "completed_at": "2026-10-31T22:23:03.998967+00:00",
+  "event_prefix": {
+    "bytes": 140746,
+    "last_event_at": "2026-10-31T22:21:10.327627+00:00",
+    "lines": 95,
+    "path": "runs/calibration-h6/control/events.jsonl",
+    "sha256": "3f90a3565f2457640ec57eeb35fec40643f20b223a1aed5bdd592252a4bc22c8"
+  },
+  "excluded_active_runs": [
+    "h6-data-ticket-visibility/v1-minimax-m2-7",
+    "h6-fin-refund-replay/v1-minimax-m2-7",
+    "h6-ops-provenance/v1-astra",
+    "h6-ops-provenance/v1-minimax-m2-7",
+    "h6-ops-rollout/v1-astra"
+  ],
+  "excluded_checks": [
+    "final model scores and complete final-version coverage",
+    "final substantive readiness approval",
+    "clean Git/source commit and source inventory",
+    "freeze/collect execution",
+    "active run records, response content, grades and snapshots"
+  ],
+  "final": false,
+  "findings": [],
+  "helper": {
+    "path": "heldout6/_shared/freeze.py",
+    "sha256": "de6e22cee9ad28c7192dbada0d6f6f957a0f608950e542bd01d74ddde4dc7424"
+  },
+  "known_infrastructure_limitations": [
+    {
+      "finish_identity_issues": [
+        "snapshot writers were not frozen",
+        "grade is unscored or failed"
+      ],
+      "integrity_failure": false,
+      "outcome": "infra_error",
+      "run": "h6-ops-quorum-cut/v1-deepseek-v3",
+      "scored": false,
+      "snapshot_writers_frozen": false
+    }
+  ],
+  "previous_partial_audit": {
+    "path": "heldout6/validation/EVIDENCE_REVIEW_PRE_DIGEST_REPAIR.json",
+    "sha256": "e5e8f6f0b57ea9ad595308dc732d409e95418491bc4daba2c2cc75ee81a6bbbe"
+  },
+  "remaining_collection_limits": [
+    "The event prefix is a point-in-time snapshot; later closures are not included.",
+    "Active runs were excluded before any access to their raw files.",
+    "Historical task versions can pass integrity checks without being eligible as final-version calibration.",
+    "Current source authoring/metadata revisions and incomplete calibration are not integrity failures.",
+    "No final freeze, clean-Git check, current-score gate or readiness review was executed."
+  ],
+  "repair_validation": {
+    "description": "The freezer itself now checks scheduler record/original-grade digests, including the retained-original regrade case.",
+    "path": "heldout6/validation/FREEZE_DIGEST_BINDING_TESTS.json",
+    "sha256": "aebbfcea50b03ce02daa5f843a9fc22ec308178946384ba66842ab990f69f882"
+  },
+  "schema_version": 1,
+  "scope": "Partial read-only provenance audit of closed H6 attempts, using current freezer low-level verification. Not final freeze eligibility.",
+  "started_at": "2026-10-31T22:23:01.070350+00:00",
+  "summary": {
+    "active_excluded": 5,
+    "closed_checked": 41,
+    "failed": 0,
+    "findings": 0,
+    "passed": 41,
+    "readiness_assessed": false
+  }
+}

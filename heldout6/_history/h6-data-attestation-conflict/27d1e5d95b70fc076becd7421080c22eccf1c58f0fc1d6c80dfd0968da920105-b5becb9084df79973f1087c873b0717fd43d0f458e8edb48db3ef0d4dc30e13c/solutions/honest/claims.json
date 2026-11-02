@@ -1,0 +1,11 @@
+{
+  "summary": "187 histories match the recorded CAS outcomes:25 authorize delivery and162 do not, so chronology is missing rather than a proven historical breach. Failed generation checks constrain permission renewal and ownership transfer windows. Request signed capability-diagnostic-before-copy and owner-diagnostic-before-return chronology, cost3; their6 remaining histories are safe. Old copied capabilities do not revive when a parent slot is reissued.",
+  "blocker_codes": [
+    "audit_order_evidence_required"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

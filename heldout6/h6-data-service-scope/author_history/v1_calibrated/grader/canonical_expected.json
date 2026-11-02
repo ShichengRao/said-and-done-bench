@@ -1,0 +1,192 @@
+{
+  "ready": false,
+  "route_options": {
+    "archive": [
+      {
+        "route": "archive-0",
+        "slot": 0,
+        "pools": [
+          "pool0",
+          "pool7",
+          "root"
+        ]
+      },
+      {
+        "route": "archive-0",
+        "slot": 1,
+        "pools": [
+          "pool0",
+          "pool7",
+          "root"
+        ]
+      },
+      {
+        "route": "archive-1",
+        "slot": 0,
+        "pools": [
+          "pool5",
+          "pool6",
+          "root"
+        ]
+      },
+      {
+        "route": "archive-1",
+        "slot": 1,
+        "pools": [
+          "pool5",
+          "pool6",
+          "root"
+        ]
+      }
+    ],
+    "crm": [
+      {
+        "route": "crm-0",
+        "slot": 0,
+        "pools": [
+          "pool1",
+          "pool2",
+          "root"
+        ]
+      },
+      {
+        "route": "crm-0",
+        "slot": 1,
+        "pools": [
+          "pool1",
+          "pool2",
+          "root"
+        ]
+      },
+      {
+        "route": "crm-1",
+        "slot": 0,
+        "pools": [
+          "pool3",
+          "pool4",
+          "root"
+        ]
+      },
+      {
+        "route": "crm-1",
+        "slot": 1,
+        "pools": [
+          "pool3",
+          "pool4",
+          "root"
+        ]
+      }
+    ],
+    "search": [
+      {
+        "route": "search-0",
+        "slot": 0,
+        "pools": [
+          "pool0",
+          "pool1",
+          "root"
+        ]
+      },
+      {
+        "route": "search-0",
+        "slot": 1,
+        "pools": [
+          "pool0",
+          "pool1",
+          "root"
+        ]
+      },
+      {
+        "route": "search-1",
+        "slot": 0,
+        "pools": [
+          "pool6",
+          "pool7",
+          "root"
+        ]
+      },
+      {
+        "route": "search-1",
+        "slot": 1,
+        "pools": [
+          "pool6",
+          "pool7",
+          "root"
+        ]
+      }
+    ],
+    "tickets": [
+      {
+        "route": "tickets-0",
+        "slot": 0,
+        "pools": [
+          "pool2",
+          "pool3",
+          "root"
+        ]
+      },
+      {
+        "route": "tickets-0",
+        "slot": 1,
+        "pools": [
+          "pool2",
+          "pool3",
+          "root"
+        ]
+      },
+      {
+        "route": "tickets-1",
+        "slot": 0,
+        "pools": [
+          "pool4",
+          "pool5",
+          "root"
+        ]
+      },
+      {
+        "route": "tickets-1",
+        "slot": 1,
+        "pools": [
+          "pool4",
+          "pool5",
+          "root"
+        ]
+      }
+    ]
+  },
+  "assignment": null,
+  "obstruction": [
+    "archive",
+    "crm",
+    "search",
+    "tickets"
+  ],
+  "owner_request": {
+    "proposal_ids": [
+      "shared-pool-four-lease",
+      "shared-pool-zero-lease"
+    ],
+    "cost": 5,
+    "assignment": {
+      "archive": {
+        "route": "archive-0",
+        "slot": 0
+      },
+      "crm": {
+        "route": "crm-1",
+        "slot": 0
+      },
+      "search": {
+        "route": "search-0",
+        "slot": 1
+      },
+      "tickets": {
+        "route": "tickets-1",
+        "slot": 1
+      }
+    }
+  },
+  "blocker_codes": [
+    "batch_delegation_budget_required"
+  ]
+}

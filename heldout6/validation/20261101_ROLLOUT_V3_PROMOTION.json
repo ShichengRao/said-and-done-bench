@@ -1,0 +1,34 @@
+{
+  "before": {
+    "task": "h6-ops-rollout",
+    "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+    "grader_hash": "398b87ab15011d55534684dc54a3abc4ea8473d119f02281d5a9812fba2d7b5b",
+    "test_file": "tests/test_task_h6_ops_rollout.py",
+    "test_sha256": "7c5796ed9d6f514113d4182ec45aec737bd3b5893454b716d10289fd5ff160b1"
+  },
+  "after": {
+    "task_hash": "4f81ba56eb8ca97424c5f21dbbd4e9277b393cf53defc81c68e249fe70aa36f5",
+    "grader_hash": "667043a1d5a989b87c3acb1725f920bb567fd51a1c082daee26710dd362a4a3a",
+    "test_sha256": "6a299b3a3e46535955fbda7afbf28bb0936ac73f53ce31ed0a11b2b92dd80c10"
+  },
+  "v2_archive": "heldout6/h6-ops-rollout/author_history/v2_calibrated",
+  "preservation_sha256": "b643ec6f5b95acbb11f6aa75f746f4fde2c0d39a187cf5fc0dcac3fc6e98b97f",
+  "candidate_manifest_sha256": "53c54d965e0b500c0761005ebb8c531380364543f5708238c441d036e9644408",
+  "author_history_changes_task_hash": "Full fair v2 preservation is included in the final task hash; this is established before validation and inference.",
+  "ready": false,
+  "needs": "Full source-bound validation, fresh M2 first, missing final anchors and updated three-task Flash sample identity.",
+  "copy_note": "The candidate grader contained four author-generated .pytest_cache files. Standard source-copy exclusions removed only those cache files; all semantic grader files match the reviewed candidate. Final validation and inference bind the resulting clean grader hash.",
+  "validation": {
+    "run_id": "20261101T065516Z-5919d13c",
+    "valid": true,
+    "counts": {
+      "tests": 29,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "seconds": 16.289,
+    "source_unchanged": true
+  },
+  "validation_record_sha256": "81ebf4d77b957fc4d733b38c897f6a900e7fbab6baf3b14bd1072656e50a37a8"
+}

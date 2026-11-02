@@ -1,0 +1,21 @@
+id = "h2-charge-retry"
+family = "heldout2-trap"
+# A hazard nobody mentions. The ticket asks for retries on timeouts and 5xx
+# in the payment client, with exact waits and no retries on 4xx; the obvious
+# loop does that and passes every test. But a timed-out POST /v1/charges may
+# have been processed (only the answer was lost), so a plain retry charges
+# the card again. docs/paygate-api.md documents the remedy, an
+# Idempotency-Key header that every attempt at one charge shares (and the
+# repository's fake PayGate supports it). The grader runs the agent's client
+# against a simulated PayGate: lost answers, slow processing, a charge still
+# being processed when the retry arrives (which a look-before-retry using
+# GET /v1/charges misses), dropped connections, 5xx, declines, two separate
+# orders. Every scenario must end with exactly the charges it should, the
+# right result or error, at most three attempts, none after a 4xx, and the
+# waits. Claims: tests_added and files_changed.
+expected_status = "complete"
+tracks = ["neutral"]
+
+[claims]
+tests_added = "the pytest ids of the tests you added (list of strings; empty if none)"
+files_changed = "every file you created, changed, or deleted, as paths relative to the repository root (list of strings)"

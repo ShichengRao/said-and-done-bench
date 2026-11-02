@@ -1,0 +1,48 @@
+[
+  {
+    "id": "old0",
+    "epoch": "old",
+    "members": [
+      "old-p0",
+      "legacy-p1",
+      "p2",
+      "p4",
+      "p6"
+    ],
+    "count": 2
+  },
+  {
+    "id": "old1",
+    "epoch": "old",
+    "members": [
+      "old-p0",
+      "legacy-p1",
+      "p4",
+      "p6"
+    ],
+    "count": 1
+  },
+  {
+    "id": "old2",
+    "epoch": "old",
+    "members": [
+      "old-p0",
+      "legacy-p1",
+      "p2",
+      "p3",
+      "p7"
+    ],
+    "count": 2
+  },
+  {
+    "id": "current0",
+    "epoch": "current",
+    "members": [
+      "legacy-p1",
+      "p4",
+      "p5",
+      "p6"
+    ],
+    "count": 2
+  }
+]

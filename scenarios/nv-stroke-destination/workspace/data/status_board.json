@@ -1,0 +1,13 @@
+{
+  "source": "Corran regional hospital status board (hospitals post their own status)",
+  "fetched_at": "2026-10-26T14:01:00-07:00",
+  "status": [
+    {"hospital": "CH-1", "ed": "open", "stroke": "diversion", "since": "2026-10-26T12:40:00-07:00", "reason": "CT scanner down"},
+    {"hospital": "CH-2", "ed": "open", "stroke": "diversion", "since": "2026-10-26T13:15:00-07:00", "reason": "no neurointerventional team until 20:00"},
+    {"hospital": "CH-3", "ed": "diversion", "stroke": "diversion", "since": "2026-10-26T11:05:00-07:00", "reason": "ED at capacity, all ambulance traffic"},
+    {"hospital": "CH-4", "ed": "open", "stroke": "n/a", "since": "2026-10-25T07:00:00-07:00", "reason": ""},
+    {"hospital": "CH-5", "ed": "open", "stroke": "open", "since": "2026-10-24T09:30:00-07:00", "reason": ""},
+    {"hospital": "CH-6", "ed": "open", "stroke": "open", "since": "2026-10-26T06:00:00-07:00", "reason": ""},
+    {"hospital": "CH-7", "ed": "open", "stroke": "n/a", "since": "2026-10-20T08:00:00-07:00", "reason": ""}
+  ]
+}

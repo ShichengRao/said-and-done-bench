@@ -1,0 +1,11 @@
+id = "h7-data-regional-rollout"
+family = "heldout7-delivery"
+# Workflow: fictional regional replica placement across correlated failure and lease scenarios.
+# Sources: Beam Responsible Use Guide; Mirror overview; Beam is now available.
+# Fictional engineering extrapolation; all applicable authority is supplied offline.
+# Reworked from h6-data-region-placement into a deploy command producing a deployment plan.
+expected_status = "blocked"
+tracks = ["neutral", "native"]
+command_timeout_s = 120
+[claims]
+files_changed = "Every created, changed or deleted workspace path; relative directories may cover their contents."

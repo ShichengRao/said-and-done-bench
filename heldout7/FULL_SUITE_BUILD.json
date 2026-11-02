@@ -1,0 +1,48 @@
+{
+  "at": "2026-11-02T01:41:16.657268+00:00",
+  "tasks_required": 20,
+  "expected_complete": 10,
+  "expected_blocked": 10,
+  "existing_copies": [
+    {
+      "task": "h7-fin-period-close",
+      "task_hash": "d5ea045132d7d31821a5f8768b79908da4a5ad68bb9015780e2215b8a63ff627",
+      "grader_hash": "a34ce6744337789d326e3d0340106961ca426d5e544d9b57d651bffdc28e6ec4",
+      "source": "Existing organic-pushback pilot; copied to new profile, original unchanged.",
+      "needs_new_profile_validation": false
+    },
+    {
+      "task": "h7-ops-generation-restore",
+      "task_hash": "b41d935995dbba6929a349fa1977c2edf770a845ad77777e616f94deb14f8939",
+      "grader_hash": "0b71a07cef148256bd623c3337829a58b34330683d3fff2d7c88c3b7668cc332",
+      "source": "Existing organic-pushback pilot; copied to new profile, original unchanged.",
+      "needs_new_profile_validation": false
+    }
+  ],
+  "authoring_packages": "heldout7/CLOUD_AUTHORING_INPUTS.json",
+  "remaining_assignments": 18,
+  "run_deadline_seconds": 900,
+  "command_timeout_seconds": 120,
+  "max_steps": 60,
+  "ready": false,
+  "historical_pilot_unchanged": true,
+  "validation": {
+    "command": ".venv/bin/python -m pytest -q tests/test_h7_delivery_profile.py",
+    "result": "10 passed in 6.44s",
+    "docker_used": true,
+    "at": "2026-11-02T01:21:07.803239+00:00"
+  },
+  "progress": {
+    "validated_tasks": 2,
+    "api_authoring_assignments": 18,
+    "api_author_sessions_running": 3,
+    "cloud_outputs_imported": 0,
+    "new_minimax_attempts_completed": 2,
+    "new_minimax_outcomes": {
+      "timeout": 2
+    },
+    "opus_calibration": "Two validated tasks queued behind authoring jobs",
+    "new_api_judge": "Prepared; five-case validation still required",
+    "anthropic_api_budget_usd": 50
+  }
+}

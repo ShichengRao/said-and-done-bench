@@ -1,0 +1,6 @@
+{
+  "paused_coordinator_pid": 73775,
+  "reason": "Let active calibration finish, then prioritize remaining task authoring; no model process interrupted. Resume once author lease exists.",
+  "author_job": "author-data-continuation-3",
+  "queue_resumed_after_author_allocation": true
+}

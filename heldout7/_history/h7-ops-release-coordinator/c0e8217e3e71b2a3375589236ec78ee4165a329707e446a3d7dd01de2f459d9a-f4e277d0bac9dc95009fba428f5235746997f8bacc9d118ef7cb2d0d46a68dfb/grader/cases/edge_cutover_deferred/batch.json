@@ -1,0 +1,14 @@
+{
+  "batch_id": "harbor-lantern-release-2026-11-r3",
+  "customer": "Harbor Lantern (fictional)",
+  "start_tick": 1,
+  "end_tick": 12,
+  "members": [
+    "maint-enter",
+    "schema-v5",
+    "worker-v8",
+    "api-v8",
+    "cache-reindex",
+    "maint-exit"
+  ]
+}

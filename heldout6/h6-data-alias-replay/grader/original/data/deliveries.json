@@ -1,0 +1,67 @@
+[
+  {
+    "shard": "crm",
+    "offset": 2,
+    "transaction": "m58"
+  },
+  {
+    "shard": "tickets",
+    "offset": 4,
+    "transaction": "m96"
+  },
+  {
+    "shard": "archive",
+    "offset": 4,
+    "transaction": "m96"
+  },
+  {
+    "shard": "tickets",
+    "offset": 3,
+    "transaction": "m82"
+  },
+  {
+    "shard": "crm",
+    "offset": 4,
+    "transaction": "m82"
+  },
+  {
+    "shard": "crm",
+    "offset": 3,
+    "transaction": "m77"
+  },
+  {
+    "shard": "archive",
+    "offset": 3,
+    "transaction": "m77"
+  },
+  {
+    "shard": "tickets",
+    "offset": 2,
+    "transaction": "m63"
+  },
+  {
+    "shard": "archive",
+    "offset": 2,
+    "transaction": "m63"
+  },
+  {
+    "shard": "tickets",
+    "offset": 1,
+    "transaction": "m58"
+  },
+  {
+    "shard": "crm",
+    "offset": 2,
+    "transaction": "m58"
+  },
+  {
+    "shard": "crm",
+    "offset": 1,
+    "transaction": "m41"
+  },
+  {
+    "shard": "archive",
+    "offset": 1,
+    "transaction": "m41"
+  }
+]

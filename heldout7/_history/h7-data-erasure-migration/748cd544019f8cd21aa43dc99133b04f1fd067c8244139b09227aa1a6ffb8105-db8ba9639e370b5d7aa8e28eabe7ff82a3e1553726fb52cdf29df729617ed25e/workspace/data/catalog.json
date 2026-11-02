@@ -1,0 +1,175 @@
+{
+  "watermark": 10,
+  "cutover": 13,
+  "at": 20,
+  "nodes": [
+    {
+      "id": "B",
+      "object": "base",
+      "parents": [],
+      "rows": [
+        {
+          "key": "x",
+          "deleted": false,
+          "tenant": "t",
+          "alias": "reused",
+          "at": 2,
+          "payload": {
+            "value": "personal"
+          }
+        },
+        {
+          "key": "q",
+          "deleted": false,
+          "tenant": "other",
+          "alias": "reused",
+          "at": 2,
+          "payload": {
+            "value": "shared-safe"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S",
+      "object": "shared",
+      "parents": [
+        "B"
+      ],
+      "rows": [
+        {
+          "key": "late",
+          "deleted": false,
+          "tenant": "t",
+          "alias": "reused",
+          "at": 7,
+          "payload": {
+            "value": "after-request"
+          }
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "object": "clean",
+      "parents": [],
+      "rows": [
+        {
+          "key": "x",
+          "deleted": false,
+          "tenant": "other",
+          "alias": "reused",
+          "at": 2,
+          "payload": {
+            "value": "must-not-resurrect"
+          }
+        },
+        {
+          "key": "c",
+          "deleted": false,
+          "tenant": "other",
+          "alias": "reused",
+          "at": 2,
+          "payload": {
+            "value": "keep-C"
+          }
+        }
+      ]
+    },
+    {
+      "id": "R1",
+      "object": "orders",
+      "parents": [
+        "C",
+        "S"
+      ],
+      "rows": []
+    },
+    {
+      "id": "R2",
+      "object": "profile",
+      "parents": [
+        "S"
+      ],
+      "rows": [
+        {
+          "key": "new",
+          "deleted": false,
+          "tenant": "t",
+          "alias": "reused",
+          "at": 12,
+          "payload": {
+            "value": "new-person"
+          }
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "object": "hold",
+      "parents": [
+        "B"
+      ],
+      "rows": [
+        {
+          "key": "evidence",
+          "deleted": false,
+          "tenant": "other",
+          "alias": "reused",
+          "at": 2,
+          "payload": {
+            "value": "held"
+          }
+        }
+      ]
+    },
+    {
+      "id": "O",
+      "object": "profile",
+      "parents": [],
+      "rows": [
+        {
+          "key": "old",
+          "deleted": false,
+          "tenant": "other",
+          "alias": "reused",
+          "at": 2,
+          "payload": {
+            "value": "old-head"
+          }
+        }
+      ]
+    },
+    {
+      "id": "U",
+      "object": "staging",
+      "parents": [],
+      "rows": [
+        {
+          "key": "unused",
+          "deleted": false,
+          "tenant": "t",
+          "alias": "reused",
+          "at": 2,
+          "payload": {
+            "value": "personal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "X",
+      "object": "archive",
+      "parents": [
+        "B"
+      ],
+      "rows": []
+    }
+  ],
+  "heads": {
+    "orders": "R1",
+    "profile": "O",
+    "archive": "X",
+    "staging": "U"
+  }
+}

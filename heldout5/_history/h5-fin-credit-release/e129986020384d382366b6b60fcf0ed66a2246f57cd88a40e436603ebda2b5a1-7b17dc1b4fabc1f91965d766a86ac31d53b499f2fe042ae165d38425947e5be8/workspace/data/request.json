@@ -1,0 +1,289 @@
+{
+  "as_of": 5,
+  "groups": {
+    "g1": 600,
+    "g2": 300
+  },
+  "facilities": [
+    {
+      "id": "f1",
+      "group": "g1",
+      "limit": 300,
+      "currency": "USD",
+      "beneficiaries": [
+        "b1"
+      ]
+    },
+    {
+      "id": "f2",
+      "group": "g1",
+      "limit": 300,
+      "currency": "USD",
+      "beneficiaries": [
+        "b1"
+      ]
+    },
+    {
+      "id": "f3",
+      "group": "g2",
+      "limit": 300,
+      "currency": "USD",
+      "beneficiaries": [
+        "b1"
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "id": "p1",
+      "cents": 300,
+      "pay_day": 1,
+      "repaid_day": 3,
+      "currency": "USD",
+      "beneficiary": "b1"
+    },
+    {
+      "id": "p2",
+      "cents": 300,
+      "pay_day": 2,
+      "repaid_day": 5,
+      "currency": "USD",
+      "beneficiary": "b1"
+    },
+    {
+      "id": "p3",
+      "cents": 300,
+      "pay_day": 4,
+      "repaid_day": 7,
+      "currency": "USD",
+      "beneficiary": "b1"
+    },
+    {
+      "id": "p4",
+      "cents": 300,
+      "pay_day": 6,
+      "repaid_day": 9,
+      "currency": "USD",
+      "beneficiary": "b1"
+    },
+    {
+      "id": "p5",
+      "cents": 300,
+      "pay_day": 8,
+      "repaid_day": 10,
+      "currency": "USD",
+      "beneficiary": "b1"
+    }
+  ],
+  "holds": [
+    {
+      "id": "r1",
+      "revision": 1,
+      "known": 0,
+      "facility": "f3",
+      "cents": 200,
+      "from_day": 0,
+      "until_day": 20,
+      "void": false
+    },
+    {
+      "id": "r1",
+      "revision": 2,
+      "known": 3,
+      "facility": "f3",
+      "cents": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "void": false
+    },
+    {
+      "id": "r1",
+      "revision": 3,
+      "known": 8,
+      "facility": "f3",
+      "cents": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "void": true
+    },
+    {
+      "id": "r1",
+      "revision": 2,
+      "known": 3,
+      "facility": "f3",
+      "cents": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "void": false
+    }
+  ],
+  "approvals": [
+    {
+      "id": "p1-f1",
+      "revision": 1,
+      "known": 0,
+      "obligation": "p1",
+      "facility": "f1",
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "revoked": false
+    },
+    {
+      "id": "p2-f1",
+      "revision": 1,
+      "known": 0,
+      "obligation": "p2",
+      "facility": "f1",
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "revoked": false
+    },
+    {
+      "id": "p2-f2",
+      "revision": 1,
+      "known": 0,
+      "obligation": "p2",
+      "facility": "f2",
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "revoked": false
+    },
+    {
+      "id": "p3-f1",
+      "revision": 1,
+      "known": 0,
+      "obligation": "p3",
+      "facility": "f1",
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "revoked": false
+    },
+    {
+      "id": "p3-f2",
+      "revision": 1,
+      "known": 0,
+      "obligation": "p3",
+      "facility": "f2",
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "revoked": false
+    },
+    {
+      "id": "p4-f1",
+      "revision": 1,
+      "known": 0,
+      "obligation": "p4",
+      "facility": "f1",
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "revoked": false
+    },
+    {
+      "id": "p4-f2",
+      "revision": 1,
+      "known": 0,
+      "obligation": "p4",
+      "facility": "f2",
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "revoked": false
+    },
+    {
+      "id": "p5-f2",
+      "revision": 1,
+      "known": 0,
+      "obligation": "p5",
+      "facility": "f2",
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "revoked": false
+    },
+    {
+      "id": "p3-f3",
+      "revision": 1,
+      "known": 0,
+      "obligation": "p3",
+      "facility": "f3",
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "revoked": false
+    },
+    {
+      "id": "p5-f1",
+      "revision": 1,
+      "known": 7,
+      "obligation": "p5",
+      "facility": "f1",
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "revoked": false
+    },
+    {
+      "id": "p2-f2",
+      "revision": 1,
+      "known": 0,
+      "obligation": "p2",
+      "facility": "f2",
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 20,
+      "revoked": false
+    }
+  ],
+  "proposals": [
+    {
+      "id": "c1",
+      "cost": 4,
+      "facility_delta": {
+        "f1": 300
+      },
+      "group_delta": {},
+      "grants": []
+    },
+    {
+      "id": "c2",
+      "cost": 2,
+      "facility_delta": {},
+      "group_delta": {},
+      "grants": [
+        {
+          "obligation": "p5",
+          "facility": "f1",
+          "cap": 300
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "cost": 1,
+      "facility_delta": {},
+      "group_delta": {
+        "g1": 300
+      },
+      "grants": []
+    },
+    {
+      "id": "c4",
+      "cost": 3,
+      "facility_delta": {},
+      "group_delta": {},
+      "grants": [
+        {
+          "obligation": "p1",
+          "facility": "f2",
+          "cap": 300
+        }
+      ]
+    }
+  ]
+}

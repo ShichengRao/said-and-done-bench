@@ -1,0 +1,28 @@
+[
+  {
+    "cost": 2,
+    "id": "p12",
+    "kind": "handoff",
+    "link": {
+      "after": 4,
+      "from": 0,
+      "source": "c38",
+      "target": "c49",
+      "until": 30
+    }
+  },
+  {
+    "cost": 3,
+    "credential": "c26",
+    "extra": 1,
+    "id": "p24",
+    "kind": "quota"
+  },
+  {
+    "cost": 1,
+    "credential": "c14",
+    "extra": 1,
+    "id": "p35",
+    "kind": "quota"
+  }
+]

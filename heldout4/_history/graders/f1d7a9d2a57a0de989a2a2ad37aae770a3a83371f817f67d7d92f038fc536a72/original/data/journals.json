@@ -1,0 +1,702 @@
+[
+  {
+    "journal_id": "J003",
+    "revision": 2,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 5000,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 5000
+      }
+    ]
+  },
+  {
+    "journal_id": "J011",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11507,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11507
+      }
+    ]
+  },
+  {
+    "journal_id": "J001",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10137,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10137
+      }
+    ]
+  },
+  {
+    "journal_id": "J002",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10274,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10274
+      }
+    ]
+  },
+  {
+    "journal_id": "J017",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 12329,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 12329
+      }
+    ]
+  },
+  {
+    "journal_id": "J012",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11644,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11644
+      }
+    ]
+  },
+  {
+    "journal_id": "J014",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11918,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11918
+      }
+    ]
+  },
+  {
+    "journal_id": "J004",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10548,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10548
+      }
+    ]
+  },
+  {
+    "journal_id": "J003",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10411,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10411
+      }
+    ]
+  },
+  {
+    "journal_id": "J008",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11096,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11096
+      }
+    ]
+  },
+  {
+    "journal_id": "J009",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11233,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11233
+      }
+    ]
+  },
+  {
+    "journal_id": "X001",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "EUR",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10137,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10137
+      }
+    ]
+  },
+  {
+    "journal_id": "J005",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10685,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10685
+      }
+    ]
+  },
+  {
+    "journal_id": "J008",
+    "revision": 2,
+    "canceled": true,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11096,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11096
+      }
+    ]
+  },
+  {
+    "journal_id": "J006",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10822,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10822
+      }
+    ]
+  },
+  {
+    "journal_id": "J011",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11507,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11507
+      }
+    ]
+  },
+  {
+    "journal_id": "J008",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11096,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11096
+      }
+    ]
+  },
+  {
+    "journal_id": "J006",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10822,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10822
+      }
+    ]
+  },
+  {
+    "journal_id": "J004",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10548,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10548
+      }
+    ]
+  },
+  {
+    "journal_id": "A091",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-10-04",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "4100",
+        "debit_cents": 21000,
+        "credit_cents": 0
+      },
+      {
+        "account": "1000",
+        "debit_cents": 0,
+        "credit_cents": 21000
+      }
+    ]
+  },
+  {
+    "journal_id": "J013",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11781,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11781
+      }
+    ]
+  },
+  {
+    "journal_id": "J002",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10274,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10274
+      }
+    ]
+  },
+  {
+    "journal_id": "J001",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10137,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10137
+      }
+    ]
+  },
+  {
+    "journal_id": "J005",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10685,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10685
+      }
+    ]
+  },
+  {
+    "journal_id": "J015",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 12055,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 12055
+      }
+    ]
+  },
+  {
+    "journal_id": "D031",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-01",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 60000,
+        "credit_cents": 0
+      },
+      {
+        "account": "2300",
+        "debit_cents": 0,
+        "credit_cents": 60000
+      }
+    ]
+  },
+  {
+    "journal_id": "J003",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10411,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10411
+      }
+    ]
+  },
+  {
+    "journal_id": "J007",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10959,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10959
+      }
+    ]
+  },
+  {
+    "journal_id": "J010",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11370,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11370
+      }
+    ]
+  },
+  {
+    "journal_id": "J009",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11233,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11233
+      }
+    ]
+  },
+  {
+    "journal_id": "O001",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-10",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10274,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10274
+      }
+    ]
+  },
+  {
+    "journal_id": "J018",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 12466,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 12466
+      }
+    ]
+  },
+  {
+    "journal_id": "J016",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 12192,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 12192
+      }
+    ]
+  },
+  {
+    "journal_id": "J010",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 11370,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 11370
+      }
+    ]
+  },
+  {
+    "journal_id": "J007",
+    "revision": 1,
+    "canceled": false,
+    "effective_period": "2026-09",
+    "posted": "2026-09-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "account": "1000",
+        "debit_cents": 10959,
+        "credit_cents": 0
+      },
+      {
+        "account": "4100",
+        "debit_cents": 0,
+        "credit_cents": 10959
+      }
+    ]
+  }
+]

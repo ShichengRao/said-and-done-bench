@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-01T07:14:23.513939+00:00",
+  "run": "h6-fin-refund-replay/final-controls-deepseek-v3",
+  "scored": false,
+  "writers_frozen": false,
+  "error": "Provider HTTP400 invalid escaped character after a model-produced malformed JSON tool argument.",
+  "response_metadata": {
+    "responses": 5,
+    "valid_json_tool_calls": 7,
+    "invalid_json_tool_calls": 1
+  },
+  "record_sha256": "80594e588c8a4c0da906f36f343e4ca3844ae39ba18c3f7633c41491650c2efb",
+  "grade_sha256": "b8295e3f82e5979e750ed3ad5a0e1f77f30ea4efc176f922068ed69070040c3e",
+  "neutral_sha256": "9e16d5ed566193dc0e829e62dd7b92d73476d72eed763b182695eee7e75e3920",
+  "decision": "Permit one fresh identical-input attempt after preserving this unscored infrastructure result. No source, harness, model, provider, settings or budget changes. No further automatic retry after another failure."
+}

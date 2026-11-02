@@ -1,0 +1,120 @@
+{
+  "captures": [
+    {
+      "id": "c1",
+      "merchant": "m",
+      "currency": "USD",
+      "captured_cents": 100,
+      "refund_until": 20
+    },
+    {
+      "id": "c2",
+      "merchant": "m",
+      "currency": "USD",
+      "captured_cents": 80,
+      "refund_until": 30
+    }
+  ],
+  "commands": [
+    {
+      "operation_id": "reserve",
+      "at": 1,
+      "kind": "reserve",
+      "refund": "r",
+      "merchant": "m",
+      "currency": "USD",
+      "cents": 130,
+      "until": 15,
+      "candidates": [
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "operation_id": "reserve-waiting",
+      "at": 1,
+      "kind": "reserve",
+      "refund": "waiting",
+      "merchant": "m",
+      "currency": "USD",
+      "cents": 40,
+      "until": 5,
+      "candidates": [
+        "c2"
+      ]
+    },
+    {
+      "operation_id": "dispatch",
+      "at": 1,
+      "kind": "dispatch",
+      "refund": "r",
+      "expected_version": 1,
+      "provider_kind": "refund",
+      "worker": "worker",
+      "until": 5
+    },
+    {
+      "operation_id": "cancel",
+      "at": 2,
+      "kind": "cancel",
+      "refund": "r",
+      "expected_version": 2
+    },
+    {
+      "operation_id": "later",
+      "at": 6,
+      "kind": "tick"
+    },
+    {
+      "operation_id": "provider-success",
+      "at": 6,
+      "kind": "receipt",
+      "receipt_id": "provider-success",
+      "provider_operation": "refund/r",
+      "result": "succeeded"
+    },
+    {
+      "operation_id": "compensation-dispatch",
+      "at": 7,
+      "kind": "dispatch",
+      "refund": "r",
+      "expected_version": 4,
+      "provider_kind": "compensation",
+      "worker": "worker",
+      "until": 10
+    },
+    {
+      "operation_id": "compensation-retryable",
+      "at": 8,
+      "kind": "receipt",
+      "receipt_id": "compensation-retryable",
+      "provider_operation": "compensation/r",
+      "result": "retryable"
+    },
+    {
+      "operation_id": "worker-abandon",
+      "at": 8,
+      "kind": "abandon",
+      "provider_operation": "compensation/r",
+      "lease_token": "compensation/r/1"
+    },
+    {
+      "operation_id": "compensation-redispatch",
+      "at": 9,
+      "kind": "dispatch",
+      "refund": "r",
+      "expected_version": 7,
+      "provider_kind": "compensation",
+      "worker": "worker-2",
+      "until": 10
+    },
+    {
+      "operation_id": "compensation-success",
+      "at": 11,
+      "kind": "receipt",
+      "receipt_id": "compensation-success",
+      "provider_operation": "compensation/r",
+      "result": "succeeded"
+    }
+  ]
+}

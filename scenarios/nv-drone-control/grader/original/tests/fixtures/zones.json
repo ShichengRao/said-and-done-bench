@@ -1,0 +1,6 @@
+{"zones": [
+  {"id": "T-1", "name": "Near pad", "clinic": "testville", "x_km": 3.0, "y_km": 4.0, "clearance_m": 20},
+  {"id": "T-2", "name": "Far field", "clinic": "testville", "x_km": 6.0, "y_km": 8.0, "clearance_m": 30},
+  {"id": "T-3", "name": "Too far", "clinic": "testville", "x_km": 12.0, "y_km": 16.0, "clearance_m": 30},
+  {"id": "O-1", "name": "Other clinic", "clinic": "otherton", "x_km": 1.0, "y_km": 1.0, "clearance_m": 30}
+]}

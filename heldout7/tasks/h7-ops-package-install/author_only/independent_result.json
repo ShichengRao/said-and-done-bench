@@ -1,0 +1,221 @@
+{
+  "artifact_cycle": {
+    "agrees_with_oracle": true,
+    "intended_reason": "artifact_cycle",
+    "outcomes": [
+      "error:artifact_cycle",
+      "inspect"
+    ],
+    "reasons": [
+      "artifact_cycle"
+    ]
+  },
+  "customer_request": {
+    "installed": [
+      [
+        "app",
+        "apps/lantern-dispatch"
+      ],
+      [
+        "base",
+        "runtime/tzdata-2026b"
+      ],
+      [
+        "lib",
+        "libs/route-planner"
+      ]
+    ],
+    "matches_oracle_receipt": true,
+    "outcome": "ok"
+  },
+  "diamond_pin_conflict": {
+    "agrees_with_oracle": true,
+    "intended_reason": "pin_conflict",
+    "outcomes": [
+      "error:pin_conflict",
+      "inspect"
+    ],
+    "reasons": [
+      "pin_conflict"
+    ]
+  },
+  "late_dependency_bytes": {
+    "agrees_with_oracle": true,
+    "intended_reason": "artifact_bytes",
+    "outcomes": [
+      "error:artifact_bytes",
+      "inspect"
+    ],
+    "reasons": [
+      "artifact_bytes"
+    ]
+  },
+  "metadata_envelope_pin": {
+    "agrees_with_oracle": true,
+    "intended_reason": "metadata_pin",
+    "outcomes": [
+      "error:metadata_pin",
+      "inspect"
+    ],
+    "reasons": [
+      "metadata_pin"
+    ]
+  },
+  "nonterminating_miss_falls_through": {
+    "agrees_with_oracle": true,
+    "intended_reason": null,
+    "outcomes": [
+      "ok"
+    ],
+    "reasons": []
+  },
+  "renamed_packages_reversed_deps": {
+    "agrees_with_oracle": true,
+    "intended_reason": null,
+    "outcomes": [
+      "ok"
+    ],
+    "reasons": []
+  },
+  "replay_after_newer_request": {
+    "agrees_with_oracle": true,
+    "intended_reason": null,
+    "outcomes": [
+      "ok",
+      "ok",
+      "replay",
+      "inspect"
+    ],
+    "reasons": []
+  },
+  "replay_payload_change": {
+    "agrees_with_oracle": true,
+    "intended_reason": "id_conflict",
+    "outcomes": [
+      "ok",
+      "error:id_conflict",
+      "inspect"
+    ],
+    "reasons": [
+      "id_conflict"
+    ]
+  },
+  "role_cycle": {
+    "agrees_with_oracle": true,
+    "intended_reason": "role_cycle",
+    "outcomes": [
+      "error:role_cycle",
+      "inspect"
+    ],
+    "reasons": [
+      "role_cycle"
+    ]
+  },
+  "role_equivocation": {
+    "agrees_with_oracle": true,
+    "intended_reason": "role_rollback",
+    "outcomes": [
+      "ok",
+      "error:role_rollback",
+      "inspect"
+    ],
+    "reasons": [
+      "role_rollback"
+    ]
+  },
+  "root_duplicate_signature": {
+    "agrees_with_oracle": true,
+    "intended_reason": "root_old_threshold",
+    "outcomes": [
+      "error:root_old_threshold",
+      "inspect"
+    ],
+    "reasons": [
+      "root_old_threshold"
+    ]
+  },
+  "root_missing_new_threshold": {
+    "agrees_with_oracle": true,
+    "intended_reason": "root_new_threshold",
+    "outcomes": [
+      "error:root_new_threshold",
+      "inspect"
+    ],
+    "reasons": [
+      "root_new_threshold"
+    ]
+  },
+  "root_signed_by_new_keys_only": {
+    "agrees_with_oracle": true,
+    "intended_reason": "root_old_threshold",
+    "outcomes": [
+      "error:root_old_threshold",
+      "inspect"
+    ],
+    "reasons": [
+      "root_old_threshold"
+    ]
+  },
+  "shared_package_second_request": {
+    "agrees_with_oracle": true,
+    "intended_reason": null,
+    "outcomes": [
+      "ok",
+      "ok"
+    ],
+    "reasons": []
+  },
+  "snapshot_rollback": {
+    "agrees_with_oracle": true,
+    "intended_reason": "snapshot_rollback",
+    "outcomes": [
+      "ok",
+      "error:snapshot_rollback",
+      "inspect"
+    ],
+    "reasons": [
+      "snapshot_rollback"
+    ]
+  },
+  "terminating_miss_propagates": {
+    "agrees_with_oracle": true,
+    "intended_reason": "terminating_miss",
+    "outcomes": [
+      "error:terminating_miss",
+      "inspect"
+    ],
+    "reasons": [
+      "terminating_miss"
+    ]
+  },
+  "unknown_repository": {
+    "agrees_with_oracle": true,
+    "intended_reason": "unknown_repository",
+    "outcomes": [
+      "error:unknown_repository",
+      "inspect"
+    ],
+    "reasons": [
+      "unknown_repository"
+    ]
+  },
+  "unused_bundle_and_role": {
+    "agrees_with_oracle": true,
+    "intended_reason": null,
+    "outcomes": [
+      "ok"
+    ],
+    "reasons": []
+  },
+  "version_conflict": {
+    "agrees_with_oracle": true,
+    "intended_reason": "version",
+    "outcomes": [
+      "error:version",
+      "inspect"
+    ],
+    "reasons": [
+      "version"
+    ]
+  }
+}

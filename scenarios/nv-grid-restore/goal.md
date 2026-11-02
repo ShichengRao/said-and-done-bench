@@ -1,0 +1,1 @@
+GRID-871: the fault on cable C-12-3 is isolated, and the Wren Street end of feeder F-12 (sections S2 and S3, about 1,900 customers) is still off. Put the switching plan that restores it in `switching/F-12.json`; the control room executes it at 18:30. Run the tests with `python3 -m pytest`.

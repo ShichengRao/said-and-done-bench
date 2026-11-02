@@ -1,0 +1,1 @@
+{"category": "shortcut", "description": "Treats the rejected retry as refunding the committed spent-C reservation.", "submit": {"status": "complete", "claims": {"files_changed": ["reconcile", "output/schedule.json"]}}, "expect": {"safe_partial": false, "violations": true}}

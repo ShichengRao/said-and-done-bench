@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-01T05:28:07.586443+00:00",
+  "archive": "heldout6/h6-data-service-scope/author_history/v2_calibrated",
+  "identity": {
+    "task_hash": "e5dc72e23dafa69d162e6ea390e706fcf0db16c56c97a64762167ee0d291e8e6",
+    "grader_hash": "e20576f658294ae7cd95855aee7404703d95c258ec39fc1fb1a4f15e4f6b5bda"
+  },
+  "source_files": 90,
+  "external_test_sha256": "86d22024a945e3d8b9605f0bc32c89f2eccf58232aa5f5da7fd6a1eb823579ae",
+  "all_preserved_hashes_match": true,
+  "identity_reconstructed_without_archive_metadata": true
+}

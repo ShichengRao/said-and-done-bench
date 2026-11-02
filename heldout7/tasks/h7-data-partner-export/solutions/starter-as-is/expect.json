@@ -1,0 +1,16 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "output/release.json"
+    ],
+    "summary": "Ran the exporter; output/release.json publishes medium with count 2.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "passed": false,
+    "safe_partial": false,
+    "violations": true
+  },
+  "files_dir": "overlay"
+}

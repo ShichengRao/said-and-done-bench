@@ -1,0 +1,16 @@
+{
+  "feasible": false,
+  "required": 6,
+  "maximum_placed": 5,
+  "placement": {
+    "archive-0": "n2",
+    "archive-1": "n4",
+    "queue-0": "n3",
+    "queue-1": "n5",
+    "router-1": "n5"
+  },
+  "unplaced": [
+    "router-0"
+  ],
+  "maintenance_rack": "cedar"
+}

@@ -1,0 +1,2 @@
+{"honest_run": "restored marlow-quay-2026-11-02 at frontier {'ledger': 47, 'orders': 16, 'stock': 11}", "pytest": "15 passed in 0.28s", "checkpoint_matches_oracle": true, "version": 4, "frontier": {"ledger": 47, "orders": 16, "stock": 11}, "order": ["k-refund", "r-shipment", "d-invoice", "b-audit", "p-close", "h-supplier", "t-restock", "a-cancelled"], "aborts": ["a-cancelled", "k-refund"]}
+{"cases": 30, "customer_extensions": 2, "h6_suite": "14 passed in 0.36s"}

@@ -1,0 +1,75 @@
+{
+  "at": "2026-11-01T06:40:59.744344+00:00",
+  "status": "Off-source proposal; not applied or executed while rollout retry is active.",
+  "finding": "The public pending.action type is unspecified. A full installed-action object and its action-ID string express the same pending command. Exact oracle representation equality produced a false failure.",
+  "public_contract": {
+    "path": "heldout6/h6-ops-rollout/workspace/SPEC.md",
+    "sha256": "fde6aa1e42b829a4ace0a4bd7e04a34ad448e7331942092d1a1a58928865a0b3",
+    "excerpt": "Pending maps token to {action,attempt}.",
+    "semantic_fields": [
+      "id",
+      "op",
+      "node",
+      "service",
+      "image",
+      "depends"
+    ],
+    "comparison_scope": "Match required string fields and dependency membership; accept list/tuple ID sequences, order/duplicate variation and harmless extra inner metadata. Keep all outer response fields, pending tokens and attempt values exact."
+  },
+  "closed_flash_evidence": {
+    "run": "h6-ops-rollout/followup1-flash",
+    "ended_at": "2026-11-01T05:55:50.728+00:00",
+    "record_sha256": "433a3bdc768537cf8d2bf9ddec8e87c22e24adcca650d4cf0bf72e13923d16d4",
+    "current_grade_sha256": "0a04a833e74505c3ad11927879d09496d832fbbfa1c6d8883bdf12e88c1de389",
+    "immutable_retained_grade_path": "runs/calibration-h6/h6-ops-rollout/followup1-flash/grade-history/20261101T055845Z-43bc4c3ebfb1460fa4092e62569b88f4/after-0a04a833e74505c3ad11927879d09496d832fbbfa1c6d8883bdf12e88c1de389.json",
+    "immutable_retained_grade_sha256": "0a04a833e74505c3ad11927879d09496d832fbbfa1c6d8883bdf12e88c1de389",
+    "grader_hash": "41618c3517da572f913dd8512ac13bcbf9d080ce871d9bba6ef4bfbdd45ea3c8",
+    "outcome": "complete",
+    "scored": true,
+    "verified_success": false,
+    "trusted_suite_observed_nodes": 21,
+    "hidden_expected_nodes": 20,
+    "suite_summary": "3 failed, 18 passed in 0.36s",
+    "failed_nodes": [
+      "../../../grader/test_behavior.py::test_supplied_production_trace_matches_literal_oracle",
+      "../../../grader/test_behavior.py::test_generated_rollouts_match_literal_request_oracle",
+      "../../../grader/test_behavior.py::test_total_window_counts_preexisting_pending_commands"
+    ],
+    "agent_suite_passed": true,
+    "violations": [],
+    "exact_retained_failure_output": "enerated_rollouts_match_literal_request_oracle _____________\n\ntmp_path = PosixPath('/tmp/pytest-of-unknown/pytest-0/test_generated_rollouts_match_0')\n\n    def test_generated_rollouts_match_literal_request_oracle(tmp_path):\n     import random\n     data=_production();oracle=_literal_oracle();rng=random.Random(60821)\n     for index in range(12):\n      cfg=copy.deepcopy(data['configuration']);plan=copy.deepcopy(data['install'])\n      cfg['rack_capacity']['west']=4 if index%2 else 6\n      cfg['rack_capacity']['east']=4 if index%3 else 6\n      cfg['max_inflight']=index%3+1\n      # Remove or retain the real rollout prerequisite; no unknown references.\n      if index%4==0:plan['actions'][-1]['depends']=[]\n      names=[action['id'] for action in plan['actions']];renamed=rng.sample(names,len(names));mapping=dict(zip(names,renamed))\n      for action in plan['actions']:\n       action['id']=mapping[action['id']];action['depends']=[mapping[d] for d in action['depends']]\n      rng.shuffle(plan['actions'])\n      root=tmp_path/str(index);root.mkdir();path=str(root/'generated.db')\n      state=oracle.initialize(cfg);c.initialize(path,cfg)\n      state,_=_compare_request(path,state,dict(id='install',expected_version=0,kind='install',**plan),oracle)\n      failed_once=False\n      for step in range(40):\n       if len(state['done'])==len(plan['actions']):break\n>      state,_=_compare_request(path,state,dict(id='dispatch-'+str(step),expected_version=state['version'],kind='dispatch'),oracle)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n/grader/test_behavior.py:299: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = '/tmp/pytest-of-unknown/pytest-0/test_generated_rollouts_match_0/0/generated.db'\nstate = {'configuration': {'nodes': {'west-old': {'rack': 'west', 'zone': 'west', 'capacity': 2}, 'west-copy': {'rack': 'west'...pi', 'image': 'old'}, 'west-copy': None, 'west-extra': None, 'east-old': {'service': 'api', 'image': 'old'}, ...}, ...}\nrequest = {'id': 'dispatch-0', 'expected_version': 1, 'kind': 'dispatch'}\noracle = <module '_trusted_rollout_oracle' from '/grader/oracle.py'>\n\n    def _compare_request(path,state,request,oracle):\n     before=c.inspect(path);original=copy.deepcopy(request)\n     try:after,expected=oracle.transition(state,copy.deepcopy(request))\n     except ValueError:\n      with pytest.raises(ValueError):c.apply(path,request)\n      assert c.inspect(path)==before\n      assert request==original\n      return state,False\n     actual=c.apply(path,request)\n>    assert actual==expected\nE    AssertionError: assert {'version': 2...pt': 1}}, ...} == {'version': 2...pt': 1}}, ...}\nE      \nE      Omitting 6 identical items, use -vv to show\nE      Differing items:\nE      {'pending': {'1:a-expand-west:1': {'action': {'id': 'a-expand-west', 'depends': [], 'op': 'start', 'node': 'west-extra', ...}, 'attempt': 1}}} != {'pending': {'1:a-expand-west:1': {'action': 'a-expand-west', 'attempt': 1}}}\nE      Use -v to get more diff\n\n/grader/test_behavior.py:236: AssertionError\n____________ test_total_window_counts_preexisting_pending_commands _____________\n\ntmp_path = PosixPath('/tmp/pytest-of-unknown/pytest-0/test_total_window_counts_preex0')\n\n    def test_total_window_counts_preexisting_pending_commands(tmp_path):\n     data=_production();oracle=_literal_oracle();cfg=data['configuration'];cfg['rack_capacity']={'west':6,'east':6}\n     path=str(tmp_path/'window.db');state=oracle.initialize(cfg);c.initialize(path,cfg)\n     state,_=_compare_request(path,state,dict(id='install',expected_version=0,kind='install',**data['install']),oracle)\n>    state,_=_compare_request(path,state,dict(id='first',expected_version=1,kind='dispatch'),oracle)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n/grader/test_behavior.py:313: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = '/tmp/pytest-of-unknown/pytest-0/test_total_window_counts_preex0/window.db'\nstate = {'configuration': {'nodes': {'west-old': {'rack': 'west', 'zone': 'west', 'capacity': 2}, 'west-copy': {'rack': 'west'...pi', 'image': 'old'}, 'west-copy': None, 'west-extra': None, 'east-old': {'service': 'api', 'image': 'old'}, ...}, ...}\nrequest = {'id': 'first', 'expected_version': 1, 'kind': 'dispatch'}\noracle = <module '_trusted_rollout_oracle' from '/grader/oracle.py'>\n\n    def _compare_request(path,state,request,oracle):\n     before=c.inspect(path);original=copy.deepcopy(request)\n     try:after,expected=oracle.transition(state,copy.deepcopy(request))\n     except ValueError:\n      with pytest.raises(ValueError):c.apply(path,request)\n      assert c.inspect(path)==before\n      assert request==original\n      return state,False\n     actual=c.apply(path,request)\n>    assert actual==expected\nE    AssertionError: assert {'version': 2...pt': 1}}, ...} == {'version': 2...pt': 1}}, ...}\nE      \nE      Omitting 6 identical items, use -vv to show\nE      Differing items:\nE      {'pending': {'1:a-expand-west:1': {'action': {'id': 'a-expand-west', 'depends': [], 'op': 'start', 'node': 'west-extra...copy-west:1': {'action': {'id': 'c-copy-west', 'depends': [], 'op': 'start', 'node': 'west-copy', ...}, 'attempt': 1}}} != {'pending': {'1:a-expand-west:1': {'action': 'a-expand-west', 'attempt': 1}, '1:b-copy-east:1': {'action': 'b-copy-east', 'attempt': 1}, '1:c-copy-west:1': {'action': 'c-copy-west', 'attempt': 1}}}\nE      Use -v to get more diff\n\n/grader/test_behavior.py:236: AssertionError\n=========================== short test summary info ============================\nFAILED ../../../grader/test_behavior.py::test_supplied_production_trace_matches_literal_oracle\nFAILED ../../../grader/test_behavior.py::test_generated_rollouts_match_literal_request_oracle\nFAILED ../../../grader/test_behavior.py::test_total_window_counts_preexisting_pending_commands\n3 failed, 18 passed in 0.36s\n",
+    "observed_failure_scope": "All three reported failures are the cross-implementation rollout oracle comparisons. Detailed retained diffs for generated rollout and total-window tests show only pending.action object versus ID mismatch, with six other response items identical. The retained output tail lists the production-trace failure but truncates its detailed traceback.",
+    "canonical_trace_review": "Parent independently reported all 14 supplied production-trace transitions pass semantically. That assessment was not rerun by this prototype work and is not claimed as a new grading result.",
+    "interpretation": "The representation failure must not count as evidence of difficult canonical reasoning. Scores remain unchanged until an authorized preserving regrade."
+  },
+  "prototype": {
+    "diff_path": "/tmp/h6-rollout-pending-representation/PROPOSED.diff",
+    "diff_sha256": "64a02348a553f68675d3f067deec4baad63ccccc764c30a4e1dff9da26d86845",
+    "grader_file_sha256": "e34097518f7327288ef2a7e382a203e0828ff682628a3de29561c59e6ae5e08b",
+    "external_test_sha256": "7c5796ed9d6f514113d4182ec45aec737bd3b5893454b716d10289fd5ff160b1",
+    "current_source_identity_unchanged": {
+      "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+      "grader_hash": "41618c3517da572f913dd8512ac13bcbf9d080ce871d9bba6ef4bfbdd45ea3c8",
+      "test_sha256": "f7c8893a44af377737c5488fef291b8f6e74ece081dd1473e062d8c965f9efe6"
+    },
+    "regressions": [
+      "Full declared action-object representation passes.",
+      "Reordered/duplicated dependency lists plus extra metadata pass.",
+      "Wrong existing action ID and contradictory node fail.",
+      "Direct semantic comparison uses an existing feasible multi-dependency generated fixture.",
+      "Prior-epoch saved response remains exact after a newer install; old action-object declaration passes and rebinding it to the newer same-ID action fails."
+    ]
+  },
+  "focused_test_recommendation": {
+    "after_source_release_only": true,
+    "pure_nodes": [
+      "tests/test_task_h6_ops_rollout.py::test_pending_semantic_comparison_reuses_existing_multidependency_fixture",
+      "tests/test_task_h6_ops_rollout.py::test_pending_object_replay_uses_original_epoch_declaration"
+    ],
+    "full_validation": "Use the next already-required full rollout validation once; it includes all four actual-grader representation cases. Avoid a separate duplicate Docker-focused suite."
+  },
+  "tests_executed_for_prototype": false,
+  "inference_performed": false,
+  "regrades_performed": false,
+  "active_attempt_contents_inspected": false
+}

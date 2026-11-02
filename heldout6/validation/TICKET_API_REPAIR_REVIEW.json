@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-31T22:44:58.293257+00:00",
+  "scope": "Grader-only Projection API placement fairness repair, with separately identified public atomicity coverage additions; no inference or real preserving regrade performed.",
+  "task_hash": "ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f",
+  "task_hash_unchanged": true,
+  "old_grader_hash": "1effb170099ce1b58097545dd024eb07354824899355770215f84070583a7b7c",
+  "new_grader_hash": "f82c5397a057dbc51e2d1bd2f0e283b060502a64d4aa7bf8c6788e74d96173d3",
+  "external_test_sha256": "82c0016d5bdccc71537785eeffed57e0177a750a72e758e3f5446a2b343e8256",
+  "prior_preservation": "heldout6/validation/ticket-api-repair-before/PRESERVATION.json",
+  "fairness_repair": [
+    "Only transform is prescribed to pipeline.py by the public contract. Discover callable Projection exports in candidate-owned Python modules, preferring pipeline when present.",
+    "Class, factory, re-export, package and underscore helper forms are supported. Multiple distinct exports are tried through the complete durable suite; one export must pass it all.",
+    "Fresh-process and synchronized two-process probes load the same selected export.",
+    "Trusted check/oracle/cases/discovery code executes from the external grader directory. No candidate filenames are reserved, injected or overwritten."
+  ],
+  "separate_added_coverage": [
+    "A single batch completes valid epoch 1 then invalid epoch 2; ValueError must roll back every new message and publication, retain earlier accepted pending evidence, and permit a corrected retry.",
+    "Conflicting same-batch fragment and seal keys must reject and roll back all batch evidence rather than overwrite the earlier occurrence."
+  ],
+  "validation": {
+    "final": "heldout6/validation/20261031T224358Z-63587701.json",
+    "tests": 48,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "source_unchanged": true,
+    "intermediate_retained": "heldout6/validation/20261031T224241Z-360c699f.json"
+  },
+  "positive_actual_grader_layouts": [
+    "split class",
+    "factory",
+    "underscore helper",
+    "package re-export",
+    "bad pipeline export plus distinct working helper",
+    "_oracle.py helper",
+    "_cases.py helper",
+    "_projection_api.py helper",
+    "_hidden_check.py helper"
+  ],
+  "negative_actual_grader_fixtures": [
+    "per-epoch partial commits",
+    "swallowed invalid publication",
+    "same-batch fragment overwrite",
+    "same-batch seal overwrite",
+    "process-only storage"
+  ],
+  "original_evidence_scope": "The original closed M2 grade stopped at importing Projection from pipeline. Static observations about per-epoch commits, swallowed invalid-publication ValueError and duplicate-key overwrite were not executed failures in that original grade. The newly added negatives are author-created independent fixtures, not regrades of M2.",
+  "closed_run_bindings_before_any_regrade": {
+    "v1-astra": {
+      "record_sha256": "03e3f7538f3a6e2ae8356115b7ba7ee398c1116aef6cacc5c541afa20ce3188c",
+      "grade_sha256": "838bf7e1f50966b243f1b2023882c40c07eaa5b1a50291f276628b8523e1c97c",
+      "snapshot_sha256": "48e956485b0a45b7a2a6517073ee832db09b679fd793d3e694eb087c3bbfbe19",
+      "ended_at": "2026-10-31T22:06:42.731+00:00"
+    },
+    "v1-minimax-m2-7": {
+      "record_sha256": "b48b8d689e6e3622575d841015ab0e99a4d5e54ce019bda3ac70bf1b1ad80f52",
+      "grade_sha256": "7cae13557b386c359d4d94d857f065f7012ef3b006e19f54b3805a258215c2ba",
+      "snapshot_sha256": "83a4a303222fe9e38644f4c52615082c19d43b54b40786793c09c85eba11323e",
+      "ended_at": "2026-10-31T22:36:03.102+00:00"
+    }
+  },
+  "real_regrade_performed": false,
+  "inference_performed": false,
+  "readiness_claim": false
+}

@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-02T01:21:36.616138+00:00",
+  "passed": true,
+  "source_reviewed": true,
+  "source_review": "Coordinator verified the copied delivery inputs and graders against the validated pilot; only task family, command timeout and task-hash binding changed.",
+  "validation_command": ".venv/bin/python -m pytest -q tests/test_h7_delivery_profile.py",
+  "validation_result": "10 passed in 6.44s",
+  "test_file_sha256": {
+    "tests/test_h7_delivery_profile.py": "a143ab5a96d1081518b66347aa0ec1cc6da3d9723ff7d13ebd90cb820f3e06ad",
+    "heldout7/_shared/delivery_reference_helpers.py": "a52ca674a455183b6174a59928b2bdc8f15855e951db3231a3f3802344bc6112"
+  },
+  "tasks": [
+    {
+      "task": "h7-fin-period-close",
+      "path": "heldout7/tasks/h7-fin-period-close",
+      "task_hash": "d5ea045132d7d31821a5f8768b79908da4a5ad68bb9015780e2215b8a63ff627",
+      "grader_hash": "a34ce6744337789d326e3d0340106961ca426d5e544d9b57d651bffdc28e6ec4"
+    },
+    {
+      "task": "h7-ops-generation-restore",
+      "path": "heldout7/tasks/h7-ops-generation-restore",
+      "task_hash": "b41d935995dbba6929a349fa1977c2edf770a845ad77777e616f94deb14f8939",
+      "grader_hash": "0b71a07cef148256bd623c3337829a58b34330683d3fff2d7c88c3b7668cc332"
+    }
+  ]
+}

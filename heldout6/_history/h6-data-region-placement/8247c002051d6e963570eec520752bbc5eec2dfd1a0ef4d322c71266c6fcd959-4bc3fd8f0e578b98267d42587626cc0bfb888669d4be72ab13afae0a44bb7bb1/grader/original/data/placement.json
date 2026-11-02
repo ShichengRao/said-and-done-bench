@@ -1,0 +1,230 @@
+{
+  "nodes": [
+    {
+      "id": "a",
+      "region": "eu",
+      "keys": [
+        "customer"
+      ]
+    },
+    {
+      "id": "b",
+      "region": "eu",
+      "keys": [
+        "customer"
+      ]
+    },
+    {
+      "id": "c",
+      "region": "eu",
+      "keys": [
+        "customer"
+      ]
+    },
+    {
+      "id": "d",
+      "region": "eu",
+      "keys": [
+        "customer"
+      ]
+    },
+    {
+      "id": "e",
+      "region": "eu",
+      "keys": [
+        "customer"
+      ]
+    },
+    {
+      "id": "f",
+      "region": "us",
+      "keys": [
+        "other"
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "id": "ab",
+      "nodes": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "id": "ac",
+      "nodes": [
+        "a",
+        "c"
+      ]
+    },
+    {
+      "id": "ad",
+      "nodes": [
+        "a",
+        "d"
+      ]
+    },
+    {
+      "id": "ae",
+      "nodes": [
+        "a",
+        "e"
+      ]
+    },
+    {
+      "id": "bc",
+      "nodes": [
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "bd",
+      "nodes": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "be",
+      "nodes": [
+        "b",
+        "e"
+      ]
+    },
+    {
+      "id": "cd",
+      "nodes": [
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "ce",
+      "nodes": [
+        "c",
+        "e"
+      ]
+    },
+    {
+      "id": "de",
+      "nodes": [
+        "d",
+        "e"
+      ]
+    },
+    {
+      "id": "af",
+      "nodes": [
+        "a",
+        "f"
+      ]
+    }
+  ],
+  "datasets": [
+    {
+      "id": "accounts",
+      "units": 1,
+      "survivors": 1,
+      "regions": [
+        "eu"
+      ],
+      "key": "customer",
+      "templates": [
+        "ab",
+        "bd",
+        "be",
+        "af"
+      ]
+    },
+    {
+      "id": "contacts",
+      "units": 1,
+      "survivors": 1,
+      "regions": [
+        "eu"
+      ],
+      "key": "customer",
+      "templates": [
+        "ad",
+        "cd",
+        "af"
+      ]
+    },
+    {
+      "id": "events",
+      "units": 1,
+      "survivors": 1,
+      "regions": [
+        "eu"
+      ],
+      "key": "customer",
+      "templates": [
+        "ae",
+        "cd",
+        "af"
+      ]
+    },
+    {
+      "id": "tickets",
+      "units": 1,
+      "survivors": 1,
+      "regions": [
+        "eu"
+      ],
+      "key": "customer",
+      "templates": [
+        "ac",
+        "ae",
+        "bd",
+        "be",
+        "af"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "alpha-outage",
+      "down": [
+        "a"
+      ],
+      "capacity": {
+        "a": 0,
+        "b": 3,
+        "c": 1,
+        "d": 3,
+        "e": 3,
+        "f": 8
+      }
+    },
+    {
+      "id": "beta-outage",
+      "down": [
+        "b"
+      ],
+      "capacity": {
+        "a": 1,
+        "b": 0,
+        "c": 3,
+        "d": 2,
+        "e": 2,
+        "f": 8
+      }
+    },
+    {
+      "id": "gamma-outage",
+      "down": [
+        "c"
+      ],
+      "capacity": {
+        "a": 1,
+        "b": 2,
+        "c": 0,
+        "d": 1,
+        "e": 3,
+        "f": 8
+      }
+    }
+  ]
+}

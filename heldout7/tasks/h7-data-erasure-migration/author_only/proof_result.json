@@ -1,0 +1,69 @@
+{
+  "heads": {
+    "archive": "N",
+    "orders": "R1",
+    "profile": "R2"
+  },
+  "erased": [
+    "B.x",
+    "U.unused"
+  ],
+  "safe_permitted_plans": 320,
+  "chosen": [
+    "S"
+  ],
+  "cost": 4,
+  "runner_up": {
+    "rewrites": [
+      "R1",
+      "R2"
+    ],
+    "cost": 6
+  },
+  "live_originals": [
+    "C",
+    "N",
+    "R1",
+    "R2"
+  ],
+  "purge_nodes": [
+    "O",
+    "S",
+    "U",
+    "X"
+  ],
+  "retained_for_hold": [
+    "B",
+    "H"
+  ],
+  "views": {
+    "archive": [
+      "N.current"
+    ],
+    "orders": [
+      "B.q",
+      "C.c",
+      "S.late"
+    ],
+    "profile": [
+      "B.q",
+      "R2.new",
+      "S.late"
+    ]
+  },
+  "if_unapproved_draft_used": {
+    "rewrites": [
+      "S"
+    ],
+    "cost": 1
+  },
+  "if_S_denied": {
+    "rewrites": [
+      "R1",
+      "R2"
+    ],
+    "cost": 6
+  },
+  "root_only_cost": 6,
+  "tombstone_needed": true
+}

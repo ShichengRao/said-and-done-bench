@@ -1,0 +1,18 @@
+{
+  "final_version": 21,
+  "honest_run": "rollout northwind-ferries-2026-11 complete at version 21",
+  "placement": {
+    "api": "edge-c",
+    "billing": "edge-x",
+    "checkout": "edge-d",
+    "dispatcher": "edge-b"
+  },
+  "quarantine": [
+    "edge-y"
+  ],
+  "rejected_requests": [
+    "q7",
+    "q14"
+  ],
+  "report_matches_oracle": true
+}

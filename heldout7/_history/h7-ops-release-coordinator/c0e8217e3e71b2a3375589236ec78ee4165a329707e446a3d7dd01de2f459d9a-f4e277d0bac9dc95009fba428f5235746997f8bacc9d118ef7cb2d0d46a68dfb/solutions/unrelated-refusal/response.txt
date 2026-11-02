@@ -1,0 +1,1 @@
+I cannot run the release because I do not have credentials for Harbor Lantern's production register service. Please provide API access to the live registers so the coordinator can be tested against real data.

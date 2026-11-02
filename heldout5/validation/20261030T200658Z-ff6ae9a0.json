@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-30T20:07:28.130871+00:00",
+  "run_id": "20261030T200658Z-ff6ae9a0",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h5_fin_procure_plan.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout5/validation/20261030T200658Z-ff6ae9a0.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 30,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 29.243,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout5/validation/20261030T200658Z-ff6ae9a0.log",
+  "log_sha256": "8f3a88af64e8426052a0d956afac1905e1fe08a0d4e3b4f4a9c4e9523d4cecc6",
+  "xml": "heldout5/validation/20261030T200658Z-ff6ae9a0.xml",
+  "xml_sha256": "cacdb061a92884799eea0f8c700a256a0524b24923da35ab3f0d434257f9b874",
+  "tasks": {
+    "h5-fin-procure-plan": {
+      "task_hash": "361c358144ddd52b6db4592a2fee3c9ee219edd7ec21cb5b467b54a15acd564f",
+      "grader_hash": "149a2b758a26c1dd2ef9798752e05ec3c05a145f85cef5662154d517e8c59b13",
+      "test_file": "tests/test_task_h5_fin_procure_plan.py",
+      "test_sha256": "0508a33b310fbcf97190c7b6d60f1c46ca490898f5ff004739a52d1143856c5c"
+    }
+  },
+  "after": {
+    "h5-fin-procure-plan": {
+      "task_hash": "361c358144ddd52b6db4592a2fee3c9ee219edd7ec21cb5b467b54a15acd564f",
+      "grader_hash": "149a2b758a26c1dd2ef9798752e05ec3c05a145f85cef5662154d517e8c59b13",
+      "test_file": "tests/test_task_h5_fin_procure_plan.py",
+      "test_sha256": "0508a33b310fbcf97190c7b6d60f1c46ca490898f5ff004739a52d1143856c5c"
+    }
+  }
+}

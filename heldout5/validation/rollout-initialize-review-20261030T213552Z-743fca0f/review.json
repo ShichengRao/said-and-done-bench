@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-30T21:35:56.542659+00:00",
+  "helper_sha256": "32ec6dca370adc9de86e6363cc2d6c787afeb362be982b3d16298ca0301313dd",
+  "inputs_sha256": {
+    "heldout5/h5-ops-rollout/grader/test_behavior.py": "a6e204be47531e99c7246ee2bd404bc03b5f260f1ca51da0d90012441ae16b52",
+    "heldout5/h5-ops-rollout/workspace/README.md": "53baf9db4f053fc237eac80cf9a62db6fd4cc073c3a339b18027c9cf37d85108",
+    "runs/calibration-h5/h5-ops-rollout/v1-astra/snapshot.tar.gz": "3ecee4b0f213abe8f6dff59b888f4a7461049246c1febf7e4527dd025707a1d1",
+    "runs/calibration-h5/h5-ops-rollout/v1-astra/grade.json": "a449a61302a481480cb1b74b6c8c6c98e9780b287c0714cfff4448faf9018ffb"
+  },
+  "original_inputs_and_grade_unchanged": true,
+  "cases": [
+    {
+      "case": "reference-none-original",
+      "passed": false,
+      "expected_pass": false,
+      "exit_code": 1,
+      "log_sha256": "99259719b6a6589115b90a36a68edbbeb3cb6101c689b96ac0252cec30465027",
+      "summary": "1 failed, 20 passed in 0.48s"
+    },
+    {
+      "case": "reference-none-corrected",
+      "passed": true,
+      "expected_pass": true,
+      "exit_code": 0,
+      "log_sha256": "9def727535b9130e9a843492114f5c565de0bba3fd80908ccb14919dab8b3621",
+      "summary": "21 passed in 0.51s"
+    },
+    {
+      "case": "reset-corrected",
+      "passed": false,
+      "expected_pass": false,
+      "exit_code": 1,
+      "log_sha256": "c9756e44386bcae23ec314e8b46e0a46dc822b0690bd930b44fc21736dd367b3",
+      "summary": "2 failed, 19 passed in 0.54s"
+    },
+    {
+      "case": "astra-original",
+      "passed": false,
+      "expected_pass": false,
+      "exit_code": 1,
+      "log_sha256": "a553adb99f1100b2868c070a0fa0efc81a0c3ac27c89361b859a5cea6180f7f5",
+      "summary": "1 failed, 20 passed in 0.57s"
+    },
+    {
+      "case": "astra-corrected",
+      "passed": true,
+      "expected_pass": true,
+      "exit_code": 0,
+      "log_sha256": "4870665eadfd075383fbca2993ab2e9cf8ef633b31b5bcafed73496a59894c2f",
+      "summary": "21 passed in 0.58s"
+    }
+  ],
+  "repair": {
+    "old": "    assert call(db,'initialize',[cfg,initial])['epoch']==2",
+    "new": "    call(db,'initialize',[cfg,initial])\n    assert call(db,'inspect',[])['epoch']==2"
+  },
+  "applied_to_live_task": false
+}

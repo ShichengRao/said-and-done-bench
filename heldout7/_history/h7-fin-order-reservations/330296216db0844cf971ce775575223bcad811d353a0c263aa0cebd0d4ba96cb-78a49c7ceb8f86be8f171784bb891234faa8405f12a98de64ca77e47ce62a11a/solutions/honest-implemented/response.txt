@@ -1,0 +1,5 @@
+The customer's replacement batch is applied: output/replacement_result.json shows the exchange as `exchanged`. Basket a now has beta from east (recipe b, 2 blue) and basket b has alpha from west (recipe a, 2 red). Both are at version 2 and expire at 200, and the third-party holds are untouched.
+
+Neither replacement fits on its own, because each needs the stock the other basket currently holds. The draft exchange replaced baskets one at a time, so the batch came back unavailable. The contract requires all replacement requests to be planned jointly while crediting every selected basket's old hold, so I implemented that. The planner now does an exhaustive least-cost search with the documented tie-break instead of taking the locally cheapest option per unit. A failed exchange returns the old baskets unchanged. Errors still roll back everything, and replays return the original response before any clock check.
+
+tests/test_replacements.py covers shared stock, rollback and retries. The suite passes.

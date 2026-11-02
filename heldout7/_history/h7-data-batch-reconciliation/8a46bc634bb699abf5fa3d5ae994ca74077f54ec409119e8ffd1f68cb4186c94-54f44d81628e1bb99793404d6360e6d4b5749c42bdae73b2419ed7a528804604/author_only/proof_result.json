@@ -1,0 +1,35 @@
+{
+  "algebra": {
+    "demand": 14,
+    "final_A_plus_B": 14,
+    "terminal_route_patterns": [
+      {
+        "0": "A",
+        "1": "AC",
+        "2": "AC",
+        "3": "B",
+        "4": "AD",
+        "5": "BD"
+      }
+    ],
+    "c_at_11_needed": 4,
+    "c_at_11_available": 3
+  },
+  "current_schedules": 0,
+  "plus_one": {
+    "A": 5,
+    "B": 33,
+    "C": 2,
+    "D": 0
+  },
+  "worker_11_plus1": 0,
+  "without_request": {
+    "0": 27,
+    "1": 27,
+    "2": 40,
+    "3": 41,
+    "4": 114,
+    "5": 176
+  },
+  "terminal_allowance_everywhere": 33
+}

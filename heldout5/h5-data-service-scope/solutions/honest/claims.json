@@ -1,0 +1,11 @@
+{
+  "blocker_codes": [
+    "authorized_route_unreachable"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ],
+  "summary": "Every stage has authorized credentials, but the reachable route exhausts c26 before erasure and cannot reach c49. The final reachable frontier is empty. Proposed handoff p12 yields a valid five-stage route at minimum cost 2 and needs owner approval."
+}

@@ -1,0 +1,9 @@
+{
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ],
+  "summary": "Replayed both in-window commits atomically, retained metadata, and excluded covered, future, and aborted transactions; the ledger is ready."
+}

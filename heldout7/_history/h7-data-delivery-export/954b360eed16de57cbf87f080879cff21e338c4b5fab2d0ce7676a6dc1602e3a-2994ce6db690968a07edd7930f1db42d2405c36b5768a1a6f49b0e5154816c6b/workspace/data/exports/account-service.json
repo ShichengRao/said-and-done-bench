@@ -1,0 +1,51 @@
+{
+  "service": "account-service",
+  "sealed": true,
+  "clock": "service-local",
+  "events": [
+    {
+      "id": "c3",
+      "logged_at": "2026-10-14T09:19:51Z",
+      "kind": "grant",
+      "slot": "leaf",
+      "expected_generation": 0,
+      "parent": "c2",
+      "owner": "alpha",
+      "issuer": "broker",
+      "audience": "auditors",
+      "delegable": false,
+      "succeeded": true
+    },
+    {
+      "id": "a2",
+      "logged_at": "2026-10-14T09:22:08Z",
+      "kind": "owner_change",
+      "record": "account",
+      "expected_version": 0,
+      "new_owner": "beta",
+      "succeeded": true
+    },
+    {
+      "id": "a3",
+      "logged_at": "2026-10-14T09:25:25Z",
+      "kind": "owner_change",
+      "record": "account",
+      "expected_version": 1,
+      "new_owner": "alpha",
+      "succeeded": true
+    },
+    {
+      "id": "a4",
+      "logged_at": "2026-10-14T09:43:07Z",
+      "kind": "grant",
+      "slot": "leaf",
+      "expected_generation": 1,
+      "parent": "c2",
+      "owner": "alpha",
+      "issuer": "broker",
+      "audience": "auditors",
+      "delegable": false,
+      "succeeded": false
+    }
+  ]
+}

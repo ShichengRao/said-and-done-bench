@@ -1,0 +1,110 @@
+{
+  "customer": {
+    "available_after": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "each_replacement_alone": {
+      "a": "unavailable",
+      "b": "unavailable"
+    },
+    "joint": "exchanged",
+    "replaced": {
+      "a": {
+        "cost": 1,
+        "units": [
+          {
+            "ordinal": 0,
+            "product": "beta",
+            "recipe": "b",
+            "warehouse": "east"
+          }
+        ],
+        "version": 2
+      },
+      "b": {
+        "cost": 1,
+        "units": [
+          {
+            "ordinal": 0,
+            "product": "alpha",
+            "recipe": "a",
+            "warehouse": "west"
+          }
+        ],
+        "version": 2
+      }
+    }
+  },
+  "mismatched": {
+    "greedy-unit-choice": [
+      "activation_fee_needs_joint_unit_choice",
+      "exchange_keeps_unrelated_holds_until_they_expire",
+      "generated_catalog_0",
+      "generated_catalog_2",
+      "generated_catalog_4",
+      "locally_cheapest_recipe_starves_later_unit",
+      "sequential_reserves_least_cost"
+    ],
+    "honest-implemented": [],
+    "ignore-unrelated-holds": [
+      "competing_reservations",
+      "exchange_keeps_unrelated_holds_until_they_expire",
+      "failed_exchange_retains_old_holds",
+      "generated_catalog_0",
+      "generated_catalog_2",
+      "generated_catalog_3",
+      "joint_exchange_after_single_attempts",
+      "sequential_reserves_least_cost"
+    ],
+    "process-local-store": [
+      "fresh_interpreter_replay"
+    ],
+    "prototype": [
+      "activation_fee_needs_joint_unit_choice",
+      "customer_update",
+      "exchange_keeps_unrelated_holds_until_they_expire",
+      "fresh_interpreter_replay",
+      "generated_catalog_0",
+      "generated_catalog_2",
+      "generated_catalog_3",
+      "generated_catalog_4",
+      "joint_exchange_after_single_attempts",
+      "locally_cheapest_recipe_starves_later_unit",
+      "replay_before_clock_and_no_aliases",
+      "sequential_reserves_least_cost"
+    ],
+    "release-before-replan": [
+      "failed_exchange_retains_old_holds",
+      "generated_catalog_0",
+      "generated_catalog_1",
+      "joint_exchange_after_single_attempts"
+    ],
+    "replay-after-clock": [
+      "replay_before_clock_and_no_aliases"
+    ],
+    "retain-selected-holds": [
+      "customer_update",
+      "exchange_keeps_unrelated_holds_until_they_expire",
+      "fresh_interpreter_replay",
+      "generated_catalog_2",
+      "generated_catalog_3",
+      "generated_catalog_4",
+      "generated_catalog_5",
+      "joint_exchange_after_single_attempts",
+      "replay_before_clock_and_no_aliases"
+    ],
+    "sequential-exchange": [
+      "customer_update",
+      "fresh_interpreter_replay",
+      "generated_catalog_2",
+      "generated_catalog_3",
+      "generated_catalog_4",
+      "joint_exchange_after_single_attempts",
+      "replay_before_clock_and_no_aliases"
+    ]
+  },
+  "scenarios": 20
+}

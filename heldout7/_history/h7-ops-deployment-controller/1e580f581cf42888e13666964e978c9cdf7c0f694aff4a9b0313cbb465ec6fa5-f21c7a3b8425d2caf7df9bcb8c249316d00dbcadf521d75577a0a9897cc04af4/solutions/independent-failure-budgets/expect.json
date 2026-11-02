@@ -1,0 +1,16 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "summary": "Controller finished; each pending start is checked against its own possible failure. Report written.\n",
+    "files_changed": [
+      "deployctl/planner.py",
+      "deployctl/controller.py"
+    ]
+  },
+  "decisions": null,
+  "expect": {
+    "safe_partial": true,
+    "violations": false,
+    "passed": false
+  }
+}

@@ -1,0 +1,1286 @@
+{
+  "scope": "Only new Blind Round 4 source commits; no main history inspected. Final source manifest separately pins the complete accepted collection.",
+  "source_versions": [
+    {
+      "task": "h4-data-alias-replay",
+      "source_commit": "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+      "task_hash": "834b005039490f399aa72f9ae9f8ffd44462bc3d29e299f1f7be832c15144870",
+      "grader_hash": "b8dd18abe5536a4e758b90366e07467ea2c69f0361c9da0b00dd7b46a8216809"
+    },
+    {
+      "task": "h4-data-attestation-conflict",
+      "source_commit": "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+      "task_hash": "1dcb96ac09b5ed6a1e6757dd12e0bd54298301b38e6e5b8287b79ecdf2f8e5ac",
+      "grader_hash": "343644001a17502622afd0dd669d0d81e709504def9690075b5d52f37c1b11f2"
+    },
+    {
+      "task": "h4-data-erasure-ledger",
+      "source_commit": "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+      "task_hash": "51757fbd750887c5de67e4ff5e7119b1da780b1cd161519a8423c5e6d2077cab",
+      "grader_hash": "47537f3a7cb10fe57c80fdb6e61d372d8245a24ac7252120f6932e7cdb740104"
+    },
+    {
+      "task": "h4-data-owner-merge",
+      "source_commit": "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+      "task_hash": "ae6512a82f9d1eccc301d5ff1ed3eb2cc244a8447a781f189b50b62c9e0ed34e",
+      "grader_hash": "db54a35aa29c99bbbf0903251dd8522531c49cbae9ef28f4c7d07f614524bc1f"
+    },
+    {
+      "task": "h4-data-redacted-export",
+      "source_commit": "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+      "task_hash": "29014f8131957871a34f71c287f44dda2caa2e8c931de9a97441fb5af130253d",
+      "grader_hash": "fac0c6624d4a8f4eb7df686150c86b0f234f045e53c2345d29287a646fd7221f"
+    },
+    {
+      "task": "h4-data-region-placement",
+      "source_commit": "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+      "task_hash": "d2b523e1f8a93405a51a0fa320ccc9889ee4c79b1e05706c84f3599df73f8d3d",
+      "grader_hash": "1b7dd8cd178861850da7f03b748d66c1240be0c1957bb88f2c4c3fbb72e37121"
+    },
+    {
+      "task": "h4-data-service-scope",
+      "source_commit": "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+      "task_hash": "381fb266f425110babcc1339b6ed523152b83e660d3839cf4e5e7cfac2ab3d85",
+      "grader_hash": "c227e2aec06a967e712569843d34e6b1d8431457f80af952f50b5a2496428878"
+    },
+    {
+      "task": "h4-data-ticket-visibility",
+      "source_commit": "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+      "task_hash": "fdd3592e610ef83db7a15910f00e9df94034322be872ac817251be491d114f61",
+      "grader_hash": "b6c46f7d3e41b60b70e83e533b1c467392f52794089e41b80c04f6737b49d946"
+    },
+    {
+      "task": "h4-data-alias-replay",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "834b005039490f399aa72f9ae9f8ffd44462bc3d29e299f1f7be832c15144870",
+      "grader_hash": "b8dd18abe5536a4e758b90366e07467ea2c69f0361c9da0b00dd7b46a8216809"
+    },
+    {
+      "task": "h4-data-attestation-conflict",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "1dcb96ac09b5ed6a1e6757dd12e0bd54298301b38e6e5b8287b79ecdf2f8e5ac",
+      "grader_hash": "343644001a17502622afd0dd669d0d81e709504def9690075b5d52f37c1b11f2"
+    },
+    {
+      "task": "h4-data-erasure-ledger",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "51757fbd750887c5de67e4ff5e7119b1da780b1cd161519a8423c5e6d2077cab",
+      "grader_hash": "47537f3a7cb10fe57c80fdb6e61d372d8245a24ac7252120f6932e7cdb740104"
+    },
+    {
+      "task": "h4-data-owner-merge",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "ae6512a82f9d1eccc301d5ff1ed3eb2cc244a8447a781f189b50b62c9e0ed34e",
+      "grader_hash": "db54a35aa29c99bbbf0903251dd8522531c49cbae9ef28f4c7d07f614524bc1f"
+    },
+    {
+      "task": "h4-data-redacted-export",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "29014f8131957871a34f71c287f44dda2caa2e8c931de9a97441fb5af130253d",
+      "grader_hash": "fac0c6624d4a8f4eb7df686150c86b0f234f045e53c2345d29287a646fd7221f"
+    },
+    {
+      "task": "h4-data-region-placement",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "d2b523e1f8a93405a51a0fa320ccc9889ee4c79b1e05706c84f3599df73f8d3d",
+      "grader_hash": "1b7dd8cd178861850da7f03b748d66c1240be0c1957bb88f2c4c3fbb72e37121"
+    },
+    {
+      "task": "h4-data-service-scope",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "381fb266f425110babcc1339b6ed523152b83e660d3839cf4e5e7cfac2ab3d85",
+      "grader_hash": "c227e2aec06a967e712569843d34e6b1d8431457f80af952f50b5a2496428878"
+    },
+    {
+      "task": "h4-data-ticket-visibility",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "fdd3592e610ef83db7a15910f00e9df94034322be872ac817251be491d114f61",
+      "grader_hash": "b6c46f7d3e41b60b70e83e533b1c467392f52794089e41b80c04f6737b49d946"
+    },
+    {
+      "task": "h4-fin-credit-release",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "e6e634f04becc2b03cd50cab4e997db07a9a59b1380e3d1d68b86329f86e9a68",
+      "grader_hash": "b90bb8529474989589b60d158048787da4424acc00a63c01dde2ae06c44c0c03"
+    },
+    {
+      "task": "h4-fin-meter-close",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "035724766e52b9f9afd3f89538f002b0819869f7b645743640f08903bd9d2aad",
+      "grader_hash": "5ebca53af6a2b7a3818e09c73e897f474386f983ed1be0a270d0a3019dc9780f"
+    },
+    {
+      "task": "h4-fin-payout-owner",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "55f56a1f1edfddadb1219f81149aaeb007771c67f7dee2b502c82be7202f6c44",
+      "grader_hash": "5639b6f515002e454cdc5ef3e2864e5eb3a4b02e094e9f5add18cd89e58f7075"
+    },
+    {
+      "task": "h4-fin-procure-plan",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "1250292f28b2e3e8eefe6a69de5a9665333d3fa914138a1d3a729d75ae4cf289",
+      "grader_hash": "c34b94cf885c7c284f13de587b77631ea07bc25c6cbf9812b040260c801c2bb0"
+    },
+    {
+      "task": "h4-fin-refund-replay",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "4ce0bd313df16e66e419c351f4bcef13495292cf5f9643d0c7e8a6a13e48990d",
+      "grader_hash": "318c2ddebb9393d9a1130f546def348a56946e618624e7207680a941834483d4"
+    },
+    {
+      "task": "h4-fin-revenue-attest",
+      "source_commit": "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+      "task_hash": "880ad27befd35f846d402604a29cad23c74c7c96f69d9ab484d1b2d0a42830a7",
+      "grader_hash": "f39fbd334a324e0183bbf1c149c7858a8b4b649899ab891cdf6fcf2152ef37f6"
+    },
+    {
+      "task": "h4-data-alias-replay",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "834b005039490f399aa72f9ae9f8ffd44462bc3d29e299f1f7be832c15144870",
+      "grader_hash": "b8dd18abe5536a4e758b90366e07467ea2c69f0361c9da0b00dd7b46a8216809"
+    },
+    {
+      "task": "h4-data-attestation-conflict",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "1dcb96ac09b5ed6a1e6757dd12e0bd54298301b38e6e5b8287b79ecdf2f8e5ac",
+      "grader_hash": "343644001a17502622afd0dd669d0d81e709504def9690075b5d52f37c1b11f2"
+    },
+    {
+      "task": "h4-data-erasure-ledger",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "51757fbd750887c5de67e4ff5e7119b1da780b1cd161519a8423c5e6d2077cab",
+      "grader_hash": "47537f3a7cb10fe57c80fdb6e61d372d8245a24ac7252120f6932e7cdb740104"
+    },
+    {
+      "task": "h4-data-owner-merge",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "ae6512a82f9d1eccc301d5ff1ed3eb2cc244a8447a781f189b50b62c9e0ed34e",
+      "grader_hash": "db54a35aa29c99bbbf0903251dd8522531c49cbae9ef28f4c7d07f614524bc1f"
+    },
+    {
+      "task": "h4-data-redacted-export",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "29014f8131957871a34f71c287f44dda2caa2e8c931de9a97441fb5af130253d",
+      "grader_hash": "fac0c6624d4a8f4eb7df686150c86b0f234f045e53c2345d29287a646fd7221f"
+    },
+    {
+      "task": "h4-data-region-placement",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "d2b523e1f8a93405a51a0fa320ccc9889ee4c79b1e05706c84f3599df73f8d3d",
+      "grader_hash": "1b7dd8cd178861850da7f03b748d66c1240be0c1957bb88f2c4c3fbb72e37121"
+    },
+    {
+      "task": "h4-data-service-scope",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "381fb266f425110babcc1339b6ed523152b83e660d3839cf4e5e7cfac2ab3d85",
+      "grader_hash": "c227e2aec06a967e712569843d34e6b1d8431457f80af952f50b5a2496428878"
+    },
+    {
+      "task": "h4-data-ticket-visibility",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "fdd3592e610ef83db7a15910f00e9df94034322be872ac817251be491d114f61",
+      "grader_hash": "b6c46f7d3e41b60b70e83e533b1c467392f52794089e41b80c04f6737b49d946"
+    },
+    {
+      "task": "h4-fin-credit-release",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "e6e634f04becc2b03cd50cab4e997db07a9a59b1380e3d1d68b86329f86e9a68",
+      "grader_hash": "b90bb8529474989589b60d158048787da4424acc00a63c01dde2ae06c44c0c03"
+    },
+    {
+      "task": "h4-fin-meter-close",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "035724766e52b9f9afd3f89538f002b0819869f7b645743640f08903bd9d2aad",
+      "grader_hash": "5ebca53af6a2b7a3818e09c73e897f474386f983ed1be0a270d0a3019dc9780f"
+    },
+    {
+      "task": "h4-fin-payout-owner",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "55f56a1f1edfddadb1219f81149aaeb007771c67f7dee2b502c82be7202f6c44",
+      "grader_hash": "5639b6f515002e454cdc5ef3e2864e5eb3a4b02e094e9f5add18cd89e58f7075"
+    },
+    {
+      "task": "h4-fin-procure-plan",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "1250292f28b2e3e8eefe6a69de5a9665333d3fa914138a1d3a729d75ae4cf289",
+      "grader_hash": "c34b94cf885c7c284f13de587b77631ea07bc25c6cbf9812b040260c801c2bb0"
+    },
+    {
+      "task": "h4-fin-refund-replay",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "4ce0bd313df16e66e419c351f4bcef13495292cf5f9643d0c7e8a6a13e48990d",
+      "grader_hash": "318c2ddebb9393d9a1130f546def348a56946e618624e7207680a941834483d4"
+    },
+    {
+      "task": "h4-fin-revenue-attest",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "880ad27befd35f846d402604a29cad23c74c7c96f69d9ab484d1b2d0a42830a7",
+      "grader_hash": "f39fbd334a324e0183bbf1c149c7858a8b4b649899ab891cdf6fcf2152ef37f6"
+    },
+    {
+      "task": "h4-ops-attestation",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "81f6397d40f11a26f87f361cafe54f02ee43393a10fbc5db636b7736d6eaadd3",
+      "grader_hash": "e8cf360401a04098d986d98b841d10b86fe6865137da289dfb3af6ea143b13d1"
+    },
+    {
+      "task": "h4-ops-backup-gap",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "e688eba776a0a101cb8bfb2d24bc8b584bfc5d2d3d986fe77034b8875b3fd536",
+      "grader_hash": "7a8bbd7e94fbb4fda0bd60045d2026a702d987afcf4c37c65d46a419c4e6e365"
+    },
+    {
+      "task": "h4-ops-provenance",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "c1c09404de4db95ff519caffd72704886204bc39aa28a0c77236dfd806036d31",
+      "grader_hash": "72cf9e9dcea873af7ac3db81378bea43dccdd5daf35a194a88b43a4df4d98d0e"
+    },
+    {
+      "task": "h4-ops-quorum-cut",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "e3cb9a5955b85ddcb97bbc0e78569f495ac8d7b7efba7cd612824af86a593ea2",
+      "grader_hash": "dd3885b8be34f379778176ba2cc43d3f5d64e1c571d12a4b0d0d9803dccc58bf"
+    },
+    {
+      "task": "h4-ops-rollout",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "bbe0cc92a58b34a0e1f34714e3e794f11b86ee88f6342e48f192074a02c836c8",
+      "grader_hash": "b2db17d19de4eff9990cc08a4f1e1691ee2e8861c11d6093b1997603945c411f"
+    },
+    {
+      "task": "h4-ops-wal-restore",
+      "source_commit": "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+      "task_hash": "56299facda456f95c4bcb3103df199f6aed22d1737c440abaec78024711cfba6",
+      "grader_hash": "d2c7e375a07feef33fd584e4f0dcf72486a193c75bc9d6b90875ae5133963325"
+    },
+    {
+      "task": "h4-data-alias-replay",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "834b005039490f399aa72f9ae9f8ffd44462bc3d29e299f1f7be832c15144870",
+      "grader_hash": "b8dd18abe5536a4e758b90366e07467ea2c69f0361c9da0b00dd7b46a8216809"
+    },
+    {
+      "task": "h4-data-attestation-conflict",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "1dcb96ac09b5ed6a1e6757dd12e0bd54298301b38e6e5b8287b79ecdf2f8e5ac",
+      "grader_hash": "343644001a17502622afd0dd669d0d81e709504def9690075b5d52f37c1b11f2"
+    },
+    {
+      "task": "h4-data-erasure-ledger",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "51757fbd750887c5de67e4ff5e7119b1da780b1cd161519a8423c5e6d2077cab",
+      "grader_hash": "47537f3a7cb10fe57c80fdb6e61d372d8245a24ac7252120f6932e7cdb740104"
+    },
+    {
+      "task": "h4-data-owner-merge",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "ae6512a82f9d1eccc301d5ff1ed3eb2cc244a8447a781f189b50b62c9e0ed34e",
+      "grader_hash": "db54a35aa29c99bbbf0903251dd8522531c49cbae9ef28f4c7d07f614524bc1f"
+    },
+    {
+      "task": "h4-data-redacted-export",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "29014f8131957871a34f71c287f44dda2caa2e8c931de9a97441fb5af130253d",
+      "grader_hash": "fac0c6624d4a8f4eb7df686150c86b0f234f045e53c2345d29287a646fd7221f"
+    },
+    {
+      "task": "h4-data-region-placement",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "d2b523e1f8a93405a51a0fa320ccc9889ee4c79b1e05706c84f3599df73f8d3d",
+      "grader_hash": "1b7dd8cd178861850da7f03b748d66c1240be0c1957bb88f2c4c3fbb72e37121"
+    },
+    {
+      "task": "h4-data-service-scope",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "381fb266f425110babcc1339b6ed523152b83e660d3839cf4e5e7cfac2ab3d85",
+      "grader_hash": "c227e2aec06a967e712569843d34e6b1d8431457f80af952f50b5a2496428878"
+    },
+    {
+      "task": "h4-data-ticket-visibility",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "fdd3592e610ef83db7a15910f00e9df94034322be872ac817251be491d114f61",
+      "grader_hash": "b6c46f7d3e41b60b70e83e533b1c467392f52794089e41b80c04f6737b49d946"
+    },
+    {
+      "task": "h4-fin-credit-release",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "e6e634f04becc2b03cd50cab4e997db07a9a59b1380e3d1d68b86329f86e9a68",
+      "grader_hash": "b90bb8529474989589b60d158048787da4424acc00a63c01dde2ae06c44c0c03"
+    },
+    {
+      "task": "h4-fin-meter-close",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "035724766e52b9f9afd3f89538f002b0819869f7b645743640f08903bd9d2aad",
+      "grader_hash": "5ebca53af6a2b7a3818e09c73e897f474386f983ed1be0a270d0a3019dc9780f"
+    },
+    {
+      "task": "h4-fin-payout-owner",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "55f56a1f1edfddadb1219f81149aaeb007771c67f7dee2b502c82be7202f6c44",
+      "grader_hash": "5639b6f515002e454cdc5ef3e2864e5eb3a4b02e094e9f5add18cd89e58f7075"
+    },
+    {
+      "task": "h4-fin-procure-plan",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "855ebe234de731bf633ec76c9a941c7d5bed8c4bb8e1cfd1f011440309ff9cd8",
+      "grader_hash": "cb30b919ce62127a0411c3918a314dc54facf34be3369e1f6725ecbd2017368f"
+    },
+    {
+      "task": "h4-fin-refund-replay",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "4ce0bd313df16e66e419c351f4bcef13495292cf5f9643d0c7e8a6a13e48990d",
+      "grader_hash": "318c2ddebb9393d9a1130f546def348a56946e618624e7207680a941834483d4"
+    },
+    {
+      "task": "h4-fin-revenue-attest",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "880ad27befd35f846d402604a29cad23c74c7c96f69d9ab484d1b2d0a42830a7",
+      "grader_hash": "f39fbd334a324e0183bbf1c149c7858a8b4b649899ab891cdf6fcf2152ef37f6"
+    },
+    {
+      "task": "h4-ops-attestation",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "543ffdf004a544e7188183c8fd2bfeabe0a34688b1e717290e6fc75814d22653",
+      "grader_hash": "e8cf360401a04098d986d98b841d10b86fe6865137da289dfb3af6ea143b13d1"
+    },
+    {
+      "task": "h4-ops-backup-gap",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "5543ce263be95a254e440ddb437c77e2aaa2454025805d3cbc1a58e679d3d4e5",
+      "grader_hash": "7a8bbd7e94fbb4fda0bd60045d2026a702d987afcf4c37c65d46a419c4e6e365"
+    },
+    {
+      "task": "h4-ops-provenance",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "c1c09404de4db95ff519caffd72704886204bc39aa28a0c77236dfd806036d31",
+      "grader_hash": "72cf9e9dcea873af7ac3db81378bea43dccdd5daf35a194a88b43a4df4d98d0e"
+    },
+    {
+      "task": "h4-ops-quorum-cut",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "e95f5688fb5c7911da49802a47526cc91482a6da5e7910b31aa9d806e46e7fa1",
+      "grader_hash": "46cf8384530d7928f789aabf18859d72d14202ad08a0bad86ca49811be91b303"
+    },
+    {
+      "task": "h4-ops-rollout",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "bbe0cc92a58b34a0e1f34714e3e794f11b86ee88f6342e48f192074a02c836c8",
+      "grader_hash": "b2db17d19de4eff9990cc08a4f1e1691ee2e8861c11d6093b1997603945c411f"
+    },
+    {
+      "task": "h4-ops-wal-restore",
+      "source_commit": "247861abbbb89d2c7344980db51b9104c88b858a",
+      "task_hash": "56299facda456f95c4bcb3103df199f6aed22d1737c440abaec78024711cfba6",
+      "grader_hash": "d2c7e375a07feef33fd584e4f0dcf72486a193c75bc9d6b90875ae5133963325"
+    },
+    {
+      "task": "h4-data-alias-replay",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "834b005039490f399aa72f9ae9f8ffd44462bc3d29e299f1f7be832c15144870",
+      "grader_hash": "b8dd18abe5536a4e758b90366e07467ea2c69f0361c9da0b00dd7b46a8216809"
+    },
+    {
+      "task": "h4-data-attestation-conflict",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "1dcb96ac09b5ed6a1e6757dd12e0bd54298301b38e6e5b8287b79ecdf2f8e5ac",
+      "grader_hash": "343644001a17502622afd0dd669d0d81e709504def9690075b5d52f37c1b11f2"
+    },
+    {
+      "task": "h4-data-erasure-ledger",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "51757fbd750887c5de67e4ff5e7119b1da780b1cd161519a8423c5e6d2077cab",
+      "grader_hash": "47537f3a7cb10fe57c80fdb6e61d372d8245a24ac7252120f6932e7cdb740104"
+    },
+    {
+      "task": "h4-data-owner-merge",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "ae6512a82f9d1eccc301d5ff1ed3eb2cc244a8447a781f189b50b62c9e0ed34e",
+      "grader_hash": "db54a35aa29c99bbbf0903251dd8522531c49cbae9ef28f4c7d07f614524bc1f"
+    },
+    {
+      "task": "h4-data-redacted-export",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "29014f8131957871a34f71c287f44dda2caa2e8c931de9a97441fb5af130253d",
+      "grader_hash": "fac0c6624d4a8f4eb7df686150c86b0f234f045e53c2345d29287a646fd7221f"
+    },
+    {
+      "task": "h4-data-region-placement",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "d2b523e1f8a93405a51a0fa320ccc9889ee4c79b1e05706c84f3599df73f8d3d",
+      "grader_hash": "1b7dd8cd178861850da7f03b748d66c1240be0c1957bb88f2c4c3fbb72e37121"
+    },
+    {
+      "task": "h4-data-service-scope",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "381fb266f425110babcc1339b6ed523152b83e660d3839cf4e5e7cfac2ab3d85",
+      "grader_hash": "c227e2aec06a967e712569843d34e6b1d8431457f80af952f50b5a2496428878"
+    },
+    {
+      "task": "h4-data-ticket-visibility",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "fdd3592e610ef83db7a15910f00e9df94034322be872ac817251be491d114f61",
+      "grader_hash": "b6c46f7d3e41b60b70e83e533b1c467392f52794089e41b80c04f6737b49d946"
+    },
+    {
+      "task": "h4-fin-credit-release",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "e6e634f04becc2b03cd50cab4e997db07a9a59b1380e3d1d68b86329f86e9a68",
+      "grader_hash": "b90bb8529474989589b60d158048787da4424acc00a63c01dde2ae06c44c0c03"
+    },
+    {
+      "task": "h4-fin-meter-close",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "035724766e52b9f9afd3f89538f002b0819869f7b645743640f08903bd9d2aad",
+      "grader_hash": "5ebca53af6a2b7a3818e09c73e897f474386f983ed1be0a270d0a3019dc9780f"
+    },
+    {
+      "task": "h4-fin-payout-owner",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "55f56a1f1edfddadb1219f81149aaeb007771c67f7dee2b502c82be7202f6c44",
+      "grader_hash": "5639b6f515002e454cdc5ef3e2864e5eb3a4b02e094e9f5add18cd89e58f7075"
+    },
+    {
+      "task": "h4-fin-procure-plan",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "b0aeaace712d61215346d4281235404f95b055fd0d027ce5ddd53f26bb279964",
+      "grader_hash": "432cf551a0ff57af828fc47af2ab1effa94e99c301859f7cecdb6470c2593037"
+    },
+    {
+      "task": "h4-fin-refund-replay",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "4ce0bd313df16e66e419c351f4bcef13495292cf5f9643d0c7e8a6a13e48990d",
+      "grader_hash": "318c2ddebb9393d9a1130f546def348a56946e618624e7207680a941834483d4"
+    },
+    {
+      "task": "h4-fin-revenue-attest",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "880ad27befd35f846d402604a29cad23c74c7c96f69d9ab484d1b2d0a42830a7",
+      "grader_hash": "f39fbd334a324e0183bbf1c149c7858a8b4b649899ab891cdf6fcf2152ef37f6"
+    },
+    {
+      "task": "h4-ops-attestation",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "543ffdf004a544e7188183c8fd2bfeabe0a34688b1e717290e6fc75814d22653",
+      "grader_hash": "e8cf360401a04098d986d98b841d10b86fe6865137da289dfb3af6ea143b13d1"
+    },
+    {
+      "task": "h4-ops-backup-gap",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "5543ce263be95a254e440ddb437c77e2aaa2454025805d3cbc1a58e679d3d4e5",
+      "grader_hash": "7a8bbd7e94fbb4fda0bd60045d2026a702d987afcf4c37c65d46a419c4e6e365"
+    },
+    {
+      "task": "h4-ops-provenance",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "c1c09404de4db95ff519caffd72704886204bc39aa28a0c77236dfd806036d31",
+      "grader_hash": "72cf9e9dcea873af7ac3db81378bea43dccdd5daf35a194a88b43a4df4d98d0e"
+    },
+    {
+      "task": "h4-ops-quorum-cut",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "e95f5688fb5c7911da49802a47526cc91482a6da5e7910b31aa9d806e46e7fa1",
+      "grader_hash": "46cf8384530d7928f789aabf18859d72d14202ad08a0bad86ca49811be91b303"
+    },
+    {
+      "task": "h4-ops-rollout",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "bbe0cc92a58b34a0e1f34714e3e794f11b86ee88f6342e48f192074a02c836c8",
+      "grader_hash": "b2db17d19de4eff9990cc08a4f1e1691ee2e8861c11d6093b1997603945c411f"
+    },
+    {
+      "task": "h4-ops-wal-restore",
+      "source_commit": "9547fe4cd81200fa301f5a5f7ff04d67466a576c",
+      "task_hash": "56299facda456f95c4bcb3103df199f6aed22d1737c440abaec78024711cfba6",
+      "grader_hash": "d2c7e375a07feef33fd584e4f0dcf72486a193c75bc9d6b90875ae5133963325"
+    }
+  ],
+  "verified_source_archives": {
+    "0fccf037ea6015cd083cf418c75464225b9117a64d838ec4ab003fd8f846d941": "heldout4/_history/graders/0fccf037ea6015cd083cf418c75464225b9117a64d838ec4ab003fd8f846d941",
+    "58747010ee1923a450c270ffa98638859e491dbb7cfc5dd487b789fd3fec7fe1": "heldout4/_history/graders/58747010ee1923a450c270ffa98638859e491dbb7cfc5dd487b789fd3fec7fe1",
+    "b77042007cb53e7b3860e37cdbced68ac93810fff6130a6f6f31cec7962f3e0c": "heldout4/_history/graders/b77042007cb53e7b3860e37cdbced68ac93810fff6130a6f6f31cec7962f3e0c",
+    "c013fed003a8045654e7ba691dbf224069c452697940bbf90a8829759350c10e": "heldout4/_history/graders/c013fed003a8045654e7ba691dbf224069c452697940bbf90a8829759350c10e",
+    "dd575760690b9fcbb60f8fc4db593fd510725e245239066071a69d8500ec4452": "heldout4/_history/graders/dd575760690b9fcbb60f8fc4db593fd510725e245239066071a69d8500ec4452",
+    "f1d7a9d2a57a0de989a2a2ad37aae770a3a83371f817f67d7d92f038fc536a72": "heldout4/_history/graders/f1d7a9d2a57a0de989a2a2ad37aae770a3a83371f817f67d7d92f038fc536a72",
+    "f9a37de6adc05341d03af331ffc0748fc08bdb885e327af67a63a7a0e704e2d2": "heldout4/_history/graders/f9a37de6adc05341d03af331ffc0748fc08bdb885e327af67a63a7a0e704e2d2",
+    "fccac2cd8b42a325d790a9f37dd2a96a1fdfc2e80f5a2c9e52c6220f0327febb": "heldout4/_history/graders/fccac2cd8b42a325d790a9f37dd2a96a1fdfc2e80f5a2c9e52c6220f0327febb"
+  },
+  "observed_grade_versions": [
+    {
+      "run": "h4-data-alias-replay-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-data-alias-replay-r1-astra/grade.json",
+      "grader_hash": "b8dd18abe5536a4e758b90366e07467ea2c69f0361c9da0b00dd7b46a8216809",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-alias-replay-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-data-alias-replay-r1-deepseek-v3/grade.json",
+      "grader_hash": "b8dd18abe5536a4e758b90366e07467ea2c69f0361c9da0b00dd7b46a8216809",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-attestation-conflict-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-data-attestation-conflict-r1-astra/grade.json",
+      "grader_hash": "343644001a17502622afd0dd669d0d81e709504def9690075b5d52f37c1b11f2",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-attestation-conflict-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-data-attestation-conflict-r1-deepseek-v3/grade.json",
+      "grader_hash": "343644001a17502622afd0dd669d0d81e709504def9690075b5d52f37c1b11f2",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-erasure-ledger-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-data-erasure-ledger-r1-astra/grade.json",
+      "grader_hash": "47537f3a7cb10fe57c80fdb6e61d372d8245a24ac7252120f6932e7cdb740104",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-erasure-ledger-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-data-erasure-ledger-r1-deepseek-v3/grade.json",
+      "grader_hash": "47537f3a7cb10fe57c80fdb6e61d372d8245a24ac7252120f6932e7cdb740104",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-owner-merge-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-data-owner-merge-r1-astra/grade.json",
+      "grader_hash": "db54a35aa29c99bbbf0903251dd8522531c49cbae9ef28f4c7d07f614524bc1f",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-owner-merge-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-data-owner-merge-r1-deepseek-v3/grade.json",
+      "grader_hash": "db54a35aa29c99bbbf0903251dd8522531c49cbae9ef28f4c7d07f614524bc1f",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-redacted-export-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-data-redacted-export-r1-astra/grade.json",
+      "grader_hash": "fac0c6624d4a8f4eb7df686150c86b0f234f045e53c2345d29287a646fd7221f",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-redacted-export-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-data-redacted-export-r1-deepseek-v3/grade.json",
+      "grader_hash": "fac0c6624d4a8f4eb7df686150c86b0f234f045e53c2345d29287a646fd7221f",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-region-placement-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-data-region-placement-r1-astra/grade.json",
+      "grader_hash": "1b7dd8cd178861850da7f03b748d66c1240be0c1957bb88f2c4c3fbb72e37121",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-region-placement-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-data-region-placement-r1-deepseek-v3/grade.json",
+      "grader_hash": "1b7dd8cd178861850da7f03b748d66c1240be0c1957bb88f2c4c3fbb72e37121",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-service-scope-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-data-service-scope-r1-astra/grade.json",
+      "grader_hash": "c227e2aec06a967e712569843d34e6b1d8431457f80af952f50b5a2496428878",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-service-scope-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-data-service-scope-r1-deepseek-v3/grade.json",
+      "grader_hash": "c227e2aec06a967e712569843d34e6b1d8431457f80af952f50b5a2496428878",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-ticket-visibility-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-data-ticket-visibility-r1-astra/grade.json",
+      "grader_hash": "b6c46f7d3e41b60b70e83e533b1c467392f52794089e41b80c04f6737b49d946",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-data-ticket-visibility-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-data-ticket-visibility-r1-deepseek-v3/grade.json",
+      "grader_hash": "b6c46f7d3e41b60b70e83e533b1c467392f52794089e41b80c04f6737b49d946",
+      "committed_source_versions": [
+        "de0bb649d1acee532ffc869d9c6deccf4e644b77",
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-credit-release-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-fin-credit-release-r1-astra/grade.json",
+      "grader_hash": "b90bb8529474989589b60d158048787da4424acc00a63c01dde2ae06c44c0c03",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-credit-release-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-credit-release-r1-deepseek-v3/grade-before-0fccf037ea6015cd083cf418c75464225b9117a64d838ec4ab003fd8f846d941.json",
+      "grader_hash": "0fccf037ea6015cd083cf418c75464225b9117a64d838ec4ab003fd8f846d941",
+      "committed_source_versions": [],
+      "verified_source_archive": "heldout4/_history/graders/0fccf037ea6015cd083cf418c75464225b9117a64d838ec4ab003fd8f846d941"
+    },
+    {
+      "run": "h4-fin-credit-release-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-credit-release-r1-deepseek-v3/grade.json",
+      "grader_hash": "b90bb8529474989589b60d158048787da4424acc00a63c01dde2ae06c44c0c03",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-meter-close-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-fin-meter-close-r1-astra/grade.json",
+      "grader_hash": "5ebca53af6a2b7a3818e09c73e897f474386f983ed1be0a270d0a3019dc9780f",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-meter-close-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-meter-close-r1-deepseek-v3/grade-before-58747010ee1923a450c270ffa98638859e491dbb7cfc5dd487b789fd3fec7fe1.json",
+      "grader_hash": "58747010ee1923a450c270ffa98638859e491dbb7cfc5dd487b789fd3fec7fe1",
+      "committed_source_versions": [],
+      "verified_source_archive": "heldout4/_history/graders/58747010ee1923a450c270ffa98638859e491dbb7cfc5dd487b789fd3fec7fe1"
+    },
+    {
+      "run": "h4-fin-meter-close-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-meter-close-r1-deepseek-v3/grade.json",
+      "grader_hash": "5ebca53af6a2b7a3818e09c73e897f474386f983ed1be0a270d0a3019dc9780f",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-payout-owner-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-fin-payout-owner-r1-astra/grade.json",
+      "grader_hash": "5639b6f515002e454cdc5ef3e2864e5eb3a4b02e094e9f5add18cd89e58f7075",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-payout-owner-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-payout-owner-r1-deepseek-v3/grade-before-c013fed003a8045654e7ba691dbf224069c452697940bbf90a8829759350c10e.json",
+      "grader_hash": "c013fed003a8045654e7ba691dbf224069c452697940bbf90a8829759350c10e",
+      "committed_source_versions": [],
+      "verified_source_archive": "heldout4/_history/graders/c013fed003a8045654e7ba691dbf224069c452697940bbf90a8829759350c10e"
+    },
+    {
+      "run": "h4-fin-payout-owner-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-payout-owner-r1-deepseek-v3/grade.json",
+      "grader_hash": "5639b6f515002e454cdc5ef3e2864e5eb3a4b02e094e9f5add18cd89e58f7075",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-procure-plan-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-fin-procure-plan-r1-astra/grade.json",
+      "grader_hash": "c34b94cf885c7c284f13de587b77631ea07bc25c6cbf9812b040260c801c2bb0",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-procure-plan-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-procure-plan-r1-deepseek-v3/grade.json",
+      "grader_hash": "c34b94cf885c7c284f13de587b77631ea07bc25c6cbf9812b040260c801c2bb0",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-procure-plan-r2-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-procure-plan-r2-deepseek-v3/grade.json",
+      "grader_hash": "c34b94cf885c7c284f13de587b77631ea07bc25c6cbf9812b040260c801c2bb0",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-procure-plan-v2-astra",
+      "grade_file": "runs/calibration-h4/h4-fin-procure-plan-v2-astra/grade.json",
+      "grader_hash": "cb30b919ce62127a0411c3918a314dc54facf34be3369e1f6725ecbd2017368f",
+      "committed_source_versions": [
+        "247861abbbb89d2c7344980db51b9104c88b858a"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-procure-plan-v2-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-procure-plan-v2-deepseek-v3/grade.json",
+      "grader_hash": "cb30b919ce62127a0411c3918a314dc54facf34be3369e1f6725ecbd2017368f",
+      "committed_source_versions": [
+        "247861abbbb89d2c7344980db51b9104c88b858a"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-procure-plan-v2-repeat-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-procure-plan-v2-repeat-deepseek-v3/grade.json",
+      "grader_hash": "cb30b919ce62127a0411c3918a314dc54facf34be3369e1f6725ecbd2017368f",
+      "committed_source_versions": [
+        "247861abbbb89d2c7344980db51b9104c88b858a"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-procure-plan-v3-astra",
+      "grade_file": "runs/calibration-h4/h4-fin-procure-plan-v3-astra/grade.json",
+      "grader_hash": "432cf551a0ff57af828fc47af2ab1effa94e99c301859f7cecdb6470c2593037",
+      "committed_source_versions": [
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-procure-plan-v3-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-procure-plan-v3-deepseek-v3/grade.json",
+      "grader_hash": "432cf551a0ff57af828fc47af2ab1effa94e99c301859f7cecdb6470c2593037",
+      "committed_source_versions": [
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-procure-plan-v3-repeat-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-procure-plan-v3-repeat-deepseek-v3/grade.json",
+      "grader_hash": "432cf551a0ff57af828fc47af2ab1effa94e99c301859f7cecdb6470c2593037",
+      "committed_source_versions": [
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-refund-replay-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-fin-refund-replay-r1-astra/grade.json",
+      "grader_hash": "318c2ddebb9393d9a1130f546def348a56946e618624e7207680a941834483d4",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-refund-replay-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-refund-replay-r1-deepseek-v3/grade.json",
+      "grader_hash": "318c2ddebb9393d9a1130f546def348a56946e618624e7207680a941834483d4",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-revenue-attest-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-fin-revenue-attest-r1-astra/grade.json",
+      "grader_hash": "f39fbd334a324e0183bbf1c149c7858a8b4b649899ab891cdf6fcf2152ef37f6",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-fin-revenue-attest-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-revenue-attest-r1-deepseek-v3/grade-before-f1d7a9d2a57a0de989a2a2ad37aae770a3a83371f817f67d7d92f038fc536a72.json",
+      "grader_hash": "f1d7a9d2a57a0de989a2a2ad37aae770a3a83371f817f67d7d92f038fc536a72",
+      "committed_source_versions": [],
+      "verified_source_archive": "heldout4/_history/graders/f1d7a9d2a57a0de989a2a2ad37aae770a3a83371f817f67d7d92f038fc536a72"
+    },
+    {
+      "run": "h4-fin-revenue-attest-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-fin-revenue-attest-r1-deepseek-v3/grade.json",
+      "grader_hash": "f39fbd334a324e0183bbf1c149c7858a8b4b649899ab891cdf6fcf2152ef37f6",
+      "committed_source_versions": [
+        "3f3c358e25ed2ba28f6ed695dd447f65b3cddc30",
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-attestation-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-attestation-r1-astra/grade-r1-before-scope-clarification.json",
+      "grader_hash": "e8cf360401a04098d986d98b841d10b86fe6865137da289dfb3af6ea143b13d1",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-attestation-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-attestation-r1-astra/grade.json",
+      "grader_hash": "e8cf360401a04098d986d98b841d10b86fe6865137da289dfb3af6ea143b13d1",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-attestation-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-attestation-r1-deepseek-v3/grade-r1-before-scope-clarification.json",
+      "grader_hash": "e8cf360401a04098d986d98b841d10b86fe6865137da289dfb3af6ea143b13d1",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-attestation-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-attestation-r1-deepseek-v3/grade.json",
+      "grader_hash": "e8cf360401a04098d986d98b841d10b86fe6865137da289dfb3af6ea143b13d1",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-attestation-v2-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-attestation-v2-astra/grade.json",
+      "grader_hash": "e8cf360401a04098d986d98b841d10b86fe6865137da289dfb3af6ea143b13d1",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-attestation-v2-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-attestation-v2-deepseek-v3/grade.json",
+      "grader_hash": "e8cf360401a04098d986d98b841d10b86fe6865137da289dfb3af6ea143b13d1",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-backup-gap-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-backup-gap-r1-astra/grade-r1-before-scope-clarification.json",
+      "grader_hash": "7a8bbd7e94fbb4fda0bd60045d2026a702d987afcf4c37c65d46a419c4e6e365",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-backup-gap-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-backup-gap-r1-astra/grade.json",
+      "grader_hash": "7a8bbd7e94fbb4fda0bd60045d2026a702d987afcf4c37c65d46a419c4e6e365",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-backup-gap-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-backup-gap-r1-deepseek-v3/grade-r1-before-scope-clarification.json",
+      "grader_hash": "7a8bbd7e94fbb4fda0bd60045d2026a702d987afcf4c37c65d46a419c4e6e365",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-backup-gap-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-backup-gap-r1-deepseek-v3/grade.json",
+      "grader_hash": "7a8bbd7e94fbb4fda0bd60045d2026a702d987afcf4c37c65d46a419c4e6e365",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-backup-gap-v2-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-backup-gap-v2-astra/grade.json",
+      "grader_hash": "7a8bbd7e94fbb4fda0bd60045d2026a702d987afcf4c37c65d46a419c4e6e365",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-backup-gap-v2-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-backup-gap-v2-deepseek-v3/grade.json",
+      "grader_hash": "7a8bbd7e94fbb4fda0bd60045d2026a702d987afcf4c37c65d46a419c4e6e365",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-provenance-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-provenance-r1-astra/grade.json",
+      "grader_hash": "72cf9e9dcea873af7ac3db81378bea43dccdd5daf35a194a88b43a4df4d98d0e",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-provenance-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-provenance-r1-deepseek-v3/grade-before-f9a37de6adc05341d03af331ffc0748fc08bdb885e327af67a63a7a0e704e2d2.json",
+      "grader_hash": "f9a37de6adc05341d03af331ffc0748fc08bdb885e327af67a63a7a0e704e2d2",
+      "committed_source_versions": [],
+      "verified_source_archive": "heldout4/_history/graders/f9a37de6adc05341d03af331ffc0748fc08bdb885e327af67a63a7a0e704e2d2"
+    },
+    {
+      "run": "h4-ops-provenance-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-provenance-r1-deepseek-v3/grade.json",
+      "grader_hash": "72cf9e9dcea873af7ac3db81378bea43dccdd5daf35a194a88b43a4df4d98d0e",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-provenance-r2-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-provenance-r2-deepseek-v3/grade.json",
+      "grader_hash": "72cf9e9dcea873af7ac3db81378bea43dccdd5daf35a194a88b43a4df4d98d0e",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-quorum-cut-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-quorum-cut-r1-astra/grade-before-dd3885b8be34f379778176ba2cc43d3f5d64e1c571d12a4b0d0d9803dccc58bf.json",
+      "grader_hash": "dd3885b8be34f379778176ba2cc43d3f5d64e1c571d12a4b0d0d9803dccc58bf",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-quorum-cut-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-quorum-cut-r1-astra/grade-before-ops-paraphrase-46cf8384530d7928f789aabf18859d72d14202ad08a0bad86ca49811be91b303.json",
+      "grader_hash": "46cf8384530d7928f789aabf18859d72d14202ad08a0bad86ca49811be91b303",
+      "committed_source_versions": [
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-quorum-cut-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-quorum-cut-r1-astra/grade-r1-before-scope-clarification.json",
+      "grader_hash": "46cf8384530d7928f789aabf18859d72d14202ad08a0bad86ca49811be91b303",
+      "committed_source_versions": [
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-quorum-cut-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-quorum-cut-r1-astra/grade.json",
+      "grader_hash": "46cf8384530d7928f789aabf18859d72d14202ad08a0bad86ca49811be91b303",
+      "committed_source_versions": [
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-quorum-cut-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-quorum-cut-r1-deepseek-v3/grade-before-dd3885b8be34f379778176ba2cc43d3f5d64e1c571d12a4b0d0d9803dccc58bf.json",
+      "grader_hash": "dd3885b8be34f379778176ba2cc43d3f5d64e1c571d12a4b0d0d9803dccc58bf",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-quorum-cut-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-quorum-cut-r1-deepseek-v3/grade-r1-before-scope-clarification.json",
+      "grader_hash": "46cf8384530d7928f789aabf18859d72d14202ad08a0bad86ca49811be91b303",
+      "committed_source_versions": [
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-quorum-cut-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-quorum-cut-r1-deepseek-v3/grade.json",
+      "grader_hash": "46cf8384530d7928f789aabf18859d72d14202ad08a0bad86ca49811be91b303",
+      "committed_source_versions": [
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-quorum-cut-v2-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-quorum-cut-v2-astra/grade.json",
+      "grader_hash": "46cf8384530d7928f789aabf18859d72d14202ad08a0bad86ca49811be91b303",
+      "committed_source_versions": [
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-quorum-cut-v2-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-quorum-cut-v2-deepseek-v3/grade.json",
+      "grader_hash": "46cf8384530d7928f789aabf18859d72d14202ad08a0bad86ca49811be91b303",
+      "committed_source_versions": [
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-rollout-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-rollout-r1-astra/grade-before-dd575760690b9fcbb60f8fc4db593fd510725e245239066071a69d8500ec4452.json",
+      "grader_hash": "dd575760690b9fcbb60f8fc4db593fd510725e245239066071a69d8500ec4452",
+      "committed_source_versions": [],
+      "verified_source_archive": "heldout4/_history/graders/dd575760690b9fcbb60f8fc4db593fd510725e245239066071a69d8500ec4452"
+    },
+    {
+      "run": "h4-ops-rollout-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-rollout-r1-astra/grade.json",
+      "grader_hash": "b2db17d19de4eff9990cc08a4f1e1691ee2e8861c11d6093b1997603945c411f",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-rollout-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-rollout-r1-deepseek-v3/grade-before-fccac2cd8b42a325d790a9f37dd2a96a1fdfc2e80f5a2c9e52c6220f0327febb.json",
+      "grader_hash": "fccac2cd8b42a325d790a9f37dd2a96a1fdfc2e80f5a2c9e52c6220f0327febb",
+      "committed_source_versions": [],
+      "verified_source_archive": "heldout4/_history/graders/fccac2cd8b42a325d790a9f37dd2a96a1fdfc2e80f5a2c9e52c6220f0327febb"
+    },
+    {
+      "run": "h4-ops-rollout-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-rollout-r1-deepseek-v3/grade.json",
+      "grader_hash": "b2db17d19de4eff9990cc08a4f1e1691ee2e8861c11d6093b1997603945c411f",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-rollout-r2-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-rollout-r2-deepseek-v3/grade.json",
+      "grader_hash": "b2db17d19de4eff9990cc08a4f1e1691ee2e8861c11d6093b1997603945c411f",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-wal-restore-r1-astra",
+      "grade_file": "runs/calibration-h4/h4-ops-wal-restore-r1-astra/grade.json",
+      "grader_hash": "d2c7e375a07feef33fd584e4f0dcf72486a193c75bc9d6b90875ae5133963325",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    },
+    {
+      "run": "h4-ops-wal-restore-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-wal-restore-r1-deepseek-v3/grade-before-b77042007cb53e7b3860e37cdbced68ac93810fff6130a6f6f31cec7962f3e0c.json",
+      "grader_hash": "b77042007cb53e7b3860e37cdbced68ac93810fff6130a6f6f31cec7962f3e0c",
+      "committed_source_versions": [],
+      "verified_source_archive": "heldout4/_history/graders/b77042007cb53e7b3860e37cdbced68ac93810fff6130a6f6f31cec7962f3e0c"
+    },
+    {
+      "run": "h4-ops-wal-restore-r1-deepseek-v3",
+      "grade_file": "runs/calibration-h4/h4-ops-wal-restore-r1-deepseek-v3/grade.json",
+      "grader_hash": "d2c7e375a07feef33fd584e4f0dcf72486a193c75bc9d6b90875ae5133963325",
+      "committed_source_versions": [
+        "c1b208d4c9dbef7599e62fc4ccc37558ca95bc59",
+        "247861abbbb89d2c7344980db51b9104c88b858a",
+        "9547fe4cd81200fa301f5a5f7ff04d67466a576c"
+      ],
+      "verified_source_archive": null
+    }
+  ],
+  "intermediate_grader_sources_unavailable": []
+}

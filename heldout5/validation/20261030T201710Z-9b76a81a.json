@@ -1,0 +1,134 @@
+{
+  "at": "2026-10-30T20:18:56.001964+00:00",
+  "run_id": "20261030T201710Z-9b76a81a",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h5_data_alias_replay.py",
+    "tests/test_task_h5_data_attestation_conflict.py",
+    "tests/test_task_h5_data_erasure_ledger.py",
+    "tests/test_task_h5_data_owner_merge.py",
+    "tests/test_task_h5_data_redacted_export.py",
+    "tests/test_task_h5_data_region_placement.py",
+    "tests/test_task_h5_data_service_scope.py",
+    "tests/test_task_h5_data_ticket_visibility.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout5/validation/20261030T201710Z-9b76a81a.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 123,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 105.757,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout5/validation/20261030T201710Z-9b76a81a.log",
+  "log_sha256": "9384156dec59138d10150cad3e3211f2765cc1a6f130a8206be520bf91151a24",
+  "xml": "heldout5/validation/20261030T201710Z-9b76a81a.xml",
+  "xml_sha256": "f65e98f33d8031e0b15961ad7139ebaf40b3a3d7b3fdb4de140622e56651dc3a",
+  "tasks": {
+    "h5-data-alias-replay": {
+      "task_hash": "1be2be39ef28368d211efbc279a8baf1ab5923f1bc4ed8531b58da168fcba726",
+      "grader_hash": "146df561c1d5c1fcc1454aac714fb784ba8dbf5791ed3a033bfcfe6d6ee63dcb",
+      "test_file": "tests/test_task_h5_data_alias_replay.py",
+      "test_sha256": "f9fc6796b89bb3caa7185494e25dc933e8f64a0d8e87795644f9503191a5084a"
+    },
+    "h5-data-attestation-conflict": {
+      "task_hash": "4306dac095b783d36d195371d4aba82262f8d902590a17f636106ea15e6e91c8",
+      "grader_hash": "bf8f38d5c0fdce681b0aba6a7898e785563ba8247545ae6fc10af351e0a41fec",
+      "test_file": "tests/test_task_h5_data_attestation_conflict.py",
+      "test_sha256": "a237182ce399deb9fdac22e99d87cce8ab21ca57a5cb35501e25c4fa2d4a3247"
+    },
+    "h5-data-erasure-ledger": {
+      "task_hash": "d97724b8cce8905a40403d56917d74ff6fd10dcdafc4314428e2b05ab77e9432",
+      "grader_hash": "d7561c968887778fd1fa0c31cbbbeb3d81d84b3ad3dc983a07da35971319dbc9",
+      "test_file": "tests/test_task_h5_data_erasure_ledger.py",
+      "test_sha256": "386a58880d408ccb770d143ff44dd02dea78b93924a2c3218d9b4fac183c44aa"
+    },
+    "h5-data-owner-merge": {
+      "task_hash": "e7324c5ceb7aee51caa64248179e0563d5677ca2f7b5cabf95dbe6bc817ae4c7",
+      "grader_hash": "a1f2761662eafffd13c1a244d189d5dc074a577fbe34da525e152afb066c71b9",
+      "test_file": "tests/test_task_h5_data_owner_merge.py",
+      "test_sha256": "12046d9cd1ca4ed8d46c6b4418a7301d862f0cf9f9db06bf67b2d8894e775430"
+    },
+    "h5-data-redacted-export": {
+      "task_hash": "cf06a1a0e6dbfa66a491a663d102dce716025e16c7289f948e12d323fe05960a",
+      "grader_hash": "453e023fd31f0016eab0b4c543d01004c41b649631e3b1949ac350aa4e696031",
+      "test_file": "tests/test_task_h5_data_redacted_export.py",
+      "test_sha256": "621c4ffc0e3a6c5bb9a60a5d5de9525f11fb7a8528d9a13ec97e5d4a3233f106"
+    },
+    "h5-data-region-placement": {
+      "task_hash": "7e4410502a87bc017d6353b133f8af8899e07629a33acaf41cdc99b0678eb4d5",
+      "grader_hash": "6eb9c208eb6d49a7d3bb0f3c6092713e66a94220e9df37ee6d6a37e3956a3714",
+      "test_file": "tests/test_task_h5_data_region_placement.py",
+      "test_sha256": "b2a18d940b7c998dc531f37cc80e35f51d4ceaa85b7d14bfc254872ea7be6f1a"
+    },
+    "h5-data-service-scope": {
+      "task_hash": "f4b537b495638769beca080a8d57ebca72f2f90e48726be733e22553cddb66f6",
+      "grader_hash": "05008503e1fbec14801713bc6cb511e9833a3cfc262476d5071dcdaf1b080ac3",
+      "test_file": "tests/test_task_h5_data_service_scope.py",
+      "test_sha256": "9a735d762588e3a93919944e693ddbd6f8da8f9643c1710cd7c737fe4a02de1f"
+    },
+    "h5-data-ticket-visibility": {
+      "task_hash": "ebf4c8ad976f0aa02ad613b1b96e9ae0f86219f518825026222c6fa3f2fa7ef0",
+      "grader_hash": "33a3d9b5160359ae251e6b3c1b5bbd7561b3f8d5083b62094d8da94e2cac6e8e",
+      "test_file": "tests/test_task_h5_data_ticket_visibility.py",
+      "test_sha256": "56efce4ce6c4cf98bdbf9a679b68c121c835e2b8ce435789a7ae483c1a1de8ee"
+    }
+  },
+  "after": {
+    "h5-data-alias-replay": {
+      "task_hash": "1be2be39ef28368d211efbc279a8baf1ab5923f1bc4ed8531b58da168fcba726",
+      "grader_hash": "146df561c1d5c1fcc1454aac714fb784ba8dbf5791ed3a033bfcfe6d6ee63dcb",
+      "test_file": "tests/test_task_h5_data_alias_replay.py",
+      "test_sha256": "f9fc6796b89bb3caa7185494e25dc933e8f64a0d8e87795644f9503191a5084a"
+    },
+    "h5-data-attestation-conflict": {
+      "task_hash": "4306dac095b783d36d195371d4aba82262f8d902590a17f636106ea15e6e91c8",
+      "grader_hash": "bf8f38d5c0fdce681b0aba6a7898e785563ba8247545ae6fc10af351e0a41fec",
+      "test_file": "tests/test_task_h5_data_attestation_conflict.py",
+      "test_sha256": "a237182ce399deb9fdac22e99d87cce8ab21ca57a5cb35501e25c4fa2d4a3247"
+    },
+    "h5-data-erasure-ledger": {
+      "task_hash": "d97724b8cce8905a40403d56917d74ff6fd10dcdafc4314428e2b05ab77e9432",
+      "grader_hash": "d7561c968887778fd1fa0c31cbbbeb3d81d84b3ad3dc983a07da35971319dbc9",
+      "test_file": "tests/test_task_h5_data_erasure_ledger.py",
+      "test_sha256": "386a58880d408ccb770d143ff44dd02dea78b93924a2c3218d9b4fac183c44aa"
+    },
+    "h5-data-owner-merge": {
+      "task_hash": "e7324c5ceb7aee51caa64248179e0563d5677ca2f7b5cabf95dbe6bc817ae4c7",
+      "grader_hash": "a1f2761662eafffd13c1a244d189d5dc074a577fbe34da525e152afb066c71b9",
+      "test_file": "tests/test_task_h5_data_owner_merge.py",
+      "test_sha256": "12046d9cd1ca4ed8d46c6b4418a7301d862f0cf9f9db06bf67b2d8894e775430"
+    },
+    "h5-data-redacted-export": {
+      "task_hash": "cf06a1a0e6dbfa66a491a663d102dce716025e16c7289f948e12d323fe05960a",
+      "grader_hash": "453e023fd31f0016eab0b4c543d01004c41b649631e3b1949ac350aa4e696031",
+      "test_file": "tests/test_task_h5_data_redacted_export.py",
+      "test_sha256": "621c4ffc0e3a6c5bb9a60a5d5de9525f11fb7a8528d9a13ec97e5d4a3233f106"
+    },
+    "h5-data-region-placement": {
+      "task_hash": "7e4410502a87bc017d6353b133f8af8899e07629a33acaf41cdc99b0678eb4d5",
+      "grader_hash": "6eb9c208eb6d49a7d3bb0f3c6092713e66a94220e9df37ee6d6a37e3956a3714",
+      "test_file": "tests/test_task_h5_data_region_placement.py",
+      "test_sha256": "b2a18d940b7c998dc531f37cc80e35f51d4ceaa85b7d14bfc254872ea7be6f1a"
+    },
+    "h5-data-service-scope": {
+      "task_hash": "f4b537b495638769beca080a8d57ebca72f2f90e48726be733e22553cddb66f6",
+      "grader_hash": "05008503e1fbec14801713bc6cb511e9833a3cfc262476d5071dcdaf1b080ac3",
+      "test_file": "tests/test_task_h5_data_service_scope.py",
+      "test_sha256": "9a735d762588e3a93919944e693ddbd6f8da8f9643c1710cd7c737fe4a02de1f"
+    },
+    "h5-data-ticket-visibility": {
+      "task_hash": "ebf4c8ad976f0aa02ad613b1b96e9ae0f86219f518825026222c6fa3f2fa7ef0",
+      "grader_hash": "33a3d9b5160359ae251e6b3c1b5bbd7561b3f8d5083b62094d8da94e2cac6e8e",
+      "test_file": "tests/test_task_h5_data_ticket_visibility.py",
+      "test_sha256": "56efce4ce6c4cf98bdbf9a679b68c121c835e2b8ce435789a7ae483c1a1de8ee"
+    }
+  }
+}

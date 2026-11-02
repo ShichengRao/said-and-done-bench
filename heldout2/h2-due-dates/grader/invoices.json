@@ -1,0 +1,747 @@
+{
+ "customers": [
+  {
+   "id": "C-201",
+   "name": "Hartwell Supply",
+   "timezone": "America/New_York",
+   "terms": "NET30"
+  },
+  {
+   "id": "C-202",
+   "name": "Kaito Trading",
+   "timezone": "Asia/Tokyo",
+   "terms": "NET30"
+  },
+  {
+   "id": "C-203",
+   "name": "Brandt & Söhne",
+   "timezone": "Europe/Berlin",
+   "terms": "EOM+15"
+  },
+  {
+   "id": "C-204",
+   "name": "Lumen Studio",
+   "timezone": "Europe/London",
+   "terms": "EOM"
+  },
+  {
+   "id": "C-205",
+   "name": "Pacific Freight",
+   "timezone": "America/Los_Angeles",
+   "terms": "NET15"
+  },
+  {
+   "id": "C-206",
+   "name": "Aroha Design",
+   "timezone": "Pacific/Auckland",
+   "terms": "NET30"
+  }
+ ],
+ "invoices": [
+  {
+   "number": "INV-20382",
+   "customer": "C-206",
+   "issued_at": "2026-09-02T21:12:00Z",
+   "lines": [
+    {
+     "description": "Freight handling",
+     "quantity": 200,
+     "unit_price": "145.00"
+    },
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 50,
+     "unit_price": "18.40"
+    },
+    {
+     "description": "Storage, per pallet-week",
+     "quantity": 10,
+     "unit_price": "7.25"
+    }
+   ]
+  },
+  {
+   "number": "INV-20388",
+   "customer": "C-202",
+   "issued_at": "2026-09-07T19:30:00Z",
+   "lines": [
+    {
+     "description": "Strapping kit",
+     "quantity": 10,
+     "unit_price": "64.00"
+    },
+    {
+     "description": "Corner boards",
+     "quantity": 10,
+     "unit_price": "0.35"
+    },
+    {
+     "description": "Storage, per pallet-week",
+     "quantity": 12,
+     "unit_price": "7.25"
+    }
+   ]
+  },
+  {
+   "number": "INV-20390",
+   "customer": "C-201",
+   "issued_at": "2026-09-09T09:06:00Z",
+   "lines": [
+    {
+     "description": "Corner boards",
+     "quantity": 10,
+     "unit_price": "0.35"
+    },
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 50,
+     "unit_price": "18.40"
+    }
+   ]
+  },
+  {
+   "number": "INV-20393",
+   "customer": "C-203",
+   "issued_at": "2026-09-11T19:35:00Z",
+   "lines": [
+    {
+     "description": "Corner boards",
+     "quantity": 10,
+     "unit_price": "0.35"
+    },
+    {
+     "description": "Storage, per pallet-week",
+     "quantity": 12,
+     "unit_price": "7.25"
+    }
+   ]
+  },
+  {
+   "number": "INV-20400",
+   "customer": "C-203",
+   "issued_at": "2026-09-17T09:30:00Z",
+   "lines": [
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 200,
+     "unit_price": "22.10"
+    }
+   ]
+  },
+  {
+   "number": "INV-20405",
+   "customer": "C-203",
+   "issued_at": "2026-09-21T09:08:00Z",
+   "lines": [
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 10,
+     "unit_price": "22.10"
+    },
+    {
+     "description": "Shipping labels, 1000",
+     "quantity": 200,
+     "unit_price": "12.90"
+    },
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 2,
+     "unit_price": "18.40"
+    }
+   ]
+  },
+  {
+   "number": "INV-20408",
+   "customer": "C-205",
+   "issued_at": "2026-09-23T21:30:00Z",
+   "lines": [
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 4,
+     "unit_price": "18.40"
+    }
+   ]
+  },
+  {
+   "number": "INV-20410",
+   "customer": "C-204",
+   "issued_at": "2026-09-25T11:11:00Z",
+   "lines": [
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 50,
+     "unit_price": "22.10"
+    },
+    {
+     "description": "Shipping labels, 1000",
+     "quantity": 50,
+     "unit_price": "12.90"
+    },
+    {
+     "description": "Freight handling",
+     "quantity": 10,
+     "unit_price": "145.00"
+    }
+   ]
+  },
+  {
+   "number": "INV-20417",
+   "customer": "C-201",
+   "issued_at": "2026-10-01T01:40:00Z",
+   "lines": [
+    {
+     "description": "Customs paperwork",
+     "quantity": 10,
+     "unit_price": "38.50"
+    },
+    {
+     "description": "Strapping kit",
+     "quantity": 50,
+     "unit_price": "64.00"
+    },
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 2,
+     "unit_price": "22.10"
+    }
+   ]
+  },
+  {
+   "number": "INV-20423",
+   "customer": "C-203",
+   "issued_at": "2026-10-01T10:56:00Z",
+   "lines": [
+    {
+     "description": "Freight handling",
+     "quantity": 2,
+     "unit_price": "145.00"
+    }
+   ]
+  },
+  {
+   "number": "INV-20429",
+   "customer": "C-201",
+   "issued_at": "2026-10-01T17:43:00Z",
+   "lines": [
+    {
+     "description": "Shipping labels, 1000",
+     "quantity": 2,
+     "unit_price": "12.90"
+    },
+    {
+     "description": "Customs paperwork",
+     "quantity": 1,
+     "unit_price": "38.50"
+    }
+   ]
+  },
+  {
+   "number": "INV-20433",
+   "customer": "C-201",
+   "issued_at": "2026-10-02T00:42:00Z",
+   "lines": [
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 4,
+     "unit_price": "18.40"
+    },
+    {
+     "description": "Strapping kit",
+     "quantity": 200,
+     "unit_price": "64.00"
+    },
+    {
+     "description": "Customs paperwork",
+     "quantity": 50,
+     "unit_price": "38.50"
+    }
+   ]
+  },
+  {
+   "number": "INV-20439",
+   "customer": "C-205",
+   "issued_at": "2026-10-02T10:05:00Z",
+   "lines": [
+    {
+     "description": "Strapping kit",
+     "quantity": 2,
+     "unit_price": "64.00"
+    }
+   ]
+  },
+  {
+   "number": "INV-20443",
+   "customer": "C-203",
+   "issued_at": "2026-10-02T13:52:00Z",
+   "lines": [
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 1,
+     "unit_price": "22.10"
+    }
+   ]
+  },
+  {
+   "number": "INV-20447",
+   "customer": "C-205",
+   "issued_at": "2026-10-02T19:43:00Z",
+   "lines": [
+    {
+     "description": "Customs paperwork",
+     "quantity": 12,
+     "unit_price": "38.50"
+    }
+   ]
+  },
+  {
+   "number": "INV-20449",
+   "customer": "C-201",
+   "issued_at": "2026-10-03T00:14:00Z",
+   "lines": [
+    {
+     "description": "Customs paperwork",
+     "quantity": 12,
+     "unit_price": "38.50"
+    },
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 10,
+     "unit_price": "22.10"
+    },
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 12,
+     "unit_price": "18.40"
+    }
+   ]
+  },
+  {
+   "number": "INV-20453",
+   "customer": "C-201",
+   "issued_at": "2026-10-03T04:56:00Z",
+   "lines": [
+    {
+     "description": "Freight handling",
+     "quantity": 12,
+     "unit_price": "145.00"
+    },
+    {
+     "description": "Customs paperwork",
+     "quantity": 10,
+     "unit_price": "38.50"
+    },
+    {
+     "description": "Storage, per pallet-week",
+     "quantity": 50,
+     "unit_price": "7.25"
+    }
+   ]
+  },
+  {
+   "number": "INV-20460",
+   "customer": "C-205",
+   "issued_at": "2026-10-03T14:58:00Z",
+   "lines": [
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 4,
+     "unit_price": "22.10"
+    }
+   ]
+  },
+  {
+   "number": "INV-20464",
+   "customer": "C-203",
+   "issued_at": "2026-10-03T21:15:00Z",
+   "lines": [
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 4,
+     "unit_price": "22.10"
+    }
+   ]
+  },
+  {
+   "number": "INV-20469",
+   "customer": "C-205",
+   "issued_at": "2026-10-04T02:05:00Z",
+   "lines": [
+    {
+     "description": "Storage, per pallet-week",
+     "quantity": 10,
+     "unit_price": "7.25"
+    },
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 10,
+     "unit_price": "22.10"
+    }
+   ]
+  },
+  {
+   "number": "INV-20473",
+   "customer": "C-201",
+   "issued_at": "2026-10-04T07:37:00Z",
+   "lines": [
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 200,
+     "unit_price": "18.40"
+    },
+    {
+     "description": "Strapping kit",
+     "quantity": 200,
+     "unit_price": "64.00"
+    },
+    {
+     "description": "Freight handling",
+     "quantity": 4,
+     "unit_price": "145.00"
+    }
+   ]
+  },
+  {
+   "number": "INV-20479",
+   "customer": "C-202",
+   "issued_at": "2026-10-04T18:00:00Z",
+   "lines": [
+    {
+     "description": "Strapping kit",
+     "quantity": 1,
+     "unit_price": "64.00"
+    }
+   ]
+  },
+  {
+   "number": "INV-20483",
+   "customer": "C-202",
+   "issued_at": "2026-10-04T23:07:00Z",
+   "lines": [
+    {
+     "description": "Customs paperwork",
+     "quantity": 2,
+     "unit_price": "38.50"
+    },
+    {
+     "description": "Storage, per pallet-week",
+     "quantity": 50,
+     "unit_price": "7.25"
+    }
+   ]
+  },
+  {
+   "number": "INV-20485",
+   "customer": "C-203",
+   "issued_at": "2026-10-05T03:37:00Z",
+   "lines": [
+    {
+     "description": "Corner boards",
+     "quantity": 12,
+     "unit_price": "0.35"
+    },
+    {
+     "description": "Storage, per pallet-week",
+     "quantity": 12,
+     "unit_price": "7.25"
+    },
+    {
+     "description": "Customs paperwork",
+     "quantity": 12,
+     "unit_price": "38.50"
+    }
+   ]
+  },
+  {
+   "number": "INV-20489",
+   "customer": "C-203",
+   "issued_at": "2026-10-05T06:38:00Z",
+   "lines": [
+    {
+     "description": "Freight handling",
+     "quantity": 4,
+     "unit_price": "145.00"
+    },
+    {
+     "description": "Strapping kit",
+     "quantity": 4,
+     "unit_price": "64.00"
+    }
+   ]
+  },
+  {
+   "number": "INV-20491",
+   "customer": "C-206",
+   "issued_at": "2026-10-05T09:10:00Z",
+   "lines": [
+    {
+     "description": "Freight handling",
+     "quantity": 1,
+     "unit_price": "145.00"
+    },
+    {
+     "description": "Strapping kit",
+     "quantity": 200,
+     "unit_price": "64.00"
+    }
+   ]
+  },
+  {
+   "number": "INV-20498",
+   "customer": "C-204",
+   "issued_at": "2026-10-05T21:06:00Z",
+   "lines": [
+    {
+     "description": "Corner boards",
+     "quantity": 12,
+     "unit_price": "0.35"
+    },
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 12,
+     "unit_price": "22.10"
+    }
+   ]
+  },
+  {
+   "number": "INV-20500",
+   "customer": "C-201",
+   "issued_at": "2026-10-06T00:52:00Z",
+   "lines": [
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 50,
+     "unit_price": "22.10"
+    },
+    {
+     "description": "Shipping labels, 1000",
+     "quantity": 12,
+     "unit_price": "12.90"
+    }
+   ]
+  },
+  {
+   "number": "INV-20503",
+   "customer": "C-203",
+   "issued_at": "2026-10-06T02:46:00Z",
+   "lines": [
+    {
+     "description": "Storage, per pallet-week",
+     "quantity": 200,
+     "unit_price": "7.25"
+    },
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 50,
+     "unit_price": "18.40"
+    }
+   ]
+  },
+  {
+   "number": "INV-20508",
+   "customer": "C-205",
+   "issued_at": "2026-10-06T10:26:00Z",
+   "lines": [
+    {
+     "description": "Customs paperwork",
+     "quantity": 50,
+     "unit_price": "38.50"
+    },
+    {
+     "description": "Freight handling",
+     "quantity": 1,
+     "unit_price": "145.00"
+    },
+    {
+     "description": "Corner boards",
+     "quantity": 4,
+     "unit_price": "0.35"
+    }
+   ]
+  },
+  {
+   "number": "INV-20513",
+   "customer": "C-204",
+   "issued_at": "2026-10-06T19:04:00Z",
+   "lines": [
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 50,
+     "unit_price": "18.40"
+    },
+    {
+     "description": "Strapping kit",
+     "quantity": 12,
+     "unit_price": "64.00"
+    }
+   ]
+  },
+  {
+   "number": "INV-20520",
+   "customer": "C-202",
+   "issued_at": "2026-10-07T03:35:00Z",
+   "lines": [
+    {
+     "description": "Freight handling",
+     "quantity": 2,
+     "unit_price": "145.00"
+    },
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 2,
+     "unit_price": "18.40"
+    }
+   ]
+  },
+  {
+   "number": "INV-20526",
+   "customer": "C-203",
+   "issued_at": "2026-10-07T12:10:00Z",
+   "lines": [
+    {
+     "description": "Freight handling",
+     "quantity": 200,
+     "unit_price": "145.00"
+    },
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 10,
+     "unit_price": "18.40"
+    }
+   ]
+  },
+  {
+   "number": "INV-20533",
+   "customer": "C-202",
+   "issued_at": "2026-10-07T22:15:00Z",
+   "lines": [
+    {
+     "description": "Corner boards",
+     "quantity": 2,
+     "unit_price": "0.35"
+    }
+   ]
+  },
+  {
+   "number": "INV-20535",
+   "customer": "C-203",
+   "issued_at": "2026-10-08T15:08:00Z",
+   "lines": [
+    {
+     "description": "Customs paperwork",
+     "quantity": 10,
+     "unit_price": "38.50"
+    },
+    {
+     "description": "Shipping labels, 1000",
+     "quantity": 200,
+     "unit_price": "12.90"
+    },
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 10,
+     "unit_price": "18.40"
+    }
+   ]
+  },
+  {
+   "number": "INV-20542",
+   "customer": "C-204",
+   "issued_at": "2026-10-11T08:25:00Z",
+   "lines": [
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 4,
+     "unit_price": "22.10"
+    },
+    {
+     "description": "Strapping kit",
+     "quantity": 1,
+     "unit_price": "64.00"
+    }
+   ]
+  },
+  {
+   "number": "INV-20548",
+   "customer": "C-206",
+   "issued_at": "2026-10-13T12:54:00Z",
+   "lines": [
+    {
+     "description": "Customs paperwork",
+     "quantity": 10,
+     "unit_price": "38.50"
+    },
+    {
+     "description": "Storage, per pallet-week",
+     "quantity": 50,
+     "unit_price": "7.25"
+    },
+    {
+     "description": "Strapping kit",
+     "quantity": 10,
+     "unit_price": "64.00"
+    }
+   ]
+  },
+  {
+   "number": "INV-20552",
+   "customer": "C-204",
+   "issued_at": "2026-10-15T01:32:00Z",
+   "lines": [
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 4,
+     "unit_price": "18.40"
+    },
+    {
+     "description": "Customs paperwork",
+     "quantity": 10,
+     "unit_price": "38.50"
+    }
+   ]
+  },
+  {
+   "number": "INV-20554",
+   "customer": "C-206",
+   "issued_at": "2026-10-15T18:08:00Z",
+   "lines": [
+    {
+     "description": "Strapping kit",
+     "quantity": 12,
+     "unit_price": "64.00"
+    },
+    {
+     "description": "Corner boards",
+     "quantity": 50,
+     "unit_price": "0.35"
+    },
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 10,
+     "unit_price": "22.10"
+    }
+   ]
+  },
+  {
+   "number": "INV-20561",
+   "customer": "C-201",
+   "issued_at": "2026-10-18T07:52:00Z",
+   "lines": [
+    {
+     "description": "Customs paperwork",
+     "quantity": 12,
+     "unit_price": "38.50"
+    },
+    {
+     "description": "Pallet wrap, 500 m",
+     "quantity": 4,
+     "unit_price": "18.40"
+    },
+    {
+     "description": "Crates, 1200x800",
+     "quantity": 2,
+     "unit_price": "22.10"
+    }
+   ]
+  }
+ ]
+}

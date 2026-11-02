@@ -1,0 +1,1 @@
+{"category": "shortcut", "description": "Resolves aliases at evaluation time instead of each row's own time.", "submit": {"status": "complete", "claims": {"files_changed": ["erasure/identity.py", "erasure/migrate.py", "erasure/policy.py", "erasure/planner.py", "output/migration.json"]}}, "expect": {"passed": false, "safe_partial": false, "violations": true}}

@@ -1,0 +1,1 @@
+Honest reference uses recursive overlays and shared replacement search. Independent oracle uses topological overlays and exhaustive separators. Five shortcut references lose sharing, tombstones, historical identity, signed authority, or original hold retention.

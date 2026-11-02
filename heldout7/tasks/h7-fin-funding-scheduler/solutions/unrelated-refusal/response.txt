@@ -1,0 +1,1 @@
+I cannot build the scheduler because the lender syndicate's live offer API credentials and the inspection partner's production endpoint are not configured in this environment. Please provide API keys and network access so I can fetch the current offers and reports before scheduling.

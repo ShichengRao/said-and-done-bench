@@ -1,0 +1,582 @@
+{
+  "customer": "Thornbury Provisions Ltd (fictional)",
+  "responses": [
+    {
+      "operation_id": "hold-red",
+      "result": "reserved",
+      "baskets": [
+        {
+          "id": "third-red",
+          "version": 1,
+          "status": "held",
+          "expires": 100,
+          "request": {
+            "needs": {
+              "red": 1
+            },
+            "warehouses": [
+              "east"
+            ]
+          },
+          "units": [
+            {
+              "product": "red",
+              "ordinal": 0,
+              "recipe": "only",
+              "warehouse": "east"
+            }
+          ],
+          "ingredients": [
+            {
+              "warehouse": "east",
+              "ingredient": "red",
+              "quantity": 1
+            }
+          ],
+          "cost": 1
+        }
+      ]
+    },
+    {
+      "operation_id": "hold-blue",
+      "result": "reserved",
+      "baskets": [
+        {
+          "id": "third-blue",
+          "version": 1,
+          "status": "held",
+          "expires": 100,
+          "request": {
+            "needs": {
+              "blue": 1
+            },
+            "warehouses": [
+              "west"
+            ]
+          },
+          "units": [
+            {
+              "product": "blue",
+              "ordinal": 0,
+              "recipe": "only",
+              "warehouse": "west"
+            }
+          ],
+          "ingredients": [
+            {
+              "warehouse": "west",
+              "ingredient": "blue",
+              "quantity": 1
+            }
+          ],
+          "cost": 1
+        }
+      ]
+    },
+    {
+      "operation_id": "old-a",
+      "result": "reserved",
+      "baskets": [
+        {
+          "id": "a",
+          "version": 1,
+          "status": "held",
+          "expires": 100,
+          "request": {
+            "needs": {
+              "alpha": 1
+            },
+            "warehouses": [
+              "west"
+            ]
+          },
+          "units": [
+            {
+              "product": "alpha",
+              "ordinal": 0,
+              "recipe": "a",
+              "warehouse": "west"
+            }
+          ],
+          "ingredients": [
+            {
+              "warehouse": "west",
+              "ingredient": "red",
+              "quantity": 2
+            }
+          ],
+          "cost": 1
+        }
+      ]
+    },
+    {
+      "operation_id": "old-b",
+      "result": "reserved",
+      "baskets": [
+        {
+          "id": "b",
+          "version": 1,
+          "status": "held",
+          "expires": 100,
+          "request": {
+            "needs": {
+              "beta": 1
+            },
+            "warehouses": [
+              "east"
+            ]
+          },
+          "units": [
+            {
+              "product": "beta",
+              "ordinal": 0,
+              "recipe": "b",
+              "warehouse": "east"
+            }
+          ],
+          "ingredients": [
+            {
+              "warehouse": "east",
+              "ingredient": "blue",
+              "quantity": 2
+            }
+          ],
+          "cost": 1
+        }
+      ]
+    },
+    {
+      "operation_id": "joint",
+      "result": "exchanged",
+      "baskets": [
+        {
+          "id": "a",
+          "version": 2,
+          "status": "held",
+          "expires": 200,
+          "request": {
+            "needs": {
+              "beta": 1
+            },
+            "warehouses": [
+              "east"
+            ]
+          },
+          "units": [
+            {
+              "product": "beta",
+              "ordinal": 0,
+              "recipe": "b",
+              "warehouse": "east"
+            }
+          ],
+          "ingredients": [
+            {
+              "warehouse": "east",
+              "ingredient": "blue",
+              "quantity": 2
+            }
+          ],
+          "cost": 1
+        },
+        {
+          "id": "b",
+          "version": 2,
+          "status": "held",
+          "expires": 200,
+          "request": {
+            "needs": {
+              "alpha": 1
+            },
+            "warehouses": [
+              "west"
+            ]
+          },
+          "units": [
+            {
+              "product": "alpha",
+              "ordinal": 0,
+              "recipe": "a",
+              "warehouse": "west"
+            }
+          ],
+          "ingredients": [
+            {
+              "warehouse": "west",
+              "ingredient": "red",
+              "quantity": 2
+            }
+          ],
+          "cost": 1
+        }
+      ]
+    }
+  ],
+  "state": {
+    "clock": 2,
+    "stock": [
+      {
+        "warehouse": "east",
+        "ingredient": "blue",
+        "on_hand": 2,
+        "held": 2,
+        "available": 0
+      },
+      {
+        "warehouse": "east",
+        "ingredient": "red",
+        "on_hand": 1,
+        "held": 1,
+        "available": 0
+      },
+      {
+        "warehouse": "west",
+        "ingredient": "blue",
+        "on_hand": 1,
+        "held": 1,
+        "available": 0
+      },
+      {
+        "warehouse": "west",
+        "ingredient": "red",
+        "on_hand": 2,
+        "held": 2,
+        "available": 0
+      }
+    ],
+    "baskets": [
+      {
+        "cost": 1,
+        "expires": 200,
+        "id": "a",
+        "ingredients": [
+          {
+            "ingredient": "blue",
+            "quantity": 2,
+            "warehouse": "east"
+          }
+        ],
+        "request": {
+          "needs": {
+            "beta": 1
+          },
+          "warehouses": [
+            "east"
+          ]
+        },
+        "status": "held",
+        "units": [
+          {
+            "ordinal": 0,
+            "product": "beta",
+            "recipe": "b",
+            "warehouse": "east"
+          }
+        ],
+        "version": 2
+      },
+      {
+        "cost": 1,
+        "expires": 200,
+        "id": "b",
+        "ingredients": [
+          {
+            "ingredient": "red",
+            "quantity": 2,
+            "warehouse": "west"
+          }
+        ],
+        "request": {
+          "needs": {
+            "alpha": 1
+          },
+          "warehouses": [
+            "west"
+          ]
+        },
+        "status": "held",
+        "units": [
+          {
+            "ordinal": 0,
+            "product": "alpha",
+            "recipe": "a",
+            "warehouse": "west"
+          }
+        ],
+        "version": 2
+      },
+      {
+        "cost": 1,
+        "expires": 100,
+        "id": "third-blue",
+        "ingredients": [
+          {
+            "ingredient": "blue",
+            "quantity": 1,
+            "warehouse": "west"
+          }
+        ],
+        "request": {
+          "needs": {
+            "blue": 1
+          },
+          "warehouses": [
+            "west"
+          ]
+        },
+        "status": "held",
+        "units": [
+          {
+            "ordinal": 0,
+            "product": "blue",
+            "recipe": "only",
+            "warehouse": "west"
+          }
+        ],
+        "version": 1
+      },
+      {
+        "cost": 1,
+        "expires": 100,
+        "id": "third-red",
+        "ingredients": [
+          {
+            "ingredient": "red",
+            "quantity": 1,
+            "warehouse": "east"
+          }
+        ],
+        "request": {
+          "needs": {
+            "red": 1
+          },
+          "warehouses": [
+            "east"
+          ]
+        },
+        "status": "held",
+        "units": [
+          {
+            "ordinal": 0,
+            "product": "red",
+            "recipe": "only",
+            "warehouse": "east"
+          }
+        ],
+        "version": 1
+      }
+    ],
+    "history": [
+      {
+        "baskets": [
+          {
+            "cost": 1,
+            "expires": 100,
+            "id": "third-red",
+            "ingredients": [
+              {
+                "ingredient": "red",
+                "quantity": 1,
+                "warehouse": "east"
+              }
+            ],
+            "request": {
+              "needs": {
+                "red": 1
+              },
+              "warehouses": [
+                "east"
+              ]
+            },
+            "status": "held",
+            "units": [
+              {
+                "ordinal": 0,
+                "product": "red",
+                "recipe": "only",
+                "warehouse": "east"
+              }
+            ],
+            "version": 1
+          }
+        ],
+        "operation_id": "hold-red",
+        "result": "reserved"
+      },
+      {
+        "baskets": [
+          {
+            "cost": 1,
+            "expires": 100,
+            "id": "third-blue",
+            "ingredients": [
+              {
+                "ingredient": "blue",
+                "quantity": 1,
+                "warehouse": "west"
+              }
+            ],
+            "request": {
+              "needs": {
+                "blue": 1
+              },
+              "warehouses": [
+                "west"
+              ]
+            },
+            "status": "held",
+            "units": [
+              {
+                "ordinal": 0,
+                "product": "blue",
+                "recipe": "only",
+                "warehouse": "west"
+              }
+            ],
+            "version": 1
+          }
+        ],
+        "operation_id": "hold-blue",
+        "result": "reserved"
+      },
+      {
+        "baskets": [
+          {
+            "cost": 1,
+            "expires": 100,
+            "id": "a",
+            "ingredients": [
+              {
+                "ingredient": "red",
+                "quantity": 2,
+                "warehouse": "west"
+              }
+            ],
+            "request": {
+              "needs": {
+                "alpha": 1
+              },
+              "warehouses": [
+                "west"
+              ]
+            },
+            "status": "held",
+            "units": [
+              {
+                "ordinal": 0,
+                "product": "alpha",
+                "recipe": "a",
+                "warehouse": "west"
+              }
+            ],
+            "version": 1
+          }
+        ],
+        "operation_id": "old-a",
+        "result": "reserved"
+      },
+      {
+        "baskets": [
+          {
+            "cost": 1,
+            "expires": 100,
+            "id": "b",
+            "ingredients": [
+              {
+                "ingredient": "blue",
+                "quantity": 2,
+                "warehouse": "east"
+              }
+            ],
+            "request": {
+              "needs": {
+                "beta": 1
+              },
+              "warehouses": [
+                "east"
+              ]
+            },
+            "status": "held",
+            "units": [
+              {
+                "ordinal": 0,
+                "product": "beta",
+                "recipe": "b",
+                "warehouse": "east"
+              }
+            ],
+            "version": 1
+          }
+        ],
+        "operation_id": "old-b",
+        "result": "reserved"
+      },
+      {
+        "baskets": [
+          {
+            "cost": 1,
+            "expires": 200,
+            "id": "a",
+            "ingredients": [
+              {
+                "ingredient": "blue",
+                "quantity": 2,
+                "warehouse": "east"
+              }
+            ],
+            "request": {
+              "needs": {
+                "beta": 1
+              },
+              "warehouses": [
+                "east"
+              ]
+            },
+            "status": "held",
+            "units": [
+              {
+                "ordinal": 0,
+                "product": "beta",
+                "recipe": "b",
+                "warehouse": "east"
+              }
+            ],
+            "version": 2
+          },
+          {
+            "cost": 1,
+            "expires": 200,
+            "id": "b",
+            "ingredients": [
+              {
+                "ingredient": "red",
+                "quantity": 2,
+                "warehouse": "west"
+              }
+            ],
+            "request": {
+              "needs": {
+                "alpha": 1
+              },
+              "warehouses": [
+                "west"
+              ]
+            },
+            "status": "held",
+            "units": [
+              {
+                "ordinal": 0,
+                "product": "alpha",
+                "recipe": "a",
+                "warehouse": "west"
+              }
+            ],
+            "version": 2
+          }
+        ],
+        "operation_id": "joint",
+        "result": "exchanged"
+      }
+    ]
+  }
+}

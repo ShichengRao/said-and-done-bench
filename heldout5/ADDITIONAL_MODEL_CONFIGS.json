@@ -1,0 +1,113 @@
+{
+  "recorded_at": "2026-10-30T20:26:05.116144+00:00",
+  "neutral": {
+    "h5-minimax-m2-7-thinking": {
+      "name": "h5-minimax-m2-7-thinking",
+      "base_url": "https://openrouter.ai/api/v1",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "model": "minimax/minimax-m2.7",
+      "max_tokens": 32768,
+      "params": {
+        "reasoning": {
+          "enabled": true,
+          "exclude": false
+        },
+        "provider": {
+          "order": [
+            "minimax"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "send_reasoning": true
+    }
+  },
+  "provider_endpoint": {
+    "name": "Minimax | minimax/minimax-m2.7-20260318",
+    "model_id": "minimax/minimax-m2.7",
+    "model_name": "MiniMax: MiniMax M2.7",
+    "context_length": 204800,
+    "pricing": {
+      "prompt": "0.0000003",
+      "completion": "0.0000012",
+      "input_cache_read": "0.00000006",
+      "discount": 0
+    },
+    "provider_name": "Minimax",
+    "tag": "minimax",
+    "service_tier": null,
+    "quantization": "unknown",
+    "max_completion_tokens": 131072,
+    "max_prompt_tokens": null,
+    "supported_parameters": [
+      "reasoning",
+      "include_reasoning",
+      "max_tokens",
+      "temperature",
+      "top_p",
+      "response_format",
+      "tool_choice",
+      "tools"
+    ],
+    "supports_tool_choice": {
+      "none": true,
+      "auto": true,
+      "required": false,
+      "function": false
+    },
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_5m": 100,
+    "uptime_last_1d": 99.86033519553072,
+    "supports_implicit_caching": true,
+    "native_tools": {},
+    "supports_voice_cloning": false,
+    "supports_multiple_audio_references": false,
+    "supports_image_reference": false,
+    "supports_diarization": false,
+    "latency_last_30m": null,
+    "throughput_last_30m": null
+  },
+  "provider_endpoint_source": "https://openrouter.ai/api/v1/models/minimax/minimax-m2.7/endpoints",
+  "selection_sources": [
+    "https://www.minimax.io/blog/minimax-m27",
+    "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+    "https://openrouter.ai/minimax/minimax-m2.7"
+  ],
+  "selection": "Owner requested a stronger inexpensive diagnostic than the earlier M2.1/V3.2 probes. M2.7 is a plausible stronger coding candidate based on published evaluations, not a guaranteed ranking on these tasks. No score target.",
+  "attempts_per_task": 1,
+  "planned_tasks": 20,
+  "estimated_cost_usd": [
+    2,
+    5
+  ],
+  "scheduling_threshold": "Combined H5 recorded API spend: stop starting new runs at $10; not a billing cap.",
+  "registry_override": "_shared/run_configured.py changes only the load_models default registry path; existing sealed models.toml bytes remain unchanged.",
+  "additional_diagnostic_lane": {
+    "model": "minimax-m2-7",
+    "max_concurrent": 3
+  },
+  "combined_neutral_concurrency": 4,
+  "concurrency_transition": {
+    "at": "2026-10-30T21:33:35.788190+00:00",
+    "reason": "Earlier task attempts closed without interruption; remaining single attempts run in three independent workers. Model settings and per-attempt budgets unchanged.",
+    "remaining_tasks": [
+      "h5-data-redacted-export",
+      "h5-data-region-placement",
+      "h5-data-service-scope",
+      "h5-data-ticket-visibility",
+      "h5-fin-credit-release",
+      "h5-fin-meter-close",
+      "h5-fin-payout-owner",
+      "h5-fin-procure-plan",
+      "h5-fin-refund-replay",
+      "h5-fin-revenue-attest",
+      "h5-ops-attestation",
+      "h5-ops-backup-gap",
+      "h5-ops-provenance",
+      "h5-ops-quorum-cut",
+      "h5-ops-rollout",
+      "h5-ops-wal-restore"
+    ]
+  }
+}

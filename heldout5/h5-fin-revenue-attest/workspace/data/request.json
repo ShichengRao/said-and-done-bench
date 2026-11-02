@@ -1,0 +1,368 @@
+{
+  "as_of": 5,
+  "open_day": 5,
+  "close_day": 8,
+  "requested_cents": 524,
+  "terms": [
+    {
+      "id": "t1",
+      "revision": 1,
+      "known": 0,
+      "contract": "c1",
+      "effective": 0,
+      "price_cents": 1001,
+      "obligations": {
+        "a": {
+          "weight": 2,
+          "units": 10
+        },
+        "b": {
+          "weight": 1,
+          "units": 4
+        }
+      },
+      "signed": true
+    },
+    {
+      "id": "t2",
+      "revision": 1,
+      "known": 3,
+      "contract": "c1",
+      "effective": 7,
+      "price_cents": 907,
+      "obligations": {
+        "a": {
+          "weight": 1,
+          "units": 10
+        },
+        "b": {
+          "weight": 2,
+          "units": 4
+        }
+      },
+      "signed": true
+    },
+    {
+      "id": "t3",
+      "revision": 1,
+      "known": 0,
+      "contract": "c1",
+      "effective": 8,
+      "price_cents": 1500,
+      "obligations": {
+        "a": {
+          "weight": 1,
+          "units": 10
+        },
+        "b": {
+          "weight": 1,
+          "units": 4
+        }
+      },
+      "signed": false
+    },
+    {
+      "id": "t4",
+      "revision": 1,
+      "known": 0,
+      "contract": "c2",
+      "effective": 0,
+      "price_cents": 803,
+      "obligations": {
+        "d": {
+          "weight": 1,
+          "units": 5
+        },
+        "e": {
+          "weight": 1,
+          "units": 8
+        }
+      },
+      "signed": true
+    },
+    {
+      "id": "t5",
+      "revision": 1,
+      "known": 0,
+      "contract": "c3",
+      "effective": 0,
+      "price_cents": 601,
+      "obligations": {
+        "f": {
+          "weight": 1,
+          "units": 3
+        },
+        "g": {
+          "weight": 2,
+          "units": 6
+        }
+      },
+      "signed": true
+    }
+  ],
+  "progress": [
+    {
+      "id": "p1",
+      "revision": 1,
+      "known": 0,
+      "contract": "c1",
+      "obligation": "a",
+      "at": 4,
+      "units": 5,
+      "void": false
+    },
+    {
+      "id": "p2",
+      "revision": 1,
+      "known": 0,
+      "contract": "c1",
+      "obligation": "b",
+      "at": 4,
+      "units": 2,
+      "void": false
+    },
+    {
+      "id": "p3",
+      "revision": 1,
+      "known": 0,
+      "contract": "c2",
+      "obligation": "d",
+      "at": 4,
+      "units": 3,
+      "void": false
+    },
+    {
+      "id": "p4",
+      "revision": 1,
+      "known": 0,
+      "contract": "c2",
+      "obligation": "e",
+      "at": 4,
+      "units": 5,
+      "void": false
+    },
+    {
+      "id": "p5",
+      "revision": 1,
+      "known": 0,
+      "contract": "c3",
+      "obligation": "f",
+      "at": 4,
+      "units": 2,
+      "void": false
+    },
+    {
+      "id": "p6",
+      "revision": 1,
+      "known": 0,
+      "contract": "c3",
+      "obligation": "g",
+      "at": 4,
+      "units": 2,
+      "void": false
+    },
+    {
+      "id": "p2",
+      "revision": 2,
+      "known": 3,
+      "contract": "c1",
+      "obligation": "b",
+      "at": 4,
+      "units": 3,
+      "void": false
+    },
+    {
+      "id": "p4",
+      "revision": 2,
+      "known": 4,
+      "contract": "c2",
+      "obligation": "e",
+      "at": 4,
+      "units": 4,
+      "void": false
+    },
+    {
+      "id": "p6",
+      "revision": 2,
+      "known": 9,
+      "contract": "c3",
+      "obligation": "g",
+      "at": 4,
+      "units": 6,
+      "void": false
+    },
+    {
+      "id": "p7",
+      "revision": 1,
+      "known": 0,
+      "contract": "c2",
+      "obligation": "d",
+      "at": 7,
+      "units": -1,
+      "void": false
+    }
+  ],
+  "invoices": [
+    {
+      "id": "i1",
+      "revision": 1,
+      "known": 0,
+      "contract": "c1",
+      "at": 1,
+      "cents": 1001,
+      "void": false
+    },
+    {
+      "id": "i2",
+      "revision": 1,
+      "known": 0,
+      "contract": "c2",
+      "at": 2,
+      "cents": 600,
+      "void": false
+    },
+    {
+      "id": "i3",
+      "revision": 1,
+      "known": 0,
+      "contract": "c1",
+      "at": 7,
+      "cents": -94,
+      "void": false
+    }
+  ],
+  "posted": [
+    {
+      "id": "j0",
+      "contract": "c1",
+      "obligation": "a",
+      "period_end": 5,
+      "cents": 230
+    },
+    {
+      "id": "j1",
+      "contract": "c1",
+      "obligation": "b",
+      "period_end": 5,
+      "cents": 150
+    },
+    {
+      "id": "j2",
+      "contract": "c2",
+      "obligation": "d",
+      "period_end": 5,
+      "cents": 160
+    },
+    {
+      "id": "j3",
+      "contract": "c2",
+      "obligation": "e",
+      "period_end": 5,
+      "cents": 140
+    },
+    {
+      "id": "j4",
+      "contract": "c3",
+      "obligation": "f",
+      "period_end": 5,
+      "cents": 120
+    },
+    {
+      "id": "j5",
+      "contract": "c3",
+      "obligation": "g",
+      "period_end": 5,
+      "cents": 90
+    },
+    {
+      "id": "j6",
+      "contract": "c1",
+      "obligation": "a",
+      "period_end": 8,
+      "cents": 999
+    },
+    {
+      "id": "j7",
+      "contract": "c1",
+      "obligation": "a",
+      "period_end": 4,
+      "cents": -20
+    }
+  ],
+  "proposals": [
+    {
+      "id": "r1",
+      "cost": 2,
+      "progress": [
+        {
+          "id": "q1",
+          "revision": 1,
+          "known": 0,
+          "contract": "c1",
+          "obligation": "a",
+          "at": 8,
+          "units": 2,
+          "void": false
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "cost": 3,
+      "progress": [
+        {
+          "id": "q2",
+          "revision": 1,
+          "known": 0,
+          "contract": "c2",
+          "obligation": "e",
+          "at": 8,
+          "units": 2,
+          "void": false
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "cost": 1,
+      "progress": [
+        {
+          "id": "q3",
+          "revision": 1,
+          "known": 0,
+          "contract": "c3",
+          "obligation": "f",
+          "at": 8,
+          "units": 1,
+          "void": false
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "cost": 7,
+      "progress": [
+        {
+          "id": "q4",
+          "revision": 1,
+          "known": 0,
+          "contract": "c1",
+          "obligation": "a",
+          "at": 8,
+          "units": 2,
+          "void": false
+        },
+        {
+          "id": "q5",
+          "revision": 1,
+          "known": 0,
+          "contract": "c2",
+          "obligation": "e",
+          "at": 8,
+          "units": 2,
+          "void": false
+        }
+      ]
+    }
+  ]
+}

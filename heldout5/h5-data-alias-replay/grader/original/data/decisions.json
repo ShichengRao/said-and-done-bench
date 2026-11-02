@@ -1,0 +1,70 @@
+[
+  {
+    "decision": "commit",
+    "members": [
+      [
+        "s1",
+        11
+      ],
+      [
+        "s2",
+        8
+      ],
+      [
+        "s1",
+        12
+      ]
+    ],
+    "seq": 20,
+    "tenant": "r17",
+    "tx": "t4"
+  },
+  {
+    "decision": "commit",
+    "members": [
+      [
+        "s1",
+        11
+      ]
+    ],
+    "seq": 20,
+    "tenant": "r23",
+    "tx": "t4"
+  },
+  {
+    "decision": "abort",
+    "members": [
+      [
+        "s1",
+        13
+      ]
+    ],
+    "seq": 24,
+    "tenant": "r17",
+    "tx": "t6"
+  },
+  {
+    "decision": "commit",
+    "members": [
+      [
+        "s1",
+        14
+      ]
+    ],
+    "seq": 31,
+    "tenant": "r17",
+    "tx": "t8"
+  },
+  {
+    "decision": "commit",
+    "members": [
+      [
+        "s9",
+        1
+      ]
+    ],
+    "seq": 9,
+    "tenant": "r17",
+    "tx": "t1"
+  }
+]

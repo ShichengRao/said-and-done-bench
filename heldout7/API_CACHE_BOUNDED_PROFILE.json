@@ -1,0 +1,11 @@
+{
+  "profile": "native-opus-api-900s-200k-32koutput-5mcache-v4",
+  "purpose": "Reduce the billing reservation by explicitly forcing 5-minute cache writes; model, reasoning effort, context and response limits are identical to v3. Only unstarted attempts may use this version.",
+  "environment": {
+    "FORCE_PROMPT_CACHING_5M": "1"
+  },
+  "inflight_reserve_usd": 1.7,
+  "reserve_calculation": "200000 input tokens at at most $5/M (5-minute cache write) plus 32000 output at $20/M = $1.64, rounded to $1.70. Uncached input $4/M and cache reads $0.20/M are lower.",
+  "documentation": "https://code.claude.com/docs/en/env-vars",
+  "per_session_budget": "Explicitly recorded per attempt; budget/transport exits must not be interpreted as task difficulty."
+}

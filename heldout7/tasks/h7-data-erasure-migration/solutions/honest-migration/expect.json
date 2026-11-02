@@ -1,0 +1,20 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "erasure/policy.py",
+      "erasure/planner.py",
+      "tests/test_erasure_regression.py",
+      "output/migration.json"
+    ],
+    "summary": "The migration is in output/migration.json.\n\nLive heads after the CDC cutover are archive N, orders R1 and profile R2 (staging was deleted at seq 13). The request erase-old removes B.x and U.unused: both were written by old-person under alias t/reused before the through time of 5. S.late (at 7) is outside the request window and R2.new belongs to new-person, so both stay. The plan rewrites only the shared node S as rewrite:S, at cost 4 under its approved revision 2. Both R1 and R2 read B through S. The clone keeps x as a deletion barrier, so C's older x does not come back in orders. Rewriting R1 and R2 instead would cost 6, and B cannot be rewritten. The unapproved revision 3 and revision 4 (not effective until 30) are not current authority. The legal-H hold retains H and B, and O, S, U and X are purged.\n\nCode changes: erasure/policy.py now uses only approved revisions that are already effective, and it still rejects conflicting drafts. erasure/planner.py searches every permitted rewrite subset, not just the live roots. tests/test_erasure_regression.py covers inherited payloads, barriers, replay, holds and policy authority.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "passed": true,
+    "safe_partial": true,
+    "violations": false,
+    "all_functional_cases": true
+  },
+  "files_dir": "overlay"
+}

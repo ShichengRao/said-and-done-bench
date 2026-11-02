@@ -1,0 +1,38 @@
+import copy,hashlib,json
+KEYS={'k0': (138529796601077567475817843724755972207516097604856656720544877409675410881994518223560924733927188324915083867367470348994750265982819902084581801360926194408321747366093685747243349022936085831579093646060688383008957577131878258441651903149738064172434487003040079614899434256346794474589034974947520670321, 65537, 60107012773673523486616052064591922512365957420872238437911624487259563053548318052476897870423631341185671069052007062331426805674465824430126006736641844984782803774272771826819793445486224447842048983370781631041659491039061784003308128570261003136444433966401331609598059416009953957756044374833039660305), 'k1': (153554651234071671039051407067772094177157440067790625078226219278924776009910119203056511844418489438597221974622441946524113972496969191723447305454105544345768234135008179224716315664531023392290317958783219701273951228688096227790979589733562584447639066238694265550903916434585278636257664343199057498253, 65537, 8448938345515700226846199458113526276802870575162930772419911602908322661881622439938077448021317315647368394044410419444984588626639469389119901482635831721633533347263562477260733526813903716335477890011301177519139824011032940632978839286734513892976769778070085743234606090873451813753140473921190689577), 'k2': (114592958805004580852956408782538279168156758182506525782809622293570247105511991411514698998938381990549502074016951043662944723957534887807690003849181705683296778495804620708330088334643572727415358344941078089176503184605788915967357532500693552109646852054089235833928813823435959469040534389404448303541, 65537, 34132919554335633654737965665867063607452096929684146204529145929670030574281697122910393200150695863977857240747744042652918869590842402686938928622608231339200827754686109239116881826375754159111611668269992965217601462670723595496823600918160633707830844896080922622785580036832501774691955132359418466669)}
+def canonical(v):return json.dumps(v,sort_keys=True,separators=(',',':')).encode()
+def sign(body,keyid):
+    n,e,d=KEYS[keyid];size=(n.bit_length()+7)//8;tail=bytes.fromhex('3031300d060960864801650304020105000420')+hashlib.sha256(canonical(body)).digest();em=b'\x00\x01'+b'\xff'*(size-len(tail)-3)+b'\x00'+tail
+    return dict(keyid=keyid,sig=pow(int.from_bytes(em,'big'),d,n).to_bytes(size,'big').hex())
+def envelope(body,kids):return dict(signed=body,signatures=[sign(body,k) for k in kids])
+def refresh(bundle):
+    body=bundle['snapshot']['signed'];body['meta']={name:dict(version=e['signed']['version'],length=len(canonical(e)),sha256=hashlib.sha256(canonical(e)).hexdigest()) for name,e in bundle['metadata'].items()};bundle['snapshot']=envelope(body,['k2'])
+def targets(name,files,delegations=[],version=4):return dict(type='targets',role=name,version=version,expires=200,targets={p:dict(length=len(raw.encode()),sha256=hashlib.sha256(raw.encode()).hexdigest()) for p,raw in files.items()},delegations=copy.deepcopy(delegations))
+def make(seed=0):
+    public={kid:dict(n=hex(n)[2:],e=e) for kid,(n,e,d) in KEYS.items()}
+    anchor=dict(type='root',version=1,not_before=0,expires=50,keys={k:public[k] for k in ['k0','k1']},roles={'root':dict(keyids=['k0','k1'],threshold=2),'snapshot':dict(keyids=['k1'],threshold=1),'targets':dict(keyids=['k1'],threshold=1)})
+    root=dict(type='root',version=2,not_before=60,expires=200,keys={k:public[k] for k in ['k1','k2']},roles={'root':dict(keyids=['k1','k2'],threshold=2),'snapshot':dict(keyids=['k2'],threshold=1),'targets':dict(keyids=['k2'],threshold=1)})
+    files={'apps/'+str(seed)+'/api':'payload-'+str(seed),'apps/'+str(seed)+'/worker':'worker-'+str(seed)}
+    edge=lambda name,patterns,kid,term=False:dict(name=name,paths=patterns,keyids=[kid],threshold=1,terminating=term)
+    top=targets('targets',{},[edge('team',['apps/*'],'k1')]);team=targets('team',{},[edge('packages',['apps/*'],'k2',True)])
+    leaf=targets('packages',files)
+    metadata={'targets':envelope(top,['k2']),'team':envelope(team,['k1']),'packages':envelope(leaf,['k2']),'unused':envelope(dict(targets('unused',{}),expires=1),['k0'])}
+    bundle=dict(id='bundle-'+str(seed),at=100,roots=[envelope(root,['k0','k1','k2'])],snapshot=envelope(dict(type='snapshot',version=5,expires=180,meta={}),['k2']),metadata=metadata,artifacts=files,requested=sorted(files))
+    refresh(bundle);return anchor,bundle
+
+def fleet(seed=0):
+ anchors={};bundles={}
+ for index,repo in enumerate(['app','lib','base']):
+  root,b=make(seed);anchors[repo]=root;bundles[repo]={k:b[k] for k in ['roots','snapshot','metadata','artifacts']}
+  for role,e in b['metadata'].items():
+   body=e['signed']
+   for info in body['targets'].values():info['dependencies']=[]
+   signer='k1' if role=='team' else 'k0' if role=='unused' else 'k2'
+   b['metadata'][role]=envelope(body,[signer])
+  bundles[repo]['metadata']=b['metadata']
+ def ref(repo,path):return dict(repo=repo,path=path,sha256=hashlib.sha256(bundles[repo]['artifacts'][path].encode()).hexdigest())
+ api='apps/'+str(seed)+'/api';worker='apps/'+str(seed)+'/worker'
+ for repo,deps in [('app',[ref('lib',api),ref('base',worker)]),('lib',[ref('base',worker)])]:
+  body=bundles[repo]['metadata']['packages']['signed'];body['targets'][api]['dependencies']=deps;bundles[repo]['metadata']['packages']=envelope(body,['k2'])
+ for b in bundles.values():refresh(b)
+ return anchors,dict(id='install-'+str(seed),expected_version=0,at=100,bundles=bundles,requested=[ref('app',api)])

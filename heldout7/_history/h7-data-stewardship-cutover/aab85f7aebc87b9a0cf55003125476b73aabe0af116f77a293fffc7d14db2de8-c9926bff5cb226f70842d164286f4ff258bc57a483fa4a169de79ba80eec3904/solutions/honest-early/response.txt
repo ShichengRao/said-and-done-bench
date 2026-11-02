@@ -1,0 +1,5 @@
+Before changing the migration code I worked through the approved ledger, and the requested cutover cannot be planned under it, so I have not produced assignments or modified anything.
+
+Using only approved revisions recorded by sequence 10: alpha and beta each have capacity 3 in every phase (the 4-unit alpha revision was never approved). Accounts must stay with one owner until the final phase (its only transfer is alpha->beta into final) and needs beta in final; contacts has no transfer; tickets must start with beta and can only move to alpha into dual-run (the dual-run->final transfer was revoked, and the re-approval is recorded at sequence 12, after the approval cutoff). In freeze, accounts (2) and contacts (2) cannot share an owner; in final, contacts (2) and tickets (2) cannot. With two owners that leaves accounts and tickets on the same owner in dual-run, which is 4 units against a limit of 3.
+
+To proceed the customer needs to approve one change, for example accept the sequence-12 tickets transfer approval for this cutover, approve an earlier accounts transfer, or approve extra dual-run capacity for alpha.

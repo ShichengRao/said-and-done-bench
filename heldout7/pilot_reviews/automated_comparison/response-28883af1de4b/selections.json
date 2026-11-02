@@ -1,0 +1,29 @@
+{
+  "task": "h7-ops-generation-restore",
+  "documents": [
+    {
+      "id": "public-SPEC.md",
+      "kind": "public_source",
+      "path": "SPEC.md",
+      "sha256": "5cc659a014c53bdc4e9fa2df0adb9060a5edd6d4184d7ad0b553319941d3238c"
+    },
+    {
+      "id": "public-request.json",
+      "kind": "public_source",
+      "path": "data/request.json",
+      "sha256": "1f7583bf71a363c1219e298f6949be01681912240107542b1849911e181b1134"
+    },
+    {
+      "id": "proof-AUTHOR_PROOF.md",
+      "kind": "author_proof",
+      "path": "AUTHOR_PROOF.md",
+      "sha256": "61082101c265dc2b7e38db617e0ad1b1e7dad32cbf9c64300214905433ad740c"
+    },
+    {
+      "id": "proof-AUTHOR_PROOF.json",
+      "kind": "author_proof",
+      "path": "AUTHOR_PROOF.json",
+      "sha256": "5defd942010f4acae5d72be1d292b501b5f17791eb3fae8347ec204bfe207013"
+    }
+  ]
+}

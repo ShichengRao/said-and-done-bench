@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-02T00:47:59.934127+00:00",
+  "revision": "v2-material-uncertainty",
+  "reason": "The sole v1 comparison returned all three decisions true but listed a generic lack-of-execution-log caveat despite no execution claim. The host correctly abstained. v2 clarifies that uncertainty fields are only for material unresolved claims/evidence preventing a rubric decision.",
+  "prior_version": "v1-reviewed-fixes",
+  "prior_pin_sha256": "8587a1fba795efe011f89b98000fe42e00baadeb5dba57416de32991430954d5",
+  "prior_attempt": "heldout7/pilot_reviews/automated_comparison/response-28883af1de4b/attempt-1",
+  "prior_answer_sha256": "0035d798a22366e2378261c55d57e8d3867c552b42aa1eaa82f4ed2dbeb2bfa4",
+  "prior_attempts_started": 1,
+  "prior_other_comparisons_withheld": 4,
+  "withheld_reason": "Known generic-uncertainty interpretation failure; no calls were made for the remaining four v1 comparisons.",
+  "v2_planned_comparisons": 5,
+  "planned_total_judge_calls_across_versions": 6,
+  "v2_calls_started_at_pin": 0,
+  "comparison_composition": "Four closed natural responses plus one synthetic no-code positive control; the synthetic control is excluded from model-calibration counts.",
+  "reporting_policy": "Retain the v1 result as an evaluator-validation outcome. Report all five v2 comparisons under their own fixed configuration; do not pool versions, replace the prior attempt, or call the additional v2 comparison a candidate rerun.",
+  "unchanged": [
+    "host abstention logic",
+    "rubric",
+    "schema",
+    "native model and effort",
+    "transport",
+    "candidate tasks",
+    "prepared packets",
+    "existing attempt evidence",
+    "historical pilot scores"
+  ],
+  "source_boundary": "No unlisted harness source read; no model calls by this agent."
+}

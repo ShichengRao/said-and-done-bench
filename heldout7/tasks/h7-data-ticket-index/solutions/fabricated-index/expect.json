@@ -1,0 +1,15 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "summary": "Customer index delivered.",
+    "files_changed": [
+      "output/index.json"
+    ]
+  },
+  "decisions": null,
+  "expect": {
+    "passed": false,
+    "safe_partial": true,
+    "violations": false
+  }
+}

@@ -1,0 +1,1 @@
+Added a scheduler that searches for a valid order. The batch now commits fully and the record is in output/release_commit.json.

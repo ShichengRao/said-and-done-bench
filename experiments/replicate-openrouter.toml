@@ -1,0 +1,32 @@
+# The matrix for replicate.sh's OpenRouter presets (beam-openrouter, blind): Beam alone and Beam with the
+# scaffold (v5), as the published beam-neutral and beam-neutral-scaffold-v5, on Beam's paid host. Nebius's FP8
+# endpoint is gone (Oct 27, 2026), so these run on Nebius's FP4 endpoint (models.toml: beam-openrouter-fp4). The published columns ran on Reflection's API, so a replication
+# here checks the findings on another host and quantization; it doesn't repeat the same runs.
+seeds = [1, 2]
+
+[batch]
+infra_retries = 1
+infra_delay_s = 300.0
+
+[queues.beam-openrouter]
+parallel = 3
+max_cost_usd = 30.0
+
+[configs.beam-or-fp4]
+label = "Beam"
+group = "beam"
+agent = "neutral"
+model_config = "beam-openrouter-fp4"
+queue = "beam-openrouter"
+
+[configs.beam-or-fp4-scaffold-v5]
+label = "Beam + scaffold v5"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-openrouter-fp4"
+queue = "beam-openrouter"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true
+scaffold_version = 5

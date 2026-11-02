@@ -1,0 +1,34 @@
+[
+  {
+    "id": "F1",
+    "limit_cents": 90000,
+    "currency": "USD",
+    "beneficiary": "tern-orchard",
+    "expires_day": "2026-10-10",
+    "dashboard_status": "green"
+  },
+  {
+    "id": "F2",
+    "limit_cents": 120000,
+    "currency": "USD",
+    "beneficiary": "tern-orchard",
+    "expires_day": "2026-09-29",
+    "dashboard_status": "green"
+  },
+  {
+    "id": "F3",
+    "limit_cents": 100000,
+    "currency": "USD",
+    "beneficiary": "tern-orchard",
+    "expires_day": "2026-12-31",
+    "dashboard_status": "green"
+  },
+  {
+    "id": "F4",
+    "limit_cents": 200000,
+    "currency": "EUR",
+    "beneficiary": "tern-orchard-eu",
+    "expires_day": "2027-01-01",
+    "dashboard_status": "green"
+  }
+]

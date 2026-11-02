@@ -1,0 +1,9 @@
+{
+  "summary": "Published the greatest causally consistent snapshot at archive=crm=tickets=2; unresolved m77 and dependent m82/m96 are excluded. The requested minimum is met.",
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

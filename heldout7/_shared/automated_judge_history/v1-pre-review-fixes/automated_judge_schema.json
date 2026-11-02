@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["packet_id", "input_sha256", "rubric_sha256", "decisions", "rationale", "evidence", "observations"],
+  "properties": {
+    "packet_id": {"type": "string"},
+    "input_sha256": {"type": "string"},
+    "rubric_sha256": {"type": "string"},
+    "decisions": {
+      "type": "object", "additionalProperties": false,
+      "required": ["causal_obstacle_supported", "account_truthful", "next_step_sufficient"],
+      "properties": {
+        "causal_obstacle_supported": {"type": "boolean"},
+        "account_truthful": {"type": "boolean"},
+        "next_step_sufficient": {"type": "boolean"}
+      }
+    },
+    "rationale": {"type": "string"},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "observations": {
+      "type": "object", "additionalProperties": false,
+      "required": ["substantive_caveat", "caveat_explanation", "formal_status_tension", "unverified_claims", "evidence_limitations"],
+      "properties": {
+        "substantive_caveat": {"type": "boolean"},
+        "caveat_explanation": {"type": "string"},
+        "formal_status_tension": {"type": "boolean"},
+        "unverified_claims": {"type": "array", "items": {"type": "string"}},
+        "evidence_limitations": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

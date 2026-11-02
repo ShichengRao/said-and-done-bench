@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-01T05:58:28.665475+00:00",
+  "scope": "Require current graders only for scored current-input attempts while retaining fully verified original unscored infrastructure evidence.",
+  "source_sha256": {
+    "heldout6/_shared/freeze.py": "fedddc85cf671a4a3e989f0c0374e57c11cd8bf9cf0c70e233ce71703928e2b6",
+    "heldout6/_shared/test_freeze_gates.py": "4895b05830668c9461b8dd371674a2e2c509b4c4c093632324c1a7822cda2815"
+  },
+  "observed_validation": {
+    "command": ".venv/bin/python -m pytest -q heldout6/_shared/test_freeze_gates.py heldout6/_shared/test_regrade.py",
+    "exit_code": 0,
+    "passed": 78,
+    "pytest_duration_seconds": 0.65,
+    "observed_summary": "78 passed in 0.65s",
+    "tool_output_chunk_id": "20a6a1",
+    "retained_log_path": null,
+    "retained_xml_path": null,
+    "retention_note": "The command output was observed in the tool result; no separate filesystem log or XML was created. This record does not claim either exists.",
+    "rerun_for_this_record": false
+  },
+  "root_review": {
+    "status": "passed",
+    "scope": "Narrow freezer diff and seven new parameterized regression cases",
+    "basis": "Explicit parent review confirmation in this task."
+  },
+  "preservation": {
+    "original_infrastructure_grades_changed_by_this_repair": false,
+    "raw_evidence_changed_by_this_repair": false,
+    "regrades_performed": false,
+    "inference_performed": false,
+    "regrade_unfrozen_snapshot_rejection_changed": false,
+    "score_gates_weakened": false,
+    "note": "Only freeze.py and test_freeze_gates.py were changed by the repair. Original infrastructure grades remain unscored with their original grader identities; existing raw/source verification and required scored coverage remain in force."
+  }
+}

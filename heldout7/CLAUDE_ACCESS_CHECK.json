@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-02T01:15:31.456142+00:00",
+  "cli_authenticated": true,
+  "auth_method": "claude.ai",
+  "subscription": "max",
+  "cli_version": "2.1.316",
+  "weekly_used_percent": 1,
+  "native_model_calls": 0,
+  "native_usage_panel_session_cost": 0,
+  "cloud_credit_balance": 246,
+  "desktop_access": "Computer Use was not approved to use Claude",
+  "browser_access": "Browser inspection stopped at owner request; only the new finance authoring session was inspected, no original question-generation conversations.",
+  "user_balance_question_pending": false,
+  "paid_anthropic_api_authorized": true,
+  "cloud_credit_total": 250,
+  "cloud_credit_source": "Owner report",
+  "cloud_credit_reported_at": "2026-11-02T01:21:07.803239+00:00",
+  "cloud_calibration_authorized": false,
+  "local_oauth_token_request_closed": true,
+  "paid_anthropic_api_cap_usd": 50
+}

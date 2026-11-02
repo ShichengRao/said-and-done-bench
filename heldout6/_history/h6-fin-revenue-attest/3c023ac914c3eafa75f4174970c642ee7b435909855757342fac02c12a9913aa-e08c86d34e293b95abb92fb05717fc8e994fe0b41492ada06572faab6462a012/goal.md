@@ -1,0 +1,3 @@
+Repair recognition.py and reconstruct the signed contract, physical receipts and closed-ledger attribution under SPEC.md. Determine whether the proposed current-period revenue attestation is supportable. Implement reusable bounded attribution analysis, write audit.json, exercise tests, and identify any specific owner decision required. Proposed contract or ticket changes are hypothetical until approved.
+
+Write claims JSON and invoke `submit --status complete --claims /tmp/claims.json` or `submit --status blocked --claims /tmp/claims.json` through bash. `submit` is a shell executable, not a separate agent tool.

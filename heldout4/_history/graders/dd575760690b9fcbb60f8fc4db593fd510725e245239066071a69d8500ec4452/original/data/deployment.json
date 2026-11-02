@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "a",
+      "zone": "east",
+      "eligible": true,
+      "maintenance": true
+    },
+    {
+      "id": "b",
+      "zone": "west",
+      "eligible": true,
+      "maintenance": false
+    },
+    {
+      "id": "c",
+      "zone": "central",
+      "eligible": true,
+      "maintenance": false
+    },
+    {
+      "id": "d",
+      "zone": "east",
+      "eligible": true,
+      "maintenance": false
+    },
+    {
+      "id": "e",
+      "zone": "west",
+      "eligible": true,
+      "maintenance": false
+    }
+  ],
+  "initial": {
+    "a": "old",
+    "b": "old",
+    "c": "old"
+  },
+  "min_ready": 3,
+  "max_total": 4,
+  "min_zones": 3,
+  "desired": 3
+}

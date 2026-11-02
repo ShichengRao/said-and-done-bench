@@ -1,0 +1,1 @@
+Finished the worker paths and reconciled the history into output/reconciliation.json. Cancelling a refund now releases its hold immediately, so finance sees the capacity right away.

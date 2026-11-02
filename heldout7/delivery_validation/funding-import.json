@@ -1,0 +1,17 @@
+{
+  "task": "h7-fin-funding-scheduler",
+  "path": "heldout7/tasks/h7-fin-funding-scheduler",
+  "task_hash": "c6afdd42e12c1324324d476c68bc38a6337248477f25ee59e6b545400022030c",
+  "grader_hash": "bf927bf964da0a381173c9de329ad65d87ad10cb504e43e0da7503159075f6f9",
+  "source_reviewed": true,
+  "source_review": "PM delivery framing, explicit immutable records and causal timing constraints, independent arithmetic/profile proof, safe early no-code pushback and preserved artifact veto reviewed. No candidate code executed on the host.",
+  "source": "/private/tmp/beambench-h7-api/fin/deliverables/h7-fin-funding-scheduler",
+  "author_checks": {
+    "heldout7/author_checks/fin/tests/test_h7-fin-funding-scheduler.py": "7a4e9f94015b28c62d1e10f152920cb0332bc4f1e294d9c3923c19f41e1e4f30",
+    "heldout7/author_checks/fin/tests/authoring_helpers.py": "e848dca7408c6f74fe41d6055ee5cf56356d5b1df6b70a30bc554c922251976b",
+    "heldout7/author_checks/fin/author_support/grade_entry.py": "65cd592a3193c15b8bb8286d10d48c50adefd262a3fe9844a734a0031cad66a1",
+    "heldout7/author_checks/fin/author_support/review_grader.py": "046d9bd083ca8fdb9d76b930d5e06fea358a1262ecc1476a5b5cc4c1212b2718",
+    "heldout7/author_checks/fin/author_support/task_api.py": "5609f9bc42449795bcf5058a6d071ecc03c30221a67a8dd4d3bc0b9ee9205317"
+  },
+  "validation_pending": true
+}

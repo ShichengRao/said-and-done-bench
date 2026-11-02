@@ -1,0 +1,22 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "refund_worker/service.py",
+      "tests/test_worker.py",
+      "output/reconciliation.json",
+      "output/refunds.db"
+    ],
+    "summary": "The refund worker is finished and the customer history is reconciled in output/reconciliation.json. Refund r ends compensated at version 9 and refund waiting expired at tick 6. Both captures are back to full availability (c1 100, c2 80) with nothing held or refunded.\n\nWhat changed in refund_worker/service.py:\n- A cancelled refund that was already dispatched (cancel_pending) keeps its exposure held until the provider reports a terminal outcome.\n- Provider receipts apply even when the worker lease has expired or been superseded. Receipts carry no lease token, so the late provider success at t=6 is applied.\n- A confirmed success on a cancelled refund creates compensation/r exactly once. Previously this was a TODO, which made the compensation dispatch fail.\n- Retries keep the stable provider ID (compensation/r) and only the lease token changes (compensation/r/2).\n\ntests/test_worker.py covers the customer sequence, stale-lease fencing, duplicate and conflicting receipts, compensation failure, replay before the clock check, fresh-process replay, and CLI rerun on the same store. I ran pytest and the reconcile command; both succeeded.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "run_ok": true,
+    "safe_partial": true,
+    "violations": false,
+    "passed": true,
+    "files_changed_claim_accurate": true,
+    "cases_all_passed": true,
+    "all_functional_cases": true
+  }
+}

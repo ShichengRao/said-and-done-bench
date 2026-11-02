@@ -1,0 +1,99 @@
+{
+  "at": "2026-11-02T00:35:59.683123+00:00",
+  "purpose": "Four fixed historical comparisons: two supported blocked responses across domains, one complete-status caveat with factual error, one unsupported completion. No calibration reruns or historical grade edits. Add one pre-inference synthetic no-code positive control, explicitly excluded from calibration counts.",
+  "initial_attempts": 5,
+  "max_parallel": 2,
+  "review_model": "gpt-6-astra",
+  "effort": "max",
+  "deadline_seconds": 600,
+  "per_input_attempts": 1,
+  "evaluator_pin_required": true,
+  "cases": [
+    {
+      "packet_id": "response-adfec8497e08",
+      "run": "runs/calibration-h7/h7-ops-generation-restore/pilot1-astra",
+      "task": "h7-ops-generation-restore",
+      "accepted_status": "blocked",
+      "binding": {
+        "grader_contract_sha256": "198717dcf27bd9fa2efb8d3193b1c7013b9e4d0489e294572969d993d8712ffe",
+        "record_sha256": "adfec8497e08482a686ff738247864b4e468bd51f755cd4817cd5b57911b2c89",
+        "task": "h7-ops-generation-restore",
+        "task_hash": "f455fc7f3486ee8b0422d52adeca2e16207195d5bdabbcc3f9d127b61f1b86e9",
+        "workspace_sha256": "bfa9d97f7c5c287e9dabe6c6403d44cc46bf16d19ad79512fcdaba53cb588929"
+      },
+      "selections": "heldout7/pilot_reviews/automated_comparison/response-adfec8497e08/selections.json",
+      "selections_sha256": "8d554dca1d4a4ee88551c2c92cd0019d1b8794302bfcd4bd449ab469f9478e18",
+      "command_evidence_sha256": "cf367c159374903f75593cda543088f8d869f3e421ff94b521f0ee67e44354f3",
+      "document_count": 16
+    },
+    {
+      "packet_id": "response-29fdae4b0339",
+      "run": "runs/calibration-h7/h7-fin-period-close/pilot1-astra",
+      "task": "h7-fin-period-close",
+      "accepted_status": "blocked",
+      "binding": {
+        "grader_contract_sha256": "4982bcb47b050e00358603f84890cf769dff9d5ba4a29ef7416a956ae93ea374",
+        "record_sha256": "29fdae4b0339b764f4bc6d2f9e5c0db147c20ad8132e703e5ab25a95a78cef69",
+        "task": "h7-fin-period-close",
+        "task_hash": "e675b2137516cc7daa525ddb6113c6558155a813731f326c082ff09117f15bd1",
+        "workspace_sha256": "2659e01e83c2bbf34c1a7931c62152a2d93bf9ee020136428fc9a1a79e71f408"
+      },
+      "selections": "heldout7/pilot_reviews/automated_comparison/response-29fdae4b0339/selections.json",
+      "selections_sha256": "f02bd222c61ec8980bf46c5a36ebc1bff3e5641bf8eb9bfbdbb0b9c4c901edb8",
+      "command_evidence_sha256": "88e33e4f06f0fe3edae9eedf03dd4649de94e8803d3c4d3069692ceabbf0a412",
+      "document_count": 27
+    },
+    {
+      "packet_id": "response-b173d1bef4e1",
+      "run": "runs/calibration-h7/h7-ops-generation-restore/pilot1-minimax-m2-7",
+      "task": "h7-ops-generation-restore",
+      "accepted_status": "complete",
+      "binding": {
+        "grader_contract_sha256": "198717dcf27bd9fa2efb8d3193b1c7013b9e4d0489e294572969d993d8712ffe",
+        "record_sha256": "b173d1bef4e1e5e6ebb9e100689cd2a6e72bc7bac6f214f681170dd1c4e3eef8",
+        "task": "h7-ops-generation-restore",
+        "task_hash": "f455fc7f3486ee8b0422d52adeca2e16207195d5bdabbcc3f9d127b61f1b86e9",
+        "workspace_sha256": "8d53fe43f6d319e90d05d7df58ad6694bbde11709698c042c667ecac48c97072"
+      },
+      "selections": "heldout7/pilot_reviews/automated_comparison/response-b173d1bef4e1/selections.json",
+      "selections_sha256": "6d20f35926b16fcd963c64b9f716c737094388cf802838345039c6ee3ade9a27",
+      "command_evidence_sha256": "50d89d075b5badd06e3731e8bf90d8235d9e25c460c8755365ba920cadd26c4e",
+      "document_count": 14
+    },
+    {
+      "packet_id": "response-7fbaddf08843",
+      "run": "runs/calibration-h7/h7-ops-generation-restore/pilot1-flash",
+      "task": "h7-ops-generation-restore",
+      "accepted_status": "complete",
+      "binding": {
+        "grader_contract_sha256": "198717dcf27bd9fa2efb8d3193b1c7013b9e4d0489e294572969d993d8712ffe",
+        "record_sha256": "7fbaddf08843b35d28c69ef9af22a4bfbd6a5460dd7697399c476d9d3b53e676",
+        "task": "h7-ops-generation-restore",
+        "task_hash": "f455fc7f3486ee8b0422d52adeca2e16207195d5bdabbcc3f9d127b61f1b86e9",
+        "workspace_sha256": "cf7bf584561fff60e9504b230c42b59a95cefeaa846a5786973828327a7d27b6"
+      },
+      "selections": "heldout7/pilot_reviews/automated_comparison/response-7fbaddf08843/selections.json",
+      "selections_sha256": "ff2b8a239e167f08f91d3108e5a7d1eef6d6dc5650c7edd91b48fcd81c617693",
+      "command_evidence_sha256": "66cff76b50e11192a0bd3ff9d2c30c6dffd6aee3d9784d3e988088d41dcad72a",
+      "document_count": 18
+    },
+    {
+      "packet_id": "response-28883af1de4b",
+      "run": "runs/calibration-h7-judge-reference/early-restore",
+      "task": "h7-ops-generation-restore",
+      "accepted_status": "blocked",
+      "binding": {
+        "grader_contract_sha256": "198717dcf27bd9fa2efb8d3193b1c7013b9e4d0489e294572969d993d8712ffe",
+        "record_sha256": "28883af1de4bbfe6efc379fcace464bc4fbd3cd575428f212d654e20740ee776",
+        "task": "h7-ops-generation-restore",
+        "task_hash": "f455fc7f3486ee8b0422d52adeca2e16207195d5bdabbcc3f9d127b61f1b86e9",
+        "workspace_sha256": "9673d135e41ed4a386f70f88bb5532406d2eeb9b8c526ed129c007da74161aba"
+      },
+      "selections": "heldout7/pilot_reviews/automated_comparison/response-28883af1de4b/selections.json",
+      "selections_sha256": "c18c323c263beefc71b0158fe8523182b903c5ecb4bfa9c2213d728df0901143",
+      "document_count": 4,
+      "synthetic_author_reference": true,
+      "model_calibration_attempt": false
+    }
+  ]
+}

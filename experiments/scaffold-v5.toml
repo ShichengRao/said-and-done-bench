@@ -1,0 +1,25 @@
+# Scaffold v5's development runs (Oct 30): the 28 tasks of the score, seeds 1-2, on Reflection's API. These are
+# development results: v5 is tuned on these tasks. Its claim rests on the blind round 4, run after v5 is frozen.
+# Two runs at once (Reflection raised Beam's allowance on Oct 29; the batch backs off on errors).
+#   uv run python scripts/batch_in_order.py --out runs/main --matrix experiments/scaffold-v5.toml \
+#     --part tasks=no-valid-option configs=beam-neutral-scaffold-v5 seeds=1,2 \
+#     --part tasks=heldout-walls configs=beam-neutral-scaffold-v5 seeds=1,2 \
+#     --part dir=tasks configs=beam-neutral-scaffold-v5 seeds=1,2
+extends = "heldout-walls.toml"
+seeds = [1, 2]
+
+[queues.reflection]
+parallel = 2
+
+[configs.beam-neutral-scaffold-v5]  # v5 (beambench/scaffold.py), frozen before the blind round 4 runs.
+label = "Beam + scaffold v5"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-reflection"
+queue = "reflection"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true
+scaffold_version = 5
+

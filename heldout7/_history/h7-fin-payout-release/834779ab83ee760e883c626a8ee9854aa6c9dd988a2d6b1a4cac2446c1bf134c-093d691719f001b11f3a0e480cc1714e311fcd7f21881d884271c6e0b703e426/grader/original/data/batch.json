@@ -1,0 +1,23 @@
+{
+  "customer": "Kestrel Marketplace Ltd (fictional)",
+  "batch": "KM-2026-10-31-B",
+  "as_of": 20,
+  "accounts": [
+    {
+      "id": "A",
+      "balance": 1
+    },
+    {
+      "id": "B",
+      "balance": 6
+    },
+    {
+      "id": "C",
+      "balance": 4
+    },
+    {
+      "id": "D",
+      "balance": 2
+    }
+  ]
+}

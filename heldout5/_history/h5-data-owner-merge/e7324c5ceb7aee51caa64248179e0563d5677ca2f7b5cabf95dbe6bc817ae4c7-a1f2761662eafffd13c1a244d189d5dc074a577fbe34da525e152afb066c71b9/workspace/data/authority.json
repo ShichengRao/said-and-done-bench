@@ -1,0 +1,66 @@
+[
+  {
+    "at": 10,
+    "op": "grant",
+    "owner": "u14",
+    "scope": "s4",
+    "seq": 1,
+    "until": null
+  },
+  {
+    "at": 11,
+    "op": "grant",
+    "owner": "u27",
+    "scope": "s4",
+    "seq": 2,
+    "until": null
+  },
+  {
+    "at": 12,
+    "op": "grant",
+    "owner": "u38",
+    "scope": "s4",
+    "seq": 3,
+    "until": null
+  },
+  {
+    "at": 13,
+    "op": "grant",
+    "owner": "u14",
+    "scope": "s8",
+    "seq": 4,
+    "until": null
+  },
+  {
+    "at": 14,
+    "op": "grant",
+    "owner": "u27",
+    "scope": "s8",
+    "seq": 5,
+    "until": null
+  },
+  {
+    "at": 25,
+    "op": "revoke",
+    "owner": "u27",
+    "scope": "s8",
+    "seq": 6,
+    "until": null
+  },
+  {
+    "at": 40,
+    "op": "grant",
+    "owner": "u27",
+    "scope": "s8",
+    "seq": 7,
+    "until": 60
+  },
+  {
+    "at": 70,
+    "op": "grant",
+    "owner": "u38",
+    "scope": "s8",
+    "seq": 8,
+    "until": null
+  }
+]

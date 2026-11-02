@@ -1,0 +1,38 @@
+...F.............                                                        [100%]
+=================================== FAILURES ===================================
+___________________ test_ledger_fixture_reused_byte_for_byte ___________________
+
+    def test_ledger_fixture_reused_byte_for_byte():
+        previous = h.ROOT / 'previous/h6-data-service-scope/workspace/data/ledger.json'
+>       assert h.sha(previous) == h.sha(ROOT / 'workspace/data/ledger.json')
+               ^^^^^^^^^^^^^^^
+
+tests/test_h7-data-batch-reconciliation.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/h7_support.py:170: in sha
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/author-check/previous/h6-data-service-scope/workspace/data/ledger.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tmp/author-check/previous/h6-data-service-scope/workspace/data/ledger.json'
+
+/usr/local/lib/python3.12/pathlib.py:1013: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_h7-data-batch-reconciliation.py::test_ledger_fixture_reused_byte_for_byte
+1 failed, 16 passed in 8.56s

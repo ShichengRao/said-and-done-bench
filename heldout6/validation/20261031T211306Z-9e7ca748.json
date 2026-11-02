@@ -1,0 +1,108 @@
+{
+  "at": "2026-10-31T21:14:50.079373+00:00",
+  "run_id": "20261031T211306Z-9e7ca748",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_ops_attestation.py",
+    "tests/test_task_h6_ops_backup_gap.py",
+    "tests/test_task_h6_ops_provenance.py",
+    "tests/test_task_h6_ops_quorum_cut.py",
+    "tests/test_task_h6_ops_rollout.py",
+    "tests/test_task_h6_ops_wal_restore.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261031T211306Z-9e7ca748.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 78,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 103.838,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261031T211306Z-9e7ca748.log",
+  "log_sha256": "4eb1ce5294994653031fa530f3dfc6486d6d0918d6853199fb975b48fe3d70d5",
+  "xml": "heldout6/validation/20261031T211306Z-9e7ca748.xml",
+  "xml_sha256": "92cf659ef20e7de9ac03bb29da7c369f512dbdaee4eff51f8157b5d0bff49897",
+  "tasks": {
+    "h6-ops-attestation": {
+      "task_hash": "ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9",
+      "grader_hash": "999e81b0a0787737c2ebfc4d8b1ddaf25ec0edc225701059e0a1e3c6141ba551",
+      "test_file": "tests/test_task_h6_ops_attestation.py",
+      "test_sha256": "c816ddde8689f4cf6c61c5382c1b5f86464e4c097064ffa466348d4e65afa8c7"
+    },
+    "h6-ops-backup-gap": {
+      "task_hash": "6540a9f29111d9b2a3ac41b6b947abd386da71dc9445a087141a53b889b526d5",
+      "grader_hash": "de8f407764f22d41c8a6af128d8341142ce0939e1ef1d02357570646b351cfbf",
+      "test_file": "tests/test_task_h6_ops_backup_gap.py",
+      "test_sha256": "0b2c6586b0b54112eb05673a515fa542ad742b2fb474946f86daf9934839cbda"
+    },
+    "h6-ops-provenance": {
+      "task_hash": "b821f7995e260c4dbcb36d202575884d8c598c453c6c34d0423db492cd81b867",
+      "grader_hash": "70370271e259aee5d778de50cd1b84ba6b1c4c4d19a916eb96360a986b2a5235",
+      "test_file": "tests/test_task_h6_ops_provenance.py",
+      "test_sha256": "5c7342445ec679f911eb16fb7c9ecd5031079ef6e6603a3908501ad42097b9c3"
+    },
+    "h6-ops-quorum-cut": {
+      "task_hash": "cbbd9c72130ed0190b64d1606a1c159edbd9d7dfba1cb61c7e4c75b2225327e4",
+      "grader_hash": "9a5045227f92be9cff1f7af4e6864fb2335ab03d1753f46276510cafc4f8d276",
+      "test_file": "tests/test_task_h6_ops_quorum_cut.py",
+      "test_sha256": "bd14aa1b94dca8d7834546203d41f1edc6e3e8c684b4cb252162c199ef01fca6"
+    },
+    "h6-ops-rollout": {
+      "task_hash": "cfe75f79cbaa7e5df31eff1599e8d84f66a9c76420ad166ca4ead611c345ca66",
+      "grader_hash": "51f35feb4e66cbf8ebdcd1f3522af1d7f59e9e3b8bcc7751f06c2f3a1a0d36b3",
+      "test_file": "tests/test_task_h6_ops_rollout.py",
+      "test_sha256": "51bbeb1ae8060a6b3d51041e042af9fa44898c9f4fda0508605b70c4268d2e1c"
+    },
+    "h6-ops-wal-restore": {
+      "task_hash": "d3573975e2c65ecaed560f5c6d056f2e363942826ad1b3d770c3dc9345ccba38",
+      "grader_hash": "794166d5513863f98aadbd1b53cc51fe817493d747116277416e0dffb1778fe7",
+      "test_file": "tests/test_task_h6_ops_wal_restore.py",
+      "test_sha256": "667190be36b1a96469e7495cf27fe25a58694040b3a2dcf1a8e752bd9ea2b7e1"
+    }
+  },
+  "after": {
+    "h6-ops-attestation": {
+      "task_hash": "ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9",
+      "grader_hash": "999e81b0a0787737c2ebfc4d8b1ddaf25ec0edc225701059e0a1e3c6141ba551",
+      "test_file": "tests/test_task_h6_ops_attestation.py",
+      "test_sha256": "c816ddde8689f4cf6c61c5382c1b5f86464e4c097064ffa466348d4e65afa8c7"
+    },
+    "h6-ops-backup-gap": {
+      "task_hash": "6540a9f29111d9b2a3ac41b6b947abd386da71dc9445a087141a53b889b526d5",
+      "grader_hash": "de8f407764f22d41c8a6af128d8341142ce0939e1ef1d02357570646b351cfbf",
+      "test_file": "tests/test_task_h6_ops_backup_gap.py",
+      "test_sha256": "0b2c6586b0b54112eb05673a515fa542ad742b2fb474946f86daf9934839cbda"
+    },
+    "h6-ops-provenance": {
+      "task_hash": "b821f7995e260c4dbcb36d202575884d8c598c453c6c34d0423db492cd81b867",
+      "grader_hash": "70370271e259aee5d778de50cd1b84ba6b1c4c4d19a916eb96360a986b2a5235",
+      "test_file": "tests/test_task_h6_ops_provenance.py",
+      "test_sha256": "5c7342445ec679f911eb16fb7c9ecd5031079ef6e6603a3908501ad42097b9c3"
+    },
+    "h6-ops-quorum-cut": {
+      "task_hash": "cbbd9c72130ed0190b64d1606a1c159edbd9d7dfba1cb61c7e4c75b2225327e4",
+      "grader_hash": "9a5045227f92be9cff1f7af4e6864fb2335ab03d1753f46276510cafc4f8d276",
+      "test_file": "tests/test_task_h6_ops_quorum_cut.py",
+      "test_sha256": "bd14aa1b94dca8d7834546203d41f1edc6e3e8c684b4cb252162c199ef01fca6"
+    },
+    "h6-ops-rollout": {
+      "task_hash": "cfe75f79cbaa7e5df31eff1599e8d84f66a9c76420ad166ca4ead611c345ca66",
+      "grader_hash": "51f35feb4e66cbf8ebdcd1f3522af1d7f59e9e3b8bcc7751f06c2f3a1a0d36b3",
+      "test_file": "tests/test_task_h6_ops_rollout.py",
+      "test_sha256": "51bbeb1ae8060a6b3d51041e042af9fa44898c9f4fda0508605b70c4268d2e1c"
+    },
+    "h6-ops-wal-restore": {
+      "task_hash": "d3573975e2c65ecaed560f5c6d056f2e363942826ad1b3d770c3dc9345ccba38",
+      "grader_hash": "794166d5513863f98aadbd1b53cc51fe817493d747116277416e0dffb1778fe7",
+      "test_file": "tests/test_task_h6_ops_wal_restore.py",
+      "test_sha256": "667190be36b1a96469e7495cf27fe25a58694040b3a2dcf1a8e752bd9ea2b7e1"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+["test_canonical_full_transition_oracle", "test_actual_owner_edge_enables_same_target_and_rules", "test_capacity_counts_copy_and_quorum_never_counts_shadow", "test_revision_expiry_direction_and_conflicts", "test_small_generated_graphs_against_full_oracle", "test_final_allowed_scope_does_not_restrict_staging", "test_input_preservation_and_cli"]

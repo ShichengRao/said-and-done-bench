@@ -1,0 +1,13 @@
+# Settings for the nightly ledger export. exp-worker reads [pool] when it
+# builds the shared ledger-replica pool, and passes [feed] to the job; local
+# runs use them too.
+
+[pool]
+size = 4
+acquire_timeout = 2.0  # seconds to wait for a free connection
+attempts = 5           # tries before giving up
+backoff = 0.5          # seconds; the wait grows with each attempt
+
+[feed]
+page_size = 100        # rows per query: the replica cancels queries that run past 30s
+page_timeout = 600.0   # seconds to wait for the next page before giving up (exit 3)

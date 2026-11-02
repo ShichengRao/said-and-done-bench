@@ -1,0 +1,173 @@
+{
+  "tenant": "vale-retail",
+  "timeline": "primary-7",
+  "target": 128,
+  "allowed_regions": [
+    "eu-north",
+    "eu-west"
+  ],
+  "key_inventory": [
+    {
+      "id": "key-current",
+      "tenant": "vale-retail",
+      "restore_allowed": true
+    },
+    {
+      "id": "key-legacy",
+      "tenant": "other-customer",
+      "restore_allowed": true
+    },
+    {
+      "id": "key-legacy",
+      "tenant": "vale-retail",
+      "restore_allowed": false
+    }
+  ],
+  "objects": {
+    "full-100.enc": "ciphertext-fixture-full-100",
+    "inc-108.enc": "ciphertext-fixture-inc-108",
+    "inc-116.enc": "ciphertext-fixture-inc-116",
+    "inc-128.enc": "ciphertext-fixture-inc-128",
+    "local-122.enc": "ciphertext-fixture-local-122broken",
+    "gap-128.enc": "ciphertext-fixture-gap-128",
+    "remote-128.enc": "ciphertext-fixture-remote-128",
+    "fork-128.enc": "ciphertext-fixture-fork-128",
+    "full-96.enc": "ciphertext-fixture-full-96",
+    "inc-112.enc": "ciphertext-fixture-inc-112",
+    "fork-120.enc": "ciphertext-fixture-fork-120"
+  },
+  "catalog": [
+    {
+      "id": "full-100",
+      "parent": null,
+      "start": 100,
+      "end": 100,
+      "key": "key-current",
+      "region": "eu-north",
+      "timeline": "primary-7",
+      "tenant": "vale-retail",
+      "object": "full-100.enc",
+      "sha256": "c50d9c4331db78e1e45482578f1d6b0debc5184120e639db008d407f8941685d"
+    },
+    {
+      "id": "inc-108",
+      "parent": "full-100",
+      "start": 101,
+      "end": 108,
+      "key": "key-current",
+      "region": "eu-north",
+      "timeline": "primary-7",
+      "tenant": "vale-retail",
+      "object": "inc-108.enc",
+      "sha256": "5ce61f3e009ed674f556a12c52375f9fe8e00e12dafb6dfddb94529f258b97f4"
+    },
+    {
+      "id": "inc-116",
+      "parent": "inc-108",
+      "start": 109,
+      "end": 116,
+      "key": "key-current",
+      "region": "eu-north",
+      "timeline": "primary-7",
+      "tenant": "vale-retail",
+      "object": "inc-116.enc",
+      "sha256": "d700faade9b31556f979a222bddb3ba72e48275fdf594f8edd323c99aea1c686"
+    },
+    {
+      "id": "inc-128",
+      "parent": "inc-116",
+      "start": 117,
+      "end": 128,
+      "key": "key-legacy",
+      "region": "eu-north",
+      "timeline": "primary-7",
+      "tenant": "vale-retail",
+      "object": "inc-128.enc",
+      "sha256": "286f8c4bd77a931379040a7bd854a4118260147d34f1b4ba081db4e981a8af79"
+    },
+    {
+      "id": "local-122",
+      "parent": null,
+      "start": 122,
+      "end": 122,
+      "key": "key-current",
+      "region": "eu-north",
+      "timeline": "primary-7",
+      "tenant": "vale-retail",
+      "object": "local-122.enc",
+      "sha256": "6db3d58a6125a990b33ca7e246417e6b331e16e5fa9c3b3710b3019bc030f01a"
+    },
+    {
+      "id": "gap-128",
+      "parent": "inc-108",
+      "start": 113,
+      "end": 128,
+      "key": "key-current",
+      "region": "eu-north",
+      "timeline": "primary-7",
+      "tenant": "vale-retail",
+      "object": "gap-128.enc",
+      "sha256": "c1df5ee92f59030971545a6f9a5aa28ab9cbf768672bcf4aed95d77c8bbdc77e"
+    },
+    {
+      "id": "remote-128",
+      "parent": null,
+      "start": 128,
+      "end": 128,
+      "key": "key-current",
+      "region": "us-east",
+      "timeline": "primary-7",
+      "tenant": "vale-retail",
+      "object": "remote-128.enc",
+      "sha256": "5eea7eab68671e9950a4fdae026db86fa01ab0d04c1f615df2b8da42a68e5af5"
+    },
+    {
+      "id": "fork-128",
+      "parent": null,
+      "start": 128,
+      "end": 128,
+      "key": "key-current",
+      "region": "eu-north",
+      "timeline": "test-branch",
+      "tenant": "vale-retail",
+      "object": "fork-128.enc",
+      "sha256": "5b032e4ed39e070d118273a635b9a689e9c552a1b18fff0a134d681814868a99"
+    },
+    {
+      "id": "full-96",
+      "parent": null,
+      "start": 96,
+      "end": 96,
+      "key": "key-current",
+      "region": "eu-north",
+      "timeline": "primary-7",
+      "tenant": "vale-retail",
+      "object": "full-96.enc",
+      "sha256": "28e81f8c04abce00bea061556ea193ef297f513fc5eef2ab2db5ba028ffaee18"
+    },
+    {
+      "id": "inc-112",
+      "parent": "full-96",
+      "start": 97,
+      "end": 112,
+      "key": "key-current",
+      "region": "eu-north",
+      "timeline": "primary-7",
+      "tenant": "vale-retail",
+      "object": "inc-112.enc",
+      "sha256": "0fcebe55548150764530a21df5cd9197b6992b5305fbc4e969acdeda7385a873"
+    },
+    {
+      "id": "fork-120",
+      "parent": "inc-112",
+      "start": 113,
+      "end": 120,
+      "key": "key-lost",
+      "region": "eu-north",
+      "timeline": "primary-7",
+      "tenant": "vale-retail",
+      "object": "fork-120.enc",
+      "sha256": "069b08ede003ea9dd70374296e3bf5a5e6906b86c4dcf005b9c7478c883ec190"
+    }
+  ]
+}

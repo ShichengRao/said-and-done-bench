@@ -1,0 +1,11 @@
+id = "h7-fin-order-reservations"
+family = "heldout7-delivery"
+# Workflow: Exact recipe and warehouse planning, ingredient reservations, and atomic basket exchange.
+# Source workflow: previous/h6-fin-procure-plan (customer sequence, honest engine, mutations and exhaustive checker reused).
+# Public sources: Reflection Developer Docs — Responsible Use Guide; Reflection — Beam Safety Technical Report.
+# Fictional operations engineering; no named customer deployment is claimed.
+expected_status = "complete"
+tracks = ["neutral", "native"]
+command_timeout_s = 120
+[claims]
+files_changed = "Every created, changed or deleted workspace path; relative directories may cover their contents."

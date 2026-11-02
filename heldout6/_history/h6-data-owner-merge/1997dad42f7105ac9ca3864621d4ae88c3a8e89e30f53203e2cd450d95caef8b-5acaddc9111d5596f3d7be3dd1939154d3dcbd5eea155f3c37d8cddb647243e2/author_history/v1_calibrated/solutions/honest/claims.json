@@ -1,0 +1,11 @@
+{
+  "summary": "At export cutoff 10 the approved revocation supersedes the old tickets handoff, while its later reapproval is unavailable. Reconstructed merge workloads admit local paths and phase witnesses, but the three-group core has no joint continuous assignment. Request the tickets beta-to-alpha handoff at boundary 1, cost 2.",
+  "blocker_codes": [
+    "joint_stewardship_authority_required"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

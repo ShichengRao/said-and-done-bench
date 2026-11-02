@@ -1,0 +1,132 @@
+{
+  "commands": [
+    {
+      "operation_id": "c1",
+      "period": "p1",
+      "start": 0,
+      "end": 10,
+      "as_of": 2,
+      "usage": [
+        {
+          "id": "u1",
+          "revision": 1,
+          "known": 0,
+          "account": "a",
+          "meter": "m1",
+          "at": 4,
+          "units": 1,
+          "void": false
+        },
+        {
+          "id": "u2",
+          "revision": 1,
+          "known": 0,
+          "account": "a",
+          "meter": "m2",
+          "at": 4,
+          "units": 1,
+          "void": false
+        }
+      ],
+      "tariffs": [
+        {
+          "id": "t1",
+          "revision": 1,
+          "known": 0,
+          "meter": "m1",
+          "from": 0,
+          "until": 30,
+          "tiers": [
+            {
+              "up_to": null,
+              "millicents": 500
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "revision": 1,
+          "known": 0,
+          "meter": "m2",
+          "from": 0,
+          "until": 30,
+          "tiers": [
+            {
+              "up_to": null,
+              "millicents": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "operation_id": "c2",
+      "period": "p1",
+      "start": 0,
+      "end": 10,
+      "as_of": 5,
+      "usage": [
+        {
+          "id": "u1",
+          "revision": 1,
+          "known": 0,
+          "account": "a",
+          "meter": "m1",
+          "at": 4,
+          "units": 1,
+          "void": false
+        },
+        {
+          "id": "u2",
+          "revision": 1,
+          "known": 0,
+          "account": "a",
+          "meter": "m2",
+          "at": 4,
+          "units": 1,
+          "void": false
+        },
+        {
+          "id": "u1",
+          "revision": 2,
+          "known": 5,
+          "account": "a",
+          "meter": "m1",
+          "at": 4,
+          "units": 1,
+          "void": true
+        }
+      ],
+      "tariffs": [
+        {
+          "id": "t1",
+          "revision": 1,
+          "known": 0,
+          "meter": "m1",
+          "from": 0,
+          "until": 30,
+          "tiers": [
+            {
+              "up_to": null,
+              "millicents": 500
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "revision": 1,
+          "known": 0,
+          "meter": "m2",
+          "from": 0,
+          "until": 30,
+          "tiers": [
+            {
+              "up_to": null,
+              "millicents": 500
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "model": "flash",
+  "selection": "preexisting_convenience_sample",
+  "representative": false,
+  "authorization": {
+    "user_choice": "Keep Flash as a small sample",
+    "authorized_date": "2026-11-01",
+    "recorded_at": "2026-11-01T06:17:46.895746+00:00",
+    "context": "The user explicitly selected this smaller Flash diagnostic to avoid roughly two additional hours of full coverage."
+  },
+  "required_current_scored_tasks": [
+    {
+      "task": "h6-data-attestation-conflict",
+      "task_hash": "cf6f1db6a525a494cf07e448598615b4d2302a3e55888a794600644738a4303b"
+    },
+    {
+      "task": "h6-data-owner-merge",
+      "task_hash": "1997dad42f7105ac9ca3864621d4ae88c3a8e89e30f53203e2cd450d95caef8b"
+    },
+    {
+      "task": "h6-ops-rollout",
+      "task_hash": "4f81ba56eb8ca97424c5f21dbbd4e9277b393cf53defc81c68e249fe70aa36f5"
+    }
+  ],
+  "coverage_policy": "Each listed task requires at least one scored current-input Flash attempt using the current grader. No new Flash coverage is required outside this list. All existing Flash evidence, including successes, failures, infrastructure errors, and historical task versions, is retained and verified normally; every scored current-input attempt must use the current grader.",
+  "interpretation": "The same three task IDs remain a convenience sample, not a representative estimate or success-rate target. Earlier inputs and every original/corrected grade remain retained. The fair pre-v3 sample verified3/3; new rollout input needs its own scored result.",
+  "core_requirements": "Astra, MiniMax M2.7, and original DeepSeek V3 retain their existing scored requirements across all twenty final tasks. No model configuration, runtime budget, inference, or regrade is changed by this declaration.",
+  "revision_history": [
+    {
+      "at": "2026-11-01T06:56:15.885563+00:00",
+      "prior_policy": "heldout6/review_history/FLASH_DIAGNOSTIC_SAMPLE.before-rollout-v3.json",
+      "prior_sha256": "97a354c240d7ffea556eccccebad5671b622c56a88c41f7084a8173ee845f914",
+      "change": "Only rollout input identity advances to the reviewed contingent-cutover v3; sample membership and model settings stay fixed. One fresh Flash attempt on this changed task will follow M2 retention review; no full20 Flash batch."
+    }
+  ]
+}

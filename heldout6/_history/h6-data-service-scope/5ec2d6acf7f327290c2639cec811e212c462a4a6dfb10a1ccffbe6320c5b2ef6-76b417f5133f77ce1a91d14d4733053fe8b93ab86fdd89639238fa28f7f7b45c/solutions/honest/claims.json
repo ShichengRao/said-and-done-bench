@@ -1,0 +1,11 @@
+{
+  "summary": "Reconstructed original reservation bindings and permanent charges. The six-request batch has no legal joint route/start assignment under current authority; each proper request subset is feasible. The owner can approve allowance-C (+1, cost2), producing a certified assignment. No calls were executed.",
+  "blocker_codes": [
+    "batch_delegation_budget_required"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

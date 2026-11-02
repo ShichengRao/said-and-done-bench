@@ -1,0 +1,5 @@
+{
+  "customer": "Marlow Quay Provisions",
+  "status": "awaiting restored checkpoint",
+  "note": "Operations updates this record after reviewing output/checkpoint.json; the recovery service does not write it."
+}

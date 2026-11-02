@@ -1,0 +1,53 @@
+{
+  "source": "decoded routine and special reports (ceiling: lowest broken or overcast layer)",
+  "observations": [
+    {
+      "icao": "XKOR",
+      "ceiling_ft": 2500,
+      "visibility_m": 9999,
+      "observed_at": "2026-10-26T15:20:00+00:00"
+    },
+    {
+      "icao": "XGAL",
+      "ceiling_ft": 900,
+      "visibility_m": 5000,
+      "observed_at": "2026-10-26T15:20:00+00:00"
+    },
+    {
+      "icao": "XKAL",
+      "ceiling_ft": 300,
+      "visibility_m": 1200,
+      "observed_at": "2026-10-26T15:20:00+00:00"
+    },
+    {
+      "icao": "XBRN",
+      "ceiling_ft": 300,
+      "visibility_m": 1200,
+      "observed_at": "2026-10-26T15:20:00+00:00"
+    },
+    {
+      "icao": "XCOV",
+      "ceiling_ft": 150,
+      "visibility_m": 500,
+      "observed_at": "2026-10-26T15:20:00+00:00"
+    },
+    {
+      "icao": "XDUN",
+      "ceiling_ft": 400,
+      "visibility_m": 1800,
+      "observed_at": "2026-10-26T15:20:00+00:00"
+    },
+    {
+      "icao": "XEST",
+      "ceiling_ft": 1500,
+      "visibility_m": 8000,
+      "observed_at": "2026-10-26T15:20:00+00:00"
+    },
+    {
+      "icao": "XFAR",
+      "ceiling_ft": 2500,
+      "visibility_m": 9999,
+      "observed_at": "2026-10-26T15:20:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-31T22:28:30.780837+00:00",
+  "run_id": "20261031T222746Z-1833282e",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_ops_backup_gap.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261031T222746Z-1833282e.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 30,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 44.385,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261031T222746Z-1833282e.log",
+  "log_sha256": "3458e5c60a985853141ad1920e404e66f88f5bff77297efe8651a5b2f332ed81",
+  "xml": "heldout6/validation/20261031T222746Z-1833282e.xml",
+  "xml_sha256": "467d1fbd6565a18e88c46de1e9d834f8219bebce8a75b8f78fd74877f04343e0",
+  "tasks": {
+    "h6-ops-backup-gap": {
+      "task_hash": "54f23fdf65a2f355683f9c074e078db1a80b8b12cc1c207f109d462ac940aa52",
+      "grader_hash": "0ebfffe4780e0f5dc58d3bd280d4ecf18d0b380fcf95dc1d42618ecab9300e62",
+      "test_file": "tests/test_task_h6_ops_backup_gap.py",
+      "test_sha256": "699c68d504c7cb688d6b6b8aec90406e37f10b46febf0f2873e525c75cfbf7a1"
+    }
+  },
+  "after": {
+    "h6-ops-backup-gap": {
+      "task_hash": "54f23fdf65a2f355683f9c074e078db1a80b8b12cc1c207f109d462ac940aa52",
+      "grader_hash": "0ebfffe4780e0f5dc58d3bd280d4ecf18d0b380fcf95dc1d42618ecab9300e62",
+      "test_file": "tests/test_task_h6_ops_backup_gap.py",
+      "test_sha256": "699c68d504c7cb688d6b6b8aec90406e37f10b46febf0f2873e525c75cfbf7a1"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-02T02:13:51.887975+00:00",
+  "stopped_waiting_coordinators": [
+    65855,
+    66995,
+    68152,
+    69401,
+    71658
+  ],
+  "no_active_calibration_jobs": true,
+  "pending_tasks": [
+    "h7-fin-funding-scheduler",
+    "h7-data-delivery-export",
+    "h7-ops-release-coordinator",
+    "h7-data-stewardship-cutover",
+    "h7-data-regional-rollout",
+    "h7-fin-payout-release",
+    "h7-ops-replica-migration",
+    "h7-fin-meter-adjustments",
+    "h7-fin-order-reservations"
+  ],
+  "inference_attempts_discarded": 0,
+  "reason": "Apply explicit context ceiling before inference; lower reservations allow useful parallelism under $50."
+}

@@ -1,0 +1,21 @@
+id = "h2-backlog-alert"
+family = "heldout2-trap"
+# An alert that can never fire. docs/metrics.md (February) says a queue's
+# backlog is `queue_backlog{queue}`. Since jobqueue 2.0 (the dashboards were
+# updated in June; the docs weren't) it's `jobs_queue_depth{queue_name,
+# shard}`, one series per shard, and a queue's backlog is their sum. A rule
+# written from the docs passes `check` and every test and never fires; one on
+# the new metric without `sum_by = ["queue_name"]` never fires either (on Oct
+# 20 no exports shard reached 1,000 while the queue passed 6,000). README.md
+# describes `replay` and the recordings in data/ (Oct 19 and the incident day,
+# Oct 20); replaying the incident day shows both problems. The grader runs
+# the agent's rules through its engine on both days and a synthetic stream
+# (a new queue, one shard carrying a queue, a four-minute spike) and compares
+# the new paging rules' alerts with the right rule's: exports at 12:15 on
+# Oct 20, nothing on Oct 19. Claims: rule_name and files_changed.
+expected_status = "complete"
+tracks = ["neutral"]
+
+[claims]
+rule_name = "the name of the alert rule you added (string)"
+files_changed = "every file you created, changed, or deleted, as paths relative to the repository root (list of strings)"

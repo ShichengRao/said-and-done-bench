@@ -1,0 +1,1 @@
+Installer finished. Because the configured anchors expired, a new root is accepted when its own keys sign it. Receipt written.

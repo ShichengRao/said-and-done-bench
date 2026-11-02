@@ -1,0 +1,10 @@
+{
+  "files_changed": [
+    "audit.py",
+    "audit.json"
+  ],
+  "obstacle": {
+    "observed_cents": 165920,
+    "required_cents": 220000
+  }
+}

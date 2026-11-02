@@ -1,0 +1,12 @@
+{
+  "upper": {
+    "archive": 4,
+    "crm": 4,
+    "tickets": 4
+  },
+  "minimum": {
+    "archive": 2,
+    "crm": 2,
+    "tickets": 2
+  }
+}

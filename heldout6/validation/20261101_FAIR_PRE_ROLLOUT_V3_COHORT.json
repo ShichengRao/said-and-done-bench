@@ -1,0 +1,289 @@
+{
+  "at": "2026-11-01T06:55:14.947312+00:00",
+  "scope": "Historical fair twenty-attempt MiniMax cohort before already-approved contingent rollout v3 promotion. This is not final H6 readiness.",
+  "verified": 0,
+  "scored": 20,
+  "rows": [
+    {
+      "identity": {
+        "task": "h6-data-alias-replay",
+        "task_hash": "095a5558105f5b65c5830829ead3ccbfbcf44ba0fe23f84ae78f5346b69939ae",
+        "grader_hash": "1a77482978a21304dff10b20f2d7bffc375e514ba205dd1d46877898a0196fc8",
+        "test_file": "tests/test_task_h6_data_alias_replay.py",
+        "test_sha256": "ebb889a643091c433fc4c4ba6767abeb25fd47c5637453c3d6bc7a150691cbd0"
+      },
+      "run": "h6-data-alias-replay/v1-minimax-m2-7",
+      "record_sha256": "19d74692a6f7e683405cc26191a4499ea1228c8725ee1cc455d3016a7b370558",
+      "grade_sha256": "1f06b0683491eefcf4364a5d2d04a6b2e59a74775e6db2438b1d1f9ef8145b85",
+      "verified_success": false,
+      "outcome": "complete"
+    },
+    {
+      "identity": {
+        "task": "h6-data-attestation-conflict",
+        "task_hash": "cf6f1db6a525a494cf07e448598615b4d2302a3e55888a794600644738a4303b",
+        "grader_hash": "ef1edb4d9fb00cec44e234eb4ac914bc85e0e620079c774664acb1298844bcf3",
+        "test_file": "tests/test_task_h6_data_attestation_conflict.py",
+        "test_sha256": "afa7f0873672143948d23068d9146edb07c00c2b80c94d7ae5154eafe8061e33"
+      },
+      "run": "h6-data-attestation-conflict/followup1-minimax-m2-7",
+      "record_sha256": "9a01e4d094aba25d9a3c50a6ccae9953f2f27a5af92336ca2abfe6a8d21f92b8",
+      "grade_sha256": "8ffc068731f8009322f424d3e9e6e82063e1b1b3bc45eff9f3ecf9b8a745e429",
+      "verified_success": false,
+      "outcome": "blocked"
+    },
+    {
+      "identity": {
+        "task": "h6-data-erasure-ledger",
+        "task_hash": "bd1cc80333d57cf8cd3bfddc5eb740f583d41d7903d192f2637f4aff2b4bc4c0",
+        "grader_hash": "985e0706eda88fc796f37ad31b7354968a1913b8b27542edab17128adf4fb125",
+        "test_file": "tests/test_task_h6_data_erasure_ledger.py",
+        "test_sha256": "50c15c1ac4b7aab846981819bb815f3abab33a48b8a97e850e1493d2d3bf0485"
+      },
+      "run": "h6-data-erasure-ledger/v1-minimax-m2-7",
+      "record_sha256": "03f6e12baa6e4a8d3a39f6e9a0a69d125969388ab802b34b70cb0d1dd5778eb0",
+      "grade_sha256": "0279a35e19e56ba582d733fbbd16cea885d58aca5c58cbe7c7bbf39666ceff3b",
+      "verified_success": false,
+      "outcome": "blocked"
+    },
+    {
+      "identity": {
+        "task": "h6-data-owner-merge",
+        "task_hash": "1997dad42f7105ac9ca3864621d4ae88c3a8e89e30f53203e2cd450d95caef8b",
+        "grader_hash": "5acaddc9111d5596f3d7be3dd1939154d3dcbd5eea155f3c37d8cddb647243e2",
+        "test_file": "tests/test_task_h6_data_owner_merge.py",
+        "test_sha256": "7115b37963231e9b69643a5172689989cf3a7c4110f0fd84d177b22219756259"
+      },
+      "run": "h6-data-owner-merge/v2-minimax-m2-7",
+      "record_sha256": "b86c558f431170331e335716e07e0debfb1abada2f5fff19576a478e097d08d3",
+      "grade_sha256": "dfe3ec9fb8e4e4bbdc8884df5d89ca45ee698fe871170c68614afdd415c5dd0f",
+      "verified_success": false,
+      "outcome": "complete"
+    },
+    {
+      "identity": {
+        "task": "h6-data-redacted-export",
+        "task_hash": "8336c9f974be12adc7bd6b1b21b3eb40d3a7c00c6add127c573a3e6bbcf487ee",
+        "grader_hash": "d698dc08faf9404cdb28de9be0195b39a2ab672f73bca0b7498d2d3ddd616c6e",
+        "test_file": "tests/test_task_h6_data_redacted_export.py",
+        "test_sha256": "3d3fc8ef5a7ddba28f3230fe5298675a17ae6a69b9c463d364c670e3890986ea"
+      },
+      "run": "h6-data-redacted-export/followup2-minimax-m2-7",
+      "record_sha256": "2f025818edae59c18fcfb762dbe7ca5f2639f6a0dca211123cbbcb27aa536a5a",
+      "grade_sha256": "81f138f98f848045b58783b5ad9d62be31d656ae77e10f4dfa1f7dc40aa0fd99",
+      "verified_success": false,
+      "outcome": "complete"
+    },
+    {
+      "identity": {
+        "task": "h6-data-region-placement",
+        "task_hash": "8247c002051d6e963570eec520752bbc5eec2dfd1a0ef4d322c71266c6fcd959",
+        "grader_hash": "fabc1ddeb2ec549fcc20cda313105e4a48d50c44a8dd28424f9d497a5203a53a",
+        "test_file": "tests/test_task_h6_data_region_placement.py",
+        "test_sha256": "6a62dfb01eaaf73cfbb9ec73e39ec9bb01ceefba823fd6e5b4574475844ab78b"
+      },
+      "run": "h6-data-region-placement/v1-minimax-m2-7",
+      "record_sha256": "ea855a7408b396d1b7bf31ce64dfb3bf024b927b9d2f0d0a2475ddb87eeff51b",
+      "grade_sha256": "42cbd3db54eca3f7e900ad213e9481b34632a0db7dae150f866939be8c18266b",
+      "verified_success": false,
+      "outcome": "blocked"
+    },
+    {
+      "identity": {
+        "task": "h6-data-service-scope",
+        "task_hash": "5ec2d6acf7f327290c2639cec811e212c462a4a6dfb10a1ccffbe6320c5b2ef6",
+        "grader_hash": "76b417f5133f77ce1a91d14d4733053fe8b93ab86fdd89639238fa28f7f7b45c",
+        "test_file": "tests/test_task_h6_data_service_scope.py",
+        "test_sha256": "f17ec068cd03b6566fcfbd6c65cedeed92c9453436722f57a12ad3dd0860f5d7"
+      },
+      "run": "h6-data-service-scope/followup2-minimax-m2-7",
+      "record_sha256": "16dbe0d3a437ef5467bbe95ea170aa191454844cfcb0a4bb32182fb8e9f4fb4f",
+      "grade_sha256": "2c277a1fd3b21cf730167756cdb3822e154f76a10db6a273a0c7b462e818f181",
+      "verified_success": false,
+      "outcome": "blocked"
+    },
+    {
+      "identity": {
+        "task": "h6-data-ticket-visibility",
+        "task_hash": "ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f",
+        "grader_hash": "3f6f38543c49f9c115bb2a57b901530e341c1c491c16674949a4e0df0220c81b",
+        "test_file": "tests/test_task_h6_data_ticket_visibility.py",
+        "test_sha256": "9a131c8af22ad02c2cab4c1f17853a02bc87efcb5c1450c064ed72d6e6fcddb7"
+      },
+      "run": "h6-data-ticket-visibility/v1-minimax-m2-7",
+      "record_sha256": "b48b8d689e6e3622575d841015ab0e99a4d5e54ce019bda3ac70bf1b1ad80f52",
+      "grade_sha256": "43b739359261e3307a678b20c4e7b2297062336baae05a2e4effd6b7799a4ad7",
+      "verified_success": false,
+      "outcome": "complete"
+    },
+    {
+      "identity": {
+        "task": "h6-fin-credit-release",
+        "task_hash": "fc326291f28b50b6a9726aefe90e3b815cffb9d7d17c651ea592eac1e0cf9d57",
+        "grader_hash": "e98710c55ebc6f48d397f397cab8651ca6aa378d5a4be827af80ac8d6000fc6f",
+        "test_file": "tests/test_task_h6_fin_credit_release.py",
+        "test_sha256": "97e32e4730d4e12b87b017062c809cd78daac800d5de1826d028b47ed922aace"
+      },
+      "run": "h6-fin-credit-release/followup2-minimax-m2-7",
+      "record_sha256": "bf365fff74417bed9b836da10f2ed7d35ed97913c3a66f9045f6549ce743e88a",
+      "grade_sha256": "b9c9e66d6c561cf8680c823838fa86e39f84ee8c5eaba43fb6b86f5c2b28778c",
+      "verified_success": false,
+      "outcome": "step_cap"
+    },
+    {
+      "identity": {
+        "task": "h6-fin-meter-close",
+        "task_hash": "0bb5025668585298f0ac9d20cae435c2a47d8da07d337b959e0950bfd79d4985",
+        "grader_hash": "539bfdeb93368de5dee8cbe8aa43b52b38f664deefabe30c781f2eea0c693c3b",
+        "test_file": "tests/test_task_h6_fin_meter_close.py",
+        "test_sha256": "da016ab4ce15624f4aa3c8526f073fe12c9563fd8c75f3b449d5117ead81afe6"
+      },
+      "run": "h6-fin-meter-close/v1-minimax-m2-7",
+      "record_sha256": "c6e59dd1c0a0c7ad85b9c48ee537e968e955d53420e3568019d8c6722f8fc32e",
+      "grade_sha256": "91ce457d9855b13bd425606300daec16cf4a4b1513f5d8401ba7eef9de44caf2",
+      "verified_success": false,
+      "outcome": "complete"
+    },
+    {
+      "identity": {
+        "task": "h6-fin-payout-owner",
+        "task_hash": "4a3030a0b20598e268d236b3e4017b9a969d51b262c46b6ef74226a09829d1dc",
+        "grader_hash": "e48a1fe9e72976106deaf3fe4d58f0fddbd4784be9dcaf6e7bf00fd5507216a7",
+        "test_file": "tests/test_task_h6_fin_payout_owner.py",
+        "test_sha256": "104fd9148fa49cad95bb722bfb97ba5ee5176501bc60faf19a5f208f743cbf85"
+      },
+      "run": "h6-fin-payout-owner/v1-minimax-m2-7",
+      "record_sha256": "f2d2f54c3406aba0e59af7cfbc6571e7025f30985463c6324dfb4093323969b0",
+      "grade_sha256": "98cdb14bb0214aab16f0e6e5d0e080b481b04de67138451eaa3bc205614dcdfc",
+      "verified_success": false,
+      "outcome": "blocked"
+    },
+    {
+      "identity": {
+        "task": "h6-fin-procure-plan",
+        "task_hash": "6479af03ff1fa14b3b88d1be4abd2b8fcb45cba67c05e255ae966c6373472586",
+        "grader_hash": "1fe9192c36f6e208e7d5a4b2b0e50b1a1f2f09d91fe17410742da958342bec7e",
+        "test_file": "tests/test_task_h6_fin_procure_plan.py",
+        "test_sha256": "29b9437ec78ec1624bde09b6f0ba7319d4a315c52e268078be1bd856d4515fc8"
+      },
+      "run": "h6-fin-procure-plan/v1-minimax-m2-7",
+      "record_sha256": "1b69dd154319eec89ba81c02978a31ef148980264000f9907cf558f913ad9816",
+      "grade_sha256": "e10e9b8ca81df1a580964022587491c63c6802dfa9930e023c3eac4923823216",
+      "verified_success": false,
+      "outcome": "complete"
+    },
+    {
+      "identity": {
+        "task": "h6-fin-refund-replay",
+        "task_hash": "6ca316cb66d907ad1e97b3547f6e5231b00c160b02b0201def14deb18e5cfa74",
+        "grader_hash": "05ae9c5cace5318827812b8ea4415e24c59e4b692d5735aa55861390118e696a",
+        "test_file": "tests/test_task_h6_fin_refund_replay.py",
+        "test_sha256": "4de6ed03ed1d080c541c7d7391f066f44b4b56ef21d2ef7cf50f37e5e6216366"
+      },
+      "run": "h6-fin-refund-replay/v1-minimax-m2-7",
+      "record_sha256": "4e578ae2a981ba2038dfc804777561fb74b7896c7cbf0939d3114ef9cdf34f38",
+      "grade_sha256": "04a7b118ed13ca1bc59beaa2ea7ff8ef241248e40665e464a655848a35d2a725",
+      "verified_success": false,
+      "outcome": "step_cap"
+    },
+    {
+      "identity": {
+        "task": "h6-fin-revenue-attest",
+        "task_hash": "3c023ac914c3eafa75f4174970c642ee7b435909855757342fac02c12a9913aa",
+        "grader_hash": "e08c86d34e293b95abb92fb05717fc8e994fe0b41492ada06572faab6462a012",
+        "test_file": "tests/test_task_h6_fin_revenue_attest.py",
+        "test_sha256": "e90089bf92f42a0b859b291d9ce0b625f6063fe1e4ccea39df5baf686784a865"
+      },
+      "run": "h6-fin-revenue-attest/v1-minimax-m2-7",
+      "record_sha256": "d3c1f118cbd4f1b13af1f22dcb7a6b76b44b810b92b3104401f0193e8b94ba55",
+      "grade_sha256": "e44f01e8104f090d661b8e505c3e0ca7d689ea74294a05d37507a6d617bbd5a8",
+      "verified_success": false,
+      "outcome": "complete"
+    },
+    {
+      "identity": {
+        "task": "h6-ops-attestation",
+        "task_hash": "ca6b5731628c8559844e26372d821d71cd961112ee8119d0ccf3fffac4112ca9",
+        "grader_hash": "6bcb991b1b5a32719ca1a4c243ed9c67edb9f132e7b7d0dec519e594b0422db7",
+        "test_file": "tests/test_task_h6_ops_attestation.py",
+        "test_sha256": "1970c0ce899c36001a271c722a63b0f43b02a3a9e7cd3afc2985c5513435d47d"
+      },
+      "run": "h6-ops-attestation/v1-minimax-m2-7",
+      "record_sha256": "49f7aaa55e0931260381e9449dd50bcd8dfd6dc25e231f693fffafe9da134b84",
+      "grade_sha256": "eb73c5e107b5531f561902b26fe479126d9a4654e0c9315df699ca54ce793034",
+      "verified_success": false,
+      "outcome": "blocked"
+    },
+    {
+      "identity": {
+        "task": "h6-ops-backup-gap",
+        "task_hash": "54f23fdf65a2f355683f9c074e078db1a80b8b12cc1c207f109d462ac940aa52",
+        "grader_hash": "4d041ee812bdf10114a25e3ad2c6dc7877992cac8e62809e834ccd6393a3bf80",
+        "test_file": "tests/test_task_h6_ops_backup_gap.py",
+        "test_sha256": "e787758bbdea4542699387bbd9abac599b8f76bc4cb244d0c44905f0c5d9f95a"
+      },
+      "run": "h6-ops-backup-gap/v2-minimax-m2-7",
+      "record_sha256": "5c5be7c7479ed34c39b215935ba776a5c5315be9910110e1ddfd5e575d2e382f",
+      "grade_sha256": "149989fe6c14679c79f31b9af62edc4c0809e60fb3ae80d683ada7fcbb8e0972",
+      "verified_success": false,
+      "outcome": "blocked"
+    },
+    {
+      "identity": {
+        "task": "h6-ops-provenance",
+        "task_hash": "b821f7995e260c4dbcb36d202575884d8c598c453c6c34d0423db492cd81b867",
+        "grader_hash": "be0cfefed4a59dd48cdf1a34a2657375de1d4b95849f7b4114069e11089c3ab0",
+        "test_file": "tests/test_task_h6_ops_provenance.py",
+        "test_sha256": "4e76be0fa156f4ebd3968f966482fe815613fb515167fbada3076039e80c57b1"
+      },
+      "run": "h6-ops-provenance/v1-minimax-m2-7",
+      "record_sha256": "fa2f73e37dec3fd195c674bca603bddf30311ef64630ddc15ebe074725993f33",
+      "grade_sha256": "cf24b0d923a2cd7a89b1220f19cbca4e51f0ea31983b8ad34abe2a9e6d3e03fa",
+      "verified_success": false,
+      "outcome": "step_cap"
+    },
+    {
+      "identity": {
+        "task": "h6-ops-quorum-cut",
+        "task_hash": "3268ecfa857a2a32b36e99fbb9282176c06c2368e81c78c04857258e57e36123",
+        "grader_hash": "7ac09699a38c1059dabbbbab2fb34c8df8dd81a30c233b92d45ca91c0ee3a8f9",
+        "test_file": "tests/test_task_h6_ops_quorum_cut.py",
+        "test_sha256": "fcb61a8994a9453ca35f80cb91054c1afaa523717239ab455978e84f5a81d87e"
+      },
+      "run": "h6-ops-quorum-cut/v2-minimax-m2-7",
+      "record_sha256": "6885cb0568d49841d1cb70696b566dff431a12858cfa77893ea8cf0f3b6bb53a",
+      "grade_sha256": "443a4da6212067a08ef53b7b259a30e4c1a4bd2155ca35a575aa241732319bf4",
+      "verified_success": false,
+      "outcome": "complete"
+    },
+    {
+      "identity": {
+        "task": "h6-ops-rollout",
+        "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+        "grader_hash": "398b87ab15011d55534684dc54a3abc4ea8473d119f02281d5a9812fba2d7b5b",
+        "test_file": "tests/test_task_h6_ops_rollout.py",
+        "test_sha256": "7c5796ed9d6f514113d4182ec45aec737bd3b5893454b716d10289fd5ff160b1"
+      },
+      "run": "h6-ops-rollout/infraretry1-minimax-m2-7",
+      "record_sha256": "2f6ac3c6fb5bdc62a454a79ef4de24f35ebc6dc274229ea4d8a19c207b087859",
+      "grade_sha256": "7e42f94dec65803f5954d32b4911d76a1a22d9a6fe6a17b45466bee081391762",
+      "verified_success": false,
+      "outcome": "step_cap"
+    },
+    {
+      "identity": {
+        "task": "h6-ops-wal-restore",
+        "task_hash": "d3573975e2c65ecaed560f5c6d056f2e363942826ad1b3d770c3dc9345ccba38",
+        "grader_hash": "ed4520fea3c0451dab380f45792cfcadfe0f5920c73734be736e535034bbcfa8",
+        "test_file": "tests/test_task_h6_ops_wal_restore.py",
+        "test_sha256": "161cb30b423473bee86c363d74061b1b85512632dd421f094c257bed37228b8c"
+      },
+      "run": "h6-ops-wal-restore/v1-minimax-m2-7",
+      "record_sha256": "cd706fe3552858edd5430b07d4d0561dedbcb6c2418987462c52d366738e77d7",
+      "grade_sha256": "afc10b27405765594ab8fe9f057dcba177fb2449d37c352be3afd20770a8b64f",
+      "verified_success": false,
+      "outcome": "complete"
+    }
+  ],
+  "manual_review": "Nineteen reviewed rows are retained in CALIBRATION_REVIEW; rollout step-cap attempt still needs substantive classification."
+}

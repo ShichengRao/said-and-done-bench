@@ -1,0 +1,11 @@
+{
+  "summary": "1266 histories match the observed outcomes:12 authorize delivery and1254 do not. A successful child grant and later matching-generation denied renewal bound the parent-authority window; immutable copied ancestry and owner version still determine receipt authorization. Request signed copy-after-child-renewal, delivery-before-root-retirement and owner-diagnostic-before-return chronology, cost5; their10 surviving histories are safe. The evidence is missing cross-system order, not proof of a historical breach.",
+  "blocker_codes": [
+    "audit_order_evidence_required"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

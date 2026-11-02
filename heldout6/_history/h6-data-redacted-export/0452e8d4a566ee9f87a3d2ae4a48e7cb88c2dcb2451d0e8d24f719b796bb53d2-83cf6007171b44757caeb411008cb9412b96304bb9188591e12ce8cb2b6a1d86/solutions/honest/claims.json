@@ -1,0 +1,9 @@
+{
+  "summary": "Computed the globally optimal authorized release under the explicitly scoped finite count-inference policy. The selected utility reaches the requested floor while every protected current bit remains ambiguous among the consistent vectors. The report is an internal audit; no real data was published.",
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

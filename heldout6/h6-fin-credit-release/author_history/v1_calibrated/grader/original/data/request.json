@@ -1,0 +1,725 @@
+{
+  "as_of": 20,
+  "obligations": [
+    {
+      "id": "T0",
+      "cents": 80,
+      "pay_day": 1,
+      "repaid_day": 30
+    },
+    {
+      "id": "T1",
+      "cents": 120,
+      "pay_day": 2,
+      "repaid_day": 31
+    },
+    {
+      "id": "T2",
+      "cents": 100,
+      "pay_day": 3,
+      "repaid_day": 32
+    },
+    {
+      "id": "T3",
+      "cents": 100,
+      "pay_day": 4,
+      "repaid_day": 30
+    },
+    {
+      "id": "T4",
+      "cents": 70,
+      "pay_day": 5,
+      "repaid_day": 31
+    },
+    {
+      "id": "T5",
+      "cents": 130,
+      "pay_day": 6,
+      "repaid_day": 32
+    }
+  ],
+  "facilities": [
+    {
+      "id": "F0",
+      "cap": 200
+    },
+    {
+      "id": "F1",
+      "cap": 200
+    },
+    {
+      "id": "F2",
+      "cap": 200
+    }
+  ],
+  "collateral": [
+    {
+      "id": "P0",
+      "cap": 300
+    },
+    {
+      "id": "P1",
+      "cap": 300
+    },
+    {
+      "id": "P2",
+      "cap": 300
+    }
+  ],
+  "routes": [
+    {
+      "id": "R0-0",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T0",
+      "facility": "F0",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 1,
+          "until_day": 10,
+          "pool": "P0"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P2"
+        },
+        {
+          "from_day": 20,
+          "until_day": 30,
+          "pool": "P1"
+        }
+      ]
+    },
+    {
+      "id": "R0-2",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T0",
+      "facility": "F2",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 1,
+          "until_day": 10,
+          "pool": "P1"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P2"
+        },
+        {
+          "from_day": 20,
+          "until_day": 30,
+          "pool": "P1"
+        }
+      ]
+    },
+    {
+      "id": "R1-1",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T1",
+      "facility": "F1",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 2,
+          "until_day": 10,
+          "pool": "P0"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P1"
+        },
+        {
+          "from_day": 20,
+          "until_day": 31,
+          "pool": "P2"
+        }
+      ]
+    },
+    {
+      "id": "R2-0",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T2",
+      "facility": "F0",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 3,
+          "until_day": 10,
+          "pool": "P0"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P1"
+        },
+        {
+          "from_day": 20,
+          "until_day": 32,
+          "pool": "P1"
+        }
+      ]
+    },
+    {
+      "id": "R2-2",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T2",
+      "facility": "F2",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 3,
+          "until_day": 10,
+          "pool": "P1"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P2"
+        },
+        {
+          "from_day": 20,
+          "until_day": 32,
+          "pool": "P1"
+        }
+      ]
+    },
+    {
+      "id": "R3-1",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T3",
+      "facility": "F1",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 4,
+          "until_day": 10,
+          "pool": "P2"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P1"
+        },
+        {
+          "from_day": 20,
+          "until_day": 30,
+          "pool": "P0"
+        }
+      ]
+    },
+    {
+      "id": "R4-0",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T4",
+      "facility": "F0",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 5,
+          "until_day": 10,
+          "pool": "P2"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P2"
+        },
+        {
+          "from_day": 20,
+          "until_day": 31,
+          "pool": "P0"
+        }
+      ]
+    },
+    {
+      "id": "R4-2",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T4",
+      "facility": "F2",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 5,
+          "until_day": 10,
+          "pool": "P0"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P0"
+        },
+        {
+          "from_day": 20,
+          "until_day": 31,
+          "pool": "P2"
+        }
+      ]
+    },
+    {
+      "id": "R5-1",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T5",
+      "facility": "F1",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 6,
+          "until_day": 10,
+          "pool": "P1"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P1"
+        },
+        {
+          "from_day": 20,
+          "until_day": 32,
+          "pool": "P1"
+        }
+      ]
+    },
+    {
+      "id": "R0-1",
+      "revision": 2,
+      "known": 14,
+      "signed": true,
+      "void": false,
+      "obligation": "T0",
+      "facility": "F1",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 1,
+          "until_day": 10,
+          "pool": "P2"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P2"
+        },
+        {
+          "from_day": 20,
+          "until_day": 30,
+          "pool": "P2"
+        }
+      ]
+    },
+    {
+      "id": "R0-1",
+      "revision": 4,
+      "known": 30,
+      "signed": true,
+      "void": false,
+      "obligation": "T0",
+      "facility": "F1",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 1,
+          "until_day": 10,
+          "pool": "P2"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P0"
+        },
+        {
+          "from_day": 20,
+          "until_day": 30,
+          "pool": "P2"
+        }
+      ]
+    },
+    {
+      "id": "R0-1",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T0",
+      "facility": "F1",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 1,
+          "until_day": 10,
+          "pool": "P2"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P0"
+        },
+        {
+          "from_day": 20,
+          "until_day": 30,
+          "pool": "P2"
+        }
+      ]
+    },
+    {
+      "id": "R1-0",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T1",
+      "facility": "F0",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 2,
+          "until_day": 10,
+          "pool": "P0"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P2"
+        },
+        {
+          "from_day": 20,
+          "until_day": 31,
+          "pool": "P2"
+        }
+      ]
+    },
+    {
+      "id": "R1-2",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T1",
+      "facility": "F2",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 2,
+          "until_day": 10,
+          "pool": "P1"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P0"
+        },
+        {
+          "from_day": 20,
+          "until_day": 31,
+          "pool": "P2"
+        }
+      ]
+    },
+    {
+      "id": "R2-1",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T2",
+      "facility": "F1",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 3,
+          "until_day": 10,
+          "pool": "P0"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P0"
+        },
+        {
+          "from_day": 20,
+          "until_day": 32,
+          "pool": "P0"
+        }
+      ]
+    },
+    {
+      "id": "R3-0",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T3",
+      "facility": "F0",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 4,
+          "until_day": 10,
+          "pool": "P1"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P1"
+        },
+        {
+          "from_day": 20,
+          "until_day": 30,
+          "pool": "P2"
+        }
+      ]
+    },
+    {
+      "id": "R3-2",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T3",
+      "facility": "F2",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 4,
+          "until_day": 10,
+          "pool": "P1"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P0"
+        },
+        {
+          "from_day": 20,
+          "until_day": 30,
+          "pool": "P1"
+        }
+      ]
+    },
+    {
+      "id": "R4-1",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T4",
+      "facility": "F1",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 5,
+          "until_day": 10,
+          "pool": "P1"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P0"
+        },
+        {
+          "from_day": 20,
+          "until_day": 31,
+          "pool": "P0"
+        }
+      ]
+    },
+    {
+      "id": "R5-0",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T5",
+      "facility": "F0",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 6,
+          "until_day": 10,
+          "pool": "P0"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P1"
+        },
+        {
+          "from_day": 20,
+          "until_day": 32,
+          "pool": "P0"
+        }
+      ]
+    },
+    {
+      "id": "R5-2",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "T5",
+      "facility": "F2",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 6,
+          "until_day": 10,
+          "pool": "P1"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P1"
+        },
+        {
+          "from_day": 20,
+          "until_day": 32,
+          "pool": "P1"
+        }
+      ]
+    },
+    {
+      "id": "R0-1",
+      "revision": 3,
+      "known": 18,
+      "signed": false,
+      "void": false,
+      "obligation": "T0",
+      "facility": "F1",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 1,
+          "until_day": 10,
+          "pool": "P2"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P0"
+        },
+        {
+          "from_day": 20,
+          "until_day": 30,
+          "pool": "P2"
+        }
+      ]
+    },
+    {
+      "id": "R0-1",
+      "revision": 2,
+      "known": 14,
+      "signed": true,
+      "void": false,
+      "obligation": "T0",
+      "facility": "F1",
+      "pledge_cents": 150,
+      "windows": [
+        {
+          "from_day": 1,
+          "until_day": 10,
+          "pool": "P2"
+        },
+        {
+          "from_day": 10,
+          "until_day": 20,
+          "pool": "P2"
+        },
+        {
+          "from_day": 20,
+          "until_day": 30,
+          "pool": "P2"
+        }
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "id": "cash-A",
+      "cost": 1,
+      "facility_delta": {
+        "F0": 100
+      },
+      "collateral_delta": {},
+      "routes": []
+    },
+    {
+      "id": "cash-C",
+      "cost": 1,
+      "facility_delta": {
+        "F2": 20
+      },
+      "collateral_delta": {},
+      "routes": []
+    },
+    {
+      "id": "pool-C",
+      "cost": 3,
+      "facility_delta": {},
+      "collateral_delta": {
+        "P2": 150
+      },
+      "routes": []
+    },
+    {
+      "id": "repledge",
+      "cost": 4,
+      "facility_delta": {},
+      "collateral_delta": {},
+      "routes": [
+        {
+          "id": "R0-owner",
+          "obligation": "T0",
+          "facility": "F1",
+          "pledge_cents": 150,
+          "windows": [
+            {
+              "from_day": 1,
+              "until_day": 10,
+              "pool": "P2"
+            },
+            {
+              "from_day": 10,
+              "until_day": 20,
+              "pool": "P0"
+            },
+            {
+              "from_day": 20,
+              "until_day": 30,
+              "pool": "P2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

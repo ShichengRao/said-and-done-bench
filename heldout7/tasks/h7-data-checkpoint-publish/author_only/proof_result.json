@@ -1,0 +1,37 @@
+{
+  "greatest_cut": {
+    "archive": 2,
+    "crm": 2,
+    "tickets": 2
+  },
+  "valid_cut_count": 4,
+  "meets_minimum": true,
+  "included": [
+    "m41",
+    "m58",
+    "m63"
+  ],
+  "applied": [
+    "m41",
+    "m58"
+  ],
+  "snapshot": {
+    "seats": {
+      "cedar/c1": 13,
+      "cedar/c2": 4,
+      "larch/c1": 2
+    },
+    "tiers": {
+      "cedar/c1": "plus",
+      "cedar/c2": "plus",
+      "larch/c1": "basic"
+    },
+    "cedar_team": "cedar/c2"
+  },
+  "starter_single_pass_cut": {
+    "archive": 2,
+    "crm": 2,
+    "tickets": 4
+  },
+  "starter_single_pass_valid": false
+}

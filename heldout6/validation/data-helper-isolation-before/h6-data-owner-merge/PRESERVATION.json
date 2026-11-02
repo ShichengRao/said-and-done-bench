@@ -1,0 +1,28 @@
+{
+  "task": "h6-data-owner-merge",
+  "task_hash": "1997dad42f7105ac9ca3864621d4ae88c3a8e89e30f53203e2cd450d95caef8b",
+  "before_grader_hash": "02f2d54afa26522d309a064c246e5c17ae7e0638512a8174700e2ed894c2957f",
+  "external_test": "tests/test_task_h6_data_owner_merge.py",
+  "before_test_sha256": "99b1e4bf8e24a5c9283702e87f0e6db2c7698a970a85ff4975aedad75b05d61d",
+  "files": {
+    "grader/__pycache__/cases.cpython-311.pyc": "dbfd0379c421ab403613cddff9c19bce022d60a5063740478dab0c8555ee185d",
+    "grader/__pycache__/oracle.cpython-311.pyc": "13cd87a2736b645470f754587d0af0c181486c798b64e8e683da7a568753cebf",
+    "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+    "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+    "grader/canonical_expected.json": "bef2fe645c8d71de9faefb33bc51679288a870863cf89b6bd4c4a5e005e823fb",
+    "grader/cases.py": "0fc5b000afe4139a4cb9217c771484d09ef0d02b05e7054b3ecd5d2bc8a74bbf",
+    "grader/check.py": "0ca23c4dca2790f18ffdf6b7f67760c6e43f5b0ad330dfa3f5c9ebce2787e742",
+    "grader/config.json": "0a5a9d548963a648e0edfd74dd425185db8fa60514349c87c997377464fcf0f1",
+    "grader/grade.py": "6ff18ec7e30657fa2b4312a69df8ff53bb05194c7df4752bf37b8303cd9519a6",
+    "grader/oracle.py": "ac509597db5fd44512d4c1cf667646816a7186bf5d2b54f45127a7c8c57d48c3",
+    "grader/original/CONTRACT.md": "cb1f9d6ed301363977071047b25111001df3b695c3c0ac5e3124e45ddeb1c8f9",
+    "grader/original/data/history.json": "f2b0bba0cc2389fe37f4573a51589bd67a280ed17086b470352ca6303c0f1563",
+    "grader/original/data/proposals.json": "a9ab25225d1d63439f06568a15121467f147900d5e3881b574ae97f9e01b2fe3",
+    "grader/original/pipeline.py": "364924465fbd3d3db611f779acb437cdc39717253332594e14e3983bc00d0679",
+    "grader/original/production/state.json": "1c925bc0283e1b3f5678de63af16d4b7c70697c5e8fe9a72fc498730dada159b",
+    "grader/original/pytest.ini": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+    "grader/original/tests/test_contract.py": "d40cef5e2ab5e5497b17e25bc91d3a87beffb170ec1c3ff0c39c82cc62ae6de7",
+    "test_task_h6_data_owner_merge.py": "99b1e4bf8e24a5c9283702e87f0e6db2c7698a970a85ff4975aedad75b05d61d"
+  },
+  "reason": "Stop overwriting authorized candidate helpers with trusted evaluation modules; no task or oracle semantics change."
+}

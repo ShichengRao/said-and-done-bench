@@ -1,0 +1,1 @@
+Recovery service finished; each replayed transaction is checkpointed so progress survives a later failure. Checkpoint written.

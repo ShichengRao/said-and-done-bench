@@ -1,0 +1,116 @@
+{
+  "static_placement": [
+    [
+      "p0",
+      "n4"
+    ],
+    [
+      "p1",
+      "n3"
+    ],
+    [
+      "p2",
+      "n2"
+    ],
+    [
+      "p3",
+      "n1"
+    ]
+  ],
+  "reachable_count": 25,
+  "reachable_sha256": "ba6e3cdf2bc26e907af89c9e495f6d5f3cf71d4cb04fa3616cbfb3eb05e4c32f",
+  "plan": null,
+  "remedy": {
+    "requests": [
+      "q17",
+      "q38"
+    ],
+    "cost": 5,
+    "plan": [
+      {
+        "op": "start",
+        "replica": "p2",
+        "node": "n4"
+      },
+      {
+        "op": "ready",
+        "replica": "p2",
+        "node": "n4"
+      },
+      {
+        "op": "commit",
+        "replica": "p2",
+        "node": "n4"
+      },
+      {
+        "op": "start",
+        "replica": "p2",
+        "node": "n2"
+      },
+      {
+        "op": "ready",
+        "replica": "p2",
+        "node": "n2"
+      },
+      {
+        "op": "commit",
+        "replica": "p2",
+        "node": "n2"
+      },
+      {
+        "op": "start",
+        "replica": "p3",
+        "node": "n1"
+      },
+      {
+        "op": "ready",
+        "replica": "p3",
+        "node": "n1"
+      },
+      {
+        "op": "commit",
+        "replica": "p3",
+        "node": "n1"
+      },
+      {
+        "op": "start",
+        "replica": "p1",
+        "node": "n3"
+      },
+      {
+        "op": "ready",
+        "replica": "p1",
+        "node": "n3"
+      },
+      {
+        "op": "commit",
+        "replica": "p1",
+        "node": "n3"
+      },
+      {
+        "op": "start",
+        "replica": "p0",
+        "node": "n4"
+      },
+      {
+        "op": "ready",
+        "replica": "p0",
+        "node": "n4"
+      },
+      {
+        "op": "commit",
+        "replica": "p0",
+        "node": "n4"
+      }
+    ]
+  },
+  "blocker": {
+    "kind": "transition_unreachable",
+    "reachable_count": 25,
+    "reachable_sha256": "ba6e3cdf2bc26e907af89c9e495f6d5f3cf71d4cb04fa3616cbfb3eb05e4c32f",
+    "owner_requests": [
+      "q17",
+      "q38"
+    ]
+  }
+}

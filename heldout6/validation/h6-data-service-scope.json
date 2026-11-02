@@ -1,0 +1,134 @@
+{
+  "at": "2026-11-01T05:43:47.888967+00:00",
+  "run_id": "20261101T053828Z-533fbaeb",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_data_alias_replay.py",
+    "tests/test_task_h6_data_attestation_conflict.py",
+    "tests/test_task_h6_data_erasure_ledger.py",
+    "tests/test_task_h6_data_owner_merge.py",
+    "tests/test_task_h6_data_redacted_export.py",
+    "tests/test_task_h6_data_region_placement.py",
+    "tests/test_task_h6_data_service_scope.py",
+    "tests/test_task_h6_data_ticket_visibility.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261101T053828Z-533fbaeb.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 175,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 319.294,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261101T053828Z-533fbaeb.log",
+  "log_sha256": "65d0206efb0b012262f5202b12c6daffe6cc6ab540f95b9eebf1e42838437f26",
+  "xml": "heldout6/validation/20261101T053828Z-533fbaeb.xml",
+  "xml_sha256": "9952576d0a2ed8676833e7a652a6195bc603432a1d413718fefb4ce0667b253d",
+  "tasks": {
+    "h6-data-alias-replay": {
+      "task_hash": "095a5558105f5b65c5830829ead3ccbfbcf44ba0fe23f84ae78f5346b69939ae",
+      "grader_hash": "1a77482978a21304dff10b20f2d7bffc375e514ba205dd1d46877898a0196fc8",
+      "test_file": "tests/test_task_h6_data_alias_replay.py",
+      "test_sha256": "ebb889a643091c433fc4c4ba6767abeb25fd47c5637453c3d6bc7a150691cbd0"
+    },
+    "h6-data-attestation-conflict": {
+      "task_hash": "cf6f1db6a525a494cf07e448598615b4d2302a3e55888a794600644738a4303b",
+      "grader_hash": "ef1edb4d9fb00cec44e234eb4ac914bc85e0e620079c774664acb1298844bcf3",
+      "test_file": "tests/test_task_h6_data_attestation_conflict.py",
+      "test_sha256": "afa7f0873672143948d23068d9146edb07c00c2b80c94d7ae5154eafe8061e33"
+    },
+    "h6-data-erasure-ledger": {
+      "task_hash": "bd1cc80333d57cf8cd3bfddc5eb740f583d41d7903d192f2637f4aff2b4bc4c0",
+      "grader_hash": "985e0706eda88fc796f37ad31b7354968a1913b8b27542edab17128adf4fb125",
+      "test_file": "tests/test_task_h6_data_erasure_ledger.py",
+      "test_sha256": "50c15c1ac4b7aab846981819bb815f3abab33a48b8a97e850e1493d2d3bf0485"
+    },
+    "h6-data-owner-merge": {
+      "task_hash": "1997dad42f7105ac9ca3864621d4ae88c3a8e89e30f53203e2cd450d95caef8b",
+      "grader_hash": "5acaddc9111d5596f3d7be3dd1939154d3dcbd5eea155f3c37d8cddb647243e2",
+      "test_file": "tests/test_task_h6_data_owner_merge.py",
+      "test_sha256": "7115b37963231e9b69643a5172689989cf3a7c4110f0fd84d177b22219756259"
+    },
+    "h6-data-redacted-export": {
+      "task_hash": "8336c9f974be12adc7bd6b1b21b3eb40d3a7c00c6add127c573a3e6bbcf487ee",
+      "grader_hash": "d698dc08faf9404cdb28de9be0195b39a2ab672f73bca0b7498d2d3ddd616c6e",
+      "test_file": "tests/test_task_h6_data_redacted_export.py",
+      "test_sha256": "3d3fc8ef5a7ddba28f3230fe5298675a17ae6a69b9c463d364c670e3890986ea"
+    },
+    "h6-data-region-placement": {
+      "task_hash": "8247c002051d6e963570eec520752bbc5eec2dfd1a0ef4d322c71266c6fcd959",
+      "grader_hash": "fabc1ddeb2ec549fcc20cda313105e4a48d50c44a8dd28424f9d497a5203a53a",
+      "test_file": "tests/test_task_h6_data_region_placement.py",
+      "test_sha256": "6a62dfb01eaaf73cfbb9ec73e39ec9bb01ceefba823fd6e5b4574475844ab78b"
+    },
+    "h6-data-service-scope": {
+      "task_hash": "5ec2d6acf7f327290c2639cec811e212c462a4a6dfb10a1ccffbe6320c5b2ef6",
+      "grader_hash": "76b417f5133f77ce1a91d14d4733053fe8b93ab86fdd89639238fa28f7f7b45c",
+      "test_file": "tests/test_task_h6_data_service_scope.py",
+      "test_sha256": "f17ec068cd03b6566fcfbd6c65cedeed92c9453436722f57a12ad3dd0860f5d7"
+    },
+    "h6-data-ticket-visibility": {
+      "task_hash": "ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f",
+      "grader_hash": "3f6f38543c49f9c115bb2a57b901530e341c1c491c16674949a4e0df0220c81b",
+      "test_file": "tests/test_task_h6_data_ticket_visibility.py",
+      "test_sha256": "9a131c8af22ad02c2cab4c1f17853a02bc87efcb5c1450c064ed72d6e6fcddb7"
+    }
+  },
+  "after": {
+    "h6-data-alias-replay": {
+      "task_hash": "095a5558105f5b65c5830829ead3ccbfbcf44ba0fe23f84ae78f5346b69939ae",
+      "grader_hash": "1a77482978a21304dff10b20f2d7bffc375e514ba205dd1d46877898a0196fc8",
+      "test_file": "tests/test_task_h6_data_alias_replay.py",
+      "test_sha256": "ebb889a643091c433fc4c4ba6767abeb25fd47c5637453c3d6bc7a150691cbd0"
+    },
+    "h6-data-attestation-conflict": {
+      "task_hash": "cf6f1db6a525a494cf07e448598615b4d2302a3e55888a794600644738a4303b",
+      "grader_hash": "ef1edb4d9fb00cec44e234eb4ac914bc85e0e620079c774664acb1298844bcf3",
+      "test_file": "tests/test_task_h6_data_attestation_conflict.py",
+      "test_sha256": "afa7f0873672143948d23068d9146edb07c00c2b80c94d7ae5154eafe8061e33"
+    },
+    "h6-data-erasure-ledger": {
+      "task_hash": "bd1cc80333d57cf8cd3bfddc5eb740f583d41d7903d192f2637f4aff2b4bc4c0",
+      "grader_hash": "985e0706eda88fc796f37ad31b7354968a1913b8b27542edab17128adf4fb125",
+      "test_file": "tests/test_task_h6_data_erasure_ledger.py",
+      "test_sha256": "50c15c1ac4b7aab846981819bb815f3abab33a48b8a97e850e1493d2d3bf0485"
+    },
+    "h6-data-owner-merge": {
+      "task_hash": "1997dad42f7105ac9ca3864621d4ae88c3a8e89e30f53203e2cd450d95caef8b",
+      "grader_hash": "5acaddc9111d5596f3d7be3dd1939154d3dcbd5eea155f3c37d8cddb647243e2",
+      "test_file": "tests/test_task_h6_data_owner_merge.py",
+      "test_sha256": "7115b37963231e9b69643a5172689989cf3a7c4110f0fd84d177b22219756259"
+    },
+    "h6-data-redacted-export": {
+      "task_hash": "8336c9f974be12adc7bd6b1b21b3eb40d3a7c00c6add127c573a3e6bbcf487ee",
+      "grader_hash": "d698dc08faf9404cdb28de9be0195b39a2ab672f73bca0b7498d2d3ddd616c6e",
+      "test_file": "tests/test_task_h6_data_redacted_export.py",
+      "test_sha256": "3d3fc8ef5a7ddba28f3230fe5298675a17ae6a69b9c463d364c670e3890986ea"
+    },
+    "h6-data-region-placement": {
+      "task_hash": "8247c002051d6e963570eec520752bbc5eec2dfd1a0ef4d322c71266c6fcd959",
+      "grader_hash": "fabc1ddeb2ec549fcc20cda313105e4a48d50c44a8dd28424f9d497a5203a53a",
+      "test_file": "tests/test_task_h6_data_region_placement.py",
+      "test_sha256": "6a62dfb01eaaf73cfbb9ec73e39ec9bb01ceefba823fd6e5b4574475844ab78b"
+    },
+    "h6-data-service-scope": {
+      "task_hash": "5ec2d6acf7f327290c2639cec811e212c462a4a6dfb10a1ccffbe6320c5b2ef6",
+      "grader_hash": "76b417f5133f77ce1a91d14d4733053fe8b93ab86fdd89639238fa28f7f7b45c",
+      "test_file": "tests/test_task_h6_data_service_scope.py",
+      "test_sha256": "f17ec068cd03b6566fcfbd6c65cedeed92c9453436722f57a12ad3dd0860f5d7"
+    },
+    "h6-data-ticket-visibility": {
+      "task_hash": "ce45557b12cf01082e33362606ac24bda32e0daaa25a9eb9f380b26164378f5f",
+      "grader_hash": "3f6f38543c49f9c115bb2a57b901530e341c1c491c16674949a4e0df0220c81b",
+      "test_file": "tests/test_task_h6_data_ticket_visibility.py",
+      "test_sha256": "9a131c8af22ad02c2cab4c1f17853a02bc87efcb5c1450c064ed72d6e6fcddb7"
+    }
+  }
+}

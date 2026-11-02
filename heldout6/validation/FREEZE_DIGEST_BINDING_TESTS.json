@@ -1,0 +1,33 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "heldout6/_shared/test_freeze_gates.py",
+    "heldout6/_shared/test_calibration_helpers.py",
+    "heldout6/_shared/test_regrade.py",
+    "--junitxml=heldout6/validation/FREEZE_DIGEST_BINDING_TESTS.xml"
+  ],
+  "counts": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 106
+  },
+  "exit_code": 0,
+  "final": false,
+  "log": "heldout6/validation/FREEZE_DIGEST_BINDING_TESTS.log",
+  "log_sha256": "5ec6e026aaf2dc2fc8cb076e44bffd7b6a505e6aaaa69998e9c63ea49fa30496",
+  "recorded_at": "2026-10-31T22:23:01.018305+00:00",
+  "schema_version": 1,
+  "scope": "Freeze-only scheduler record/original-grade digest binding repair; temporary fixture tests, no inference or real regrade.",
+  "source_sha256_at_result_capture": {
+    "heldout6/_shared/freeze.py": "de6e22cee9ad28c7192dbada0d6f6f957a0f608950e542bd01d74ddde4dc7424",
+    "heldout6/_shared/test_calibration_helpers.py": "71de3e741beb454036ca699d8260945407b6834b23f9e1717a932f5e65282823",
+    "heldout6/_shared/test_freeze_gates.py": "9aab510351b4f72c5508e2a1bc47211606271bd0ef636b0ff6c26f19927668e6",
+    "heldout6/_shared/test_regrade.py": "43b6abdc4fa865dc4263fbc8e8c98cfcd3c3b16c1c328c4ad5e2f08d1624490b"
+  },
+  "xml": "heldout6/validation/FREEZE_DIGEST_BINDING_TESTS.xml",
+  "xml_sha256": "dee00b4e95ac8cceea5ad2d9b012f6e428728c7d04421c2dbbbe8d2f8b4ff832"
+}

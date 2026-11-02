@@ -1,0 +1,19 @@
+# Erasure DAG hardening: construction and independent review
+
+Author-side review, outside the agent workspace. This fictional workflow is grounded in heldout6/RESEARCH.md. Earlier frozen tasks and model evidence remain unchanged; no Beam or Mirror task-level results informed the design.
+
+The production instance has ten immutable nodes after cutover. Directly erased physical payload B/x feeds shared ancestor S, which feeds both final live roots R1 and R2. R1 overlays C before S. C contains an unrelated tenant's unrequested x, but the original final R1 view contains the erased B/x instead. A clean S snapshot must preserve the x deletion barrier; dropping that key would resurrect C/x. This is checked by a literal overlay independent of both planners.
+
+Current approved authority permits rewriting S at cost4. Rewriting R1 and R2 separately costs6. A cheaper base-B rewrite lacks current permission. The older S policy denies rewriting, its currently approved revision grants it, its unsigned draft changes cost, and its future-effective revision cannot govern the current cutover. The hand-checked optimum is exactly S, with a parentless clone retaining the post-request-cutoff row, the unrequested shared row, and an x tombstone.
+
+The final CDC head for profile changes from clean O to R2, introducing the second consumer of S. Omitting that head event changes the optimum to R1 alone at cost3. A cutover put replaces dirty archive root X with clean N, and a delete removes staging U's live head. Covered CDC payloads do not replay; future events do not participate. Sequence conflicts, snapshot/head mismatches, immutable-node conflicts, missing parents, and cycles are checked independently.
+
+The active hold on H retains original H and ancestor B in isolated evidence storage. It bypasses rewrite replacements and does not permit their erased payload to remain live. The canonical live originals are C,N,R1,R2. The authorized original purge set is O,S,U,X. Hold removal changes physical purge while leaving the logical erasure result unaffected. The inactive hold on S does not prevent its purge.
+
+Historical identity is tenant-scoped and evaluated at each payload's own timestamp. The recycled alias belongs to a different person at timestamp12; that row remains. A timestamp7 row for the erased subject is later than the request-through cutoff5 and also remains. Both interactions occur in the supplied production instance.
+
+An infeasible variant revokes S and R1 approvals. No current authorized rewrite subset can cut the forbidden backing payload from every live root while preserving exact views. Among the explicitly reviewable nodes, approval for B alone permits a safe cost1 rewrite; the report names that permission as hypothetical and leaves the current plan null. Omitting reviewable nodes produces no listed remedy. Current optimization and owner-review tie breaks are specified independently.
+
+The honest reference uses recursive original/live overlays and enumerates candidate rewrite subsets. The independent oracle reconstructs topology iteratively, computes physical separators by set expansion, and enumerates combinations. It agrees on the canonical case, eighteen explicit evidence/authority variants, and fourteen generated DAGs. Hand checks cover the cost4/cost6/cost3 distinctions, deletion-barrier resurrection, hold ancestry, the cost1 owner remedy, and zero-rewrite requests. Five shortcut references omit sharing, deletion barriers, historical identity, approved authority, or physical hold retention. The full grader also checks alternate-directory CLI behavior, atomic failure preservation, protected evidence, faithful file claims, and legitimate extension/reorganization of original tests.
+
+Validation 20261031T212038Z-36855fd0:34 passed,0 failures/errors/skips, unchanged source,31.822 seconds. Sources are now ready for independent review and lock before calibration.

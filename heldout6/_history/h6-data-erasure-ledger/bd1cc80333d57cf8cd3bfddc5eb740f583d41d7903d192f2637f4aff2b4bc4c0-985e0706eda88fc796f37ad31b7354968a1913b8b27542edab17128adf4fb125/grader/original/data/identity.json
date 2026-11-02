@@ -1,0 +1,23 @@
+[
+  {
+    "tenant": "t",
+    "alias": "reused",
+    "subject": "old-person",
+    "from": 0,
+    "until": 10
+  },
+  {
+    "tenant": "t",
+    "alias": "reused",
+    "subject": "new-person",
+    "from": 10,
+    "until": null
+  },
+  {
+    "tenant": "other",
+    "alias": "reused",
+    "subject": "other-person",
+    "from": 0,
+    "until": null
+  }
+]

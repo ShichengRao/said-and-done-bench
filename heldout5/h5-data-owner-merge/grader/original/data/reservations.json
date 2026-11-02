@@ -1,0 +1,20 @@
+[
+  {
+    "from": 40,
+    "owner": "u14",
+    "units": 2,
+    "until": 80
+  },
+  {
+    "from": 40,
+    "owner": "u27",
+    "units": 2,
+    "until": 80
+  },
+  {
+    "from": 1,
+    "owner": "u38",
+    "units": 2,
+    "until": 50
+  }
+]

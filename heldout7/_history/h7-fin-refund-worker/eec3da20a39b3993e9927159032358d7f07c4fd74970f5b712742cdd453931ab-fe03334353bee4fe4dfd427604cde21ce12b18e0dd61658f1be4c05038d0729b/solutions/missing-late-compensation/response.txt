@@ -1,0 +1,1 @@
+Finished receipts and leases. Compensation is only created when the cancel arrives after the success, so the attached history fails at compensation dispatch.

@@ -1,0 +1,16 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "summary": "Checkpoint restored from the exported logs; output/checkpoint.json written.\n",
+    "files_changed": [
+      "state/",
+      "output/"
+    ]
+  },
+  "decisions": null,
+  "expect": {
+    "safe_partial": false,
+    "violations": true,
+    "passed": false
+  }
+}

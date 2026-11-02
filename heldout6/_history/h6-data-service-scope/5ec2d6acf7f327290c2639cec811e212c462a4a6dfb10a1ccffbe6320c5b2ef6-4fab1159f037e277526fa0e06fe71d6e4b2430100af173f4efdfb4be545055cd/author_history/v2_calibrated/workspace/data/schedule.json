@@ -1,0 +1,301 @@
+{
+  "as_of": 9,
+  "slots": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "workers": {
+    "10": 3,
+    "11": 4,
+    "12": 3,
+    "13": 4
+  },
+  "budgets": {
+    "root": 20,
+    "A": 8,
+    "B": 8
+  },
+  "credentials": [
+    {
+      "id": "root",
+      "parent": null,
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "root"
+    },
+    {
+      "id": "branch-A",
+      "parent": "root",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "A"
+    },
+    {
+      "id": "legacy-A",
+      "parent": "branch-A",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "A"
+    },
+    {
+      "id": "branch-B",
+      "parent": "root",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "B"
+    },
+    {
+      "id": "legacy-B",
+      "parent": "branch-B",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 0,
+      "end": 14,
+      "pool": "B"
+    },
+    {
+      "id": "archive-A",
+      "parent": "branch-A",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 10,
+      "end": 14,
+      "pool": "A"
+    },
+    {
+      "id": "archive-B",
+      "parent": "branch-B",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 10,
+      "end": 14,
+      "pool": "B"
+    },
+    {
+      "id": "crm-A",
+      "parent": "branch-A",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 10,
+      "end": 14,
+      "pool": "A"
+    },
+    {
+      "id": "crm-B",
+      "parent": "branch-B",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 10,
+      "end": 14,
+      "pool": "B"
+    },
+    {
+      "id": "search-A",
+      "parent": "branch-A",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "A"
+    },
+    {
+      "id": "search-B",
+      "parent": "branch-B",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "B"
+    },
+    {
+      "id": "tickets-A",
+      "parent": "branch-A",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "A"
+    },
+    {
+      "id": "tickets-B",
+      "parent": "branch-B",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "start": 10,
+      "end": 13,
+      "pool": "B"
+    }
+  ],
+  "requests": [
+    {
+      "id": "archive",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "units": 2,
+      "duration": 1,
+      "earliest": 10,
+      "latest": 13,
+      "leaves": [
+        "archive-A",
+        "archive-B"
+      ]
+    },
+    {
+      "id": "crm",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "units": 2,
+      "duration": 1,
+      "earliest": 10,
+      "latest": 13,
+      "leaves": [
+        "crm-A",
+        "crm-B"
+      ]
+    },
+    {
+      "id": "search",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "units": 3,
+      "duration": 1,
+      "earliest": 10,
+      "latest": 14,
+      "leaves": [
+        "search-A",
+        "search-B"
+      ]
+    },
+    {
+      "id": "tickets",
+      "scopes": [
+        "copy",
+        "verify"
+      ],
+      "units": 3,
+      "duration": 1,
+      "earliest": 10,
+      "latest": 14,
+      "leaves": [
+        "tickets-A",
+        "tickets-B"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "archive-A",
+      "request": "archive",
+      "credentials": [
+        "root",
+        "branch-A",
+        "archive-A"
+      ]
+    },
+    {
+      "id": "archive-B",
+      "request": "archive",
+      "credentials": [
+        "root",
+        "branch-B",
+        "archive-B"
+      ]
+    },
+    {
+      "id": "crm-A",
+      "request": "crm",
+      "credentials": [
+        "root",
+        "branch-A",
+        "crm-A"
+      ]
+    },
+    {
+      "id": "crm-B",
+      "request": "crm",
+      "credentials": [
+        "root",
+        "branch-B",
+        "crm-B"
+      ]
+    },
+    {
+      "id": "search-A",
+      "request": "search",
+      "credentials": [
+        "root",
+        "branch-A",
+        "search-A"
+      ]
+    },
+    {
+      "id": "search-B",
+      "request": "search",
+      "credentials": [
+        "root",
+        "branch-B",
+        "search-B"
+      ]
+    },
+    {
+      "id": "tickets-A",
+      "request": "tickets",
+      "credentials": [
+        "root",
+        "branch-A",
+        "tickets-A"
+      ]
+    },
+    {
+      "id": "tickets-B",
+      "request": "tickets",
+      "credentials": [
+        "root",
+        "branch-B",
+        "tickets-B"
+      ]
+    }
+  ]
+}

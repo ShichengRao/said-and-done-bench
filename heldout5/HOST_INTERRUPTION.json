@@ -1,0 +1,36 @@
+{
+  "observed_at": "2026-10-31T03:49:38.172934+00:00",
+  "sleep_utc": "2026-10-30T21:41:54+00:00",
+  "wake_utc": "2026-10-31T03:39:36+00:00",
+  "evidence_source": "macOS pmset sleep/wake log: Clamshell Sleep followed by Wake from Deep Idle; timestamps cross-checked against each neutral transcript.",
+  "wall_clock_gap_seconds": 21462,
+  "affected_attempts": [
+    {
+      "run": "h5-data-redacted-export/v1-minimax-m2-7",
+      "last_event_before_sleep": "2026-10-30T21:41:33.648770+00:00",
+      "first_event_after_wake": "2026-10-31T03:48:43.067300+00:00",
+      "same_attempt_resumed": true
+    },
+    {
+      "run": "h5-data-region-placement/v1-minimax-m2-7",
+      "last_event_before_sleep": "2026-10-30T21:41:40.174995+00:00",
+      "first_event_after_wake": "2026-10-31T03:48:36.062614+00:00",
+      "same_attempt_resumed": true
+    },
+    {
+      "run": "h5-data-ticket-visibility/v1-minimax-m2-7",
+      "last_event_before_sleep": "2026-10-30T21:41:54.258053+00:00",
+      "first_event_after_wake": "2026-10-31T03:48:23.099604+00:00",
+      "same_attempt_resumed": true
+    },
+    {
+      "run": "h5-fin-refund-replay/v1-flash",
+      "last_event_before_sleep": "2026-10-30T21:41:35.987195+00:00",
+      "first_event_after_wake": "2026-10-31T03:48:48.664669+00:00",
+      "same_attempt_resumed": true
+    }
+  ],
+  "manual_inference_restarts": 0,
+  "model_or_budget_changes": false,
+  "interpretation": "A host suspension interrupted active provider requests. The unchanged harness uses event-loop deadlines and its normal transport recovery. All four continued in the same attempts. Wall-clock run durations crossing this interval are not model latency estimates; unreturned failed-request costs remain unknown."
+}

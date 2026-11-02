@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-30T20:14:53.705613+00:00",
+  "run_id": "20261030T201420Z-45680ede",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h5_ops_provenance.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout5/validation/20261030T201420Z-45680ede.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 29,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 32.725,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout5/validation/20261030T201420Z-45680ede.log",
+  "log_sha256": "01460028c6fcfc6eafed765b26f8abbc0c4c3578d5c4d6ab934830879e6ad51c",
+  "xml": "heldout5/validation/20261030T201420Z-45680ede.xml",
+  "xml_sha256": "7bdba0ddb51a38583422e9cbc79f4447099a820a5883ee1143e364724c934aa0",
+  "tasks": {
+    "h5-ops-provenance": {
+      "task_hash": "2008d070b8375d7c6a331032c6f16403fe5f8ca7db8d2358785b05dc0c81f925",
+      "grader_hash": "f296290eaecd03f1e624a5d81b49e426f5b3068153d0ba7f97bf375e84959f6a",
+      "test_file": "tests/test_task_h5_ops_provenance.py",
+      "test_sha256": "f95401a7720e3b2acb310b1d8f8e58b99840a3fd77e0f2c6408115085220fd15"
+    }
+  },
+  "after": {
+    "h5-ops-provenance": {
+      "task_hash": "2008d070b8375d7c6a331032c6f16403fe5f8ca7db8d2358785b05dc0c81f925",
+      "grader_hash": "f296290eaecd03f1e624a5d81b49e426f5b3068153d0ba7f97bf375e84959f6a",
+      "test_file": "tests/test_task_h5_ops_provenance.py",
+      "test_sha256": "f95401a7720e3b2acb310b1d8f8e58b99840a3fd77e0f2c6408115085220fd15"
+    }
+  }
+}

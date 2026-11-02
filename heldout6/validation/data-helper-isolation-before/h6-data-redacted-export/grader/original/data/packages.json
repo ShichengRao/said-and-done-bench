@@ -1,0 +1,47 @@
+[
+  {
+    "id": "high",
+    "utility": 5,
+    "approved": true,
+    "queries": [
+      {
+        "id": "high-count",
+        "members": [
+          "p0",
+          "export-p1",
+          "p1",
+          "p4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "medium",
+    "utility": 4,
+    "approved": true,
+    "queries": [
+      {
+        "id": "medium-count",
+        "members": [
+          "p0",
+          "p1",
+          "p2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cross",
+    "utility": 3,
+    "approved": true,
+    "queries": [
+      {
+        "id": "cross-count",
+        "members": [
+          "p0",
+          "p2"
+        ]
+      }
+    ]
+  }
+]

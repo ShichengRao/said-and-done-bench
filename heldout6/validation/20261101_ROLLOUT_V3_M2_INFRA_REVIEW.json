@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "final": false,
+  "task": "h6-ops-rollout",
+  "model": "minimax-m2-7",
+  "run": "runs/calibration-h6/h6-ops-rollout/v3-minimax-m2-7",
+  "task_hash": "4f81ba56eb8ca97424c5f21dbbd4e9277b393cf53defc81c68e249fe70aa36f5",
+  "grader_hash": "667043a1d5a989b87c3acb1725f920bb567fd51a1c082daee26710dd362a4a3a",
+  "source_archive": "heldout6/_history/h6-ops-rollout/4f81ba56eb8ca97424c5f21dbbd4e9277b393cf53defc81c68e249fe70aa36f5-667043a1d5a989b87c3acb1725f920bb567fd51a1c082daee26710dd362a4a3a",
+  "record_sha256": "24b34f6db381c73ddcdf7d19e01cdb5a6479b5005d714af6a12c8d5997635ab5",
+  "grade_sha256": "04fdcf6876cca0b1d17b8ebe9b57182e14537aea4abe8a0720e99e2f9cdab6a0",
+  "harness_error_sha256": "a282177657c5a95fccb9f1fa683a37cc9937c2baa43bea63f73c03cb9f790624",
+  "finish_at": "2026-11-01T07:37:47.175280+00:00",
+  "outcome": "infra_error",
+  "scored": false,
+  "current_task_status": "pending",
+  "readiness_eligible": false,
+  "substantive_failure_classified": false,
+  "canonical_artifact_correct": null,
+  "error": {
+    "type": "ProviderError",
+    "http_status": 400,
+    "kind": "context_length_exceeded",
+    "endpoint_context_tokens": 204800,
+    "requested_tokens": 207952,
+    "input_text_tokens": 175105,
+    "tool_input_tokens": 79,
+    "reserved_output_tokens": 32768,
+    "recorded_detail": "ProviderError: HTTP 400 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"This endpoint's maximum context length is 204800 tokens. However, you requested about 207952 tokens (175105 of text input, 79 of tool input, 32768 in the output). Please reduce the length of either one, or use the context-compression plugin to compress your prompt automatically."
+  },
+  "steps": 58,
+  "limits": {
+    "max_steps": 60,
+    "idle_turns_to_stall": 3,
+    "stuck_turn_s": 900.0,
+    "run_deadline_s": 2700.0,
+    "cancel_grace_s": 30.0,
+    "post_submit_grace_s": 30.0,
+    "startup_timeout_s": 120.0
+  },
+  "submission": {
+    "submit_attempts": 0,
+    "submit": null,
+    "submit_directory_empty": true
+  },
+  "snapshot_writers_frozen": false,
+  "recorded_usage_total": {},
+  "usage_limitation": "The closed record has an empty usage_total object. This is unavailable accounting, not evidence of zero spend; this narrow review did not inspect response content or reconstruct usage.",
+  "settings": {
+    "runtime_sha256": {
+      "MODEL_CONFIGS.json": "6b98d4f27be432b66fff5c8d598e56e4e3d60b13677aa8b965fc037729b3e437",
+      "ADDITIONAL_MODEL_CONFIGS.json": "4cff4a654f7630e5f5c8f707bd2830bf25dddd15150fc6e0f0d3e51d6c634c95",
+      "ADDITIONAL_MODELS.toml": "29d409d147658e725125d0dbd24df1b1a1dcdf0d4d55395482a31e817e9bd442",
+      "PRESERVED_BASELINES.json": "d3e8684d2181f5feadea8ed050ee354b8784d8d6c534bed9af1c217d6487428f",
+      "_shared/calibrate.py": "dd078d2c45c3a22281a9f908bf9f2c3c803aa4bd2efd6e7a73811f9a52c03477",
+      "_shared/run_configured.py": "72ffdd26177dc437179b373f55192d0cc9a8a9208e55ad80c56a67462fbe4712",
+      "_shared/validate.py": "e9aa979def99d2aa3ac5498c9ed65a65d4516658b6bd488b228a314700150d6b"
+    },
+    "agent_info": {
+      "model_config": "h6-minimax-m2-7-thinking",
+      "model": "minimax/minimax-m2.7",
+      "base_url": "https://openrouter.ai/api/v1",
+      "params": {
+        "reasoning": {
+          "enabled": true,
+          "exclude": false
+        },
+        "provider": {
+          "order": [
+            "minimax"
+          ],
+          "allow_fallbacks": false
+        }
+      },
+      "providers": [
+        "Minimax"
+      ],
+      "retries": 0,
+      "retry_reasons": []
+    },
+    "changed_by_reviewer": false
+  },
+  "retry_decision": "Root-owned and not made or executed by this review. An identical fresh attempt may recur because the rejected request exceeds a deterministic context bound.",
+  "assessment": "This attempt provides no scored task result. No submission occurred, and the snapshot was not frozen. Do not interpret incidental grading or verified_success=false as a task failure or a completed0/20 cohort. The previous v2 infrastructure interruption and scored retry remain separate historical input versions.",
+  "review_scope": "Closed finish metadata, record fields, grader scoring metadata, decisive harness error and submission-directory inventory only. No transcript, saved implementation, candidate re-execution or regrading. Current calibration/diagnostic review rows remain unchanged."
+}

@@ -1,0 +1,9 @@
+{
+  "summary": "Compiled a public selection-aware policy over six distinct current worlds. Every package/count output fiber retains both values for each protected person. The unique maximum total utility is26 while meeting the given per-world floor3; the actual cross report has count1 and leaves two possible current worlds. The policy is independent of private snapshots; their only role is consistency validation and selecting the actual output.",
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

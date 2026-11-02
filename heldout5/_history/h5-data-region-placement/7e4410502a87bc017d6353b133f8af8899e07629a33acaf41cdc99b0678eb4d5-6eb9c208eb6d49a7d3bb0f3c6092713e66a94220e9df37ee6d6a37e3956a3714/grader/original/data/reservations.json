@@ -1,0 +1,44 @@
+[
+  {
+    "bytes": 3,
+    "from": 30,
+    "id": "r1",
+    "node": "n14",
+    "until": 70
+  },
+  {
+    "bytes": 4,
+    "from": 30,
+    "id": "r2",
+    "node": "n26",
+    "until": 70
+  },
+  {
+    "bytes": 3,
+    "from": 30,
+    "id": "r3",
+    "node": "n31",
+    "until": 70
+  },
+  {
+    "bytes": 3,
+    "from": 30,
+    "id": "r4",
+    "node": "n48",
+    "until": 70
+  },
+  {
+    "bytes": 6,
+    "from": 10,
+    "id": "r5",
+    "node": "n14",
+    "until": 50
+  },
+  {
+    "bytes": 3,
+    "from": 30,
+    "id": "r1",
+    "node": "n14",
+    "until": 70
+  }
+]

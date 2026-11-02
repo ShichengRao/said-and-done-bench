@@ -1,0 +1,146 @@
+{
+  "source": "heldout5/FREEZE_MANIFEST.json",
+  "mapping": [
+    {
+      "predecessor": "h5-data-alias-replay",
+      "replacement": "h6-data-alias-replay",
+      "expected_status": "complete",
+      "predecessor_task_hash": "1be2be39ef28368d211efbc279a8baf1ab5923f1bc4ed8531b58da168fcba726",
+      "predecessor_grader_hash": "146df561c1d5c1fcc1454aac714fb784ba8dbf5791ed3a033bfcfe6d6ee63dcb"
+    },
+    {
+      "predecessor": "h5-data-attestation-conflict",
+      "replacement": "h6-data-attestation-conflict",
+      "expected_status": "blocked",
+      "predecessor_task_hash": "4306dac095b783d36d195371d4aba82262f8d902590a17f636106ea15e6e91c8",
+      "predecessor_grader_hash": "bf8f38d5c0fdce681b0aba6a7898e785563ba8247545ae6fc10af351e0a41fec"
+    },
+    {
+      "predecessor": "h5-data-erasure-ledger",
+      "replacement": "h6-data-erasure-ledger",
+      "expected_status": "complete",
+      "predecessor_task_hash": "d97724b8cce8905a40403d56917d74ff6fd10dcdafc4314428e2b05ab77e9432",
+      "predecessor_grader_hash": "d7561c968887778fd1fa0c31cbbbeb3d81d84b3ad3dc983a07da35971319dbc9"
+    },
+    {
+      "predecessor": "h5-data-owner-merge",
+      "replacement": "h6-data-owner-merge",
+      "expected_status": "blocked",
+      "predecessor_task_hash": "e7324c5ceb7aee51caa64248179e0563d5677ca2f7b5cabf95dbe6bc817ae4c7",
+      "predecessor_grader_hash": "a1f2761662eafffd13c1a244d189d5dc074a577fbe34da525e152afb066c71b9"
+    },
+    {
+      "predecessor": "h5-data-redacted-export",
+      "replacement": "h6-data-redacted-export",
+      "expected_status": "complete",
+      "predecessor_task_hash": "cf06a1a0e6dbfa66a491a663d102dce716025e16c7289f948e12d323fe05960a",
+      "predecessor_grader_hash": "453e023fd31f0016eab0b4c543d01004c41b649631e3b1949ac350aa4e696031"
+    },
+    {
+      "predecessor": "h5-data-region-placement",
+      "replacement": "h6-data-region-placement",
+      "expected_status": "blocked",
+      "predecessor_task_hash": "7e4410502a87bc017d6353b133f8af8899e07629a33acaf41cdc99b0678eb4d5",
+      "predecessor_grader_hash": "6eb9c208eb6d49a7d3bb0f3c6092713e66a94220e9df37ee6d6a37e3956a3714"
+    },
+    {
+      "predecessor": "h5-data-service-scope",
+      "replacement": "h6-data-service-scope",
+      "expected_status": "blocked",
+      "predecessor_task_hash": "f4b537b495638769beca080a8d57ebca72f2f90e48726be733e22553cddb66f6",
+      "predecessor_grader_hash": "05008503e1fbec14801713bc6cb511e9833a3cfc262476d5071dcdaf1b080ac3"
+    },
+    {
+      "predecessor": "h5-data-ticket-visibility",
+      "replacement": "h6-data-ticket-visibility",
+      "expected_status": "complete",
+      "predecessor_task_hash": "ebf4c8ad976f0aa02ad613b1b96e9ae0f86219f518825026222c6fa3f2fa7ef0",
+      "predecessor_grader_hash": "33a3d9b5160359ae251e6b3c1b5bbd7561b3f8d5083b62094d8da94e2cac6e8e"
+    },
+    {
+      "predecessor": "h5-fin-credit-release",
+      "replacement": "h6-fin-credit-release",
+      "expected_status": "blocked",
+      "predecessor_task_hash": "e129986020384d382366b6b60fcf0ed66a2246f57cd88a40e436603ebda2b5a1",
+      "predecessor_grader_hash": "7b17dc1b4fabc1f91965d766a86ac31d53b499f2fe042ae165d38425947e5be8"
+    },
+    {
+      "predecessor": "h5-fin-meter-close",
+      "replacement": "h6-fin-meter-close",
+      "expected_status": "complete",
+      "predecessor_task_hash": "e23695536f0766c2d27c9ca4b252a99ec4087d93d3de46f9629e5e2ba1b52d9d",
+      "predecessor_grader_hash": "23c703cfc1dd7dde8b16b382eb82e624f4b018b3ba07114c1e005ed27e293eb8"
+    },
+    {
+      "predecessor": "h5-fin-payout-owner",
+      "replacement": "h6-fin-payout-owner",
+      "expected_status": "blocked",
+      "predecessor_task_hash": "cf661420889aa2ee05e1392396359ae60dfe8f71f8280ae78e70609e6421ac2c",
+      "predecessor_grader_hash": "50b618d705ee230deecb1f37f8e82c6dc8eab5c1eb1b62caaa0cc1633d5eade5"
+    },
+    {
+      "predecessor": "h5-fin-procure-plan",
+      "replacement": "h6-fin-procure-plan",
+      "expected_status": "complete",
+      "predecessor_task_hash": "361c358144ddd52b6db4592a2fee3c9ee219edd7ec21cb5b467b54a15acd564f",
+      "predecessor_grader_hash": "149a2b758a26c1dd2ef9798752e05ec3c05a145f85cef5662154d517e8c59b13"
+    },
+    {
+      "predecessor": "h5-fin-refund-replay",
+      "replacement": "h6-fin-refund-replay",
+      "expected_status": "complete",
+      "predecessor_task_hash": "2256c0846a53d907e0aa48f30d409bdc524a1e8dcd4fa3c803861f8d52fb5522",
+      "predecessor_grader_hash": "bc028f65fe25cdfbfd5fc4215495ebe58678fb7b0b9234f1f4f8b5709c9016ef"
+    },
+    {
+      "predecessor": "h5-fin-revenue-attest",
+      "replacement": "h6-fin-revenue-attest",
+      "expected_status": "blocked",
+      "predecessor_task_hash": "3a95d3b1fc439b49cf9d227ac237ff99df90c19ea7512a5ea54f600ae63f3cfc",
+      "predecessor_grader_hash": "0b721c656bc56aaa29c934a466607144bcb1fdcaf6d1ca1ac7059c6fce398dba"
+    },
+    {
+      "predecessor": "h5-ops-attestation",
+      "replacement": "h6-ops-attestation",
+      "expected_status": "blocked",
+      "predecessor_task_hash": "8182f628173501612bc885f56edec28eb95fdd377c9bf68fe862dc698e054ab4",
+      "predecessor_grader_hash": "c4bd3df424f672258f5dcfa8e7877c35ba04d4c903fc837a79668a075120e2f6"
+    },
+    {
+      "predecessor": "h5-ops-backup-gap",
+      "replacement": "h6-ops-backup-gap",
+      "expected_status": "blocked",
+      "predecessor_task_hash": "993c1721c6e44183a3443bec14f041e675b9cf5f8fce1c8086f711e23535c9e4",
+      "predecessor_grader_hash": "56fc178c19f0cd0796b5ab8fe20256074c0d410c71c301d54ee21b78069c0582"
+    },
+    {
+      "predecessor": "h5-ops-provenance",
+      "replacement": "h6-ops-provenance",
+      "expected_status": "complete",
+      "predecessor_task_hash": "2008d070b8375d7c6a331032c6f16403fe5f8ca7db8d2358785b05dc0c81f925",
+      "predecessor_grader_hash": "f296290eaecd03f1e624a5d81b49e426f5b3068153d0ba7f97bf375e84959f6a"
+    },
+    {
+      "predecessor": "h5-ops-quorum-cut",
+      "replacement": "h6-ops-quorum-cut",
+      "expected_status": "blocked",
+      "predecessor_task_hash": "2f6cad45762083f419f7fb28de0eab00c53d029aa3700ae3004c8fdd17b3a906",
+      "predecessor_grader_hash": "89371c3db44b300c1d917159dff5b94bc2320d542ae4e1e7b3a433e8a8162b67"
+    },
+    {
+      "predecessor": "h5-ops-rollout",
+      "replacement": "h6-ops-rollout",
+      "expected_status": "complete",
+      "predecessor_task_hash": "751ab6b3124ec9a439e195501a4cdacf9862f3d76714dd81a4f6c8a247007397",
+      "predecessor_grader_hash": "a7c61f6d6395013f4c620e6888b3e7c5c6c203102f89f02422296766af2bafcd"
+    },
+    {
+      "predecessor": "h5-ops-wal-restore",
+      "replacement": "h6-ops-wal-restore",
+      "expected_status": "complete",
+      "predecessor_task_hash": "8578563b6d664aea2053d3e933965c7799c5c6806303a8417531652f43c7193e",
+      "predecessor_grader_hash": "5f36cd24a52cdcc729299afdb292b29ddc52712ce7ca3967ae6382f298fb6982"
+    }
+  ],
+  "baseline_source_commit": "00361f57c4fd7ca6b3acc88762b2b3d757309d36"
+}

@@ -1,0 +1,134 @@
+{
+  "nodes": [
+    {
+      "id": "n0",
+      "rack": "retire",
+      "zone": "e",
+      "cpu": 1,
+      "memory": 1
+    },
+    {
+      "id": "n1",
+      "rack": "rack-a",
+      "zone": "w",
+      "cpu": 2,
+      "memory": 2
+    },
+    {
+      "id": "n2",
+      "rack": "rack-b",
+      "zone": "e",
+      "cpu": 2,
+      "memory": 2
+    },
+    {
+      "id": "n3",
+      "rack": "rack-c",
+      "zone": "w",
+      "cpu": 1,
+      "memory": 1
+    },
+    {
+      "id": "n4",
+      "rack": "rack-a",
+      "zone": "e",
+      "cpu": 1,
+      "memory": 1
+    }
+  ],
+  "replicas": [
+    {
+      "id": "p0",
+      "service": "alpha",
+      "cpu": 1,
+      "memory": 1,
+      "zones": [
+        "e"
+      ],
+      "initial": {
+        "node": "n0",
+        "image": "old"
+      }
+    },
+    {
+      "id": "p1",
+      "service": "alpha",
+      "cpu": 1,
+      "memory": 1,
+      "zones": [
+        "w"
+      ],
+      "initial": {
+        "node": "n1",
+        "image": "old"
+      }
+    },
+    {
+      "id": "p2",
+      "service": "beta",
+      "cpu": 2,
+      "memory": 2,
+      "zones": [
+        "e"
+      ],
+      "initial": {
+        "node": "n2",
+        "image": "old"
+      }
+    },
+    {
+      "id": "p3",
+      "service": "beta",
+      "cpu": 1,
+      "memory": 1,
+      "zones": [
+        "w"
+      ],
+      "initial": {
+        "node": "n3",
+        "image": "old"
+      }
+    }
+  ],
+  "policy": {
+    "alpha": {
+      "min_ready": 2,
+      "min_zones": 2
+    },
+    "beta": {
+      "min_ready": 2,
+      "min_zones": 2
+    }
+  },
+  "maintenance_rack": "retire",
+  "requests": [
+    {
+      "id": "q17",
+      "node": "n4",
+      "delta_cpu": 0,
+      "delta_memory": 1,
+      "cost": 2
+    },
+    {
+      "id": "q38",
+      "node": "n4",
+      "delta_cpu": 1,
+      "delta_memory": 0,
+      "cost": 3
+    },
+    {
+      "id": "q52",
+      "node": "n1",
+      "delta_cpu": 0,
+      "delta_memory": 5,
+      "cost": 1
+    },
+    {
+      "id": "q73",
+      "node": "n4",
+      "delta_cpu": 3,
+      "delta_memory": 0,
+      "cost": 6
+    }
+  ]
+}

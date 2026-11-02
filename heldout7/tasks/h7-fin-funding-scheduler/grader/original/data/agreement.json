@@ -1,0 +1,218 @@
+{
+  "customer": "Brightwater Cold Chain Ltd (fictional)",
+  "agreement": "BCC-2026-TF-07",
+  "as_of": 20,
+  "horizon": 4,
+  "facilities": [
+    "A",
+    "B",
+    "C"
+  ],
+  "collateral": [
+    "P",
+    "Q",
+    "R"
+  ],
+  "scenarios": [
+    {
+      "id": "X-cash",
+      "signals": [
+        "sealed",
+        "pending",
+        "X-family",
+        "published"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          200
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "C": [
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "collateral": {
+        "P": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "Q": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "X-pledge",
+      "signals": [
+        "sealed",
+        "pending",
+        "X-family",
+        "published"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "C": [
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "collateral": {
+        "P": [
+          300,
+          300,
+          300,
+          200
+        ],
+        "Q": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "Y-pledge",
+      "signals": [
+        "sealed",
+        "pending",
+        "Y-family",
+        "published"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "C": [
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "collateral": {
+        "P": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "Q": [
+          200,
+          200,
+          200,
+          100
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "Y-cash",
+      "signals": [
+        "sealed",
+        "pending",
+        "Y-family",
+        "published"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          100
+        ],
+        "C": [
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "collateral": {
+        "P": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "Q": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    }
+  ]
+}

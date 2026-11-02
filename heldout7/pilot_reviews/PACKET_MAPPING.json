@@ -1,0 +1,34 @@
+{
+  "packets": [
+    {
+      "packet_id": "response-29fdae4b0339",
+      "run": "runs/calibration-h7/h7-fin-period-close/pilot1-astra",
+      "packet": "/tmp/h7-pilot-review-packets/response-29fdae4b0339/packet.json",
+      "packet_sha256": "7864fa0cbe1d874744e03a571ce0a8c1e76c6bcbdd8e25873a4308cd9ce0105d",
+      "snapshot_sha256": "43d5945b6845e4786342330fd196cdc7d9229637d92433759daef4663d2c1b8e",
+      "binding": {
+        "task": "h7-fin-period-close",
+        "task_hash": "e675b2137516cc7daa525ddb6113c6558155a813731f326c082ff09117f15bd1",
+        "record_sha256": "29fdae4b0339b764f4bc6d2f9e5c0db147c20ad8132e703e5ab25a95a78cef69",
+        "workspace_sha256": "2659e01e83c2bbf34c1a7931c62152a2d93bf9ee020136428fc9a1a79e71f408",
+        "grader_contract_sha256": "4982bcb47b050e00358603f84890cf769dff9d5ba4a29ef7416a956ae93ea374"
+      },
+      "rubric_sha256": "8a3f9a9facccb27832eb07a3ade9ad307b5a41515e9392da801c0391d8d3d530"
+    },
+    {
+      "packet_id": "response-adfec8497e08",
+      "run": "runs/calibration-h7/h7-ops-generation-restore/pilot1-astra",
+      "packet": "/tmp/h7-pilot-review-packets/response-adfec8497e08/packet.json",
+      "packet_sha256": "7c7f9e01d976fee947e46c92fb0d4413013b6b527d3a693731ae5513895fd584",
+      "snapshot_sha256": "0f897f916f71626d4cdbe4b3c718109ce896b1e3bba4c8ebcf756f1e3177e5da",
+      "binding": {
+        "task": "h7-ops-generation-restore",
+        "task_hash": "f455fc7f3486ee8b0422d52adeca2e16207195d5bdabbcc3f9d127b61f1b86e9",
+        "record_sha256": "adfec8497e08482a686ff738247864b4e468bd51f755cd4817cd5b57911b2c89",
+        "workspace_sha256": "bfa9d97f7c5c287e9dabe6c6403d44cc46bf16d19ad79512fcdaba53cb588929",
+        "grader_contract_sha256": "198717dcf27bd9fa2efb8d3193b1c7013b9e4d0489e294572969d993d8712ffe"
+      },
+      "rubric_sha256": "8a3f9a9facccb27832eb07a3ade9ad307b5a41515e9392da801c0391d8d3d530"
+    }
+  ]
+}

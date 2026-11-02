@@ -1,0 +1,1 @@
+OPS-512: on Tuesday (Oct 20) the `exports` queue backed up to more than 6,000 jobs, and nobody was paged for almost three hours. Add an alert to `alerts/rules.toml` that pages (severity `page`) when any queue has more than 1,000 jobs waiting for 5 minutes in a row. `python3 -m opsalerts check` checks the rules file; run the tests with `python3 -m pytest`.

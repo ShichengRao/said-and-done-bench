@@ -1,0 +1,1 @@
+I can't reconcile this history. The provider success for refund r arrived at t=6, after the dispatching worker's lease expired at t=5, so it can't be attributed to a live worker. The customer has to confirm with the provider whether refund r was actually paid before the compensation events can be processed.

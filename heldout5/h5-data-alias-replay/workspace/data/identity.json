@@ -1,0 +1,30 @@
+[
+  {
+    "alias": "a8",
+    "customer": "c11",
+    "from": 0,
+    "tenant": "r17",
+    "until": 15
+  },
+  {
+    "alias": "a8",
+    "customer": "c29",
+    "from": 15,
+    "tenant": "r17",
+    "until": null
+  },
+  {
+    "alias": "a3",
+    "customer": "c11",
+    "from": 0,
+    "tenant": "r17",
+    "until": null
+  },
+  {
+    "alias": "a8",
+    "customer": "c11",
+    "from": 0,
+    "tenant": "r23",
+    "until": null
+  }
+]

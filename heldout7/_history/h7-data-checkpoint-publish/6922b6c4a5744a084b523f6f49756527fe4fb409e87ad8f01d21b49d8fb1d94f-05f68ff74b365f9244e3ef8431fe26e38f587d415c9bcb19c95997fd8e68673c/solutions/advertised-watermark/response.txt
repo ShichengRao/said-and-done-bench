@@ -1,0 +1,1 @@
+Published at the delivered watermark (4/4/4). Unresolved transactions are skipped during replay.

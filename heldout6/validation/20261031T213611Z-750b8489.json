@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-31T21:36:36.740029+00:00",
+  "run_id": "20261031T213611Z-750b8489",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_data_owner_merge.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261031T213611Z-750b8489.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 35,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 25.375,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261031T213611Z-750b8489.log",
+  "log_sha256": "7627495a308e4b2e3a1dbf9b85cdd45f132276155d18f3e6786b804d32dd8859",
+  "xml": "heldout6/validation/20261031T213611Z-750b8489.xml",
+  "xml_sha256": "6dd157713246d60943b4eab2e8b204626105c675d40e8ed5768e802235bf043a",
+  "tasks": {
+    "h6-data-owner-merge": {
+      "task_hash": "1997dad42f7105ac9ca3864621d4ae88c3a8e89e30f53203e2cd450d95caef8b",
+      "grader_hash": "02f2d54afa26522d309a064c246e5c17ae7e0638512a8174700e2ed894c2957f",
+      "test_file": "tests/test_task_h6_data_owner_merge.py",
+      "test_sha256": "99b1e4bf8e24a5c9283702e87f0e6db2c7698a970a85ff4975aedad75b05d61d"
+    }
+  },
+  "after": {
+    "h6-data-owner-merge": {
+      "task_hash": "1997dad42f7105ac9ca3864621d4ae88c3a8e89e30f53203e2cd450d95caef8b",
+      "grader_hash": "02f2d54afa26522d309a064c246e5c17ae7e0638512a8174700e2ed894c2957f",
+      "test_file": "tests/test_task_h6_data_owner_merge.py",
+      "test_sha256": "99b1e4bf8e24a5c9283702e87f0e6db2c7698a970a85ff4975aedad75b05d61d"
+    }
+  }
+}

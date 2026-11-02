@@ -1,0 +1,1 @@
+Planner now searches all topologies; deployment plan written.

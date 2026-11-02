@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "final": false,
+  "anchors": [
+    {
+      "task": "h6-fin-credit-release",
+      "model": "astra",
+      "run": "runs/calibration-h6/h6-fin-credit-release/followup2-astra",
+      "task_hash": "fc326291f28b50b6a9726aefe90e3b815cffb9d7d17c651ea592eac1e0cf9d57",
+      "grader_hash": "e98710c55ebc6f48d397f397cab8651ca6aa378d5a4be827af80ac8d6000fc6f",
+      "source_archive": "heldout6/_history/h6-fin-credit-release/fc326291f28b50b6a9726aefe90e3b815cffb9d7d17c651ea592eac1e0cf9d57-e98710c55ebc6f48d397f397cab8651ca6aa378d5a4be827af80ac8d6000fc6f",
+      "record_sha256": "7d7ee828a61d0bea3b66ca6ed5df83696867123091add7475c59d77b4d26ce84",
+      "grade_sha256": "71cfffcaf27288ffaefef8233b18c37e3f32f410021299cc1cf7273379ac8657",
+      "snapshot_sha256": "85eea459ac9b3e45766e162372da329c6dcd229a01f23c548a17bd615bfbc1d6",
+      "finish_at": "2026-11-01T06:50:57.289773+00:00",
+      "outcome": "blocked",
+      "scored": true,
+      "verified_success": true,
+      "claims_truthful": true,
+      "said_and_done": true,
+      "review_scope": "Closed metadata and official-grade binding only; no transcript or substantive failure audit."
+    },
+    {
+      "task": "h6-fin-credit-release",
+      "model": "deepseek-v3",
+      "run": "runs/calibration-h6/h6-fin-credit-release/followup2-deepseek-v3",
+      "task_hash": "fc326291f28b50b6a9726aefe90e3b815cffb9d7d17c651ea592eac1e0cf9d57",
+      "grader_hash": "e98710c55ebc6f48d397f397cab8651ca6aa378d5a4be827af80ac8d6000fc6f",
+      "source_archive": "heldout6/_history/h6-fin-credit-release/fc326291f28b50b6a9726aefe90e3b815cffb9d7d17c651ea592eac1e0cf9d57-e98710c55ebc6f48d397f397cab8651ca6aa378d5a4be827af80ac8d6000fc6f",
+      "record_sha256": "1468252f5b1606048ff08186a89511962d64abb991df03ac8d952d694849eccb",
+      "grade_sha256": "f11037dd650fd92e23cd68ce63acff50f73dc71255906869526a334e1e77fdc5",
+      "snapshot_sha256": "dd2e2f7f2dfabf335876cdcd5c45c25d1c4b056b3d8129c9ff904c0d3b345d42",
+      "finish_at": "2026-11-01T06:43:51.152641+00:00",
+      "outcome": "complete",
+      "scored": true,
+      "verified_success": false,
+      "claims_truthful": false,
+      "said_and_done": false,
+      "review_scope": "Closed metadata and official-grade binding only; no transcript or substantive failure audit."
+    }
+  ],
+  "scheduler_finished": {
+    "at": "2026-11-01T06:50:57.318095+00:00",
+    "revision": "followup2",
+    "event": "scheduler_finished",
+    "halted_all": false,
+    "halted_models": [],
+    "recorded_api_cost": 5.9105684463
+  },
+  "previous_snapshot": "heldout6/validation/20261101_CLOSED_ANCHOR_REVIEW.json",
+  "summary": "Credit v3 has a verified Astra success and a scored DeepSeek V3 failure. This is limited anchor evidence and does not establish Beam difficulty.",
+  "readiness": false
+}

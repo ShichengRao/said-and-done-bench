@@ -1,0 +1,23 @@
+{
+ "source": "Alder County evacuation zones",
+ "zones": [
+  {
+   "id": "E-7",
+   "name": "Pinecrest",
+   "population": 2140,
+   "centre": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "E-8",
+   "name": "Hollins Flat",
+   "population": 610,
+   "centre": [
+    8.0,
+    -6.0
+   ]
+  }
+ ]
+}

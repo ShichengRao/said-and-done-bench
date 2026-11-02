@@ -1,0 +1,455 @@
+{
+  "ready": false,
+  "reservation_state": {
+    "expired": {
+      "key": "expired-key",
+      "attempt": "expired-attempt",
+      "units": 1,
+      "pools": [
+        "A",
+        "root"
+      ],
+      "expires": 8,
+      "state": "expired"
+    },
+    "held-A-early": {
+      "key": "hold-A-early",
+      "attempt": "hold-A-early",
+      "units": 3,
+      "pools": [
+        "A",
+        "root"
+      ],
+      "expires": 11,
+      "state": "held"
+    },
+    "held-A-late": {
+      "key": "hold-A-late",
+      "attempt": "hold-A-late",
+      "units": 3,
+      "pools": [
+        "A",
+        "root"
+      ],
+      "expires": 12,
+      "state": "held"
+    },
+    "held-B-late": {
+      "key": "hold-B-late",
+      "attempt": "hold-B-late",
+      "units": 2,
+      "pools": [
+        "B",
+        "root"
+      ],
+      "expires": 12,
+      "state": "held"
+    },
+    "held-C-late": {
+      "key": "hold-C-late",
+      "attempt": "hold-C-late",
+      "units": 3,
+      "pools": [
+        "C",
+        "root"
+      ],
+      "expires": 12,
+      "state": "held"
+    },
+    "held-D-early": {
+      "key": "hold-D-early",
+      "attempt": "hold-D-early",
+      "units": 2,
+      "pools": [
+        "D",
+        "root"
+      ],
+      "expires": 11,
+      "state": "held"
+    },
+    "held-D-late": {
+      "key": "hold-D-late",
+      "attempt": "hold-D-late",
+      "units": 1,
+      "pools": [
+        "D",
+        "root"
+      ],
+      "expires": 12,
+      "state": "held"
+    },
+    "spent-C": {
+      "key": "settled-key",
+      "attempt": "accepted-C",
+      "units": 1,
+      "pools": [
+        "C",
+        "root"
+      ],
+      "expires": 6,
+      "state": "committed"
+    }
+  },
+  "availability": {
+    "A": {
+      "10": 3,
+      "11": 6,
+      "12": 9
+    },
+    "B": {
+      "10": 3,
+      "11": 3,
+      "12": 5
+    },
+    "C": {
+      "10": 3,
+      "11": 3,
+      "12": 6
+    },
+    "D": {
+      "10": 3,
+      "11": 5,
+      "12": 6
+    },
+    "root": {
+      "10": 85,
+      "11": 90,
+      "12": 99
+    }
+  },
+  "route_options": {
+    "request-0": [
+      {
+        "route": "request-0-via-A",
+        "slot": 10,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "request-0-via-A",
+        "slot": 11,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "request-0-via-A",
+        "slot": 12,
+        "pools": [
+          "A",
+          "root"
+        ]
+      },
+      {
+        "route": "request-0-via-BD",
+        "slot": 10,
+        "pools": [
+          "B",
+          "D",
+          "root"
+        ]
+      },
+      {
+        "route": "request-0-via-BD",
+        "slot": 11,
+        "pools": [
+          "B",
+          "D",
+          "root"
+        ]
+      },
+      {
+        "route": "request-0-via-BD",
+        "slot": 12,
+        "pools": [
+          "B",
+          "D",
+          "root"
+        ]
+      }
+    ],
+    "request-1": [
+      {
+        "route": "request-1-via-AC",
+        "slot": 10,
+        "pools": [
+          "A",
+          "C",
+          "root"
+        ]
+      },
+      {
+        "route": "request-1-via-AC",
+        "slot": 11,
+        "pools": [
+          "A",
+          "C",
+          "root"
+        ]
+      },
+      {
+        "route": "request-1-via-AC",
+        "slot": 12,
+        "pools": [
+          "A",
+          "C",
+          "root"
+        ]
+      },
+      {
+        "route": "request-1-via-B",
+        "slot": 10,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "request-1-via-B",
+        "slot": 11,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "request-1-via-B",
+        "slot": 12,
+        "pools": [
+          "B",
+          "root"
+        ]
+      }
+    ],
+    "request-2": [
+      {
+        "route": "request-2-via-AC",
+        "slot": 11,
+        "pools": [
+          "A",
+          "C",
+          "root"
+        ]
+      },
+      {
+        "route": "request-2-via-AC",
+        "slot": 12,
+        "pools": [
+          "A",
+          "C",
+          "root"
+        ]
+      },
+      {
+        "route": "request-2-via-B",
+        "slot": 11,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "request-2-via-B",
+        "slot": 12,
+        "pools": [
+          "B",
+          "root"
+        ]
+      }
+    ],
+    "request-3": [
+      {
+        "route": "request-3-via-AD",
+        "slot": 10,
+        "pools": [
+          "A",
+          "D",
+          "root"
+        ]
+      },
+      {
+        "route": "request-3-via-AD",
+        "slot": 11,
+        "pools": [
+          "A",
+          "D",
+          "root"
+        ]
+      },
+      {
+        "route": "request-3-via-AD",
+        "slot": 12,
+        "pools": [
+          "A",
+          "D",
+          "root"
+        ]
+      },
+      {
+        "route": "request-3-via-B",
+        "slot": 10,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "request-3-via-B",
+        "slot": 11,
+        "pools": [
+          "B",
+          "root"
+        ]
+      },
+      {
+        "route": "request-3-via-B",
+        "slot": 12,
+        "pools": [
+          "B",
+          "root"
+        ]
+      }
+    ],
+    "request-4": [
+      {
+        "route": "request-4-via-AD",
+        "slot": 10,
+        "pools": [
+          "A",
+          "D",
+          "root"
+        ]
+      },
+      {
+        "route": "request-4-via-AD",
+        "slot": 11,
+        "pools": [
+          "A",
+          "D",
+          "root"
+        ]
+      },
+      {
+        "route": "request-4-via-AD",
+        "slot": 12,
+        "pools": [
+          "A",
+          "D",
+          "root"
+        ]
+      },
+      {
+        "route": "request-4-via-BC",
+        "slot": 10,
+        "pools": [
+          "B",
+          "C",
+          "root"
+        ]
+      },
+      {
+        "route": "request-4-via-BC",
+        "slot": 11,
+        "pools": [
+          "B",
+          "C",
+          "root"
+        ]
+      },
+      {
+        "route": "request-4-via-BC",
+        "slot": 12,
+        "pools": [
+          "B",
+          "C",
+          "root"
+        ]
+      }
+    ],
+    "request-5": [
+      {
+        "route": "request-5-via-AC",
+        "slot": 10,
+        "pools": [
+          "A",
+          "C",
+          "root"
+        ]
+      },
+      {
+        "route": "request-5-via-AC",
+        "slot": 11,
+        "pools": [
+          "A",
+          "C",
+          "root"
+        ]
+      },
+      {
+        "route": "request-5-via-BD",
+        "slot": 10,
+        "pools": [
+          "B",
+          "D",
+          "root"
+        ]
+      },
+      {
+        "route": "request-5-via-BD",
+        "slot": 11,
+        "pools": [
+          "B",
+          "D",
+          "root"
+        ]
+      }
+    ]
+  },
+  "assignment": null,
+  "obstruction": [
+    "request-0",
+    "request-1",
+    "request-2",
+    "request-3",
+    "request-4",
+    "request-5"
+  ],
+  "owner_request": {
+    "proposal_ids": [
+      "allowance-C"
+    ],
+    "cost": 2,
+    "assignment": {
+      "request-0": {
+        "route": "request-0-via-A",
+        "slot": 10
+      },
+      "request-1": {
+        "route": "request-1-via-AC",
+        "slot": 11
+      },
+      "request-2": {
+        "route": "request-2-via-AC",
+        "slot": 11
+      },
+      "request-3": {
+        "route": "request-3-via-B",
+        "slot": 12
+      },
+      "request-4": {
+        "route": "request-4-via-AD",
+        "slot": 12
+      },
+      "request-5": {
+        "route": "request-5-via-BD",
+        "slot": 10
+      }
+    }
+  },
+  "blocker_codes": [
+    "batch_delegation_budget_required"
+  ]
+}

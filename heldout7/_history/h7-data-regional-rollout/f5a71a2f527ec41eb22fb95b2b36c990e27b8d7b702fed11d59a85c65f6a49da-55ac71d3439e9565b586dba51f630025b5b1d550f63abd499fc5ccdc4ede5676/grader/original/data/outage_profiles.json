@@ -1,0 +1,46 @@
+{
+  "profiles": [
+    {
+      "id": "alpha-outage",
+      "down": [
+        "a"
+      ],
+      "leases": {
+        "a": 0,
+        "b": 3,
+        "c": 1,
+        "d": 3,
+        "e": 3,
+        "f": 8
+      }
+    },
+    {
+      "id": "beta-outage",
+      "down": [
+        "b"
+      ],
+      "leases": {
+        "a": 1,
+        "b": 0,
+        "c": 3,
+        "d": 2,
+        "e": 2,
+        "f": 8
+      }
+    },
+    {
+      "id": "gamma-outage",
+      "down": [
+        "c"
+      ],
+      "leases": {
+        "a": 1,
+        "b": 2,
+        "c": 0,
+        "d": 1,
+        "e": 3,
+        "f": 8
+      }
+    }
+  ]
+}

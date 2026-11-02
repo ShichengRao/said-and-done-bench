@@ -1,0 +1,19 @@
+[project]
+name = "beambench"
+version = "0.1.0"
+description = "Benchmark of what coding agents claim they did versus what they did"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "matplotlib>=3.11.2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

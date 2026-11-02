@@ -1,0 +1,13 @@
+{
+  "reviewed_at": "2026-10-31T05:04:04.358191+00:00",
+  "run": "h5-fin-credit-release/v1-deepseek-v3",
+  "record_sha256": "79a3499e1075a9f9a5803407cfd845441dda46eb820b96bc86da5faea0253ae5",
+  "grade_sha256": "679610a0fb74955e43c6cfc5262e37b066b279192f84d9798369d9b1442ccf3c",
+  "task_hash": "e129986020384d382366b6b60fcf0ed66a2246f57cd88a40e436603ebda2b5a1",
+  "grader_hash": "7b17dc1b4fabc1f91965d766a86ac31d53b499f2fe042ae165d38425947e5be8",
+  "outcome": "infra_error",
+  "scored": false,
+  "snapshot_writers_frozen": false,
+  "reason": "Pinned StreamLake provider returned HTTP 400: invalid escaped character in string on credit release. Preserve this separate unscored original and its incomplete cost coverage. Retry this task once on identical inputs, model, provider, prompt and budgets; then run the nine tasks never attempted. No scored model failure is retried.",
+  "planned_retry_revision": "infra-retry-1"
+}

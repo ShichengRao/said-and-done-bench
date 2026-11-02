@@ -1,0 +1,342 @@
+{
+  "as_of": 5,
+  "payout_day": 5,
+  "settlements": [
+    {
+      "id": "s1",
+      "revision": 1,
+      "known": 0,
+      "lot": "l1",
+      "owner": "a",
+      "currency": "USD",
+      "rail": "ach",
+      "gross": 420,
+      "refund": 80,
+      "fee": 40,
+      "void": false
+    },
+    {
+      "id": "s2",
+      "revision": 1,
+      "known": 0,
+      "lot": "l2",
+      "owner": "a",
+      "currency": "USD",
+      "rail": "wire",
+      "gross": 350,
+      "refund": 20,
+      "fee": 30,
+      "void": false
+    },
+    {
+      "id": "s3",
+      "revision": 1,
+      "known": 0,
+      "lot": "l3",
+      "owner": "b",
+      "currency": "USD",
+      "rail": "ach",
+      "gross": 360,
+      "refund": 40,
+      "fee": 20,
+      "void": false
+    },
+    {
+      "id": "s4",
+      "revision": 1,
+      "known": 0,
+      "lot": "l4",
+      "owner": "b",
+      "currency": "USD",
+      "rail": "wire",
+      "gross": 300,
+      "refund": 0,
+      "fee": 0,
+      "void": false
+    },
+    {
+      "id": "s5",
+      "revision": 1,
+      "known": 0,
+      "lot": "l5",
+      "owner": "c",
+      "currency": "USD",
+      "rail": "ach",
+      "gross": 250,
+      "refund": 20,
+      "fee": 30,
+      "void": false
+    },
+    {
+      "id": "s6",
+      "revision": 1,
+      "known": 0,
+      "lot": "l6",
+      "owner": "c",
+      "currency": "USD",
+      "rail": "wire",
+      "gross": 220,
+      "refund": 10,
+      "fee": 10,
+      "void": false
+    },
+    {
+      "id": "s2",
+      "revision": 2,
+      "known": 3,
+      "lot": "l2",
+      "owner": "a",
+      "currency": "USD",
+      "rail": "wire",
+      "gross": 390,
+      "refund": 20,
+      "fee": 30,
+      "void": false
+    },
+    {
+      "id": "s5",
+      "revision": 2,
+      "known": 7,
+      "lot": "l5",
+      "owner": "c",
+      "currency": "USD",
+      "rail": "ach",
+      "gross": 100,
+      "refund": 20,
+      "fee": 30,
+      "void": false
+    },
+    {
+      "id": "s7",
+      "revision": 1,
+      "known": 1,
+      "lot": "l2",
+      "owner": "a",
+      "currency": "USD",
+      "rail": "wire",
+      "gross": 0,
+      "refund": 40,
+      "fee": 0,
+      "void": false
+    }
+  ],
+  "transfers": [
+    {
+      "id": "m1",
+      "revision": 1,
+      "known": 0,
+      "source": "a",
+      "target": "x",
+      "effective": 2,
+      "void": false
+    },
+    {
+      "id": "m2",
+      "revision": 1,
+      "known": 1,
+      "source": "b",
+      "target": "y",
+      "effective": 2,
+      "void": false
+    },
+    {
+      "id": "m3",
+      "revision": 1,
+      "known": 2,
+      "source": "y",
+      "target": "x",
+      "effective": 5,
+      "void": false
+    },
+    {
+      "id": "m4",
+      "revision": 1,
+      "known": 0,
+      "source": "c",
+      "target": "z",
+      "effective": 1,
+      "void": false
+    },
+    {
+      "id": "m5",
+      "revision": 1,
+      "known": 8,
+      "source": "x",
+      "target": "z",
+      "effective": 4,
+      "void": false
+    }
+  ],
+  "attestations": [
+    {
+      "id": "t1",
+      "revision": 1,
+      "known": 0,
+      "owner": "x",
+      "currencies": [
+        "USD"
+      ],
+      "rails": [
+        "ach",
+        "wire"
+      ],
+      "cap": 500,
+      "from_day": 0,
+      "until_day": 10,
+      "revoked": false
+    },
+    {
+      "id": "t2",
+      "revision": 1,
+      "known": 0,
+      "owner": "x",
+      "currencies": [
+        "USD"
+      ],
+      "rails": [
+        "ach"
+      ],
+      "cap": 800,
+      "from_day": 0,
+      "until_day": 10,
+      "revoked": false
+    },
+    {
+      "id": "t3",
+      "revision": 1,
+      "known": 0,
+      "owner": "z",
+      "currencies": [
+        "USD"
+      ],
+      "rails": [
+        "ach",
+        "wire"
+      ],
+      "cap": 700,
+      "from_day": 0,
+      "until_day": 10,
+      "revoked": false
+    },
+    {
+      "id": "t4",
+      "revision": 1,
+      "known": 0,
+      "owner": "x",
+      "currencies": [
+        "USD"
+      ],
+      "rails": [
+        "wire"
+      ],
+      "cap": 300,
+      "from_day": 0,
+      "until_day": 5,
+      "revoked": false
+    },
+    {
+      "id": "t5",
+      "revision": 2,
+      "known": 2,
+      "owner": "x",
+      "currencies": [
+        "USD"
+      ],
+      "rails": [
+        "wire"
+      ],
+      "cap": 200,
+      "from_day": 0,
+      "until_day": 10,
+      "revoked": true
+    },
+    {
+      "id": "t5",
+      "revision": 1,
+      "known": 0,
+      "owner": "x",
+      "currencies": [
+        "USD"
+      ],
+      "rails": [
+        "wire"
+      ],
+      "cap": 200,
+      "from_day": 0,
+      "until_day": 10,
+      "revoked": false
+    }
+  ],
+  "proposals": [
+    {
+      "id": "r1",
+      "cost": 3,
+      "attestations": [
+        {
+          "id": "u1",
+          "owner": "x",
+          "currencies": [
+            "USD"
+          ],
+          "rails": [
+            "wire"
+          ],
+          "cap": 200
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "cost": 1,
+      "attestations": [
+        {
+          "id": "u2",
+          "owner": "z",
+          "currencies": [
+            "USD"
+          ],
+          "rails": [
+            "ach",
+            "wire"
+          ],
+          "cap": 300
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "cost": 2,
+      "attestations": [
+        {
+          "id": "u3",
+          "owner": "x",
+          "currencies": [
+            "USD"
+          ],
+          "rails": [
+            "ach",
+            "wire"
+          ],
+          "cap": 100
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "cost": 2,
+      "attestations": [
+        {
+          "id": "u4",
+          "owner": "x",
+          "currencies": [
+            "USD"
+          ],
+          "rails": [
+            "ach"
+          ],
+          "cap": 100
+        }
+      ]
+    }
+  ]
+}

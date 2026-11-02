@@ -1,0 +1,17 @@
+{
+  "files_changed": [
+    "funding.py",
+    "audit.json"
+  ],
+  "evidence": {
+    "requested_cents": 600,
+    "funded_cents": 530,
+    "unfunded": [
+      "T4"
+    ],
+    "owner_proposals": [
+      "cash-A",
+      "cash-C"
+    ]
+  }
+}

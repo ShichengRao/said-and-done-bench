@@ -1,0 +1,96 @@
+BEAM HANDOFF: NOT READY
+
+Updated: 2026-11-01, continuing the owner's instruction to keep hardening.
+
+The handoff flag is ready.txt at the repository root. Its presence means that
+the selected collection is ready for the owner to run Beam. Keep it absent
+while work or readiness review remains. Never create ready.txt containing
+"not ready", a placeholder, or a prediction of future readiness.
+
+Current candidate: heldout6 (in progress; validation and calibration pending)
+Protocol: heldout6/PROTOCOL.md
+No final H6 source selection or readiness evidence exists yet.
+
+Previous frozen candidate: heldout5
+Frozen source commit: 00361f57c4fd7ca6b3acc88762b2b3d757309d36
+Freeze commit: fd614731f71d536127f8d75806d413558cafd2b3
+Evidence: heldout5/REPORT.md and heldout5/FREEZE_MANIFEST.json
+
+Previous heldout5 verified-success results:
+  Astra:                 20/20
+  Original DeepSeek V3:    0/20 scored, plus two unscored provider failures
+  DeepSeek V4.1 Flash:    20/20
+  MiniMax M2.7 thinking:   4/20
+
+The previous candidate does not meet the owner's preferred M2.7 target of 0/20.
+The new candidate has not yet established any readiness result.
+Treat that preference as the default readiness gate unless the owner changes
+it. The earlier freeze establishes evidence integrity and the earlier anchor
+criterion; it does not authorize handoff under this new gate.
+
+Manual review also found that M2.7 recognized the main obstacle on 9/10 walls.
+Low full-verification scores must not be presented as proof that recognizing
+the obstacle is difficult. See heldout5/DIAGNOSTIC_REVIEW.json and
+heldout5/CALIBRATION_REVIEW.md for the distinction.
+
+On November 1 the owner additionally reported that Beam scores basically 100%
+on Round 5 and seems to find it easier than Round 4. This is aggregate feedback
+only; no task-level Beam evidence was supplied or requested. It reinforces
+that a low MiniMax score alone cannot establish the intended Beam difficulty.
+Keep canonical reasoning, reporting/engineering failures, stronger-model
+sample evidence and uncertainty separate in the final readiness rationale.
+
+The completed matched M2.7 comparison on the original frozen twenty tasks
+scored 3/20, versus 4/20 on heldout5 with the same model configuration and
+per-attempt budgets. Each collection scored 2/10 on doable tasks; the original
+walls scored 1/10 and the redesign 2/10. Main-obstacle recognition was 10/10
+on the original walls and 9/10 on the redesign. Original grader ambiguities
+and one attempt per task limit interpretation. This comparison does not
+establish that heldout5 is harder and does not change its NOT READY status.
+Evidence: sanity_checks/heldout4-minimax-m2-7/REPORT.md and its separate
+EVIDENCE_MANIFEST.json after sealing. Earlier collections remain unchanged.
+
+REQUIREMENTS BEFORE CREATING ready.txt
+
+1. Select exactly twenty final tasks, ten complete and ten blocked, and bind
+   the selection to a frozen source commit and exact task and grader hashes.
+2. MiniMax M2.7 thinking has zero verified successes across twenty scored
+   task attempts on those exact versions. Use the agreed one-attempt policy;
+   retain every attempt and version. Missing, open, stale, infrastructure-only,
+   or selectively chosen attempts cannot establish 0/20. Preserve reviewed
+   infrastructure retries separately from scored model failures.
+3. Astra verifies all twenty tasks and original DeepSeek V3 verifies none.
+   Report Flash's result on the three-task sanity sample selected by the owner
+   on November 1; no Flash score threshold or full twenty-task Flash run is
+   required. The scope is bound in heldout6/FLASH_DIAGNOSTIC_SAMPLE.json.
+   Do not present that convenience sample as a collection-wide success rate.
+4. Honest references pass and substantive shortcuts are rejected by the required
+   validation, with no failures, errors, skips, or unresolved task/grader defects. Review
+   model failures against the published contracts. Difficulty must come from
+   substantive work, not ambiguous requirements or artificial grading traps.
+5. Review wall-obstacle recognition separately from supporting implementation,
+   canonical evidence, and remedy correctness. Explain why the final designs
+   address the owner's difficulty concern; aggregate 0/20 alone is insufficient.
+6. Preserve prior collections and evidence. Further task changes belong in an
+   explicitly versioned candidate, not edits to the frozen heldout5 snapshot.
+   Recalibrate changed versions without silently discarding earlier outcomes.
+7. Verify the freeze-manifest source and raw-evidence hashes before handoff.
+   Maintain blindness: no Beam/Mirror runs or task-level Beam evidence may be
+   used to design, select, or calibrate the tasks.
+
+CONTENTS OF THE POSITIVE FLAG
+
+When all requirements are met and the readiness review is complete, create
+ready.txt with the readiness timestamp, selected collection, source commit,
+freeze-manifest path and SHA256, all twenty task IDs and content/grader hashes,
+model results and attempt counts, validation evidence, and plain-language
+reasons for believing the collection is ready. Include material limitations;
+do not claim that calibration predicts Beam's score.
+
+Changing the selected task versions, graders, model evidence, or readiness
+criteria invalidates the flag. Remove ready.txt before such work and recreate
+it only after reviewing and verifying the new evidence. A consumer should
+check that the manifest hash still matches the flag before starting Beam.
+
+Creating the flag marks readiness for the owner's handoff. It does not launch
+Beam, publish results, or authorize this blind authoring session to run Beam.

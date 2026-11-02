@@ -1,0 +1,5 @@
+# Standing parameters for evacuation routes (Alder County OES, set with the fire behaviour analyst, 2025 season).
+# Only the OES duty officer changes these.
+
+[fire]
+min_distance_km = 1.0   # a route must stay at least this far from the mapped fire perimeter at every point

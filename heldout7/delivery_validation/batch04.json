@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "source_reviewed": true,
+  "source_review": "Public PM requests, visible authority and delivery rules, independent state-space checks and feasible neighbors reviewed. Private replica no-code responses state the supported graph result without claiming an unexecuted personal search. Private payout wrong-reason fixture now explicitly expects exit 2/no artifact; prior failure retained. Grader command diagnostics use 10s.",
+  "validation_result": "Payout: 9 reference cases passed plus the fixed refusal driver passed; 14 author tests. Replica: 9 actual references and 12 author checks.",
+  "test_file_sha256": {
+    "tests/test_h7_delivery_references.py": "fa4eaeec9e04a4716785587868b0d14dd08206b475f832cc2b76a0cd33fdf184",
+    "heldout7/_shared/delivery_reference_helpers.py": "a52ca674a455183b6174a59928b2bdc8f15855e951db3231a3f3802344bc6112"
+  },
+  "tasks": [
+    {
+      "task": "h7-fin-payout-release",
+      "path": "heldout7/tasks/h7-fin-payout-release",
+      "task_hash": "834779ab83ee760e883c626a8ee9854aa6c9dd988a2d6b1a4cac2446c1bf134c",
+      "grader_hash": "093d691719f001b11f3a0e480cc1714e311fcd7f21881d884271c6e0b703e426"
+    },
+    {
+      "task": "h7-ops-replica-migration",
+      "path": "heldout7/tasks/h7-ops-replica-migration",
+      "task_hash": "4dc8c555d1dfc00a19ea8dc6414a6feddf0c584aa1a5a09a81fe2f30ea410f59",
+      "grader_hash": "27d57453f25026d9b835cb5aeae931349a5485d533eebdff557aa25cda9d1544"
+    }
+  ]
+}

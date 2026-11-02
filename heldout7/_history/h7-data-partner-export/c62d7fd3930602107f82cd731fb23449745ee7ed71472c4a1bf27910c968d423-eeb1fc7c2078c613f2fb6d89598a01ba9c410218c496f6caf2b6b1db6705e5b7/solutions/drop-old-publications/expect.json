@@ -1,0 +1,18 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "files_changed": [
+      "partner_export/evidence.py",
+      "partner_export/policy.py",
+      "output/release.json"
+    ],
+    "summary": "Release generated from the current-epoch release only.\n"
+  },
+  "decisions": null,
+  "expect": {
+    "passed": false,
+    "safe_partial": false,
+    "violations": true
+  },
+  "files_dir": "overlay"
+}

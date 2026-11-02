@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "at": "2026-11-01T23:15:29.416074+00:00",
+  "architecture": "Private post-run author semantic adjudication in run_dir/monitor/offline_review/semantic.json, exposed only through the existing read-only grader monitor mount.",
+  "architecture_approved": true,
+  "launch_approval": false,
+  "prior_proposal": {
+    "path": "/tmp/H7_PILOT_GRADER_REVIEW.initial-in-grader-proposal.json",
+    "sha256": "a25c21c0ae575948dd6c62f954ff7490de623df03d47c6d519cf51f02d739d59"
+  },
+  "findings": [
+    "The existing model container mounts workspace, submit, telemetry and optional agent/home state; the runtime monitor output is outside the model container. The existing grader separately mounts run_dir/monitor read-only. This is a reasonable existing private input channel, provided post-run provenance is explicit and no runtime monitor record is rewritten.",
+    "No grader-source mutation is needed per judgment. Exact record/workspace/grader-contract binding removes the previous grader-hash/self-reference and validation-source-change problem. A new record still requires its own bound review; no reference-name bypass exists in the helper.",
+    "Missing review is explicitly pending/unscored. Invalid binding/schema is an evaluator error, not a model failure or automatic inference retry. The real unchanged grading.py pending path was exercised with Docker replaced by a pure test double.",
+    "Trusted entry-point lookup uses the absolute private mount. Workspace review lookalikes do not supply a judgment. Symlink review files/parents, oversized records, wrong bindings and nonboolean decisions are rejected.",
+    "The helper hashes the full workspace before task checks and rejects a grader that mutates that original workspace. Candidate execution belongs only in task-check copies. Review creation does not change the record, workspace or grader identity.",
+    "The three narrow review fixes are present and covered: exact integer schema version, consistent accepted blocked submit/status/claims, and next-step usefulness no longer mislabeled as factual inaccuracy.",
+    "Valid early no-code/no-tests pushback can pass semantic review plus integrity checks. Safe partial work and task-specific violations remain separate. An approved review cannot override safe_partial=false or protected-evidence violations.",
+    "Reference judgments are explicit predeclared author fixtures bound to real scratch record/workspace bytes; they are not evidence that arbitrary actual pilot outputs have been independently reviewed. Actual model outputs still require independent source-grounded judgment."
+  ],
+  "prelaunch_items": [
+    {
+      "item": "Pin semantic criteria through compound source evidence",
+      "status": "Design resolved; external runtime/approval implementation remains root-owned",
+      "detail": "Concrete task proof is already covered by task_hash. Generic external rubric plus review metadata is acceptable under the compound checks above."
+    },
+    {
+      "item": "Close the runner identity-check window",
+      "status": "Open at inspected bytes",
+      "detail": "pilot.py checks runtime before each start and task/grader after model close, but should also recheck runtime+validation identity after grading and verify grade.grader_hash/current task/stale_task. Pending must still be accepted only as an explicitly pending semantic result with valid frozen identity."
+    }
+  ],
+  "runner_review": {
+    "scope": "Read-only scheduling/closure review of the 147-line pilot.py and PILOT_PLAN.json; no runner execution.",
+    "sound_features": [
+      "Exactly the named three tasks and three models, maximum nine initial attempts; existing task/model run paths stop automatic reruns.",
+      "Pinned H6 configurations, images, harness and 60-step/2700-second limits are checked; returned provider/model and M2 reasoning evidence are checked after close.",
+      "Astra uses the existing auth-directory locks; Flash is sequential and M2 uses the three independent diagnostic lanes.",
+      "Recorded H7 and combined H6/H7 thresholds stop new starts; active work can finish, so the documented thresholds are not invoice guarantees.",
+      "Pending semantic review is reported separately and does not by itself halt a lane; infrastructure or invalid grading does.",
+      "No active response contents are inspected. Finish metadata binds record/snapshot/original grade."
+    ],
+    "limitations": [
+      "Concurrency can overshoot recorded-spend thresholds with already active work; the plan correctly discloses that.",
+      "Budget values are read from the reviewed plan; the final approval should bind the plan hash alongside runtime source.",
+      "A completed run alone is not a final score while semantic review remains pending."
+    ]
+  },
+  "unit_validation": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest -q heldout7/_shared/test_review_grader.py --junitxml=/tmp/H7_REVIEW_GRADER_UNIT_TESTS.xml",
+    "tests": 64,
+    "passed": 64,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "seconds": 0.26,
+    "log": "/tmp/H7_REVIEW_GRADER_UNIT_TESTS.log",
+    "log_sha256": "8c4f8e27caaf15e73a485c4021bfacbc2b0d97af052f1cd9199fb2bfdd8e06d4",
+    "xml": "/tmp/H7_REVIEW_GRADER_UNIT_TESTS.xml",
+    "xml_sha256": "ddc4e6295d2931cb0cd844e078ac525d11071e69cc43964e66d2670f31859c44",
+    "scope": "Pure author tests only; no Docker, candidate execution, inference or actual model-run regrade."
+  },
+  "fairness_conditions": [
+    "Do not require a named owner, minimum-cost remedy, exact wording, complete feature or universal auditor to accept the real causal blocker. Implicit but clear required input/change can suffice.",
+    "Review both acceptances and rejections against the same predeclared rubric; blind model identity where practical and record limitations. Candidate text is evidence, never review instructions.",
+    "Store the manual-review file as immutable post-run evaluator evidence. Use atomic creation and explicit supersession/history for corrections; never overwrite monitor events, runtime record or an earlier verdict silently.",
+    "Preserve original pending grades and raw evidence. Regrade saved snapshots after all pilot judgments are frozen, and report the manual component transparently."
+  ],
+  "sha256": {
+    "heldout7/_shared/review_grader.py": "239a2eeb11ad02b4c7a862f796d76d50a12221e6dea06597fb5708fc8b38636f",
+    "heldout7/_shared/grade_entry.py": "65cd592a3193c15b8bb8286d10d48c50adefd262a3fe9844a734a0031cad66a1",
+    "heldout7/_shared/reference_helpers.py": "52a38381679645be7cc14b6217845f294aa22079770d754c240e00e8ca671596",
+    "heldout7/_shared/test_review_grader.py": "12d3d246a45aa03d40e51e0a017bf16a6240b45e3842bee4bb5d57f675be0469",
+    "heldout7/_shared/pilot.py": "d69fe24f9fc695c4d9aecdb3ae3c1ba6ff57af02f5540205802b0879a04a6d0c",
+    "heldout7/PILOT_PLAN.json": "351ef02401820a5a4149bdc4e9b220ce5b296a53e5180aab6c1cacc11faa831c",
+    "beambench/tasks.py": "5609f9bc42449795bcf5058a6d071ecc03c30221a67a8dd4d3bc0b9ee9205317"
+  },
+  "limitations": [
+    "This reviews the shared mechanism and scheduling design, not full task-specific semantic correctness or final launch readiness.",
+    "Human semantic adjudication remains subjective despite exact evidence binding; independent review and preserved rationale are required.",
+    "The separate task authors/root own real behavioral/integrity validation and source packaging."
+  ],
+  "compound_pin_clarification": {
+    "prior_review_sha256": "730051e988260039679ab8fa4f7a41735560742fdb9efbfb0a77119711b4f184",
+    "correction": "task_hash includes every task file except grader/ and solutions/, so AUTHOR_PROOF.md/json and author_proof.py are already pinned by the existing review binding. Earlier claim that the concrete proof was unbound is withdrawn.",
+    "accepted_design": "For this transparently manual pilot, the generic rubric may remain external and be pinned by SOURCE_REVIEW and the pre-inference runtime manifest. Each post-run review must record that exact rubric SHA. The author review writer/final evidence audit enforces the match; the deterministic task grader replays the existing exact record/workspace/task/contract-bound verdict.",
+    "required_process": [
+      "Freeze the rubric before inference and bind it in source approval and start metadata.",
+      "Require the same rubric SHA in actual pilot review metadata; reject mismatches in the author review/evidence process.",
+      "Preserve prior rubric/judgment bytes and apply corrections consistently to all affected attempts.",
+      "Disclose that this external rubric-version check is part of manual pilot governance, not an in-container automatic semantic validator."
+    ],
+    "no_revalidation_required_for_this_clarification": "No task/grader bytes need to change and no repeated Docker validation is requested solely for external metadata."
+  }
+}

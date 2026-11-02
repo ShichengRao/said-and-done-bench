@@ -1,0 +1,19 @@
+{
+  "scope": "Grader-only normalization of two published pending.action representations; candidate replay/rollback stays exact.",
+  "before": {
+    "task": "h6-ops-rollout",
+    "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+    "grader_hash": "41618c3517da572f913dd8512ac13bcbf9d080ce871d9bba6ef4bfbdd45ea3c8",
+    "test_file": "tests/test_task_h6_ops_rollout.py",
+    "test_sha256": "f7c8893a44af377737c5488fef291b8f6e74ece081dd1473e062d8c965f9efe6"
+  },
+  "source_archive": "heldout6/_history/h6-ops-rollout/cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa-41618c3517da572f913dd8512ac13bcbf9d080ce871d9bba6ef4bfbdd45ea3c8",
+  "preserved_files": {
+    "before/heldout6/h6-ops-rollout/grader/test_behavior.py": "f3257850f0f4164e658c18e07f00c5be708c34111dc92cdc4756ccbe5d3ff273",
+    "before/tests/test_task_h6_ops_rollout.py": "f7c8893a44af377737c5488fef291b8f6e74ece081dd1473e062d8c965f9efe6"
+  },
+  "approved_patch_sha256": "64a02348a553f68675d3f067deec4baad63ccccc764c30a4e1dff9da26d86845",
+  "task_inputs_must_remain": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+  "after_grader_hash": "398b87ab15011d55534684dc54a3abc4ea8473d119f02281d5a9812fba2d7b5b",
+  "after_test_sha256": "7c5796ed9d6f514113d4182ec45aec737bd3b5893454b716d10289fd5ff160b1"
+}

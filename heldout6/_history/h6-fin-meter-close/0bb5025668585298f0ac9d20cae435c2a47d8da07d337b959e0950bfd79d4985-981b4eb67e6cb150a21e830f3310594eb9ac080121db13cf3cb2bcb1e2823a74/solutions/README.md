@@ -1,0 +1,1 @@
+Honest reference and substantive mutations: absolute counters instead of adjacent differences; pricing each period independently; discarding previously delivered evidence; replaying an ID without checking its payload. Each is exercised through the actual grader.

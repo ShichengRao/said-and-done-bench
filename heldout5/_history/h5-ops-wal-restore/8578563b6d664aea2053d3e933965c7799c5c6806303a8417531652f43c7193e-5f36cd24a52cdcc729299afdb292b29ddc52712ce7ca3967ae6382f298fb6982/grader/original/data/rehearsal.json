@@ -1,0 +1,216 @@
+{
+  "snapshot": {
+    "sequence": 10,
+    "rows": {
+      "cash-a": 100,
+      "cash-b": 40
+    }
+  },
+  "batches": [
+    {
+      "events": {},
+      "commits": [
+        {
+          "sequence": 15,
+          "tx": "t15",
+          "parts": {
+            "s0": {
+              "first": 15,
+              "last": 15,
+              "sha256": "4a07f998f851157f288c5a2201a38986e8a510fed4dccc29e8c91340b7cee258"
+            },
+            "s1": {
+              "first": 15,
+              "last": 15,
+              "sha256": "81eb2b7abca4e760ae0ccf92e0e64a721a14fd29bea2874f372d66839cd75bc9"
+            }
+          }
+        },
+        {
+          "sequence": 14,
+          "tx": "t14",
+          "parts": {
+            "s0": {
+              "first": 14,
+              "last": 14,
+              "sha256": "f99b83137217db5d8d666e7f3b5ada1c4e1937b0f412e17c5eadda14491f56d6"
+            },
+            "s1": {
+              "first": 14,
+              "last": 14,
+              "sha256": "ee980d66f2258d95c490fb8ed6de73d267de7ed59271a2f0af044e2ab6f3e5bf"
+            }
+          }
+        },
+        {
+          "sequence": 13,
+          "tx": "t13",
+          "parts": {
+            "s0": {
+              "first": 13,
+              "last": 13,
+              "sha256": "f9b3f940de7237d5e763585e98073031d3f751d1e5f593e5e558b2f720166a91"
+            },
+            "s1": {
+              "first": 13,
+              "last": 13,
+              "sha256": "f7c5f67a4306c8867f59331718c9d745a3a30ec2567535bb8698099f9606e7d9"
+            }
+          }
+        },
+        {
+          "sequence": 12,
+          "tx": "t12",
+          "parts": {
+            "s0": {
+              "first": 12,
+              "last": 12,
+              "sha256": "fc90e1d2eb8557accfc3ecd6b060c32fe2ad54f6fe3b5862dbf466983c7bb823"
+            },
+            "s1": {
+              "first": 12,
+              "last": 12,
+              "sha256": "25e25db0ed6429ec5e09b46fd94018d06ae602c2236a38b4a1fb15eeed499923"
+            }
+          }
+        },
+        {
+          "sequence": 11,
+          "tx": "t11",
+          "parts": {
+            "s0": {
+              "first": 11,
+              "last": 11,
+              "sha256": "d813b177d17a7d99e0c5015c474516d6932d2d5f886a0c38b1fcd2489f1e7f96"
+            },
+            "s1": {
+              "first": 11,
+              "last": 11,
+              "sha256": "9ee49ad6705aa5a86b2139a896fb8bf64969e2ad13356fb1d57552a83682b8c3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "events": {
+        "s1": [
+          {
+            "lsn": 15,
+            "tx": "t15",
+            "ordinal": 1,
+            "key": "cash-b",
+            "before": 90,
+            "after": 105
+          },
+          {
+            "lsn": 14,
+            "tx": "t14",
+            "ordinal": 1,
+            "key": "cash-b",
+            "before": 76,
+            "after": 90
+          },
+          {
+            "lsn": 13,
+            "tx": "t13",
+            "ordinal": 1,
+            "key": "cash-b",
+            "before": 63,
+            "after": 76
+          },
+          {
+            "lsn": 12,
+            "tx": "t12",
+            "ordinal": 1,
+            "key": "cash-b",
+            "before": 51,
+            "after": 63
+          },
+          {
+            "lsn": 11,
+            "tx": "t11",
+            "ordinal": 1,
+            "key": "cash-b",
+            "before": 40,
+            "after": 51
+          },
+          {
+            "lsn": 11,
+            "tx": "t11",
+            "ordinal": 1,
+            "key": "cash-b",
+            "before": 40,
+            "after": 51
+          }
+        ]
+      },
+      "commits": []
+    },
+    {
+      "events": {
+        "s0": [
+          {
+            "lsn": 15,
+            "tx": "t15",
+            "ordinal": 0,
+            "key": "cash-a",
+            "before": 50,
+            "after": 35
+          },
+          {
+            "lsn": 14,
+            "tx": "t14",
+            "ordinal": 0,
+            "key": "cash-a",
+            "before": 64,
+            "after": 50
+          },
+          {
+            "lsn": 13,
+            "tx": "t13",
+            "ordinal": 0,
+            "key": "cash-a",
+            "before": 77,
+            "after": 64
+          },
+          {
+            "lsn": 12,
+            "tx": "t12",
+            "ordinal": 0,
+            "key": "cash-a",
+            "before": 89,
+            "after": 77
+          },
+          {
+            "lsn": 11,
+            "tx": "t11",
+            "ordinal": 0,
+            "key": "cash-a",
+            "before": 100,
+            "after": 89
+          }
+        ]
+      },
+      "commits": [
+        {
+          "sequence": 11,
+          "tx": "t11",
+          "parts": {
+            "s0": {
+              "first": 11,
+              "last": 11,
+              "sha256": "d813b177d17a7d99e0c5015c474516d6932d2d5f886a0c38b1fcd2489f1e7f96"
+            },
+            "s1": {
+              "first": 11,
+              "last": 11,
+              "sha256": "9ee49ad6705aa5a86b2139a896fb8bf64969e2ad13356fb1d57552a83682b8c3"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "target": 15
+}

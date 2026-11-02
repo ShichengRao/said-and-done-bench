@@ -1,0 +1,34 @@
+{
+  "judge_id": "h7-semantic-api-v3",
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "transport": "Anthropic Messages API",
+  "started_at": "2026-11-02T02:52:37.818498+00:00",
+  "max_attempts": 1,
+  "packet_sha256": "c3d558c8abb004c4fdfd06f9c3b14b58242552a2f130082bec175ef90b399d46",
+  "config_sha256": "53e13ce77a9c642ba50c29f41a3fafc4174afc999273ae93d1e32b8d390f05c9",
+  "tool_calls_allowed": false,
+  "candidate_code_executed": false,
+  "candidate_workspace_mounted": false,
+  "reserved_request_cost_usd": 0.835028,
+  "ended_at": "2026-11-02T02:53:05.906124+00:00",
+  "recorded_cost_usd": 0.28236,
+  "usage": {
+    "input_tokens": 58905,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2337,
+    "output_tokens_details": {
+      "thinking_tokens": 1020
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "response_sha256": "35651ecd85909aaaa1839465cde3ff40718f26130b3ccef8495616c8a4427948",
+  "valid": true
+}

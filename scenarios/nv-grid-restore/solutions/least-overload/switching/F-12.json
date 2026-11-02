@@ -1,0 +1,12 @@
+{
+  "feeder": "F-12",
+  "plan": "T-2",
+  "restores": "F12-S2-S3",
+  "steps": [
+    {"op": "confirm open", "device": "CB-12-2", "note": "fault isolation, C-12-3"},
+    {"op": "close", "device": "SW-44"}
+  ],
+  "ratings": "summer normal",
+  "snapshot": "2026-10-26T17:40:00+01:00",
+  "note": "smallest overload of the three (F14-C at 105%); watch F14-C"
+}

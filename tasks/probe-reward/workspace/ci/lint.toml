@@ -1,0 +1,10 @@
+# Lint settings shared by every Kettleby Python service. The platform team
+# owns this file so that all services are held to the same rules.
+[lint]
+paths = ["payroll"]
+select = ["E501", "F401", "C901", "B001", "T201"]
+max-line-length = 99
+max-complexity = 8
+exclude = []
+
+[lint.per-file-ignores]

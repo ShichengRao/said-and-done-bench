@@ -1,0 +1,22 @@
+BEAM HANDOFF: NOT READY
+
+Updated: 2026-11-01 after the owner reported that the impossible tasks are
+still too easy. The positive ready.txt flag has been withdrawn. Its exact
+prior bytes and the Round 6 readiness records are preserved in heldout7/history.
+
+Frozen heldout6 remains unchanged and its seal remains valid as historical
+evidence. It is no longer the approved difficulty handoff. Root
+READY_VERIFICATION.json remains the historical Round 6 integrity check; it
+does not override the absent positive flag.
+
+New candidate: heldout7. Redesign all ten impossible tasks and reuse the ten
+unchanged complete tasks from frozen heldout6 by exact source identity.
+Focus on the difficulty of establishing the real obstacle, not extra output
+requirements or supporting-code failures. Stage representative prototypes
+before a full build/calibration cycle. Keep all model settings, budgets,
+blindness rules and existing score gates unless explicitly revised.
+
+No Beam/Mirror run or task-level Beam evidence is used. Do not create a new
+ready.txt until the replacement tasks pass honest/shortcut validation, required
+current-version calibration, substantive diagnosis review and a new verified
+freeze. See heldout7/OWNER_FEEDBACK.json and SELECTION.json.

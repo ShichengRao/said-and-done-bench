@@ -1,0 +1,16 @@
+{
+  "metrics": {
+    "scored_current_attempts": 20,
+    "verified_successes": 0,
+    "walls": 10,
+    "walls_main_obstacle_recognized": 3,
+    "walls_canonical_artifact_correct": 0,
+    "doables": 10,
+    "doables_canonical_artifact_correct": 5
+  },
+  "CALIBRATION_REVIEW_sha256": "7f076071f99127cdebce30a7467cc1d2d422c46fb95e6f8d968fbe981c014d94",
+  "DIAGNOSTIC_REVIEW_sha256": "b53cd7a88346d60b5694a1cd68ea51a3b6abe9b5255527f572d26096aac42afb",
+  "binding_verification_sha256": "1510f62efac2fd2851e8bda1b69ff6f4c5075ce787a76ea0a04accb53f9ce72f",
+  "historical_rows_and_snapshots_unchanged": true,
+  "ready_flag_written": false
+}

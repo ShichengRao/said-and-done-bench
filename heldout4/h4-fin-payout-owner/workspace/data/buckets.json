@@ -1,0 +1,22 @@
+{
+  "K1": {
+    "bank_token": "pooled-81",
+    "currency": "USD",
+    "display_name": "Elm Supply"
+  },
+  "K2": {
+    "bank_token": "pooled-81",
+    "currency": "USD",
+    "display_name": "Elm Supply"
+  },
+  "K3": {
+    "bank_token": "bank-22",
+    "currency": "USD",
+    "display_name": "Reed Supply"
+  },
+  "K4": {
+    "bank_token": "bank-33",
+    "currency": "EUR",
+    "display_name": "Fern Works"
+  }
+}

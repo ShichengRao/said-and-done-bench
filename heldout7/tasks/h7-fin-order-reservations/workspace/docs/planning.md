@@ -1,0 +1,12 @@
+# Recipe and warehouse planning
+
+Product units can use alternate recipes and warehouses, while held baskets compete for the same ingredients. Planning finds the globally least-cost valid plan for all baskets in one planning call.
+
+## Catalog and planning
+catalog={warehouses:{warehouse:{unit_fee,activation_fee}},recipes:{product:{recipe:{ingredients:{ingredient:quantity},cost}}},stock:[{warehouse,ingredient,quantity}]}. Fees/costs and stock are nonnegative integers; recipe ingredient quantities positive. Stock has exactly one row for every warehouse/ingredient pair. A request={needs:{product:positive quantity},warehouses:[allowed warehouse IDs]}. For each requested product unit, choose ONE recipe and ONE allowed warehouse supplying ALL of that unit's ingredients. Recipes cannot split a single unit across warehouses. Units may choose different recipes or warehouses. Every supplied warehouse and product must be known even if an early option suffices. Duplicate/empty warehouse lists or empty needs reject. Units are identified by sorted product ID then ordinal 0..quantity-1.
+
+An allocation costs recipe.cost + warehouse.unit_fee per unit, plus warehouse.activation_fee ONCE per (basket,used warehouse). Minimize TOTAL cost over all baskets in the current planning call, under shared ingredient availability. Tie-break by the lexicographically smallest complete assignment vector of (basket ID,product ID,ordinal,recipe ID,warehouse ID), sorted by (basket,product,ordinal). Request warehouse list order does not alter this planning order, but does remain part of exact operation identity. A locally cheapest choice per unit may block later units or overpay activation fees.
+
+Available stock is physical on_hand minus all HELD basket ingredient allocations, except explicitly selected existing baskets in a joint exchange. Never use an unrelated basket's holds. A basket is {id,version,status,expires,request,units,ingredients,cost}. units lists {product,ordinal,recipe,warehouse} in product/ordinal order. ingredients aggregates {warehouse,ingredient,quantity}, sorted by warehouse/ingredient, omitting zero rows. cost is that basket's own share of the objective. Preserve plans and requests in terminal baskets for audit.
+
+Bounds: <=2 warehouses,3 ingredients,4 products,2 recipes/product,6 units TOTAL in any planning call,12 baskets,60 commands,6 concurrent callers. Recipe quantity per ingredient<=2. Complete option enumeration is at most 4^6=4096 choices. IDs are nonempty ASCII without colon; inputs well-shaped except stated semantic validation cases.

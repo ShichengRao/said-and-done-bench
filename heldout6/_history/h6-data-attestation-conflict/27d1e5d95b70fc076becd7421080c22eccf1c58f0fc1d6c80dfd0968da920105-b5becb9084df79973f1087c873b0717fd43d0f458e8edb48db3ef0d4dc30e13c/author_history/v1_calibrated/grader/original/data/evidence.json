@@ -1,0 +1,110 @@
+{
+  "owners": {
+    "account": "alpha"
+  },
+  "grants": [],
+  "streams": [
+    [
+      {
+        "id": "a1",
+        "kind": "owner",
+        "document": "account",
+        "owner": "alpha"
+      },
+      {
+        "id": "a2",
+        "kind": "owner",
+        "document": "account",
+        "owner": "beta"
+      },
+      {
+        "id": "a3",
+        "kind": "owner",
+        "document": "account",
+        "owner": "alpha"
+      },
+      {
+        "id": "a4",
+        "kind": "seal"
+      }
+    ],
+    [
+      {
+        "id": "b1",
+        "kind": "copy",
+        "source": {
+          "kind": "document",
+          "id": "account"
+        }
+      },
+      {
+        "id": "b2",
+        "kind": "copy",
+        "source": {
+          "kind": "copy",
+          "id": "b1"
+        }
+      },
+      {
+        "id": "b3",
+        "kind": "receipt",
+        "copy": "b2",
+        "audience": "red"
+      },
+      {
+        "id": "b4",
+        "kind": "receipt",
+        "copy": "b1",
+        "audience": "blue"
+      }
+    ],
+    [
+      {
+        "id": "c1",
+        "kind": "grant",
+        "owner": "alpha",
+        "audience": "red"
+      },
+      {
+        "id": "c2",
+        "kind": "grant",
+        "owner": "beta",
+        "audience": "blue"
+      },
+      {
+        "id": "c3",
+        "kind": "revoke",
+        "owner": "alpha",
+        "audience": "red"
+      },
+      {
+        "id": "c4",
+        "kind": "grant",
+        "owner": "alpha",
+        "audience": "blue"
+      }
+    ]
+  ],
+  "before": [
+    [
+      "a1",
+      "b1"
+    ],
+    [
+      "c1",
+      "b1"
+    ],
+    [
+      "b2",
+      "a3"
+    ],
+    [
+      "c2",
+      "b3"
+    ],
+    [
+      "b3",
+      "c3"
+    ]
+  ]
+}

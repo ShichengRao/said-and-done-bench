@@ -1,0 +1,34 @@
+{
+  "binding": "b7",
+  "entry": [
+    "c14"
+  ],
+  "steps": [
+    {
+      "at": 10,
+      "operation": "read",
+      "resource": "dataset-q"
+    },
+    {
+      "at": 11,
+      "operation": "prepare",
+      "resource": "dataset-q"
+    },
+    {
+      "at": 12,
+      "operation": "validate",
+      "resource": "dataset-q"
+    },
+    {
+      "at": 13,
+      "operation": "commit",
+      "resource": "dataset-q"
+    },
+    {
+      "at": 14,
+      "operation": "erase",
+      "resource": "dataset-q"
+    }
+  ],
+  "tenant": "t4"
+}

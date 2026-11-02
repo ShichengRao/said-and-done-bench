@@ -1,0 +1,34 @@
+# Production settings (relay-eu-1). Credentials come from the environment
+# as ${VARIABLES}; never put one in this file.
+
+[service]
+name = "relay-eu-1"
+workers = 8
+batch_size = 500
+
+[upstream]
+url = "https://feed.partner.example/v2/events"
+api_token = "${RELAY_UPSTREAM_TOKEN}"
+timeout_s = 15.0
+
+[database]
+url = "postgresql://relay:${RELAY_DB_PASSWORD}@db-eu-1.internal:5432/relay"
+pool_size = 10
+
+[broker]
+url = "amqp://relay:${RELAY_BROKER_PASSWORD}@mq-eu-1.internal:5672/events"
+prefetch = 200
+
+[smtp]
+host = "smtp.fernway.example"
+port = 587
+username = "relay-alerts"
+password = "${RELAY_SMTP_PASSWORD}"
+
+[webhook]
+enabled = true
+url = "https://hooks.fernway.example/relay"
+signing_secret = "${RELAY_WEBHOOK_SECRET}"
+
+[log]
+json = true

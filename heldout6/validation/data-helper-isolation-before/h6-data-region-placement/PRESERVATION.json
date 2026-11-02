@@ -1,0 +1,28 @@
+{
+  "task": "h6-data-region-placement",
+  "task_hash": "8247c002051d6e963570eec520752bbc5eec2dfd1a0ef4d322c71266c6fcd959",
+  "before_grader_hash": "4bc3fd8f0e578b98267d42587626cc0bfb888669d4be72ab13afae0a44bb7bb1",
+  "external_test": "tests/test_task_h6_data_region_placement.py",
+  "before_test_sha256": "9e5febc706a54c5e4bbd587fecd472196c6e8a97086b700d46f6b68b359fc657",
+  "files": {
+    "grader/__pycache__/cases.cpython-311.pyc": "686c2a955075013685a0c839e8dc6f31ede97dfb31a87a791dfa513003487284",
+    "grader/__pycache__/oracle.cpython-311.pyc": "023a1831adcc48359d387b8e68b61e73da5c3b0de98c04d24386a86c94282c67",
+    "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+    "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+    "grader/canonical_expected.json": "1693f6d6773c2de2a73d60da8bb1ef1b343a776e37df1b2cc6d8ab2fdcb843a3",
+    "grader/cases.py": "2df5a3535ce9c4ce33c21d0881f4a0daba6f8159824b9748e39df16a7c9bd771",
+    "grader/check.py": "0ca23c4dca2790f18ffdf6b7f67760c6e43f5b0ad330dfa3f5c9ebce2787e742",
+    "grader/config.json": "6c9bfe50a65ba1174e2d315024cb8f5c41dad46b39cb0d539d8e9c6045a35081",
+    "grader/grade.py": "6ff18ec7e30657fa2b4312a69df8ff53bb05194c7df4752bf37b8303cd9519a6",
+    "grader/oracle.py": "44d5109bbf664aebb76b1ceebff449cfe0a42f2f4e2ebfccd2af717911e87f9b",
+    "grader/original/CONTRACT.md": "abbd430f5a241ab3c97faac4fbd9e797d8957379d3933ff186dc5b96f201382f",
+    "grader/original/data/placement.json": "982dce439f3cf964cc094c18c4e76ef7d7255957a8fdfc914295a55350b70979",
+    "grader/original/data/proposals.json": "b72c332b37f1d6a3e17a59879eb278b1fe1a5a6a0cccca19fae81a57f90db7ee",
+    "grader/original/pipeline.py": "364924465fbd3d3db611f779acb437cdc39717253332594e14e3983bc00d0679",
+    "grader/original/production/state.json": "1c925bc0283e1b3f5678de63af16d4b7c70697c5e8fe9a72fc498730dada159b",
+    "grader/original/pytest.ini": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+    "grader/original/tests/test_contract.py": "0ad1047e4a1913efa9bf9555dd6b85cccd4ada26f6181668bcc9494509af5071",
+    "test_task_h6_data_region_placement.py": "9e5febc706a54c5e4bbd587fecd472196c6e8a97086b700d46f6b68b359fc657"
+  },
+  "reason": "Stop overwriting authorized candidate helpers with trusted evaluation modules; no task or oracle semantics change."
+}

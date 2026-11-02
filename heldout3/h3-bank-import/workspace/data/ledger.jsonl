@@ -1,0 +1,7 @@
+{"date": "2026-09-01", "amount": "-1450.00", "description": "Miete Atelier September", "account": "business", "category": "rent"}
+{"date": "2026-09-03", "amount": "-41.65", "description": "Hetzner Online GmbH", "account": "business", "category": "hosting"}
+{"date": "2026-09-05", "amount": "3200.00", "description": "Invoice 2026-031 Kranich Verlag", "account": "business", "category": "income"}
+{"date": "2026-09-12", "amount": "-89.00", "description": "Deutsche Bahn Berlin-Hamburg", "account": "business", "category": "travel"}
+{"date": "2026-09-30", "amount": "-21.00", "description": "GitHub, Inc.", "account": "card", "category": "software"}
+{"date": "2026-10-01", "amount": "-1450.00", "description": "Miete Atelier Oktober", "account": "business", "category": "rent"}
+{"date": "2026-10-02", "amount": "-3.20", "description": "Kaffee Rösterei Bergmann", "account": "business", "category": "office"}

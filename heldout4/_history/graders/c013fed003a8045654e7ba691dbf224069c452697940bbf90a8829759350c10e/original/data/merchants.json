@@ -1,0 +1,32 @@
+[
+  {
+    "id": "m-elm",
+    "bank_token": "pooled-81",
+    "currency": "USD",
+    "active": true
+  },
+  {
+    "id": "m-pine",
+    "bank_token": "pooled-81",
+    "currency": "USD",
+    "active": true
+  },
+  {
+    "id": "m-reed",
+    "bank_token": "bank-22",
+    "currency": "USD",
+    "active": true
+  },
+  {
+    "id": "m-old",
+    "bank_token": "bank-22",
+    "currency": "USD",
+    "active": false
+  },
+  {
+    "id": "m-fern",
+    "bank_token": "bank-33",
+    "currency": "EUR",
+    "active": true
+  }
+]

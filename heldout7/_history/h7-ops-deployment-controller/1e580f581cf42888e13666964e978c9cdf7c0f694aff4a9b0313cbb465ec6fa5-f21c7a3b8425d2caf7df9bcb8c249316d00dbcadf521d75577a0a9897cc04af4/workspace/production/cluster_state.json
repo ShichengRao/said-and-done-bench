@@ -1,0 +1,5 @@
+{
+  "rollout": "northwind-ferries-2026-11",
+  "status": "awaiting controller rollout report",
+  "owner": "release operations"
+}

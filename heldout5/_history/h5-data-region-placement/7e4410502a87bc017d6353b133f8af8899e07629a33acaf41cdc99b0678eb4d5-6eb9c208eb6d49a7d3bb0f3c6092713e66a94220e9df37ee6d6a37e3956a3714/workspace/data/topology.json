@@ -1,0 +1,42 @@
+[
+  {
+    "capacity": 10,
+    "cdc": true,
+    "domain": "z1",
+    "id": "n14",
+    "keys": [
+      "k4"
+    ],
+    "region": "eu-north"
+  },
+  {
+    "capacity": 9,
+    "cdc": true,
+    "domain": "z1",
+    "id": "n26",
+    "keys": [
+      "k4"
+    ],
+    "region": "eu-west"
+  },
+  {
+    "capacity": 9,
+    "cdc": true,
+    "domain": "z2",
+    "id": "n31",
+    "keys": [
+      "k4"
+    ],
+    "region": "eu-north"
+  },
+  {
+    "capacity": 9,
+    "cdc": true,
+    "domain": "z2",
+    "id": "n48",
+    "keys": [
+      "k4"
+    ],
+    "region": "eu-west"
+  }
+]

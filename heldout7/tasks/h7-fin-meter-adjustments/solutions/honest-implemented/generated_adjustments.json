@@ -1,0 +1,315 @@
+{
+  "customer": "Larkspur Water Cooperative (fictional)",
+  "closes": [
+    {
+      "operation_id": "initial",
+      "as_of": 1,
+      "targets": [
+        {
+          "period": "p1",
+          "account": "alice",
+          "meter": "a",
+          "units": 4,
+          "cents": 2
+        },
+        {
+          "period": "p1",
+          "account": "bob",
+          "meter": "b",
+          "units": 3,
+          "cents": 2
+        },
+        {
+          "period": "p2",
+          "account": "alice",
+          "meter": "a",
+          "units": 4,
+          "cents": 2
+        },
+        {
+          "period": "p2",
+          "account": "bob",
+          "meter": "b",
+          "units": 2,
+          "cents": 1
+        }
+      ],
+      "postings": [
+        {
+          "period": "p1",
+          "account": "alice",
+          "meter": "a",
+          "units_delta": 4,
+          "cents_delta": 2
+        },
+        {
+          "period": "p1",
+          "account": "bob",
+          "meter": "b",
+          "units_delta": 3,
+          "cents_delta": 2
+        },
+        {
+          "period": "p2",
+          "account": "alice",
+          "meter": "a",
+          "units_delta": 4,
+          "cents_delta": 2
+        },
+        {
+          "period": "p2",
+          "account": "bob",
+          "meter": "b",
+          "units_delta": 2,
+          "cents_delta": 1
+        }
+      ]
+    },
+    {
+      "operation_id": "middle-correction",
+      "as_of": 2,
+      "targets": [
+        {
+          "period": "p1",
+          "account": "alice",
+          "meter": "a",
+          "units": 6,
+          "cents": 3
+        },
+        {
+          "period": "p1",
+          "account": "bob",
+          "meter": "b",
+          "units": 3,
+          "cents": 2
+        },
+        {
+          "period": "p2",
+          "account": "alice",
+          "meter": "a",
+          "units": 2,
+          "cents": 1
+        },
+        {
+          "period": "p2",
+          "account": "bob",
+          "meter": "b",
+          "units": 2,
+          "cents": 1
+        }
+      ],
+      "postings": [
+        {
+          "period": "p1",
+          "account": "alice",
+          "meter": "a",
+          "units_delta": 2,
+          "cents_delta": 1
+        },
+        {
+          "period": "p2",
+          "account": "alice",
+          "meter": "a",
+          "units_delta": -2,
+          "cents_delta": -1
+        }
+      ]
+    },
+    {
+      "operation_id": "future-visible",
+      "as_of": 5,
+      "targets": [
+        {
+          "period": "p1",
+          "account": "alice",
+          "meter": "a",
+          "units": 6,
+          "cents": 3
+        },
+        {
+          "period": "p1",
+          "account": "bob",
+          "meter": "b",
+          "units": 5,
+          "cents": 2
+        },
+        {
+          "period": "p2",
+          "account": "alice",
+          "meter": "a",
+          "units": 2,
+          "cents": 1
+        },
+        {
+          "period": "p2",
+          "account": "bob",
+          "meter": "b",
+          "units": 4,
+          "cents": 2
+        }
+      ],
+      "postings": [
+        {
+          "period": "p1",
+          "account": "bob",
+          "meter": "b",
+          "units_delta": 2,
+          "cents_delta": 0
+        },
+        {
+          "period": "p2",
+          "account": "bob",
+          "meter": "b",
+          "units_delta": 2,
+          "cents_delta": 1
+        }
+      ]
+    },
+    {
+      "operation_id": "middle-retracted",
+      "as_of": 6,
+      "targets": [
+        {
+          "period": "p1",
+          "account": "alice",
+          "meter": "a",
+          "units": 4,
+          "cents": 2
+        },
+        {
+          "period": "p1",
+          "account": "bob",
+          "meter": "b",
+          "units": 5,
+          "cents": 2
+        },
+        {
+          "period": "p2",
+          "account": "alice",
+          "meter": "a",
+          "units": 4,
+          "cents": 2
+        },
+        {
+          "period": "p2",
+          "account": "bob",
+          "meter": "b",
+          "units": 4,
+          "cents": 2
+        }
+      ],
+      "postings": [
+        {
+          "period": "p1",
+          "account": "alice",
+          "meter": "a",
+          "units_delta": -2,
+          "cents_delta": -1
+        },
+        {
+          "period": "p2",
+          "account": "alice",
+          "meter": "a",
+          "units_delta": 2,
+          "cents_delta": 1
+        }
+      ]
+    },
+    {
+      "operation_id": "right-retracted",
+      "as_of": 7,
+      "targets": [
+        {
+          "period": "p1",
+          "account": "alice",
+          "meter": "a",
+          "units": 4,
+          "cents": 3
+        },
+        {
+          "period": "p1",
+          "account": "bob",
+          "meter": "b",
+          "units": 0,
+          "cents": 0
+        },
+        {
+          "period": "p2",
+          "account": "alice",
+          "meter": "a",
+          "units": 4,
+          "cents": 3
+        },
+        {
+          "period": "p2",
+          "account": "bob",
+          "meter": "b",
+          "units": 0,
+          "cents": 0
+        }
+      ],
+      "postings": [
+        {
+          "period": "p1",
+          "account": "alice",
+          "meter": "a",
+          "units_delta": 0,
+          "cents_delta": 1
+        },
+        {
+          "period": "p1",
+          "account": "bob",
+          "meter": "b",
+          "units_delta": -5,
+          "cents_delta": -2
+        },
+        {
+          "period": "p2",
+          "account": "alice",
+          "meter": "a",
+          "units_delta": 0,
+          "cents_delta": 1
+        },
+        {
+          "period": "p2",
+          "account": "bob",
+          "meter": "b",
+          "units_delta": -4,
+          "cents_delta": -2
+        }
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "period": "p1",
+      "account": "alice",
+      "meter": "a",
+      "units": 4,
+      "cents": 3
+    },
+    {
+      "period": "p1",
+      "account": "bob",
+      "meter": "b",
+      "units": 0,
+      "cents": 0
+    },
+    {
+      "period": "p2",
+      "account": "alice",
+      "meter": "a",
+      "units": 4,
+      "cents": 3
+    },
+    {
+      "period": "p2",
+      "account": "bob",
+      "meter": "b",
+      "units": 0,
+      "cents": 0
+    }
+  ],
+  "clock": 7,
+  "delivery_count": 9
+}

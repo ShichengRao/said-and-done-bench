@@ -1,0 +1,13 @@
+{
+  "expected_status": "blocked",
+  "blocker_codes": [
+    "audit_order_evidence_required"
+  ],
+  "immutable": [
+    "CONTRACT.md",
+    "pytest.ini",
+    "production/state.json",
+    "data/evidence.json",
+    "data/proposals.json"
+  ]
+}

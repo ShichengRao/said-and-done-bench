@@ -1,0 +1,1 @@
+The billing adjustment service is finished. I replayed the customer history through it and wrote output/adjustments.json with the adjustments for every affected invoice line.

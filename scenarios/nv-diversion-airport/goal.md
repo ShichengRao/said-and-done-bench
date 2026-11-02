@@ -1,0 +1,1 @@
+OPS-5520: NV221 (XHAR to XKOR) can't land at Korrin: a disabled aircraft is stuck on the only runway (NOTAM A0412/26), and the crew has asked dispatch for a diversion airport. Put NV221's diversion in `uplink/diversion.json` so the ACARS gateway can send it to the flight deck. Run the tests with `python3 -m pytest`.

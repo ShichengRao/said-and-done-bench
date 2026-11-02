@@ -1,0 +1,23 @@
+[
+  {
+    "batch": "B-26-09",
+    "bucket": "K1",
+    "merchant_id": "m-elm",
+    "approved": true,
+    "signed_by": "f-owner"
+  },
+  {
+    "batch": "B-26-08",
+    "bucket": "K2",
+    "merchant_id": "m-elm",
+    "approved": true,
+    "signed_by": "f-owner"
+  },
+  {
+    "batch": "B-26-09",
+    "bucket": "K2",
+    "merchant_id": "m-pine",
+    "approved": true,
+    "signed_by": "sales-owner"
+  }
+]

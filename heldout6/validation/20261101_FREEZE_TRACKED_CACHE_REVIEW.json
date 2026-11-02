@@ -1,0 +1,78 @@
+{
+  "at": "2026-11-01T07:15:05.907435+00:00",
+  "repair": "Include deliberately Git-tracked cache artifacts in Round 6 source inventory and hash their retained bytes; ignore untracked runtime caches without reading them.",
+  "changed_files": [
+    "heldout6/_shared/freeze.py",
+    "heldout6/_shared/test_freeze_gates.py"
+  ],
+  "score_identity_readiness_gates_changed": false,
+  "runtime_task_model_inputs_changed": false,
+  "preservation_files_changed": false,
+  "tracked_cache_count": 18,
+  "tracked_cache_sha256": {
+    "heldout6/validation/data-helper-isolation-before/h6-data-alias-replay/grader/__pycache__/cases.cpython-311.pyc": "232ddbdcd78acc02953c0944e1817038f67658ca6ed624e967c28eae58db0e34",
+    "heldout6/validation/data-helper-isolation-before/h6-data-alias-replay/grader/__pycache__/oracle.cpython-311.pyc": "87a2415a1c5cb4c457e0ab416e606886bf24c6c7bee57597c877196234903fd0",
+    "heldout6/validation/data-helper-isolation-before/h6-data-attestation-conflict/grader/__pycache__/cases.cpython-311.pyc": "b2d280c1c075a3a5f37db1d9d29012e71efceb885cae074c003190e1d7a60877",
+    "heldout6/validation/data-helper-isolation-before/h6-data-attestation-conflict/grader/__pycache__/oracle.cpython-311.pyc": "cb24600ce29187e4f1b98a9e8386f5cd63c242a45fc123a0442cc879a4bd51c7",
+    "heldout6/validation/data-helper-isolation-before/h6-data-erasure-ledger/grader/__pycache__/cases.cpython-311.pyc": "e18438c0642959b332ea5df821151329b014cd993479441bb77fe3de896503ff",
+    "heldout6/validation/data-helper-isolation-before/h6-data-erasure-ledger/grader/__pycache__/oracle.cpython-311.pyc": "af7bad7a9feeff73d8b9333596011e3d9c0eaadd4177f00ba7504e5cc60a3ff6",
+    "heldout6/validation/data-helper-isolation-before/h6-data-owner-merge/grader/__pycache__/cases.cpython-311.pyc": "dbfd0379c421ab403613cddff9c19bce022d60a5063740478dab0c8555ee185d",
+    "heldout6/validation/data-helper-isolation-before/h6-data-owner-merge/grader/__pycache__/oracle.cpython-311.pyc": "13cd87a2736b645470f754587d0af0c181486c798b64e8e683da7a568753cebf",
+    "heldout6/validation/data-helper-isolation-before/h6-data-redacted-export/grader/__pycache__/cases.cpython-311.pyc": "7d160a91d25504752cbe12b0fd088b10405ae513bc15f6807bc5ff5ecbf85257",
+    "heldout6/validation/data-helper-isolation-before/h6-data-redacted-export/grader/__pycache__/cases.cpython-314.pyc": "9ade9652fe190b074cd92ade8c2d5bf86791c13d95be1888fbf8a537b62072aa",
+    "heldout6/validation/data-helper-isolation-before/h6-data-redacted-export/grader/__pycache__/oracle.cpython-311.pyc": "655e72c8ae748bbe87c6729ba10adb3a9703d40ef08dc55d0282c8ee1032917b",
+    "heldout6/validation/data-helper-isolation-before/h6-data-region-placement/grader/__pycache__/cases.cpython-311.pyc": "686c2a955075013685a0c839e8dc6f31ede97dfb31a87a791dfa513003487284",
+    "heldout6/validation/data-helper-isolation-before/h6-data-region-placement/grader/__pycache__/oracle.cpython-311.pyc": "023a1831adcc48359d387b8e68b61e73da5c3b0de98c04d24386a86c94282c67",
+    "heldout6/validation/data-helper-isolation-before/h6-data-service-scope/grader/__pycache__/cases.cpython-311.pyc": "ac82b315d42cb45a4b77b83cbb29947fcbc4631b4c504fb71cb026c58b99a5f8",
+    "heldout6/validation/data-helper-isolation-before/h6-data-service-scope/grader/__pycache__/oracle.cpython-311.pyc": "ac4969dad70e0aa7bae2b79e7906c54f482127ce0f2c32e90b890a9d974dc7bc",
+    "heldout6/validation/data-helper-isolation-before/h6-data-ticket-visibility/grader/__pycache__/cases.cpython-311.pyc": "47c684a748634dc20f444361e15e7616b60d1c0609d99ab7249a1d847d68058e",
+    "heldout6/validation/data-helper-isolation-before/h6-data-ticket-visibility/grader/__pycache__/oracle.cpython-311.pyc": "3cf9c1f75d508b0545c9e92ac17eb0ae8e273f2ec3f48f04d13adde95c867ca3",
+    "heldout6/validation/data-helper-isolation-before/h6-data-ticket-visibility/grader/__pycache__/projection_api.cpython-311.pyc": "6b4020a8ca058340de19329b163926bb95d532459ed9521fab2331de904552d4"
+  },
+  "tracked_cache_matches_current_index": true,
+  "focused_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest -q -p no:cacheprovider heldout6/_shared/test_freeze_gates.py -k source_inventory --junitxml=heldout6/validation/20261101_FREEZE_TRACKED_CACHE_TESTS.xml",
+    "passed": 11,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "deselected": 47,
+    "reported_seconds": 0.08,
+    "log": "heldout6/validation/20261101_FREEZE_TRACKED_CACHE_TESTS.log",
+    "xml": "heldout6/validation/20261101_FREEZE_TRACKED_CACHE_TESTS.xml"
+  },
+  "coverage": [
+    "Tracked __pycache__, .pytest_cache and .pyc artifacts are included; mutations change their hashes.",
+    "Untracked caches are ignored and never passed to sha.",
+    "Missing tracked caches and untracked/ignored noncache sources reject.",
+    "Tracked and untracked cache symlinks plus unsafe relative tracked paths reject.",
+    "Existing current-round external-test inclusion and missing-commit rejection remain covered."
+  ],
+  "real_git_backed_inventory": {
+    "eligible": false,
+    "error": "Uncommitted, ignored, or missing Round 6 source files"
+  },
+  "uncommitted_noncaches_at_review": [
+    "heldout6/RESULTS.json",
+    "heldout6/STATUS.md",
+    "heldout6/review_history/REPORT.before-final-consolidation.md",
+    "heldout6/validation/20261101_FREEZE_TRACKED_CACHE_TESTS.log",
+    "heldout6/validation/20261101_FREEZE_TRACKED_CACHE_TESTS.xml",
+    "heldout6/validation/20261101_REFUND_V3_INFRA_REVIEW.json"
+  ],
+  "post_commit_inventory_simulation": {
+    "read_only": true,
+    "declared_listing_includes_pending_files": true,
+    "all_tracked_cache_hashes_included": true,
+    "final_freeze_eligibility_claimed": false
+  },
+  "source_and_test_evidence_sha256": {
+    "heldout6/_shared/freeze.py": "69b5823e608ed92147be036fa857fd6f9ce76ec165ea6749b29508ff38d6ea53",
+    "heldout6/_shared/test_freeze_gates.py": "18450aab76fad50d3a9b0411e357c2dbcc5176f7de8ae151ad07558a42150e56",
+    "heldout6/validation/20261101_FREEZE_TRACKED_CACHE_TESTS.log": "fabf5d2d14619d99702ffae1e398fade3df3844773c3a710ea107c0c78218552",
+    "heldout6/validation/20261101_FREEZE_TRACKED_CACHE_TESTS.xml": "1826a575c850112e70016d42fb8586fc073acd0962fedd96cca6d32598e60363"
+  },
+  "full_suite_run": false,
+  "inference_or_regrade_performed": false,
+  "freeze_performed": false
+}

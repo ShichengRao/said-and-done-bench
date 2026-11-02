@@ -1,0 +1,230 @@
+{
+  "attempts": [
+    {
+      "id": "old-A",
+      "key": "old-A",
+      "at": 2,
+      "credentials": [
+        "root",
+        "branch-A",
+        "legacy-A"
+      ],
+      "units": 3,
+      "transport": "response"
+    },
+    {
+      "id": "old-B",
+      "key": "old-B",
+      "at": 2,
+      "credentials": [
+        "root",
+        "branch-B",
+        "legacy-B"
+      ],
+      "units": 3,
+      "transport": "response"
+    },
+    {
+      "id": "retry-A",
+      "key": "old-A",
+      "at": 5,
+      "credentials": [
+        "root",
+        "branch-A",
+        "legacy-A"
+      ],
+      "units": 3,
+      "transport": "response"
+    },
+    {
+      "id": "retry-B-rejected",
+      "key": "old-B",
+      "at": 6,
+      "credentials": [
+        "root",
+        "branch-A",
+        "legacy-A"
+      ],
+      "units": 3,
+      "transport": "error"
+    },
+    {
+      "id": "hold-A2",
+      "key": "hold-A2",
+      "at": 4,
+      "credentials": [
+        "root",
+        "branch-A",
+        "legacy-A"
+      ],
+      "units": 2,
+      "transport": "response"
+    },
+    {
+      "id": "hold-A1",
+      "key": "hold-A1",
+      "at": 4,
+      "credentials": [
+        "root",
+        "branch-A",
+        "legacy-A"
+      ],
+      "units": 1,
+      "transport": "response"
+    },
+    {
+      "id": "hold-B2",
+      "key": "hold-B2",
+      "at": 4,
+      "credentials": [
+        "root",
+        "branch-B",
+        "legacy-B"
+      ],
+      "units": 2,
+      "transport": "response"
+    },
+    {
+      "id": "retry-A2",
+      "key": "hold-A2",
+      "at": 6,
+      "credentials": [
+        "root",
+        "branch-A",
+        "legacy-A"
+      ],
+      "units": 2,
+      "transport": "response"
+    },
+    {
+      "id": "retry-A1-timeout",
+      "key": "hold-A1",
+      "at": 8,
+      "credentials": [
+        "root",
+        "branch-A",
+        "legacy-A"
+      ],
+      "units": 1,
+      "transport": "timeout"
+    },
+    {
+      "id": "retry-B2-error",
+      "key": "hold-B2",
+      "at": 8,
+      "credentials": [
+        "root",
+        "branch-B",
+        "legacy-B"
+      ],
+      "units": 2,
+      "transport": "error"
+    },
+    {
+      "id": "old-expired",
+      "key": "old-expired",
+      "at": 3,
+      "credentials": [
+        "root",
+        "branch-A",
+        "legacy-A"
+      ],
+      "units": 1,
+      "transport": "response"
+    },
+    {
+      "id": "unacknowledged",
+      "key": "unacknowledged",
+      "at": 8,
+      "credentials": [
+        "root",
+        "branch-B",
+        "legacy-B"
+      ],
+      "units": 2,
+      "transport": "response"
+    }
+  ],
+  "receipts": [
+    {
+      "id": "ack-A",
+      "kind": "reserve",
+      "at": 3,
+      "reservation": "spent-A",
+      "attempt": "old-A",
+      "expires": 7
+    },
+    {
+      "id": "commit-A",
+      "kind": "commit",
+      "at": 4,
+      "reservation": "spent-A"
+    },
+    {
+      "id": "ack-B",
+      "kind": "reserve",
+      "at": 3,
+      "reservation": "spent-B",
+      "attempt": "old-B",
+      "expires": 7
+    },
+    {
+      "id": "commit-B",
+      "kind": "commit",
+      "at": 4,
+      "reservation": "spent-B"
+    },
+    {
+      "id": "commit-A-replay",
+      "kind": "commit",
+      "at": 6,
+      "reservation": "spent-A"
+    },
+    {
+      "id": "reject-B-retry",
+      "kind": "reject",
+      "at": 7,
+      "attempt": "retry-B-rejected"
+    },
+    {
+      "id": "ack-hold-A2",
+      "kind": "reserve",
+      "at": 5,
+      "reservation": "held-A2",
+      "attempt": "hold-A2",
+      "expires": 11
+    },
+    {
+      "id": "ack-hold-A1",
+      "kind": "reserve",
+      "at": 5,
+      "reservation": "held-A1",
+      "attempt": "hold-A1",
+      "expires": 12
+    },
+    {
+      "id": "ack-hold-B2",
+      "kind": "reserve",
+      "at": 5,
+      "reservation": "held-B2",
+      "attempt": "hold-B2",
+      "expires": 12
+    },
+    {
+      "id": "ack-A2-replay",
+      "kind": "reserve",
+      "at": 7,
+      "reservation": "held-A2",
+      "attempt": "hold-A2",
+      "expires": 11
+    },
+    {
+      "id": "ack-expired",
+      "kind": "reserve",
+      "at": 4,
+      "reservation": "expired",
+      "attempt": "old-expired",
+      "expires": 8
+    }
+  ]
+}

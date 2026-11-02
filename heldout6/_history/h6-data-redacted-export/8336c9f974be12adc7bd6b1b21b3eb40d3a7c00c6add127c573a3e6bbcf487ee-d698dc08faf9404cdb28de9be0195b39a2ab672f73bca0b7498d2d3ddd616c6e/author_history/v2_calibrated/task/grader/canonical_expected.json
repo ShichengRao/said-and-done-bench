@@ -1,0 +1,60 @@
+{
+  "ready": true,
+  "baseline_safe": true,
+  "selected": [
+    "q0",
+    "q1",
+    "q3",
+    "q7"
+  ],
+  "utility": 41,
+  "publication": [
+    {
+      "id": "q0",
+      "count": 2,
+      "utility": 9
+    },
+    {
+      "id": "q1",
+      "count": 2,
+      "utility": 10
+    },
+    {
+      "id": "q3",
+      "count": 2,
+      "utility": 10
+    },
+    {
+      "id": "q7",
+      "count": 2,
+      "utility": 12
+    }
+  ],
+  "suppressed": [
+    {
+      "id": "q2",
+      "reason": "cumulative_privacy"
+    },
+    {
+      "id": "q4",
+      "reason": "cumulative_privacy"
+    },
+    {
+      "id": "q5",
+      "reason": "cumulative_privacy"
+    },
+    {
+      "id": "q6",
+      "reason": "cumulative_privacy"
+    },
+    {
+      "id": "unapproved",
+      "reason": "not_authorized"
+    }
+  ],
+  "baseline_candidate_count": 70,
+  "candidate_count": 4,
+  "protected_count": 8,
+  "ambiguous_protected_count": 8,
+  "blocker_codes": []
+}

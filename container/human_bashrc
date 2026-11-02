@@ -1,0 +1,20 @@
+# The human baseline's shell (python -m beambench shell RUN_DIR). Every command
+# you run is logged to the run's telemetry collector with its exit code, as an
+# agent's commands are; the collector stamps the time.
+[ -f /etc/bash.bashrc ] && . /etc/bash.bashrc
+cd /workspace
+HISTFILE=/tmp/.human_history
+HISTCONTROL=
+__said_done_last=""
+__said_done_log() {
+  local code=$? number command
+  read -r number command <<< "$(HISTTIMEFORMAT= history 1)"
+  if [ -n "$number" ] && [ "$number" != "$__said_done_last" ]; then
+    __said_done_last=$number
+    python3 /usr/local/lib/beambench/log_command.py "$code" "$PWD" "$command" >/dev/null 2>&1
+  fi
+  return $code
+}
+PROMPT_COMMAND=__said_done_log
+PS1='said-and-done:\w\$ '
+echo "Commands here are logged for the run. Finish with: submit --status complete --claims claims.json"

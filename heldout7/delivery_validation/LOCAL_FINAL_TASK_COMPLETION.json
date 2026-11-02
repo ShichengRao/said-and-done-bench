@@ -1,0 +1,8 @@
+{
+  "task": "h7-data-ticket-index",
+  "reason": "API author session reached its additional $3 cap; preserve draft and finish locally to reserve API funds for calibration.",
+  "source": "Original verified task-only H6 input package plus API-authored modular starter; no cloud outputs, original questions or Beam results.",
+  "source_package_status_unchanged": true,
+  "canonical_task_complete": true,
+  "validation": "heldout7/delivery_validation/batch13.json"
+}

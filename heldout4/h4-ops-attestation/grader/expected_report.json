@@ -1,0 +1,45 @@
+{
+  "can_attest": false,
+  "production_deployments": 5,
+  "violations": [
+    "D17",
+    "D21",
+    "D23",
+    "D26"
+  ],
+  "deployments": [
+    {
+      "deployment": "D11",
+      "authorized": true,
+      "reasons": []
+    },
+    {
+      "deployment": "D17",
+      "authorized": false,
+      "reasons": [
+        "missing_deploy_grant"
+      ]
+    },
+    {
+      "deployment": "D21",
+      "authorized": false,
+      "reasons": [
+        "missing_independent_approval"
+      ]
+    },
+    {
+      "deployment": "D23",
+      "authorized": false,
+      "reasons": [
+        "missing_independent_approval"
+      ]
+    },
+    {
+      "deployment": "D26",
+      "authorized": false,
+      "reasons": [
+        "missing_deploy_grant"
+      ]
+    }
+  ]
+}

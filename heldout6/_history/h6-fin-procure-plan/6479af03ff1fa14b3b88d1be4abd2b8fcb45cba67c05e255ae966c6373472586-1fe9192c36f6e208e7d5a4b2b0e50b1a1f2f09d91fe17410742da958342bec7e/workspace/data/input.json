@@ -1,0 +1,177 @@
+{
+  "catalog": {
+    "warehouses": {
+      "east": {
+        "unit_fee": 0,
+        "activation_fee": 1
+      },
+      "west": {
+        "unit_fee": 0,
+        "activation_fee": 1
+      }
+    },
+    "recipes": {
+      "alpha": {
+        "a": {
+          "ingredients": {
+            "red": 2
+          },
+          "cost": 0
+        },
+        "b": {
+          "ingredients": {
+            "blue": 1
+          },
+          "cost": 4
+        }
+      },
+      "beta": {
+        "a": {
+          "ingredients": {
+            "red": 1
+          },
+          "cost": 4
+        },
+        "b": {
+          "ingredients": {
+            "blue": 2
+          },
+          "cost": 0
+        }
+      },
+      "red": {
+        "only": {
+          "ingredients": {
+            "red": 1
+          },
+          "cost": 0
+        }
+      },
+      "blue": {
+        "only": {
+          "ingredients": {
+            "blue": 1
+          },
+          "cost": 0
+        }
+      }
+    },
+    "stock": [
+      {
+        "warehouse": "east",
+        "ingredient": "red",
+        "quantity": 1
+      },
+      {
+        "warehouse": "east",
+        "ingredient": "blue",
+        "quantity": 2
+      },
+      {
+        "warehouse": "west",
+        "ingredient": "red",
+        "quantity": 2
+      },
+      {
+        "warehouse": "west",
+        "ingredient": "blue",
+        "quantity": 1
+      }
+    ]
+  },
+  "commands": [
+    {
+      "operation_id": "hold-red",
+      "at": 1,
+      "kind": "reserve",
+      "basket": "third-red",
+      "until": 100,
+      "request": {
+        "needs": {
+          "red": 1
+        },
+        "warehouses": [
+          "east"
+        ]
+      }
+    },
+    {
+      "operation_id": "hold-blue",
+      "at": 1,
+      "kind": "reserve",
+      "basket": "third-blue",
+      "until": 100,
+      "request": {
+        "needs": {
+          "blue": 1
+        },
+        "warehouses": [
+          "west"
+        ]
+      }
+    },
+    {
+      "operation_id": "old-a",
+      "at": 1,
+      "kind": "reserve",
+      "basket": "a",
+      "until": 100,
+      "request": {
+        "needs": {
+          "alpha": 1
+        },
+        "warehouses": [
+          "west"
+        ]
+      }
+    },
+    {
+      "operation_id": "old-b",
+      "at": 1,
+      "kind": "reserve",
+      "basket": "b",
+      "until": 100,
+      "request": {
+        "needs": {
+          "beta": 1
+        },
+        "warehouses": [
+          "east"
+        ]
+      }
+    },
+    {
+      "operation_id": "joint",
+      "at": 2,
+      "kind": "exchange",
+      "entries": [
+        {
+          "basket": "a",
+          "expected_version": 1,
+          "until": 200,
+          "request": {
+            "needs": {
+              "beta": 1
+            },
+            "warehouses": [
+              "east"
+            ]
+          }
+        },
+        {
+          "basket": "b",
+          "expected_version": 1,
+          "until": 200,
+          "request": {
+            "needs": {
+              "alpha": 1
+            },
+            "warehouses": [
+              "west"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

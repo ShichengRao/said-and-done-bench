@@ -1,0 +1,1 @@
+The extra parity fragment establishes a unique original: 0a141e28. I repaired the decoder to consider the documented two-record corruption allowance and restored those four bytes.

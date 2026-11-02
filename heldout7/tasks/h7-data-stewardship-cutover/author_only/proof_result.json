@@ -1,0 +1,49 @@
+{
+  "path_products": 8,
+  "current_solutions": [],
+  "proper_subsets_feasible": {
+    "accounts": true,
+    "contacts": true,
+    "tickets": true,
+    "accounts,contacts": true,
+    "accounts,tickets": true,
+    "contacts,tickets": true
+  },
+  "continuity_forced_by_handoff_boundaries": true,
+  "fractional_half_half": [
+    {
+      "A": [
+        "2",
+        "5/2",
+        "2"
+      ],
+      "B": [
+        "3",
+        "5/2",
+        "3"
+      ]
+    },
+    true
+  ],
+  "counterpart_reapproval_cutoff12": [
+    {
+      "accounts": "AAB",
+      "contacts": "BBB",
+      "tickets": "BBA"
+    }
+  ],
+  "counterpart_accounts_boundary0": [
+    {
+      "accounts": "ABB",
+      "contacts": "BBB",
+      "tickets": "BAA"
+    }
+  ],
+  "counterpart_alpha_phase1_capacity4": [
+    {
+      "accounts": "AAB",
+      "contacts": "BBB",
+      "tickets": "BAA"
+    }
+  ]
+}

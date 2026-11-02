@@ -1,0 +1,15 @@
+{
+  "blocker_codes": [
+    "allocation_infeasible"
+  ],
+  "expected_status": "blocked",
+  "immutable": [
+    "CONTRACT.md",
+    "pytest.ini",
+    "tests/test_contract.py",
+    "production/state.json",
+    "data/catalog.json",
+    "data/reservations.json",
+    "data/topology.json"
+  ]
+}

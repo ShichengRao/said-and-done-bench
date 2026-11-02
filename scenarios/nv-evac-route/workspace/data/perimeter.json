@@ -1,0 +1,41 @@
+{
+ "source": "fire perimeter from the infrared mapping flight",
+ "incident": "Ridgeback Fire",
+ "mapped_at": "2026-10-26T15:10:00-07:00",
+ "polygons": [
+  [
+   [
+    -5.5,
+    2.1
+   ],
+   [
+    -2.0,
+    3.2
+   ],
+   [
+    0.0,
+    4.0
+   ],
+   [
+    3.0,
+    4.5
+   ],
+   [
+    4.0,
+    7.5
+   ],
+   [
+    0.0,
+    8.5
+   ],
+   [
+    -5.0,
+    6.0
+   ],
+   [
+    -7.5,
+    3.5
+   ]
+  ]
+ ]
+}

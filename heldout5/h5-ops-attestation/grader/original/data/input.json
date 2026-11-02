@@ -1,0 +1,794 @@
+{
+  "as_of": 90,
+  "deployments": [
+    {
+      "id": "d09",
+      "principal": "operator",
+      "service": "billing.api",
+      "region": "zone-a",
+      "artifact": "artifact-d09",
+      "commit": 48
+    },
+    {
+      "id": "d03",
+      "principal": "operator",
+      "service": "billing.api",
+      "region": "zone-a",
+      "artifact": "artifact-d03",
+      "commit": 42
+    },
+    {
+      "id": "d10",
+      "principal": "operator",
+      "service": "billing.api",
+      "region": "zone-a",
+      "artifact": "artifact-d10",
+      "commit": 49
+    },
+    {
+      "id": "d05",
+      "principal": "operator",
+      "service": "billing.api",
+      "region": "zone-a",
+      "artifact": "artifact-d05",
+      "commit": 44
+    },
+    {
+      "id": "d01",
+      "principal": "operator",
+      "service": "billing.api",
+      "region": "zone-a",
+      "artifact": "artifact-d01",
+      "commit": 40
+    },
+    {
+      "id": "d08",
+      "principal": "operator",
+      "service": "billing.api",
+      "region": "zone-a",
+      "artifact": "artifact-d08",
+      "commit": 47
+    },
+    {
+      "id": "d02",
+      "principal": "operator",
+      "service": "billing.api",
+      "region": "zone-a",
+      "artifact": "artifact-d02",
+      "commit": 41
+    },
+    {
+      "id": "d07",
+      "principal": "operator",
+      "service": "billing.api",
+      "region": "zone-a",
+      "artifact": "artifact-d07",
+      "commit": 46
+    },
+    {
+      "id": "d06",
+      "principal": "operator",
+      "service": "billing.api",
+      "region": "zone-a",
+      "artifact": "artifact-d06",
+      "commit": 45
+    },
+    {
+      "id": "d04",
+      "principal": "operator",
+      "service": "billing.api",
+      "region": "zone-a",
+      "artifact": "artifact-d04",
+      "commit": 43
+    }
+  ],
+  "grants": [
+    {
+      "id": "gr01",
+      "revision": 2,
+      "recorded_at": 80,
+      "principal": "reviewer-r01",
+      "role": "approve",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    },
+    {
+      "id": "gr02",
+      "revision": 2,
+      "recorded_at": 80,
+      "principal": "reviewer-r02",
+      "role": "approve",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    },
+    {
+      "id": "gr03",
+      "revision": 2,
+      "recorded_at": 80,
+      "principal": "reviewer-r03",
+      "role": "approve",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    },
+    {
+      "id": "gr04",
+      "revision": 2,
+      "recorded_at": 80,
+      "principal": "reviewer-r04",
+      "role": "approve",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    },
+    {
+      "id": "gr05",
+      "revision": 2,
+      "recorded_at": 80,
+      "principal": "reviewer-r05",
+      "role": "approve",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    },
+    {
+      "id": "gr06",
+      "revision": 2,
+      "recorded_at": 80,
+      "principal": "reviewer-r06",
+      "role": "approve",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    },
+    {
+      "id": "gr07",
+      "revision": 2,
+      "recorded_at": 80,
+      "principal": "reviewer-r07",
+      "role": "approve",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    },
+    {
+      "id": "gr08",
+      "revision": 2,
+      "recorded_at": 80,
+      "principal": "reviewer-r08",
+      "role": "approve",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    },
+    {
+      "id": "gr09",
+      "revision": 2,
+      "recorded_at": 80,
+      "principal": "reviewer-r09",
+      "role": "approve",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    },
+    {
+      "id": "gr10",
+      "revision": 2,
+      "recorded_at": 80,
+      "principal": "reviewer-r10",
+      "role": "approve",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "start": 0,
+      "expires": 100,
+      "revoked_at": null
+    }
+  ],
+  "receipts": [
+    {
+      "id": "r01",
+      "revision": 2,
+      "recorded_at": 75,
+      "principal": "reviewer-r01",
+      "grant": "gr01",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d08",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r01",
+      "revision": 1,
+      "recorded_at": 20,
+      "principal": "reviewer-r01",
+      "grant": "gr01",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d04",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d07",
+        "artifact-d08",
+        "artifact-d09",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r02",
+      "revision": 2,
+      "recorded_at": 75,
+      "principal": "reviewer-r02",
+      "grant": "gr02",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d04",
+        "artifact-d07",
+        "artifact-d09"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r02",
+      "revision": 1,
+      "recorded_at": 20,
+      "principal": "reviewer-r02",
+      "grant": "gr02",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d04",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d07",
+        "artifact-d08",
+        "artifact-d09",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r03",
+      "revision": 2,
+      "recorded_at": 75,
+      "principal": "reviewer-r03",
+      "grant": "gr03",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d08",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r03",
+      "revision": 1,
+      "recorded_at": 20,
+      "principal": "reviewer-r03",
+      "grant": "gr03",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d04",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d07",
+        "artifact-d08",
+        "artifact-d09",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r04",
+      "revision": 2,
+      "recorded_at": 75,
+      "principal": "reviewer-r04",
+      "grant": "gr04",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d08",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r04",
+      "revision": 1,
+      "recorded_at": 20,
+      "principal": "reviewer-r04",
+      "grant": "gr04",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d04",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d07",
+        "artifact-d08",
+        "artifact-d09",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r05",
+      "revision": 2,
+      "recorded_at": 75,
+      "principal": "reviewer-r05",
+      "grant": "gr05",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d04",
+        "artifact-d07",
+        "artifact-d09"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r05",
+      "revision": 1,
+      "recorded_at": 20,
+      "principal": "reviewer-r05",
+      "grant": "gr05",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d04",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d07",
+        "artifact-d08",
+        "artifact-d09",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r06",
+      "revision": 2,
+      "recorded_at": 75,
+      "principal": "reviewer-r06",
+      "grant": "gr06",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d08",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r06",
+      "revision": 1,
+      "recorded_at": 20,
+      "principal": "reviewer-r06",
+      "grant": "gr06",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d04",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d07",
+        "artifact-d08",
+        "artifact-d09",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r07",
+      "revision": 2,
+      "recorded_at": 75,
+      "principal": "reviewer-r07",
+      "grant": "gr07",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d08",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r07",
+      "revision": 1,
+      "recorded_at": 20,
+      "principal": "reviewer-r07",
+      "grant": "gr07",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d04",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d07",
+        "artifact-d08",
+        "artifact-d09",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r08",
+      "revision": 2,
+      "recorded_at": 75,
+      "principal": "reviewer-r08",
+      "grant": "gr08",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d04",
+        "artifact-d07",
+        "artifact-d09"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r08",
+      "revision": 1,
+      "recorded_at": 20,
+      "principal": "reviewer-r08",
+      "grant": "gr08",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d04",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d07",
+        "artifact-d08",
+        "artifact-d09",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r09",
+      "revision": 2,
+      "recorded_at": 75,
+      "principal": "reviewer-r09",
+      "grant": "gr09",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d08",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r09",
+      "revision": 1,
+      "recorded_at": 20,
+      "principal": "reviewer-r09",
+      "grant": "gr09",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d04",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d07",
+        "artifact-d08",
+        "artifact-d09",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r10",
+      "revision": 2,
+      "recorded_at": 75,
+      "principal": "reviewer-r10",
+      "grant": "gr10",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d08",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    },
+    {
+      "id": "r10",
+      "revision": 1,
+      "recorded_at": 20,
+      "principal": "reviewer-r10",
+      "grant": "gr10",
+      "services": [
+        "billing.*"
+      ],
+      "regions": [
+        "zone-a"
+      ],
+      "artifacts": [
+        "artifact-d01",
+        "artifact-d02",
+        "artifact-d03",
+        "artifact-d04",
+        "artifact-d05",
+        "artifact-d06",
+        "artifact-d07",
+        "artifact-d08",
+        "artifact-d09",
+        "artifact-d10"
+      ],
+      "start": 10,
+      "expires": 95,
+      "capacity": 1
+    }
+  ],
+  "amendments": [
+    {
+      "id": "a13",
+      "cost": 1,
+      "exclude": [
+        "d02"
+      ]
+    },
+    {
+      "id": "a31",
+      "cost": 3,
+      "exclude": [
+        "d07"
+      ]
+    },
+    {
+      "id": "a47",
+      "cost": 4,
+      "exclude": [
+        "d01"
+      ]
+    },
+    {
+      "id": "a62",
+      "cost": 2,
+      "exclude": [
+        "d06",
+        "d08"
+      ]
+    }
+  ]
+}

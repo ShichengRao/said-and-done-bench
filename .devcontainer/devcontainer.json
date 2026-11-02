@@ -1,0 +1,10 @@
+{
+  "name": "Said & Done",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "hostRequirements": { "cpus": 4, "memory": "16gb" },
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && ~/.local/bin/uv sync",
+  "postAttachCommand": "echo 'Run ./replicate.sh beam-openrouter (or ./replicate.sh --help) to reproduce the main result.'"
+}

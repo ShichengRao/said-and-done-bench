@@ -1,0 +1,5 @@
+{
+  "task_id": "h7-ops-replica-migration",
+  "expected_status": "blocked",
+  "task_hash": "4dc8c555d1dfc00a19ea8dc6414a6feddf0c584aa1a5a09a81fe2f30ea410f59"
+}

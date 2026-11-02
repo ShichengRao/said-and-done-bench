@@ -1,0 +1,168 @@
+{
+  "customer": "Larkspur Water Cooperative (fictional)",
+  "pricing_cycle": "2026-10",
+  "config": {
+    "periods": [
+      {
+        "id": "p1",
+        "start": 0,
+        "end": 10,
+        "cycle": "month"
+      },
+      {
+        "id": "p2",
+        "start": 10,
+        "end": 20,
+        "cycle": "month"
+      }
+    ],
+    "meters": [
+      {
+        "id": "a",
+        "account": "alice",
+        "pool": "shared"
+      },
+      {
+        "id": "b",
+        "account": "bob",
+        "pool": "shared"
+      }
+    ],
+    "pools": [
+      {
+        "id": "shared",
+        "tiers": [
+          {
+            "up_to": 5,
+            "millicents": 1000
+          },
+          {
+            "up_to": null,
+            "millicents": 250
+          }
+        ]
+      }
+    ]
+  },
+  "commands": [
+    {
+      "operation_id": "initial",
+      "as_of": 1,
+      "readings": [
+        {
+          "id": "a0",
+          "revision": 1,
+          "known": 0,
+          "meter": "a",
+          "epoch": "e1",
+          "at": 0,
+          "counter": 0,
+          "void": false
+        },
+        {
+          "id": "a1",
+          "revision": 1,
+          "known": 0,
+          "meter": "a",
+          "epoch": "e1",
+          "at": 10,
+          "counter": 4,
+          "void": false
+        },
+        {
+          "id": "a2",
+          "revision": 1,
+          "known": 0,
+          "meter": "a",
+          "epoch": "e1",
+          "at": 20,
+          "counter": 8,
+          "void": false
+        },
+        {
+          "id": "b0",
+          "revision": 1,
+          "known": 0,
+          "meter": "b",
+          "epoch": "e1",
+          "at": 0,
+          "counter": 0,
+          "void": false
+        },
+        {
+          "id": "b1",
+          "revision": 1,
+          "known": 0,
+          "meter": "b",
+          "epoch": "e1",
+          "at": 20,
+          "counter": 5,
+          "void": false
+        },
+        {
+          "id": "b1",
+          "revision": 2,
+          "known": 5,
+          "meter": "b",
+          "epoch": "e1",
+          "at": 20,
+          "counter": 9,
+          "void": false
+        }
+      ]
+    },
+    {
+      "operation_id": "middle-correction",
+      "as_of": 2,
+      "readings": [
+        {
+          "id": "a1",
+          "revision": 2,
+          "known": 2,
+          "meter": "a",
+          "epoch": "e1",
+          "at": 10,
+          "counter": 6,
+          "void": false
+        }
+      ]
+    },
+    {
+      "operation_id": "future-visible",
+      "as_of": 5,
+      "readings": []
+    },
+    {
+      "operation_id": "middle-retracted",
+      "as_of": 6,
+      "readings": [
+        {
+          "id": "a1",
+          "revision": 3,
+          "known": 6,
+          "meter": "a",
+          "epoch": "e1",
+          "at": 10,
+          "counter": 6,
+          "void": true
+        }
+      ]
+    },
+    {
+      "operation_id": "right-retracted",
+      "as_of": 7,
+      "readings": [
+        {
+          "id": "b1",
+          "revision": 3,
+          "known": 7,
+          "meter": "b",
+          "epoch": "e1",
+          "at": 20,
+          "counter": 9,
+          "void": true
+        }
+      ]
+    }
+  ]
+}

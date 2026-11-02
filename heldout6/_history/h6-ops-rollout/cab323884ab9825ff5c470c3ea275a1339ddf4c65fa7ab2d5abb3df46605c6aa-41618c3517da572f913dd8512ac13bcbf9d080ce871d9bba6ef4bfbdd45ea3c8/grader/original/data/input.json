@@ -1,0 +1,277 @@
+{
+  "configuration": {
+    "nodes": {
+      "west-old": {
+        "rack": "west",
+        "zone": "west",
+        "capacity": 2
+      },
+      "west-copy": {
+        "rack": "west",
+        "zone": "west",
+        "capacity": 2
+      },
+      "west-extra": {
+        "rack": "west",
+        "zone": "west",
+        "capacity": 2
+      },
+      "east-old": {
+        "rack": "east",
+        "zone": "east",
+        "capacity": 2
+      },
+      "east-copy": {
+        "rack": "east",
+        "zone": "east",
+        "capacity": 2
+      },
+      "east-extra": {
+        "rack": "east",
+        "zone": "east",
+        "capacity": 2
+      }
+    },
+    "rack_capacity": {
+      "west": 4,
+      "east": 4
+    },
+    "services": {
+      "api": {
+        "size": 2,
+        "min_ready": 2,
+        "min_zones": 2
+      }
+    },
+    "initial": {
+      "west-old": {
+        "service": "api",
+        "image": "old"
+      },
+      "west-copy": null,
+      "west-extra": null,
+      "east-old": {
+        "service": "api",
+        "image": "old"
+      },
+      "east-copy": null,
+      "east-extra": null
+    },
+    "max_inflight": 3
+  },
+  "install": {
+    "epoch": 1,
+    "observed": {
+      "west-old": {
+        "service": "api",
+        "image": "old"
+      },
+      "west-copy": null,
+      "west-extra": null,
+      "east-old": {
+        "service": "api",
+        "image": "old"
+      },
+      "east-copy": null,
+      "east-extra": null
+    },
+    "actions": [
+      {
+        "id": "a-expand-west",
+        "depends": [],
+        "op": "start",
+        "node": "west-extra",
+        "service": "api",
+        "image": "new"
+      },
+      {
+        "id": "b-copy-east",
+        "depends": [],
+        "op": "start",
+        "node": "east-copy",
+        "service": "api",
+        "image": "new"
+      },
+      {
+        "id": "c-copy-west",
+        "depends": [],
+        "op": "start",
+        "node": "west-copy",
+        "service": "api",
+        "image": "new"
+      },
+      {
+        "id": "d-expand-east",
+        "depends": [],
+        "op": "start",
+        "node": "east-extra",
+        "service": "api",
+        "image": "new"
+      },
+      {
+        "id": "e-retire-east",
+        "depends": [],
+        "op": "stop",
+        "node": "east-old",
+        "service": "api",
+        "image": "old"
+      },
+      {
+        "id": "f-retire-west",
+        "depends": [
+          "c-copy-west"
+        ],
+        "op": "stop",
+        "node": "west-old",
+        "service": "api",
+        "image": "old"
+      }
+    ],
+    "target": {
+      "west-old": null,
+      "west-copy": {
+        "service": "api",
+        "image": "new"
+      },
+      "west-extra": {
+        "service": "api",
+        "image": "new"
+      },
+      "east-old": null,
+      "east-copy": {
+        "service": "api",
+        "image": "new"
+      },
+      "east-extra": {
+        "service": "api",
+        "image": "new"
+      }
+    }
+  },
+  "trace": [
+    {
+      "id": "dispatch-copies",
+      "expected_version": 1,
+      "kind": "dispatch"
+    },
+    {
+      "id": "west-copy-seen",
+      "expected_version": 2,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:c-copy-west:1",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "dispatch-west-retire",
+      "expected_version": 3,
+      "kind": "dispatch"
+    },
+    {
+      "id": "east-copy-failed",
+      "expected_version": 4,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:b-copy-east:1",
+          "success": false
+        }
+      ]
+    },
+    {
+      "id": "retry-east-copy",
+      "expected_version": 5,
+      "kind": "dispatch"
+    },
+    {
+      "id": "conflicting-old-success",
+      "expected_version": 6,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:f-retire-west:1",
+          "success": true
+        },
+        {
+          "token": "1:b-copy-east:1",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "both-confirmed",
+      "expected_version": 6,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:f-retire-west:1",
+          "success": true
+        },
+        {
+          "token": "1:b-copy-east:2",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "dispatch-expansion-and-retire",
+      "expected_version": 7,
+      "kind": "dispatch"
+    },
+    {
+      "id": "east-retired",
+      "expected_version": 8,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:e-retire-east:1",
+          "success": true
+        },
+        {
+          "token": "1:e-retire-east:1",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "dispatch-east-expansion",
+      "expected_version": 9,
+      "kind": "dispatch"
+    },
+    {
+      "id": "east-expanded",
+      "expected_version": 10,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:d-expand-east:1",
+          "success": true
+        }
+      ]
+    },
+    {
+      "id": "waiting-for-west",
+      "expected_version": 11,
+      "kind": "dispatch"
+    },
+    {
+      "id": "dispatch-copies",
+      "expected_version": 1,
+      "kind": "dispatch"
+    },
+    {
+      "id": "west-expanded",
+      "expected_version": 12,
+      "kind": "receipt",
+      "receipts": [
+        {
+          "token": "1:a-expand-west:1",
+          "success": true
+        }
+      ]
+    }
+  ]
+}

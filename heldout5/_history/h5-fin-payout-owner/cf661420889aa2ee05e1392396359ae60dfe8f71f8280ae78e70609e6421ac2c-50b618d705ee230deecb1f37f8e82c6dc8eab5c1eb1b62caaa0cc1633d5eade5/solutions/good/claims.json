@@ -1,0 +1,25 @@
+{
+  "files_changed": [
+    "payouts.py",
+    "audit.json"
+  ],
+  "evidence": {
+    "requested_cents": 1600,
+    "covered_cents": 1500,
+    "deficiency": {
+      "lots": [
+        "l2",
+        "l4"
+      ],
+      "attestations": [
+        "t1"
+      ],
+      "required_cents": 600,
+      "capacity_cents": 500,
+      "shortfall_cents": 100
+    },
+    "owner_proposals": [
+      "r3"
+    ]
+  }
+}

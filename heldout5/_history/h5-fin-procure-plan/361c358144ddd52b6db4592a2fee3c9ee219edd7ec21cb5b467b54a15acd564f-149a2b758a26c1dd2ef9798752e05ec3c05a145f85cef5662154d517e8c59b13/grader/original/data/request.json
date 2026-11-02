@@ -1,0 +1,74 @@
+{
+  "stock": [
+    {
+      "warehouse": "east",
+      "sku": "a",
+      "quantity": 5
+    },
+    {
+      "warehouse": "east",
+      "sku": "b",
+      "quantity": 4
+    },
+    {
+      "warehouse": "west",
+      "sku": "a",
+      "quantity": 0
+    },
+    {
+      "warehouse": "west",
+      "sku": "b",
+      "quantity": 0
+    }
+  ],
+  "transfers": [
+    {
+      "id": "t",
+      "source": "east",
+      "destination": "west",
+      "lines": {
+        "a": 3,
+        "b": 2
+      }
+    }
+  ],
+  "commands": [
+    {
+      "operation_id": "early",
+      "at": 1,
+      "kind": "receive",
+      "transfer": "t",
+      "event": "arrive"
+    },
+    {
+      "operation_id": "ship",
+      "at": 1,
+      "kind": "receive",
+      "transfer": "t",
+      "event": "depart"
+    },
+    {
+      "operation_id": "buy",
+      "at": 2,
+      "kind": "reserve",
+      "basket": "b",
+      "until": 10,
+      "request": {
+        "needs": {
+          "a": 4,
+          "b": 3
+        },
+        "routes": {
+          "a": [
+            "west",
+            "east"
+          ],
+          "b": [
+            "west",
+            "east"
+          ]
+        }
+      }
+    }
+  ]
+}

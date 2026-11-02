@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "judge_id": "h7-semantic-v1",
+  "revision": "v1-reviewed-fixes",
+  "pinned_at": "2026-11-02T00:45:14.710662+00:00",
+  "inference_performed": false,
+  "prior_pin": "automated_judge_history/v1-pre-review-fixes/automated_judge_pin.json",
+  "files": {
+    "automated_judge.py": "7ba3305fc2d0003d1bdc13b54bcc8b98231b6f7f542403a5d464f6523921a8e0",
+    "automated_judge_prompt.txt": "edd4d7a47a21b57598a8dce95f857eda6ebfef75168bcd9147bde7fa9f73349e",
+    "automated_judge_schema.json": "db3f8f8ccf6a6f306172ec0fd77beef27bd6ef03a1d3770ba01f7fedf7fb9f06",
+    "automated_judge_config.json": "e1316d55ff34ec1f11ef0252828d9391b85a96d0168f061271e639c30bef04c2",
+    "test_automated_judge.py": "1560ab244b14d836bb0706893822002da0e9d3e825a94a5e378fecbe74375912",
+    "AUTOMATED_JUDGE.md": "5f2bdeba0efc3109d161a3d1dbe7ab5aa6c1f26fe5ca28c763e1ef41d1cb870a",
+    "AUTOMATED_JUDGE_BOUNDARY_AUDIT.json": "0d4096e4fb78ab2f4f0b422ae8db9d798d27460c293d0fd69b64b214b75d30d8"
+  }
+}

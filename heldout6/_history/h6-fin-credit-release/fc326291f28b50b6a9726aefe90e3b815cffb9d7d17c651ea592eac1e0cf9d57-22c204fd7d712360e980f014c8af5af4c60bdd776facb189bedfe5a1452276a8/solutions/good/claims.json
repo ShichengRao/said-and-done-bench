@@ -1,0 +1,22 @@
+{
+  "summary": "No current nonanticipating financing policy exists: both root financing choices leave their binding family indistinguishable at the second decision. Every proper scenario subset is feasible; the four-world set is not. The prospective P-enable-X inspection grant is the least supplied remedy, cost 2, with six policies. No owner entitlement has actually changed.",
+  "files_changed": [
+    "funding.py",
+    "audit.json"
+  ],
+  "evidence": {
+    "requested_cents": 300,
+    "policy_count": 0,
+    "infeasible_cores": [
+      [
+        "X-cash",
+        "X-pledge",
+        "Y-cash",
+        "Y-pledge"
+      ]
+    ],
+    "owner_proposals": [
+      "P-enable-X"
+    ]
+  }
+}

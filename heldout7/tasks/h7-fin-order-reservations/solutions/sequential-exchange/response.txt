@@ -1,0 +1,1 @@
+I finished the service and ran the customer update. The replacement batch came back unavailable because neither replacement fits on its own with the current stock; output/replacement_result.json records that result.

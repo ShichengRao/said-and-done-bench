@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.027" timestamp="2026-11-02T02:19:47.796631+00:00" hostname="7c90136f5351"><testcase classname="tests.test_h7-data-batch-reconciliation" name="test_ledger_fixture_reused_byte_for_byte" time="0.000" /></testsuite></testsuites>

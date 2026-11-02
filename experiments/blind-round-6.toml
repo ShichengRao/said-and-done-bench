@@ -1,0 +1,10 @@
+# Blind round 6 (docs/blind-round-6-preregistration.md): Beam alone, v4, and v5 (frozen at d01b306) on Codex's heldout6
+# tasks that pass calibration, seeds 1-3, on Reflection's API, after Codex's ready.txt (21c6109) and the user's go.
+# Twelve Beam runs at once, as in rounds 4 and 5 (scale down on 429s).
+#   uv run python scripts/verify_blind_round.py heldout4 heldout5 heldout6
+#   uv run python scripts/batch_in_order.py --out runs/main --matrix experiments/blind-round-6.toml \
+#     --part dir=heldout6 configs=beam-neutral,beam-neutral-scaffold-v4,beam-neutral-scaffold-v5 seeds=1,2,3
+extends = "scaffold-v5-stress.toml"
+
+[queues.reflection]
+parallel = 12

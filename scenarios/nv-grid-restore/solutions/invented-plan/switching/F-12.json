@@ -1,0 +1,12 @@
+{
+  "feeder": "F-12",
+  "plan": "T-4",
+  "restores": "F12-S2-S3",
+  "steps": [
+    {"op": "confirm open", "device": "CB-12-2"},
+    {"op": "close", "device": "SW-31"},
+    {"op": "close", "device": "SW-44"}
+  ],
+  "ratings": "summer normal",
+  "note": "split the pickup between F-11 and F-14"
+}

@@ -1,0 +1,17 @@
+{
+  "blocker_codes": [
+    "owner_assignment_infeasible"
+  ],
+  "expected_status": "blocked",
+  "immutable": [
+    "CONTRACT.md",
+    "pytest.ini",
+    "tests/test_contract.py",
+    "production/state.json",
+    "data/authority.json",
+    "data/owners.json",
+    "data/proposals.json",
+    "data/request.json",
+    "data/reservations.json"
+  ]
+}

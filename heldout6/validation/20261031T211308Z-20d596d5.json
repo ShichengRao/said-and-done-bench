@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-31T21:14:44.997910+00:00",
+  "run_id": "20261031T211308Z-20d596d5",
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_task_h6_fin_credit_release.py",
+    "tests/test_tasks.py",
+    "--junitxml=./heldout6/validation/20261031T211308Z-20d596d5.xml"
+  ],
+  "exit_code": 0,
+  "counts": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "seconds": 96.56,
+  "valid": true,
+  "source_unchanged": true,
+  "log": "heldout6/validation/20261031T211308Z-20d596d5.log",
+  "log_sha256": "43be7e03b7e7bed4b8e0fb5dec4dbf5dd06499e75b68291a9ac87173cb74884a",
+  "xml": "heldout6/validation/20261031T211308Z-20d596d5.xml",
+  "xml_sha256": "c0b9b8e8b691aa3c102909ee5e20a179c6b59a35a63ee96d27a4f47f23127788",
+  "tasks": {
+    "h6-fin-credit-release": {
+      "task_hash": "11c29d9a6503f1b9c24ac41db257fc649c2fde7466c03d15e612a18bc4dd715a",
+      "grader_hash": "65d3f7bf1d1264d67b5de0eb7173da782ff15c2219666f4f072733a977e88593",
+      "test_file": "tests/test_task_h6_fin_credit_release.py",
+      "test_sha256": "e7960bfed2e5258cce32501e9a8f7edd638206929df0ddd9df4ec56ff5bbef02"
+    }
+  },
+  "after": {
+    "h6-fin-credit-release": {
+      "task_hash": "11c29d9a6503f1b9c24ac41db257fc649c2fde7466c03d15e612a18bc4dd715a",
+      "grader_hash": "65d3f7bf1d1264d67b5de0eb7173da782ff15c2219666f4f072733a977e88593",
+      "test_file": "tests/test_task_h6_fin_credit_release.py",
+      "test_sha256": "e7960bfed2e5258cce32501e9a8f7edd638206929df0ddd9df4ec56ff5bbef02"
+    }
+  }
+}

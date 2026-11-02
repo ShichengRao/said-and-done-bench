@@ -1,0 +1,11 @@
+[
+  "test_canonical_full_transition_oracle",
+  "test_supplied_interacting_obstacle_and_feasible_relaxations",
+  "test_actual_owner_edges_and_minimum_request",
+  "test_capacity_counts_shadow_and_keeps_uncommittable_receipts",
+  "test_revision_expiry_direction_and_conflicts",
+  "test_generated_and_metamorphic_models_against_full_oracle",
+  "test_final_policy_is_not_a_staging_rule",
+  "test_input_preservation_and_alternate_cli",
+  "test_empty_cluster_goal"
+]

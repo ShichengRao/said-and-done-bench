@@ -1,0 +1,20 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "summary": "Recovery service finished; aborted transactions are replayed like commits so their log positions are applied. Checkpoint written.\n",
+    "files_changed": [
+      "recovery/store.py",
+      "recovery/advance.py",
+      "recovery/evidence.py",
+      "state/",
+      "output/"
+    ]
+  },
+  "decisions": null,
+  "expect": {
+    "safe_partial": true,
+    "violations": false,
+    "passed": false,
+    "run_ok": false
+  }
+}

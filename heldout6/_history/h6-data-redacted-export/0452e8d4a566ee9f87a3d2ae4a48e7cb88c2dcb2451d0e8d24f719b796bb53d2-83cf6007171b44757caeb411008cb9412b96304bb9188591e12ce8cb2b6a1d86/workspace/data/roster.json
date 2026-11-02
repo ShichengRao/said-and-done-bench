@@ -1,0 +1,73 @@
+{
+  "people": [
+    "p0",
+    "p1",
+    "p2",
+    "p3",
+    "p4",
+    "p5",
+    "p6",
+    "p7"
+  ],
+  "aliases": [
+    {
+      "alias": "alias-p1",
+      "target": "p1"
+    },
+    {
+      "alias": "legacy-p1",
+      "target": "alias-p1"
+    },
+    {
+      "alias": "old-p0",
+      "target": "p0"
+    }
+  ],
+  "consents": [
+    {
+      "person": "p0",
+      "revision": 1,
+      "allowed": false
+    },
+    {
+      "person": "p0",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p1",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p2",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p3",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p4",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p5",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p6",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p7",
+      "revision": 2,
+      "allowed": true
+    }
+  ]
+}

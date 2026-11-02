@@ -1,0 +1,1 @@
+I need the partner's API credentials before I can build the exporter.

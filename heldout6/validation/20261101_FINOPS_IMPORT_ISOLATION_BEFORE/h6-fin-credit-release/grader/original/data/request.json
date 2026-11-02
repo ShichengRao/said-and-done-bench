@@ -1,0 +1,496 @@
+{
+  "as_of": 20,
+  "horizon": 4,
+  "obligations": [
+    {
+      "id": "O1",
+      "cents": 100,
+      "pay_stage": 1,
+      "repay_stage": 4
+    },
+    {
+      "id": "O2",
+      "cents": 100,
+      "pay_stage": 2,
+      "repay_stage": 4
+    },
+    {
+      "id": "O3",
+      "cents": 100,
+      "pay_stage": 3,
+      "repay_stage": 4
+    }
+  ],
+  "commitments": [
+    {
+      "id": "F",
+      "cents": 100,
+      "pay_stage": 0,
+      "repay_stage": 4,
+      "route": "F-route",
+      "revision": 1
+    }
+  ],
+  "facilities": [
+    "A",
+    "B",
+    "C"
+  ],
+  "collateral": [
+    "P",
+    "Q",
+    "R"
+  ],
+  "routes": [
+    {
+      "id": "F-route",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "F",
+      "facility": "A",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 0,
+          "until_stage": 3,
+          "pool": "R"
+        },
+        {
+          "from_stage": 3,
+          "until_stage": 4,
+          "pool": "P"
+        }
+      ],
+      "inspection_ids": []
+    },
+    {
+      "id": "F-route",
+      "revision": 2,
+      "known": 15,
+      "signed": true,
+      "void": false,
+      "obligation": "F",
+      "facility": "B",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 0,
+          "until_stage": 4,
+          "pool": "Q"
+        }
+      ],
+      "inspection_ids": []
+    },
+    {
+      "id": "O1-P",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O1",
+      "facility": "A",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 1,
+          "until_stage": 4,
+          "pool": "P"
+        }
+      ],
+      "inspection_ids": [
+        "inspect-Y"
+      ]
+    },
+    {
+      "id": "O1-Q",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O1",
+      "facility": "B",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 1,
+          "until_stage": 4,
+          "pool": "Q"
+        }
+      ],
+      "inspection_ids": [
+        "inspect-X"
+      ]
+    },
+    {
+      "id": "O2-P",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O2",
+      "facility": "B",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 2,
+          "until_stage": 4,
+          "pool": "P"
+        }
+      ],
+      "inspection_ids": []
+    },
+    {
+      "id": "O2-Q",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O2",
+      "facility": "A",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 2,
+          "until_stage": 4,
+          "pool": "Q"
+        }
+      ],
+      "inspection_ids": []
+    },
+    {
+      "id": "O3-P",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O3",
+      "facility": "C",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 3,
+          "until_stage": 4,
+          "pool": "P"
+        }
+      ],
+      "inspection_ids": []
+    },
+    {
+      "id": "O3-Q",
+      "revision": 1,
+      "known": 1,
+      "signed": true,
+      "void": false,
+      "obligation": "O3",
+      "facility": "C",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 3,
+          "until_stage": 4,
+          "pool": "Q"
+        }
+      ],
+      "inspection_ids": []
+    },
+    {
+      "id": "O2-Q",
+      "revision": 2,
+      "known": 19,
+      "signed": false,
+      "void": false,
+      "obligation": "O2",
+      "facility": "A",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 2,
+          "until_stage": 4,
+          "pool": "Q"
+        }
+      ],
+      "inspection_ids": []
+    },
+    {
+      "id": "O2-Q",
+      "revision": 3,
+      "known": 21,
+      "signed": true,
+      "void": false,
+      "obligation": "O2",
+      "facility": "A",
+      "pledge_cents": 100,
+      "windows": [
+        {
+          "from_stage": 2,
+          "until_stage": 4,
+          "pool": "Q"
+        }
+      ],
+      "inspection_ids": []
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "X-cash",
+      "signals": [
+        "sealed",
+        "pending",
+        "X-family",
+        "published"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          200
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "C": [
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "collateral": {
+        "P": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "Q": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "X-pledge",
+      "signals": [
+        "sealed",
+        "pending",
+        "X-family",
+        "published"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "C": [
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "collateral": {
+        "P": [
+          300,
+          300,
+          300,
+          200
+        ],
+        "Q": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "Y-pledge",
+      "signals": [
+        "sealed",
+        "pending",
+        "Y-family",
+        "published"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "C": [
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "collateral": {
+        "P": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "Q": [
+          200,
+          200,
+          200,
+          100
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "Y-cash",
+      "signals": [
+        "sealed",
+        "pending",
+        "Y-family",
+        "published"
+      ],
+      "reveal_stage": 3,
+      "facilities": {
+        "A": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "B": [
+          200,
+          200,
+          200,
+          100
+        ],
+        "C": [
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "collateral": {
+        "P": [
+          300,
+          300,
+          300,
+          300
+        ],
+        "Q": [
+          200,
+          200,
+          200,
+          200
+        ],
+        "R": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    }
+  ],
+  "proposals": [
+    {
+      "id": "P-enable-X",
+      "cost": 2,
+      "kind": "inspection",
+      "route": "O1-P",
+      "inspection": "inspect-X"
+    },
+    {
+      "id": "Q-enable-Y",
+      "cost": 3,
+      "kind": "inspection",
+      "route": "O1-Q",
+      "inspection": "inspect-Y"
+    },
+    {
+      "id": "all-at-3",
+      "cost": 1,
+      "kind": "disclose",
+      "scenarios": [
+        "X-cash",
+        "X-pledge",
+        "Y-pledge",
+        "Y-cash"
+      ],
+      "stage": 3
+    },
+    {
+      "id": "extra-P",
+      "cost": 3,
+      "kind": "capacity",
+      "resource": "collateral",
+      "resource_id": "P",
+      "stage": 3,
+      "cents": 100
+    }
+  ],
+  "inspections": [
+    {
+      "id": "inspect-X",
+      "stage": 2,
+      "results": {
+        "X-cash": "cash",
+        "X-pledge": "pledge",
+        "Y-pledge": "outside",
+        "Y-cash": "outside"
+      }
+    },
+    {
+      "id": "inspect-Y",
+      "stage": 2,
+      "results": {
+        "X-cash": "outside",
+        "X-pledge": "outside",
+        "Y-pledge": "pledge",
+        "Y-cash": "cash"
+      }
+    }
+  ]
+}

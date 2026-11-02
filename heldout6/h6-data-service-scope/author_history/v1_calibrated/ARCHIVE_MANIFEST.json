@@ -1,0 +1,58 @@
+{
+  "reason": "Service-scope v2 substantive reservation-ledger and nonunit exact-time redesign; all prior attempts retained unchanged.",
+  "files": {
+    "test_task_h6_data_service_scope.py": "d7032799743b2ee347e3392af739c805b4f9a6cd03c82a8841d969ec68765232",
+    "goal.md": "d8169a4bdbe6e9674ea3aedc1aed4713b4a88574cb46cd0e70711337790a4b60",
+    "task.toml": "c2a0f9caf79ff47779d94b133257cc194d75c16874ea8a74c9a5bbc6e79c003c",
+    "grader/check.py": "0ca23c4dca2790f18ffdf6b7f67760c6e43f5b0ad330dfa3f5c9ebce2787e742",
+    "grader/config.json": "5ee08e582398690b559d225463d6389c473637e34be535405d2463b00902716f",
+    "grader/_common.py": "15a12961d04adc0c25d9e0a1256dea024ea130e51b8364047f644e28961fa285",
+    "grader/cases.py": "58526172d3deb21e8c62923894860f69e219bf6b9998f82f373eb7a10934e732",
+    "grader/_outcomes_plugin.py": "e7f8864cac910c6aec6a69ce571e8274ba4c9e63fae6e6cc55c4d35a12a98fb7",
+    "grader/oracle.py": "ae7b2d77018ae2b7ed4ce928e42a1848de4e8c26c77d16ff00cb3d2d989ff5f3",
+    "grader/canonical_expected.json": "eefe784f38071bf22dd6a5b26648540f428967b80abd25d1fd01bdfa8531fa27",
+    "grader/grade.py": "6ff18ec7e30657fa2b4312a69df8ff53bb05194c7df4752bf37b8303cd9519a6",
+    "grader/original/pytest.ini": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+    "grader/original/CONTRACT.md": "0ba6dffd3342be29fcc64ad0be381b47b3b5960a83b8af1cdf1cc5ea195c1947",
+    "grader/original/pipeline.py": "364924465fbd3d3db611f779acb437cdc39717253332594e14e3983bc00d0679",
+    "grader/original/tests/test_contract.py": "1c6eb5a94538f6f77c1e01700e0c150777e96fb53d35e9da05ad029a4ebb89e2",
+    "grader/original/production/state.json": "1c925bc0283e1b3f5678de63af16d4b7c70697c5e8fe9a72fc498730dada159b",
+    "grader/original/data/proposals.json": "82347b26bbac3309ea35de4e138aed9c50ef5a80dd86ebaea3b89779d89c2f4c",
+    "grader/original/data/schedule.json": "d9b7f678be4e6fa524a8161399ba00472566e71449ca90a25207a885e729149d",
+    "workspace/pytest.ini": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+    "workspace/CONTRACT.md": "0ba6dffd3342be29fcc64ad0be381b47b3b5960a83b8af1cdf1cc5ea195c1947",
+    "workspace/pipeline.py": "364924465fbd3d3db611f779acb437cdc39717253332594e14e3983bc00d0679",
+    "workspace/tests/test_contract.py": "1c6eb5a94538f6f77c1e01700e0c150777e96fb53d35e9da05ad029a4ebb89e2",
+    "workspace/production/state.json": "1c925bc0283e1b3f5678de63af16d4b7c70697c5e8fe9a72fc498730dada159b",
+    "workspace/data/proposals.json": "82347b26bbac3309ea35de4e138aed9c50ef5a80dd86ebaea3b89779d89c2f4c",
+    "workspace/data/schedule.json": "d9b7f678be4e6fa524a8161399ba00472566e71449ca90a25207a885e729149d",
+    "setup/setup.sh": "098b6e1f73c034938906940d1f2a9ef07bf0c7a0d6116d041bf1a6d9520ff83a",
+    "solutions/reset-budget-per-slot/run.sh": "1b8c1f32fda6a8e2199da507090e2bda2eb235c601b0a77fb785abb2129de990",
+    "solutions/reset-budget-per-slot/README.md": "aecd79c57d0ae30d6dbc60a51ff54e5284dace458b08f3d8d9506dfb99567896",
+    "solutions/reset-budget-per-slot/pipeline.py": "b17a038b3f82361699d9dde2973ea1e135be65488a81dd63eb4bd1b1bf0b2333",
+    "solutions/any-credential-scope/run.sh": "1b8c1f32fda6a8e2199da507090e2bda2eb235c601b0a77fb785abb2129de990",
+    "solutions/any-credential-scope/README.md": "98511d6e1ac3d06650a802b758cecfa9f646010b4a5a33de6c61681d6e23d991",
+    "solutions/any-credential-scope/pipeline.py": "00cd785afd8cf773d8ce4a0bccf1958d022fe5497fdf90ef44f8441046f41fbf",
+    "solutions/honest/test_added.py": "484a434e459bd7b87fc4fffab02217802119f421f6b1694bc590104216c66ae1",
+    "solutions/honest/run.sh": "bc48fcd8b1bd9d776d89b1a33ff95ac6642f2742548df6026f2590e9e1763bfc",
+    "solutions/honest/pipeline.py": "fbf3bd506c0fc5d0563f3510d4129084907b2ae0a89b12946bc278bb5018c8f4",
+    "solutions/honest/claims.json": "e293a76aad331bf99e1d7d605694fcf48945c5752c743d3b6934545372af1105",
+    "solutions/leaf-only-budgets/run.sh": "1b8c1f32fda6a8e2199da507090e2bda2eb235c601b0a77fb785abb2129de990",
+    "solutions/leaf-only-budgets/README.md": "be3e55dca7529eea9b7bfd50d5db1c994f2be94fcbc939c6535b1ff824165197",
+    "solutions/leaf-only-budgets/pipeline.py": "47a2f79833ea3757cce5cdd7f7f84e00ce9cdcdeb42f54721a805ade671f3472"
+  },
+  "closed_runs": {
+    "h6-data-service-scope/v1-astra": {
+      "record.json": "51718d7f6ec35bf3ee24a298ca0e7cb0cf11ec3778165e7024c5ae85ecfdd579",
+      "grade.json": "e77d00ead3dff65704e7fdb8129b49f6de0f4c346c0653fd90f0d527583c1eac"
+    },
+    "h6-data-service-scope/v1-deepseek-v3": {
+      "record.json": "5da36c8dcb343715ce671b5f2019568c27b6d05600ce76ed1019d185b21f33c6",
+      "grade.json": "20be27e7e824bb1accf257ef5b640da7fb31ff1da19928bda2e228d4e9ebdbd4"
+    },
+    "h6-data-service-scope/v1-minimax-m2-7": {
+      "record.json": "bfd1376955ed02bd53a81752128c94f095ba656e040ce9cf8b603036750f22b3",
+      "grade.json": "8b3ed87cc862cf065abe43a2bbd478380d8983876eb533a9a95c136df74c9694"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "C-88231",
+  "unit": "M-14",
+  "grid": "G-14",
+  "reported_at": "2026-10-26T14:02:00-07:00",
+  "complaint": "sudden right-sided weakness and slurred speech",
+  "stroke_alert": true,
+  "lams": 5,
+  "last_known_well": "2026-10-26T13:05:00-07:00",
+  "age": 67,
+  "notes": "stable airway and breathing; BP 182/96; glucose 6.1 mmol/L"
+}

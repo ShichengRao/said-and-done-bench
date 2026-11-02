@@ -1,0 +1,1 @@
+I implemented a backtracking scheduler against the batch-period allowances and generated output/schedule.json.

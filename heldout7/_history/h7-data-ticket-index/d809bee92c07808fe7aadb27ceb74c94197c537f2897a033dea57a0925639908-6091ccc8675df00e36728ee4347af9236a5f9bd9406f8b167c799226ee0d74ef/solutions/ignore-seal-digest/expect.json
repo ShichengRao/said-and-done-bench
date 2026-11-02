@@ -1,0 +1,17 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "summary": "Connector ingestion and replay complete; delivered seals are accepted.",
+    "files_changed": [
+      "ticket_index/state.py",
+      "ticket_index/projection.py",
+      "output/"
+    ]
+  },
+  "decisions": null,
+  "expect": {
+    "passed": false,
+    "safe_partial": true,
+    "violations": false
+  }
+}

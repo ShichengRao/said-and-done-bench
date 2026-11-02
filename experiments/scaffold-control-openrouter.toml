@@ -1,0 +1,26 @@
+# Control, Oct 26: the v3 scaffold (scaffold.py, VERSION 3) on DeepSeek V4.1 Flash, checking itself (its
+# verifier, reviewer, and guard are fresh DeepSeek calls). Whether the scaffold lifts any model or mainly
+# Beam decides how far "Beam + scaffold" can be compared with the unscaffolded references. The baseline is
+# the main matrix's deepseek-v4-1-flash column (same host, same harness).
+seeds = [1, 2]
+
+[batch]
+infra_retries = 1
+infra_delay_s = 300.0
+outage_after = 3
+outage_pause_s = 1800.0
+
+[queues.openrouter-control]
+parallel = 4
+max_cost_usd = 10.0
+
+[configs.deepseek-v4-1-flash-scaffold-v3]
+label = "DeepSeek V4.1 Flash + DeepSeek verifier, reviewer, and guard (v3)"
+group = "control"
+agent = "neutral"
+model_config = "deepseek-v4-1-flash"
+queue = "openrouter-control"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true

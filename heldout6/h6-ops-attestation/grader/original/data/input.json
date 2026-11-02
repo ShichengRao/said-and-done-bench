@@ -1,0 +1,512 @@
+{
+  "initial": {
+    "s0": 0,
+    "s1": 0,
+    "s2": 0,
+    "s3": 0,
+    "s4": 0,
+    "s5": 0
+  },
+  "scope": [
+    "o0",
+    "o1",
+    "o2",
+    "o3",
+    "o4",
+    "o5"
+  ],
+  "keys": {
+    "k0": {
+      "n": "c545e1ecb57257f34778ee39d33e5ac56e4353f030fed46ab53f21103c3258027f597f5fbbb3532653b6f2d6e54177b5886a1e9148ae5df1cfe4284b0f111a685ae1fd95f36e3099b9279dd7d320c2c7293fcd10bfba00acda58ea3ea530657446fa24db94650fa322fd66d0a09bd92d362f53441d70aa4001b9f1f8ca55ea71",
+      "e": 65537
+    },
+    "k1": {
+      "n": "daab48f1e31001c5ddee75f96a858e2d838b406869a8eac730e2c40fbf78d79876de7a89019627e981e1ab20f7a1ef7af11aa47db049e353796f68f1766d7c327bde4453d76be2248ebe9eb42b04b834fb43ed763adddf0d75f2bc06ea4cd6e94c99532f0f72768a749d87f0c427282e66c4d4f721fc4f756cd6b32243a8d08d",
+      "e": 65537
+    },
+    "k2": {
+      "n": "a32f8ff05e09698e53cebb69ceabac5723bf2af671a0d07681aad0c132ca666deb1e0eb8fb9c05cc73311028d53f8fbb53101f0c85e5e35a00c2c3febc59a34f096581bbe1dc1742add0f741dc2ae65d01f0fb8f2fcb461ea04a23228adb8b5f8d2065d85681829152fee1479ff0b9ace7007371fa4db1572a37fcea199fa9b5",
+      "e": 65537
+    }
+  },
+  "grants": [
+    {
+      "id": "g0",
+      "revision": 2,
+      "principal": "p0",
+      "keyid": "k0",
+      "resources": [
+        "s0",
+        "s5"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": false
+    },
+    {
+      "id": "g0",
+      "revision": 1,
+      "principal": "p0",
+      "keyid": "k0",
+      "resources": [
+        "s0",
+        "s5"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": true
+    },
+    {
+      "id": "g1",
+      "revision": 2,
+      "principal": "p1",
+      "keyid": "k0",
+      "resources": [
+        "s1",
+        "s0"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": false
+    },
+    {
+      "id": "g1",
+      "revision": 1,
+      "principal": "p1",
+      "keyid": "k0",
+      "resources": [
+        "s1",
+        "s0"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": true
+    },
+    {
+      "id": "g2",
+      "revision": 2,
+      "principal": "p2",
+      "keyid": "k0",
+      "resources": [
+        "s2",
+        "s1"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": false
+    },
+    {
+      "id": "g2",
+      "revision": 1,
+      "principal": "p2",
+      "keyid": "k0",
+      "resources": [
+        "s2",
+        "s1"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": true
+    },
+    {
+      "id": "g3",
+      "revision": 2,
+      "principal": "p3",
+      "keyid": "k0",
+      "resources": [
+        "s3",
+        "s2"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": false
+    },
+    {
+      "id": "g3",
+      "revision": 1,
+      "principal": "p3",
+      "keyid": "k0",
+      "resources": [
+        "s3",
+        "s2"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": true
+    },
+    {
+      "id": "g4",
+      "revision": 2,
+      "principal": "p4",
+      "keyid": "k0",
+      "resources": [
+        "s4",
+        "s3"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": false
+    },
+    {
+      "id": "g4",
+      "revision": 1,
+      "principal": "p4",
+      "keyid": "k0",
+      "resources": [
+        "s4",
+        "s3"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": true
+    },
+    {
+      "id": "g5",
+      "revision": 2,
+      "principal": "p5",
+      "keyid": "k0",
+      "resources": [
+        "s5",
+        "s4"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": false
+    },
+    {
+      "id": "g5",
+      "revision": 1,
+      "principal": "p5",
+      "keyid": "k0",
+      "resources": [
+        "s5",
+        "s4"
+      ],
+      "valid_from": 0,
+      "valid_to": 20,
+      "revoked": true
+    }
+  ],
+  "operations": [
+    {
+      "signed": {
+        "id": "o0",
+        "revision": 2,
+        "principal": "p0",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s0": 0,
+          "s5": 0
+        },
+        "writes": {
+          "s0": 1
+        },
+        "success": true
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "6838727c4917b57d99d92dac17b1565b9875d402e878b238f2c2dc3068c8228fc789aaaf36ff5b8e0ff4cda05dcc81d08840f2c399476f8226a901f216a79a555f8e292d71f6d1870db3fdb50c521c9ac17a42eb4fb0ee55dc8cf976136726d948b130704e7435da16fdd199dd0a642677c9252461db61f36d17f413b93910aa"
+        }
+      ]
+    },
+    {
+      "signed": {
+        "id": "o0",
+        "revision": 1,
+        "principal": "p0",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s0": 0,
+          "s5": 0
+        },
+        "writes": {
+          "s0": 1
+        },
+        "success": false
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "c170df035fcdbbf63a0e6abb4d1a0930591fbf4a0d1db0ec1b75c4b9f50277a9f45d7e80a02e93af033734687d690d93c9fd7d59e355ff0309ff65c3038f4a63863c7dc09d6db9811ea2b7e41f1091f2d85f04218cba1d7225675c970118b65ba9a1dd95fb7f18cb0595c2b9ca3a4541cf3cf23037b67cdab8b57210bce8926a"
+        }
+      ]
+    },
+    {
+      "signed": {
+        "id": "o1",
+        "revision": 2,
+        "principal": "p1",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s1": 0,
+          "s0": 0
+        },
+        "writes": {
+          "s1": 1
+        },
+        "success": true
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "50d5ee57fff7899083b9e74eb246e459ed3a786752df247e698620eb0061295f03b55d214acedb9705220770e415378663ca57365cecc9acb7c2ea02883d0de255ed776f673298c72a91558eb98df7be1f05e20ecfff485d3948a9cac7bb8ff77714f7a8bfc66b1733d4d89bccfaa59605e96b9ee5594d5ddc68b1b0cf1b6d45"
+        }
+      ]
+    },
+    {
+      "signed": {
+        "id": "o1",
+        "revision": 1,
+        "principal": "p1",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s1": 0,
+          "s0": 0
+        },
+        "writes": {
+          "s1": 1
+        },
+        "success": false
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "b9c993fd010c2ec50063ebc269822407c40d17e656cd21226afac55d73a5d6ad503e9ae8f66e76967689e56dbef9f2731cb52f57ede6395943eddf173de68f284cb1a13c96bc27559a0c09421b4242aca77620c7d2c913d5e9db81e2b4887b78ce7714476afca1c2ba8ef1dd3483f10feaf1cf7d401973948534cb8f7f415088"
+        }
+      ]
+    },
+    {
+      "signed": {
+        "id": "o2",
+        "revision": 2,
+        "principal": "p2",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s2": 0,
+          "s1": 0
+        },
+        "writes": {
+          "s2": 1
+        },
+        "success": true
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "35f2e4777a521c9111178fb1520b7dffbd1da7f8248d933e673637a95a8640a074a1283852769e9238b34ee0ed9446f1844800ff3eafa1334889d1f58dad158f235c7221a7512b8946891753818507e07ed523c4b96cb9d662ed4cfcd467ef3a3c362f58d2e5ab59cc0caa38167655f050d8387ddb7ae57edf5f4708bdf505e7"
+        }
+      ]
+    },
+    {
+      "signed": {
+        "id": "o2",
+        "revision": 1,
+        "principal": "p2",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s2": 0,
+          "s1": 0
+        },
+        "writes": {
+          "s2": 1
+        },
+        "success": false
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "bfe847063be709c24c63dcb0d94341a7953c1fcdf5b68eb4e4a1c885d69725385a9eefdd0a90ea79487db611b58dd9f9c61cc252b0a30f61b3dff8e204e8f88a6f4aa6f8fd0f7f67533f42e8766d4012484b7eefc8685d4a82541b5a344dcbc3bf98753b3065b0e54c6750d199e7304baacf75b0854f0dcdbdab2c7c33b7dbbf"
+        }
+      ]
+    },
+    {
+      "signed": {
+        "id": "o3",
+        "revision": 2,
+        "principal": "p3",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s3": 0,
+          "s2": 0
+        },
+        "writes": {
+          "s3": 1
+        },
+        "success": true
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "5df4837b068f6803be9385f31069e9ee88e5e3b716ff664d1be6be1d2c2c49bff2d2c0db5a29439ada0ab406951831c40fbcf0f02b7b756b46ad0137b6dee2546b36fb2a50d1b664a5b40ec2a550814cbed0bffb8df3aa8efc9ba794cf35e5135a5a95a9c2745be06d4188021694176c58dbca810f8ac5f40d3b611527c5b079"
+        }
+      ]
+    },
+    {
+      "signed": {
+        "id": "o3",
+        "revision": 1,
+        "principal": "p3",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s3": 0,
+          "s2": 0
+        },
+        "writes": {
+          "s3": 1
+        },
+        "success": false
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "10ab2018148db2c486790109acac0bde38e96ac01f753c1f7fee3340406d36b5087fb0013f66544d4a220a63f3d8116d49f228e3b46f2fae3bca58dec3a8dba5d4d30c7c5d9a541e923b3a446ef327c17c29c552bc00bb917f02bb3cee8b383d38f914d652be7cd0d0806377bb196991c08537c9358d118767e8253414de39c6"
+        }
+      ]
+    },
+    {
+      "signed": {
+        "id": "o4",
+        "revision": 2,
+        "principal": "p4",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s4": 0,
+          "s3": 0
+        },
+        "writes": {
+          "s4": 1
+        },
+        "success": true
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "aa4ac3d95a9fa40eada1f67ba58821805012c3d19fc5c467ed030ed51d1fc473cfac00899f1d64a55443e24e2f5eac451539e84b1e22c9d1c95e54b654e4ca47f30839ffa6fc65a791cbaf04177387a66f2ec5ac6570c5b775a691355b20624b15d3eaf81928bd2de0a18d7dd485366df654dfb25e4db2461eb988fe45de9f4b"
+        }
+      ]
+    },
+    {
+      "signed": {
+        "id": "o4",
+        "revision": 1,
+        "principal": "p4",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s4": 0,
+          "s3": 0
+        },
+        "writes": {
+          "s4": 1
+        },
+        "success": false
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "af72c30b51457b96c2770165a593075209dd40e09cff9fccfdab76fb1c3e0e63161df650bc3902d7eaf173bbf20a3781e5c6125eb32ff9077dab04bf1fde8e2dd714a4247053498fa47fba83050fc6e904c53a1b2855382c15283fae1b44ef735939a82766d3d50685fa476c828d5e438f344f369f266d64e4f3b5c038a3fd49"
+        }
+      ]
+    },
+    {
+      "signed": {
+        "id": "o5",
+        "revision": 2,
+        "principal": "p5",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s5": 0,
+          "s4": 0
+        },
+        "writes": {
+          "s5": 1
+        },
+        "success": true
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "a223fe7db3043af8b3e0e86023a79ad2b9cfa1e3c62a0d3c26cf1b867b07775e6937ad4d0880aba0de3b9ad710f333b69eb1748ff6886a979de9b67d93abb7ba51c9e50768e3919b2c8565491837316c025fcbbfbe5da65070ca7f01d7e0041656335d11fdbe7f29a6e09dc14b0b8439a6849f09c03319154713846fea0a04d3"
+        }
+      ]
+    },
+    {
+      "signed": {
+        "id": "o5",
+        "revision": 1,
+        "principal": "p5",
+        "invoke": 2,
+        "respond": 12,
+        "expected": {
+          "s5": 0,
+          "s4": 0
+        },
+        "writes": {
+          "s5": 1
+        },
+        "success": false
+      },
+      "signatures": [
+        {
+          "keyid": "k0",
+          "sig": "8a0d91315f709272c66bb727928348d330be6406ea442b808edce851842f531d4adde5e75ad3a0a19a1812d2882d560c9155a50cf93a9cbfb84001181ec30eaf1c6ba0f15c04c5bce56979f4b97b28fc0d4a95e3734e9837d4b874ac96821a163d231bd1c070a4c0bbce66e26e60a8ed569e25a3dfb11af434408c1959d8211b"
+        }
+      ]
+    }
+  ],
+  "owner_requests": [
+    {
+      "id": "withdraw-0",
+      "withdraw": [
+        "o0"
+      ],
+      "cost": 1
+    },
+    {
+      "id": "withdraw-1",
+      "withdraw": [
+        "o1"
+      ],
+      "cost": 2
+    },
+    {
+      "id": "withdraw-2",
+      "withdraw": [
+        "o2"
+      ],
+      "cost": 3
+    },
+    {
+      "id": "withdraw-3",
+      "withdraw": [
+        "o3"
+      ],
+      "cost": 4
+    },
+    {
+      "id": "withdraw-4",
+      "withdraw": [
+        "o4"
+      ],
+      "cost": 5
+    },
+    {
+      "id": "withdraw-5",
+      "withdraw": [
+        "o5"
+      ],
+      "cost": 6
+    }
+  ]
+}

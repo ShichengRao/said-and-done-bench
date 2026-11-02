@@ -1,0 +1,16 @@
+{
+  "source_unchanged": true,
+  "counts": {
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "file_count": 83,
+  "before_sha256": "24d3113afeb98551a2ca6c70476cc273cfecc3d2a40586d2195115c3a6168ec2",
+  "after_sha256": "c44d10809fcac8f0882721949ba108fb815331ea2a8d4ae54c33d97dc29d7fe4",
+  "log_sha256": "8597ca68ea8970fff7b50840023425a841e9166d04abd07c7611feacb95172c9",
+  "xml_sha256": "9d3373af771e56c6a2c374eb542ad260bdcc679ecd8acb9748496291e9fb0cc5",
+  "reported_seconds": 12.71,
+  "inference_performed": false
+}

@@ -1,0 +1,254 @@
+[
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "support",
+      "x1"
+    ],
+    "target": [
+      "relay",
+      "r1"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "relay",
+      "r1"
+    ],
+    "target": [
+      "crm",
+      "c1"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "support",
+      "x2"
+    ],
+    "target": [
+      "relay",
+      "r2"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "relay",
+      "r2"
+    ],
+    "target": [
+      "crm",
+      "c2"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "support",
+      "x3"
+    ],
+    "target": [
+      "relay",
+      "r3"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "relay",
+      "r3"
+    ],
+    "target": [
+      "crm",
+      "c3"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "support",
+      "x4"
+    ],
+    "target": [
+      "relay",
+      "r4"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "relay",
+      "r4"
+    ],
+    "target": [
+      "crm",
+      "c4"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "support",
+      "x5"
+    ],
+    "target": [
+      "relay",
+      "r5"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "relay",
+      "r5"
+    ],
+    "target": [
+      "crm",
+      "c5"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "support",
+      "x6"
+    ],
+    "target": [
+      "relay",
+      "r6"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "relay",
+      "r6"
+    ],
+    "target": [
+      "crm",
+      "c6"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "support",
+      "x7"
+    ],
+    "target": [
+      "relay",
+      "r7"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "relay",
+      "r7"
+    ],
+    "target": [
+      "crm",
+      "c7"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "support",
+      "x8"
+    ],
+    "target": [
+      "relay",
+      "r8"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "relay",
+      "r8"
+    ],
+    "target": [
+      "crm",
+      "c8"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "support",
+      "x9"
+    ],
+    "target": [
+      "relay",
+      "r9"
+    ],
+    "tenant": "t6",
+    "until": null
+  },
+  {
+    "from": 0,
+    "purpose": "support_quality",
+    "source": [
+      "relay",
+      "r9"
+    ],
+    "target": [
+      "crm",
+      "c9"
+    ],
+    "tenant": "t6",
+    "until": null
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x1",
+    "id": "t1",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x2",
+    "id": "t2",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x3",
+    "id": "t3",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x4",
+    "id": "t4",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x5",
+    "id": "t5",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x6",
+    "id": "t6",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x7",
+    "id": "t7",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x8",
+    "id": "t8",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x9",
+    "id": "t9",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x7",
+    "id": "t10",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x1",
+    "id": "t1",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": true,
+    "external": "x1",
+    "id": "t11",
+    "recorded": 20,
+    "revision": 1,
+    "status": "closed",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x1",
+    "id": "t12",
+    "recorded": 20,
+    "revision": 1,
+    "status": "open",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  },
+  {
+    "at": 15,
+    "deleted": false,
+    "external": "x1",
+    "id": "t1",
+    "recorded": 10,
+    "revision": 0,
+    "status": "open",
+    "tenant": "t6",
+    "text": "fictional private support detail"
+  }
+]

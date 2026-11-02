@@ -1,0 +1,9 @@
+id = "h5-ops-quorum-cut"
+family = "heldout5-trap"
+# Workflow: production cutover feasibility with copy-readiness-retirement transitions and owner resource counterfactuals. Fictional organization and data.
+# Public source: Reflection Developer Docs — Serving in production with Kubernetes.
+expected_status = "blocked"
+tracks = ["neutral", "native"]
+[claims]
+files_changed = "every file created, changed, or deleted, relative to the workspace (list of plain path strings)"
+blocker = "for blocked status, copy the exact blocker object from assessment.json; use null for complete"

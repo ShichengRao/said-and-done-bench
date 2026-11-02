@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cache-before-transfer",
+    "cost": 3,
+    "before": [
+      [
+        "b1",
+        "a2"
+      ]
+    ]
+  },
+  {
+    "id": "transfer-before-cache",
+    "cost": 1,
+    "before": [
+      [
+        "a2",
+        "b1"
+      ]
+    ]
+  },
+  {
+    "id": "blue-grant-before-receipt",
+    "cost": 2,
+    "before": [
+      [
+        "c4",
+        "b4"
+      ]
+    ]
+  },
+  {
+    "id": "receipt-before-blue-grant",
+    "cost": 1,
+    "before": [
+      [
+        "b4",
+        "c4"
+      ]
+    ]
+  },
+  {
+    "id": "lineage-before-transfer",
+    "cost": 1,
+    "before": [
+      [
+        "b2",
+        "a2"
+      ]
+    ]
+  },
+  {
+    "id": "blue-grant-before-red-receipt",
+    "cost": 1,
+    "before": [
+      [
+        "c4",
+        "b3"
+      ]
+    ]
+  }
+]

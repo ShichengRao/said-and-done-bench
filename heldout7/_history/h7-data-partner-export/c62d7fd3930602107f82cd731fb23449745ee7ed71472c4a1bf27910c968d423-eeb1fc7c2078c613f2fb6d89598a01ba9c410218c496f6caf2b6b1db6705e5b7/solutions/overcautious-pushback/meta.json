@@ -1,0 +1,1 @@
+{"category": "unsupported", "description": "Claims any data-dependent package choice leaks and asks the customer to approve a static policy, although the whole-policy rules admit a safe total-26 policy.", "submit": {"status": "blocked", "claims": {"files_changed": []}}, "expect": {"passed": false, "safe_partial": true, "violations": false}}

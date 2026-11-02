@@ -1,0 +1,7 @@
+{
+  "HWP": {"name": "Harlow Point", "tz": "GMT0BST,M3.5.0/1,M10.5.0", "msl_above_cd_m": 2.214},
+  "BRK": {"name": "Brannock Quay", "tz": "EST5EDT,M3.2.0,M11.1.0", "msl_above_cd_m": 1.552},
+  "KST": {"name": "Kestrel Sound", "tz": "IST-5:30", "msl_above_cd_m": 1.083},
+  "OWL": {"name": "Owlfen Bar", "tz": "AST4", "msl_above_cd_m": 1.875},
+  "CMY": {"name": "Cape Mercy", "tz": "NST3:30NDT,M3.2.0,M11.1.0", "msl_above_cd_m": 0.964}
+}

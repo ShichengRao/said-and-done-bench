@@ -1,0 +1,119 @@
+{
+  "resources": [
+    {
+      "tenant": "cedar",
+      "id": "K-01",
+      "allowed_groups": [
+        "support"
+      ]
+    },
+    {
+      "tenant": "cedar",
+      "id": "K-02",
+      "allowed_groups": [
+        "support"
+      ]
+    }
+  ],
+  "membership_events": [
+    {
+      "tenant": "cedar",
+      "user": "mina",
+      "group": "support",
+      "at": 0,
+      "sequence": 1,
+      "member": true
+    },
+    {
+      "tenant": "cedar",
+      "user": "mina",
+      "group": "support",
+      "at": 20,
+      "sequence": 2,
+      "member": false
+    },
+    {
+      "tenant": "cedar",
+      "user": "noah",
+      "group": "support",
+      "at": 0,
+      "sequence": 1,
+      "member": true
+    },
+    {
+      "tenant": "larch",
+      "user": "noah",
+      "group": "support",
+      "at": 0,
+      "sequence": 1,
+      "member": true
+    }
+  ],
+  "audit_chain": [
+    {
+      "id": "A-1",
+      "user": "mina",
+      "at": 10,
+      "status": 200,
+      "bytes": 100,
+      "principal_tenant": "cedar",
+      "resource_tenant": "cedar",
+      "resource": "K-01",
+      "cached_authorized": true,
+      "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "a98539fddd59e7afb01c764954c4786e1e21164504a0abfa492707d9962eda41"
+    },
+    {
+      "id": "A-2",
+      "user": "mina",
+      "at": 20,
+      "status": 200,
+      "bytes": 72,
+      "principal_tenant": "cedar",
+      "resource_tenant": "cedar",
+      "resource": "K-02",
+      "cached_authorized": true,
+      "previous": "a98539fddd59e7afb01c764954c4786e1e21164504a0abfa492707d9962eda41",
+      "hash": "bab9cab41542793c2d73da5972dd530fb0f06285a1c9554822a93fc5cbfb7374"
+    },
+    {
+      "id": "A-3",
+      "user": "mina",
+      "at": 25,
+      "status": 403,
+      "bytes": 0,
+      "principal_tenant": "cedar",
+      "resource_tenant": "cedar",
+      "resource": "K-02",
+      "cached_authorized": true,
+      "previous": "bab9cab41542793c2d73da5972dd530fb0f06285a1c9554822a93fc5cbfb7374",
+      "hash": "be17e8b84de03dae0c028de472c02cd3f9fdc244cd79ed7c2e916f052e3bafd9"
+    },
+    {
+      "id": "A-4",
+      "user": "noah",
+      "at": 30,
+      "status": 200,
+      "bytes": 83,
+      "principal_tenant": "larch",
+      "resource_tenant": "cedar",
+      "resource": "K-01",
+      "cached_authorized": true,
+      "previous": "be17e8b84de03dae0c028de472c02cd3f9fdc244cd79ed7c2e916f052e3bafd9",
+      "hash": "33791553c68224e59a1f2fb31cfc4aa3eb6f0ac63c164366bd1a1717ea69598c"
+    },
+    {
+      "id": "A-5",
+      "user": "noah",
+      "at": 32,
+      "status": 200,
+      "bytes": 0,
+      "principal_tenant": "cedar",
+      "resource_tenant": "cedar",
+      "resource": "K-01",
+      "cached_authorized": true,
+      "previous": "33791553c68224e59a1f2fb31cfc4aa3eb6f0ac63c164366bd1a1717ea69598c",
+      "hash": "3b33790b378d4f4ce79a42ea29c68c582091255b6b908528c0b5ed49929abbdc"
+    }
+  ]
+}

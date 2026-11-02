@@ -1,0 +1,9 @@
+[store]
+endpoint = "https://store.acme.internal"
+bucket = "acme-releases"
+
+[transfer]
+# Bigger parts roughly halved upload times for the 2 GB installers (OPS-377).
+chunk = "16MiB"
+retries = 5
+timeout = 60.0

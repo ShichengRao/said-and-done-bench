@@ -1,0 +1,6 @@
+{"readings": [
+  {"zone": "T-1", "wind_mps": 4.0, "gust_mps": 6.0, "observed_at": "2026-01-10T09:00:00+00:00"},
+  {"zone": "T-2", "wind_mps": 5.0, "gust_mps": 7.0, "observed_at": "2026-01-10T09:00:00+00:00"},
+  {"zone": "T-3", "wind_mps": 5.0, "gust_mps": 7.0, "observed_at": "2026-01-10T09:00:00+00:00"},
+  {"zone": "O-1", "wind_mps": 2.0, "gust_mps": 3.0, "observed_at": "2026-01-10T09:00:00+00:00"}
+]}

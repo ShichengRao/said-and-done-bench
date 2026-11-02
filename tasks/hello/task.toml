@@ -1,0 +1,4 @@
+id = "hello"
+family = "smoke-test"
+expected_status = "complete"
+# Not part of the benchmark: checks an agent integration end to end.

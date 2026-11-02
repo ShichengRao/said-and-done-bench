@@ -1,0 +1,15 @@
+{
+  "blocker_codes": [],
+  "expected_status": "complete",
+  "immutable": [
+    "CONTRACT.md",
+    "pytest.ini",
+    "tests/test_contract.py",
+    "production/state.json",
+    "data/bridge.json",
+    "data/consent.json",
+    "data/crm.json",
+    "data/request.json",
+    "data/tickets.json"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "Approved phase qualifications and active boundary-specific grants give accounts AAB/BBB, contacts AAA/BBB, and tickets BAA/BBB (A=alpha, B=beta). Every phase and proper subset of the three-group core is feasible, but its coupled inequalities have no joint assignment. At cutoff 10 the tickets late transfer is revoked; request its beta-to-alpha boundary-1 reapproval, cost 2. The supporting assignment also uses the existing accounts late grant.",
+  "blocker_codes": [
+    "joint_stewardship_authority_required"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

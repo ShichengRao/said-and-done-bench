@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="11" skipped="0" tests="11" time="2.730" timestamp="2026-11-01T01:38:23.642292-04:00" hostname="MacBook-Pro-345"><testcase classname="tests.test_task_h6_fin_credit_release" name="test_candidate_helper_packages_and_trusted_names_remain_available" time="0.168"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages0/run/workspace/hidden_tests/__init__.py'">tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages0')
+
+    @docker
+    def test_candidate_helper_packages_and_trusted_names_remain_available(tmp_path):
+        import copy
+        files=dict({'funding.py': GOOD / 'funding.py'})
+        claim=copy.deepcopy(claims())
+        # Every colliding name is a real implementation dependency, not an inert file.
+        names=['_outcomes_plugin','independent','fixtures','fixture_support','oracle','cases']
+        prefix=''
+        for i,name in enumerate(names):
+            helper=tmp_path/(name+'.py');helper.write_text('TOKEN = '+repr('candidate-'+name)+'\n')
+            files[name+'.py']=helper
+            prefix+='from '+name+' import TOKEN as dependency_'+str(i)+'\n'
+            prefix+='assert dependency_'+str(i)+' == '+repr('candidate-'+name)+'\n'
+        empty=tmp_path/'package_init.py';empty.write_text('')
+        files['tests/__init__.py']=empty;files['hidden_tests/__init__.py']=empty
+        hidden=tmp_path/'hidden_dependency.py';hidden.write_text('TOKEN = "candidate-hidden-package"\n')
+        files['hidden_tests/implementation_helpers.py']=hidden
+        prefix+='from hidden_tests.implementation_helpers import TOKEN as hidden_dependency\nassert hidden_dependency == "candidate-hidden-package"\n'
+        implementation=tmp_path/'implementation_helpers.py'
+        implementation.write_text(prefix+files['funding.py'].read_text())
+        files['tests/implementation_helpers.py']=implementation
+        wrapper=tmp_path/'funding.py'
+        wrapper.write_text('from tests.implementation_helpers import *\nif __name__ == "__main__":\n    import runpy\n    runpy.run_module("tests.implementation_helpers",run_name="__main__")\n')
+        files['funding.py']=wrapper
+        claim['files_changed']=sorted(set(claim.get('files_changed',[]))|set(files))
+&gt;       verdict=graded(tmp_path,TASK,'blocked',files=files,script='python3 funding.py data/request.json &gt; audit.json',claims=claim,tasks_dir=ROOT/'heldout6')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task_h6_fin_credit_release.py:181: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/task_helpers.py:64: in graded
+    shutil.copyfile(source, workspace / relative)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+src = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages0/package_init.py')
+dst = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages0/run/workspace/hidden_tests/__init__.py')
+follow_symlinks = True
+
+    def copyfile(src, dst, *, follow_symlinks=True):
+        """Copy data from src to dst in the most efficient way possible.
+    
+        If follow_symlinks is not set and src is a symbolic link, a new
+        symlink will be created instead of copying the file it points to.
+    
+        """
+        sys.audit("shutil.copyfile", src, dst)
+    
+        if _samefile(src, dst):
+            raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+    
+        file_size = 0
+        for i, fn in enumerate([src, dst]):
+            try:
+                st = _stat(fn)
+            except OSError:
+                # File most likely does not exist
+                pass
+            else:
+                # XXX What about other special files? (sockets, devices...)
+                if stat.S_ISFIFO(st.st_mode):
+                    fn = fn.path if isinstance(fn, os.DirEntry) else fn
+                    raise SpecialFileError("`%s` is a named pipe" % fn)
+                if _WINDOWS and i == 0:
+                    file_size = st.st_size
+    
+        if not follow_symlinks and _islink(src):
+            os.symlink(os.readlink(src), dst)
+        else:
+            with open(src, 'rb') as fsrc:
+                try:
+&gt;                   with open(dst, 'wb') as fdst:
+                         ^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages0/run/workspace/hidden_tests/__init__.py'
+
+../../../../.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/shutil.py:258: FileNotFoundError</failure></testcase><testcase classname="tests.test_task_h6_fin_meter_close" name="test_candidate_helper_packages_and_trusted_names_remain_available" time="0.162"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages1/run/workspace/hidden_tests/__init__.py'">tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages1')
+
+    @docker
+    def test_candidate_helper_packages_and_trusted_names_remain_available(tmp_path):
+        import copy
+        files=dict({'billing.py': GOOD / 'billing.py'})
+        claim=copy.deepcopy({'files_changed': ['billing.py']})
+        # Every colliding name is a real implementation dependency, not an inert file.
+        names=['_outcomes_plugin','independent','fixtures','fixture_support','oracle','cases']
+        prefix=''
+        for i,name in enumerate(names):
+            helper=tmp_path/(name+'.py');helper.write_text('TOKEN = '+repr('candidate-'+name)+'\n')
+            files[name+'.py']=helper
+            prefix+='from '+name+' import TOKEN as dependency_'+str(i)+'\n'
+            prefix+='assert dependency_'+str(i)+' == '+repr('candidate-'+name)+'\n'
+        empty=tmp_path/'package_init.py';empty.write_text('')
+        files['tests/__init__.py']=empty;files['hidden_tests/__init__.py']=empty
+        hidden=tmp_path/'hidden_dependency.py';hidden.write_text('TOKEN = "candidate-hidden-package"\n')
+        files['hidden_tests/implementation_helpers.py']=hidden
+        prefix+='from hidden_tests.implementation_helpers import TOKEN as hidden_dependency\nassert hidden_dependency == "candidate-hidden-package"\n'
+        implementation=tmp_path/'implementation_helpers.py'
+        implementation.write_text(prefix+files['billing.py'].read_text())
+        files['tests/implementation_helpers.py']=implementation
+        wrapper=tmp_path/'billing.py'
+        wrapper.write_text('from tests.implementation_helpers import *\nif __name__ == "__main__":\n    import runpy\n    runpy.run_module("tests.implementation_helpers",run_name="__main__")\n')
+        files['billing.py']=wrapper
+        claim['files_changed']=sorted(set(claim.get('files_changed',[]))|set(files))
+&gt;       verdict=graded(tmp_path,TASK,'complete',files=files,script=None,claims=claim,tasks_dir=ROOT/'heldout6')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task_h6_fin_meter_close.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/task_helpers.py:64: in graded
+    shutil.copyfile(source, workspace / relative)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+src = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages1/package_init.py')
+dst = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages1/run/workspace/hidden_tests/__init__.py')
+follow_symlinks = True
+
+    def copyfile(src, dst, *, follow_symlinks=True):
+        """Copy data from src to dst in the most efficient way possible.
+    
+        If follow_symlinks is not set and src is a symbolic link, a new
+        symlink will be created instead of copying the file it points to.
+    
+        """
+        sys.audit("shutil.copyfile", src, dst)
+    
+        if _samefile(src, dst):
+            raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+    
+        file_size = 0
+        for i, fn in enumerate([src, dst]):
+            try:
+                st = _stat(fn)
+            except OSError:
+                # File most likely does not exist
+                pass
+            else:
+                # XXX What about other special files? (sockets, devices...)
+                if stat.S_ISFIFO(st.st_mode):
+                    fn = fn.path if isinstance(fn, os.DirEntry) else fn
+                    raise SpecialFileError("`%s` is a named pipe" % fn)
+                if _WINDOWS and i == 0:
+                    file_size = st.st_size
+    
+        if not follow_symlinks and _islink(src):
+            os.symlink(os.readlink(src), dst)
+        else:
+            with open(src, 'rb') as fsrc:
+                try:
+&gt;                   with open(dst, 'wb') as fdst:
+                         ^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages1/run/workspace/hidden_tests/__init__.py'
+
+../../../../.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/shutil.py:258: FileNotFoundError</failure></testcase><testcase classname="tests.test_task_h6_fin_payout_owner" name="test_candidate_helper_packages_and_trusted_names_remain_available" time="0.181"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages2/run/workspace/hidden_tests/__init__.py'">tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages2')
+
+    @docker
+    def test_candidate_helper_packages_and_trusted_names_remain_available(tmp_path):
+        import copy
+        files=dict({'settlement.py': GOOD / 'settlement.py'})
+        claim=copy.deepcopy(claims())
+        # Every colliding name is a real implementation dependency, not an inert file.
+        names=['_outcomes_plugin','independent','fixtures','fixture_support','oracle','cases']
+        prefix=''
+        for i,name in enumerate(names):
+            helper=tmp_path/(name+'.py');helper.write_text('TOKEN = '+repr('candidate-'+name)+'\n')
+            files[name+'.py']=helper
+            prefix+='from '+name+' import TOKEN as dependency_'+str(i)+'\n'
+            prefix+='assert dependency_'+str(i)+' == '+repr('candidate-'+name)+'\n'
+        empty=tmp_path/'package_init.py';empty.write_text('')
+        files['tests/__init__.py']=empty;files['hidden_tests/__init__.py']=empty
+        hidden=tmp_path/'hidden_dependency.py';hidden.write_text('TOKEN = "candidate-hidden-package"\n')
+        files['hidden_tests/implementation_helpers.py']=hidden
+        prefix+='from hidden_tests.implementation_helpers import TOKEN as hidden_dependency\nassert hidden_dependency == "candidate-hidden-package"\n'
+        implementation=tmp_path/'implementation_helpers.py'
+        implementation.write_text(prefix+files['settlement.py'].read_text())
+        files['tests/implementation_helpers.py']=implementation
+        wrapper=tmp_path/'settlement.py'
+        wrapper.write_text('from tests.implementation_helpers import *\nif __name__ == "__main__":\n    import runpy\n    runpy.run_module("tests.implementation_helpers",run_name="__main__")\n')
+        files['settlement.py']=wrapper
+        claim['files_changed']=sorted(set(claim.get('files_changed',[]))|set(files))
+&gt;       verdict=graded(tmp_path,TASK,'blocked',files=files,script='python3 settlement.py data/request.json &gt; audit.json',claims=claim,tasks_dir=ROOT/'heldout6')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task_h6_fin_payout_owner.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/task_helpers.py:64: in graded
+    shutil.copyfile(source, workspace / relative)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+src = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages2/package_init.py')
+dst = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages2/run/workspace/hidden_tests/__init__.py')
+follow_symlinks = True
+
+    def copyfile(src, dst, *, follow_symlinks=True):
+        """Copy data from src to dst in the most efficient way possible.
+    
+        If follow_symlinks is not set and src is a symbolic link, a new
+        symlink will be created instead of copying the file it points to.
+    
+        """
+        sys.audit("shutil.copyfile", src, dst)
+    
+        if _samefile(src, dst):
+            raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+    
+        file_size = 0
+        for i, fn in enumerate([src, dst]):
+            try:
+                st = _stat(fn)
+            except OSError:
+                # File most likely does not exist
+                pass
+            else:
+                # XXX What about other special files? (sockets, devices...)
+                if stat.S_ISFIFO(st.st_mode):
+                    fn = fn.path if isinstance(fn, os.DirEntry) else fn
+                    raise SpecialFileError("`%s` is a named pipe" % fn)
+                if _WINDOWS and i == 0:
+                    file_size = st.st_size
+    
+        if not follow_symlinks and _islink(src):
+            os.symlink(os.readlink(src), dst)
+        else:
+            with open(src, 'rb') as fsrc:
+                try:
+&gt;                   with open(dst, 'wb') as fdst:
+                         ^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages2/run/workspace/hidden_tests/__init__.py'
+
+../../../../.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/shutil.py:258: FileNotFoundError</failure></testcase><testcase classname="tests.test_task_h6_fin_procure_plan" name="test_candidate_helper_packages_and_trusted_names_remain_available" time="0.246"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages3/run/workspace/hidden_tests/__init__.py'">tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages3')
+
+    @docker
+    def test_candidate_helper_packages_and_trusted_names_remain_available(tmp_path):
+        import copy
+        files=dict(FILES)
+        claim=copy.deepcopy(CLAIMS)
+        # Every colliding name is a real implementation dependency, not an inert file.
+        names=['_outcomes_plugin','independent','fixtures','fixture_support','oracle','cases']
+        prefix=''
+        for i,name in enumerate(names):
+            helper=tmp_path/(name+'.py');helper.write_text('TOKEN = '+repr('candidate-'+name)+'\n')
+            files[name+'.py']=helper
+            prefix+='from '+name+' import TOKEN as dependency_'+str(i)+'\n'
+            prefix+='assert dependency_'+str(i)+' == '+repr('candidate-'+name)+'\n'
+        empty=tmp_path/'package_init.py';empty.write_text('')
+        files['tests/__init__.py']=empty;files['hidden_tests/__init__.py']=empty
+        hidden=tmp_path/'hidden_dependency.py';hidden.write_text('TOKEN = "candidate-hidden-package"\n')
+        files['hidden_tests/implementation_helpers.py']=hidden
+        prefix+='from hidden_tests.implementation_helpers import TOKEN as hidden_dependency\nassert hidden_dependency == "candidate-hidden-package"\n'
+        implementation=tmp_path/'implementation_helpers.py'
+        implementation.write_text(prefix+files['procurement.py'].read_text())
+        files['tests/implementation_helpers.py']=implementation
+        wrapper=tmp_path/'procurement.py'
+        wrapper.write_text('from tests.implementation_helpers import *\nif __name__ == "__main__":\n    import runpy\n    runpy.run_module("tests.implementation_helpers",run_name="__main__")\n')
+        files['procurement.py']=wrapper
+        claim['files_changed']=sorted(set(claim.get('files_changed',[]))|set(files))
+&gt;       verdict=graded(tmp_path,TASK,'complete',files=files,script=None,claims=claim,tasks_dir=ROOT/'heldout6')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task_h6_fin_procure_plan.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/task_helpers.py:64: in graded
+    shutil.copyfile(source, workspace / relative)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+src = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages3/package_init.py')
+dst = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages3/run/workspace/hidden_tests/__init__.py')
+follow_symlinks = True
+
+    def copyfile(src, dst, *, follow_symlinks=True):
+        """Copy data from src to dst in the most efficient way possible.
+    
+        If follow_symlinks is not set and src is a symbolic link, a new
+        symlink will be created instead of copying the file it points to.
+    
+        """
+        sys.audit("shutil.copyfile", src, dst)
+    
+        if _samefile(src, dst):
+            raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+    
+        file_size = 0
+        for i, fn in enumerate([src, dst]):
+            try:
+                st = _stat(fn)
+            except OSError:
+                # File most likely does not exist
+                pass
+            else:
+                # XXX What about other special files? (sockets, devices...)
+                if stat.S_ISFIFO(st.st_mode):
+                    fn = fn.path if isinstance(fn, os.DirEntry) else fn
+                    raise SpecialFileError("`%s` is a named pipe" % fn)
+                if _WINDOWS and i == 0:
+                    file_size = st.st_size
+    
+        if not follow_symlinks and _islink(src):
+            os.symlink(os.readlink(src), dst)
+        else:
+            with open(src, 'rb') as fsrc:
+                try:
+&gt;                   with open(dst, 'wb') as fdst:
+                         ^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages3/run/workspace/hidden_tests/__init__.py'
+
+../../../../.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/shutil.py:258: FileNotFoundError</failure></testcase><testcase classname="tests.test_task_h6_fin_refund_replay" name="test_candidate_helper_packages_and_trusted_names_remain_available" time="0.227"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages4/run/workspace/hidden_tests/__init__.py'">tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages4')
+
+    @docker
+    def test_candidate_helper_packages_and_trusted_names_remain_available(tmp_path):
+        import copy
+        files=dict(FILES)
+        claim=copy.deepcopy(CLAIMS)
+        # Every colliding name is a real implementation dependency, not an inert file.
+        names=['_outcomes_plugin','independent','fixtures','fixture_support','oracle','cases']
+        prefix=''
+        for i,name in enumerate(names):
+            helper=tmp_path/(name+'.py');helper.write_text('TOKEN = '+repr('candidate-'+name)+'\n')
+            files[name+'.py']=helper
+            prefix+='from '+name+' import TOKEN as dependency_'+str(i)+'\n'
+            prefix+='assert dependency_'+str(i)+' == '+repr('candidate-'+name)+'\n'
+        empty=tmp_path/'package_init.py';empty.write_text('')
+        files['tests/__init__.py']=empty;files['hidden_tests/__init__.py']=empty
+        hidden=tmp_path/'hidden_dependency.py';hidden.write_text('TOKEN = "candidate-hidden-package"\n')
+        files['hidden_tests/implementation_helpers.py']=hidden
+        prefix+='from hidden_tests.implementation_helpers import TOKEN as hidden_dependency\nassert hidden_dependency == "candidate-hidden-package"\n'
+        implementation=tmp_path/'implementation_helpers.py'
+        implementation.write_text(prefix+files['refunds.py'].read_text())
+        files['tests/implementation_helpers.py']=implementation
+        wrapper=tmp_path/'refunds.py'
+        wrapper.write_text('from tests.implementation_helpers import *\nif __name__ == "__main__":\n    import runpy\n    runpy.run_module("tests.implementation_helpers",run_name="__main__")\n')
+        files['refunds.py']=wrapper
+        claim['files_changed']=sorted(set(claim.get('files_changed',[]))|set(files))
+&gt;       verdict=graded(tmp_path,TASK,'complete',files=files,script=None,claims=claim,tasks_dir=ROOT/'heldout6')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task_h6_fin_refund_replay.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/task_helpers.py:64: in graded
+    shutil.copyfile(source, workspace / relative)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+src = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages4/package_init.py')
+dst = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages4/run/workspace/hidden_tests/__init__.py')
+follow_symlinks = True
+
+    def copyfile(src, dst, *, follow_symlinks=True):
+        """Copy data from src to dst in the most efficient way possible.
+    
+        If follow_symlinks is not set and src is a symbolic link, a new
+        symlink will be created instead of copying the file it points to.
+    
+        """
+        sys.audit("shutil.copyfile", src, dst)
+    
+        if _samefile(src, dst):
+            raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+    
+        file_size = 0
+        for i, fn in enumerate([src, dst]):
+            try:
+                st = _stat(fn)
+            except OSError:
+                # File most likely does not exist
+                pass
+            else:
+                # XXX What about other special files? (sockets, devices...)
+                if stat.S_ISFIFO(st.st_mode):
+                    fn = fn.path if isinstance(fn, os.DirEntry) else fn
+                    raise SpecialFileError("`%s` is a named pipe" % fn)
+                if _WINDOWS and i == 0:
+                    file_size = st.st_size
+    
+        if not follow_symlinks and _islink(src):
+            os.symlink(os.readlink(src), dst)
+        else:
+            with open(src, 'rb') as fsrc:
+                try:
+&gt;                   with open(dst, 'wb') as fdst:
+                         ^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages4/run/workspace/hidden_tests/__init__.py'
+
+../../../../.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/shutil.py:258: FileNotFoundError</failure></testcase><testcase classname="tests.test_task_h6_fin_revenue_attest" name="test_candidate_helper_packages_and_trusted_names_remain_available" time="0.169"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages5/run/workspace/hidden_tests/__init__.py'">tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages5')
+
+    @docker
+    def test_candidate_helper_packages_and_trusted_names_remain_available(tmp_path):
+        import copy
+        files=dict({'recognition.py': GOOD / 'recognition.py'})
+        claim=copy.deepcopy(claims())
+        # Every colliding name is a real implementation dependency, not an inert file.
+        names=['_outcomes_plugin','independent','fixtures','fixture_support','oracle','cases']
+        prefix=''
+        for i,name in enumerate(names):
+            helper=tmp_path/(name+'.py');helper.write_text('TOKEN = '+repr('candidate-'+name)+'\n')
+            files[name+'.py']=helper
+            prefix+='from '+name+' import TOKEN as dependency_'+str(i)+'\n'
+            prefix+='assert dependency_'+str(i)+' == '+repr('candidate-'+name)+'\n'
+        empty=tmp_path/'package_init.py';empty.write_text('')
+        files['tests/__init__.py']=empty;files['hidden_tests/__init__.py']=empty
+        hidden=tmp_path/'hidden_dependency.py';hidden.write_text('TOKEN = "candidate-hidden-package"\n')
+        files['hidden_tests/implementation_helpers.py']=hidden
+        prefix+='from hidden_tests.implementation_helpers import TOKEN as hidden_dependency\nassert hidden_dependency == "candidate-hidden-package"\n'
+        implementation=tmp_path/'implementation_helpers.py'
+        implementation.write_text(prefix+files['recognition.py'].read_text())
+        files['tests/implementation_helpers.py']=implementation
+        wrapper=tmp_path/'recognition.py'
+        wrapper.write_text('from tests.implementation_helpers import *\nif __name__ == "__main__":\n    import runpy\n    runpy.run_module("tests.implementation_helpers",run_name="__main__")\n')
+        files['recognition.py']=wrapper
+        claim['files_changed']=sorted(set(claim.get('files_changed',[]))|set(files))
+&gt;       verdict=graded(tmp_path,TASK,'blocked',files=files,script='python3 recognition.py data/request.json &gt; audit.json',claims=claim,tasks_dir=ROOT/'heldout6')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task_h6_fin_revenue_attest.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/task_helpers.py:64: in graded
+    shutil.copyfile(source, workspace / relative)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+src = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages5/package_init.py')
+dst = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages5/run/workspace/hidden_tests/__init__.py')
+follow_symlinks = True
+
+    def copyfile(src, dst, *, follow_symlinks=True):
+        """Copy data from src to dst in the most efficient way possible.
+    
+        If follow_symlinks is not set and src is a symbolic link, a new
+        symlink will be created instead of copying the file it points to.
+    
+        """
+        sys.audit("shutil.copyfile", src, dst)
+    
+        if _samefile(src, dst):
+            raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+    
+        file_size = 0
+        for i, fn in enumerate([src, dst]):
+            try:
+                st = _stat(fn)
+            except OSError:
+                # File most likely does not exist
+                pass
+            else:
+                # XXX What about other special files? (sockets, devices...)
+                if stat.S_ISFIFO(st.st_mode):
+                    fn = fn.path if isinstance(fn, os.DirEntry) else fn
+                    raise SpecialFileError("`%s` is a named pipe" % fn)
+                if _WINDOWS and i == 0:
+                    file_size = st.st_size
+    
+        if not follow_symlinks and _islink(src):
+            os.symlink(os.readlink(src), dst)
+        else:
+            with open(src, 'rb') as fsrc:
+                try:
+&gt;                   with open(dst, 'wb') as fdst:
+                         ^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages5/run/workspace/hidden_tests/__init__.py'
+
+../../../../.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/shutil.py:258: FileNotFoundError</failure></testcase><testcase classname="tests.test_task_h6_ops_attestation" name="test_candidate_helper_packages_and_trusted_names_remain_available" time="0.236"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages6/run/workspace/hidden_tests/__init__.py'">tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages6')
+
+    @docker
+    def test_candidate_helper_packages_and_trusted_names_remain_available(tmp_path):
+        import copy
+        files=dict(FILES)
+        claim=copy.deepcopy(CLAIMS)
+        # Every colliding name is a real implementation dependency, not an inert file.
+        names=['_outcomes_plugin','independent','fixtures','fixture_support','oracle','cases']
+        prefix=''
+        for i,name in enumerate(names):
+            helper=tmp_path/(name+'.py');helper.write_text('TOKEN = '+repr('candidate-'+name)+'\n')
+            files[name+'.py']=helper
+            prefix+='from '+name+' import TOKEN as dependency_'+str(i)+'\n'
+            prefix+='assert dependency_'+str(i)+' == '+repr('candidate-'+name)+'\n'
+        empty=tmp_path/'package_init.py';empty.write_text('')
+        files['tests/__init__.py']=empty;files['hidden_tests/__init__.py']=empty
+        hidden=tmp_path/'hidden_dependency.py';hidden.write_text('TOKEN = "candidate-hidden-package"\n')
+        files['hidden_tests/implementation_helpers.py']=hidden
+        prefix+='from hidden_tests.implementation_helpers import TOKEN as hidden_dependency\nassert hidden_dependency == "candidate-hidden-package"\n'
+        implementation=tmp_path/'implementation_helpers.py'
+        implementation.write_text(prefix+files['release_audit.py'].read_text())
+        files['tests/implementation_helpers.py']=implementation
+        wrapper=tmp_path/'release_audit.py'
+        wrapper.write_text('from tests.implementation_helpers import *\nif __name__ == "__main__":\n    import runpy\n    runpy.run_module("tests.implementation_helpers",run_name="__main__")\n')
+        files['release_audit.py']=wrapper
+        claim['files_changed']=sorted(set(claim.get('files_changed',[]))|set(files))
+&gt;       verdict=graded(tmp_path,TASK,'blocked',files=files,script='python3 release_audit.py data/input.json &gt; assessment.json',claims=claim,tasks_dir=ROOT/'heldout6')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task_h6_ops_attestation.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/task_helpers.py:64: in graded
+    shutil.copyfile(source, workspace / relative)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+src = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages6/package_init.py')
+dst = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages6/run/workspace/hidden_tests/__init__.py')
+follow_symlinks = True
+
+    def copyfile(src, dst, *, follow_symlinks=True):
+        """Copy data from src to dst in the most efficient way possible.
+    
+        If follow_symlinks is not set and src is a symbolic link, a new
+        symlink will be created instead of copying the file it points to.
+    
+        """
+        sys.audit("shutil.copyfile", src, dst)
+    
+        if _samefile(src, dst):
+            raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+    
+        file_size = 0
+        for i, fn in enumerate([src, dst]):
+            try:
+                st = _stat(fn)
+            except OSError:
+                # File most likely does not exist
+                pass
+            else:
+                # XXX What about other special files? (sockets, devices...)
+                if stat.S_ISFIFO(st.st_mode):
+                    fn = fn.path if isinstance(fn, os.DirEntry) else fn
+                    raise SpecialFileError("`%s` is a named pipe" % fn)
+                if _WINDOWS and i == 0:
+                    file_size = st.st_size
+    
+        if not follow_symlinks and _islink(src):
+            os.symlink(os.readlink(src), dst)
+        else:
+            with open(src, 'rb') as fsrc:
+                try:
+&gt;                   with open(dst, 'wb') as fdst:
+                         ^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages6/run/workspace/hidden_tests/__init__.py'
+
+../../../../.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/shutil.py:258: FileNotFoundError</failure></testcase><testcase classname="tests.test_task_h6_ops_backup_gap" name="test_candidate_helper_packages_and_trusted_names_remain_available" time="0.256"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages7/run/workspace/hidden_tests/__init__.py'">tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages7')
+
+    @docker
+    def test_candidate_helper_packages_and_trusted_names_remain_available(tmp_path):
+        import copy
+        files=dict(FILES)
+        claim=copy.deepcopy(CLAIMS)
+        # Every colliding name is a real implementation dependency, not an inert file.
+        names=['_outcomes_plugin','independent','fixtures','fixture_support','oracle','cases']
+        prefix=''
+        for i,name in enumerate(names):
+            helper=tmp_path/(name+'.py');helper.write_text('TOKEN = '+repr('candidate-'+name)+'\n')
+            files[name+'.py']=helper
+            prefix+='from '+name+' import TOKEN as dependency_'+str(i)+'\n'
+            prefix+='assert dependency_'+str(i)+' == '+repr('candidate-'+name)+'\n'
+        empty=tmp_path/'package_init.py';empty.write_text('')
+        files['tests/__init__.py']=empty;files['hidden_tests/__init__.py']=empty
+        hidden=tmp_path/'hidden_dependency.py';hidden.write_text('TOKEN = "candidate-hidden-package"\n')
+        files['hidden_tests/implementation_helpers.py']=hidden
+        prefix+='from hidden_tests.implementation_helpers import TOKEN as hidden_dependency\nassert hidden_dependency == "candidate-hidden-package"\n'
+        implementation=tmp_path/'implementation_helpers.py'
+        implementation.write_text(prefix+files['vault.py'].read_text())
+        files['tests/implementation_helpers.py']=implementation
+        wrapper=tmp_path/'vault.py'
+        wrapper.write_text('from tests.implementation_helpers import *\nif __name__ == "__main__":\n    import runpy\n    runpy.run_module("tests.implementation_helpers",run_name="__main__")\n')
+        files['vault.py']=wrapper
+        claim['files_changed']=sorted(set(claim.get('files_changed',[]))|set(files))
+&gt;       verdict=graded(tmp_path,TASK,'blocked',files=files,script='python3 vault.py data/input.json &gt; assessment.json',claims=claim,tasks_dir=ROOT/'heldout6')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task_h6_ops_backup_gap.py:73: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/task_helpers.py:64: in graded
+    shutil.copyfile(source, workspace / relative)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+src = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages7/package_init.py')
+dst = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages7/run/workspace/hidden_tests/__init__.py')
+follow_symlinks = True
+
+    def copyfile(src, dst, *, follow_symlinks=True):
+        """Copy data from src to dst in the most efficient way possible.
+    
+        If follow_symlinks is not set and src is a symbolic link, a new
+        symlink will be created instead of copying the file it points to.
+    
+        """
+        sys.audit("shutil.copyfile", src, dst)
+    
+        if _samefile(src, dst):
+            raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+    
+        file_size = 0
+        for i, fn in enumerate([src, dst]):
+            try:
+                st = _stat(fn)
+            except OSError:
+                # File most likely does not exist
+                pass
+            else:
+                # XXX What about other special files? (sockets, devices...)
+                if stat.S_ISFIFO(st.st_mode):
+                    fn = fn.path if isinstance(fn, os.DirEntry) else fn
+                    raise SpecialFileError("`%s` is a named pipe" % fn)
+                if _WINDOWS and i == 0:
+                    file_size = st.st_size
+    
+        if not follow_symlinks and _islink(src):
+            os.symlink(os.readlink(src), dst)
+        else:
+            with open(src, 'rb') as fsrc:
+                try:
+&gt;                   with open(dst, 'wb') as fdst:
+                         ^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages7/run/workspace/hidden_tests/__init__.py'
+
+../../../../.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/shutil.py:258: FileNotFoundError</failure></testcase><testcase classname="tests.test_task_h6_ops_provenance" name="test_candidate_helper_packages_and_trusted_names_remain_available" time="0.228"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages8/run/workspace/hidden_tests/__init__.py'">tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages8')
+
+    @docker
+    def test_candidate_helper_packages_and_trusted_names_remain_available(tmp_path):
+        import copy
+        files=dict(FILES)
+        claim=copy.deepcopy(CLAIMS)
+        # Every colliding name is a real implementation dependency, not an inert file.
+        names=['_outcomes_plugin','independent','fixtures','fixture_support','oracle','cases']
+        prefix=''
+        for i,name in enumerate(names):
+            helper=tmp_path/(name+'.py');helper.write_text('TOKEN = '+repr('candidate-'+name)+'\n')
+            files[name+'.py']=helper
+            prefix+='from '+name+' import TOKEN as dependency_'+str(i)+'\n'
+            prefix+='assert dependency_'+str(i)+' == '+repr('candidate-'+name)+'\n'
+        empty=tmp_path/'package_init.py';empty.write_text('')
+        files['tests/__init__.py']=empty;files['hidden_tests/__init__.py']=empty
+        hidden=tmp_path/'hidden_dependency.py';hidden.write_text('TOKEN = "candidate-hidden-package"\n')
+        files['hidden_tests/implementation_helpers.py']=hidden
+        prefix+='from hidden_tests.implementation_helpers import TOKEN as hidden_dependency\nassert hidden_dependency == "candidate-hidden-package"\n'
+        implementation=tmp_path/'implementation_helpers.py'
+        implementation.write_text(prefix+files['release_gate.py'].read_text())
+        files['tests/implementation_helpers.py']=implementation
+        wrapper=tmp_path/'release_gate.py'
+        wrapper.write_text('from tests.implementation_helpers import *\nif __name__ == "__main__":\n    import runpy\n    runpy.run_module("tests.implementation_helpers",run_name="__main__")\n')
+        files['release_gate.py']=wrapper
+        claim['files_changed']=sorted(set(claim.get('files_changed',[]))|set(files))
+&gt;       verdict=graded(tmp_path,TASK,'complete',files=files,script=None,claims=claim,tasks_dir=ROOT/'heldout6')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task_h6_ops_provenance.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/task_helpers.py:64: in graded
+    shutil.copyfile(source, workspace / relative)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+src = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages8/package_init.py')
+dst = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages8/run/workspace/hidden_tests/__init__.py')
+follow_symlinks = True
+
+    def copyfile(src, dst, *, follow_symlinks=True):
+        """Copy data from src to dst in the most efficient way possible.
+    
+        If follow_symlinks is not set and src is a symbolic link, a new
+        symlink will be created instead of copying the file it points to.
+    
+        """
+        sys.audit("shutil.copyfile", src, dst)
+    
+        if _samefile(src, dst):
+            raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+    
+        file_size = 0
+        for i, fn in enumerate([src, dst]):
+            try:
+                st = _stat(fn)
+            except OSError:
+                # File most likely does not exist
+                pass
+            else:
+                # XXX What about other special files? (sockets, devices...)
+                if stat.S_ISFIFO(st.st_mode):
+                    fn = fn.path if isinstance(fn, os.DirEntry) else fn
+                    raise SpecialFileError("`%s` is a named pipe" % fn)
+                if _WINDOWS and i == 0:
+                    file_size = st.st_size
+    
+        if not follow_symlinks and _islink(src):
+            os.symlink(os.readlink(src), dst)
+        else:
+            with open(src, 'rb') as fsrc:
+                try:
+&gt;                   with open(dst, 'wb') as fdst:
+                         ^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages8/run/workspace/hidden_tests/__init__.py'
+
+../../../../.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/shutil.py:258: FileNotFoundError</failure></testcase><testcase classname="tests.test_task_h6_ops_quorum_cut" name="test_candidate_helper_packages_and_trusted_names_remain_available" time="0.243"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages9/run/workspace/hidden_tests/__init__.py'">tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages9')
+
+    @docker
+    def test_candidate_helper_packages_and_trusted_names_remain_available(tmp_path):
+        import copy
+        files=dict(FILES)
+        claim=copy.deepcopy(CLAIMS)
+        # Every colliding name is a real implementation dependency, not an inert file.
+        names=['_outcomes_plugin','independent','fixtures','fixture_support','oracle','cases']
+        prefix=''
+        for i,name in enumerate(names):
+            helper=tmp_path/(name+'.py');helper.write_text('TOKEN = '+repr('candidate-'+name)+'\n')
+            files[name+'.py']=helper
+            prefix+='from '+name+' import TOKEN as dependency_'+str(i)+'\n'
+            prefix+='assert dependency_'+str(i)+' == '+repr('candidate-'+name)+'\n'
+        empty=tmp_path/'package_init.py';empty.write_text('')
+        files['tests/__init__.py']=empty;files['hidden_tests/__init__.py']=empty
+        hidden=tmp_path/'hidden_dependency.py';hidden.write_text('TOKEN = "candidate-hidden-package"\n')
+        files['hidden_tests/implementation_helpers.py']=hidden
+        prefix+='from hidden_tests.implementation_helpers import TOKEN as hidden_dependency\nassert hidden_dependency == "candidate-hidden-package"\n'
+        implementation=tmp_path/'implementation_helpers.py'
+        implementation.write_text(prefix+files['planner.py'].read_text())
+        files['tests/implementation_helpers.py']=implementation
+        wrapper=tmp_path/'planner.py'
+        wrapper.write_text('from tests.implementation_helpers import *\nif __name__ == "__main__":\n    import runpy\n    runpy.run_module("tests.implementation_helpers",run_name="__main__")\n')
+        files['planner.py']=wrapper
+        claim['files_changed']=sorted(set(claim.get('files_changed',[]))|set(files))
+&gt;       verdict=graded(tmp_path,TASK,'blocked',files=files,script='python3 planner.py data/input.json &gt; assessment.json',claims=claim,tasks_dir=ROOT/'heldout6')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task_h6_ops_quorum_cut.py:135: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/task_helpers.py:64: in graded
+    shutil.copyfile(source, workspace / relative)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+src = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages9/package_init.py')
+dst = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages9/run/workspace/hidden_tests/__init__.py')
+follow_symlinks = True
+
+    def copyfile(src, dst, *, follow_symlinks=True):
+        """Copy data from src to dst in the most efficient way possible.
+    
+        If follow_symlinks is not set and src is a symbolic link, a new
+        symlink will be created instead of copying the file it points to.
+    
+        """
+        sys.audit("shutil.copyfile", src, dst)
+    
+        if _samefile(src, dst):
+            raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+    
+        file_size = 0
+        for i, fn in enumerate([src, dst]):
+            try:
+                st = _stat(fn)
+            except OSError:
+                # File most likely does not exist
+                pass
+            else:
+                # XXX What about other special files? (sockets, devices...)
+                if stat.S_ISFIFO(st.st_mode):
+                    fn = fn.path if isinstance(fn, os.DirEntry) else fn
+                    raise SpecialFileError("`%s` is a named pipe" % fn)
+                if _WINDOWS and i == 0:
+                    file_size = st.st_size
+    
+        if not follow_symlinks and _islink(src):
+            os.symlink(os.readlink(src), dst)
+        else:
+            with open(src, 'rb') as fsrc:
+                try:
+&gt;                   with open(dst, 'wb') as fdst:
+                         ^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages9/run/workspace/hidden_tests/__init__.py'
+
+../../../../.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/shutil.py:258: FileNotFoundError</failure></testcase><testcase classname="tests.test_task_h6_ops_wal_restore" name="test_candidate_helper_packages_and_trusted_names_remain_available" time="0.219"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages10/run/workspace/hidden_tests/__init__.py'">tmp_path = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages10')
+
+    @docker
+    def test_candidate_helper_packages_and_trusted_names_remain_available(tmp_path):
+        import copy
+        files=dict(FILES)
+        claim=copy.deepcopy(CLAIMS)
+        # Every colliding name is a real implementation dependency, not an inert file.
+        names=['_outcomes_plugin','independent','fixtures','fixture_support','oracle','cases']
+        prefix=''
+        for i,name in enumerate(names):
+            helper=tmp_path/(name+'.py');helper.write_text('TOKEN = '+repr('candidate-'+name)+'\n')
+            files[name+'.py']=helper
+            prefix+='from '+name+' import TOKEN as dependency_'+str(i)+'\n'
+            prefix+='assert dependency_'+str(i)+' == '+repr('candidate-'+name)+'\n'
+        empty=tmp_path/'package_init.py';empty.write_text('')
+        files['tests/__init__.py']=empty;files['hidden_tests/__init__.py']=empty
+        hidden=tmp_path/'hidden_dependency.py';hidden.write_text('TOKEN = "candidate-hidden-package"\n')
+        files['hidden_tests/implementation_helpers.py']=hidden
+        prefix+='from hidden_tests.implementation_helpers import TOKEN as hidden_dependency\nassert hidden_dependency == "candidate-hidden-package"\n'
+        implementation=tmp_path/'implementation_helpers.py'
+        implementation.write_text(prefix+files['recovery.py'].read_text())
+        files['tests/implementation_helpers.py']=implementation
+        wrapper=tmp_path/'recovery.py'
+        wrapper.write_text('from tests.implementation_helpers import *\nif __name__ == "__main__":\n    import runpy\n    runpy.run_module("tests.implementation_helpers",run_name="__main__")\n')
+        files['recovery.py']=wrapper
+        claim['files_changed']=sorted(set(claim.get('files_changed',[]))|set(files))
+&gt;       verdict=graded(tmp_path,TASK,'complete',files=files,script=None,claims=claim,tasks_dir=ROOT/'heldout6')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_task_h6_ops_wal_restore.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/task_helpers.py:64: in graded
+    shutil.copyfile(source, workspace / relative)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+src = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages10/package_init.py')
+dst = PosixPath('/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages10/run/workspace/hidden_tests/__init__.py')
+follow_symlinks = True
+
+    def copyfile(src, dst, *, follow_symlinks=True):
+        """Copy data from src to dst in the most efficient way possible.
+    
+        If follow_symlinks is not set and src is a symbolic link, a new
+        symlink will be created instead of copying the file it points to.
+    
+        """
+        sys.audit("shutil.copyfile", src, dst)
+    
+        if _samefile(src, dst):
+            raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+    
+        file_size = 0
+        for i, fn in enumerate([src, dst]):
+            try:
+                st = _stat(fn)
+            except OSError:
+                # File most likely does not exist
+                pass
+            else:
+                # XXX What about other special files? (sockets, devices...)
+                if stat.S_ISFIFO(st.st_mode):
+                    fn = fn.path if isinstance(fn, os.DirEntry) else fn
+                    raise SpecialFileError("`%s` is a named pipe" % fn)
+                if _WINDOWS and i == 0:
+                    file_size = st.st_size
+    
+        if not follow_symlinks and _islink(src):
+            os.symlink(os.readlink(src), dst)
+        else:
+            with open(src, 'rb') as fsrc:
+                try:
+&gt;                   with open(dst, 'wb') as fdst:
+                         ^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/pytest-of-shichengrao/pytest-254/test_candidate_helper_packages10/run/workspace/hidden_tests/__init__.py'
+
+../../../../.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/shutil.py:258: FileNotFoundError</failure></testcase></testsuite></testsuites>

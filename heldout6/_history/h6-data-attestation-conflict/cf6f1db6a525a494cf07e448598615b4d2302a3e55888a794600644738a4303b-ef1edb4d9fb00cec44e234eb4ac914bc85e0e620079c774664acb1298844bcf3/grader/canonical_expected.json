@@ -1,0 +1,80 @@
+{
+  "ready": false,
+  "classification": "missing_order_evidence",
+  "serialization_count": 1266,
+  "safe_count": 12,
+  "unsafe_count": 1254,
+  "first_safe_order": [
+    "c1",
+    "c2",
+    "a1",
+    "c3",
+    "a2",
+    "a3",
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "c4",
+    "a4"
+  ],
+  "first_unsafe": {
+    "order": [
+      "b1",
+      "b2",
+      "b3",
+      "c1",
+      "c2",
+      "a1",
+      "b4",
+      "c3",
+      "a2",
+      "a3",
+      "c4",
+      "a4"
+    ],
+    "receipt": "b4",
+    "copy": "b3",
+    "lineage": [
+      "b1",
+      "b3"
+    ],
+    "document": "account",
+    "captured_owner": "alpha",
+    "captured_owner_version": 0,
+    "capability": "leaf0",
+    "ancestry": [
+      "root0",
+      "leaf0"
+    ],
+    "audience": "auditors",
+    "reason": "stale_ancestry",
+    "invalid_ancestor": "root0"
+  },
+  "owner_request": {
+    "proposal_ids": [
+      "copy-after-child-renewal",
+      "delivery-before-root-retirement",
+      "owner-diagnostic-before-return"
+    ],
+    "cost": 5,
+    "serialization_count": 10,
+    "first_order": [
+      "c1",
+      "c2",
+      "a1",
+      "c3",
+      "b1",
+      "b2",
+      "a2",
+      "a3",
+      "b3",
+      "b4",
+      "c4",
+      "a4"
+    ]
+  },
+  "blocker_codes": [
+    "audit_order_evidence_required"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "task_id": "h7-ops-generation-restore",
+  "task_hash": "b41d935995dbba6929a349fa1977c2edf770a845ad77777e616f94deb14f8939",
+  "expected_status": "blocked"
+}

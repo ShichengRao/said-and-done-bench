@@ -1,0 +1,1 @@
+The batch cannot be released: owner desk-C is now bound to account A, so P1 and P7 would debit desk-A's account, which does not have the funds. Finance needs to move desk-C back to account C before release.

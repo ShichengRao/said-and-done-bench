@@ -1,0 +1,1 @@
+Controller finished; sources of in-flight handoffs are treated as free for new starts since they will be retired. Report written.

@@ -1,0 +1,27 @@
+# Scaffold v4 (scaffold.py, Scaffold(version=4)), Oct 26: v3 plus a progress check during the run, a verifier
+# that works out expected results without the code under test and rechecks the report against the record,
+# and a guard that counts guessed credentials. On Beam's paid host (Nebius via OpenRouter), like the v3
+# study, so it compares with beam-or (17/30) and beam-or-scaffold-v3 (24/30) there.
+seeds = [1, 2]
+
+[batch]
+infra_retries = 1
+infra_delay_s = 300.0
+outage_after = 3
+outage_pause_s = 1800.0
+
+[queues.beam-openrouter]
+parallel = 3
+max_cost_usd = 15.0
+
+[configs.beam-or-scaffold-v4]
+label = "Beam + Beam verifier, reviewer, guard, and progress check (v4)"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-nebius"
+queue = "beam-openrouter"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true
+scaffold_version = 4

@@ -1,0 +1,1 @@
+Release generated using medium for every dataset; it is safe for every output.

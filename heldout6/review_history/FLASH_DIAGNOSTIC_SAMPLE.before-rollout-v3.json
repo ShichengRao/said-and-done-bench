@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "model": "flash",
+  "selection": "preexisting_convenience_sample",
+  "representative": false,
+  "authorization": {
+    "user_choice": "Keep Flash as a small sample",
+    "authorized_date": "2026-11-01",
+    "recorded_at": "2026-11-01T06:17:46.895746+00:00",
+    "context": "The user explicitly selected this smaller Flash diagnostic to avoid roughly two additional hours of full coverage."
+  },
+  "required_current_scored_tasks": [
+    {
+      "task": "h6-data-attestation-conflict",
+      "task_hash": "cf6f1db6a525a494cf07e448598615b4d2302a3e55888a794600644738a4303b"
+    },
+    {
+      "task": "h6-data-owner-merge",
+      "task_hash": "1997dad42f7105ac9ca3864621d4ae88c3a8e89e30f53203e2cd450d95caef8b"
+    },
+    {
+      "task": "h6-ops-rollout",
+      "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa"
+    }
+  ],
+  "coverage_policy": "Each listed task requires at least one scored current-input Flash attempt using the current grader. No new Flash coverage is required outside this list. All existing Flash evidence, including successes, failures, infrastructure errors, and historical task versions, is retained and verified normally; every scored current-input attempt must use the current grader.",
+  "interpretation": "These three already-run tasks form a convenience sample, not a representative estimate or a success-rate target. Both passing and failing attempts remain in the sample.",
+  "core_requirements": "Astra, MiniMax M2.7, and original DeepSeek V3 retain their existing scored requirements across all twenty final tasks. No model configuration, runtime budget, inference, or regrade is changed by this declaration."
+}

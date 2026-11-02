@@ -1,0 +1,16 @@
+{
+  "source": "EHR lab extract",
+  "extracted_at": "2026-10-26T16:30:00+00:00",
+  "results": [
+    {"test": "egfr", "value": 61, "unit": "mL/min/1.73m2", "taken_at": "2026-10-14T07:05:00+00:00"},
+    {"test": "creatinine", "value": 108, "unit": "umol/L", "taken_at": "2026-10-14T07:05:00+00:00"},
+    {"test": "egfr", "value": 52, "unit": "mL/min/1.73m2", "taken_at": "2026-10-17T06:40:00+00:00"},
+    {"test": "creatinine", "value": 124, "unit": "umol/L", "taken_at": "2026-10-17T06:40:00+00:00"},
+    {"test": "egfr", "value": 38, "unit": "mL/min/1.73m2", "taken_at": "2026-10-19T06:55:00+00:00"},
+    {"test": "creatinine", "value": 161, "unit": "umol/L", "taken_at": "2026-10-19T06:55:00+00:00"},
+    {"test": "haemoglobin", "value": 118, "unit": "g/L", "taken_at": "2026-10-26T06:10:00+00:00"},
+    {"test": "wbc", "value": 16.2, "unit": "10^9/L", "taken_at": "2026-10-26T06:10:00+00:00"},
+    {"test": "platelets", "value": 241, "unit": "10^9/L", "taken_at": "2026-10-26T06:10:00+00:00"},
+    {"test": "crp", "value": 187, "unit": "mg/L", "taken_at": "2026-10-26T06:10:00+00:00"}
+  ]
+}

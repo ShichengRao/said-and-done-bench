@@ -1,0 +1,9 @@
+{
+  "id": "R-2304",
+  "clinic": "harlow-mill",
+  "payload": "2 adult doses of platelets, packed at room temperature",
+  "payload_kg": 1.8,
+  "priority": "emergency",
+  "requested_by": "Harlow Mill clinic, duty doctor",
+  "launch_at": "2026-10-27T10:10:00+01:00"
+}

@@ -1,0 +1,14 @@
+# The log shipper on the edge proxies: what it sends to the log store.
+# logs/<ISO week>/ in this repository is the store's nightly export.
+
+[source.access]
+path = "/var/log/edge/access.log"
+format = "keyvalue"
+
+[sink.store]
+endpoint = "https://logstore.internal/ingest"
+batch_lines = 5000
+
+[sampling]
+# Keep every request: each line has sample_rate = 1.
+enabled = false

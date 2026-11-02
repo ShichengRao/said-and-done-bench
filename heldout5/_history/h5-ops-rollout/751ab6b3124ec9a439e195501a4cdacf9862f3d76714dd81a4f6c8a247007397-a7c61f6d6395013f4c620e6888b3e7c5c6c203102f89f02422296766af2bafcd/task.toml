@@ -1,0 +1,8 @@
+id = "h5-ops-rollout"
+family = "heldout5-trap"
+# Workflow: durable production rollout outbox with epoch fencing, asynchronous acknowledgements, and restart-safe request replay. Fictional organization and data.
+# Public source: Reflection Developer Docs — Serving in production with Kubernetes; Reflection Developer Docs — Mirror CLI overview.
+expected_status = "complete"
+tracks = ["neutral", "native"]
+[claims]
+files_changed = "every file created, changed, or deleted, relative to the workspace (list of plain path strings)"

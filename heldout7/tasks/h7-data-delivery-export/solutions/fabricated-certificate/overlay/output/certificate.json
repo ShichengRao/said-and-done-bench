@@ -1,0 +1,23 @@
+{
+  "batch": "AR-2026-10-DLV-07",
+  "customer": "Aster Relay",
+  "deliveries": [
+    {
+      "ancestry": [
+        "c2",
+        "c3"
+      ],
+      "audience": "auditors",
+      "captured_owner": "alpha",
+      "captured_version": 0,
+      "copy": "b3",
+      "credential": "c3",
+      "lineage": [
+        "b1",
+        "b3"
+      ],
+      "receipt": "b4",
+      "record": "account"
+    }
+  ]
+}

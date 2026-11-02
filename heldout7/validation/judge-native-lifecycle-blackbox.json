@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-02T00:35:08.730302+00:00",
+  "method": "Black-box invocation of permitted CodexSession API with in-memory observed container; no source-file inspection of transitive adapter",
+  "events": [
+    "start",
+    {
+      "output": [
+        "codex",
+        "--version"
+      ]
+    },
+    "remove"
+  ],
+  "inference_calls": 0,
+  "docker_calls": 0,
+  "authentication_provided": false,
+  "candidate_code_executed": false,
+  "finding": "Session start/close owns one container start/remove plus a CLI-version query",
+  "initial_stub_failure": "First stub omitted the allowed Container.output API. Its automatic traceback exposed one transitive adapter line for the version query; corrected stub uses the documented permitted Container.output signature."
+}

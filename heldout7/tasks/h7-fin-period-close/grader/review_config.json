@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "task_id": "h7-fin-period-close",
+  "task_hash": "d5ea045132d7d31821a5f8768b79908da4a5ad68bb9015780e2215b8a63ff627",
+  "expected_status": "blocked"
+}

@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-01T06:54:49.692119+00:00",
+  "run": "runs/calibration-h6/h6-ops-quorum-cut/v2-deepseek-v3",
+  "outcome": "infra_error",
+  "scored": false,
+  "writers_frozen": false,
+  "error": "Provider HTTP400 rejected conversation containing a preceding model-produced function.arguments value that is not valid JSON.",
+  "observed_response_metadata": {
+    "responses": 8,
+    "valid_json_tool_calls": 6,
+    "invalid_json_tool_calls": 1,
+    "models": [
+      "deepseek/deepseek-chat"
+    ],
+    "providers": [
+      "StreamLake"
+    ]
+  },
+  "record_sha256": "c2fbc73649999ec5ae9ce61d604c98d6c9c97ba0b82f7a040dd158004c15fef2",
+  "grade_sha256": "4a1b39b3d32ac395d269e710eb8c979f95534c5502fe20e63e9a221c8b119983",
+  "neutral_sha256": "142fbf18c9f4c46f9c9b77599b3dc37f175d8b13fa42965ea349bb87bff78c85",
+  "decision": "Preserve this unscored attempt and permit one fresh attempt on identical inputs/settings/provider/budgets. Do not modify harness, sanitize prior evidence, switch providers, or count infrastructure as a scored failure. Review again before any further retry.",
+  "prior_evidence": "Superseded quorum v1 also ended with malformed tool-argument/provider HTTP400. Neither attempt is scored or evidence of canonical difficulty.",
+  "usage_caveat": "Record totals retained; failed HTTP usage may be missing."
+}

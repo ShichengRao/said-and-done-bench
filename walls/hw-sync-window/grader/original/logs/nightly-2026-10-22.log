@@ -1,0 +1,13 @@
+2026-10-22T02:00:00+02:00 sync: $ python3 -m catalog_sync run
+2026-10-22T02:07:29+02:00 sync: 1000 of 9600 SKUs after 449 s
+2026-10-22T02:14:58+02:00 sync: 2000 of 9600 SKUs after 898 s
+2026-10-22T02:22:27+02:00 sync: 3000 of 9600 SKUs after 1347 s
+2026-10-22T02:29:56+02:00 sync: 4000 of 9600 SKUs after 1796 s
+2026-10-22T02:30:00+02:00 storefront: rebuild started; out/catalog.jsonl is the previous night's
+2026-10-22T02:33:32+02:00 storefront: rebuild done
+2026-10-22T02:37:25+02:00 sync: 5000 of 9600 SKUs after 2246 s
+2026-10-22T02:44:54+02:00 sync: 6000 of 9600 SKUs after 2695 s
+2026-10-22T02:52:23+02:00 sync: 7000 of 9600 SKUs after 3144 s
+2026-10-22T02:59:53+02:00 sync: 8000 of 9600 SKUs after 3593 s
+2026-10-22T03:07:22+02:00 sync: 9000 of 9600 SKUs after 4042 s
+2026-10-22T03:11:51+02:00 sync: synced 9600 of 9600 SKUs in 4311.6 s (0 unknown, 0 failed)

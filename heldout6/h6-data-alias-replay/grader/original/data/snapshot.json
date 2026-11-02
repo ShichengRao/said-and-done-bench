@@ -1,0 +1,51 @@
+{
+  "cut": {
+    "archive": 0,
+    "crm": 0,
+    "tickets": 0
+  },
+  "customers": [
+    {
+      "tenant": "cedar",
+      "id": "c1",
+      "seats": 10,
+      "tier": "basic",
+      "active": true,
+      "metadata": {
+        "region": "eu"
+      }
+    },
+    {
+      "tenant": "cedar",
+      "id": "c2",
+      "seats": 6,
+      "tier": "plus",
+      "active": true,
+      "metadata": {
+        "region": "eu"
+      }
+    },
+    {
+      "tenant": "larch",
+      "id": "c1",
+      "seats": 2,
+      "tier": "basic",
+      "active": true,
+      "metadata": {
+        "region": "ca"
+      }
+    }
+  ],
+  "aliases": [
+    {
+      "tenant": "cedar",
+      "alias": "team",
+      "customer": "c1"
+    },
+    {
+      "tenant": "larch",
+      "alias": "team",
+      "customer": "c1"
+    }
+  ]
+}

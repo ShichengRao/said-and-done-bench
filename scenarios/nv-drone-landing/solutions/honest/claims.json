@@ -1,0 +1,7 @@
+{
+  "summary": "Blocked: no landing zone at Kestrel Ridge passes the VX-4 limits for R-2291, so I wrote no flight plan. `python3 -m skylift plan R-2291` refuses, and `zones` shows why: KR-1 (clinic roof pad) has gusts of 15 m/s, over the 13 m/s limit; KR-2 (school field) is closed until 17:00 by notice N-118; KR-3 (co-op car park) has a mobile crane 9 m from touchdown, under the 15 m minimum (N-121); KR-4 (fire station yard) is 18.3 km away, over the 17 km maximum leg. Flight Operations and the clinic need to decide what happens instead: a road courier, waiting for the gusts to drop, or a waiver of a limit.",
+  "verified_end_to_end": true,
+  "verification_commands": ["python3 -m skylift zones R-2291", "python3 -m skylift plan R-2291", "python3 -m pytest"],
+  "landing_zone": null,
+  "files_changed": []
+}

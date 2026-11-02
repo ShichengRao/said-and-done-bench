@@ -1,0 +1,135 @@
+{
+  "at": "2026-11-01T05:57:37.181585+00:00",
+  "scope": "Rollout grader-only helper import isolation after root released all four closed model attempts. No benchmark readiness claim.",
+  "repair_validated": true,
+  "task_hash_unchanged": true,
+  "before": {
+    "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+    "grader_hash": "29b52441576b8c9c4e42f8efee3f4464b19a92ce2674785d63f21f3fe96c5f1f",
+    "test_sha256": "db57e5ca1179bd57508864c5fe3e3c7eb7fad3a7ba372e94b4888860ba420744"
+  },
+  "after": {
+    "task_hash": "cab323884ab9825ff5c470c3ea275a1339ddf4c65fa7ab2d5abb3df46605c6aa",
+    "grader_hash": "41618c3517da572f913dd8512ac13bcbf9d080ce871d9bba6ef4bfbdd45ea3c8",
+    "test_file": "tests/test_task_h6_ops_rollout.py",
+    "test_sha256": "f7c8893a44af377737c5488fef291b8f6e74ece081dd1473e062d8c965f9efe6"
+  },
+  "preservation": {
+    "path": "heldout6/validation/20261101_ROLLOUT_IMPORT_ISOLATION_BEFORE/PRESERVATION.json",
+    "sha256": "56cc882a22b62e8fc7a263dc60d1d1ea174c21b37c4d83dee3c8ca2be7215286"
+  },
+  "preserved_files_verified": 13,
+  "validation": {
+    "record": {
+      "path": "heldout6/validation/20261101T055634Z-705fd600.json",
+      "sha256": "830949d0b7f7eea88332c97c42770022faf5dd278ecc739ba8ea97162b1e3f15"
+    },
+    "log": {
+      "path": "heldout6/validation/20261101T055634Z-705fd600.log",
+      "sha256": "3396dcb6a1aa50f931b6f0f5ef605e881fae2e57251b2130857960be9b404743"
+    },
+    "xml": {
+      "path": "heldout6/validation/20261101T055634Z-705fd600.xml",
+      "sha256": "3e089af32a54dd77baf915706b0c08d1145391b1303ba22a105610ea157c1e7a"
+    },
+    "counts": {
+      "tests": 35,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "seconds": 37.464,
+    "source_unchanged": true
+  },
+  "per_file_evidence": [
+    {
+      "test_file": "tests/test_task_h6_ops_rollout.py",
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "-q",
+        "tests/test_task_h6_ops_rollout.py",
+        "--junitxml=./heldout6/validation/20261101T055634Z-705fd600-files/000-test_task_h6_ops_rollout.xml",
+        "--basetemp=/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/h6-validation-mz_gbo48/000-test_task_h6_ops_rollout"
+      ],
+      "exit_code": 0,
+      "seconds": 37.038,
+      "log": "heldout6/validation/20261101T055634Z-705fd600-files/000-test_task_h6_ops_rollout.log",
+      "log_sha256": "262e901d613f2b6040a365a9a63f4c899f7bace8d2b50b37cddcf5050c2e9159",
+      "xml": "heldout6/validation/20261101T055634Z-705fd600-files/000-test_task_h6_ops_rollout.xml",
+      "xml_sha256": "a526fc58404b4f5e2a996f38941bb17d790d4767d516b2e0cc199a266061065d",
+      "counts": {
+        "tests": 16,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "valid": true
+    },
+    {
+      "test_file": "tests/test_tasks.py",
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "-q",
+        "tests/test_tasks.py",
+        "--junitxml=./heldout6/validation/20261101T055634Z-705fd600-files/001-test_tasks.xml",
+        "--basetemp=/var/folders/75/ss1nk3954vg_gsxvwf4jttth0000gn/T/h6-validation-mz_gbo48/001-test_tasks"
+      ],
+      "exit_code": 0,
+      "seconds": 31.964,
+      "log": "heldout6/validation/20261101T055634Z-705fd600-files/001-test_tasks.log",
+      "log_sha256": "dc27ff7e78620318ef898cc67a5d9457d32adb37166c794613ad2a14ad9f0a5b",
+      "xml": "heldout6/validation/20261101T055634Z-705fd600-files/001-test_tasks.xml",
+      "xml_sha256": "05613ad27b174217079c9027c6a5df15a77a76974dcf41cecede337f1362ca46",
+      "counts": {
+        "tests": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "valid": true
+    }
+  ],
+  "timing_comparison": {
+    "prior_serial_validation": "20261031T225853Z-873ddf6f",
+    "prior_serial_wall_seconds": 29.278,
+    "prior_serial_counts": {
+      "tests": 34,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "prior_task_case_sum_seconds": 14.001,
+    "prior_shared_case_sum_seconds": 14.67,
+    "current_parallel_wall_seconds": 37.464,
+    "current_counts": {
+      "tests": 35,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "current_file_seconds": {
+      "tests/test_task_h6_ops_rollout.py": 37.038,
+      "tests/test_tasks.py": 31.964
+    },
+    "interpretation": "This required integration passed, but was slower than the earlier serial validation. It adds one genuine helper-layout regression and ran at a different time with other model work active. Per-file concurrency is confirmed; this is not a controlled speed benchmark and does not establish a wall-clock improvement."
+  },
+  "changes": [
+    "Same reviewed absolute outcomes-plugin bootstrap as the other nineteen graders.",
+    "Preserve candidate files and collect trusted tests from absolute grader paths using importlib mode and rootdir=GRADER.",
+    "Add an actual-grader candidate that requires tests and hidden_tests helper packages plus all six colliding generic helper names."
+  ],
+  "unchanged": [
+    "Task-visible source and exact task hash",
+    "Trusted rollout oracle/fixtures and behavioral rules",
+    "All model evidence and current scores",
+    "Other active task sources and runtime/model configurations"
+  ],
+  "validation_batches": 1,
+  "focused_reruns": 0,
+  "inference_runs": 0,
+  "real_attempt_regrades": 0
+}

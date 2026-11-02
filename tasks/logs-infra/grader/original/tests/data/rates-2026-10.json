@@ -1,0 +1,15 @@
+{
+  "base": "USD",
+  "date": "2026-10-01",
+  "currencies": {
+    "BHD": {"rate": "0.3770", "minor_units": 3},
+    "CHF": {"rate": "0.8652", "minor_units": 2},
+    "EUR": {"rate": "0.9213", "minor_units": 2},
+    "GBP": {"rate": "0.7841", "minor_units": 2},
+    "ISK": {"rate": "137.90", "minor_units": 0},
+    "JPY": {"rate": "149.82", "minor_units": 0},
+    "KRW": {"rate": "1371.5", "minor_units": 0},
+    "KWD": {"rate": "0.3071", "minor_units": 3},
+    "LYD": {"rate": "5.4210", "minor_units": 3}
+  }
+}

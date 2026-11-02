@@ -1,0 +1,206 @@
+{
+ "note": "Codex's local worktree path, replaced with '.', and the home folder, replaced with '~', in the published copy; nothing else changed. Compiled Python caches the manifest lists are left out (omitted), since they embed local paths.",
+ "files": {
+  "heldout7/_shared/AUTOMATED_JUDGE.md": {
+   "manifest_sha256": "5f2bdeba0efc3109d161a3d1dbe7ab5aa6c1f26fe5ca28c763e1ef41d1cb870a",
+   "published_sha256": "2aa25ccb05674fbb6ebf4e04f8beb57d3c7c3f8cbd1d58cff39a3e38075ed68c"
+  },
+  "heldout7/_shared/automated_judge_history/v1-pre-review-fixes/AUTOMATED_JUDGE.md": {
+   "manifest_sha256": "5c1801c3c37878ed5b0ebaf269f40280c4c52b9a346ce764f09f46486cdcbaeb",
+   "published_sha256": "3a65119622cd3824a5020a4d2ccbc91ab20a9e5ddf361f0ebf9ab365d4d2117e"
+  },
+  "heldout7/_shared/automated_judge_history/v1-pre-review-fixes/HANDOFF.json": {
+   "manifest_sha256": "6d554f4b2abd063af2133b955a63b1622f20c3b88dac46cf37a9ffcc47ee491d",
+   "published_sha256": "4fd90ee5c16b7c7359c0024f796198ce90fbac5fb7c154d2d927077648053b93"
+  },
+  "heldout7/_shared/automated_judge_history/v1-reviewed-fixes/AUTOMATED_JUDGE.md": {
+   "manifest_sha256": "5f2bdeba0efc3109d161a3d1dbe7ab5aa6c1f26fe5ca28c763e1ef41d1cb870a",
+   "published_sha256": "2aa25ccb05674fbb6ebf4e04f8beb57d3c7c3f8cbd1d58cff39a3e38075ed68c"
+  },
+  "heldout7/_shared/automated_judge_history/v1-reviewed-fixes/HANDOFF.json": {
+   "manifest_sha256": "1407ae7cecc992017b7bd9628b0895c29d36c3200b9c681ee73a96152f18dd15",
+   "published_sha256": "945d40c5b5dbe526707dc240ac565221a50c46c6ee9fe123ce3b262b902eb64b"
+  },
+  "heldout7/delivery_reviews/responses/response-50cb01acbe1e/prepared/provenance.json": {
+   "manifest_sha256": "6511d5a1b355623c7369708c1e203bbff49a8a4eba119314b0216c0b3d0893ef",
+   "published_sha256": "9548c573c6cc7c62a20377377770a8cb15e9d87ce7c3167801217769840ecb40"
+  },
+  "heldout7/delivery_reviews/responses/response-54226a03023b/prepared/provenance.json": {
+   "manifest_sha256": "81cb374f9d9b59a51773c50137c02c2f8be9786cfc731769bcbbfba7af09b5b9",
+   "published_sha256": "5845674299dabb05add9a31b03377f7369846d0649e04e4c331f3a9c83a60957"
+  },
+  "heldout7/delivery_reviews/responses/response-9889ad7dcc69/prepared/provenance.json": {
+   "manifest_sha256": "6ccf289f364373f51e23a6bb16fb1097c912bd5b92928fbe2177773f75b7d48a",
+   "published_sha256": "a6a48fbe42d5acd74db6b145002d5db12829b9bf4fc52774814f799abc8755ca"
+  },
+  "heldout7/delivery_reviews/responses/response-99320e0852c2/prepared/provenance.json": {
+   "manifest_sha256": "ba582cd48b46c394f87401085ce5b497efae0af3b9796bdf757ba8d0b1d5de63",
+   "published_sha256": "765f14d640099c53f4947daba6ba4a0a75d7cb3c95c026017b97cd0db4130042"
+  },
+  "heldout7/delivery_reviews/responses/response-c22120a1639c/prepared/provenance.json": {
+   "manifest_sha256": "20f6e3796dc465b35552df63406ed9cbf7b80ced2570a239927eed358a5b8fe0",
+   "published_sha256": "aab953000fd201ecc12451d75642905ef93d052e001caa414452a7e48ad605d4"
+  },
+  "heldout7/delivery_reviews/responses/response-c22120a1639c/prepared-before-publisher-review/provenance.json": {
+   "manifest_sha256": "c386a7ec54c75bdbd2bd83ed6ee0d405e4f8562a7cb21e03418381dcc81fd29b",
+   "published_sha256": "8c8e3501e04e7adf96a2424848fd6213543b054cd2477fa8eddec992ff746cc8"
+  },
+  "heldout7/delivery_reviews/responses/response-c979611e9357/prepared/provenance.json": {
+   "manifest_sha256": "16ea69486d47ac86378bc8adb0f60fcca7425f28e6f0911b959fb6dba7452149",
+   "published_sha256": "acc7eb8371862a674a44522c09f760ff4bceafb03eea9f434b83a99c716456d8"
+  },
+  "heldout7/delivery_reviews/responses/response-d75497f6db0b/prepared/provenance.json": {
+   "manifest_sha256": "3e670297a3c80ac3588ecada59c3ec9a4bf0914fec084adcff4a6aab58701a8a",
+   "published_sha256": "4519101688f9d0ed673d9da5e01d388e40f668649733ff0ec6cc52f646630eaa"
+  },
+  "heldout7/delivery_reviews/responses/response-d7e6bd4a1ad5/prepared/provenance.json": {
+   "manifest_sha256": "7c860611ca00f6e9d291cb8fa7b845b759cc43141f60a1d3e18a3517a02bdbf6",
+   "published_sha256": "1bba77da9ce8d449c77ecdf628ed973c01de7ab8b29d0c794a7bc2b5798ec131"
+  },
+  "heldout7/delivery_reviews/responses/response-ddfcb5a3a61d/prepared/provenance.json": {
+   "manifest_sha256": "01d50ac6fbc839c535159552292819fe66a592cf9128041e23914f2d42c1d559",
+   "published_sha256": "451daa8d2906d65e5aba64e1101e3ebf05e7a37c1865a7cfc82cf637f01f7db5"
+  },
+  "heldout7/delivery_reviews/responses/response-e53aaca18146/prepared/provenance.json": {
+   "manifest_sha256": "df193507e4e40e105ed416e035c0121acaeac0a73546ed3b4734a50ef3d5e907",
+   "published_sha256": "31ba29bd93b748ab426d0bd6e533080ed26aa126fa49ac22c8108698733157b4"
+  },
+  "heldout7/delivery_reviews/responses/response-e53aaca18146/prepared-before-publisher-review/provenance.json": {
+   "manifest_sha256": "1a9cb98584c6e7ac368140e617ca4cbfaeea39839d2636b811abe5b5550c5c03",
+   "published_sha256": "7e68a8a4c71329256e53b684afeec2058d2cff1f50b9b547fa7b8d1a761d3edd"
+  },
+  "heldout7/delivery_validation/controller-checks/integration.log": {
+   "manifest_sha256": "e9ef0bf5c9742f568db16d52d258551471c0ed29fc4d32d53b3538709bc95971",
+   "published_sha256": "fb37eda82e750a52683b9cd3620131341360cd12628a001cf97fd2ec0ddb73a6"
+  },
+  "heldout7/delivery_validation/controller-checks/integration.xml": {
+   "manifest_sha256": "d95d37cc0f1e811c1421e23500d504157b181cd0ee565f48a2c12c452931656f",
+   "published_sha256": "121ac806f2bc1890a1b09fbdf3ca40ae58972f37ddb9c2ae9a83e36cadf312a8"
+  },
+  "heldout7/delivery_validation/install-checks/integration.log": {
+   "manifest_sha256": "6550ee23974d164fcac9bcaef1b8796db8ef3419a22517a3dc16ebd901989a2f",
+   "published_sha256": "c8f9aa2096a68685728d3d4849224b62c999dcb4901274ea15e30f68791356c7"
+  },
+  "heldout7/delivery_validation/install-checks/integration.xml": {
+   "manifest_sha256": "0ed3b782018c3951736006d011e8dec37ec55b4db2239b1f7e581f3e4a3e1824",
+   "published_sha256": "9b465d4ed04d1d98ee7902011504eb18bb2d7a78e8ecaa2dc021f21fb7e90a8c"
+  },
+  "heldout7/delivery_validation/payout-checks/integration.log": {
+   "manifest_sha256": "1c0b759645949bccefe37c7466ac38371536785106b416b1bbd517a09be8e356",
+   "published_sha256": "01c1db01f1e5fdeb6f777de76683f85cde53b199e146372e36d2edbcf05d08cb"
+  },
+  "heldout7/delivery_validation/payout-checks/integration.xml": {
+   "manifest_sha256": "d7879a7cba6feefc371163a28859b60f2bbf76aa4f1008bb59751b6489db7784",
+   "published_sha256": "7d99b365c0a169d82754f0b0c349a4cf740d4d661d3d8d3220ddd1e76f03354c"
+  },
+  "heldout7/pilot_reviews/AUTOMATED_JUDGE_HANDOFF.json": {
+   "manifest_sha256": "1407ae7cecc992017b7bd9628b0895c29d36c3200b9c681ee73a96152f18dd15",
+   "published_sha256": "945d40c5b5dbe526707dc240ac565221a50c46c6ee9fe123ce3b262b902eb64b"
+  },
+  "heldout7/pilot_reviews/AUTOMATED_JUDGE_V2_HANDOFF.json": {
+   "manifest_sha256": "1569a15228f6e4fa4ca3caa157f197b8d5b27d8ca0539647ffeba099b8bab656",
+   "published_sha256": "00cab4c8c650e69482852120b6cc507028c03b4772a18021bf6c03c3db67ef17"
+  },
+  "heldout7/pilot_reviews/FAILURE_PEER_REVIEW.json": {
+   "manifest_sha256": "4ced71e47391df57928a8c51aa2d18e879d67d6bc141060e07aca0c2d8bd1cbb",
+   "published_sha256": "1956e5eef10ccc13a570e8898c9d16710dbee5da0c1d511c00a657a640328225"
+  },
+  "heldout7/pilot_reviews/FAILURE_PEER_REVIEW2.json": {
+   "manifest_sha256": "b39d24eea9238a29dc6ab18ddeed7e280cfa1e6e321f0556e21ac45eeb38b7d4",
+   "published_sha256": "1d1e792abf72d1fbe846358b51f2bac7bfa0ce5e1c16d60512a46ea82b851429"
+  },
+  "heldout7/pilot_reviews/PEER_BATCH1.json": {
+   "manifest_sha256": "db78526736eb5c2d3dd5fc53b3a27a243cafd9ec5178c35d4275e802f0994dcc",
+   "published_sha256": "5c0ee2ea8d80d826549fe8f0d80ada0b60c7a927cd10f6b9ceaaba631955606b"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-28883af1de4b/attempt-1/provenance.json": {
+   "manifest_sha256": "fed3b7344eb15c04284b66342ae2a77457c4164a8001600e1e5058d60d5e85b8",
+   "published_sha256": "17adc2ca531d35ba86811bb6cdbb233237fc185426b896a1a6b6be61fa9bb95b"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-28883af1de4b/attempt-v2-1/provenance.json": {
+   "manifest_sha256": "533a5cc0283902032c3193a284eca559d20be98fabfbbcc97c507fcf65f517c7",
+   "published_sha256": "0999580a46834eb3681f6ebe5f7a6b91b5fc4186aed8cf0595b2a611186439a8"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-28883af1de4b/prepared/provenance.json": {
+   "manifest_sha256": "fed3b7344eb15c04284b66342ae2a77457c4164a8001600e1e5058d60d5e85b8",
+   "published_sha256": "17adc2ca531d35ba86811bb6cdbb233237fc185426b896a1a6b6be61fa9bb95b"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-28883af1de4b/prepared-v2/provenance.json": {
+   "manifest_sha256": "533a5cc0283902032c3193a284eca559d20be98fabfbbcc97c507fcf65f517c7",
+   "published_sha256": "0999580a46834eb3681f6ebe5f7a6b91b5fc4186aed8cf0595b2a611186439a8"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-29fdae4b0339/attempt-v2-1/provenance.json": {
+   "manifest_sha256": "942ad80284d6a135340fcb94cec913695f418823586ea3eda9d528a4c521c28a",
+   "published_sha256": "2cac5a42c6e13e8f7fb5a2ed3468e2f61728fbcaecf6a5ad40d6574c57933f2f"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-29fdae4b0339/prepared/provenance.json": {
+   "manifest_sha256": "ac61a230cec0717ca0ed1f93283d5330d92b51c50cfb8b2469bfa368b6a2d8b2",
+   "published_sha256": "143347a58d20ef20b2b0cefa96306b5f37f59d5c2266e0933055afbbec8fe034"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-29fdae4b0339/prepared-v2/provenance.json": {
+   "manifest_sha256": "942ad80284d6a135340fcb94cec913695f418823586ea3eda9d528a4c521c28a",
+   "published_sha256": "2cac5a42c6e13e8f7fb5a2ed3468e2f61728fbcaecf6a5ad40d6574c57933f2f"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-7fbaddf08843/attempt-v2-1/provenance.json": {
+   "manifest_sha256": "8094acdce58c49ad424d1e265025de9e4facd1c7dd75cd90bde928c9504c9c57",
+   "published_sha256": "7266e13cbbaf8569a0c02a2658f9657a92df691cc15af56b14e5f64823629aad"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-7fbaddf08843/prepared/provenance.json": {
+   "manifest_sha256": "4f0353bc8664999af5a74a5381ff08ff08b1d1d13f8f5508051569b3e82c137a",
+   "published_sha256": "6633c0bc9b0cc7f5924aa8942bdfbb215da5298ecf4c07e2f88acc4235f13c2f"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-7fbaddf08843/prepared-v2/provenance.json": {
+   "manifest_sha256": "8094acdce58c49ad424d1e265025de9e4facd1c7dd75cd90bde928c9504c9c57",
+   "published_sha256": "7266e13cbbaf8569a0c02a2658f9657a92df691cc15af56b14e5f64823629aad"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-adfec8497e08/attempt-v2-1/provenance.json": {
+   "manifest_sha256": "876b48e45d4d66e201f22875e7873dff27b17e2b7d26e91feec33ee5f57cbec2",
+   "published_sha256": "638847c7963a415489662600fa54080b016c77ed5570e72f31530de66b0dae1d"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-adfec8497e08/prepared/provenance.json": {
+   "manifest_sha256": "bace18ae181c95af91e069a0d5837b114a96a172afac975ec27edb78800277c7",
+   "published_sha256": "ec34caea1a0e5166c5f410ab3f821ae6fc7aa9b6adac741d6c6a993a145e2ad5"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-adfec8497e08/prepared-v2/provenance.json": {
+   "manifest_sha256": "876b48e45d4d66e201f22875e7873dff27b17e2b7d26e91feec33ee5f57cbec2",
+   "published_sha256": "638847c7963a415489662600fa54080b016c77ed5570e72f31530de66b0dae1d"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-b173d1bef4e1/attempt-v2-1/provenance.json": {
+   "manifest_sha256": "95da3c7726022f22327605b88a67f40f8cfa29ce311a572c6b22b053e40a6319",
+   "published_sha256": "929b2b437ed6dec54c6315265e682cd47cadf0c4d55a85f7fdc78724980f0851"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-b173d1bef4e1/prepared/provenance.json": {
+   "manifest_sha256": "87524b855a98b5f3dd37aa56283b2c7b86943bc61dc72c0bfaf084b151573b0c",
+   "published_sha256": "b3b6de5da7b1b9e7db82dc2ae2da1df0530bd2a6a457baa3c5d2432f974672e4"
+  },
+  "heldout7/pilot_reviews/automated_comparison/response-b173d1bef4e1/prepared-v2/provenance.json": {
+   "manifest_sha256": "95da3c7726022f22327605b88a67f40f8cfa29ce311a572c6b22b053e40a6319",
+   "published_sha256": "929b2b437ed6dec54c6315265e682cd47cadf0c4d55a85f7fdc78724980f0851"
+  },
+  "heldout7/validation/20261101T231947Z-pilot/combined.log": {
+   "manifest_sha256": "f5163f1559327a5ec389a167905582ec6246a1e192f646efe9769a7fc7a15878",
+   "published_sha256": "1e55a9c880b6bc54a526ece190d78b4806286a588840cc6e0217744ce3bd5931"
+  },
+  "heldout7/validation/20261101T231947Z-pilot/record.json": {
+   "manifest_sha256": "96be8642536a04f0584857c8fe37abe1120ef723c644575ebbb2e5028a2c822f",
+   "published_sha256": "b4dc37bc0ce555cb7c570b77c320753d698def0edc0259959b9538cc1a0c01cf"
+  },
+  "heldout7/validation/finance-focused/result.json": {
+   "manifest_sha256": "03884d3fad08bbddeb8f6e67c904804ead444a46ec1a418ca24740ebaa47ca47",
+   "published_sha256": "96059ae45d67c3592b80cfc7eeb1fab070877267b8fdff775442eaaed79bff7b"
+  },
+  "heldout7/validation/h7-fin-period-close.json": {
+   "manifest_sha256": "96be8642536a04f0584857c8fe37abe1120ef723c644575ebbb2e5028a2c822f",
+   "published_sha256": "b4dc37bc0ce555cb7c570b77c320753d698def0edc0259959b9538cc1a0c01cf"
+  },
+  "heldout7/validation/h7-ops-generation-restore-larch.json": {
+   "manifest_sha256": "96be8642536a04f0584857c8fe37abe1120ef723c644575ebbb2e5028a2c822f",
+   "published_sha256": "b4dc37bc0ce555cb7c570b77c320753d698def0edc0259959b9538cc1a0c01cf"
+  },
+  "heldout7/validation/h7-ops-generation-restore.json": {
+   "manifest_sha256": "96be8642536a04f0584857c8fe37abe1120ef723c644575ebbb2e5028a2c822f",
+   "published_sha256": "b4dc37bc0ce555cb7c570b77c320753d698def0edc0259959b9538cc1a0c01cf"
+  }
+ },
+ "omitted": {}
+}

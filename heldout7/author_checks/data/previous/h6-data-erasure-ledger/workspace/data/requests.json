@@ -1,0 +1,8 @@
+[
+  {
+    "id": "erase-old",
+    "tenant": "t",
+    "subject": "old-person",
+    "through": 5
+  }
+]

@@ -1,0 +1,1 @@
+Implemented durable whole-batch ingestion and complete contiguous publication. Replayed customer history through epoch 3; epoch 4 remains pending. Added and ran regression tests.

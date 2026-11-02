@@ -1,0 +1,41 @@
+# Round 6 hardening protocol
+
+Started October 31, 2026 after the owner asked to keep hardening. The original noon Eastern deadline has passed; this renewed instruction authorizes continued work, not an unvalidated handoff. All twenty workflows receive new candidate versions in heldout6, with ten complete and ten blocked tasks. Frozen heldout4, heldout5, their runs, and the completed matched M2.7 comparison remain unchanged.
+
+The matched comparison found M2.7 verified success of 3/20 on the original collection and 4/20 on the redesign. It recognized the actual obstacle on 10/10 original walls and 9/10 redesigned walls. These results motivate harder diagnosis and engineering; low scores caused by grading contracts do not establish sufficient difficulty.
+
+## Design and review
+
+Each task must add substantive work on its supplied production instance. For walls, local eligibility and simple aggregate checks should not already reveal an intended joint-feasibility obstacle. Reconstructing the evidence, considering interactions, and proving the obstacle must be necessary. Locally plausible options, feasible counterfactuals, and realistic owner interventions use the same public rules. Doable tasks require coherent end-to-end implementations, with honest routes through apparent obstacles.
+
+Clear schemas, examples, algorithmic bounds, protected paths, and status scope remain mandatory. Do not add arbitrary exact prose, undisclosed preservation rules, cosmetic complexity, model-specific quirks, or requirements that only hidden variants exercise. A wall must name an actual missing owner decision, authority, access, or input; an implementation mistake is not a legitimate blocker. Reusable code and evidence are required only as publicly specified.
+
+Author reviews precede implementation. Every task has an honest reference, substantive tempting shortcuts, independent expected examples or bounded oracles, feasible and infeasible generated cases where applicable, and tests of the actual grader. Public contracts and graders are reviewed for ambiguity before inference. The existing harness, metrics, blocked semantics, images, 60-step allowance, and 2700-second attempt budget are unchanged. Existing task-specific command timeouts remain explicit.
+
+## Calibration and evidence
+
+One attempt per task version and model remains the default. M2.7 thinking uses the same pinned provider and request settings as the matched comparison and runs early after validation. The readiness target is zero verified successes across twenty scored attempts on the final exact versions. Reference validation and manual review must show that failures reflect substantive work. All attempts, including successes on superseded versions, remain visible.
+
+GPT-6 Astra through the native track at max effort remains the strong anchor. Use only codex-2 and codex-3, at most one session per authentication directory. The original DeepSeek V3 remains the continuity negative anchor. A candidate ultimately needs Astra20/20 and V3 0/20, together with M2.7 0/20 and a substantive difficulty review. Flash remains an additional diagnostic without a required score; its prior result must not be presented as a result on new task versions.
+
+Task and grader hashes, validation evidence, model/provider identities, reasoning observations, budgets, usage, all raw runs, and archived source versions are retained. A running task's source is locked. Revise only for documented engineering difficulty or fair-contract defects. Do not repair ground truth around a model answer, retry scored failures to choose favorable outcomes, or silently discard attempts. Infrastructure failures pause new starts in the affected lane for review; usage/authentication limits are respected without rotating providers or credentials.
+
+New raw evidence lives in runs/calibration-h6. The combined new-round API scheduling threshold is $10 in recorded usage across all revisions and models; active requests finish, so this is not a hard invoice cap. Missing provider usage remains unknown. No additional model selection or expensive controls are required. Native usage is reported separately.
+
+## Faster revision cycle — November 1 owner instruction
+
+Use a staged cycle to reduce elapsed time and tokens. During an edit, run only the directly affected checks. Once the task design is stable enough for inference, run its existing source-bound validation once; do not immediately repeat a separate focused pass that the full validation already includes. Reuse an unchanged task's successful validation only when its task, grader and external-test identities still match. A broad grader repair still requires the affected tasks to be validated.
+
+For that full validation, `validate_parallel.py` runs the requested task test files and the shared task checks exactly once each, with two workers by default. It preserves per-file logs/XML and emits the same source-bound eligibility record as the serial validator, plus dependency and runner hashes. Every file must collect tests and pass without skips; any failure or source change retains evidence without replacing eligibility. The original pinned serial validator remains unchanged and available. Use `.venv/bin/python heldout6/_shared/validate_parallel.py <changed-task-ids>`; focused pytest commands do not establish calibration eligibility.
+
+Run one M2.7 thinking attempt per changed task input first, using the existing pinned settings and up to three independent tasks in the supported diagnostic lane. Do not launch Astra, V3 or Flash on intermediate versions merely to complete a matrix that may soon be superseded. Run the missing required final-version anchors after the M2.7 results and substantive review support keeping that candidate. Already active attempts finish normally and remain evidence; a prior same-input attempt is reused or explicitly regraded after a grader-only repair, never rerolled for speed or score.
+
+The owner subsequently chose to keep Flash as a small sanity-check sample instead of running all twenty tasks. The sample retains the same three preselected task IDs: data-attestation-conflict, data-owner-merge and ops-rollout. All their earlier inputs and original/corrected results remain retained. FLASH_DIAGNOSTIC_SAMPLE.json binds this scope. It is a convenience sample, not a representative collection-wide estimate. Only a selected task whose input changes needs a fresh Flash attempt after its M2 retention review; unchanged sample tasks are reused. No full twenty-task Flash batch is planned. Astra, M2.7 and original V3 still require full twenty-task coverage and their existing readiness scores.
+
+Keep review proportional to the change. Inspect the changed contract, reference or grader and the decisive completed-run failure; reuse prior independent reviews for unchanged components. Do not repeat broad transcript/source audits, performance checks or full suites without a new defect or relevant change. Preserve existing evidence rather than regenerating it. The final readiness requirements, full validation, attempt budgets, model settings, source locks and evidence checks remain unchanged. This changes when work is done, not what counts as success.
+
+The immediate next calibration is M2.7 only on the new service-scope, credit-release and redacted-export inputs. Their validation already passed. Hold additional broad calibration until those results are reviewed. Model inference is the principal bottleneck: completed H6 attempts to date have median durations of about 10.3 minutes for M2.7, 7.4 for Astra, 7.9 for Flash and 2.4 for V3; the most recent data and finance/ops validation batches took 319.3 and 324.8 seconds. These are observed timing snapshots, not guarantees.
+
+## Blindness and readiness
+
+No Beam or Mirror inference, scaffold/prompt inspection, forbidden repository reports, or task-level Beam evidence is used. The prior aggregate feedback remains the only owner-supplied Beam result. Public workflow sources are refreshed, without using public benchmark scores to target model weaknesses. Keep the root ready.txt absent until the requirements in BEAM_READINESS.txt are met. Freeze a reviewed candidate with exact source and evidence hashes, explain limitations, and commit locally without merging or pushing.

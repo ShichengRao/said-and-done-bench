@@ -1,0 +1,84 @@
+{
+  "counterparts": {
+    "edge_cutover_deferred": {
+      "example": [
+        "maint-enter",
+        "schema-v5",
+        "worker-v8",
+        "api-v8",
+        "maint-exit",
+        "cache-reindex"
+      ],
+      "full_orders": 3
+    },
+    "expiring_netops_grant": {
+      "example": null,
+      "full_orders": 0
+    },
+    "late_db_grant": {
+      "example": [
+        "maint-enter",
+        "schema-v5",
+        "worker-v8",
+        "api-v8",
+        "cache-reindex",
+        "edge-cutover",
+        "maint-exit"
+      ],
+      "full_orders": 4
+    },
+    "reapproved_cache_reindex": {
+      "example": [
+        "maint-enter",
+        "schema-v5",
+        "worker-v8",
+        "api-v8",
+        "cache-reindex",
+        "edge-cutover",
+        "maint-exit"
+      ],
+      "full_orders": 4
+    },
+    "reapproved_edge_cutover": {
+      "example": [
+        "maint-enter",
+        "schema-v5",
+        "worker-v8",
+        "api-v8",
+        "maint-exit",
+        "cache-reindex",
+        "edge-cutover"
+      ],
+      "full_orders": 3
+    },
+    "reordered_redelivery": {
+      "example": [
+        "maint-enter",
+        "schema-v5",
+        "worker-v8",
+        "api-v8",
+        "maint-exit",
+        "cache-reindex",
+        "edge-cutover"
+      ],
+      "full_orders": 3
+    },
+    "tight_worker_window": {
+      "example": [
+        "maint-enter",
+        "schema-v5",
+        "worker-v8",
+        "api-v8",
+        "maint-exit",
+        "cache-reindex",
+        "edge-cutover"
+      ],
+      "full_orders": 1
+    }
+  },
+  "current_full_orders": 0,
+  "current_full_orders_ignoring_windows_and_grants": 0,
+  "permutations_examined": 5040,
+  "second_maintenance_entry_orders_signature_ignored": 3,
+  "superseded_edge_revision_orders": 3
+}

@@ -1,0 +1,12 @@
+{
+  "source": "Corran County EMS hospital directory (stroke designations from the regional stroke network)",
+  "hospitals": [
+    {"id": "CH-1", "name": "St Brennan Medical Center", "stroke": "thrombectomy", "adult_ed": true},
+    {"id": "CH-2", "name": "Corran General Hospital", "stroke": "thrombectomy", "adult_ed": true},
+    {"id": "CH-3", "name": "Valley Regional Hospital", "stroke": "primary", "adult_ed": true},
+    {"id": "CH-4", "name": "Harbor Community Hospital", "stroke": null, "adult_ed": true},
+    {"id": "CH-5", "name": "Northgate University Hospital", "stroke": "thrombectomy", "adult_ed": true},
+    {"id": "CH-6", "name": "Elm Park Hospital", "stroke": "primary", "adult_ed": true},
+    {"id": "CH-7", "name": "Corran Children's Hospital", "stroke": null, "adult_ed": false}
+  ]
+}

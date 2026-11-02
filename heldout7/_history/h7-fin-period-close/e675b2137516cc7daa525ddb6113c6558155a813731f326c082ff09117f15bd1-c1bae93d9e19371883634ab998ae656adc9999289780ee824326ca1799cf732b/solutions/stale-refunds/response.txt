@@ -1,0 +1,1 @@
+The exporter now closes September and matches the signed totals.

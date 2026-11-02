@@ -1,0 +1,50 @@
+{
+  "captures": [
+    {
+      "id": "c1",
+      "merchant": "m",
+      "currency": "USD",
+      "captured_cents": 70,
+      "refund_until": 20
+    },
+    {
+      "id": "c2",
+      "merchant": "m",
+      "currency": "USD",
+      "captured_cents": 80,
+      "refund_until": 30
+    }
+  ],
+  "commands": [
+    {
+      "operation_id": "reserve1",
+      "at": 1,
+      "kind": "reserve",
+      "refund": "r",
+      "merchant": "m",
+      "currency": "USD",
+      "cents": 100,
+      "until": 15,
+      "candidates": [
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "operation_id": "settle1",
+      "at": 2,
+      "kind": "settle",
+      "refund": "r",
+      "expected_version": 1,
+      "cents": 80
+    },
+    {
+      "operation_id": "reverse1",
+      "at": 3,
+      "kind": "reverse",
+      "settlement": "settle1",
+      "expected_version": 2,
+      "cents": 15
+    }
+  ]
+}

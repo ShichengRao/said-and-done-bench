@@ -1,0 +1,138 @@
+[
+  {
+    "allow": [
+      "g:r2"
+    ],
+    "at": 0,
+    "content": {
+      "attributes": {
+        "private_tag": "x8"
+      },
+      "text": "incident alpha",
+      "title": "d1"
+    },
+    "deleted": false,
+    "deny": [],
+    "id": "d1",
+    "inherit": false,
+    "parent": null,
+    "seq": 1,
+    "tenant": "t8"
+  },
+  {
+    "allow": [],
+    "at": 0,
+    "content": {
+      "attributes": {
+        "private_tag": "x8"
+      },
+      "text": "incident alpha",
+      "title": "d2"
+    },
+    "deleted": false,
+    "deny": [],
+    "id": "d2",
+    "inherit": true,
+    "parent": "d1",
+    "seq": 1,
+    "tenant": "t8"
+  },
+  {
+    "allow": [],
+    "at": 0,
+    "content": {
+      "attributes": {
+        "private_tag": "x8"
+      },
+      "text": "incident alpha",
+      "title": "d3"
+    },
+    "deleted": false,
+    "deny": [
+      "g:r4"
+    ],
+    "id": "d3",
+    "inherit": true,
+    "parent": "d1",
+    "seq": 1,
+    "tenant": "t8"
+  },
+  {
+    "allow": [
+      "u:p7"
+    ],
+    "at": 0,
+    "content": {
+      "attributes": {
+        "private_tag": "x8"
+      },
+      "text": "incident alpha",
+      "title": "d4"
+    },
+    "deleted": false,
+    "deny": [],
+    "id": "d4",
+    "inherit": false,
+    "parent": "d3",
+    "seq": 1,
+    "tenant": "t8"
+  },
+  {
+    "allow": [],
+    "at": 20,
+    "content": {
+      "attributes": {
+        "private_tag": "x8"
+      },
+      "text": "resolved alpha",
+      "title": "d2"
+    },
+    "deleted": false,
+    "deny": [],
+    "id": "d2",
+    "inherit": true,
+    "parent": "d1",
+    "seq": 2,
+    "tenant": "t8"
+  },
+  {
+    "allow": [
+      "g:r2"
+    ],
+    "at": 30,
+    "content": {
+      "attributes": {
+        "private_tag": "x8"
+      },
+      "text": "incident alpha",
+      "title": "d1"
+    },
+    "deleted": true,
+    "deny": [],
+    "id": "d1",
+    "inherit": false,
+    "parent": null,
+    "seq": 2,
+    "tenant": "t8"
+  },
+  {
+    "allow": [
+      "u:p7"
+    ],
+    "at": 0,
+    "content": {
+      "attributes": {
+        "private_tag": "x8"
+      },
+      "text": "incident alpha",
+      "title": "d9"
+    },
+    "deleted": false,
+    "deny": [],
+    "id": "d9",
+    "inherit": false,
+    "parent": null,
+    "seq": 1,
+    "tenant": "t9"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "people": [
+    "p0",
+    "p1",
+    "p2",
+    "p3",
+    "p4"
+  ],
+  "aliases": [
+    {
+      "alias": "legacy-p1",
+      "target": "p1"
+    },
+    {
+      "alias": "export-p1",
+      "target": "legacy-p1"
+    }
+  ],
+  "consents": [
+    {
+      "person": "p0",
+      "revision": 1,
+      "allowed": true
+    },
+    {
+      "person": "p1",
+      "revision": 1,
+      "allowed": true
+    },
+    {
+      "person": "p2",
+      "revision": 1,
+      "allowed": true
+    },
+    {
+      "person": "p3",
+      "revision": 1,
+      "allowed": true
+    },
+    {
+      "person": "p4",
+      "revision": 1,
+      "allowed": true
+    },
+    {
+      "person": "p0",
+      "revision": 0,
+      "allowed": false
+    }
+  ]
+}

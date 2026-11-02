@@ -1,0 +1,4 @@
+__pycache__/
+.pytest_cache/
+# Recorded metrics are big; they stay out of git.
+data/

@@ -1,0 +1,63 @@
+{
+  "datasets": [
+    {
+      "id": "accounts",
+      "units": 1,
+      "replicas_required": 1,
+      "regions": [
+        "eu"
+      ],
+      "key": "customer",
+      "approved_links": [
+        "ab",
+        "bd",
+        "be",
+        "af"
+      ]
+    },
+    {
+      "id": "contacts",
+      "units": 1,
+      "replicas_required": 1,
+      "regions": [
+        "eu"
+      ],
+      "key": "customer",
+      "approved_links": [
+        "ad",
+        "cd",
+        "af"
+      ]
+    },
+    {
+      "id": "events",
+      "units": 1,
+      "replicas_required": 1,
+      "regions": [
+        "eu"
+      ],
+      "key": "customer",
+      "approved_links": [
+        "ae",
+        "cd",
+        "af"
+      ]
+    },
+    {
+      "id": "tickets",
+      "units": 1,
+      "replicas_required": 1,
+      "regions": [
+        "eu"
+      ],
+      "key": "customer",
+      "approved_links": [
+        "ac",
+        "ae",
+        "bd",
+        "be",
+        "af"
+      ]
+    }
+  ]
+}

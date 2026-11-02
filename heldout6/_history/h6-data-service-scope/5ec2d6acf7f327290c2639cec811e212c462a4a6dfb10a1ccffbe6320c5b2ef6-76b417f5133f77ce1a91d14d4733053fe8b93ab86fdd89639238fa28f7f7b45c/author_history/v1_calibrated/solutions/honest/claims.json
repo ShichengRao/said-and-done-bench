@@ -1,0 +1,11 @@
+{
+  "summary": "All four service requests have valid credential routes and starts, every proper request subset is feasible, and a half-route fractional allocation fits every allowance. No whole-route batch assignment exists; request one extra unit in both shared pools zero and four, total cost 5, before execution.",
+  "blocker_codes": [
+    "batch_delegation_budget_required"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ]
+}

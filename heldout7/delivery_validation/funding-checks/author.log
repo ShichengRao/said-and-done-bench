@@ -1,0 +1,27 @@
+.F...........                                                            [100%]
+=================================== FAILURES ===================================
+_________________________ test_author_proof_reproduces _________________________
+
+    def test_author_proof_reproduces():
+        run = subprocess.run([sys.executable, str(TASK / 'author_only/prove.py')], capture_output=True, text=True, timeout=300)
+>       assert run.returncode == 0, run.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "/workspace/deliverables/h7-fin-funding-scheduler/author_only/prove.py", line 97, in <module>
+E             main()
+E           File "/workspace/deliverables/h7-fin-funding-scheduler/author_only/prove.py", line 92, in main
+E             (TASK / 'author_only/proof_result.json').write_text(json.dumps(result, indent=2, sort_keys=True) + '\n')
+E           File "/usr/local/lib/python3.12/pathlib.py", line 1047, in write_text
+E             with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+E                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+E             return io.open(self, mode, buffering, encoding, errors, newline)
+E                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E         OSError: [Errno 30] Read-only file system: '/workspace/deliverables/h7-fin-funding-scheduler/author_only/proof_result.json'
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/usr/local/bin/python', '/workspace/deliverables/h7-fin-funding-scheduler/author_only/prove.py...Errno 30] Read-only file system: \'/workspace/deliverables/h7-fin-funding-scheduler/author_only/proof_result.json\'\n').returncode
+
+tests/test_h7-fin-funding-scheduler.py:19: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_h7-fin-funding-scheduler.py::test_author_proof_reproduces
+1 failed, 12 passed in 3.68s

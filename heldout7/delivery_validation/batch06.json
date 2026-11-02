@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "source_reviewed": true,
+  "source_review": "Installer: expired trust anchor has a legitimate dual-threshold rotation; hidden cases verify signed complete dependency closure, rollback and cross-process CAS. Procurement: joint exchange correctly credits selected holds while keeping unrelated reservations; independent exhaustive optimizer checks optimal results and durable atomic replay. Preserved private reference driver failures; corrected expected refusal exits and explicit unsupported-refusal status. Probe 60s and CLI 10s retain all honest cases.",
+  "validation_result": "Installer: 7 initial reference passes plus 2 affected references passed after fixture repair; 12 author checks passed. Order replacement: see retained integration and author check logs.",
+  "test_file_sha256": {
+    "tests/test_h7_delivery_references.py": "fa4eaeec9e04a4716785587868b0d14dd08206b475f832cc2b76a0cd33fdf184",
+    "heldout7/_shared/delivery_reference_helpers.py": "a52ca674a455183b6174a59928b2bdc8f15855e951db3231a3f3802344bc6112"
+  },
+  "tasks": [
+    {
+      "task": "h7-ops-package-install",
+      "path": "heldout7/tasks/h7-ops-package-install",
+      "task_hash": "65c29c838e089f4ee078761acae59ea1160360f7972937bfa1ed2d2029b03bf4",
+      "grader_hash": "f6c74b0d9b5787f1db5d5a77022eabcfcd4e69797d8cbca1d0becdd06bb3442f"
+    },
+    {
+      "task": "h7-fin-order-reservations",
+      "path": "heldout7/tasks/h7-fin-order-reservations",
+      "task_hash": "330296216db0844cf971ce775575223bcad811d353a0c263aa0cebd0d4ba96cb",
+      "grader_hash": "78a49c7ceb8f86be8f171784bb891234faa8405f12a98de64ca77e47ce62a11a"
+    }
+  ]
+}

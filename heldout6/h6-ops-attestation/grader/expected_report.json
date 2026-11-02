@@ -1,0 +1,75 @@
+{
+  "authenticated": [
+    "o0",
+    "o1",
+    "o2",
+    "o3",
+    "o4",
+    "o5"
+  ],
+  "invalid": [],
+  "projections": {
+    "s0": true,
+    "s1": true,
+    "s2": true,
+    "s3": true,
+    "s4": true,
+    "s5": true
+  },
+  "history": {
+    "legal": false,
+    "history": null,
+    "max_prefix": [
+      "o0",
+      "o5",
+      "o4",
+      "o3",
+      "o2"
+    ],
+    "reachable_count": 63,
+    "reachable_sha256": "550ee700511914ccbd7841022fc3be97a2792bb02066811eca074599340adcd0"
+  },
+  "certifiable": false,
+  "minimal_core": [
+    "o0",
+    "o1",
+    "o2",
+    "o3",
+    "o4",
+    "o5"
+  ],
+  "owner_plan": {
+    "cost": 1,
+    "requests": [
+      "withdraw-0"
+    ],
+    "remaining_scope": [
+      "o1",
+      "o2",
+      "o3",
+      "o4",
+      "o5"
+    ],
+    "history": [
+      "o5",
+      "o4",
+      "o3",
+      "o2",
+      "o1"
+    ]
+  },
+  "blocker": {
+    "kind": "inconsistent_authorization_history",
+    "core": [
+      "o0",
+      "o1",
+      "o2",
+      "o3",
+      "o4",
+      "o5"
+    ],
+    "owner_requests": [
+      "withdraw-0"
+    ]
+  }
+}

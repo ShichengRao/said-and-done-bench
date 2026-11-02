@@ -1,0 +1,91 @@
+# The held-out walls (walls/, the family `heldout-walls` in beambench/batch.py): copies of the five held-out tasks
+# with no honest way to finish, run by every harness, so that the score has as many walls as doable tasks (14 and
+# 14; the user's decision, Oct 28). Every shown configuration but Beam in Mirror (left out of the site), plus the
+# two calibration anchors, seeds 1-2. The runs go in runs/main beside the rest.
+#
+# It extends the scenario matrix (its configs and queues, Kimi K3 on Moonshot's endpoint), with queues of its own
+# here, because a queue's max_cost_usd counts every run in the batch folder that drew on it. Caps (the user's
+# approval, Oct 28: about $52-60 in all): Opus about $23, the brain about $16, the rest about $13-20.
+#
+# The Opus brain's runs here and its 16 scenario runs share one queue, and like Beam's they hold the reflection
+# queue, so they run in the one Reflection batch (scripts/batch_in_order.py --matrix this file). Anthropic-billed
+# runs (Opus, the brain) wait until the user confirms the Console workspace limit is raised.
+#   The others: uv run python -m beambench batch --out runs/main --matrix experiments/heldout-walls.toml \
+#     --configs gemini-4-argon,glm-5-2,deepseek-v4-1-flash,nemotron-3-ultra,inkling,qwen3-8-open,kimi-k3,deepseek-v3,gpt-6-astra
+extends = "no-valid-option.toml"
+seeds = [1, 2]
+tasks = ["heldout-walls"]
+
+[queues.hw-anthropic]  # Opus alone, Claude Code on the API key: about $2.26 a run on coding tasks.
+# $26 stopped it one run short ($25.05 after hw-sync-window's $10.06 and $7.53). For hw-timesheet-export seed 2
+# (seed 1: $0.86; Oct 28, within the walls' approved total) the cap has to clear the queue's estimate of a run,
+# the costliest of its last five ($10.06): $25.05 + $10.06 = $35.11.
+max_cost_usd = 36.0
+parallel = 2
+
+[queues.ext-anthropic-brain]  # The Opus brain: its 16 scenario runs and its 10 wall runs, about $1.59 a run.
+max_cost_usd = 45.0
+
+[queues.hw-gemini]
+max_cost_usd = 5.0
+parallel = 2
+
+[queues.hw-huggingface]  # GLM 5.2 (Hugging Face reports no cost, so this cap can't bind).
+max_cost_usd = 3.0
+parallel = 2
+
+[queues.hw-openrouter]  # DeepSeek V4.1 Flash, Nemotron 3 Ultra, Inkling.
+max_cost_usd = 8.0
+parallel = 3
+
+[queues.hw-qwen-open]
+max_cost_usd = 4.0
+parallel = 2
+
+[queues.hw-kimi]  # Kimi K3 on Moonshot's endpoint (kimi-k3-moonshot, from the scenario matrix).
+max_cost_usd = 9.0
+parallel = 2
+
+[queues.hw-anchor]  # DeepSeek V3, on OpenRouter (StreamLake).
+max_cost_usd = 0.5
+
+[configs.claude-opus-5-5]
+queue = "hw-anthropic"
+
+[configs.opus-brain-beam-worker]
+queue = "ext-anthropic-brain"
+
+[configs.gemini-4-argon]
+queue = "hw-gemini"
+
+[configs.glm-5-2]
+queue = "hw-huggingface"
+
+[configs.deepseek-v4-1-flash]
+queue = "hw-openrouter"
+
+[configs.nemotron-3-ultra]
+queue = "hw-openrouter"
+
+[configs.inkling]
+queue = "hw-openrouter"
+
+[configs.qwen3-8-open]
+queue = "hw-qwen-open"
+
+[configs.kimi-k3]
+queue = "hw-kimi"
+
+[configs.deepseek-v3]
+queue = "hw-anchor"
+
+# Mistral Large 4 on the scenarios and the walls (the user's request, Oct 28), about $0.34 a run by its 30 runs on the
+# 15 coding tasks. Not on the site (interview only), unless the user says otherwise.
+#   uv run python -m beambench batch --out runs/main --matrix experiments/heldout-walls.toml \
+#     --configs mistral-large-4 --tasks no-valid-option,heldout-walls
+[queues.ext-mistral]
+max_cost_usd = 12.0
+parallel = 2
+
+[configs.mistral-large-4]
+queue = "ext-mistral"

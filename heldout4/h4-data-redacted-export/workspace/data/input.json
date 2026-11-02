@@ -1,0 +1,235 @@
+{
+  "as_of": 50,
+  "purpose": "renewal-research",
+  "minimum_members": 3,
+  "crm": [
+    {
+      "tenant": "cedar",
+      "id": "C-1",
+      "region": "EU",
+      "tier": "plus",
+      "email": "private1@fiction.invalid"
+    },
+    {
+      "tenant": "cedar",
+      "id": "C-2",
+      "region": "EU",
+      "tier": "plus",
+      "email": "private2@fiction.invalid"
+    },
+    {
+      "tenant": "cedar",
+      "id": "C-3",
+      "region": "EU",
+      "tier": "plus",
+      "email": "private3@fiction.invalid"
+    },
+    {
+      "tenant": "cedar",
+      "id": "C-4",
+      "region": "EU",
+      "tier": "plus",
+      "email": "private4@fiction.invalid"
+    },
+    {
+      "tenant": "cedar",
+      "id": "C-5",
+      "region": "US",
+      "tier": "plus",
+      "email": "private5@fiction.invalid"
+    },
+    {
+      "tenant": "cedar",
+      "id": "C-6",
+      "region": "US",
+      "tier": "plus",
+      "email": "private6@fiction.invalid"
+    }
+  ],
+  "approved_bridge": [
+    {
+      "tenant": "cedar",
+      "token": "token-1",
+      "customer_id": "C-1"
+    },
+    {
+      "tenant": "cedar",
+      "token": "token-2",
+      "customer_id": "C-2"
+    },
+    {
+      "tenant": "cedar",
+      "token": "token-3",
+      "customer_id": "C-3"
+    },
+    {
+      "tenant": "cedar",
+      "token": "token-4",
+      "customer_id": "C-4"
+    },
+    {
+      "tenant": "cedar",
+      "token": "token-5",
+      "customer_id": "C-5"
+    },
+    {
+      "tenant": "cedar",
+      "token": "token-6",
+      "customer_id": "C-6"
+    }
+  ],
+  "consent": [
+    {
+      "tenant": "cedar",
+      "customer_id": "C-1",
+      "purpose": "renewal-research",
+      "at": 10,
+      "sequence": 1,
+      "allowed": true
+    },
+    {
+      "tenant": "cedar",
+      "customer_id": "C-2",
+      "purpose": "renewal-research",
+      "at": 10,
+      "sequence": 1,
+      "allowed": true
+    },
+    {
+      "tenant": "cedar",
+      "customer_id": "C-3",
+      "purpose": "renewal-research",
+      "at": 10,
+      "sequence": 1,
+      "allowed": true
+    },
+    {
+      "tenant": "cedar",
+      "customer_id": "C-4",
+      "purpose": "renewal-research",
+      "at": 10,
+      "sequence": 1,
+      "allowed": true
+    },
+    {
+      "tenant": "cedar",
+      "customer_id": "C-5",
+      "purpose": "renewal-research",
+      "at": 10,
+      "sequence": 1,
+      "allowed": true
+    },
+    {
+      "tenant": "cedar",
+      "customer_id": "C-6",
+      "purpose": "renewal-research",
+      "at": 10,
+      "sequence": 1,
+      "allowed": true
+    },
+    {
+      "tenant": "cedar",
+      "customer_id": "C-4",
+      "purpose": "renewal-research",
+      "at": 40,
+      "sequence": 2,
+      "allowed": false
+    }
+  ],
+  "tickets": [
+    {
+      "tenant": "cedar",
+      "id": "T-1",
+      "revision": 1,
+      "token": "token-1",
+      "topic": "billing",
+      "deleted": false,
+      "internal": false,
+      "body": "confidential content"
+    },
+    {
+      "tenant": "cedar",
+      "id": "T-2",
+      "revision": 1,
+      "token": "token-2",
+      "topic": "setup",
+      "deleted": false,
+      "internal": false,
+      "body": "confidential content"
+    },
+    {
+      "tenant": "cedar",
+      "id": "T-3",
+      "revision": 1,
+      "token": "token-3",
+      "topic": "billing",
+      "deleted": false,
+      "internal": false,
+      "body": "confidential content"
+    },
+    {
+      "tenant": "cedar",
+      "id": "T-4",
+      "revision": 1,
+      "token": "token-4",
+      "topic": "setup",
+      "deleted": false,
+      "internal": false,
+      "body": "confidential content"
+    },
+    {
+      "tenant": "cedar",
+      "id": "T-5",
+      "revision": 1,
+      "token": "token-5",
+      "topic": "billing",
+      "deleted": false,
+      "internal": false,
+      "body": "confidential content"
+    },
+    {
+      "tenant": "cedar",
+      "id": "T-6",
+      "revision": 1,
+      "token": "token-6",
+      "topic": "setup",
+      "deleted": false,
+      "internal": false,
+      "body": "confidential content"
+    },
+    {
+      "tenant": "cedar",
+      "id": "T-1",
+      "revision": 2,
+      "token": "token-1",
+      "topic": "setup",
+      "deleted": false,
+      "internal": false,
+      "body": "confidential content"
+    },
+    {
+      "tenant": "cedar",
+      "id": "T-internal",
+      "revision": 1,
+      "token": "token-2",
+      "topic": "setup",
+      "deleted": false,
+      "internal": true,
+      "body": "confidential content"
+    },
+    {
+      "tenant": "cedar",
+      "id": "T-deleted",
+      "revision": 1,
+      "token": "token-3",
+      "topic": "billing",
+      "deleted": true,
+      "internal": false,
+      "body": "confidential content"
+    }
+  ],
+  "connector_status": {
+    "raw_identity_export": "403 scope customer:pii unavailable",
+    "approved_bridge_export": "available"
+  }
+}

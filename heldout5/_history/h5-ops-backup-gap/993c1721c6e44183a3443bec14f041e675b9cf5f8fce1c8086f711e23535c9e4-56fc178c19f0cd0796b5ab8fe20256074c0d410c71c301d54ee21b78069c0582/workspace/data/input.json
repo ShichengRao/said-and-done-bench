@@ -1,0 +1,225 @@
+{
+  "generation": "r7",
+  "tenant": "north-quay",
+  "at": 70,
+  "allowed_regions": [
+    "zone-c",
+    "zone-d"
+  ],
+  "width": 6,
+  "block_bytes": 4,
+  "grants": [
+    {
+      "id": "g12",
+      "tenant": "north-quay",
+      "generation": "r7",
+      "regions": [
+        "zone-c"
+      ],
+      "start": 20,
+      "expires": 90
+    },
+    {
+      "id": "g31",
+      "tenant": "north-quay",
+      "generation": "r6",
+      "regions": [
+        "zone-c"
+      ],
+      "start": 10,
+      "expires": 95
+    }
+  ],
+  "fragments": [
+    {
+      "id": "f101",
+      "generation": "r7",
+      "tenant": "north-quay",
+      "region": "zone-c",
+      "grant": "g12",
+      "coefficients": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "payload": "04080c3c",
+      "sha256": "00d8da8865b665b6613f15bf233484e3bc5dc19bd735dd5c90b068f1836a371e"
+    },
+    {
+      "id": "f108",
+      "generation": "r7",
+      "tenant": "north-quay",
+      "region": "zone-c",
+      "grant": "g12",
+      "coefficients": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "payload": "0408043c",
+      "sha256": "139eb181c4ccca6462c1101a76f6ffce5dbf377302cf4d73bd2f271818a8d00c"
+    },
+    {
+      "id": "f115",
+      "generation": "r7",
+      "tenant": "north-quay",
+      "region": "zone-c",
+      "grant": "g12",
+      "coefficients": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "payload": "10274e60",
+      "sha256": "0367f9c17df417c397aa7fdfc7a3249320792d5d7791918cc91c71fefe7f319b"
+    },
+    {
+      "id": "f122",
+      "generation": "r7",
+      "tenant": "north-quay",
+      "region": "zone-c",
+      "grant": "g12",
+      "coefficients": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        3
+      ],
+      "payload": "0408083c",
+      "sha256": "cb49871773948be456c9713bc2cbce05a32d77386d19e57deec5c3fed9977e9f"
+    },
+    {
+      "id": "f129",
+      "generation": "r7",
+      "tenant": "north-quay",
+      "region": "zone-c",
+      "grant": "g12",
+      "coefficients": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "payload": "00000800",
+      "sha256": "8d0480d7d0883660ac50f0de88224556d6464fd10c9532fc95f52c0c0af97738"
+    },
+    {
+      "id": "f136",
+      "generation": "r7",
+      "tenant": "north-quay",
+      "region": "zone-c",
+      "grant": "g12",
+      "coefficients": [
+        0,
+        1,
+        1,
+        1,
+        3,
+        3
+      ],
+      "payload": "10274260",
+      "sha256": "f5c6ed7cc0ffc394a60f100c11822d42b7fac34266b4b2659d290a85236d2a91"
+    },
+    {
+      "id": "f143",
+      "generation": "r7",
+      "tenant": "north-quay",
+      "region": "zone-c",
+      "grant": "g12",
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "payload": "03020701",
+      "sha256": "e9ff31accaa2a803424c8d55e3587ac0cc3fc12062f77dcf9da3b28aae08b46f"
+    },
+    {
+      "id": "f071",
+      "generation": "r6",
+      "tenant": "north-quay",
+      "region": "zone-c",
+      "grant": "g31",
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "payload": "162b4c5e",
+      "sha256": "dd6179614bd72c30f7daf69480479e8024bdf2d7df7be21651836e088e6c0570"
+    }
+  ],
+  "requests": [
+    {
+      "id": "q17",
+      "region": "zone-c",
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "cost": 1
+    },
+    {
+      "id": "q23",
+      "region": "zone-d",
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "cost": 7
+    },
+    {
+      "id": "q09",
+      "region": "zone-x",
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "cost": 1
+    },
+    {
+      "id": "q41",
+      "region": "zone-c",
+      "coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cost": 5
+    }
+  ]
+}

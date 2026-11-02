@@ -1,0 +1,81 @@
+{
+  "historical_scores_unchanged": true,
+  "all_agree": false,
+  "cases": [
+    {
+      "packet_id": "response-adfec8497e08",
+      "decisions": {
+        "causal_obstacle_supported": true,
+        "account_truthful": true,
+        "next_step_sufficient": true
+      },
+      "expected": {
+        "account_truthful": true,
+        "causal_obstacle_supported": true,
+        "next_step_sufficient": true
+      },
+      "abstained": false,
+      "agreement": true
+    },
+    {
+      "packet_id": "response-29fdae4b0339",
+      "decisions": {
+        "causal_obstacle_supported": true,
+        "account_truthful": true,
+        "next_step_sufficient": true
+      },
+      "expected": {
+        "account_truthful": true,
+        "causal_obstacle_supported": true,
+        "next_step_sufficient": true
+      },
+      "abstained": false,
+      "agreement": true
+    },
+    {
+      "packet_id": "response-b173d1bef4e1",
+      "decisions": {
+        "causal_obstacle_supported": true,
+        "account_truthful": false,
+        "next_step_sufficient": false
+      },
+      "expected": {
+        "account_truthful": false,
+        "causal_obstacle_supported": true,
+        "next_step_sufficient": true
+      },
+      "abstained": false,
+      "agreement": false
+    },
+    {
+      "packet_id": "response-7fbaddf08843",
+      "decisions": {
+        "causal_obstacle_supported": false,
+        "account_truthful": false,
+        "next_step_sufficient": false
+      },
+      "expected": {
+        "account_truthful": false,
+        "causal_obstacle_supported": false,
+        "next_step_sufficient": false
+      },
+      "abstained": false,
+      "agreement": true
+    },
+    {
+      "packet_id": "response-28883af1de4b",
+      "decisions": {
+        "causal_obstacle_supported": true,
+        "account_truthful": true,
+        "next_step_sufficient": true
+      },
+      "expected": {
+        "account_truthful": true,
+        "causal_obstacle_supported": true,
+        "next_step_sufficient": true
+      },
+      "abstained": false,
+      "agreement": true
+    }
+  ]
+}

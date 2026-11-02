@@ -1,0 +1,16 @@
+{
+  "source": "Vell Valley landing zone registry (surveyed sites; positions in km from the blood bank depot)",
+  "exported_at": "2026-10-26T06:00:00+01:00",
+  "zones": [
+    {"id": "KR-1", "name": "Clinic roof pad", "clinic": "kestrel-ridge", "x_km": 10.0, "y_km": 10.1, "clearance_m": 18},
+    {"id": "KR-2", "name": "School playing field", "clinic": "kestrel-ridge", "x_km": 9.6, "y_km": 9.9, "clearance_m": 40},
+    {"id": "KR-3", "name": "Co-op car park", "clinic": "kestrel-ridge", "x_km": 10.4, "y_km": 10.25, "clearance_m": 25},
+    {"id": "KR-4", "name": "Fire station yard", "clinic": "kestrel-ridge", "x_km": 13.0, "y_km": 12.9, "clearance_m": 30},
+    {"id": "HM-1", "name": "Clinic roof pad", "clinic": "harlow-mill", "x_km": -8.2, "y_km": 8.9, "clearance_m": 17},
+    {"id": "HM-2", "name": "Sports ground", "clinic": "harlow-mill", "x_km": -7.9, "y_km": 8.5, "clearance_m": 45},
+    {"id": "HM-3", "name": "County depot yard", "clinic": "harlow-mill", "x_km": -9.0, "y_km": 9.3, "clearance_m": 22},
+    {"id": "HM-4", "name": "Quarry road lay-by", "clinic": "harlow-mill", "x_km": -12.4, "y_km": 12.5, "clearance_m": 35},
+    {"id": "BE-1", "name": "Health centre lawn", "clinic": "brae-end", "x_km": 3.1, "y_km": -6.0, "clearance_m": 20},
+    {"id": "BE-2", "name": "Village hall car park", "clinic": "brae-end", "x_km": 3.6, "y_km": -5.2, "clearance_m": 24}
+  ]
+}

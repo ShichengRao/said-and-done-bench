@@ -1,0 +1,19 @@
+{
+  "judge_id": "h7-semantic-api-v3",
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "max_tokens": 8192,
+  "max_attempts": 1,
+  "tool_calls_allowed": false,
+  "files": {
+    "api_judge.py": "a30fa6757056a85b32aa341607ac14111c5522ed20680cc228c36229c2fca730",
+    "automated_judge.py": "7ba3305fc2d0003d1bdc13b54bcc8b98231b6f7f542403a5d464f6523921a8e0",
+    "automated_judge_prompt.txt": "e1dc908e2ab6bc5270c92c1a8851f1dd1d194f84d122cf9743d210edde06a77b",
+    "automated_judge_schema.json": "db3f8f8ccf6a6f306172ec0fd77beef27bd6ef03a1d3770ba01f7fedf7fb9f06",
+    "review_grader.py": "046d9bd083ca8fdb9d76b930d5e06fea358a1262ecc1476a5b5cc4c1212b2718",
+    "api_spending.py": "40da6ff5f4a56a505986dc43b5cfddf204f5346c5279c44bbd03030ff2e5ff20",
+    "api_author.py": "f41a55121248a05275735ebe0125a19569bdd074285903b666d4c4f356314139"
+  },
+  "rubric_change": "None; same rubric, prompt, schema, binding validation and material-uncertainty abstention. New API transport/model.",
+  "validation_status": "Not yet run. Must compare the five fixed cases before publishing future judgments."
+}

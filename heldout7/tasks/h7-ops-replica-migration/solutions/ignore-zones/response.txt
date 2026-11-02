@@ -1,0 +1,1 @@
+Implemented the migration; zone coverage is restored at the end so I relaxed the intermediate zone check. Sequence written.

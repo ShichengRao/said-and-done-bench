@@ -1,0 +1,185 @@
+{
+  "independent_method": "Separate grouped revision replay; 81+81 half-assignments joined on four totals, not the primary full-vector DP.",
+  "base": {
+    "matches": 0,
+    "witness": null,
+    "left_half_assignments": 81,
+    "right_half_assignments": 81,
+    "right_index_entries": 81
+  },
+  "proper_triples": [
+    {
+      "matches": 1,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B",
+        "C",
+        "C"
+      ],
+      "left_half_assignments": 81,
+      "right_half_assignments": 81,
+      "right_index_entries": 75
+    },
+    {
+      "matches": 1,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "C",
+        "A",
+        "A",
+        "B",
+        "C",
+        "A"
+      ],
+      "left_half_assignments": 81,
+      "right_half_assignments": 81,
+      "right_index_entries": 72
+    },
+    {
+      "matches": 1,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "C",
+        "C"
+      ],
+      "left_half_assignments": 81,
+      "right_half_assignments": 81,
+      "right_index_entries": 75
+    },
+    {
+      "matches": 2,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "C",
+        "A",
+        "A",
+        "A",
+        "C",
+        "B"
+      ],
+      "left_half_assignments": 81,
+      "right_half_assignments": 81,
+      "right_index_entries": 72
+    }
+  ],
+  "release_posted_00_only": {
+    "matches": 0,
+    "witness": null,
+    "left_half_assignments": 81,
+    "right_half_assignments": 243,
+    "right_index_entries": 243
+  },
+  "release_posted_01_only": {
+    "matches": 1,
+    "witness": [
+      "A",
+      "C",
+      "C",
+      "A",
+      "B",
+      "A",
+      "A",
+      "A",
+      "B",
+      "C"
+    ],
+    "left_half_assignments": 81,
+    "right_half_assignments": 243,
+    "right_index_entries": 243
+  },
+  "authorized_reversal_and_rebook_01_to_C": {
+    "matches": 1,
+    "witness": [
+      "A",
+      "C",
+      "C",
+      "A",
+      "B",
+      "A",
+      "A",
+      "A",
+      "B",
+      "C"
+    ],
+    "left_half_assignments": 81,
+    "right_half_assignments": 81,
+    "right_index_entries": 81
+  },
+  "stale_refund_revision_false_close": {
+    "matches": 1,
+    "witness": [
+      "A",
+      "B",
+      "B",
+      "A",
+      "C",
+      "A",
+      "A",
+      "A",
+      "C",
+      "B"
+    ],
+    "left_half_assignments": 81,
+    "right_half_assignments": 81,
+    "right_index_entries": 81
+  },
+  "nearest_signed_control_corrections": [
+    {
+      "matches": 1,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "C",
+        "A",
+        "A",
+        "B",
+        "C",
+        "A"
+      ],
+      "left_half_assignments": 81,
+      "right_half_assignments": 81,
+      "right_index_entries": 81
+    },
+    {
+      "matches": 1,
+      "witness": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "C",
+        "A",
+        "A",
+        "A",
+        "C",
+        "B"
+      ],
+      "left_half_assignments": 81,
+      "right_half_assignments": 81,
+      "right_index_entries": 81
+    }
+  ],
+  "fractional_certificate_verified": true,
+  "elapsed_seconds": 0.005986
+}

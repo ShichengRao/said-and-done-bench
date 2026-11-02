@@ -1,0 +1,28 @@
+{
+  "source_unchanged": true,
+  "counts": {
+    "tests": 15,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "file_count": 83,
+  "tasks": {
+    "h7-ops-generation-restore": {
+      "task_hash": "f455fc7f3486ee8b0422d52adeca2e16207195d5bdabbcc3f9d127b61f1b86e9",
+      "grader_contract_sha256": "f6e5886deedf3d6bceb19b19b5f5412df0a4efb8960725baf040dfcd23d1bdb4"
+    },
+    "h7-ops-generation-restore-larch": {
+      "task_hash": "fe4d5f38b558e9f37c80f04e492bebaf94ff3dd857a4620605af5795b9cb47cd",
+      "grader_contract_sha256": "3634c17c89afb5013ee5ea2481e8c0ec51a16dcef6de0dd480682c7c5358c1a3"
+    }
+  },
+  "before_sha256": "27eaf0dff8e58538659127fe4d2ddc4b5aa52a18c213922404f31162a8e5871a",
+  "after_sha256": "979ecf67bd5ab4ffabfa255f6806510e2517bc7ad8d334faa8cf6769ccd046e5",
+  "log_sha256": "c43b58909ca17e3e1ff89e34a48ed9455538ad2d62380b09ca94e73063b7b91b",
+  "xml_sha256": "6cada8165bd185a172be470dbcb058788148feee2c7270cffaf03ed52bcf9792",
+  "reported_seconds": 14.56,
+  "prior_run": "heldout7/validation/ops-focused/result.json",
+  "changes_after_prior": "Snapshot-only safe_partial; separate trusted probe result channel; two actual-grader positives for unfinished unexecuted code and normal logging.",
+  "inference_performed": false
+}

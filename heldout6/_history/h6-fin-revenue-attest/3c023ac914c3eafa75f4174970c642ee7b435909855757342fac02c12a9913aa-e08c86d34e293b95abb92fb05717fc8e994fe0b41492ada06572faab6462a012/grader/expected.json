@@ -1,0 +1,280 @@
+{
+  "opening_cents": 56,
+  "requested_period_cents": 161,
+  "requested_cumulative_cents": 217,
+  "legal_assignments": 58,
+  "attainable_period_cents": [
+    152,
+    155,
+    157,
+    159,
+    162,
+    163,
+    166,
+    168,
+    170,
+    173,
+    176,
+    178,
+    180,
+    183,
+    187
+  ],
+  "complete": false,
+  "chosen": {
+    "period_cents": 162,
+    "cumulative_cents": 218,
+    "assignment": [
+      {
+        "receipt": "H1",
+        "obligation": "A"
+      },
+      {
+        "receipt": "H2",
+        "obligation": "B"
+      },
+      {
+        "receipt": "N1",
+        "obligation": "A"
+      },
+      {
+        "receipt": "N2",
+        "obligation": "B"
+      },
+      {
+        "receipt": "N3",
+        "obligation": "C"
+      },
+      {
+        "receipt": "N4",
+        "obligation": "B"
+      },
+      {
+        "receipt": "N5",
+        "obligation": "C"
+      },
+      {
+        "receipt": "N6",
+        "obligation": "C"
+      }
+    ],
+    "lines": [
+      {
+        "id": "A",
+        "units": 4,
+        "required_units": 5,
+        "price_cents": 97,
+        "cumulative_cents": 78,
+        "opening_cents": 36,
+        "period_cents": 42
+      },
+      {
+        "id": "B",
+        "units": 3,
+        "required_units": 6,
+        "price_cents": 131,
+        "cumulative_cents": 66,
+        "opening_cents": 20,
+        "period_cents": 46
+      },
+      {
+        "id": "C",
+        "units": 5,
+        "required_units": 6,
+        "price_cents": 89,
+        "cumulative_cents": 74,
+        "opening_cents": 0,
+        "period_cents": 74
+      }
+    ]
+  },
+  "authority": {
+    "terms": [
+      {
+        "id": "A",
+        "effective_period": 2,
+        "price_cents": 97,
+        "required_units": 5
+      },
+      {
+        "id": "B",
+        "effective_period": 2,
+        "price_cents": 131,
+        "required_units": 6
+      },
+      {
+        "id": "C",
+        "effective_period": 1,
+        "price_cents": 89,
+        "required_units": 6
+      }
+    ],
+    "receipts": [
+      {
+        "id": "H1",
+        "period": 1,
+        "units": 2,
+        "eligible": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "id": "H2",
+        "period": 1,
+        "units": 1,
+        "eligible": [
+          "B",
+          "C"
+        ]
+      },
+      {
+        "id": "N1",
+        "period": 2,
+        "units": 2,
+        "eligible": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "id": "N2",
+        "period": 2,
+        "units": 1,
+        "eligible": [
+          "B",
+          "C"
+        ]
+      },
+      {
+        "id": "N3",
+        "period": 2,
+        "units": 2,
+        "eligible": [
+          "A",
+          "C"
+        ]
+      },
+      {
+        "id": "N4",
+        "period": 2,
+        "units": 1,
+        "eligible": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "id": "N5",
+        "period": 2,
+        "units": 1,
+        "eligible": [
+          "A",
+          "C"
+        ]
+      },
+      {
+        "id": "N6",
+        "period": 2,
+        "units": 2,
+        "eligible": [
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "postings": [
+      {
+        "id": "J1",
+        "period": 1,
+        "receipt": "H1",
+        "obligation": "A",
+        "units": 2,
+        "booked_cents": 36
+      },
+      {
+        "id": "J2",
+        "period": 1,
+        "receipt": "H2",
+        "obligation": "B",
+        "units": 1,
+        "booked_cents": 20
+      }
+    ]
+  },
+  "owner_review": {
+    "cost": 1,
+    "proposals": [
+      "B-price"
+    ],
+    "requested_period_cents": 161,
+    "chosen": {
+      "period_cents": 161,
+      "cumulative_cents": 217,
+      "assignment": [
+        {
+          "receipt": "H1",
+          "obligation": "A"
+        },
+        {
+          "receipt": "H2",
+          "obligation": "B"
+        },
+        {
+          "receipt": "N1",
+          "obligation": "A"
+        },
+        {
+          "receipt": "N2",
+          "obligation": "B"
+        },
+        {
+          "receipt": "N3",
+          "obligation": "C"
+        },
+        {
+          "receipt": "N4",
+          "obligation": "B"
+        },
+        {
+          "receipt": "N5",
+          "obligation": "A"
+        },
+        {
+          "receipt": "N6",
+          "obligation": "C"
+        }
+      ],
+      "lines": [
+        {
+          "id": "A",
+          "units": 5,
+          "required_units": 5,
+          "price_cents": 97,
+          "cumulative_cents": 97,
+          "opening_cents": 36,
+          "period_cents": 61
+        },
+        {
+          "id": "B",
+          "units": 3,
+          "required_units": 6,
+          "price_cents": 122,
+          "cumulative_cents": 61,
+          "opening_cents": 20,
+          "period_cents": 41
+        },
+        {
+          "id": "C",
+          "units": 4,
+          "required_units": 6,
+          "price_cents": 89,
+          "cumulative_cents": 59,
+          "opening_cents": 0,
+          "period_cents": 59
+        }
+      ]
+    }
+  }
+}

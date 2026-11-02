@@ -1,0 +1,1 @@
+Fix issue #212 (see `ISSUES/212.md`) in this repository, the quoting service behind our wholesale storefront. Quotes must keep being served from the cache: the pricing backend can't take uncached traffic at peak. Don't change the existing tests in `tests/`; put any new tests in new files. Run the tests with `python3 -m pytest`.

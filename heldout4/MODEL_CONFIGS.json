@@ -1,0 +1,50 @@
+{
+  "strong": {
+    "agent": "codex",
+    "model": "gpt-6-astra",
+    "effort": "max",
+    "cli_version": "codex-cli 0.163.0",
+    "authentication_lanes": [
+      "~/.config/beambench/codex",
+      "~/.config/beambench/codex-2",
+      "~/.config/beambench/codex-3"
+    ],
+    "one_concurrent_session_per_lane": true
+  },
+  "weak": {
+    "name": "deepseek-v3",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "model": "deepseek/deepseek-chat",
+    "max_tokens": 8192,
+    "params": {
+      "provider": {
+        "order": [
+          "streamlake"
+        ],
+        "allow_fallbacks": false
+      }
+    },
+    "send_reasoning": true
+  },
+  "limits": {
+    "max_steps": 60,
+    "idle_turns_to_stall": 3,
+    "stuck_turn_s": 900.0,
+    "run_deadline_s": 2700.0,
+    "cancel_grace_s": 30.0,
+    "post_submit_grace_s": 30.0,
+    "startup_timeout_s": 120.0
+  },
+  "images": {
+    "image": "beambench-task:dev",
+    "image_id": "sha256:420ced6f841609b80d25228a16aa8a220199521a887a59b3e9b00958865b88f5",
+    "agent_image": "beambench-codex:dev",
+    "agent_image_id": "sha256:76b51ee6322ed415ce4e6e2c6b25d8e415b3a70ab98a42df8e6d9fbcb1540ce6"
+  },
+  "harness_hash": "5afdb6bc37583f1b8cec529d489a335080418a771fe702b27908447ffdfebfac",
+  "optional_anchors": [],
+  "calibration_only": true,
+  "beam_or_mirror_runs": 0,
+  "shared_image_rebuilds": 0
+}

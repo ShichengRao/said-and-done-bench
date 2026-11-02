@@ -1,0 +1,38 @@
+{
+  "customer": "Aster Relay",
+  "datasets": [
+    {
+      "id": "accounts",
+      "link": "bd",
+      "nodes": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "contacts",
+      "link": "cd",
+      "nodes": [
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "events",
+      "link": "ae",
+      "nodes": [
+        "a",
+        "e"
+      ]
+    },
+    {
+      "id": "tickets",
+      "link": "be",
+      "nodes": [
+        "b",
+        "e"
+      ]
+    }
+  ],
+  "rollout": "AR-REGION-2026-11"
+}

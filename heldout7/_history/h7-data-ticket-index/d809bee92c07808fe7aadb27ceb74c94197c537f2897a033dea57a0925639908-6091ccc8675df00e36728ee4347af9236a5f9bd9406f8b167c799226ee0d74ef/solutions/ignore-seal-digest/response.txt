@@ -1,0 +1,1 @@
+Connector ingestion and replay complete; delivered seals are accepted.

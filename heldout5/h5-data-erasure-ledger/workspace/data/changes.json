@@ -1,0 +1,61 @@
+[
+  {
+    "object": "o2",
+    "op": "put",
+    "seq": 12,
+    "value": {
+      "identities": [
+        {
+          "alias": "a9",
+          "at": 25,
+          "tenant": "t31"
+        }
+      ],
+      "object": "o2",
+      "parents": [],
+      "payload": {
+        "label": "v21",
+        "nested": {
+          "x": 2
+        },
+        "tags": [
+          "retain-me"
+        ]
+      },
+      "version": "v21"
+    }
+  },
+  {
+    "object": "o1",
+    "op": "delete",
+    "seq": 18
+  },
+  {
+    "object": "o6",
+    "op": "put",
+    "seq": 21,
+    "value": {
+      "identities": [],
+      "object": "o6",
+      "parents": [
+        "v13",
+        "v14"
+      ],
+      "payload": {
+        "label": "v22",
+        "nested": {
+          "x": 2
+        },
+        "tags": [
+          "retain-me"
+        ]
+      },
+      "version": "v22"
+    }
+  },
+  {
+    "object": "o6",
+    "op": "delete",
+    "seq": 35
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "batch": "merchant-close-2026-09-30",
+  "as_of": 100,
+  "currency": "USD",
+  "merchants": [
+    "A",
+    "B",
+    "C"
+  ]
+}

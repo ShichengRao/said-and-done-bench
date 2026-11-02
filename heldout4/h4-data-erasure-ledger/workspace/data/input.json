@@ -1,0 +1,101 @@
+{
+  "as_of": 50,
+  "requests": [
+    {
+      "tenant": "cedar",
+      "subject": "S-1",
+      "effective": 40
+    },
+    {
+      "tenant": "cedar",
+      "subject": "S-2",
+      "effective": 60
+    }
+  ],
+  "records": [
+    {
+      "tenant": "cedar",
+      "id": "R-1",
+      "subject": "S-1",
+      "source": "crm",
+      "fields": {
+        "email": {
+          "class": "contact",
+          "collected": 10,
+          "value": "private@fiction.invalid"
+        },
+        "invoice": {
+          "class": "finance",
+          "collected": 15,
+          "value": "inv-17"
+        },
+        "new_preference": {
+          "class": "profile",
+          "collected": 45,
+          "value": "fresh"
+        }
+      }
+    },
+    {
+      "tenant": "cedar",
+      "id": "R-2",
+      "subject": "S-1",
+      "source": "support",
+      "fields": {
+        "body": {
+          "class": "contact",
+          "collected": 8,
+          "value": "private note"
+        }
+      }
+    },
+    {
+      "tenant": "larch",
+      "id": "R-1",
+      "subject": "S-1",
+      "source": "crm",
+      "fields": {
+        "email": {
+          "class": "contact",
+          "collected": 1,
+          "value": "other@fiction.invalid"
+        }
+      }
+    },
+    {
+      "tenant": "cedar",
+      "id": "R-3",
+      "subject": "S-2",
+      "source": "crm",
+      "fields": {
+        "email": {
+          "class": "contact",
+          "collected": 1,
+          "value": "future@fiction.invalid"
+        }
+      }
+    }
+  ],
+  "holds": [
+    {
+      "id": "hold-finance",
+      "tenant": "cedar",
+      "subject": "S-1",
+      "classes": [
+        "finance"
+      ],
+      "starts": 0,
+      "ends": 100
+    },
+    {
+      "id": "expired-contact",
+      "tenant": "cedar",
+      "subject": "S-1",
+      "classes": [
+        "contact"
+      ],
+      "starts": 0,
+      "ends": 50
+    }
+  ]
+}

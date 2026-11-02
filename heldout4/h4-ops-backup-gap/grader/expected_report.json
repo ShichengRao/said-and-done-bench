@@ -1,0 +1,19 @@
+{
+  "target": 128,
+  "complete": false,
+  "recoverable_through": 116,
+  "available_path": [
+    "full-100",
+    "inc-108",
+    "inc-116"
+  ],
+  "recovery_path": [
+    "full-100",
+    "inc-108",
+    "inc-116",
+    "inc-128"
+  ],
+  "missing_keys": [
+    "key-legacy"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "purpose": "Validate transport on smallest no-code control first, then four historical cases on two existing auth lanes; selected before any judge outcomes.",
+  "order": [
+    "response-28883af1de4b",
+    "response-adfec8497e08",
+    "response-29fdae4b0339",
+    "response-b173d1bef4e1",
+    "response-7fbaddf08843"
+  ],
+  "max_parallel": 2,
+  "attempts_per_input": 1,
+  "automatic_retries": false
+}

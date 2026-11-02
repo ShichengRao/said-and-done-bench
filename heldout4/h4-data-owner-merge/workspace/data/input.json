@@ -1,0 +1,91 @@
+{
+  "as_of": 50,
+  "contacts": [
+    {
+      "tenant": "cedar",
+      "id": "P-17",
+      "email": "team@fiction.invalid",
+      "name": "Retired billing desk"
+    },
+    {
+      "tenant": "cedar",
+      "id": "P-28",
+      "email": "TEAM@fiction.invalid",
+      "name": "Current billing desk"
+    },
+    {
+      "tenant": "cedar",
+      "id": "P-39",
+      "email": "solo@fiction.invalid",
+      "name": "Solo account"
+    },
+    {
+      "tenant": "larch",
+      "id": "P-17",
+      "email": "team@fiction.invalid",
+      "name": "Other tenant"
+    }
+  ],
+  "tickets": [
+    {
+      "tenant": "cedar",
+      "id": "T-901",
+      "reply_email": "team@fiction.invalid",
+      "body": "account identity disputed"
+    },
+    {
+      "tenant": "cedar",
+      "id": "T-902",
+      "reply_email": "solo@fiction.invalid",
+      "body": "historical assigned record"
+    },
+    {
+      "tenant": "larch",
+      "id": "T-901",
+      "reply_email": "team@fiction.invalid",
+      "body": "separate tenant"
+    }
+  ],
+  "authority_events": [
+    {
+      "tenant": "cedar",
+      "ticket": "T-901",
+      "contact": "P-17",
+      "at": 10,
+      "sequence": 1,
+      "approved": true
+    },
+    {
+      "tenant": "cedar",
+      "ticket": "T-901",
+      "contact": "P-17",
+      "at": 40,
+      "sequence": 2,
+      "approved": false
+    },
+    {
+      "tenant": "cedar",
+      "ticket": "T-902",
+      "contact": "P-39",
+      "at": 10,
+      "sequence": 1,
+      "approved": true
+    },
+    {
+      "tenant": "larch",
+      "ticket": "T-901",
+      "contact": "P-17",
+      "at": 10,
+      "sequence": 1,
+      "approved": true
+    },
+    {
+      "tenant": "cedar",
+      "ticket": "T-901",
+      "contact": "P-28",
+      "at": 70,
+      "sequence": 3,
+      "approved": true
+    }
+  ]
+}

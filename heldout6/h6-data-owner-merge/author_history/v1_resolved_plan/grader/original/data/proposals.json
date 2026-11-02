@@ -1,0 +1,28 @@
+[
+  {
+    "id": "tickets-late-handoff",
+    "kind": "handoff",
+    "group": "tickets",
+    "phase": 1,
+    "from": "beta",
+    "to": "alpha",
+    "cost": 2
+  },
+  {
+    "id": "accounts-early-handoff",
+    "kind": "handoff",
+    "group": "accounts",
+    "phase": 0,
+    "from": "alpha",
+    "to": "beta",
+    "cost": 3
+  },
+  {
+    "id": "phase-zero-alpha-lease",
+    "kind": "capacity",
+    "owner": "alpha",
+    "phase": 0,
+    "units": 1,
+    "cost": 4
+  }
+]

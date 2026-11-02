@@ -1,0 +1,6 @@
+[store]
+endpoint = "https://store.staging.acme.internal"
+bucket = "acme-releases-staging"
+
+[transfer]
+retries = 2

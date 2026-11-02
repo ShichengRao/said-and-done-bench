@@ -1,0 +1,13 @@
+{
+  "run": "runs/calibration-h6/h6-ops-quorum-cut/infraretry1-deepseek-v3",
+  "outcome": "complete",
+  "scored": true,
+  "verified_success": false,
+  "writers_frozen": true,
+  "task_hash": "3268ecfa857a2a32b36e99fbb9282176c06c2368e81c78c04857258e57e36123",
+  "grader_hash": "7ac09699a38c1059dabbbbab2fb34c8df8dd81a30c233b92d45ca91c0ee3a8f9",
+  "record_sha256": "4b518388381b608689eeab7f594543039aa185ad46213e2297e86dc961db92a4",
+  "grade_sha256": "58740d7b6a3657f0cddeb5e9e4ae91ced15e9a82a16174abf02b4ad0d6676805",
+  "retry_review": "heldout6/validation/20261101_QUORUM_V3_INFRA_REVIEW.json",
+  "interpretation": "One reviewed fresh attempt after an unscored provider error; both attempts retained. No model/source/provider/budget change."
+}

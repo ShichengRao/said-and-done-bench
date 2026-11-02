@@ -1,0 +1,39 @@
+{
+  "ablations": {
+    "accepted_F_reresolved_to_revision_2": 3,
+    "both_reports_on_every_O1_route": 12,
+    "entitled_but_reports_at_stage_3": 0,
+    "scenario_known_up_front": 144
+  },
+  "infeasible_cores": [
+    [
+      "X-cash",
+      "X-pledge",
+      "Y-cash",
+      "Y-pledge"
+    ]
+  ],
+  "literal_feasible_root_choices": [],
+  "literal_plan_counts": {
+    "X-cash": 4,
+    "X-pledge": 3,
+    "Y-cash": 4,
+    "Y-pledge": 3
+  },
+  "triple_policy_counts": {
+    "X-cash": 6,
+    "X-pledge": 6,
+    "Y-cash": 6,
+    "Y-pledge": 6
+  },
+  "variant_policy_counts": {
+    "agreement_without_X-cash": 6,
+    "agreement_without_Y-pledge": 6,
+    "alternate_route_entitled_to_Y_report": 6,
+    "customer_records": 0,
+    "entitled_unordered_ledger": 6,
+    "extra_P_collateral_at_stage_3": 24,
+    "first_route_entitled_to_X_report": 6,
+    "scenario_confirmed_at_stage_2": 12
+  }
+}

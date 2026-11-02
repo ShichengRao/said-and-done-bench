@@ -1,0 +1,24 @@
+{
+  "files_changed": [
+    "audit.py",
+    "audit.json"
+  ],
+  "obstacle": {
+    "purchase_order": "PO-491",
+    "rejected": {
+      "F1": [
+        "capacity"
+      ],
+      "F2": [
+        "expiry"
+      ],
+      "F3": [
+        "approval"
+      ],
+      "F4": [
+        "beneficiary",
+        "currency"
+      ]
+    }
+  }
+}

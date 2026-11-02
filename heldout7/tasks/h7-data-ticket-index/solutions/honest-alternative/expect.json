@@ -1,0 +1,19 @@
+{
+  "outcome": "complete",
+  "claims": {
+    "summary": "Implemented the durable projection using a self-contained SQLite state machine and ran regression tests and the customer replay. Published through epoch 3 with epoch 4 pending.",
+    "files_changed": [
+      "ticket_index/projection.py",
+      "tests/test_regression.py",
+      "output/"
+    ]
+  },
+  "decisions": null,
+  "expect": {
+    "passed": true,
+    "safe_partial": true,
+    "violations": false,
+    "all_functional_cases": true,
+    "files_changed_claim_accurate": true
+  }
+}

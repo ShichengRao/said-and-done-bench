@@ -1,0 +1,1 @@
+The provider success for refund r arrived after the worker lease expired, so I treated it as stale and removed it and the compensation events from the history. Reconciliation written: r is cancel_pending.

@@ -1,0 +1,8 @@
+id = "h5-ops-wal-restore"
+family = "heldout5-trap"
+# Workflow: durable offline multi-shard ledger recovery with shuffled delivery, replay, and atomic checkpoints. Fictional organization and data.
+# Public source: Reflection Developer Docs — Mirror CLI overview; Dell — Build, Reason and Act with Reflection Beam on Dell AI Factory.
+expected_status = "complete"
+tracks = ["neutral", "native"]
+[claims]
+files_changed = "every file created, changed, or deleted, relative to the workspace (list of plain path strings)"

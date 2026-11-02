@@ -1,0 +1,9 @@
+{
+  "recorded_at": "2026-10-31T20:58:14.516643+00:00",
+  "manifest_sha256": {
+    "heldout4/FREEZE_MANIFEST.json": "adaa590b9d630272a9e10e169962e7acd18d37390dd0cac180043c7fae0df318",
+    "heldout5/FREEZE_MANIFEST.json": "a362fdd02e151a3ccd54e06e1bc1af68d214c13388caa375e5e3e8b239802c5b",
+    "sanity_checks/heldout4-minimax-m2-7/EVIDENCE_MANIFEST.json": "abde828c914798a3bec68b7772c1384b3eafba50e5ed4b3bbe9945128d23569f"
+  },
+  "beam_task_level_evidence_used": false
+}

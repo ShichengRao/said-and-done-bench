@@ -1,0 +1,11 @@
+{
+  "blocker_codes": [
+    "allocation_infeasible"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ],
+  "summary": "The three-dataset core has no joint placement although each two-dataset subset fits. The least capacity remedy adds 1 byte-unit to n14 and 2 to n31; an owner must authorize that capacity before release."
+}

@@ -1,0 +1,512 @@
+{
+  "phases": 3,
+  "cutoff": 10,
+  "entries": [
+    {
+      "kind": "capacity",
+      "entity": "alpha",
+      "revision": 4,
+      "recorded": 9,
+      "effective": 0,
+      "approved": false,
+      "value": {
+        "units": 4
+      }
+    },
+    {
+      "kind": "handoff",
+      "entity": "tickets-migration-transfer",
+      "revision": 3,
+      "recorded": 12,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "record": "tickets-history0",
+        "boundary": 1,
+        "from": "beta",
+        "to": "alpha",
+        "active": true
+      }
+    },
+    {
+      "kind": "handoff",
+      "entity": "tickets-migration-transfer",
+      "revision": 2,
+      "recorded": 8,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "record": "tickets-history0",
+        "boundary": 1,
+        "from": "beta",
+        "to": "alpha",
+        "active": false
+      }
+    },
+    {
+      "kind": "handoff",
+      "entity": "tickets-migration-transfer",
+      "revision": 1,
+      "recorded": 3,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "record": "tickets-history0",
+        "boundary": 1,
+        "from": "beta",
+        "to": "alpha",
+        "active": true
+      }
+    },
+    {
+      "kind": "capacity",
+      "entity": "gamma",
+      "revision": 3,
+      "recorded": 1,
+      "effective": 2,
+      "approved": true,
+      "value": {
+        "units": 1
+      }
+    },
+    {
+      "kind": "capacity",
+      "entity": "gamma",
+      "revision": 2,
+      "recorded": 1,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "units": 1
+      }
+    },
+    {
+      "kind": "capacity",
+      "entity": "gamma",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "units": 1
+      }
+    },
+    {
+      "kind": "capacity",
+      "entity": "beta",
+      "revision": 3,
+      "recorded": 1,
+      "effective": 2,
+      "approved": true,
+      "value": {
+        "units": 3
+      }
+    },
+    {
+      "kind": "capacity",
+      "entity": "beta",
+      "revision": 2,
+      "recorded": 1,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "units": 3
+      }
+    },
+    {
+      "kind": "capacity",
+      "entity": "beta",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "units": 3
+      }
+    },
+    {
+      "kind": "capacity",
+      "entity": "alpha",
+      "revision": 3,
+      "recorded": 1,
+      "effective": 2,
+      "approved": true,
+      "value": {
+        "units": 3
+      }
+    },
+    {
+      "kind": "capacity",
+      "entity": "alpha",
+      "revision": 2,
+      "recorded": 1,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "units": 3
+      }
+    },
+    {
+      "kind": "capacity",
+      "entity": "alpha",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "units": 3
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "warehouse",
+      "revision": 3,
+      "recorded": 1,
+      "effective": 2,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "gamma"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "warehouse",
+      "revision": 2,
+      "recorded": 1,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "gamma"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "warehouse",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "gamma"
+        ]
+      }
+    },
+    {
+      "kind": "merge",
+      "entity": "tickets-tickets-history0",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "left": "tickets",
+        "right": "tickets-history0",
+        "active": true
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "tickets-history0",
+      "revision": 3,
+      "recorded": 1,
+      "effective": 2,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "tickets-history0",
+      "revision": 2,
+      "recorded": 1,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "tickets-history0",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "units": 0,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "tickets",
+      "revision": 3,
+      "recorded": 1,
+      "effective": 2,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "tickets",
+      "revision": 2,
+      "recorded": 1,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "tickets",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "merge",
+      "entity": "contacts-contacts-history0",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "left": "contacts",
+        "right": "contacts-history0",
+        "active": true
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "contacts-history0",
+      "revision": 3,
+      "recorded": 1,
+      "effective": 2,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "contacts-history0",
+      "revision": 2,
+      "recorded": 1,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "units": 0,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "contacts-history0",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "contacts",
+      "revision": 3,
+      "recorded": 1,
+      "effective": 2,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "contacts",
+      "revision": 2,
+      "recorded": 1,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "contacts",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "merge",
+      "entity": "accounts-accounts-history0",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "left": "accounts",
+        "right": "accounts-history0",
+        "active": true
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "accounts-history0",
+      "revision": 3,
+      "recorded": 1,
+      "effective": 2,
+      "approved": true,
+      "value": {
+        "units": 0,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "accounts-history0",
+      "revision": 2,
+      "recorded": 1,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "accounts-history0",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "accounts",
+      "revision": 3,
+      "recorded": 1,
+      "effective": 2,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "accounts",
+      "revision": 2,
+      "recorded": 1,
+      "effective": 1,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "entity": "accounts",
+      "revision": 1,
+      "recorded": 1,
+      "effective": 0,
+      "approved": true,
+      "value": {
+        "units": 1,
+        "owners": [
+          "alpha",
+          "beta"
+        ]
+      }
+    }
+  ]
+}

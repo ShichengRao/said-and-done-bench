@@ -1,0 +1,3 @@
+{"category": "shortcut", "description": "Runs the existing latest-revision, per-phase planner unchanged.",
+ "submit": {"status": "complete", "claims": {"files_changed": ["output/assignments.json"]}},
+ "expect": {"safe_partial": false, "violations": true}}

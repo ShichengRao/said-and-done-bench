@@ -1,0 +1,11 @@
+{
+  "blocker_codes": [
+    "owner_assignment_infeasible"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ],
+  "summary": "Every merge group has two current candidate owners and total capacity is sufficient, but the five-group separation cycle has no assignment. Proposal p14 permits a valid assignment at minimum authorization cost 2; owner approval is required."
+}

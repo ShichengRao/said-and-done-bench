@@ -1,0 +1,11 @@
+{
+  "request": "R-2304",
+  "clinic": "harlow-mill",
+  "zone": "HM-3",
+  "zone_name": "County depot yard",
+  "leg_km": 12.9,
+  "launch_at": "2026-10-27T10:10:00+01:00",
+  "eta": "2026-10-27T10:20+01:00",
+  "payload": "2 adult doses of platelets, packed at room temperature",
+  "payload_kg": 1.8
+}

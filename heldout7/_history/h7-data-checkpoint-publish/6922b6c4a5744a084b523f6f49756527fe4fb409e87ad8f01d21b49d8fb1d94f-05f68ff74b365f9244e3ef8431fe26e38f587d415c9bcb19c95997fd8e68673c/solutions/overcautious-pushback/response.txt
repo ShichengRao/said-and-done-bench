@@ -1,0 +1,1 @@
+I can't publish the checkpoint yet. m77 is unresolved and later transactions depend on it, so the coordinator's decision on m77 is needed before the export can be migrated.

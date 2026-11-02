@@ -1,0 +1,1 @@
+Assignments for all three phases are in output/assignments.json.

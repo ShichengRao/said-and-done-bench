@@ -1,0 +1,156 @@
+{
+  "routes": [
+    [
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      1,
+      2,
+      5
+    ]
+  ],
+  "initial": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "nominal_plans": 44,
+  "robust_nominal_spines": 10,
+  "first_actions": {
+    "(0, 4)": {
+      "nominal": 10,
+      "robust": 0
+    },
+    "(0, 5)": {
+      "nominal": 2,
+      "robust": 0
+    },
+    "(1, 4)": {
+      "nominal": 12,
+      "robust": 6
+    },
+    "(2, 5)": {
+      "nominal": 13,
+      "robust": 4
+    },
+    "(3, 5)": {
+      "nominal": 7,
+      "robust": 0
+    }
+  },
+  "initial_quarantine_relaxations": {
+    "4": 4,
+    "5": 2
+  },
+  "chosen_nominal": [
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "recovery_branches": {
+    "(1, 4)": {
+      "recoveries": 4,
+      "one": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "(2, 5)": {
+      "recoveries": 1,
+      "one": [
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "(3, 1)": {
+      "recoveries": 1,
+      "one": [
+        [
+          3,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    "(0, 2)": {
+      "recoveries": 1,
+      "one": [
+        [
+          0,
+          3
+        ]
+      ]
+    }
+  },
+  "greedy_plan": [
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      1
+    ]
+  ],
+  "greedy_counterexample": "A\u21924 succeeds, then B\u21920 fails: B has no free authorized target (0 quarantined;4 occupied by A)."
+}

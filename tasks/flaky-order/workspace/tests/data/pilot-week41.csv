@@ -1,0 +1,7 @@
+# Pinecrest Outfitters pilot store (Harbor Street), week 41
+# region,product,quantity,unit_cents
+ne,lantern,4,2500
+ne,stove,2,8999
+ne,tarp,6,1200
+ne,canteen,3,1450
+ne,lantern,-1,2500

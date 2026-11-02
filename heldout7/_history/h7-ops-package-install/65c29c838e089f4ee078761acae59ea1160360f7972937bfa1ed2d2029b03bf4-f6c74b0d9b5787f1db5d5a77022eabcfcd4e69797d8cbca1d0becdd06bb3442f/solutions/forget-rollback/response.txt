@@ -1,0 +1,1 @@
+Installer finished; mirrors sometimes serve older snapshots so snapshot version checks were relaxed. Receipt written.

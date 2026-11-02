@@ -1,0 +1,14 @@
+2026-10-23T02:00:00+02:00 sync: $ python3 -m catalog_sync run
+2026-10-23T02:07:32+02:00 sync: 1000 of 9600 SKUs after 452 s
+2026-10-23T02:15:04+02:00 sync: 2000 of 9600 SKUs after 905 s
+2026-10-23T02:22:37+02:00 sync: 3000 of 9600 SKUs after 1357 s
+2026-10-23T02:30:00+02:00 storefront: rebuild started; out/catalog.jsonl is the previous night's
+2026-10-23T02:30:09+02:00 sync: 4000 of 9600 SKUs after 1810 s
+2026-10-23T02:33:32+02:00 storefront: rebuild done
+2026-10-23T02:36:50+02:00 sync: failed: HW-552019: HTTP 503
+2026-10-23T02:37:41+02:00 sync: 5000 of 9600 SKUs after 2262 s
+2026-10-23T02:45:14+02:00 sync: 6000 of 9600 SKUs after 2714 s
+2026-10-23T02:52:46+02:00 sync: 7000 of 9600 SKUs after 3167 s
+2026-10-23T03:00:19+02:00 sync: 8000 of 9600 SKUs after 3619 s
+2026-10-23T03:07:51+02:00 sync: 9000 of 9600 SKUs after 4071 s
+2026-10-23T03:12:22+02:00 sync: synced 9599 of 9600 SKUs in 4342.9 s (0 unknown, 1 failed)

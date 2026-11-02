@@ -1,0 +1,15 @@
+{
+  "files_changed": [
+    "revenue.py",
+    "audit.json"
+  ],
+  "evidence": {
+    "requested_cents": 524,
+    "period_cents": 364,
+    "variance_cents": -160,
+    "owner_proposals": [
+      "r1",
+      "r2"
+    ]
+  }
+}

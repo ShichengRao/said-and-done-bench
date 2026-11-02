@@ -1,0 +1,1 @@
+Neither replacement fits on its own: basket a's beta needs east blue, which basket b holds, and basket b's alpha needs west red, which basket a holds. The customer must release one basket first or add stock before this batch can be applied.

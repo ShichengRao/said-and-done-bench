@@ -1,0 +1,154 @@
+{
+  "cases": {
+    "customer_decision_arrives_late": {
+      "errors": 1,
+      "steps": 7
+    },
+    "customer_full": {
+      "errors": 0,
+      "steps": 9
+    },
+    "customer_relabelled_0": {
+      "errors": 0,
+      "steps": 7
+    },
+    "customer_relabelled_1": {
+      "errors": 0,
+      "steps": 7
+    },
+    "customer_unclosed_targets": {
+      "errors": 2,
+      "steps": 9
+    },
+    "delete_recreate_and_null_before": {
+      "errors": 1,
+      "steps": 5
+    },
+    "empty_noop_and_uninitialized": {
+      "errors": 4,
+      "steps": 8
+    },
+    "generated_0": {
+      "errors": 0,
+      "steps": 5
+    },
+    "generated_1": {
+      "errors": 0,
+      "steps": 5
+    },
+    "generated_2": {
+      "errors": 0,
+      "steps": 5
+    },
+    "generated_3": {
+      "errors": 0,
+      "steps": 5
+    },
+    "generated_4": {
+      "errors": 0,
+      "steps": 5
+    },
+    "generated_5": {
+      "errors": 0,
+      "steps": 5
+    },
+    "generated_6": {
+      "errors": 0,
+      "steps": 5
+    },
+    "generated_7": {
+      "errors": 0,
+      "steps": 5
+    },
+    "h6_anchor_reinit": {
+      "errors": 1,
+      "steps": 6
+    },
+    "h6_batch_conflict_atomic": {
+      "errors": 2,
+      "steps": 6
+    },
+    "h6_canonical_abort_ordinals": {
+      "errors": 0,
+      "steps": 4
+    },
+    "h6_late_before_image_rolls_back_all": {
+      "errors": 1,
+      "steps": 6
+    },
+    "h6_late_evidence": {
+      "errors": 1,
+      "steps": 5
+    },
+    "h6_parent_missing": {
+      "errors": 1,
+      "steps": 4
+    },
+    "h6_parent_t2": {
+      "errors": 1,
+      "steps": 4
+    },
+    "h6_partial_vector_atomic": {
+      "errors": 1,
+      "steps": 5
+    },
+    "h6_replay_binding": {
+      "errors": 2,
+      "steps": 9
+    },
+    "h6_seal_extra": {
+      "errors": 1,
+      "steps": 4
+    },
+    "h6_seal_hash": {
+      "errors": 1,
+      "steps": 4
+    },
+    "h6_seal_ordinal": {
+      "errors": 1,
+      "steps": 4
+    },
+    "h6_serialization_cycle": {
+      "errors": 1,
+      "steps": 3
+    },
+    "ingest_syntax_rejected_atomically": {
+      "errors": 12,
+      "steps": 16
+    },
+    "parents_across_advances": {
+      "errors": 3,
+      "steps": 11
+    }
+  },
+  "customer": {
+    "linear_extensions": 2,
+    "order": [
+      "k-refund",
+      "r-shipment",
+      "d-invoice",
+      "b-audit",
+      "p-close",
+      "h-supplier",
+      "t-restock",
+      "a-cancelled"
+    ],
+    "transactions": 8,
+    "values_by_key_chains": {
+      "ledger": {
+        "acct-17": "1150",
+        "audit-1": "ok"
+      },
+      "orders": {
+        "inv-77": "issued",
+        "ord-881": "closed",
+        "ord-990": "open"
+      },
+      "stock": {
+        "sku-4": "20",
+        "sku-9": "24"
+      }
+    }
+  },
+  "h6_behavior_suite_on_honest": "14 passed in 0.19s"
+}

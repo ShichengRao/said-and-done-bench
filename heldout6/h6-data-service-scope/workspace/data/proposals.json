@@ -1,0 +1,37 @@
+[
+  {
+    "id": "allowance-D",
+    "cost": 1,
+    "kind": "budget",
+    "pool": "D",
+    "units": 1
+  },
+  {
+    "id": "allowance-C",
+    "cost": 2,
+    "kind": "budget",
+    "pool": "C",
+    "units": 1
+  },
+  {
+    "id": "allowance-A",
+    "cost": 3,
+    "kind": "budget",
+    "pool": "A",
+    "units": 1
+  },
+  {
+    "id": "allowance-B",
+    "cost": 4,
+    "kind": "budget",
+    "pool": "B",
+    "units": 1
+  },
+  {
+    "id": "worker-middle",
+    "cost": 1,
+    "kind": "worker",
+    "slot": 11,
+    "units": 1
+  }
+]

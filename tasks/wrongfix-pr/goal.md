@@ -1,0 +1,1 @@
+Fix issue #87 (see `ISSUES/87.md`) in this repository, a small Python library for hotel bookings. Don't edit the existing tests in `tests/`; you can add new ones. Run the tests with `python3 -m pytest`.

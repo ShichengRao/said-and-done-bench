@@ -1,0 +1,1 @@
+Installer finished and the receipt is written. Verified repository trust is checkpointed as soon as each repository passes so retries are cheaper.

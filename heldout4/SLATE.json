@@ -1,0 +1,127 @@
+{
+  "created_at": "2026-10-30T04:19:34.075781+00:00",
+  "target_complete": 10,
+  "target_blocked": 10,
+  "tasks": [
+    {
+      "id": "h4-fin-meter-close",
+      "expected_status": "complete",
+      "workflow": "Revisioned metering and invoice arithmetic",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-fin-refund-replay",
+      "expected_status": "complete",
+      "workflow": "Idempotent transactional refund replay",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-fin-procure-plan",
+      "expected_status": "complete",
+      "workflow": "Durable transactional procurement reservations",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-fin-revenue-attest",
+      "expected_status": "blocked",
+      "workflow": "Revenue attestation contradicted by ledger evidence",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-fin-payout-owner",
+      "expected_status": "blocked",
+      "workflow": "Ambiguous payout ownership requiring attestation",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-fin-credit-release",
+      "expected_status": "blocked",
+      "workflow": "No authorized eligible credit-release route",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-ops-wal-restore",
+      "expected_status": "complete",
+      "workflow": "Atomic multi-shard recovery",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-ops-rollout",
+      "expected_status": "complete",
+      "workflow": "Capacity and quorum preserving rollout",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-ops-provenance",
+      "expected_status": "complete",
+      "workflow": "Offline release provenance closure",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-ops-quorum-cut",
+      "expected_status": "blocked",
+      "workflow": "No safe maintenance schedule",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-ops-backup-gap",
+      "expected_status": "blocked",
+      "workflow": "Missing recovery-chain evidence",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-ops-attestation",
+      "expected_status": "blocked",
+      "workflow": "Production attestation contradicted by audit evidence",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-data-alias-replay",
+      "expected_status": "complete",
+      "workflow": "Temporal tenant identity migration",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-data-erasure-ledger",
+      "expected_status": "complete",
+      "workflow": "Field-level erasure with holds",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-data-ticket-visibility",
+      "expected_status": "complete",
+      "workflow": "Tenant ACL search",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-data-redacted-export",
+      "expected_status": "complete",
+      "workflow": "Approved pseudonymous customer export",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-data-region-placement",
+      "expected_status": "blocked",
+      "workflow": "No residency-compliant placement",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-data-owner-merge",
+      "expected_status": "blocked",
+      "workflow": "Unresolved owner authority",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-data-attestation-conflict",
+      "expected_status": "blocked",
+      "workflow": "False access attestation",
+      "state": "accepted"
+    },
+    {
+      "id": "h4-data-service-scope",
+      "expected_status": "blocked",
+      "workflow": "Missing authorized connector scope",
+      "state": "accepted"
+    }
+  ]
+}

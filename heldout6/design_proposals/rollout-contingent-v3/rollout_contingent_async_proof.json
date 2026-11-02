@@ -1,0 +1,408 @@
+{
+  "initial_legal_pairs": [
+    {
+      "starts": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "winning_for_every_outcome": false,
+      "outcomes": [
+        {
+          "successes": [
+            true,
+            true
+          ],
+          "macro_locations": [
+            4,
+            1,
+            5,
+            3
+          ],
+          "quarantine": -1,
+          "faults_left": 1,
+          "winning": false,
+          "winning_next": [],
+          "ordinary_completion_count": 3
+        },
+        {
+          "successes": [
+            false,
+            true
+          ],
+          "macro_locations": [
+            0,
+            1,
+            5,
+            3
+          ],
+          "quarantine": 4,
+          "faults_left": 0,
+          "winning": true,
+          "winning_next": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "ordinary_completion_count": 2
+        },
+        {
+          "successes": [
+            true,
+            false
+          ],
+          "macro_locations": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "quarantine": 5,
+          "faults_left": 0,
+          "winning": true,
+          "winning_next": [
+            [
+              1,
+              0
+            ]
+          ],
+          "ordinary_completion_count": 1
+        }
+      ]
+    },
+    {
+      "starts": [
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "winning_for_every_outcome": false,
+      "outcomes": [
+        {
+          "successes": [
+            true,
+            true
+          ],
+          "macro_locations": [
+            4,
+            1,
+            2,
+            5
+          ],
+          "quarantine": -1,
+          "faults_left": 1,
+          "winning": false,
+          "winning_next": [],
+          "ordinary_completion_count": 2
+        },
+        {
+          "successes": [
+            false,
+            true
+          ],
+          "macro_locations": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "quarantine": 4,
+          "faults_left": 0,
+          "winning": true,
+          "winning_next": [
+            [
+              2,
+              3
+            ]
+          ],
+          "ordinary_completion_count": 1
+        },
+        {
+          "successes": [
+            true,
+            false
+          ],
+          "macro_locations": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "quarantine": 5,
+          "faults_left": 0,
+          "winning": true,
+          "winning_next": [
+            [
+              1,
+              0
+            ]
+          ],
+          "ordinary_completion_count": 1
+        }
+      ]
+    },
+    {
+      "starts": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "winning_for_every_outcome": false,
+      "outcomes": [
+        {
+          "successes": [
+            true,
+            true
+          ],
+          "macro_locations": [
+            5,
+            4,
+            2,
+            3
+          ],
+          "quarantine": -1,
+          "faults_left": 1,
+          "winning": false,
+          "winning_next": [],
+          "ordinary_completion_count": 1
+        },
+        {
+          "successes": [
+            false,
+            true
+          ],
+          "macro_locations": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "quarantine": 5,
+          "faults_left": 0,
+          "winning": true,
+          "winning_next": [
+            [
+              3,
+              1
+            ]
+          ],
+          "ordinary_completion_count": 1
+        },
+        {
+          "successes": [
+            true,
+            false
+          ],
+          "macro_locations": [
+            5,
+            1,
+            2,
+            3
+          ],
+          "quarantine": 4,
+          "faults_left": 0,
+          "winning": true,
+          "winning_next": [
+            [
+              1,
+              0
+            ]
+          ],
+          "ordinary_completion_count": 1
+        }
+      ]
+    },
+    {
+      "starts": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "winning_for_every_outcome": true,
+      "outcomes": [
+        {
+          "successes": [
+            true,
+            true
+          ],
+          "macro_locations": [
+            0,
+            4,
+            5,
+            3
+          ],
+          "quarantine": -1,
+          "faults_left": 1,
+          "winning": true,
+          "winning_next": [
+            [
+              3,
+              1
+            ]
+          ],
+          "ordinary_completion_count": 4
+        },
+        {
+          "successes": [
+            false,
+            true
+          ],
+          "macro_locations": [
+            0,
+            1,
+            5,
+            3
+          ],
+          "quarantine": 4,
+          "faults_left": 0,
+          "winning": true,
+          "winning_next": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "ordinary_completion_count": 2
+        },
+        {
+          "successes": [
+            true,
+            false
+          ],
+          "macro_locations": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "quarantine": 5,
+          "faults_left": 0,
+          "winning": true,
+          "winning_next": [
+            [
+              3,
+              1
+            ]
+          ],
+          "ordinary_completion_count": 1
+        }
+      ]
+    },
+    {
+      "starts": [
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "winning_for_every_outcome": false,
+      "outcomes": [
+        {
+          "successes": [
+            true,
+            true
+          ],
+          "macro_locations": [
+            0,
+            4,
+            2,
+            5
+          ],
+          "quarantine": -1,
+          "faults_left": 1,
+          "winning": false,
+          "winning_next": [],
+          "ordinary_completion_count": 1
+        },
+        {
+          "successes": [
+            false,
+            true
+          ],
+          "macro_locations": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "quarantine": 4,
+          "faults_left": 0,
+          "winning": true,
+          "winning_next": [
+            [
+              2,
+              3
+            ]
+          ],
+          "ordinary_completion_count": 1
+        },
+        {
+          "successes": [
+            true,
+            false
+          ],
+          "macro_locations": [
+            0,
+            4,
+            2,
+            3
+          ],
+          "quarantine": 5,
+          "faults_left": 0,
+          "winning": true,
+          "winning_next": [
+            [
+              3,
+              1
+            ]
+          ],
+          "ordinary_completion_count": 1
+        }
+      ]
+    }
+  ],
+  "actual_eligibility": {
+    "C_failed_B_start_pending": [],
+    "C_failed_B_ready_before_retirement_ACK": [],
+    "after_B_retirement_ACK": [
+      [
+        3,
+        1
+      ]
+    ]
+  },
+  "macro_count_note": "44 nominal and10 robust-spine counts describe serialized completed cutovers, not counts of asynchronous receipt schedules."
+}

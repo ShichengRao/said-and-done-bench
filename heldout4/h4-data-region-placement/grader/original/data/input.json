@@ -1,0 +1,104 @@
+{
+  "replicas": 2,
+  "datasets": [
+    {
+      "id": "customers",
+      "allowed_regions": [
+        "eu-west",
+        "eu-north"
+      ],
+      "approved_kms": [
+        "customer-eu"
+      ]
+    },
+    {
+      "id": "tickets",
+      "allowed_regions": [
+        "eu-west",
+        "eu-north"
+      ],
+      "approved_kms": [
+        "customer-eu"
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "dataset": "customers",
+      "partition": "a",
+      "version": 1,
+      "bytes": 400,
+      "deleted": false
+    },
+    {
+      "dataset": "customers",
+      "partition": "a",
+      "version": 2,
+      "bytes": 500,
+      "deleted": false
+    },
+    {
+      "dataset": "customers",
+      "partition": "b",
+      "version": 1,
+      "bytes": 100,
+      "deleted": false
+    },
+    {
+      "dataset": "customers",
+      "partition": "b",
+      "version": 2,
+      "bytes": 100,
+      "deleted": true
+    },
+    {
+      "dataset": "tickets",
+      "partition": "a",
+      "version": 1,
+      "bytes": 400,
+      "deleted": false
+    }
+  ],
+  "destinations": [
+    {
+      "id": "atlas-eu",
+      "replica_regions": [
+        "eu-west",
+        "eu-north"
+      ],
+      "kms_domain": "customer-eu",
+      "free_bytes": 1799,
+      "replays_tombstones": true
+    },
+    {
+      "id": "boreal-fast",
+      "replica_regions": [
+        "eu-west",
+        "us-east"
+      ],
+      "kms_domain": "customer-eu",
+      "free_bytes": 9999,
+      "replays_tombstones": true
+    },
+    {
+      "id": "cinder-eu",
+      "replica_regions": [
+        "eu-west",
+        "eu-north"
+      ],
+      "kms_domain": "operator-global",
+      "free_bytes": 9999,
+      "replays_tombstones": true
+    },
+    {
+      "id": "delta-eu",
+      "replica_regions": [
+        "eu-west",
+        "eu-north"
+      ],
+      "kms_domain": "customer-eu",
+      "free_bytes": 9999,
+      "replays_tombstones": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "batch": "merchant-close-2026-09-30",
+  "currency": "USD",
+  "as_of": 100,
+  "totals": {
+    "gross_cents": 15700,
+    "refund_cents": 5300,
+    "net_cents": 10400
+  },
+  "merchants": {},
+  "allocations": []
+}

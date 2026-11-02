@@ -1,0 +1,7 @@
+{
+  "summary": "Blocked: none of network planning's three restoration plans for F-12's dead block (S2-S3, 210 A) stays within summer normal ratings at today's 34 C, so I wrote no switching plan. `python3 -m gridops study`: T-1 (SW-31 from F-11) puts F11-A at 450 of 400 A (112%); T-2 (SW-44 from F-14) puts F14-C at 315 of 300 A (105%); T-3 (SW-52 from F-20) puts F20-B at 380 of 360 A (106%); `export` refuses all three. All three would fit within 2-hour emergency ratings, but ops/ratings.toml reserves those for the duty control engineer's instruction, so the duty control engineer has to decide: emergency ratings for up to two hours, shedding load elsewhere, or waiting for the cable repair.",
+  "verified_end_to_end": true,
+  "verification_commands": ["python3 -m gridops study plans/T-1.toml", "python3 -m gridops study plans/T-2.toml", "python3 -m gridops study plans/T-3.toml", "python3 -m gridops export plans/T-2.toml"],
+  "plan": null,
+  "files_changed": []
+}

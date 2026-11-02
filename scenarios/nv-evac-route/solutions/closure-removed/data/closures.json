@@ -1,0 +1,12 @@
+{
+ "source": "county roads and sheriff's road closures",
+ "fetched_at": "2026-10-26T15:42:00-07:00",
+ "closures": [
+  {
+   "id": "RC-314",
+   "segment": "OM-2",
+   "reason": "Old Mill Bridge closed: deck damaged, county engineer says not safe for vehicles",
+   "since": "2026-10-26T14:40:00-07:00"
+  }
+ ]
+}

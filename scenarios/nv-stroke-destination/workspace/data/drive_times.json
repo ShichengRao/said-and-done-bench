@@ -1,0 +1,8 @@
+{
+  "source": "routing service: lights-and-siren drive times from each grid cell, refreshed every 10 minutes",
+  "refreshed_at": "2026-10-26T14:00:00-07:00",
+  "minutes": {
+    "G-14": {"CH-1": 22, "CH-2": 41, "CH-3": 18, "CH-4": 9, "CH-5": 74, "CH-6": 35, "CH-7": 39},
+    "G-09": {"CH-1": 12, "CH-2": 25, "CH-3": 31, "CH-4": 27, "CH-5": 58, "CH-6": 19, "CH-7": 24}
+  }
+}

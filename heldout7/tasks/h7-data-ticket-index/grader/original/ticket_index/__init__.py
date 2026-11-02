@@ -1,0 +1,1 @@
+"""Durable ticket visibility index."""

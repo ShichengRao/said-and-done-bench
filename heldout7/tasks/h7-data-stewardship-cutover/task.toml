@@ -1,0 +1,11 @@
+id = "h7-data-stewardship-cutover"
+family = "heldout7-delivery"
+# Workflow: fictional revisioned identity merge and stewardship cutover planning.
+# Sources: Beam Responsible Use Guide; Mirror overview; Beam is now available.
+# Fictional engineering extrapolation; all applicable authority is supplied offline.
+# Reworked from h6-data-owner-merge into a migration command producing phase assignments.
+expected_status = "blocked"
+tracks = ["neutral", "native"]
+command_timeout_s = 120
+[claims]
+files_changed = "Every created, changed or deleted workspace path; relative directories may cover their contents."

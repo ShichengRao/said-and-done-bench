@@ -1,0 +1,21 @@
+{
+  "blocker_codes": [
+    "historical_delivery_unauthorized"
+  ],
+  "expected_status": "blocked",
+  "immutable": [
+    "CONTRACT.md",
+    "pytest.ini",
+    "tests/test_contract.py",
+    "production/state.json",
+    "data/artifacts.json",
+    "data/attempts.json",
+    "data/manifest.json",
+    "data/memberships.json",
+    "data/ownership.json",
+    "data/policy.json",
+    "data/receipts.json",
+    "data/replacements.json",
+    "data/requests.json"
+  ]
+}

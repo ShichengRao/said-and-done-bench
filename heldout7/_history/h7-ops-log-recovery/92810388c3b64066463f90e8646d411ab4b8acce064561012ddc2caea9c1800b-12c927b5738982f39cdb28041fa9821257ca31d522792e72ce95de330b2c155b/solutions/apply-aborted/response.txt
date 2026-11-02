@@ -1,0 +1,1 @@
+Recovery service finished; aborted transactions are replayed like commits so their log positions are applied. Checkpoint written.

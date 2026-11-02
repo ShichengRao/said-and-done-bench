@@ -1,0 +1,181 @@
+sku,name,supplier,case_size,lead_time_days,discontinued
+FW-2100,Bamboo candle holder,osaka-trading,6,18,no
+FW-2107,Walnut tray,brightwood,12,3,no
+FW-2114,"Enamel tea towel, set of 2",halden,4,5,no
+FW-2121,Linen skillet,vela,24,6,no
+FW-2128,Linen salad bowl,kessler,1,7,no
+FW-2135,Enamel casserole,halden,1,8,no
+FW-2142,Cast iron pepper mill,osaka-trading,6,20,no
+FW-2149,Glass mug,osaka-trading,24,29,no
+FW-2156,Bamboo casserole,vela,1,8,no
+FW-2163,Stoneware bread bin,vela,4,8,no
+FW-2170,Ceramic serving board,halden,12,7,no
+FW-2177,Copper colander,halden,1,9,no
+FW-2184,Walnut colander,osaka-trading,12,25,no
+FW-2191,Felt jug,kessler,24,9,no
+FW-2198,Cast iron teapot,osaka-trading,6,24,no
+FW-2205,Cotton apron,halden,12,6,no
+FW-2212,"Ceramic coasters, set of 4",kessler,12,9,no
+FW-2219,Brass serving board,osaka-trading,4,29,no
+FW-2226,"Linen coasters, set of 4",brightwood,1,5,no
+FW-2233,Linen teapot,vela,12,9,no
+FW-2240,Brass throw,nordlys,12,12,no
+FW-2247,"Stoneware coasters, set of 4",kessler,24,10,no
+FW-2254,Ceramic tray,halden,4,9,no
+FW-2261,Ceramic bread bin,nordlys,6,17,no
+FW-2268,Linen utensil set,halden,6,7,no
+FW-2275,Stoneware salad bowl,osaka-trading,24,20,no
+FW-2282,Copper throw,kessler,1,8,no
+FW-2289,Felt bread bin,vela,6,9,no
+FW-2296,Enamel tray,vela,12,4,no
+FW-2303,"Cotton coasters, set of 4",vela,12,9,no
+FW-2310,"Copper napkins, set of 6",vela,12,9,no
+FW-2317,Wool salad bowl,nordlys,12,10,no
+FW-2324,Linen jug,halden,4,8,no
+FW-2331,"Enamel napkins, set of 6",vela,12,4,no
+FW-2338,Wool jug,osaka-trading,4,21,no
+FW-2345,Cotton bread bin,nordlys,12,13,no
+FW-2352,Glass pepper mill,vela,1,9,no
+FW-2359,Oak tray,vela,12,8,no
+FW-2366,Walnut jug,nordlys,12,15,no
+FW-2373,Stoneware colander,halden,12,5,no
+FW-2380,Copper candle holder,nordlys,6,13,no
+FW-2387,Copper serving board,halden,12,5,no
+FW-2394,Brass mug,nordlys,24,16,no
+FW-2401,Linen apron,nordlys,12,18,no
+FW-2408,Ceramic pepper mill,vela,4,7,no
+FW-2415,Felt skillet,kessler,12,8,no
+FW-2422,Walnut throw,halden,6,10,no
+FW-2429,Cast iron tray,halden,4,5,no
+FW-2436,Oak throw,nordlys,6,12,no
+FW-2443,Stoneware serving board,halden,1,9,no
+FW-2450,Cotton colander,kessler,6,7,no
+FW-2457,"Walnut tea towel, set of 2",nordlys,6,14,no
+FW-2464,Linen candle holder,nordlys,4,10,no
+FW-2471,Wool serving board,osaka-trading,1,24,no
+FW-2478,Linen carafe,osaka-trading,24,21,no
+FW-2485,Copper pepper mill,kessler,12,10,no
+FW-2492,Felt tray,osaka-trading,1,23,no
+FW-2499,Brass pepper mill,kessler,4,10,no
+FW-2506,"Copper tea towel, set of 2",halden,1,10,yes
+FW-2513,Enamel apron,vela,24,8,no
+FW-2520,"Glass tea towel, set of 2",vela,6,5,no
+FW-2527,Wool pepper mill,kessler,4,8,no
+FW-2534,Brass teapot,osaka-trading,4,18,no
+FW-2541,Ceramic candle holder,brightwood,12,6,no
+FW-2548,Enamel bread bin,vela,6,8,no
+FW-2555,Brass casserole,vela,24,7,no
+FW-2562,Ceramic skillet,brightwood,4,3,no
+FW-2569,Cotton jug,brightwood,6,4,no
+FW-2576,Enamel throw,vela,6,8,no
+FW-2583,Copper casserole,halden,12,10,no
+FW-2590,Cotton storage jar,nordlys,24,14,no
+FW-2597,Oak utensil set,brightwood,1,3,no
+FW-2604,Walnut bread bin,osaka-trading,12,26,no
+FW-2611,"Copper coasters, set of 4",vela,4,6,no
+FW-2618,"Cotton napkins, set of 6",brightwood,24,5,no
+FW-2625,Wool throw,halden,24,8,no
+FW-2632,Glass teapot,brightwood,24,5,no
+FW-2639,Cotton teapot,brightwood,4,3,no
+FW-2646,"Oak coasters, set of 4",vela,4,5,no
+FW-2653,"Oak napkins, set of 6",kessler,6,12,no
+FW-2660,Glass carafe,nordlys,4,12,no
+FW-2667,Copper skillet,vela,24,6,no
+FW-2674,Cotton tray,kessler,1,7,no
+FW-2681,"Brass napkins, set of 6",halden,12,8,no
+FW-2688,"Walnut napkins, set of 6",kessler,12,9,no
+FW-2695,Enamel teapot,brightwood,24,5,no
+FW-2702,"Cast iron coasters, set of 4",halden,12,9,no
+FW-2709,Stoneware apron,brightwood,6,6,no
+FW-2716,Brass jug,halden,1,9,no
+FW-2723,Linen tray,vela,12,6,no
+FW-2730,Wool candle holder,halden,1,5,no
+FW-2737,Bamboo utensil set,vela,6,4,no
+FW-2744,Felt utensil set,nordlys,6,17,no
+FW-2751,Oak mug,brightwood,4,6,no
+FW-2758,Felt carafe,nordlys,12,17,no
+FW-2765,Linen storage jar,kessler,6,12,no
+FW-2772,Brass tray,brightwood,4,3,no
+FW-2779,Cast iron carafe,osaka-trading,4,28,no
+FW-2786,Oak teapot,halden,6,10,no
+FW-2793,Oak skillet,nordlys,12,14,yes
+FW-2800,Bamboo storage jar,osaka-trading,6,29,no
+FW-2807,"Wool coasters, set of 4",vela,12,4,no
+FW-2814,Wool bread bin,vela,1,7,no
+FW-2821,Copper carafe,brightwood,6,4,no
+FW-2828,Cast iron skillet,nordlys,6,13,no
+FW-2835,Felt salad bowl,kessler,24,8,no
+FW-2842,Stoneware storage jar,nordlys,6,14,no
+FW-2849,"Bamboo napkins, set of 6",halden,1,10,no
+FW-2856,Ceramic teapot,halden,1,8,no
+FW-2863,Cotton candle holder,nordlys,12,10,no
+FW-2870,Cotton salad bowl,halden,24,8,no
+FW-2877,Felt storage jar,nordlys,12,13,no
+FW-2884,Enamel candle holder,halden,4,6,no
+FW-2891,Stoneware mug,nordlys,6,15,no
+FW-2898,"Bamboo tea towel, set of 2",vela,4,4,no
+FW-2905,Bamboo tray,kessler,6,12,no
+FW-2912,Cotton carafe,nordlys,12,18,no
+FW-2919,Felt candle holder,brightwood,6,4,no
+FW-2926,Oak casserole,kessler,12,7,no
+FW-2933,"Cast iron napkins, set of 6",brightwood,24,3,no
+FW-2940,Oak planter,kessler,4,12,no
+FW-2947,Cast iron mug,brightwood,6,5,no
+FW-2954,Felt throw,nordlys,24,15,no
+FW-2961,Oak jug,brightwood,6,4,no
+FW-2968,"Wool napkins, set of 6",kessler,6,7,no
+FW-2975,Oak serving board,nordlys,12,13,no
+FW-2982,"Felt napkins, set of 6",nordlys,12,15,no
+FW-2989,Linen bread bin,vela,6,4,no
+FW-2996,Linen throw,nordlys,6,15,no
+FW-3003,Linen pepper mill,nordlys,1,17,no
+FW-3010,Glass colander,nordlys,24,11,no
+FW-3017,"Stoneware napkins, set of 6",osaka-trading,1,23,no
+FW-3024,Stoneware utensil set,brightwood,6,3,no
+FW-3031,Enamel carafe,nordlys,12,14,no
+FW-3038,Copper storage jar,brightwood,12,5,no
+FW-3045,Cotton pepper mill,vela,12,7,no
+FW-3052,Stoneware skillet,brightwood,6,6,no
+FW-3059,Cast iron storage jar,osaka-trading,12,20,no
+FW-3066,Wool mug,osaka-trading,24,19,no
+FW-3073,Ceramic storage jar,halden,4,8,no
+FW-3080,Wool tray,osaka-trading,24,27,no
+FW-3087,Glass bread bin,nordlys,12,15,no
+FW-3094,Oak storage jar,nordlys,1,15,no
+FW-3101,Copper utensil set,nordlys,12,10,no
+FW-3108,Felt serving board,halden,6,5,no
+FW-3115,Brass planter,halden,1,10,no
+FW-3122,Walnut salad bowl,kessler,24,10,no
+FW-3129,Oak apron,halden,24,6,no
+FW-3136,Brass bread bin,halden,1,9,no
+FW-3143,"Oak tea towel, set of 2",osaka-trading,1,26,no
+FW-3150,Brass carafe,vela,6,5,no
+FW-3157,Ceramic carafe,halden,1,5,no
+FW-3164,Cotton skillet,vela,6,7,no
+FW-3171,Linen colander,brightwood,1,6,no
+FW-3178,Bamboo planter,kessler,24,11,no
+FW-3185,Linen serving board,brightwood,1,4,no
+FW-3192,Copper bread bin,brightwood,4,5,no
+FW-3199,Glass planter,vela,4,7,no
+FW-3206,Stoneware casserole,kessler,4,7,no
+FW-3213,Bamboo salad bowl,kessler,1,10,no
+FW-3220,Linen casserole,osaka-trading,12,25,no
+FW-3227,Cast iron jug,kessler,12,7,no
+FW-3234,"Felt coasters, set of 4",brightwood,12,3,no
+FW-3241,Cast iron apron,vela,24,9,no
+FW-3248,Cotton throw,brightwood,12,3,no
+FW-3255,Walnut skillet,halden,12,5,no
+FW-3262,Stoneware carafe,nordlys,6,17,no
+FW-3269,"Cast iron tea towel, set of 2",nordlys,6,10,yes
+FW-3276,Enamel skillet,vela,6,9,no
+FW-3283,Copper mug,nordlys,12,13,no
+FW-3290,Glass casserole,brightwood,1,5,no
+FW-3297,Ceramic salad bowl,vela,12,6,no
+FW-3304,Felt colander,osaka-trading,24,21,no
+FW-3311,"Felt tea towel, set of 2",brightwood,24,3,no
+FW-3318,Wool teapot,vela,6,5,no
+FW-3325,"Glass coasters, set of 4",nordlys,12,16,no
+FW-3332,Felt mug,brightwood,12,5,no
+FW-3339,Walnut serving board,osaka-trading,24,28,no
+FW-3346,Brass skillet,nordlys,6,15,no
+FW-3353,Cotton planter,vela,24,9,no

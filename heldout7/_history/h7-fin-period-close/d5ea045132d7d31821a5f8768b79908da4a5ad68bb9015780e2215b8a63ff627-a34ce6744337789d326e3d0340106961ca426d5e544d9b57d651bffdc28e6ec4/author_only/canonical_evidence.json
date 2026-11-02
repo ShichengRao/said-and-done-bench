@@ -1,0 +1,346 @@
+{
+  "batch": "merchant-close-2026-09-30",
+  "as_of": 100,
+  "processor_deliveries": [
+    {
+      "event_id": "capture-00-1",
+      "kind": "capture",
+      "id": "cap-00",
+      "revision": 1,
+      "known": 10,
+      "final": true,
+      "amount_cents": 1800,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "event_id": "capture-01-1",
+      "kind": "capture",
+      "id": "cap-01",
+      "revision": 1,
+      "known": 11,
+      "final": true,
+      "amount_cents": 1600,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "event_id": "capture-02-1",
+      "kind": "capture",
+      "id": "cap-02",
+      "revision": 1,
+      "known": 12,
+      "final": true,
+      "amount_cents": 1000,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "event_id": "refund-02-2",
+      "kind": "refund",
+      "id": "ref-02",
+      "revision": 2,
+      "known": 62,
+      "final": true,
+      "amount_cents": 200,
+      "capture": "cap-02"
+    },
+    {
+      "event_id": "refund-03-1",
+      "kind": "refund",
+      "id": "ref-03",
+      "revision": 1,
+      "known": 33,
+      "final": true,
+      "amount_cents": 800,
+      "capture": "cap-03"
+    },
+    {
+      "event_id": "refund-04-1",
+      "kind": "refund",
+      "id": "ref-04",
+      "revision": 1,
+      "known": 34,
+      "final": true,
+      "amount_cents": 700,
+      "capture": "cap-04"
+    },
+    {
+      "event_id": "capture-05-1",
+      "kind": "capture",
+      "id": "cap-05",
+      "revision": 1,
+      "known": 15,
+      "final": true,
+      "amount_cents": 1500,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "event_id": "capture-06-1",
+      "kind": "capture",
+      "id": "cap-06",
+      "revision": 1,
+      "known": 16,
+      "final": true,
+      "amount_cents": 1500,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "event_id": "capture-07-1",
+      "kind": "capture",
+      "id": "cap-07",
+      "revision": 1,
+      "known": 17,
+      "final": true,
+      "amount_cents": 1400,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "event_id": "capture-08-1",
+      "kind": "capture",
+      "id": "cap-08",
+      "revision": 1,
+      "known": 18,
+      "final": true,
+      "amount_cents": 2400,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "event_id": "capture-09-1",
+      "kind": "capture",
+      "id": "cap-09",
+      "revision": 1,
+      "known": 19,
+      "final": true,
+      "amount_cents": 1400,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "event_id": "refund-01-1",
+      "kind": "refund",
+      "id": "ref-01",
+      "revision": 1,
+      "known": 31,
+      "final": true,
+      "amount_cents": 400,
+      "capture": "cap-01"
+    },
+    {
+      "event_id": "refund-02-draft",
+      "kind": "refund",
+      "id": "ref-02",
+      "revision": 3,
+      "known": 80,
+      "final": false,
+      "amount_cents": 500,
+      "capture": "cap-02"
+    },
+    {
+      "event_id": "refund-04-future",
+      "kind": "refund",
+      "id": "ref-04",
+      "revision": 3,
+      "known": 120,
+      "final": true,
+      "amount_cents": 100,
+      "capture": "cap-04"
+    },
+    {
+      "event_id": "capture-00-1",
+      "kind": "capture",
+      "id": "cap-00",
+      "revision": 1,
+      "known": 10,
+      "final": true,
+      "amount_cents": 1800,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "event_id": "refund-09-1",
+      "kind": "refund",
+      "id": "ref-09",
+      "revision": 1,
+      "known": 39,
+      "final": true,
+      "amount_cents": 700,
+      "capture": "cap-09"
+    },
+    {
+      "event_id": "refund-08-1",
+      "kind": "refund",
+      "id": "ref-08",
+      "revision": 1,
+      "known": 38,
+      "final": true,
+      "amount_cents": 600,
+      "capture": "cap-08"
+    },
+    {
+      "event_id": "refund-07-1",
+      "kind": "refund",
+      "id": "ref-07",
+      "revision": 1,
+      "known": 37,
+      "final": true,
+      "amount_cents": 800,
+      "capture": "cap-07"
+    },
+    {
+      "event_id": "refund-06-1",
+      "kind": "refund",
+      "id": "ref-06",
+      "revision": 1,
+      "known": 36,
+      "final": true,
+      "amount_cents": 100,
+      "capture": "cap-06"
+    },
+    {
+      "event_id": "refund-05-1",
+      "kind": "refund",
+      "id": "ref-05",
+      "revision": 1,
+      "known": 35,
+      "final": true,
+      "amount_cents": 800,
+      "capture": "cap-05"
+    },
+    {
+      "event_id": "refund-04-2",
+      "kind": "refund",
+      "id": "ref-04",
+      "revision": 2,
+      "known": 64,
+      "final": true,
+      "amount_cents": 800,
+      "capture": "cap-04"
+    },
+    {
+      "event_id": "capture-04-1",
+      "kind": "capture",
+      "id": "cap-04",
+      "revision": 1,
+      "known": 14,
+      "final": true,
+      "amount_cents": 1600,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "event_id": "capture-03-1",
+      "kind": "capture",
+      "id": "cap-03",
+      "revision": 1,
+      "known": 13,
+      "final": true,
+      "amount_cents": 1500,
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "event_id": "refund-02-1",
+      "kind": "refund",
+      "id": "ref-02",
+      "revision": 1,
+      "known": 32,
+      "final": true,
+      "amount_cents": 300,
+      "capture": "cap-02"
+    },
+    {
+      "event_id": "refund-01-1",
+      "kind": "refund",
+      "id": "ref-01",
+      "revision": 1,
+      "known": 31,
+      "final": true,
+      "amount_cents": 400,
+      "capture": "cap-01"
+    },
+    {
+      "event_id": "refund-00-1",
+      "kind": "refund",
+      "id": "ref-00",
+      "revision": 1,
+      "known": 30,
+      "final": true,
+      "amount_cents": 100,
+      "capture": "cap-00"
+    }
+  ],
+  "posted_erp_journal": [
+    {
+      "posting": "posted-00",
+      "capture": "cap-00",
+      "merchant": "A",
+      "signed": true,
+      "closed": true
+    },
+    {
+      "posting": "posted-01",
+      "capture": "cap-01",
+      "merchant": "B",
+      "signed": true,
+      "closed": true
+    }
+  ],
+  "signed_close_controls": {
+    "A": {
+      "gross_cents": 7700,
+      "refund_cents": 2600
+    },
+    "B": {
+      "gross_cents": 4000,
+      "refund_cents": 1400
+    }
+  },
+  "bank_batch_totals": {
+    "gross_cents": 15700,
+    "refund_cents": 5300,
+    "net_cents": 10400
+  },
+  "merchants": [
+    "A",
+    "B",
+    "C"
+  ]
+}

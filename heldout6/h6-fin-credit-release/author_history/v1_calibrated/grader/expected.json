@@ -1,0 +1,203 @@
+{
+  "requested_cents": 600,
+  "funded_cents": 530,
+  "complete": false,
+  "eligible_routes": {
+    "T0": [
+      "R0-0",
+      "R0-1",
+      "R0-2"
+    ],
+    "T1": [
+      "R1-0",
+      "R1-1",
+      "R1-2"
+    ],
+    "T2": [
+      "R2-0",
+      "R2-1",
+      "R2-2"
+    ],
+    "T3": [
+      "R3-0",
+      "R3-1",
+      "R3-2"
+    ],
+    "T4": [
+      "R4-0",
+      "R4-1",
+      "R4-2"
+    ],
+    "T5": [
+      "R5-0",
+      "R5-1",
+      "R5-2"
+    ]
+  },
+  "assignment": [
+    {
+      "obligation": "T0",
+      "route": "R0-1",
+      "facility": "F1"
+    },
+    {
+      "obligation": "T1",
+      "route": "R1-1",
+      "facility": "F1"
+    },
+    {
+      "obligation": "T2",
+      "route": "R2-2",
+      "facility": "F2"
+    },
+    {
+      "obligation": "T3",
+      "route": "R3-2",
+      "facility": "F2"
+    },
+    {
+      "obligation": "T5",
+      "route": "R5-0",
+      "facility": "F0"
+    }
+  ],
+  "unfunded": [
+    "T4"
+  ],
+  "usage": {
+    "days": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      10,
+      20,
+      30,
+      31,
+      32
+    ],
+    "facilities": {
+      "F0": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        130,
+        130,
+        130,
+        130,
+        130,
+        0
+      ],
+      "F1": [
+        80,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        120,
+        0,
+        0
+      ],
+      "F2": [
+        0,
+        0,
+        100,
+        200,
+        200,
+        200,
+        200,
+        200,
+        100,
+        100,
+        0
+      ]
+    },
+    "collateral": {
+      "P0": [
+        0,
+        150,
+        150,
+        150,
+        150,
+        300,
+        150,
+        150,
+        150,
+        150,
+        0
+      ],
+      "P1": [
+        0,
+        0,
+        150,
+        300,
+        300,
+        300,
+        300,
+        300,
+        150,
+        150,
+        0
+      ],
+      "P2": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        300,
+        300,
+        150,
+        0,
+        0
+      ]
+    }
+  },
+  "owner_review": {
+    "cost": 2,
+    "proposals": [
+      "cash-A",
+      "cash-C"
+    ],
+    "assignment": [
+      {
+        "obligation": "T0",
+        "route": "R0-1",
+        "facility": "F1"
+      },
+      {
+        "obligation": "T1",
+        "route": "R1-2",
+        "facility": "F2"
+      },
+      {
+        "obligation": "T2",
+        "route": "R2-0",
+        "facility": "F0"
+      },
+      {
+        "obligation": "T3",
+        "route": "R3-2",
+        "facility": "F2"
+      },
+      {
+        "obligation": "T4",
+        "route": "R4-0",
+        "facility": "F0"
+      },
+      {
+        "obligation": "T5",
+        "route": "R5-0",
+        "facility": "F0"
+      }
+    ]
+  }
+}

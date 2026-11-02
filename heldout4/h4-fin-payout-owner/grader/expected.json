@@ -1,0 +1,40 @@
+{
+  "audit": {
+    "batch": "B-26-09",
+    "payouts": [
+      {
+        "bucket": "K1",
+        "merchant_id": "m-elm",
+        "cents": 7180
+      },
+      {
+        "bucket": "K3",
+        "merchant_id": "m-reed",
+        "cents": 5396
+      },
+      {
+        "bucket": "K4",
+        "merchant_id": "m-fern",
+        "cents": 6990
+      }
+    ],
+    "unresolved": [
+      {
+        "bucket": "K2",
+        "candidates": [
+          "m-elm",
+          "m-pine"
+        ],
+        "cents": 6291
+      }
+    ],
+    "total_cents": 25857
+  },
+  "obstacle": {
+    "batch": "B-26-09",
+    "buckets": [
+      "K2"
+    ],
+    "cents": 6291
+  }
+}

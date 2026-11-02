@@ -1,0 +1,9 @@
+{
+  "id": "R-2301",
+  "clinic": "brae-end",
+  "payload": "1 unit O-negative red cells",
+  "payload_kg": 0.7,
+  "priority": "routine",
+  "requested_by": "Brae End health centre",
+  "launch_at": "2026-10-27T13:00:00+01:00"
+}

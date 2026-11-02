@@ -1,0 +1,62 @@
+[
+  {
+    "id": "owner-diagnostic-before-return",
+    "cost": 1,
+    "before": [
+      [
+        "b2",
+        "a3"
+      ]
+    ]
+  },
+  {
+    "id": "copy-after-child-renewal",
+    "cost": 2,
+    "before": [
+      [
+        "c3",
+        "b1"
+      ]
+    ]
+  },
+  {
+    "id": "delivery-before-root-retirement",
+    "cost": 2,
+    "before": [
+      [
+        "b4",
+        "c4"
+      ]
+    ]
+  },
+  {
+    "id": "copy-after-owner-return",
+    "cost": 5,
+    "before": [
+      [
+        "a3",
+        "b1"
+      ]
+    ]
+  },
+  {
+    "id": "transfer-before-copy",
+    "cost": 1,
+    "before": [
+      [
+        "a2",
+        "b1"
+      ]
+    ]
+  },
+  {
+    "id": "delivery-before-child-renewal",
+    "cost": 1,
+    "before": [
+      [
+        "b4",
+        "c3"
+      ]
+    ]
+  }
+]

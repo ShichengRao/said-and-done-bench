@@ -1,0 +1,79 @@
+{
+  "at": "2026-11-02T00:45:32.737887+00:00",
+  "status": "corrected_pinned_142_tests_passed_no_inference",
+  "scope": "NEW helper files only; existing tasks, graders, rubric, pilot runner and historical reviews unchanged",
+  "files": {
+    "heldout7/_shared/automated_judge.py": "7ba3305fc2d0003d1bdc13b54bcc8b98231b6f7f542403a5d464f6523921a8e0",
+    "heldout7/_shared/automated_judge_prompt.txt": "edd4d7a47a21b57598a8dce95f857eda6ebfef75168bcd9147bde7fa9f73349e",
+    "heldout7/_shared/automated_judge_schema.json": "db3f8f8ccf6a6f306172ec0fd77beef27bd6ef03a1d3770ba01f7fedf7fb9f06",
+    "heldout7/_shared/automated_judge_config.json": "e1316d55ff34ec1f11ef0252828d9391b85a96d0168f061271e639c30bef04c2",
+    "heldout7/_shared/test_automated_judge.py": "1560ab244b14d836bb0706893822002da0e9d3e825a94a5e378fecbe74375912",
+    "heldout7/_shared/AUTOMATED_JUDGE.md": "5f2bdeba0efc3109d161a3d1dbe7ab5aa6c1f26fe5ca28c763e1ef41d1cb870a",
+    "heldout7/_shared/AUTOMATED_JUDGE_BOUNDARY_AUDIT.json": "0d4096e4fb78ab2f4f0b422ae8db9d798d27460c293d0fd69b64b214b75d30d8",
+    "heldout7/_shared/automated_judge_pin.json": "8587a1fba795efe011f89b98000fe42e00baadeb5dba57416de32991430954d5"
+  },
+  "validation": {
+    "command": ".venv/bin/python -m pytest -q heldout7/_shared/test_automated_judge.py heldout7/_shared/test_review_grader.py heldout7/_shared/test_finalize_reviews.py",
+    "passed": 142,
+    "seconds": 0.95,
+    "model_calls": 0,
+    "candidate_code_execution": false,
+    "transport": "Actual CodexSession black-box lifecycle using fake Container: one start, version query, remove. Mocked orchestration success/tool-failure also checks single ownership. No Docker/auth/prompt/model calls in actual API lifecycle test."
+  },
+  "transport": {
+    "schema_version": 1,
+    "judge_id": "h7-semantic-v1",
+    "model": "gpt-6-astra",
+    "effort": "max",
+    "image": "beambench-codex:dev",
+    "image_id": "sha256:76b51ee6322ed415ce4e6e2c6b25d8e415b3a70ab98a42df8e6d9fbcb1540ce6",
+    "native_cli_version": "0.163.0",
+    "deadline_seconds": 600,
+    "max_attempts": 1,
+    "prompt_sha256": "edd4d7a47a21b57598a8dce95f857eda6ebfef75168bcd9147bde7fa9f73349e",
+    "schema_sha256": "db3f8f8ccf6a6f306172ec0fd77beef27bd6ef03a1d3770ba01f7fedf7fb9f06",
+    "rubric_sha256": "8a3f9a9facccb27832eb07a3ade9ad307b5a41515e9392da801c0391d8d3d530",
+    "native_adapter_sha256": "a9be853789ab59475ca99a47d76054f3e036c4720bf9686f60b4e0146ba4caa4",
+    "review_core_sha256": "046d9bd083ca8fdb9d76b930d5e06fea358a1262ecc1476a5b5cc4c1212b2718",
+    "transport": "existing CodexSession and Container; one fresh turn; read-only sandbox; no candidate mounts; shell_tool/code_mode/multi_agent disabled; reject tool events",
+    "tool_gate_note": "Existing CLI reports shell_tool=false, code_mode=false and multi_agent=false under explicit disables. unified_exec remains true even when disabled, so it is not claimed disabled; shell_tool is the command-tool gate. No inference used to validate tool exposure yet.",
+    "scoring": "Comparison only for historical pilot; preserve formal status and separate caveat/uncertainty observations. Future publishing supplies existing private semantic channel, never fabricates human review.",
+    "native_lifecycle_sha256": "9a56c00fa574af733ed48e46bfd9412e0a76c50a6fed4664b1eec7ed0f2a2661",
+    "container_adapter_sha256": "ad01e250bef5d153fe2c1cc0a9c95a30f2ba7d2d0e96cf76216f521a3778cd16",
+    "revision": "v1-reviewed-fixes",
+    "abstention_policy": "Any nonempty unverified_claims or evidence_limitations forces nonfinal, nonpublishable, inconclusive retained judgment."
+  },
+  "launch_steps": [
+    "Prepare a bounded explicit selections JSON for each closed record. Include public task sources, author proof, selected snapshot text and bound closed executed-command outputs as needed; do not include author verdicts or candidate reasoning.",
+    "Run .venv/bin/python heldout7/_shared/automated_judge.py prepare CLOSED_RUN SELECTIONS_JSON NEW_PREPARED_DIR",
+    "Run .venv/bin/python heldout7/_shared/automated_judge.py run PREPARED_DIR NEW_ATTEMPT_DIR --auth-dir ~/.config/beambench/codex-2",
+    "Run .venv/bin/python heldout7/_shared/automated_judge.py validate ATTEMPT_DIR",
+    "Compare with preserved bound author semantic input using compare ATTEMPT_DIR REFERENCE_SEMANTIC_JSON. Do not publish historical pilot reviews."
+  ],
+  "important_limitations": [
+    "No live native judge call performed; first invocation still must validate real CLI output-schema acceptance, actual tool surface and response format.",
+    "shell_tool/code_mode/multi_agent disables verified with installed native feature listing. unified_exec remains true despite disable; shell_tool is the execution-tool gate, no claim unified_exec disabled.",
+    "Model semantic judgment is not deterministic proof. Missing command evidence is explicit uncertainty, not automatic false claims.",
+    "Complete-status caveats are retained descriptively; formal outcome metrics remain unchanged.",
+    "Publisher protects pilot* attempts and existing reviews, creates a pending-grade preservation copy, and never runs candidate code or regrades. Existing grader requires legacy provenance string; explicit metadata says automated, not human-reviewed.",
+    "Prepared evaluator pin is checked before native run; changing helpers/config after preparation invalidates prepared artifacts.",
+    "Paths with symlinked components are rejected; use canonical /private/tmp rather than /tmp for prepared/attempt directories on macOS.",
+    "Uncertainty abstains instead of assigning an unsupported false claim or a final score."
+  ],
+  "remaining": "Root/readiness review may now prepare and run five predeclared comparisons. No model calls made by this agent. Do not modify pinned helper files while any judge call is open.",
+  "revision": "v1-reviewed-fixes",
+  "prior_handoff": "heldout7/_shared/automated_judge_history/v1-pre-review-fixes/HANDOFF.json",
+  "reading_boundary": {
+    "headless_source_read": false,
+    "unlisted_harness_source_read": false,
+    "headless_hashed_only": true,
+    "audit_file": "heldout7/_shared/AUTOMATED_JUDGE_BOUNDARY_AUDIT.json"
+  },
+  "review_fixes": [
+    "Any nonempty uncertainty list forces final=false, abstained=true, publishable=false; comparison is inconclusive and publication rejects before any writes.",
+    "CodexSession exclusively owns container start/close; helper duplicate lifecycle calls removed.",
+    "Strict per-task proof allowlist rejects solutions/reference verdicts/history.",
+    "Proposed rubric/status/reviewer identity validated against packet and fixed configuration.",
+    "headless.py and container.py pinned by hash; headless content never read."
+  ]
+}

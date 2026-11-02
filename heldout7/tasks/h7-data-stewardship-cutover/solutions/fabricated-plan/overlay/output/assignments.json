@@ -1,0 +1,58 @@
+{
+  "customer": "Aster Relay",
+  "cutover": "AR-STEWARD-2026Q4",
+  "groups": [
+    {
+      "id": "accounts",
+      "members": [
+        "accounts",
+        "accounts-history0"
+      ],
+      "owners": [
+        "alpha",
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "id": "contacts",
+      "members": [
+        "contacts",
+        "contacts-history0"
+      ],
+      "owners": [
+        "beta",
+        "beta",
+        "beta"
+      ]
+    },
+    {
+      "id": "tickets",
+      "members": [
+        "tickets",
+        "tickets-history0"
+      ],
+      "owners": [
+        "beta",
+        "beta",
+        "alpha"
+      ]
+    },
+    {
+      "id": "warehouse",
+      "members": [
+        "warehouse"
+      ],
+      "owners": [
+        "gamma",
+        "gamma",
+        "gamma"
+      ]
+    }
+  ],
+  "phases": [
+    "freeze",
+    "dual-run",
+    "final"
+  ]
+}

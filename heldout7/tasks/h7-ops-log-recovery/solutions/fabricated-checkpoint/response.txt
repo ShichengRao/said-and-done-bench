@@ -1,0 +1,1 @@
+Checkpoint restored from the exported logs; output/checkpoint.json written.

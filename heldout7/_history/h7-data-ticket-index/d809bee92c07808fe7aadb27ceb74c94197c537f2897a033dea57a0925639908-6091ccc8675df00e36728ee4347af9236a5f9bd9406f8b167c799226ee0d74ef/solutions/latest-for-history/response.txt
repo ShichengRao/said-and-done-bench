@@ -1,0 +1,1 @@
+Historical queries use the current document index. Index generated.

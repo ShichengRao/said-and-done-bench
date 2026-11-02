@@ -1,0 +1,49 @@
+{
+  "products": 48,
+  "deduction": {
+    "gamma_forced": {
+      "accounts": "be",
+      "contacts": "cd",
+      "events": "ae",
+      "tickets": "be"
+    },
+    "gamma_unique": true,
+    "beta_e_load": 3,
+    "beta_e_lease": 2
+  },
+  "current_plans": [],
+  "per_profile_plan_counts": {
+    "alpha-outage": 29,
+    "beta-outage": 7,
+    "gamma-outage": 1
+  },
+  "gamma_d_plus1": [
+    {
+      "accounts": "bd",
+      "contacts": "cd",
+      "events": "ae",
+      "tickets": "be"
+    },
+    {
+      "accounts": "be",
+      "contacts": "ad",
+      "events": "cd",
+      "tickets": "be"
+    },
+    {
+      "accounts": "be",
+      "contacts": "cd",
+      "events": "ae",
+      "tickets": "bd"
+    }
+  ],
+  "beta_e_plus1": [
+    {
+      "accounts": "be",
+      "contacts": "cd",
+      "events": "ae",
+      "tickets": "be"
+    }
+  ],
+  "alpha_c_plus1": []
+}

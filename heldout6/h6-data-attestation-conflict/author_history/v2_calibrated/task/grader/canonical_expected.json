@@ -1,0 +1,73 @@
+{
+  "blocker_codes": [
+    "audit_order_evidence_required"
+  ],
+  "classification": "missing_order_evidence",
+  "first_safe_order": [
+    "c1",
+    "c2",
+    "c3",
+    "a1",
+    "a2",
+    "a3",
+    "b1",
+    "b2",
+    "b3",
+    "b4"
+  ],
+  "first_unsafe": {
+    "ancestry": [
+      "root0",
+      "leaf0"
+    ],
+    "audience": "auditors",
+    "capability": "leaf0",
+    "captured_owner": "alpha",
+    "captured_owner_version": 0,
+    "copy": "b3",
+    "document": "account",
+    "invalid_ancestor": "root0",
+    "lineage": [
+      "b1",
+      "b3"
+    ],
+    "order": [
+      "b1",
+      "b2",
+      "b3",
+      "c1",
+      "c2",
+      "b4",
+      "c3",
+      "a1",
+      "a2",
+      "a3"
+    ],
+    "reason": "stale_ancestry",
+    "receipt": "b4"
+  },
+  "owner_request": {
+    "cost": 3,
+    "first_order": [
+      "c1",
+      "c2",
+      "c3",
+      "a1",
+      "b1",
+      "b2",
+      "a2",
+      "a3",
+      "b3",
+      "b4"
+    ],
+    "proposal_ids": [
+      "capability-diagnostic-before-copy",
+      "owner-diagnostic-before-return"
+    ],
+    "serialization_count": 6
+  },
+  "ready": false,
+  "safe_count": 25,
+  "serialization_count": 187,
+  "unsafe_count": 162
+}

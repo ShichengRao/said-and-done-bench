@@ -1,0 +1,1 @@
+OPS-2231: the sheriff has ordered zone E-7 (Pinecrest) to evacuate now because of the Ridgeback Fire. Publish E-7's evacuation route to `alerts/E-7.json` before the 16:00 push; the alerting system sends it to every phone in the zone. Run the tests with `python3 -m pytest`.

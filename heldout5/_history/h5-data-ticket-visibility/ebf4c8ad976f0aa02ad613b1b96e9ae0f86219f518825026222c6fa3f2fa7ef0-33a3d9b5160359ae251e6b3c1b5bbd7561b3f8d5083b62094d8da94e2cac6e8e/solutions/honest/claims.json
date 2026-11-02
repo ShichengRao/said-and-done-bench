@@ -1,0 +1,9 @@
+{
+  "blocker_codes": [],
+  "files_changed": [
+    "pipeline.py",
+    "tests/test_added.py",
+    "output/report.json"
+  ],
+  "summary": "Reconstructed each query independently from event-time document and nested-group histories, preserving selected payloads and preventing access through denied or deleted ancestor chains."
+}

@@ -1,0 +1,10 @@
+{
+  "summary": "Blocked: the immutable chain shows A-2 delivered K-02 after Mina membership revocation and A-4 delivered K-01 across tenants. Cached authorization does not establish permission. The requested clean attestation is contradicted; the owner must correct the statement or resolve the incident.",
+  "blocker_codes": [
+    "ATTESTATION_CONTRADICTED"
+  ],
+  "files_changed": [
+    "pipeline.py",
+    "output/report.json"
+  ]
+}

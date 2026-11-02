@@ -1,0 +1,256 @@
+{
+  "people": [
+    "p00",
+    "p01",
+    "p02",
+    "p03",
+    "p04",
+    "p05",
+    "p06",
+    "p07",
+    "p08",
+    "p09",
+    "p10",
+    "p11",
+    "p12",
+    "p13",
+    "p14",
+    "p15",
+    "p16"
+  ],
+  "aliases": [
+    {
+      "alias": "crm16",
+      "target": "p16"
+    },
+    {
+      "alias": "crm15",
+      "target": "p15"
+    },
+    {
+      "alias": "crm14",
+      "target": "p14"
+    },
+    {
+      "alias": "crm13",
+      "target": "p13"
+    },
+    {
+      "alias": "crm12",
+      "target": "p12"
+    },
+    {
+      "alias": "crm11",
+      "target": "p11"
+    },
+    {
+      "alias": "crm10",
+      "target": "p10"
+    },
+    {
+      "alias": "crm9",
+      "target": "p09"
+    },
+    {
+      "alias": "crm8",
+      "target": "p08"
+    },
+    {
+      "alias": "crm7",
+      "target": "p07"
+    },
+    {
+      "alias": "crm6",
+      "target": "p06"
+    },
+    {
+      "alias": "crm5",
+      "target": "p05"
+    },
+    {
+      "alias": "crm4",
+      "target": "p04"
+    },
+    {
+      "alias": "crm3",
+      "target": "p03"
+    },
+    {
+      "alias": "crm2",
+      "target": "p02"
+    },
+    {
+      "alias": "crm1",
+      "target": "p01"
+    },
+    {
+      "alias": "crm0",
+      "target": "p00"
+    },
+    {
+      "alias": "old16",
+      "target": "crm16"
+    },
+    {
+      "alias": "old15",
+      "target": "crm15"
+    },
+    {
+      "alias": "old14",
+      "target": "crm14"
+    },
+    {
+      "alias": "old13",
+      "target": "crm13"
+    },
+    {
+      "alias": "old12",
+      "target": "crm12"
+    },
+    {
+      "alias": "old11",
+      "target": "crm11"
+    },
+    {
+      "alias": "old10",
+      "target": "crm10"
+    },
+    {
+      "alias": "old9",
+      "target": "crm9"
+    },
+    {
+      "alias": "old8",
+      "target": "crm8"
+    },
+    {
+      "alias": "old7",
+      "target": "crm7"
+    },
+    {
+      "alias": "old6",
+      "target": "crm6"
+    },
+    {
+      "alias": "old5",
+      "target": "crm5"
+    },
+    {
+      "alias": "old4",
+      "target": "crm4"
+    },
+    {
+      "alias": "old3",
+      "target": "crm3"
+    },
+    {
+      "alias": "old2",
+      "target": "crm2"
+    },
+    {
+      "alias": "old1",
+      "target": "crm1"
+    },
+    {
+      "alias": "old0",
+      "target": "crm0"
+    }
+  ],
+  "consents": [
+    {
+      "person": "p00",
+      "revision": 1,
+      "allowed": false
+    },
+    {
+      "person": "p16",
+      "revision": 3,
+      "allowed": false
+    },
+    {
+      "person": "p16",
+      "revision": 1,
+      "allowed": true
+    },
+    {
+      "person": "p15",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p14",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p13",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p12",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p11",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p10",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p09",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p08",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p07",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p06",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p05",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p04",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p03",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p02",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p01",
+      "revision": 2,
+      "allowed": true
+    },
+    {
+      "person": "p00",
+      "revision": 2,
+      "allowed": true
+    }
+  ]
+}

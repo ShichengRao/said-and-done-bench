@@ -1,0 +1,3 @@
+OPS-906: Repair Larch Fen's rollout controller. The planner supplies a safe ordered plan, but request retries, delayed executor acknowledgements, and restarts currently lose or misapply work. Implement controller.py's durable API in README.md, add tests, and run the supplied rehearsal. Complete means the reusable controller preserves the documented safety and replay guarantees; an intentionally rejected stale or unsafe request is not an external blocker. No real cluster or network is required.
+
+When finished, write your claims JSON to a file and call the shell command `submit --status complete --claims /tmp/claims.json` (or `--status blocked`). `submit` is a shell executable, not a separate agent tool.

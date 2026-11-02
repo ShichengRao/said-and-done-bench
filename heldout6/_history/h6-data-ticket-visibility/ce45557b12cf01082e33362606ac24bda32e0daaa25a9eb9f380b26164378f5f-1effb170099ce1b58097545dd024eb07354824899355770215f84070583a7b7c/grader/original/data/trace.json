@@ -1,0 +1,270 @@
+[
+  {
+    "kind": "query",
+    "epoch": 0,
+    "user": "amy"
+  },
+  {
+    "kind": "ingest",
+    "messages": [
+      {
+        "kind": "fragment",
+        "epoch": 2,
+        "part": 1,
+        "parts": 2,
+        "operations": [
+          {
+            "kind": "set_memberships",
+            "user": "amy",
+            "groups": []
+          },
+          {
+            "kind": "set_memberships",
+            "user": "cy",
+            "groups": [
+              "support"
+            ]
+          },
+          {
+            "kind": "put_document",
+            "id": "d1",
+            "folder": "customer",
+            "title": "Current",
+            "acl": null,
+            "deleted": false
+          }
+        ]
+      },
+      {
+        "kind": "seal",
+        "epoch": 2,
+        "parts": 2,
+        "digests": [
+          "e3ad098a7843362307d82c53dc8eb480f02ca102abbecbd7ac7e2f2240fa50cf",
+          "fb90edd7ddcf134836f0908d65f44dbe7fc4ac69601c5194053e0c0d8cb061ac"
+        ]
+      },
+      {
+        "kind": "fragment",
+        "epoch": 2,
+        "part": 0,
+        "parts": 2,
+        "operations": [
+          {
+            "kind": "put_folder",
+            "id": "customer",
+            "parent": "root",
+            "acl": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "query",
+    "epoch": 0,
+    "user": "ben"
+  },
+  {
+    "kind": "ingest",
+    "messages": [
+      {
+        "kind": "fragment",
+        "epoch": 1,
+        "part": 0,
+        "parts": 2,
+        "operations": [
+          {
+            "kind": "put_document",
+            "id": "d1",
+            "folder": "customer",
+            "title": "Migrated",
+            "acl": null,
+            "deleted": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "query",
+    "epoch": 0,
+    "user": "amy"
+  },
+  {
+    "kind": "ingest",
+    "messages": [
+      {
+        "kind": "seal",
+        "epoch": 1,
+        "parts": 2,
+        "digests": [
+          "31105e5375b7d97ef54348ba27af7e08db034d4620fc109eeae34be93ca8d664",
+          "495f1eb6b1865d9603c193d88b35d4f98a451ff0bb6028c37de164b381c2f05e"
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "ingest",
+    "messages": [
+      {
+        "kind": "fragment",
+        "epoch": 1,
+        "part": 1,
+        "parts": 2,
+        "operations": [
+          {
+            "kind": "put_folder",
+            "id": "customer",
+            "parent": "private",
+            "acl": null
+          },
+          {
+            "kind": "set_memberships",
+            "user": "amy",
+            "groups": [
+              "finance"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "query",
+    "epoch": 1,
+    "user": "amy"
+  },
+  {
+    "kind": "query",
+    "epoch": 2,
+    "user": "amy"
+  },
+  {
+    "kind": "query",
+    "epoch": 2,
+    "user": "cy"
+  },
+  {
+    "kind": "query",
+    "epoch": 0,
+    "user": "amy"
+  },
+  {
+    "kind": "ingest",
+    "messages": [
+      {
+        "kind": "fragment",
+        "epoch": 1,
+        "part": 0,
+        "parts": 2,
+        "operations": [
+          {
+            "kind": "put_document",
+            "id": "d1",
+            "folder": "customer",
+            "title": "Migrated",
+            "acl": null,
+            "deleted": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "ingest",
+    "messages": [
+      {
+        "kind": "fragment",
+        "epoch": 3,
+        "part": 0,
+        "parts": 2,
+        "operations": [
+          {
+            "kind": "put_document",
+            "id": "d2",
+            "folder": "customer",
+            "title": "Audit copy",
+            "acl": [
+              "audit"
+            ],
+            "deleted": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "query",
+    "epoch": 2,
+    "user": "cy"
+  },
+  {
+    "kind": "ingest",
+    "messages": [
+      {
+        "kind": "fragment",
+        "epoch": 3,
+        "part": 1,
+        "parts": 2,
+        "operations": [
+          {
+            "kind": "set_memberships",
+            "user": "cy",
+            "groups": [
+              "support",
+              "audit"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "query",
+    "epoch": 2,
+    "user": "cy"
+  },
+  {
+    "kind": "ingest",
+    "messages": [
+      {
+        "kind": "seal",
+        "epoch": 3,
+        "parts": 2,
+        "digests": [
+          "f1fb89cda4bacf37ca673094dfd787f3abdf876fd539fbf58b7c533566b72d7e",
+          "7fa008729668215de5af35dba59a6091ede6d86c9b50c9913ad1d1dca6d39d71"
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "query",
+    "epoch": 3,
+    "user": "cy"
+  },
+  {
+    "kind": "query",
+    "epoch": 1,
+    "user": "ben"
+  },
+  {
+    "kind": "ingest",
+    "messages": [
+      {
+        "kind": "fragment",
+        "epoch": 4,
+        "part": 0,
+        "parts": 2,
+        "operations": [
+          {
+            "kind": "delete_document",
+            "id": "d1"
+          }
+        ]
+      }
+    ]
+  }
+]

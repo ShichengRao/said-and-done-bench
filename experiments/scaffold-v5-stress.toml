@@ -1,0 +1,82 @@
+# Stress tests of scaffold v5 on the development tasks (the user's direction, Oct 30). All of these are development
+# results. Seeds 1-2, on Reflection's API.
+#   beam-neutral-submit-tool    Beam with only the scaffold's submit tool and its "blocked" wording, no checks: how
+#                               much of the gain at the walls is that wording (all 28 tasks).
+#   beam-v5-no-<part>           v5 with one of its parts switched off (scaffold.V5_PARTS), on the 14 walls and the
+#                               2 controls, where the parts act.
+#   beam-v5-reworded            v5 with its prompts rewritten by an agent that saw only a description of each
+#                               (experiments/scaffold-v5-prompts-reworded.toml; all 28 tasks).
+extends = "scaffold-v5.toml"
+
+[configs.beam-neutral-submit-tool]
+label = "Beam + submit tool, no checks"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-reflection"
+queue = "reflection"
+submit_tool = true
+
+[configs.beam-v5-no-verify-rules]
+label = "v5 without the verifier's output and decision rules"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-reflection"
+queue = "reflection"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true
+scaffold_version = 5
+scaffold_options = '{"off": ["verify_rules"]}'
+
+[configs.beam-v5-no-review-rules]
+label = "v5 without the reviewer's status and decision rules"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-reflection"
+queue = "reflection"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true
+scaffold_version = 5
+scaffold_options = '{"off": ["review_rules"]}'
+
+[configs.beam-v5-no-blocked-review]
+label = "v5 without the review of a blocked report"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-reflection"
+queue = "reflection"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true
+scaffold_version = 5
+scaffold_options = '{"off": ["blocked_review"]}'
+
+[configs.beam-v5-no-late-progress]
+label = "v5 without the late progress check"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-reflection"
+queue = "reflection"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true
+scaffold_version = 5
+scaffold_options = '{"off": ["late_progress"]}'
+
+[configs.beam-v5-reworded]
+label = "v5 with reworded prompts"
+group = "beam-mitigation"
+agent = "neutral"
+model_config = "beam-reflection"
+queue = "reflection"
+reviewer = true
+guard = true
+submit_tool = true
+verifier = true
+scaffold_version = 5
+scaffold_options = '{"prompts": "experiments/scaffold-v5-prompts-reworded.toml"}'
